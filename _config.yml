@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Site Title"
+title                    : "Maclearning"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "takjakim"
@@ -118,7 +118,7 @@ author:
       url: mailto:gimwogus@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+       url: "https://www.youtube.com/channel/UCwq1IYf7GhmJgJtqjbBX1IA?view_as=subscriber"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"ß
@@ -130,7 +130,7 @@ author:
       # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+       url: "https://instagram.com/takjakim"
 
 # Site Footer
 footer:
@@ -143,7 +143,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+       url: "https://blog.takjakim.kr"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
