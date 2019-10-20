@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Maclearning's Developments LOG"
+title                    : "MacLearning's Developments LOG"
 title_separator          : "takjakim"
 subtitle                 : "takjakim's Archives" # site tagline that appears below site title in masthead
 name                     : "takjakim"
@@ -32,7 +32,7 @@ words_per_minute         : 200
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : takjakims-github # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "takjakim"
   avatar           : "/assets/logo.ico/apple-icon-180x180.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "맥으로 공부하고, 맥을 공부하는, 맥러닝의 탁자킴입니다"
+  bio              : "**맥**으로 공부하고, **맥**을 공부하는, **맥러닝**의 **탁자킴**입니다"
   location         : "Seoul, KR"
   email            :
   links:
@@ -119,9 +119,9 @@ author:
     - label: "YouTube" #"Website"
       icon: "fab fa-youtube" ##"fas fa-fw fa-link"
       url: "https://www.youtube.com/channel/UCwq1IYf7GhmJgJtqjbBX1IA?view_as=subscriber"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"ß
+    - label: "Clike to Subscribe"
+      icon: "fas fa-thumbs-up"
+      url: "https://www.youtube.com/channel/UCwq1IYf7GhmJgJtqjbBX1IA?sub_confirmation=1"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
