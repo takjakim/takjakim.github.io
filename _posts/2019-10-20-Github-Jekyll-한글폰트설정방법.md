@@ -3,7 +3,6 @@ layout: single
 classes: wide
 author_profile: true
 read_time: true
-comments: null
 share: true
 related: true
 title: Jekyll 한글폰트 설정방법

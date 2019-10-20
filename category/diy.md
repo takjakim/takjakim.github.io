@@ -1,6 +1,6 @@
 ---
 
 layout: category
-title: diy
+title: DIY
 
 ---
