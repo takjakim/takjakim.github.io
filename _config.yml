@@ -110,14 +110,14 @@ author:
   name             : "takjakim"
   avatar           : "/assets/logo.ico/apple-icon-180x180.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "맥으로 공부하고, 맥을 공부하는, 맥러닝의 탁자킴입니다"
-  location         : "Somewhere"
+  location         : "Seoul, KR"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:gimwogus@gmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
+    - label: "YouTube" #"Website"
+      icon: "fab fa-youtube" ##"fas fa-fw fa-link"
       url: "https://www.youtube.com/channel/UCwq1IYf7GhmJgJtqjbBX1IA?view_as=subscriber"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"

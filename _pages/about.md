@@ -13,5 +13,5 @@ layouts_gallery:
     image_path: /assets/images/mm-layout-archive.png
     alt: "archive layout example"
 last_modified_at: 2019-08-27T15:46:43-04:00
-toc: true
+toc: true ##우측메뉴
 ---

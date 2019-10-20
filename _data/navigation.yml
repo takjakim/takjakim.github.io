@@ -3,10 +3,14 @@ main:
 #  - title: "Quick-Start Guide"
 #    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
-  - title: "Sample Posts"
-    url: /year-archive/
-  - title: "Sample Collections"
-    url: /collection-archive/
+    url: /about/
+  - title: "iOS tip"
+    url: /ios/
+  - title: "OSX tip"
+    url: /macOS/
+  - title: "TECH"
+    url: /tech/
+  - title: "DIY"
+    url: /diy/
   - title: "Sitemap"
     url: /sitemap/
