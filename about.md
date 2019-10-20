@@ -3,7 +3,7 @@ title: About
 permalink: "/about/"
 layout: single
 excerpt: Minimal Mistakes is a flexible two-column Jekyll theme.
-last_modified_at: '2019-08-28 04:46:43 +0900'
+last_modified_at: '2019-10-20 18:46:43 +0900'
 toc: true
 author_profile: true
 ---
@@ -29,15 +29,15 @@ void f(){
 
 ## Career
 
-2018.9 - 2019.9 : DDWU **CTL** **Researcher** (media, MOOCs, e-learning)
+* 2018.9 - 2019.9 : **CTL** **Researcher** (media, MOOCs, e-learning)
 
-2016.9 - 2018.8 : **교육복지정책중점연구소** 연구보조원
+* 2016.9 - 2018.8 : **교육복지정책중점연구소** 연구보조원
 
-2017.3 - 2018.8 : **중앙교육복지연구지원센터** 연구보조원
+* 2017.3 - 2018.8 : **중앙교육복지연구지원센터** 연구보조원
 
-2016.3 - 2016.12 : **한국생산성본부** 비전임위원 - IT역량지수 개발 및 운영
+* 2016.3 - 2016.12 : **한국생산성본부** 비전임위원 - IT역량지수 개발 및 운영
 
-2015.7 - 2016.1 : **한국생산성본부** 인턴 - 3D프린팅 강사양성과정
+* 2015.7 - 2016.1 : **한국생산성본부** 인턴 - 3D프린팅 강사양성과정
 
 ---
 

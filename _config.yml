@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "MacLearning's Developments LOG"
+title                    : "맥러닝"
 title_separator          : "takjakim"
 subtitle                 : "takjakim's Archives" # site tagline that appears below site title in masthead
 name                     : "takjakim"
