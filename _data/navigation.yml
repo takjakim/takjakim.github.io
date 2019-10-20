@@ -7,10 +7,10 @@ main:
   - title: "iOS tip"
     url: /category/ios/
   - title: "OSX tip"
-    url: /osx/
+    url: /category/osx/
   - title: "TECH"
-    url: /tech/
+    url: /category/tech/
   - title: "DIY"
-    url: /diy/
+    url: /category/diy/
   - title: "DEV"
     url: /category/dev/
