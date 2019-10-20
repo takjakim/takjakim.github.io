@@ -2,7 +2,8 @@
 title: About
 permalink: "/about/"
 layout: single
-excerpt: 탁자킴입니다.
+classes: wide
+excerpt: abuot takjakim.
 last_modified_at: '2019-10-20 18:46:43 +0900'
 toc: true
 author_profile: true
