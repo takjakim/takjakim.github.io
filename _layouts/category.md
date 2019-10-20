@@ -1,19 +1,10 @@
-<!--
-
----
-layout: archive
----
-
-{{ content }}
-
-<div class="entries-{{ page.entries_layout }}">
-  {% include posts-category.html taxonomy=page.taxonomy type=page.entries_layout %}
-</div>
--->
-
 ---
 layout: single
+author_profile: true
+classes: wide
+excerpt: "takjakim's development"
 ---
+
 <ul class="posts-list">
   
   {% assign category = page.category | default: page.title %}
