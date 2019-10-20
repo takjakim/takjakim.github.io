@@ -26,3 +26,16 @@ layout: archive
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
   </section>
 {% endfor %}
+
+<!-- tag cloud -->
+{% if page.tags != empty %}
+    <footer>
+      <p>Read more:</p>
+      <ul class="tag-list">
+        {% for tag in page.tags %}
+        <li><a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </footer>
+{% endif %}
+

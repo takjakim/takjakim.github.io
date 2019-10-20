@@ -9,18 +9,18 @@ related: true
 title: Jekyll 한글폰트 설정방법
 excerpt:  Jekyll 에서 한글 나눔고딕폰트 설정방법
 toc: true
+toc_label: "Contents"
 header:
   image: /assets/images/nanum.png
   caption: "**한글폰트** custom setting"
-categories:
+categories: [DEV]
+tags:
+  - takjakim
   - jekyll
   - font
   - blog
-  - develop
-tags:
-  - takjakim
-  - blog
 comments: true
+breadcrumbs: true
 ---
 
 ## 들어가며
