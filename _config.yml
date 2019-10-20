@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Maclearning"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+title                    : "Maclearning's Developments LOG"
+title_separator          : "takjakim"
+subtitle                 : "takjakim's Archives" # site tagline that appears below site title in masthead
 name                     : "takjakim"
 description              : "맥으로 공부하고, 맥을 공부하는"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -72,12 +72,12 @@ algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
   search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  powered_by             : false # true (default), false
 google:
   search_engine_id       : # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : "etkyoF7ZDMYRbDNV25xEZtw6KS379IpyG1-8XDIFTbU"
 bing_site_verification   :
 yandex_site_verification :
 naver_site_verification  :
@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "takjakim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/logo.ico/apple-icon-180x180.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "맥으로 공부하고, 맥을 공부하는, 맥러닝의 탁자킴입니다"
   location         : "Somewhere"
   email            :
@@ -292,3 +292,10 @@ defaults:
       comments: # true
       share: true
       related: true
+    #_pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
