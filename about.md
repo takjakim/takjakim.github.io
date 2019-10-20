@@ -2,7 +2,7 @@
 title: About
 permalink: "/about/"
 layout: single
-excerpt: Minimal Mistakes is a flexible two-column Jekyll theme.
+excerpt: 탁자킴입니다.
 last_modified_at: '2019-10-20 18:46:43 +0900'
 toc: true
 author_profile: true
