@@ -14,7 +14,7 @@ header:
   image: /assets/images/1910/automator/2.png
   caption: "**Automator** tip"
 categories:
-  - dev
+  - DEV
   - macOS
 tags:
   - takjakim
