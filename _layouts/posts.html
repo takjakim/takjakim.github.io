@@ -1,10 +1,10 @@
 ---
 layout: archive
 ---
-
 {{ content }}
 
 <ul class="taxonomy__index">
+ 
   {% assign postsInYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
   {% for year in postsInYear %}
     <li>
@@ -14,7 +14,6 @@ layout: archive
     </li>
   {% endfor %}
 </ul>
-
 {% assign postsByYear = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
