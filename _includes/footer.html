@@ -1,4 +1,5 @@
 <div class="page__footer-follow">
+  <!--
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
@@ -13,7 +14,13 @@
     {% endif %}
 
     <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-  </ul>
+  </ul> -->
+    <script src="https://apis.google.com/js/platform.js"></script>
+<div class="g-ytsubscribe" data-channelid="UCwq1IYf7GhmJgJtqjbBX1IA" data-layout="full" data-count="default" padding-top: "0%"></div>
 </div>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Copyright by" }} <a href="https://blog.takjakim.kr" rel="nofollow">takjakim</a> &amp; <a href="https://www.youtube.com/channel/UCwq1IYf7GhmJgJtqjbBX1IA?view_as=subscriber" rel="nofollow">Maclearning</a>.</div>
+
+
+
+

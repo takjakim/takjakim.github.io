@@ -36,7 +36,7 @@
       <div class="author__bio" itemprop="description">
         {{ author.bio | markdownify }}
       </div>
-      <div class="g-ytsubscribe" data-channelid="UCwq1IYf7GhmJgJtqjbBX1IA" data-layout="full" data-count="default" padding-top: 0px></div>
+      
     {% endif %}
   </div>
 
@@ -71,7 +71,9 @@
             <meta itemprop="email" content="{{ author.email }}" />
             <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}
           </a>
+
         </li>
+          <div class="g-ytsubscribe" data-channelid="UCwq1IYf7GhmJgJtqjbBX1IA" data-layout="full" data-count="default" padding-top: 0px></div>
       {% endif %}
 
       {% if author.keybase %}
