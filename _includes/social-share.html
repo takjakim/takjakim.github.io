@@ -1,3 +1,14 @@
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
+<title>KakaoLink v2 Demo(Default / Feed) - Kakao JavaScript SDK</title>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+
+</head>
+<body>
 <section class="page__share">
 
   {% if site.data.ui-text[site.locale].share_on_label %}
@@ -14,26 +25,8 @@
 
   <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 -->
-  {{ page.url }}
-  <br>
-  {{ page.title }}
-  <br>
-  {{ absolute_url }}
-  <br>
-  {{ page.url | absolute_url | url_encode }}
-  <br>
-  {{ absolute_url | url_encode }}
 
-  http://localhost:4000{{ page.url }}
-<head>
-<meta charset="utf-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"/>
-<title>KakaoLink v2 Demo(Default / Feed) - Kakao JavaScript SDK</title>
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 
-</head>
-<body>
 <a id="kakao-link-btn" href="javascript:;">
 <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/>
 </a>
@@ -79,6 +72,6 @@
   //]]>
 </script>
 
-</body>
-
 </section>
+</body>
+</html>
