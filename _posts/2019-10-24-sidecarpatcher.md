@@ -101,6 +101,10 @@ Catalina Installer를 사용하여 MacOS를 다시 설치합니다. 디스크를
 
 ---
 
+#Wrap-up
+
+개발자 분이 한국분이랍니다 ^,^ 감사합니다.
+
 
 [맥러닝 간편하게 구독하기](https://www.youtube.com/channel/UCwq1IYf7GhmJgJtqjbBX1IA?sub_confirmation=1){: target="_blank" } 
 
