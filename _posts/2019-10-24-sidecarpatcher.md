@@ -23,6 +23,10 @@ comments: true
 breadcrumbs: true
 ---
 
+# YouTube 실습
+
+{% include youtube.html id="HlOjKSvI2cQ" %}
+
 # 영어 원문
 
 [github](https://github.com/pookjw/SidecarPatcher){: target="_blank" } 
