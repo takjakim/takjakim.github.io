@@ -4,10 +4,12 @@ main:
 #    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: /about/
-  - title: "iOS tip"
-    url: /category/ios/
-  - title: "OSX tip"
-    url: /category/macos/
+  - title: tip
+    children:
+      - title: "iOS tip"
+        url: /category/ios/
+      - title: "OSX tip"
+        url: /category/macos/
   - title: "TECH"
     url: /category/tech/
   - title: "DIY"
