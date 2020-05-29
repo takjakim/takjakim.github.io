@@ -4,7 +4,7 @@ permalink: "/about/"
 layout: single
 classes: wide
 excerpt: abuot takjakim.
-last_modified_at: '2020-05-14 14:44:43 +0900'
+last_modified_at: '2020-05-29 17:44:43 +0900'
 toc: true
 author_profile: true
 ---
@@ -16,7 +16,7 @@ M.A.
 
 Department of Educational Technology(Master's degree)
 
-Electronic Electrical Engineering(Bachelor's degree)
+Electronic and Electrical Engineering(Bachelor's degree)
 
 ## Language
 
