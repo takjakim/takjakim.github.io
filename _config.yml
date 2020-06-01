@@ -234,6 +234,8 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-google-photos
+  - lazy_tweet_embedding
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -242,7 +244,10 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-google-photos
+  - lazy_tweet_embedding
 
+safe: false
 #tag cloud
 
 
