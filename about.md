@@ -13,6 +13,7 @@ author_profile: true
 
 M.A.
 ## Major
+Department of Educational Technology(Doctoral student)
 
 Department of Educational Technology(Master's degree)
 
