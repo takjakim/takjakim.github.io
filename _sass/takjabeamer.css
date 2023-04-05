@@ -1,10 +1,9 @@
-/* @theme takjakim */
+/* @theme beamer */
 
 @import "default";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 :root {
-  font-family:  "Noto Sans KR", "CMU Sans Serif", "Segoe UI",Helvetica, sans-serif;
   --beamer-main: #1f38c5;
   --beamer-secondary: #141414;
 }
@@ -48,6 +47,8 @@ footer {
 
 h1, h2, h3, h4, h5, h6 {
   color: #141414;
+  font-family: "Noto Sans KR";
+
 }
 
 /* only apply to the first occurrence of h1 */
@@ -98,7 +99,7 @@ img[alt~="center"] {
 /* title page - only to be used as for a single slide */
 /* <!-- _class: title --> */
 section.title>h1 {
-  font-family: "CMU Bright", "Segoe UI Semibold";
+  font-family: "Noto Sans KR";
   color: #ffffff;
   background-color: var(--beamer-main);
   border-radius: 25px;
