@@ -8,10 +8,6 @@
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
 @font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
 
-body, h1, h2, h3, h4, h5, h6, input, textarea, select {
-	font-family: 'Noto Sans KR', sans-serif;
-}
-
 :root {
   font-family: "CMU Sans Serif", "Segoe UI", "Noto Sans KR", Helvetica, sans-serif;
   --beamer-main: #1f38c5;
@@ -60,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* only apply to the first occurrence of h1 */
 h1:nth-of-type(1) {
-  font-family: "CMU Bright", "Segoe UI Semibold";
+  font-family: "Noto Sans KR", "CMU Bright", "Segoe UI Semibold";
   color: #ffffff;
   background-color: var(--beamer-main);
   border-top: 0.3em solid var(--beamer-main);
