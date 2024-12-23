@@ -22,7 +22,8 @@ relative_permalinks: false
 
 plugins:
   - jekyll-last-modified-at
-
+  - jekyll-mermaid
+  
 sass:
   sass_dir:          _sass
   style:            :compressed
@@ -41,3 +42,13 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
+
+# Mermaid 설정 추가
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true

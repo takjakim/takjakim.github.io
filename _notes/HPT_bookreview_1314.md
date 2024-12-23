@@ -34,7 +34,7 @@ APA: Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance tec
 
 ### 4. 도식화 및 설명
 
-```mermaid
+```mermaid!
 flowchart TB
     subgraph "HPT 평가 통합 프레임워크"
         subgraph "성과 개선 순환"
@@ -70,7 +70,7 @@ flowchart TB
 ### 5. 연구 문제 설정 및 답변
 
 1. **연구문제:** 조직구조와 외부환경 변화에 대응하기 위한 HPT 전략은 어떻게 팀(집단) 수준의 상호작용과 리더십 스타일을 매개로 하여, 조직-팀-개인의 다층적 구조 속에서 형성적·총괄적 평가의 결과를 효율적으로 반영하고 장기적 성과 지속성과 조직 적합성을 확보할 수 있는가?
-~~~mermaid
+~~~mermaid!
 flowchart TB
 
     O[조직 수준: 동태적 환경 대응, HPT전략 수립]
