@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign current_category = page.path | split: "/" | slice: 1 | first %}
+
 <article class="note-page">
   <header class="note-header">
     <a href="{{ site.baseurl }}/" class="back-home">&larr; Home</a>
@@ -32,11 +34,13 @@ layout: default
           <p class="no-backlinks">No backlinks yet</p>
         {% endif %}
       </div>
+
+      <div class="sidebar-section sidebar-graph">
+        <h3 class="sidebar-title">Related Notes</h3>
+        <div id="sidebar-graph-wrapper" data-category="{{ current_category }}"></div>
+      </div>
     </aside>
   </div>
 </article>
 
-<section class="note-graph">
-  <h3 class="graph-section-title">Graph View</h3>
-  {% include notes_graph.html %}
-</section>
+{% include sidebar_graph.html category=current_category %}

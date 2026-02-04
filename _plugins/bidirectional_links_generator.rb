@@ -81,10 +81,16 @@ class BidirectionalLinksGenerator < Jekyll::Generator
       end
 
       # Nodes: Graph
+      # Extract category from relative path (e.g., _notes/investing/file.md -> investing)
+      rel_path = current_note.relative_path || current_note.path
+      path_parts = rel_path.split('/')
+      # _notes/category/file.md -> category is at index 1
+      category = path_parts.length > 2 ? path_parts[1] : nil
       graph_nodes << {
         id: note_id_from_note(current_note),
         path: "#{site.baseurl}#{current_note.url}#{link_extension}",
         label: current_note.data['title'],
+        category: category,
       } unless current_note.path.include?('_notes/index.html')
 
       # Edges: Jekyll
