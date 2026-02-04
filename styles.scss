@@ -51,25 +51,23 @@
 
 /* ===== Note Page Hero Banner ===== */
 .note-hero-banner {
-  display: block;
-  margin: -4vh -6vw 2.5rem;
-  padding: 3rem 2rem;
-  background:
-    radial-gradient(ellipse at 20% 30%, rgba(255, 107, 107, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 80% 70%, rgba(78, 205, 196, 0.08) 0%, transparent 50%),
-    linear-gradient(180deg, rgba(248, 250, 252, 0.95) 0%, rgba(255, 255, 255, 0.98) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  margin: -4vh -6vw 2rem;
+  padding: 1.2rem 1.5rem;
+  background: linear-gradient(180deg, rgba(248, 250, 252, 0.98) 0%, rgba(255, 255, 255, 1) 100%);
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   text-decoration: none;
-  text-align: center;
-  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-
-  @media (min-width: 600px) {
-    padding: 4rem 2rem;
-  }
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  transition: all 0.3s ease;
 
   @media (min-width: 1200px) {
-    margin: -4vh -4vw 2.5rem;
+    margin: -4vh -4vw 2rem;
   }
 
   &:after {
@@ -77,57 +75,16 @@
   }
 
   &:hover {
-    background:
-      radial-gradient(ellipse at 20% 30%, rgba(255, 107, 107, 0.12) 0%, transparent 50%),
-      radial-gradient(ellipse at 80% 70%, rgba(78, 205, 196, 0.12) 0%, transparent 50%),
-      linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 100%) !important;
+    background: rgba(255, 255, 255, 1) !important;
 
-    .hero-title {
-      transform: scale(1.02);
+    .gradient-text,
+    .gradient-text-alt {
+      transform: scale(1.03);
     }
   }
-}
 
-.note-hero-banner .note-hero-content {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.note-hero-banner .hero-badge {
-  display: inline-block;
-  padding: 0.4em 1em;
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.12), rgba(78, 205, 196, 0.12));
-  border: 1px solid rgba(255, 107, 107, 0.25);
-  border-radius: 50px;
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #FF6B6B;
-  margin-bottom: 1rem;
-}
-
-.note-hero-banner .hero-title {
-  font-size: clamp(2rem, 6vw, 3.5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  margin: 0 0 0.8rem;
-  letter-spacing: -0.03em;
-  transition: transform 0.3s ease;
-
-  span {
-    display: inline-block;
-    margin: 0 0.1em;
-  }
-}
-
-.note-hero-banner .hero-desc {
-  font-size: 1rem;
-  color: hsl(0, 0%, 40%);
-  margin: 0;
-  font-weight: 400;
-
-  @media (min-width: 600px) {
-    font-size: 1.1rem;
+  .gradient-text,
+  .gradient-text-alt {
+    transition: transform 0.3s ease;
   }
 }
