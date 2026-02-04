@@ -1,42 +1,85 @@
 <style>
-  .links line {
-    stroke: #ccc;
-    opacity: 0.5;
-  }
-
-  .nodes circle {
-    cursor: pointer;
-    fill: #8b88e6;
-    transition: all 0.15s ease-out;
-  }
-
-  .text text {
-    cursor: pointer;
-    fill: #333;
-    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
-  }
-
-  .nodes [active],
-  .text [active] {
-    cursor: pointer;
-    fill: black;
-  }
-
-  .inactive {
-    opacity: 0.1;
-    transition: all 0.15s ease-out;
-  }
-
   #graph-wrapper {
-    background: #fcfcfc;
-    border-radius: 4px;
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.9), rgba(241, 245, 249, 0.9));
+    border-radius: 16px;
     height: auto;
+    position: relative;
+    overflow: hidden;
   }
-  
+
+  #graph-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 30%, rgba(255, 111, 97, 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 80% 70%, rgba(78, 205, 196, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
   #graph-wrapper > svg {
     max-width: 100%;
     display: block;
   }
+
+  .links line {
+    stroke: url(#link-gradient);
+    opacity: 0.4;
+    transition: all 0.3s ease;
+  }
+
+  .links line:hover {
+    opacity: 0.8;
+  }
+
+  .nodes circle {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+  }
+
+  .nodes circle:hover {
+    filter: drop-shadow(0 4px 12px rgba(255, 111, 97, 0.4));
+    transform: scale(1.2);
+  }
+
+  .nodes circle[active] {
+    filter: drop-shadow(0 0 12px rgba(255, 111, 97, 0.6));
+  }
+
+  .text text {
+    cursor: pointer;
+    fill: #374151;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 500;
+    text-shadow:
+      -1px -1px 0 rgba(255,255,255,0.8),
+      1px -1px 0 rgba(255,255,255,0.8),
+      -1px 1px 0 rgba(255,255,255,0.8),
+      1px 1px 0 rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+  }
+
+  .text text:hover {
+    fill: #FF6F61;
+  }
+
+  .text text[active] {
+    fill: #FF6F61;
+    font-weight: 700;
+  }
+
+  .inactive {
+    opacity: 0.15;
+    transition: all 0.3s ease;
+  }
+
+  /* Node colors by category */
+  .node-investing { fill: #10B981; }
+  .node-theory { fill: #3B82F6; }
+  .node-dev { fill: #8B5CF6; }
+  .node-ai { fill: #F59E0B; }
+  .node-default { fill: url(#node-gradient); }
 </style>
 
 <div id="graph-wrapper">
@@ -52,10 +95,10 @@
       document.body.appendChild(oScript);
       oScript.onload = () => {
         const MINIMAL_NODE_SIZE = 8;
-        const MAX_NODE_SIZE = 12;
+        const MAX_NODE_SIZE = 14;
         const ACTIVE_RADIUS_FACTOR = 1.5;
-        const STROKE = 1;
-        const FONT_SIZE = 16;
+        const STROKE = 1.5;
+        const FONT_SIZE = 14;
         const TICKS = 200;
         const FONT_BASELINE = 40;
         const MAX_LABEL_LENGTH = 50;
@@ -65,6 +108,15 @@
         let linksData = graphData.edges;
 
         const nodeSize = {};
+
+        // Category color mapping
+        const getCategoryColor = (path) => {
+          if (path.includes('/investing/')) return '#10B981';
+          if (path.includes('/theory/')) return '#3B82F6';
+          if (path.includes('/dev/')) return '#8B5CF6';
+          if (path.includes('/ai/')) return '#F59E0B';
+          return null; // Will use gradient
+        };
 
         const updateNodeSize = () => {
           nodesData.forEach((el) => {
@@ -112,7 +164,7 @@
 
           link.attr("stroke-width", (link_d) => {
             if (link_d.source.id === d.id || link_d.target.id === d.id) {
-              return STROKE * 4;
+              return STROKE * 3;
             }
             return STROKE;
           });
@@ -188,20 +240,39 @@
         const height = Number(svg.attr("height"));
         let zoomLevel = 1;
 
+        // Add gradients
+        const defs = svg.append("defs");
+
+        // Node gradient
+        const nodeGradient = defs.append("linearGradient")
+          .attr("id", "node-gradient")
+          .attr("x1", "0%").attr("y1", "0%")
+          .attr("x2", "100%").attr("y2", "100%");
+        nodeGradient.append("stop").attr("offset", "0%").attr("stop-color", "#FF6F61");
+        nodeGradient.append("stop").attr("offset", "100%").attr("stop-color", "#4ECDC4");
+
+        // Link gradient
+        const linkGradient = defs.append("linearGradient")
+          .attr("id", "link-gradient")
+          .attr("x1", "0%").attr("y1", "0%")
+          .attr("x2", "100%").attr("y2", "100%");
+        linkGradient.append("stop").attr("offset", "0%").attr("stop-color", "#FF6F61").attr("stop-opacity", "0.6");
+        linkGradient.append("stop").attr("offset", "100%").attr("stop-color", "#4ECDC4").attr("stop-opacity", "0.6");
+
         const simulation = d3
           .forceSimulation(nodesData)
           .force("forceX", d3.forceX().x(width / 2))
           .force("forceY", d3.forceY().y(height / 2))
-          .force("charge", d3.forceManyBody())
+          .force("charge", d3.forceManyBody().strength(-100))
           .force(
             "link",
             d3
               .forceLink(linksData)
               .id((d) => d.id)
-              .distance(70)
+              .distance(100)
           )
           .force("center", d3.forceCenter(width / 2, height / 2))
-          .force("collision", d3.forceCollide().radius(80))
+          .force("collision", d3.forceCollide().radius(60))
           .stop();
 
         const g = svg.append("g");
@@ -254,6 +325,7 @@
             .attr("r", (d) => {
               return nodeSize[d.id];
             })
+            .attr("fill", (d) => getCategoryColor(d.path) || "url(#node-gradient)")
             .on("click", onClick)
             .on("mouseover", onMouseover)
             .on("mouseout", onMouseout)
