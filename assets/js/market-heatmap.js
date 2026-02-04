@@ -1,185 +1,81 @@
-(() => {
-  const DEFAULT_DATE = null; // if null, auto-detect from page title or last_modified_at
+/**
+ * Market Heatmap Auto-Initializer
+ * 페이지의 모든 .market-heatmap 요소를 자동으로 Plotly 히트맵으로 렌더링
+ *
+ * Usage in markdown:
+ * <div class="market-heatmap" data-country="us" data-index="spx" data-as-of="2026-01-30"></div>
+ */
 
-  function findClosestMarketDate() {
-    // Try: meta[article:modified_time] -> YYYY-MM-DD
-    const meta = document.querySelector('meta[property="article:modified_time"]')?.getAttribute('content');
-    if (meta) return meta.slice(0, 10);
-    // Try: title begins with YYYY-MM-DD
-    const h1 = document.querySelector('main h1');
-    const t = (h1?.textContent || document.title || '').trim();
-    const m = t.match(/(\d{4}-\d{2}-\d{2})/);
-    return m ? m[1] : null;
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  var heatmaps = document.querySelectorAll('.market-heatmap');
 
-  async function fetchJson(url) {
-    const res = await fetch(url, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
-    return res.json();
-  }
+  heatmaps.forEach(function(el, idx) {
+    var country = el.dataset.country || 'us';
+    var index = el.dataset.index || 'spx';
+    var date = el.dataset.asOf || new Date().toISOString().split('T')[0];
 
-  function colorForPct(pct) {
-    // pct in percent, e.g. -2.31
-    // Smooth red<->gray<->green
-    const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
-    const x = clamp(pct, -5, 5) / 5; // -1..1
-    if (x === 0) return '#9aa4b2';
-    // negative: red, positive: green
-    const lerp = (a, b, t) => Math.round(a + (b - a) * t);
-    if (x < 0) {
-      const t = Math.abs(x);
-      return `rgb(${lerp(154, 220, t)},${lerp(44, 90, t)},${lerp(52, 110, t)})`;
-    }
-    {
-      const t = x;
-      return `rgb(${lerp(46, 80, t)},${lerp(160, 220, t)},${lerp(67, 120, t)})`;
-    }
-  }
+    var containerId = 'heatmap-' + country + '-' + index + '-' + idx;
+    el.id = containerId;
+    el.style.minHeight = '400px';
 
-  function formatPct(p) {
-    const sign = p > 0 ? '+' : '';
-    return `${sign}${p.toFixed(2)}%`;
-  }
+    var dataFile = '/assets/data/heatmaps/' + date + '/' + country + '-' + index + '.json';
 
-  function renderTreemap(el, payload) {
-    // payload schema:
-    // { label, items: [{ name, ticker, sector, pct, mcap_usd_b }], source, asOf }
-
-    // Create a dedicated chart container so extra DOM (notes) won't change layout.
-    el.innerHTML = '';
-    const chartEl = document.createElement('div');
-    chartEl.className = 'market-heatmap__chart';
-    el.appendChild(chartEl);
-
-    const chart = echarts.init(chartEl, null, { renderer: 'canvas' });
-
-    const data = payload.items.map(it => ({
-      name: it.name || it.ticker,
-      value: it.mcap_usd_b || 1,
-      ticker: it.ticker,
-      sector: it.sector,
-      pct: it.pct,
-      itemStyle: { color: colorForPct(it.pct ?? 0) },
-    }));
-
-    chart.setOption({
-      title: {
-        text: payload.label || 'Market heatmap',
-        subtext: payload.asOf ? `as of ${payload.asOf}` : undefined,
-        left: 'center'
-      },
-      tooltip: {
-        formatter: (info) => {
-          const d = info.data;
-          const pct = (d.pct == null) ? '—' : formatPct(d.pct);
-          const mcap = (d.value == null) ? '—' : `${d.value.toLocaleString()}B`;
-          const sec = d.sector ? `<br/>${d.sector}` : '';
-          return `<b>${d.name}</b> (${d.ticker || ''})<br/>${pct}<br/>MCap: ${mcap}${sec}`;
-        }
-      },
-      series: [
-        {
+    fetch(dataFile)
+      .then(function(res) {
+        if (!res.ok) throw new Error('데이터 없음');
+        return res.json();
+      })
+      .then(function(data) {
+        var trace = {
           type: 'treemap',
-          data,
-          roam: false,
-          nodeClick: false,
-          breadcrumb: { show: false },
-          label: {
-            show: true,
-            formatter: (p) => {
-              const pct = p.data.pct;
-              const tag = (pct == null) ? '' : `\n${formatPct(pct)}`;
-              return `${p.data.ticker || p.name}${tag}`;
-            },
-            overflow: 'truncate'
-          },
-          upperLabel: { show: false },
-          itemStyle: {
-            borderColor: 'rgba(255,255,255,0.22)',
-            borderWidth: 1,
-            gapWidth: 1
-          },
-          emphasis: { itemStyle: { borderWidth: 2, borderColor: '#ffffff' } }
-        }
-      ]
-    });
-
-    const ro = new ResizeObserver(() => chart.resize());
-    ro.observe(el);
-
-    // One extra resize after paint to avoid rare "too-wide" initial layout.
-    requestAnimationFrame(() => {
-      try { chart.resize(); } catch (e) {}
-    });
-  }
-
-  async function init() {
-    const els = Array.from(document.querySelectorAll('.market-heatmap'));
-    if (!els.length) return;
-
-    // ECharts is loaded via defer; wait until it's available
-    const waitEcharts = () => new Promise((resolve) => {
-      const t = setInterval(() => {
-        if (window.echarts) {
-          clearInterval(t);
-          resolve();
-        }
-      }, 50);
-    });
-    await waitEcharts();
-
-    const date = DEFAULT_DATE || findClosestMarketDate();
-
-    for (const el of els) {
-      const country = el.dataset.country;
-      const index = el.dataset.index;
-      const mode = el.dataset.mode; // e.g., 'sectors'
-
-      const file = el.dataset.file; // e.g., 'daily'
-      const key = file ? file : (mode ? `${country}-${mode}` : `${country}-${index}`);
-      const asOf = el.dataset.asOf || date;
-
-      if (!asOf || !key) {
-        el.innerHTML = '<div class="heatmap-error">heatmap: missing data-date or data-index</div>';
-        continue;
-      }
-
-      const url = `${document.querySelector('link[rel=canonical]')?.getAttribute('href')?.replace(/\/$/, '') || ''}`;
-      // Use relative path (works on GitHub Pages)
-      const jsonPath = `${document.documentElement.dataset.baseurl || ''}/assets/data/heatmaps/${asOf}/${key}.json`;
-
-      try {
-        const raw = await fetchJson(jsonPath);
-
-        // daily.json schema -> convert to treemap payload
-        const payload = (key === 'daily')
-          ? {
-              label: `Daily heatmap · ${asOf}`,
-              asOf,
-              source: 'Watchlist (30) daily % change',
-              items: (raw.items || []).map(it => ({
-                ticker: it.ticker,
-                name: it.name,
-                sector: it.sector,
-                pct: it.pct,
-                // uniform sizing (no market cap in daily.json)
-                mcap_usd_b: 1
-              }))
+          labels: data.labels,
+          parents: data.parents,
+          values: data.values,
+          marker: {
+            colors: data.changes,
+            colorscale: [
+              [0, '#dc2626'],
+              [0.35, '#f87171'],
+              [0.5, '#f5f5f5'],
+              [0.65, '#4ade80'],
+              [1, '#16a34a']
+            ],
+            cmid: 0,
+            cmin: -5,
+            cmax: 5,
+            showscale: true,
+            colorbar: {
+              title: { text: '등락률 (%)', font: { size: 12 } },
+              ticksuffix: '%',
+              thickness: 15
             }
-          : raw;
+          },
+          texttemplate: '<b>%{label}</b><br>%{color:+.1f}%',
+          hovertemplate: '<b>%{label}</b><br>등락률: %{color:+.2f}%<extra></extra>',
+          textfont: { size: 10 }
+        };
 
-        renderTreemap(el, payload);
-        if (payload.source) {
-          const note = document.createElement('div');
-          note.className = 'heatmap-note';
-          note.textContent = payload.source;
-          el.appendChild(note);
-        }
-      } catch (e) {
-        el.innerHTML = `<div class="heatmap-error">heatmap data not found: ${jsonPath}</div>`;
-      }
-    }
-  }
+        var layout = {
+          title: {
+            text: data.title || (country.toUpperCase() + ' ' + index.toUpperCase() + ' (' + date + ')'),
+            font: { size: 14 }
+          },
+          margin: { t: 40, l: 5, r: 5, b: 5 },
+          paper_bgcolor: 'transparent'
+        };
 
-  document.addEventListener('DOMContentLoaded', init);
-})();
+        var config = {
+          responsive: true,
+          displayModeBar: false
+        };
+
+        Plotly.newPlot(containerId, [trace], layout, config);
+      })
+      .catch(function(err) {
+        el.innerHTML = '<div style="text-align:center; padding:2rem; color:#888; background:#f9f9f9; border-radius:8px;">' +
+          '<p>📊 히트맵 데이터 준비 중</p>' +
+          '<small>' + date + ' / ' + country + '-' + index + '</small>' +
+          '</div>';
+      });
+  });
+});

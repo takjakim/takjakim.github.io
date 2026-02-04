@@ -1,3 +1,54 @@
-<!-- ECharts (treemap) + market heatmap renderer -->
-<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js" defer></script>
-<script src="{{ site.baseurl }}/assets/js/market-heatmap.js" defer></script>
+<!-- Market Heatmap Component -->
+<!-- Usage: {% include market-heatmap.html country="us" index="spx" date="2026-01-30" %} -->
+
+{% assign heatmap_id = include.country | append: "-" | append: include.index | append: "-" | append: include.date | replace: "-", "" %}
+
+<div id="heatmap-{{ heatmap_id }}" class="market-heatmap-container" style="width:100%; min-height:400px;"></div>
+
+<script>
+(function() {
+  const containerId = 'heatmap-{{ heatmap_id }}';
+  const dataFile = '/assets/data/heatmaps/{{ include.date }}/{{ include.country }}-{{ include.index }}.json';
+
+  fetch(dataFile)
+    .then(res => res.json())
+    .then(data => {
+      const trace = {
+        type: 'treemap',
+        labels: data.labels,
+        parents: data.parents,
+        values: data.values,
+        marker: {
+          colors: data.changes,
+          colorscale: [
+            [0, '#dc2626'],
+            [0.35, '#f87171'],
+            [0.5, '#e5e5e5'],
+            [0.65, '#4ade80'],
+            [1, '#16a34a']
+          ],
+          cmid: 0,
+          cmin: -5,
+          cmax: 5,
+          showscale: true,
+          colorbar: { title: '등락률 (%)' }
+        },
+        texttemplate: '<b>%{label}</b><br>%{color:+.1f}%',
+        hovertemplate: '<b>%{label}</b><br>등락률: %{color:+.2f}%<extra></extra>',
+        textfont: { size: 11 }
+      };
+
+      const layout = {
+        title: data.title || '{{ include.country | upcase }} {{ include.index | upcase }}',
+        margin: { t: 40, l: 10, r: 10, b: 10 },
+        paper_bgcolor: 'transparent'
+      };
+
+      Plotly.newPlot(containerId, [trace], layout, { responsive: true });
+    })
+    .catch(err => {
+      document.getElementById(containerId).innerHTML = 
+        '<p style="color:#888; text-align:center; padding:2rem;">히트맵 데이터 로딩 실패</p>';
+    });
+})();
+</script>
