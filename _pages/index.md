@@ -53,7 +53,7 @@ permalink: /
     <div class="glass-grid" id="notes-grid">
       {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
       {% for note in recent_notes %}
-        {% assign note_category = note.path | split: "/" | slice: 1 %}
+        {% assign note_category = note.path | split: "/" | slice: 1 | first %}
         <article class="glass-card {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">

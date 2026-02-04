@@ -768,6 +768,22 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 /* ===== Recent Section ===== */
 .recent-section {
   margin-top: 2rem;
+  padding: 3rem 2rem;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 30%, rgba(59, 130, 246, 0.06) 0%, transparent 40%),
+    linear-gradient(180deg, rgba(248, 250, 252, 0.8) 0%, rgba(241, 245, 249, 0.9) 100%);
+  border-radius: 32px;
+
+  @media (max-width: 600px) {
+    padding: 2rem 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 24px;
+  }
 }
 
 .section-header {
@@ -838,18 +854,55 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
 .glass-card {
   position: relative;
-  background: white;
-  border-radius: 16px;
-  border: 1px solid $color-border;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.03);
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
-    border-color: transparent;
+  // 상단 빛 반사 효과
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    pointer-events: none;
+    border-radius: 20px 20px 0 0;
   }
 
+  &:hover {
+    transform: translateY(-6px) scale(1.02);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.85) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    );
+    box-shadow:
+      0 20px 50px rgba(0, 0, 0, 0.12),
+      0 8px 20px rgba(0, 0, 0, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+
+  // 카테고리별 상단 그라데이션 라인
   &::before {
     content: '';
     position: absolute;
@@ -859,6 +912,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     height: 3px;
     opacity: 0;
     transition: opacity 0.3s;
+    z-index: 2;
   }
 
   &:hover::before {
@@ -866,10 +920,27 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 }
 
-.glass-investing::before { background: linear-gradient(90deg, #10B981, #34D399); }
-.glass-theory::before { background: linear-gradient(90deg, #3B82F6, #60A5FA); }
-.glass-dev::before { background: linear-gradient(90deg, #8B5CF6, #A78BFA); }
-.glass-ai::before { background: linear-gradient(90deg, #F59E0B, #FBBF24); }
+// 카테고리별 상단 라인 + 미세한 배경 틴트
+.glass-investing {
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(16,185,129,0.05));
+  &::before { background: linear-gradient(90deg, #10B981, #34D399); }
+  &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(16,185,129,0.1)); }
+}
+.glass-theory {
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(59,130,246,0.05));
+  &::before { background: linear-gradient(90deg, #3B82F6, #60A5FA); }
+  &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(59,130,246,0.1)); }
+}
+.glass-dev {
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(139,92,246,0.05));
+  &::before { background: linear-gradient(90deg, #8B5CF6, #A78BFA); }
+  &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(139,92,246,0.1)); }
+}
+.glass-ai {
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(245,158,11,0.05));
+  &::before { background: linear-gradient(90deg, #F59E0B, #FBBF24); }
+  &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(245,158,11,0.1)); }
+}
 
 .glass-link {
   display: block;
@@ -959,21 +1030,32 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 }
 
 .load-more-btn {
-  background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 0.8rem 2rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(255,255,255,0.5));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  padding: 1rem 2.5rem;
   border-radius: 50px;
   font-size: 0.9rem;
   font-weight: 600;
   color: $color-primary;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
 
   &:hover {
-    background: linear-gradient(135deg, rgba(255,255,255,1), rgba(255,255,255,0.9));
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    transform: translateY(-2px);
+    background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(255,255,255,0.8));
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
+    transform: translateY(-3px) scale(1.02);
+    border-color: rgba(255, 255, 255, 0.9);
+  }
+
+  &:active {
+    transform: translateY(-1px) scale(0.98);
   }
 
   .load-more-count {
