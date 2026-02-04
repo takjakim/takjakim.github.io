@@ -5,30 +5,6 @@ id: home
 permalink: /
 ---
 
-<!-- Collapsible Top Banner -->
-<div class="top-banner" id="top-banner">
-  <button class="banner-toggle" id="banner-toggle" aria-label="Toggle banner">
-    <span class="banner-icon">◆</span>
-    <span class="banner-label">Digital Garden</span>
-  </button>
-  <div class="banner-content" id="banner-content">
-    <div class="banner-inner">
-      <h2 class="banner-title">
-        <span class="gradient-text">Digital</span>
-        <span class="gradient-text-alt">Garden</span>
-      </h2>
-      <p class="banner-desc">투자 · 개발 · AI · Theory에 대한 생각과 기록을 연결하는 공간</p>
-      <div class="banner-stats">
-        <span class="banner-stat">{% assign note_count = site.notes | size %}{{ note_count }} Notes</span>
-        <span class="banner-divider">·</span>
-        <span class="banner-stat">4 Categories</span>
-        <span class="banner-divider">·</span>
-        <span class="banner-stat">∞ Connections</span>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="garden-container">
   <!-- Hero Section with Graph Background -->
   <header class="hero-2026">
@@ -114,17 +90,6 @@ permalink: /
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Banner toggle
-  const banner = document.getElementById('top-banner');
-  const bannerToggle = document.getElementById('banner-toggle');
-
-  if (bannerToggle && banner) {
-    bannerToggle.addEventListener('click', function() {
-      banner.classList.toggle('open');
-    });
-  }
-
-  // Filter pills and cards
   const pills = document.querySelectorAll('.pill');
   const cards = document.querySelectorAll('.glass-card');
   const loadMoreBtn = document.getElementById('load-more');

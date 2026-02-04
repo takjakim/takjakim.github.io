@@ -4,9 +4,18 @@ layout: default
 
 {% assign current_category = page.path | split: "/" | slice: 1 | first %}
 
+<!-- Top Banner -->
+<a href="{{ site.baseurl }}/" class="note-top-banner">
+  <span class="banner-icon">◆</span>
+  <span class="banner-text">
+    <span class="gradient-text">Digital</span>
+    <span class="gradient-text-alt">Garden</span>
+  </span>
+  <span class="banner-desc-inline">투자 · 개발 · AI · Theory</span>
+</a>
+
 <article class="note-page">
   <header class="note-header">
-    <a href="{{ site.baseurl }}/" class="back-home">&larr; Home</a>
     <h1 class="note-title">{{ page.title }}</h1>
     <time class="note-date" datetime="{{ page.last_modified_at | date_to_xmlschema }}">
       {% if page.type != 'pages' %}{{ page.last_modified_at | date: "%Y.%m.%d" }}{% endif %}
