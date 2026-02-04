@@ -51,7 +51,7 @@ permalink: /
     </div>
 
     <div class="glass-grid">
-      {% assign recent_notes = site.notes | sort: "last_modified_at" | reverse %}
+      {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
       {% for note in recent_notes limit: 9 %}
         {% assign note_category = note.path | split: "/" | slice: 1 %}
         <article class="glass-card {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}">
