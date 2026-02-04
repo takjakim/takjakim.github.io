@@ -6,7 +6,13 @@
  * <div class="market-heatmap" data-country="us" data-index="spx" data-as-of="2026-01-30"></div>
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+function initHeatmaps() {
+  // Plotly가 로드될 때까지 대기
+  if (typeof Plotly === 'undefined') {
+    setTimeout(initHeatmaps, 100);
+    return;
+  }
+
   var heatmaps = document.querySelectorAll('.market-heatmap');
 
   heatmaps.forEach(function(el, idx) {
@@ -78,4 +84,11 @@ document.addEventListener('DOMContentLoaded', function() {
           '</div>';
       });
   });
-});
+}
+
+// DOM 로드 후 초기화
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initHeatmaps);
+} else {
+  initHeatmaps();
+}
