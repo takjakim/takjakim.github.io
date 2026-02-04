@@ -50,11 +50,11 @@ permalink: /
       </div>
     </div>
 
-    <div class="glass-grid">
+    <div class="glass-grid" id="notes-grid">
       {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
-      {% for note in recent_notes limit: 9 %}
+      {% for note in recent_notes %}
         {% assign note_category = note.path | split: "/" | slice: 1 %}
-        <article class="glass-card {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}">
+        <article class="glass-card {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
@@ -77,6 +77,14 @@ permalink: /
         </article>
       {% endfor %}
     </div>
+
+    {% if recent_notes.size > 9 %}
+    <div class="load-more-container">
+      <button class="load-more-btn" id="load-more">
+        더보기 <span class="load-more-count">(+{{ recent_notes.size | minus: 9 }})</span>
+      </button>
+    </div>
+    {% endif %}
   </section>
 </div>
 
@@ -84,34 +92,61 @@ permalink: /
 document.addEventListener('DOMContentLoaded', function() {
   const pills = document.querySelectorAll('.pill');
   const cards = document.querySelectorAll('.glass-card');
+  const loadMoreBtn = document.getElementById('load-more');
+  const ITEMS_PER_PAGE = 9;
+  let visibleCount = ITEMS_PER_PAGE;
+  let currentFilter = 'all';
+
+  function updateVisibility() {
+    let count = 0;
+    cards.forEach(card => {
+      const matchesFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
+      if (matchesFilter) {
+        count++;
+        if (count <= visibleCount) {
+          card.style.display = '';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        } else {
+          card.style.display = 'none';
+        }
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Update load more button
+    if (loadMoreBtn) {
+      const totalFiltered = Array.from(cards).filter(c =>
+        currentFilter === 'all' || c.dataset.category === currentFilter
+      ).length;
+      const remaining = totalFiltered - visibleCount;
+      if (remaining > 0) {
+        loadMoreBtn.parentElement.style.display = '';
+        loadMoreBtn.querySelector('.load-more-count').textContent = `(+${remaining})`;
+      } else {
+        loadMoreBtn.parentElement.style.display = 'none';
+      }
+    }
+  }
 
   pills.forEach(pill => {
     pill.addEventListener('click', function() {
-      const filter = this.dataset.filter;
-
+      currentFilter = this.dataset.filter;
+      visibleCount = ITEMS_PER_PAGE;
       pills.forEach(p => p.classList.remove('active'));
       this.classList.add('active');
-
-      cards.forEach(card => {
-        if (filter === 'all' || card.dataset.category === filter) {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(20px)';
-          setTimeout(() => {
-            card.style.display = '';
-            requestAnimationFrame(() => {
-              card.style.opacity = '1';
-              card.style.transform = 'translateY(0)';
-            });
-          }, 100);
-        } else {
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(20px)';
-          setTimeout(() => {
-            card.style.display = 'none';
-          }, 300);
-        }
-      });
+      updateVisibility();
     });
   });
+
+  if (loadMoreBtn) {
+    loadMoreBtn.addEventListener('click', function() {
+      visibleCount += ITEMS_PER_PAGE;
+      updateVisibility();
+    });
+  }
+
+  updateVisibility();
 });
 </script>

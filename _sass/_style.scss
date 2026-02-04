@@ -951,6 +951,38 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 }
 
+/* ===== Load More Button ===== */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.load-more-btn {
+  background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: $color-primary;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(255,255,255,1), rgba(255,255,255,0.9));
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+  }
+
+  .load-more-count {
+    color: $color-subtext;
+    font-weight: 400;
+    margin-left: 0.3em;
+  }
+}
+
 /* ===== Site Footer 2026 ===== */
 .site-footer {
   margin-top: 4rem;
