@@ -951,6 +951,71 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 }
 
+/* ===== Site Footer 2026 ===== */
+.site-footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.footer-logo {
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, $color-accent-coral, $color-accent-teal);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-tagline {
+  font-size: 0.8rem;
+  color: $color-subtext;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-link {
+  font-size: 0.85rem;
+  color: $color-subtext;
+  border: none;
+  transition: color 0.2s;
+
+  &:after { content: '' !important; }
+  &:hover {
+    color: $color-primary;
+    background: transparent !important;
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+
 /* ===== Navigation 2026 ===== */
 .nav-2026 {
   display: flex;
