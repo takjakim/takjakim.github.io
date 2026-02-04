@@ -135,7 +135,8 @@
       const index = el.dataset.index;
       const mode = el.dataset.mode; // e.g., 'sectors'
 
-      const key = mode ? `${country}-${mode}` : `${country}-${index}`;
+      const file = el.dataset.file; // e.g., 'daily'
+      const key = file ? file : (mode ? `${country}-${mode}` : `${country}-${index}`);
       const asOf = el.dataset.asOf || date;
 
       if (!asOf || !key) {
@@ -148,7 +149,25 @@
       const jsonPath = `${document.documentElement.dataset.baseurl || ''}/assets/data/heatmaps/${asOf}/${key}.json`;
 
       try {
-        const payload = await fetchJson(jsonPath);
+        const raw = await fetchJson(jsonPath);
+
+        // daily.json schema -> convert to treemap payload
+        const payload = (key === 'daily')
+          ? {
+              label: `Daily heatmap · ${asOf}`,
+              asOf,
+              source: 'Watchlist (30) daily % change',
+              items: (raw.items || []).map(it => ({
+                ticker: it.ticker,
+                name: it.name,
+                sector: it.sector,
+                pct: it.pct,
+                // uniform sizing (no market cap in daily.json)
+                mcap_usd_b: 1
+              }))
+            }
+          : raw;
+
         renderTreemap(el, payload);
         if (payload.source) {
           const note = document.createElement('div');
