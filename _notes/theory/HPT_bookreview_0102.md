@@ -1,5 +1,6 @@
 ---
 date: 2024-10-19 23:48
+last_modified_at: 2024-10-19
 author: HPT_bookreview_0102
 tags:
   - 행동주의심리학
@@ -7,14 +8,6 @@ tags:
   - 성인학습자
 ---
 
-<div style="text-align: right">한양대학교 일반대학원 교육공학과<br>이름 : 김재현 <br>
-학번 : 2020214531</div>
-
----
-
-김재현_W43_Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance technology: Principles, practices, and potential. John Wiley & Sons.
-
----
 ### 1. Review book
 
 APA: Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance technology: Principles, practices, and potential. John Wiley & Sons.

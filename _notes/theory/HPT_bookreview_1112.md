@@ -1,5 +1,6 @@
 ---
 date: 2024-11-24 14:30
+last_modified_at: 2024-11-24
 author: HPT_bookreview_1112
 tags:
   - 성과모델링
@@ -7,14 +8,6 @@ tags:
   - 변화관리전략
 ---
 
-<div style="text-align: right">한양대학교 일반대학원 교육공학과<br>이름 : 김재현 <br>
-학번 : 2020214531</div>
-
----
-
-김재현_W50_ Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance technology: Principles, practices, and potential. John Wiley & Sons.
-
----
 ### 1. Review book
 
 APA: Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance technology: Principles, practices, and potential. John Wiley & Sons.

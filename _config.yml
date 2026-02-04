@@ -1,4 +1,4 @@
-title:               My digital garden
+title:               Digital Garden
 include:             ['_pages']
 exclude:             ['_includes/notes_graph.json']
 # You may need to change the base URL depending on your deploy configuration.
@@ -52,3 +52,22 @@ kramdown:
   hard_wrap: false
   syntax_highlighter_opts:
     disable: true
+
+# Category configuration for blog
+categories:
+  investing:
+    name: "지수 투자"
+    description: "매일 지수 투자 로깅"
+    color: "#10B981"
+  market-analysis:
+    name: "해외 지수 분석"
+    description: "매일 해외 지수 분석"
+    color: "#3B82F6"
+  dev:
+    name: "개발"
+    description: "개발 관련 포스팅"
+    color: "#8B5CF6"
+  ai:
+    name: "AI 활용"
+    description: "AI 활용 관련 포스팅"
+    color: "#F59E0B"

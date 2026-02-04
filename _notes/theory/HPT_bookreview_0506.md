@@ -1,5 +1,6 @@
 ---
 date: 2024-11-10 18:09
+last_modified_at: 2024-11-10
 author: HPT_bookreview_0506
 tags:
   - 메가플래닝
@@ -7,14 +8,6 @@ tags:
   - 지속가능경영
 ---
 
-<div style="text-align: right">한양대학교 일반대학원 교육공학과<br>이름 : 김재현 <br>
-학번 : 2020214531</div>
-
----
-
-김재현_W46_ Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance technology: Principles, practices, and potential. John Wiley & Sons.
-
----
 ### 1. Review book
 
 APA: Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance technology: Principles, practices, and potential. John Wiley & Sons.
