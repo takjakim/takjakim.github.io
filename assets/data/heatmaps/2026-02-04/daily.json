@@ -1,0 +1,28 @@
+{
+  "date": "2026-02-04",
+  "indices": {
+    "NDX": {
+      "close": null,
+      "pct": null
+    },
+    "SPX": {
+      "close": null,
+      "pct": null
+    },
+    "HSI": {
+      "close": null,
+      "pct": null
+    },
+    "CSI300": {
+      "close": null,
+      "pct": null
+    }
+  },
+  "items": [],
+  "top_gainers": [],
+  "top_losers": [],
+  "news": {
+    "us": [],
+    "asia": []
+  }
+}
