@@ -106,6 +106,11 @@
 
     const ro = new ResizeObserver(() => chart.resize());
     ro.observe(el);
+
+    // One extra resize after paint to avoid rare "too-wide" initial layout.
+    requestAnimationFrame(() => {
+      try { chart.resize(); } catch (e) {}
+    });
   }
 
   async function init() {
