@@ -43,8 +43,15 @@
 
   function renderTreemap(el, payload) {
     // payload schema:
-    // { label, items: [{ name, ticker, sector, pct, mcap_usd_b, children? }], source, asOf }
-    const chart = echarts.init(el, null, { renderer: 'canvas' });
+    // { label, items: [{ name, ticker, sector, pct, mcap_usd_b }], source, asOf }
+
+    // Create a dedicated chart container so extra DOM (notes) won't change layout.
+    el.innerHTML = '';
+    const chartEl = document.createElement('div');
+    chartEl.className = 'market-heatmap__chart';
+    el.appendChild(chartEl);
+
+    const chart = echarts.init(chartEl, null, { renderer: 'canvas' });
 
     const data = payload.items.map(it => ({
       name: it.name || it.ticker,
