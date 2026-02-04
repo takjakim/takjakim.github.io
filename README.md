@@ -1,35 +1,63 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8cfa8785-8df8-4aad-ad35-8f1c790b8baf/deploy-status)](https://app.netlify.com/sites/digital-garden-jekyll-template/deploys)
+# Digital Garden
 
-# Digital garden Jekyll template
+> 투자 · 개발 · AI · Theory에 대한 생각과 기록을 연결하는 개인 지식 베이스
 
-Use this template repository to get started with your own digital garden.
+**Live Site**: [takjakim.kr](https://takjakim.kr)
 
-**I wrote a tutorial explaining how to set it up: [Setting up your own digital garden with Jekyll](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll)**
+## Features
 
-Preview the template here: https://digital-garden-jekyll-template.netlify.app/
+- **Graph View** - 노트 간 연결을 시각화하는 인터랙티브 그래프 (카테고리별 색상 구분)
+- **Bidirectional Links** - `[[노트명]]` 문법으로 노트 간 양방향 링크 자동 생성
+- **Backlinks** - 현재 노트를 참조하는 다른 노트 자동 표시
+- **Category System** - 투자, 개발, AI, Theory 4개 카테고리 분류
+- **Modern UI** - 2026 트렌드 글래스모피즘 디자인
+- **SEO Optimized** - sitemap.xml, robots.txt, JSON-LD 구조화 데이터
+- **Responsive** - 모바일/데스크톱 반응형 레이아웃
 
-- Based on Jekyll, a static website generator
-- Supports Roam-style double bracket link syntax to other notes
-- Creates backlinks to other notes automatically
-- Features link previews on hover
-- Includes graph visualization of the notes and their links
-- Features a simple and responsive design
-- Supports Markdown or HTML notes
+## Tech Stack
 
-<img width="1522" alt="Screen Shot 2020-05-19 at 23 05 46" src="https://user-images.githubusercontent.com/8457808/82400515-7d026d80-9a25-11ea-83f1-3b9cb8347e07.png">
+- **Jekyll** - 정적 사이트 생성기
+- **D3.js** - 그래프 시각화
+- **SCSS** - 스타일링
+- **GitHub Pages** - 호스팅
+- **GitHub Actions** - CI/CD
 
-## A note about GitHub Pages
-> [!NOTE]  
-> **Update (January 2023)**: it seems that GitHub Pages supports custom plugins now, thanks to GitHub Actions ([view relevant discussion](https://github.com/maximevaillancourt/digital-garden-jekyll-template/discussions/144)). 
+## Structure
 
-GitHub Pages only partially supports this template: to power the interactive notes graph, this template uses a custom Jekyll plugin to generate the graph data in [`notes_graph.json`](https://github.com/maximevaillancourt/digital-garden-jekyll-template/blob/7ac331a4113bac77c993856562acc2bfbde9f2f7/_plugins/bidirectional_links_generator.rb#L102), and [GitHub Pages doesn't support custom Jekyll plugins](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/about-github-pages-and-jekyll#plugins).
+```
+_notes/
+├── investing/     # 투자 관련 노트
+├── dev/           # 개발 관련 노트
+├── ai/            # AI 관련 노트
+└── theory/        # 이론/프레임워크 노트
 
-If you want to use the graph with GitHub Pages, you may try building your garden locally using Jekyll then pushing the result to GitHub Pages.
+_pages/            # 정적 페이지
+_includes/         # 컴포넌트 (그래프, 헤더, 푸터)
+_layouts/          # 레이아웃 템플릿
+_sass/             # SCSS 스타일
+_plugins/          # Jekyll 플러그인
+```
 
-Alternatively, you may deploy your garden to Netlify and it'll work out of the box. [I wrote a guide explaining how to set this up](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll).
+## Local Development
 
-If you don't care about the graph, you can simply remove it from this layout, [as explained here](https://github.com/maximevaillancourt/digital-garden-jekyll-template/discussions/132#discussioncomment-3625772).
+```bash
+# 의존성 설치
+bundle install
+
+# 로컬 서버 실행
+bundle exec jekyll serve
+
+# http://localhost:4000 에서 확인
+```
+
+## Deployment
+
+GitHub Actions를 통해 `main` 브랜치 푸시 시 자동 배포됩니다.
+
+## Credits
+
+Based on [Digital Garden Jekyll Template](https://github.com/maximevaillancourt/digital-garden-jekyll-template) by Maxime Vaillancourt.
 
 ## License
 
-Source code is available under the [MIT license](LICENSE.md).
+MIT License
