@@ -1,6 +1,77 @@
 {
-  "label": "HK · Hang Seng",
+  "label": "HK · Hang Seng (proxy)",
   "asOf": "2026-02-03",
-  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
-  "items": []
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV | HK constituent returns unavailable (rate limits); using index move as proxy for now",
+  "items": [
+    {
+      "ticker": "0700.HK",
+      "name": "Tencent",
+      "sector": "Tech",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9988.HK",
+      "name": "Alibaba",
+      "sector": "Tech",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "3690.HK",
+      "name": "Meituan",
+      "sector": "Tech",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0005.HK",
+      "name": "HSBC",
+      "sector": "Financials",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0939.HK",
+      "name": "CCB",
+      "sector": "Financials",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0388.HK",
+      "name": "HKEX",
+      "sector": "Financials",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1299.HK",
+      "name": "AIA",
+      "sector": "Financials",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2318.HK",
+      "name": "Ping An",
+      "sector": "Financials",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2628.HK",
+      "name": "China Life",
+      "sector": "Financials",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1398.HK",
+      "name": "ICBC",
+      "sector": "Financials",
+      "pct": 0.22,
+      "mcap_usd_b": 1.0
+    }
+  ]
 }
