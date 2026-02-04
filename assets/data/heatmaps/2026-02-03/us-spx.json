@@ -1,0 +1,12 @@
+{
+  "label": "US · S&P 500 (sample)",
+  "asOf": "2026-02-03",
+  "source": "Sample data (demo). Replace with daily-generated JSON.",
+  "items": [
+    {"ticker": "AAPL", "name": "Apple", "sector": "Information Technology", "pct": -1.20, "mcap_usd_b": 2900},
+    {"ticker": "MSFT", "name": "Microsoft", "sector": "Information Technology", "pct": -0.80, "mcap_usd_b": 3200},
+    {"ticker": "XOM", "name": "Exxon Mobil", "sector": "Energy", "pct": +0.40, "mcap_usd_b": 450},
+    {"ticker": "JPM", "name": "JPMorgan", "sector": "Financials", "pct": -0.10, "mcap_usd_b": 550},
+    {"ticker": "UNH", "name": "UnitedHealth", "sector": "Health Care", "pct": -0.30, "mcap_usd_b": 500}
+  ]
+}

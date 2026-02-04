@@ -1,0 +1,12 @@
+{
+  "label": "CN · CSI 300 (sample)",
+  "asOf": "2026-02-03",
+  "source": "Sample data (demo). Replace with daily-generated JSON.",
+  "items": [
+    {"ticker": "600519.SS", "name": "Kweichow Moutai", "sector": "Consumer Staples", "pct": +0.60, "mcap_usd_b": 280},
+    {"ticker": "601318.SS", "name": "Ping An", "sector": "Financials", "pct": +0.30, "mcap_usd_b": 140},
+    {"ticker": "300750.SZ", "name": "CATL", "sector": "Industrials", "pct": +1.10, "mcap_usd_b": 180},
+    {"ticker": "601888.SS", "name": "China Tourism", "sector": "Consumer Discretionary", "pct": +0.20, "mcap_usd_b": 40},
+    {"ticker": "000858.SZ", "name": "Wuliangye", "sector": "Consumer Staples", "pct": +0.50, "mcap_usd_b": 80}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "label": "HK · Hang Seng (sample)",
+  "asOf": "2026-02-03",
+  "source": "Sample data (demo). Replace with daily-generated JSON.",
+  "items": [
+    {"ticker": "0700.HK", "name": "Tencent", "sector": "Communication Services", "pct": +0.10, "mcap_usd_b": 400},
+    {"ticker": "9988.HK", "name": "Alibaba", "sector": "Consumer Discretionary", "pct": -0.20, "mcap_usd_b": 180},
+    {"ticker": "3690.HK", "name": "Meituan", "sector": "Consumer Discretionary", "pct": +0.30, "mcap_usd_b": 120},
+    {"ticker": "0939.HK", "name": "CCB", "sector": "Financials", "pct": +0.40, "mcap_usd_b": 160},
+    {"ticker": "0005.HK", "name": "HSBC", "sector": "Financials", "pct": +0.20, "mcap_usd_b": 160}
+  ]
+}

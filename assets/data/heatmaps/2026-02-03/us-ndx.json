@@ -1,0 +1,12 @@
+{
+  "label": "US · NASDAQ 100 (sample)",
+  "asOf": "2026-02-03",
+  "source": "Sample data (demo). Replace with daily-generated JSON.",
+  "items": [
+    {"ticker": "AAPL", "name": "Apple", "sector": "Technology", "pct": -1.20, "mcap_usd_b": 2900},
+    {"ticker": "MSFT", "name": "Microsoft", "sector": "Technology", "pct": -0.80, "mcap_usd_b": 3200},
+    {"ticker": "NVDA", "name": "NVIDIA", "sector": "Technology", "pct": -2.10, "mcap_usd_b": 2100},
+    {"ticker": "AMZN", "name": "Amazon", "sector": "Consumer Discretionary", "pct": -1.50, "mcap_usd_b": 1800},
+    {"ticker": "GOOGL", "name": "Alphabet", "sector": "Communication Services", "pct": -0.60, "mcap_usd_b": 1900}
+  ]
+}

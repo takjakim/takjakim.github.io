@@ -1,0 +1,12 @@
+{
+  "label": "HK · Hang Seng Tech (sample)",
+  "asOf": "2026-02-03",
+  "source": "Sample data (demo). Replace with daily-generated JSON.",
+  "items": [
+    {"ticker": "0700.HK", "name": "Tencent", "sector": "Tech", "pct": +0.10, "mcap_usd_b": 400},
+    {"ticker": "9988.HK", "name": "Alibaba", "sector": "Tech", "pct": -0.20, "mcap_usd_b": 180},
+    {"ticker": "1810.HK", "name": "Xiaomi", "sector": "Tech", "pct": +0.50, "mcap_usd_b": 70},
+    {"ticker": "9618.HK", "name": "JD.com", "sector": "Tech", "pct": -0.10, "mcap_usd_b": 50},
+    {"ticker": "1024.HK", "name": "Kuaishou", "sector": "Tech", "pct": +0.20, "mcap_usd_b": 30}
+  ]
+}
