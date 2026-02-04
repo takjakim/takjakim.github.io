@@ -1,0 +1,6 @@
+{
+  "label": "US · S&P 500 (sample 10)",
+  "asOf": "2026-02-04",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": []
+}

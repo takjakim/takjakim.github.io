@@ -20,3 +20,6 @@ _includes/notes_graph.json
 
 # python venvs
 scripts/.venv/
+
+# local env (do not commit)
+.env.local
