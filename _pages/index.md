@@ -55,7 +55,7 @@ permalink: /
       {% for note in recent_notes limit: 9 %}
         {% assign note_category = note.path | split: "/" | slice: 1 %}
         <article class="glass-card {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}">
-          <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link">
+          <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
               {% if note_category == "investing" %}
