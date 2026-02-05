@@ -1,0 +1,315 @@
+{
+  "label": "통합 · 섹터 히트맵",
+  "asOf": "2026-02-05",
+  "source": "yfinance (pct+market cap), Wikipedia/CSV constituents",
+  "items": [
+    {
+      "ticker": "US-Aerospace",
+      "name": "US Aerospace",
+      "sector": "US",
+      "pct": -0.5948587210537482,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Biotechnology",
+      "name": "US Biotechnology",
+      "sector": "US",
+      "pct": -0.869599766427549,
+      "mcap_usd_b": 5.0
+    },
+    {
+      "ticker": "US-Cable & Other Pay Television Services",
+      "name": "US Cable & Other Pay Television Services",
+      "sector": "US",
+      "pct": 0.42879770208073537,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Catalog/Specialty Distribution",
+      "name": "US Catalog/Specialty Distribution",
+      "sector": "US",
+      "pct": -2.6290957898997442,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Communication Services",
+      "name": "US Communication Services",
+      "sector": "US",
+      "pct": -0.5807329505583825,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Computer Communications Equipment",
+      "name": "US Computer Communications Equipment",
+      "sector": "US",
+      "pct": 1.4785608674223738,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Computer Manufacturing",
+      "name": "US Computer Manufacturing",
+      "sector": "US",
+      "pct": -0.21338927266809637,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Computer Peripheral Equipment",
+      "name": "US Computer Peripheral Equipment",
+      "sector": "US",
+      "pct": -2.5394477317554287,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Computer Software",
+      "name": "US Computer Software",
+      "sector": "US",
+      "pct": -3.342843531654822,
+      "mcap_usd_b": 9.0
+    },
+    {
+      "ticker": "US-Construction & Materials",
+      "name": "US Construction & Materials",
+      "sector": "US",
+      "pct": -1.9676884838442432,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Consumer Discretionary",
+      "name": "US Consumer Discretionary",
+      "sector": "US",
+      "pct": -2.6594728624431316,
+      "mcap_usd_b": 6.0
+    },
+    {
+      "ticker": "US-Consumer Staples",
+      "name": "US Consumer Staples",
+      "sector": "US",
+      "pct": -1.5955868640737172,
+      "mcap_usd_b": 4.0
+    },
+    {
+      "ticker": "US-Department/Specialty Retail Stores",
+      "name": "US Department/Specialty Retail Stores",
+      "sector": "US",
+      "pct": 1.1202534880155213,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Diversified Commercial Services",
+      "name": "US Diversified Commercial Services",
+      "sector": "US",
+      "pct": -1.4907112740008053,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-EDP Services",
+      "name": "US EDP Services",
+      "sector": "US",
+      "pct": -3.0089143280868536,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Electric Utilities",
+      "name": "US Electric Utilities",
+      "sector": "US",
+      "pct": -0.43816693503324616,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Electronic Components",
+      "name": "US Electronic Components",
+      "sector": "US",
+      "pct": 1.9445846911767095,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Energy",
+      "name": "US Energy",
+      "sector": "US",
+      "pct": -3.1463149906800605,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Financials",
+      "name": "US Financials",
+      "sector": "US",
+      "pct": -1.4412261910385447,
+      "mcap_usd_b": 17.0
+    },
+    {
+      "ticker": "US-Garments & Clothing",
+      "name": "US Garments & Clothing",
+      "sector": "US",
+      "pct": 0.7839676029281817,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Health Care",
+      "name": "US Health Care",
+      "sector": "US",
+      "pct": 1.7142110310014655,
+      "mcap_usd_b": 10.0
+    },
+    {
+      "ticker": "US-Hotels/Resorts",
+      "name": "US Hotels/Resorts",
+      "sector": "US",
+      "pct": 0.5823268424944406,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Industrial Machinery",
+      "name": "US Industrial Machinery",
+      "sector": "US",
+      "pct": 1.3556804831323819,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Industrial Specialties",
+      "name": "US Industrial Specialties",
+      "sector": "US",
+      "pct": -0.4535100002089898,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Industrials",
+      "name": "US Industrials",
+      "sector": "US",
+      "pct": -0.5939173361465333,
+      "mcap_usd_b": 9.0
+    },
+    {
+      "ticker": "US-Information Technology",
+      "name": "US Information Technology",
+      "sector": "US",
+      "pct": -1.3837252808043394,
+      "mcap_usd_b": 12.0
+    },
+    {
+      "ticker": "US-Major Chemicals",
+      "name": "US Major Chemicals",
+      "sector": "US",
+      "pct": -2.8267804702850063,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Materials",
+      "name": "US Materials",
+      "sector": "US",
+      "pct": -1.993107693356082,
+      "mcap_usd_b": 5.0
+    },
+    {
+      "ticker": "US-Medical Electronics",
+      "name": "US Medical Electronics",
+      "sector": "US",
+      "pct": -0.4114728306910176,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Medical/Dental Instruments",
+      "name": "US Medical/Dental Instruments",
+      "sector": "US",
+      "pct": -1.313188364868667,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Military, Government, Technical",
+      "name": "US Military, Government, Technical",
+      "sector": "US",
+      "pct": 1.1769898484625507,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Miscellaneous Amusement & Recreation Services",
+      "name": "US Miscellaneous Amusement & Recreation Services",
+      "sector": "US",
+      "pct": 0.5283478967689437,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Oil & Gas Production",
+      "name": "US Oil & Gas Production",
+      "sector": "US",
+      "pct": -2.4971891827918813,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Oil Equipment & Services",
+      "name": "US Oil Equipment & Services",
+      "sector": "US",
+      "pct": -3.0420821362176835,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Ordnance & Accessories",
+      "name": "US Ordnance & Accessories",
+      "sector": "US",
+      "pct": -7.198420991524445,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Packaged Foods",
+      "name": "US Packaged Foods",
+      "sector": "US",
+      "pct": -0.16339869281045694,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Power Generation",
+      "name": "US Power Generation",
+      "sector": "US",
+      "pct": 1.4275846189270025,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Railroads",
+      "name": "US Railroads",
+      "sector": "US",
+      "pct": 0.050188205771628525,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Real Estate",
+      "name": "US Real Estate",
+      "sector": "US",
+      "pct": -2.2423105205261917,
+      "mcap_usd_b": 5.0
+    },
+    {
+      "ticker": "US-Retail",
+      "name": "US Retail",
+      "sector": "US",
+      "pct": -0.7221115537848544,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Semiconductors",
+      "name": "US Semiconductors",
+      "sector": "US",
+      "pct": 0.7403677728587742,
+      "mcap_usd_b": 7.0
+    },
+    {
+      "ticker": "US-Soft Drinks",
+      "name": "US Soft Drinks",
+      "sector": "US",
+      "pct": -0.19869500728650355,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Transportation Services",
+      "name": "US Transportation Services",
+      "sector": "US",
+      "pct": -3.66844434604624,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Utilities",
+      "name": "US Utilities",
+      "sector": "US",
+      "pct": 0.10075180940194994,
+      "mcap_usd_b": 6.0
+    }
+  ]
+}
