@@ -47,7 +47,7 @@ npm install @marp-team/marp-core pptxgenjs --save
 
 ## 두 번째 이슈: Puppeteer의 배신
 
-[[02-development|개발편]]에서도 언급했지만, 서버 사이드 PDF 생성이 Vercel에서 안 됐다.
+[[02-development-marp|개발편]]에서도 언급했지만, 서버 사이드 PDF 생성이 Vercel에서 안 됐다.
 
 ```
 Error: spawn ENOEXEC

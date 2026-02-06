@@ -24,7 +24,7 @@ npm install @marp-team/marp-core @codemirror/lang-markdown
 
 ## 폴더 구조
 
-[[01-planning|기획편]]에서 그렸던 컴포넌트 구조를 실제로 만들었다.
+[[01-planning-marp|기획편]]에서 그렸던 컴포넌트 구조를 실제로 만들었다.
 
 ![컴포넌트 구조 스케치](/assets/images/dev/marp-editor/sketch-component-structure.png)
 
