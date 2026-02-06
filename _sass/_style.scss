@@ -1288,6 +1288,25 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   margin: 0;
 }
 
+.note-tags {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: $color-subtext;
+  background: rgba(148, 163, 184, 0.18);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
 .note-container {
   display: grid;
   grid-template-columns: 1fr;

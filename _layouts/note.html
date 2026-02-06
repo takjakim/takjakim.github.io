@@ -16,6 +16,14 @@ layout: default
     <time class="note-date" datetime="{{ page.last_modified_at | date_to_xmlschema }}">
       {% if page.type != 'pages' %}{{ page.last_modified_at | date: "%Y.%m.%d" }}{% endif %}
     </time>
+
+    {% if page.tags and page.tags.size > 0 %}
+      <div class="note-tags" aria-label="tags">
+        {% for tag in page.tags %}
+          <span class="tag-pill">#{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
   </header>
 
   <div class="note-container">
