@@ -6,7 +6,8 @@ permalink: /tags/
 
 # Tags
 
-{% assign docs = site.collections.notes.docs %}
+{% comment %}GitHub Pages 환경에서 collections.notes.docs가 비어 보일 때가 있어서 site.notes를 우선 사용{% endcomment %}
+{% assign docs = site.notes %}
 {% assign all = "" | split: "" %}
 
 {% for d in docs %}
