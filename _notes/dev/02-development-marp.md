@@ -26,7 +26,7 @@ npm install @marp-team/marp-core @codemirror/lang-markdown
 
 [[01-planning|기획편]]에서 그렸던 컴포넌트 구조를 실제로 만들었다.
 
-![컴포넌트 구조 스케치](./images/sketch-component-structure.png)
+![컴포넌트 구조 스케치](/assets/images/dev/marp-editor/sketch-component-structure.png)
 
 ```
 src/
@@ -148,7 +148,7 @@ function parseSlides(markdown: string) {
 }
 ```
 
-![필름스트립 사이드바](./images/filmstrip-sidebar.png)
+![필름스트립 사이드바](/assets/images/dev/marp-editor/filmstrip-sidebar.png)
 
 이제 좌측 필름스트립에서 슬라이드를 클릭하면 해당 위치로 에디터가 스크롤된다.
 
@@ -283,7 +283,7 @@ class: cover
 
 카테고리별로 정리해서 모달에서 탭으로 전환할 수 있게 했다.
 
-![레이아웃 패널](./images/layout-panel-full.png)
+![레이아웃 패널](/assets/images/dev/marp-editor/layout-panel-full.png)
 
 ## 테마 시스템
 
@@ -303,7 +303,7 @@ class: cover
 }
 ```
 
-![테마 드롭다운](./images/theme-dropdown.png)
+![테마 드롭다운](/assets/images/dev/marp-editor/theme-dropdown.png)
 
 테마 변경은 `document.documentElement.setAttribute('data-theme', theme)`로 간단하게.
 
@@ -345,7 +345,7 @@ const handleAddSlide = useCallback(() => {
 }, [markdown, currentSlide]);
 ```
 
-![슬라이드 추가](./images/slide-added.png)
+![슬라이드 추가](/assets/images/dev/marp-editor/slide-added.png)
 
 ## 현재 코드 라인 수
 

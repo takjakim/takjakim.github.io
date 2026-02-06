@@ -75,7 +75,7 @@ VS Code 확장으로 미리보기를 보는데, **타이핑할 때마다 깜빡�
 
 종이에 대충 그려봤다. (진짜 손그림)
 
-![와이어프레임 스케치](./images/sketch-wireframe-layout.png)
+![와이어프레임 스케치](/assets/images/dev/marp-editor/sketch-wireframe-layout.png)
 
 PowerPoint 레이아웃을 참고했다:
 - **좌측**: 슬라이드 목록 (필름스트립)
@@ -85,7 +85,7 @@ PowerPoint 레이아웃을 참고했다:
 
 ### 사용자 플로우
 
-![사용자 플로우](./images/sketch-user-flow.png)
+![사용자 플로우](/assets/images/dev/marp-editor/sketch-user-flow.png)
 
 핵심 플로우는 단순하게:
 1. 마크다운 작성
@@ -113,7 +113,7 @@ PowerPoint 레이아웃을 참고했다:
 
 ## 기술 스택 선정
 
-![기술 스택](./images/sketch-tech-stack.png)
+![기술 스택](/assets/images/dev/marp-editor/sketch-tech-stack.png)
 
 | 영역 | 선택 | 왜? |
 |------|------|-----|
@@ -133,7 +133,7 @@ PowerPoint 레이아웃을 참고했다:
 
 ## 컴포넌트 구조 설계
 
-![컴포넌트 구조](./images/sketch-component-structure.png)
+![컴포넌트 구조](/assets/images/dev/marp-editor/sketch-component-structure.png)
 
 ```
 src/

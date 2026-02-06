@@ -222,7 +222,7 @@ Vercel 대시보드에서 확인 가능한 것들:
 
 ## 완성!
 
-![최종 결과물](./images/final-view.png)
+![최종 결과물](/assets/images/dev/marp-editor/final-view.png)
 
 - **GitHub**: [takjakim/marp_editor](https://github.com/takjakim/marp_editor)
 - **Live Demo**: Vercel 배포 URL
