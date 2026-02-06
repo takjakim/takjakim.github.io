@@ -1,115 +1,267 @@
 ---
-title: "마크다운쇼(Marp Editor) 만들기 (2) - 개발"
+title: "마크다운쇼 개발기 2편: 개발"
 last_modified_at: 2026-02-07
 categories: [dev, project]
-tags: [marp, markdown, presentation, nextjs, codemirror, editor, 마크다운쇼]
-description: "마크다운쇼(Marp Editor) 개발: Marp Core 렌더링, CodeMirror 동기화, 필름스트립, 레이아웃 프리셋(62개), PDF/PPTX export까지 구현 흐름."
-permalink: /dev/marp-editor/part-2/
-image: /assets/images/dev/marp-editor/02-editor-preview.png
+tags: [marp, markdown, presentation, nextjs, codemirror, pdf, pptx, 마크다운쇼, 개발기]
+description: "마크다운쇼 개발 삽질기. Marp 렌더링, CodeMirror 동기화, PDF/PPTX 내보내기까지 4가지 삽질과 해결 과정."
+permalink: /dev/marp-editor/devlog-2/
+image: /assets/images/dev/marp-editor/sketch-component-structure.png
 ---
 
-# 마크다운쇼(Marp Editor) 만들기 (2) - 개발
+# 마크다운쇼 개발기 2편: 개발
 
-> [[마크다운쇼(Marp Editor) 만들기 (1) - 기획]]에서 정의한 요구사항을 실제로 구현하는 과정
+> [[마크다운쇼 개발기 1편: 기획]]에서 그린 그림을 실제로 만들어보자. 삽질 포함.
 
-## 프로젝트 구조
+## 프로젝트 초기 세팅
+
+```bash
+npx create-next-app@latest marp-editor --typescript --tailwind --app
+cd marp-editor
+npm install @marp-team/marp-core @codemirror/lang-markdown
+```
+
+여기까지는 순조로웠다.
+
+## 폴더 구조
+
+[[01-planning|기획편]]에서 그렸던 컴포넌트 구조를 실제로 만들었다.
+
+![컴포넌트 구조 스케치](./images/sketch-component-structure.png)
 
 ```
 src/
 ├── app/
-│   ├── page.tsx          # 메인 에디터 페이지
+│   ├── page.tsx          # 메인 페이지 (여기에 다 때려박음)
 │   ├── globals.css       # 테마 CSS 변수
-│   └── api/export/       # HTML 내보내기 API
+│   └── api/export/       # 내보내기 API
 ├── components/
-│   ├── Editor.tsx        # CodeMirror 에디터
-│   ├── Preview.tsx       # 슬라이드 미리보기
-│   ├── Filmstrip.tsx     # 슬라이드 썸네일 목록
+│   ├── Editor.tsx        # CodeMirror 래퍼
+│   ├── Preview.tsx       # Marp 렌더링 결과 표시
+│   ├── Filmstrip.tsx     # 좌측 슬라이드 목록
 │   ├── Toolbar.tsx       # 상단 툴바
 │   ├── FloatingFormatBar.tsx  # 하단 포맷 바
-│   ├── LayoutPanel.tsx   # 레이아웃 선택 모달
-│   └── LayoutCard.tsx    # 레이아웃 카드 컴포넌트
+│   └── LayoutPanel.tsx   # 레이아웃 선택 모달
 └── lib/
-    ├── marp-renderer.ts  # Marp 렌더링 로직
+    ├── marp-renderer.ts  # Marp 렌더링 유틸
     ├── layouts.ts        # 62가지 레이아웃 정의
-    ├── layout-thumbnails.ts  # SVG 썸네일 생성
     ├── export-pdf.ts     # PDF 내보내기
     └── export-pptx.ts    # PPTX 내보내기
 ```
 
-## 핵심 구현
+## 첫 번째 삽질: Marp 렌더링
 
-### 1. Marp 렌더링 엔진
+Marp Core를 import하는데 에러가 터졌다.
 
-Marp Core를 사용해 마크다운을 HTML+CSS로 변환합니다.
+```
+Module not found: Can't resolve 'fs'
+```
+
+Marp는 Node.js용 라이브러리인데 Next.js 클라이언트에서 돌리려니 문제가 생긴 거다.
+
+### 해결
+
+`next.config.js`에서 webpack 설정을 건드렸다.
+
+```javascript
+webpack: (config, { isServer }) => {
+  if (!isServer) {
+    config.resolve.fallback = {
+      fs: false,
+      path: false,
+    };
+  }
+  return config;
+}
+```
+
+이제 렌더링은 된다.
 
 ```typescript
 // lib/marp-renderer.ts
 import Marp from '@marp-team/marp-core';
 
 export function renderSlides(markdown: string) {
-  const marp = new Marp({
-    html: true,
-    math: true,
-  });
-
+  const marp = new Marp({ html: true, math: true });
   const { html, css } = marp.render(markdown);
   return { html, css };
 }
 ```
 
-### 2. 실시간 에디터 동기화
+## 실시간 미리보기 구현
 
-CodeMirror 6의 `onUpdate` 콜백으로 에디터 변경을 감지하고 미리보기를 업데이트합니다.
-
-```typescript
-// components/Editor.tsx
-const handleChange = useCallback((value: string) => {
-  onChange(value);
-  // 디바운스로 성능 최적화
-}, [onChange]);
-```
-
-슬라이드 구분자(`---`)를 기준으로 현재 커서 위치의 슬라이드를 자동으로 계산합니다.
-
-### 3. 슬라이드 추가 로직
-
-새 슬라이드 추가 시 현재 슬라이드 다음에 삽입됩니다.
+에디터에서 타이핑할 때마다 미리보기가 업데이트되어야 한다.
 
 ```typescript
-// app/page.tsx
-const handleAddSlide = useCallback(() => {
-  // 현재 슬라이드 끝 위치 계산
-  const insertPos = calculateSlideEndPosition(markdown, currentSlide);
+// page.tsx (간략화)
+const [markdown, setMarkdown] = useState(initialContent);
 
-  // 15줄 빈 공간과 함께 새 슬라이드 삽입
-  const newSlideContent = '\n\n---\n' + '\n'.repeat(15);
+const handleEditorChange = useCallback((value: string) => {
+  setMarkdown(value);
+}, []);
 
-  const newMarkdown =
-    markdown.substring(0, insertPos) +
-    newSlideContent +
-    markdown.substring(insertPos);
-
-  setMarkdown(newMarkdown);
-  setCurrentSlide(currentSlide + 1);
-}, [markdown, currentSlide]);
+// 렌더링은 useMemo로 캐싱
+const { html, css } = useMemo(() => {
+  return renderSlides(markdown);
+}, [markdown]);
 ```
 
-![새 슬라이드 추가](/assets/images/dev/marp-editor/05-new-slide.png)
+근데 문제가 있었다. 타이핑할 때마다 렌더링하니까 **렉이 걸린다**.
 
-### 4. 레이아웃 프리셋 시스템
+### 해결: 디바운스
 
-62가지 레이아웃은 카테고리별로 분류되어 있습니다.
+```typescript
+const debouncedMarkdown = useDebounce(markdown, 100);
+
+const { html, css } = useMemo(() => {
+  return renderSlides(debouncedMarkdown);
+}, [debouncedMarkdown]);
+```
+
+100ms 딜레이를 주니까 훨씬 부드러워졌다.
+
+## 두 번째 삽질: 슬라이드 네비게이션
+
+Marp는 `---`로 슬라이드를 구분한다. 현재 커서가 몇 번째 슬라이드에 있는지 계산해야 했다.
+
+```typescript
+function getCurrentSlideIndex(markdown: string, cursorPos: number): number {
+  const beforeCursor = markdown.substring(0, cursorPos);
+  // frontmatter 제외하고 '---' 개수 세기
+  const slides = beforeCursor.split(/\n---\n/);
+  return Math.max(0, slides.length - 1);
+}
+```
+
+근데 YAML frontmatter 때문에 첫 번째 `---`가 슬라이드 구분자인지 frontmatter인지 구분이 안 됐다.
+
+### 해결
+
+frontmatter를 먼저 파싱해서 제거한 뒤 계산했다.
+
+```typescript
+function parseSlides(markdown: string) {
+  // frontmatter 제거
+  const withoutFrontmatter = markdown.replace(/^---[\s\S]*?---\n/, '');
+
+  // 슬라이드 분리
+  return withoutFrontmatter.split(/\n---\n/).map(content => content.trim());
+}
+```
+
+![필름스트립 사이드바](./images/filmstrip-sidebar.png)
+
+이제 좌측 필름스트립에서 슬라이드를 클릭하면 해당 위치로 에디터가 스크롤된다.
+
+## 세 번째 삽질: PDF 내보내기
+
+처음에는 서버에서 Puppeteer로 PDF를 생성하려 했다.
+
+```typescript
+// 이 코드는 결국 쓰지 않았다
+import puppeteer from 'puppeteer-core';
+import chromium from '@sparticuz/chromium';
+
+export async function generatePDF(html: string) {
+  const browser = await puppeteer.launch({
+    executablePath: await chromium.executablePath(),
+    args: chromium.args,
+  });
+  // ...
+}
+```
+
+로컬에서는 잘 돌아갔다. 그런데 **Vercel에 배포하니까 터졌다**.
+
+```
+Error: spawn ENOEXEC
+```
+
+Vercel 서버리스 환경에서 Chromium 바이너리가 제대로 실행이 안 되는 거다. 디버깅만 3일.
+
+### 해결: 브라우저 인쇄 다이얼로그
+
+결국 서버 사이드 렌더링을 포기하고 **브라우저 인쇄 기능**을 활용했다.
+
+```typescript
+// lib/export-pdf.ts
+export async function exportToPDFViaPrint(markdown: string) {
+  const { html, css } = renderSlides(markdown);
+
+  // 새 창 열어서 인쇄
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <style>
+          ${css}
+          @page { size: 1280px 720px landscape; margin: 0; }
+        </style>
+      </head>
+      <body>${html}</body>
+    </html>
+  `);
+
+  printWindow.print();
+}
+```
+
+장점: Marp CSS가 100% 적용됨. 서버 부하 없음.
+단점: 사용자가 "PDF로 저장"을 직접 선택해야 함.
+
+트레이드오프였지만, CSS가 완벽하게 적용되는 게 더 중요했다.
+
+## 네 번째 삽질: PPTX 내보내기
+
+PDF는 해결했는데, PPTX는 또 다른 문제였다.
+
+처음에는 html2canvas로 슬라이드를 이미지로 캡처해서 PPTX에 넣으려 했다.
+
+```typescript
+// 이것도 결국 쓰지 않았다
+const canvas = await html2canvas(slideElement);
+slide.addImage({ data: canvas.toDataURL() });
+```
+
+결과물이 **흐릿했다**. 그리고 SVG foreignObject가 렌더링이 안 됐다.
+
+### 해결: 네이티브 텍스트 변환
+
+마크다운을 파싱해서 PowerPoint 네이티브 객체로 변환했다.
+
+```typescript
+// lib/export-pptx.ts
+export async function exportToPPTXNative(markdown: string) {
+  const pptx = new PptxGenJS();
+  const slides = parseMarkdownSlides(markdown);
+
+  for (const slideData of slides) {
+    const slide = pptx.addSlide();
+
+    // 제목 추출
+    const titleMatch = slideData.match(/^#\s+(.+)$/m);
+    if (titleMatch) {
+      slide.addText(titleMatch[1], {
+        x: 0.5, y: 0.5,
+        fontSize: 32, bold: true
+      });
+    }
+
+    // 본문, 리스트 등 처리...
+  }
+
+  await pptx.writeFile('presentation.pptx');
+}
+```
+
+이제 PowerPoint에서 텍스트 편집이 가능하다!
+
+## 레이아웃 프리셋 시스템
+
+62가지 레이아웃을 손으로 다 만들었다. 노가다였다.
 
 ```typescript
 // lib/layouts.ts
-export interface Layout {
-  id: string;
-  name: string;           // 한글 이름
-  description: string;
-  category: LayoutCategory;
-  template: string;       // 마크다운 템플릿
-}
-
 export const LAYOUTS: Layout[] = [
   {
     id: 'cover-centered',
@@ -122,112 +274,105 @@ class: cover
 
 # 프레젠테이션 제목
 
-### 부제목 또는 발표자 이름
+### 부제목
 `
   },
   // ... 61개 더
 ];
 ```
 
-### 5. PDF 내보내기
+카테고리별로 정리해서 모달에서 탭으로 전환할 수 있게 했다.
 
-Vercel 서버리스 환경에서 Puppeteer가 동작하지 않아 **브라우저 인쇄 다이얼로그**를 활용합니다.
-
-```typescript
-// lib/export-pdf.ts
-export async function exportToPDFViaPrint(markdown: string) {
-  const { html, css } = renderSlides(markdown);
-
-  const printWindow = window.open('', '_blank');
-  printWindow.document.write(`
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <style>${css}</style>
-        <style>
-          @page { size: 1280px 720px landscape; margin: 0; }
-          @media print {
-            svg[data-marpit-svg] {
-              page-break-after: always;
-            }
-          }
-        </style>
-      </head>
-      <body>${html}</body>
-    </html>
-  `);
-
-  printWindow.print();
-}
-```
-
-### 6. PPTX 내보내기 (네이티브 텍스트)
-
-이미지 캡처 대신 **마크다운 파싱 → 네이티브 텍스트**로 변환하여 PowerPoint에서 편집 가능합니다.
-
-```typescript
-// lib/export-pptx.ts
-import PptxGenJS from 'pptxgenjs';
-
-export async function exportToPPTXNative(markdown: string) {
-  const pptx = new PptxGenJS();
-  const slides = parseMarkdownSlides(markdown);
-
-  for (const slideData of slides) {
-    const slide = pptx.addSlide();
-
-    // 마크다운 요소를 PowerPoint 객체로 변환
-    if (slideData.title) {
-      slide.addText(slideData.title, {
-        x: 0.5, y: 0.5,
-        fontSize: 32, bold: true
-      });
-    }
-    // ... 본문, 리스트 등 처리
-  }
-
-  await pptx.writeFile('presentation.pptx');
-}
-```
+![레이아웃 패널](./images/layout-panel-full.png)
 
 ## 테마 시스템
 
-CSS 변수로 6가지 테마를 지원합니다.
-
-| 테마 | 특징 |
-|------|------|
-| Dark (기본) | PowerPoint 스타일 다크 |
-| Light | 밝은 배경 |
-| Dracula | 보라색 계열 다크 |
-| Sepia | 따뜻한 세피아 톤 |
-| Nord | 북유럽 스타일 |
-| GitHub | GitHub 스타일 라이트 |
+6가지 테마를 CSS 변수로 구현했다.
 
 ```css
-/* globals.css */
 [data-theme="dark"] {
   --mp-bg: #1f1f1f;
   --mp-chrome: #2d2d2d;
   --mp-accent: #5a9bd5;
-  /* ... */
 }
 
 [data-theme="dracula"] {
   --mp-bg: #282a36;
   --mp-chrome: #44475a;
   --mp-accent: #bd93f9;
-  /* ... */
 }
 ```
 
-## 성능 최적화
+![테마 드롭다운](./images/theme-dropdown.png)
 
-1. **디바운스**: 에디터 변경 시 100ms 디바운스로 렌더링 횟수 감소
-2. **메모이제이션**: `useMemo`로 슬라이드 파싱 결과 캐싱
-3. **Dynamic Import**: PDF/PPTX 라이브러리 동적 로딩
-4. **LocalStorage 저장**: 자동 저장으로 새로고침 시 복구
+테마 변경은 `document.documentElement.setAttribute('data-theme', theme)`로 간단하게.
 
-## 🔗 연결 (백링크용)
-- 이전: [[마크다운쇼(Marp Editor) 만들기 (1) - 기획]]
-- 다음: [[마크다운쇼(Marp Editor) 만들기 (3) - 배포]]
-- 허브: [[개발 노트 시작하기]]
+## 자동 저장
+
+새로고침해도 작업 내용이 날아가면 안 된다.
+
+```typescript
+// 저장
+useEffect(() => {
+  localStorage.setItem('markdown-editor-content', markdown);
+}, [markdown]);
+
+// 로드
+const [markdown, setMarkdown] = useState(() => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem('markdown-editor-content') || initialContent;
+  }
+  return initialContent;
+});
+```
+
+간단하지만 사용자 경험에 큰 차이를 만든다.
+
+## 새 슬라이드 추가
+
+요청이 있어서 슬라이드 추가 시 15줄 빈 공간을 넣었다.
+
+```typescript
+const handleAddSlide = useCallback(() => {
+  const insertPos = calculateSlideEndPosition(markdown, currentSlide);
+  const newSlideContent = '\n\n---\n' + '\n'.repeat(15);
+
+  setMarkdown(
+    markdown.substring(0, insertPos) +
+    newSlideContent +
+    markdown.substring(insertPos)
+  );
+}, [markdown, currentSlide]);
+```
+
+![슬라이드 추가](./images/slide-added.png)
+
+## 현재 코드 라인 수
+
+```bash
+$ find src -name "*.tsx" -o -name "*.ts" | xargs wc -l
+  450 src/app/page.tsx
+  180 src/components/Editor.tsx
+  220 src/components/Filmstrip.tsx
+  370 src/components/FloatingFormatBar.tsx
+  280 src/components/LayoutPanel.tsx
+  150 src/lib/marp-renderer.ts
+ 1200 src/lib/layouts.ts
+  270 src/lib/export-pdf.ts
+  200 src/lib/export-pptx.ts
+ ----
+ 3320 total
+```
+
+생각보다 많이 썼다.
+
+## 다음 편 예고
+
+코드는 완성됐다. [[마크다운쇼 개발기 3편: 배포]]에서는 Vercel에 배포하고, 발생한 문제들을 해결하는 과정을 다룬다.
+
+---
+
+**마크다운쇼 개발기 시리즈**
+1. [[마크다운쇼 개발기 1편: 기획]]
+2. **개발** ← 현재 글
+3. [[마크다운쇼 개발기 3편: 배포]]
