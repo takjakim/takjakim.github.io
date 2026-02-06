@@ -1,6 +1,15 @@
-# 마크다운쇼(Marp Editor) 배포
+---
+title: "마크다운쇼(Marp Editor) 만들기 (3) - 배포"
+last_modified_at: 2026-02-07
+categories: [dev, project]
+tags: [marp, markdown, presentation, nextjs, vercel, deployment, 마크다운쇼]
+description: "마크다운쇼(Marp Editor) 배포: Vercel 연결, vercel.json, 서버리스 제약 대응(클라이언트 export), 번들 최적화까지."
+permalink: /dev/marp-editor/part-3/
+---
 
-> [[02-development|개발]]이 완료된 프로젝트를 Vercel에 배포하는 과정
+# 마크다운쇼(Marp Editor) 만들기 (3) - 배포
+
+> [[마크다운쇼(Marp Editor) 만들기 (2) - 개발]]이 완료된 프로젝트를 Vercel에 배포하는 과정
 
 ## 배포 환경
 
@@ -173,24 +182,11 @@ html2canvas로 SVG를 캡처할 때 foreignObject 내부 요소가 렌더링되�
 
 ## 완성된 프로젝트
 
-![완성된 에디터](./images/01-editor-full.png)
+![완성된 에디터](/assets/images/dev/marp-editor/01-editor-full.png)
 
-- **GitHub**: [takjakim/marp_editor](https://github.com/takjakim/marp_editor)
-- **Live Demo**: Vercel 배포 URL
+- 테스트 URL: <https://md.takjakim.kr>
 
-## 시리즈 마무리
-
-3편의 글을 통해 마크다운쇼의 전체 개발 과정을 살펴봤습니다.
-
-1. [[01-planning|기획]]: 요구사항 정의와 기술 스택 선정
-2. [[02-development|개발]]: 핵심 기능 구현과 아키텍처
-3. **배포** (현재 글): Vercel 배포와 트러블슈팅
-
-마크다운으로 프레젠테이션을 만들고 싶다면 지금 바로 사용해 보세요!
-
----
-
-**시리즈 목차**
-1. [[01-planning|기획]]
-2. [[02-development|개발]]
-3. **배포** (현재 글)
+## 🔗 연결 (백링크용)
+- Part 1: [[마크다운쇼(Marp Editor) 만들기 (1) - 기획]]
+- Part 2: [[마크다운쇼(Marp Editor) 만들기 (2) - 개발]]
+- 허브: [[개발 노트 시작하기]]

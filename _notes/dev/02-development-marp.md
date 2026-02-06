@@ -1,6 +1,16 @@
-# 마크다운쇼(Marp Editor) 개발
+---
+title: "마크다운쇼(Marp Editor) 만들기 (2) - 개발"
+last_modified_at: 2026-02-07
+categories: [dev, project]
+tags: [marp, markdown, presentation, nextjs, codemirror, editor, 마크다운쇼]
+description: "마크다운쇼(Marp Editor) 개발: Marp Core 렌더링, CodeMirror 동기화, 필름스트립, 레이아웃 프리셋(62개), PDF/PPTX export까지 구현 흐름."
+permalink: /dev/marp-editor/part-2/
+image: /assets/images/dev/marp-editor/02-editor-preview.png
+---
 
-> [[01-planning|기획]]에서 정의한 요구사항을 실제로 구현하는 과정
+# 마크다운쇼(Marp Editor) 만들기 (2) - 개발
+
+> [[마크다운쇼(Marp Editor) 만들기 (1) - 기획]]에서 정의한 요구사항을 실제로 구현하는 과정
 
 ## 프로젝트 구조
 
@@ -84,7 +94,7 @@ const handleAddSlide = useCallback(() => {
 }, [markdown, currentSlide]);
 ```
 
-![새 슬라이드 추가](./images/05-new-slide.png)
+![새 슬라이드 추가](/assets/images/dev/marp-editor/05-new-slide.png)
 
 ### 4. 레이아웃 프리셋 시스템
 
@@ -217,13 +227,7 @@ CSS 변수로 6가지 테마를 지원합니다.
 3. **Dynamic Import**: PDF/PPTX 라이브러리 동적 로딩
 4. **LocalStorage 저장**: 자동 저장으로 새로고침 시 복구
 
-## 다음 단계
-
-개발이 완료되면 [[03-deployment|배포]] 단계에서 Vercel에 배포하고 프로덕션 환경을 구성합니다.
-
----
-
-**시리즈 목차**
-1. [[01-planning|기획]]
-2. **개발** (현재 글)
-3. [[03-deployment|배포]]
+## 🔗 연결 (백링크용)
+- 이전: [[마크다운쇼(Marp Editor) 만들기 (1) - 기획]]
+- 다음: [[마크다운쇼(Marp Editor) 만들기 (3) - 배포]]
+- 허브: [[개발 노트 시작하기]]

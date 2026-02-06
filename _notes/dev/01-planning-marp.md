@@ -1,4 +1,14 @@
-# 마크다운쇼(Marp Editor) 기획
+---
+title: "마크다운쇼(Marp Editor) 만들기 (1) - 기획"
+last_modified_at: 2026-02-07
+categories: [dev, project]
+tags: [marp, markdown, presentation, nextjs, editor, 마크다운쇼]
+description: "브라우저에서 마크다운으로 프레젠테이션을 만드는 웹 에디터(마크다운쇼) 기획. 실시간 미리보기, 필름스트립, 레이아웃 프리셋, 내보내기까지 요구사항 정리."
+permalink: /dev/marp-editor/part-1/
+image: /assets/images/dev/marp-editor/01-editor-full.png
+---
+
+# 마크다운쇼(Marp Editor) 만들기 (1) - 기획
 
 > 브라우저에서 마크다운으로 프레젠테이션을 만드는 웹 에디터
 
@@ -14,13 +24,13 @@
 
 마크다운을 작성하면 **즉시** 슬라이드 형태로 렌더링됩니다. WYSIWYG에 가까운 경험을 제공하면서도 마크다운의 생산성을 유지합니다.
 
-![에디터 전체 화면](./images/01-editor-full.png)
+![에디터 전체 화면](/assets/images/dev/marp-editor/01-editor-full.png)
 
 ### 2. 슬라이드 탐색 (필름스트립)
 
 왼쪽 사이드바에서 전체 슬라이드를 썸네일로 확인하고 빠르게 이동할 수 있습니다. 파워포인트의 슬라이드 패널과 유사한 UX입니다.
 
-![필름스트립 사이드바](./images/04-filmstrip.png)
+![필름스트립 사이드바](/assets/images/dev/marp-editor/04-filmstrip.png)
 
 ### 3. 레이아웃 프리셋
 
@@ -33,7 +43,7 @@
 - **비즈니스**: SWOT, 매트릭스, 프로세스, 로드맵
 - **데이터**: 차트, KPI, 테이블, 퍼널
 
-![레이아웃 패널](./images/03-layout-panel.png)
+![레이아웃 패널](/assets/images/dev/marp-editor/03-layout-panel.png)
 
 ### 4. 내보내기
 
@@ -77,11 +87,11 @@
 
 ## 다음 단계
 
-기획이 완료되면 [[02-development|개발]] 단계로 넘어갑니다. 실제 코드 구현과 아키텍처에 대해 다룹니다.
+기획이 완료되면 Part 2에서 실제 코드 구현과 아키텍처를 다룹니다.
 
 ---
 
-**시리즈 목차**
-1. **기획** (현재 글)
-2. [[02-development|개발]]
-3. [[03-deployment|배포]]
+## 🔗 연결 (백링크용)
+- 다음: [[마크다운쇼(Marp Editor) 만들기 (2) - 개발]]
+- 그다음: [[마크다운쇼(Marp Editor) 만들기 (3) - 배포]]
+- 허브: [[개발 노트 시작하기]]
