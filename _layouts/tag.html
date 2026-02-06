@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="note-page">
+  <header class="note-header">
+    <h1 class="note-title">#{{ page.tag }}</h1>
+    <p class="note-date">태그 아카이브</p>
+  </header>
+
+  <div class="note-container">
+    <div class="note-content">
+      {% assign items = page.items | default: empty %}
+      {% if items and items.size > 0 %}
+        <ul>
+          {% for it in items %}
+            <li>
+              <a href="{{ site.baseurl }}{{ it.url }}">{{ it.title | default: it.slug }}</a>
+              {% if it.last_modified_at %}
+                <span class="note-date">({{ it.last_modified_at | date: "%Y.%m.%d" }})</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>이 태그로 분류된 글이 아직 없어.</p>
+      {% endif %}
+
+      <hr />
+      <p><a href="{{ site.baseurl }}/tags/">← 모든 태그 보기</a></p>
+    </div>
+  </div>
+</article>

@@ -1,16 +1,16 @@
 ---
-layout: post
-title: "마크다운ㅎ글 개발기 Part 2: 기술 스택과 핵심 구현"
-date: 2026-02-06
-categories: [markdown, pdf, nextjs, development]
-tags: [마크다운ㅎ글, markdown-hangul, Next.js, Puppeteer, TypeScript, React]
+title: "마크다운ㅎ글 개발기 (2) - 개발: 기술 스택과 핵심 구현"
+last_modified_at: 2026-02-06
+categories: [dev, project]
+tags: [markdown-hangul, nextjs, puppeteer, typescript, react, 마크다운ㅎ글]
 description: "마크다운을 한글 HWP 스타일 PDF로 변환하는 웹 앱의 기술 스택 선정과 핵심 구현 과정을 상세히 소개합니다."
-image: ./blog-images/02-editor-with-content.png
+image: /assets/images/dev/markdown-hangul/02-editor-with-content.png
+permalink: /dev/markdown-hangul/part-2/
 ---
 
-# 마크다운ㅎ글 개발기 Part 2: 기술 스택과 핵심 구현
+# 마크다운ㅎ글 개발기 (2) - 개발: 기술 스택과 핵심 구현
 
-[Part 1: 기획](./blog-post-01-기획.md)에서 한글 HWP 스타일 PDF 생성이라는 목표를 정했습니다. 이제 본격적인 개발 이야기를 시작합니다.
+[Part 1: 기획](/dev/markdown-hangul/part-1/)에서 한글 HWP 스타일 PDF 생성이라는 목표를 정했습니다. 이제 본격적인 개발 이야기를 시작합니다.
 
 ## 1. 기술 스택 선정
 
@@ -98,7 +98,7 @@ async function getExecPathAndArgs() {
 
 ## 2. 아키텍처: 데이터 흐름
 
-![에디터와 프리뷰](./blog-images/02-editor-with-content.png)
+![에디터와 프리뷰](/assets/images/dev/markdown-hangul/02-editor-with-content.png)
 
 ### 2.1 전체 흐름도
 
@@ -289,7 +289,7 @@ if (settings.dividerPage) {
 
 #### 3.2.4 번호 박스 헤딩 (Numbered Box)
 
-![설정 패널](./blog-images/03-settings-panel.png)
+![설정 패널](/assets/images/dev/markdown-hangul/03-settings-panel.png)
 
 한글 HWP의 시그니처 스타일인 "1.2.3" 번호 박스:
 
@@ -794,15 +794,13 @@ Vercel Cron으로 5분마다 호출하여 Cold Start 방지.
 
 Part 2에서는 Next.js 16 + Puppeteer 스택으로 마크다운 → HWP 스타일 PDF 변환 파이프라인을 구현하는 과정을 살펴봤습니다. 특히 TOC 페이지 번호 계산, 동적 CSS 생성, 이미지 압축 등 까다로운 기술적 문제들을 해결하는 과정이 흥미로웠습니다.
 
-[Part 3: 배포](./blog-post-03-배포.md)에서는 Vercel 서버리스 환경에 배포하면서 겪은 메모리 제한, Cold Start, 보안 설정 등의 이슈와 해결책을 다룹니다.
+[Part 3: 배포](/dev/markdown-hangul/part-3/)에서는 Vercel 서버리스 환경에 배포하면서 겪은 메모리 제한, Cold Start, 보안 설정 등의 이슈와 해결책을 다룹니다.
 
 ---
 
-**시리즈 링크:**
-- [Part 1: 기획](./blog-post-01-기획.md)
-- **Part 2: 개발** (현재 글)
-- [Part 3: 배포](./blog-post-03-배포.md)
+## 🔗 연결 (백링크용)
+- 이전: [[마크다운ㅎ글 개발기 (1) - 기획: 마크다운으로 공문서 쓰기]]
+- 다음: [[마크다운ㅎ글 개발기 (3) - 배포: Vercel 배포와 서버리스 환경 최적화]]
+- 허브: [[개발 노트 시작하기]]
 
-**프로젝트 링크:**
-- [마크다운ㅎ글 웹사이트](https://markdown-hangul.vercel.app)
-- [GitHub 저장소](https://github.com/yourusername/markdown-hangul)
+**테스트 URL:** <https://md.takjakim.kr>

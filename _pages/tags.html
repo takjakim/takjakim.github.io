@@ -1,0 +1,31 @@
+---
+layout: page
+title: "Tags"
+permalink: /tags/
+---
+
+# Tags
+
+{% comment %}GitHub Pages 환경에서 collections.notes.docs가 비어 보일 때가 있어서 site.notes를 우선 사용{% endcomment %}
+{% assign docs = site.notes %}
+{% assign all = "" | split: "" %}
+
+{% for d in docs %}
+  {% if d.tags %}
+    {% for t in d.tags %}
+      {% assign all = all | push: t %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+
+{% assign uniq = all | uniq | sort %}
+
+{% if uniq.size == 0 %}
+- (태그 없음)
+{% else %}
+<div class="note-tags">
+  {% for t in uniq %}
+    <a class="tag-pill" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }}</a>
+  {% endfor %}
+</div>
+{% endif %}
