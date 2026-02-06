@@ -46,7 +46,8 @@ permalink: /
       </div>
     </div>
 
-    {% assign docs = site.collections.notes.docs %}
+    {% comment %}GitHub Pages 환경에서 collections.notes.docs가 비어 보일 때가 있어 site.notes 사용{% endcomment %}
+    {% assign docs = site.notes %}
     {% assign all_tags = "" | split: "" %}
     {% for d in docs %}
       {% if d.tags %}
