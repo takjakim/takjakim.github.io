@@ -1298,13 +1298,30 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .tag-pill {
   display: inline-flex;
   align-items: center;
-  padding: 0.2rem 0.6rem;
+  padding: 0.45em 0.9em;
   border-radius: 999px;
   font-size: 0.85rem;
   line-height: 1.4;
+  font-weight: 500;
+
+  /* Match main page pill/glass vibe */
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.6);
   color: $color-subtext;
-  background: rgba(148, 163, 184, 0.18);
-  border: 1px solid rgba(148, 163, 184, 0.25);
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  &:hover {
+    color: $color-primary;
+    border-color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateY(-1px);
+  }
+
+  &:after {
+    content: "";
+  }
 }
 
 .note-container {
