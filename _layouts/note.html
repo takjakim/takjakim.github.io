@@ -20,7 +20,7 @@ layout: default
     {% if page.tags and page.tags.size > 0 %}
       <div class="note-tags" aria-label="tags">
         {% for tag in page.tags %}
-          <span class="tag-pill">#{{ tag }}</span>
+          <a class="tag-pill" href="{{ site.baseurl }}/tags/{{ tag | slugify }}/">#{{ tag }}</a>
         {% endfor %}
       </div>
     {% endif %}
