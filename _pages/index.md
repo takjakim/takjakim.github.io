@@ -37,6 +37,40 @@ permalink: /
     </div>
   </header>
 
+  <!-- Tags / Knowledge Base -->
+  <section class="recent-section">
+    <div class="section-header">
+      <h2 class="section-title">태그로 탐색</h2>
+      <div class="filter-pills">
+        <a class="pill" href="{{ site.baseurl }}/tags/">전체 태그 보기</a>
+      </div>
+    </div>
+
+    {% assign docs = site.collections.notes.docs %}
+    {% assign all_tags = "" | split: "" %}
+    {% for d in docs %}
+      {% if d.tags %}
+        {% for t in d.tags %}
+          {% assign all_tags = all_tags | push: t %}
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+    {% assign uniq_tags = all_tags | uniq | sort %}
+
+    {% if uniq_tags.size > 0 %}
+      <div class="note-tags" style="margin-top: 0;">
+        {% for t in uniq_tags limit: 30 %}
+          <a class="tag-pill" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }}</a>
+        {% endfor %}
+      </div>
+      {% if uniq_tags.size > 30 %}
+        <p style="margin-top: 0.75rem; color: #6b7280;">+ {{ uniq_tags.size | minus: 30 }} more…</p>
+      {% endif %}
+    {% else %}
+      <p>(태그 없음)</p>
+    {% endif %}
+  </section>
+
   <!-- Recent Posts -->
   <section class="recent-section">
     <div class="section-header">
