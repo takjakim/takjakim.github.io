@@ -2,7 +2,7 @@
 title: "마크다운ㅎ글 개발기 (2) - 개발: 기술 스택과 핵심 구현"
 last_modified_at: 2026-02-06
 categories: [dev, project]
-tags: [markdown-hangul, nextjs, puppeteer, typescript, react]
+tags: [markdown-hangul, nextjs, puppeteer, typescript, react, 마크다운ㅎ글]
 description: "마크다운을 한글 HWP 스타일 PDF로 변환하는 웹 앱의 기술 스택 선정과 핵심 구현 과정을 상세히 소개합니다."
 image: /assets/images/dev/markdown-hangul/02-editor-with-content.png
 permalink: /dev/markdown-hangul/part-2/
@@ -798,10 +798,9 @@ Part 2에서는 Next.js 16 + Puppeteer 스택으로 마크다운 → HWP 스타�
 
 ---
 
-**시리즈 링크:**
-- [Part 1: 기획](/dev/markdown-hangul/part-1/)
-- **Part 2: 개발** (현재 글)
-- [Part 3: 배포](/dev/markdown-hangul/part-3/)
+## 🔗 연결 (백링크용)
+- 이전: [[마크다운ㅎ글 개발기 (1) - 기획: 마크다운으로 공문서 쓰기]]
+- 다음: [[마크다운ㅎ글 개발기 (3) - 배포: Vercel 배포와 서버리스 환경 최적화]]
+- 허브: [[개발 노트 시작하기]]
 
-**프로젝트 링크:**
-- [테스트 URL](https://md.takjakim.kr)
+**테스트 URL:** <https://md.takjakim.kr>
