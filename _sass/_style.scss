@@ -1308,6 +1308,10 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   font-size: 1rem;
   line-height: 1.8;
 
+  /* Mobile line-wrapping: prevent long URLs/words from blowing out layout */
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
   h2 {
     font-size: 1.5rem;
     margin-top: 2.5rem;
@@ -1326,6 +1330,11 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     margin-bottom: 1.5rem;
   }
 
+  a {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
   ul, ol {
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
@@ -1341,8 +1350,24 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     padding: 1.5rem;
     border-radius: 8px;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     margin: 1.5rem 0;
     font-size: 0.9rem;
+  }
+
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+
+  th, td {
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid $color-border;
+    white-space: nowrap;
   }
 
   code {
