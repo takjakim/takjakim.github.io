@@ -1353,6 +1353,12 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     -webkit-overflow-scrolling: touch;
     margin: 1.5rem 0;
     font-size: 0.9rem;
+    max-width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   table {
@@ -1375,6 +1381,10 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     padding: 0.2em 0.4em;
     border-radius: 4px;
     font-size: 0.9em;
+    /* allow long inline code/URLs to wrap on mobile */
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 
   pre code {
