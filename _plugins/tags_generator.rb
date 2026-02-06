@@ -31,6 +31,13 @@ module Jekyll
       super(site, site.source, File.join('tags', Utils.slugify(tag)), 'index.html')
       self.data['layout'] = 'tag'
       self.data['tag'] = tag
+
+      # This is a generated page (no real source file on disk).
+      # Provide a stable last_modified_at so plugins/sitemap don't try to stat a missing file.
+      now = Time.now
+      self.data['last_modified_at'] = now
+      self.data['last_modified_at_timestamp'] = now.to_i
+
       self.data['items'] = docs.sort_by { |d| d.data['last_modified_at'] || d.data['date'] || Time.at(0) }.reverse.map do |d|
         {
           'title' => d.data['title'],
