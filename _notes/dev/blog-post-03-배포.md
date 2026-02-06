@@ -1,17 +1,19 @@
 ---
-layout: post
-title: "마크다운ㅎ글 만들기 (3) - Vercel 배포와 서버리스 환경 최적화"
-date: 2026-02-06
-categories: [project, nextjs, deployment]
+title: "마크다운ㅎ글 개발기 (3) - 배포: Vercel 배포와 서버리스 환경 최적화"
+last_modified_at: 2026-02-06
+categories: [dev, project]
 tags: [vercel, serverless, puppeteer, optimization, pdf-generation]
 description: "Vercel 서버리스 환경에서 Puppeteer 돌리기, 메모리 초과 해결, 413 에러 트러블슈팅 - 실전 배포 삽질 기록"
+permalink: /dev/markdown-hangul/part-3/
 ---
+
+# 마크다운ㅎ글 개발기 (3) - 배포: Vercel 배포와 서버리스 환경 최적화
 
 ## 시리즈 목차
 
-- [Part 1: 기획 - 왜 또 다른 마크다운 에디터인가?](./blog-post-01-기획.md)
-- [Part 2: 개발 - Next.js + Puppeteer로 PDF 생성하기](./blog-post-02-개발.md)
-- **Part 3: 배포 - Vercel 서버리스 환경 최적화** (현재 글)
+- [Part 1: 기획](/dev/markdown-hangul/part-1/)
+- [Part 2: 개발](/dev/markdown-hangul/part-2/)
+- **Part 3: 배포** (현재 글)
 
 ---
 
@@ -463,8 +465,8 @@ const notoSansKR = Noto_Sans_KR({
 
 3부작 시리즈를 통해 **마크다운ㅎ글** 프로젝트의 기획부터 개발, 배포까지 전 과정을 공유했습니다.
 
-- [Part 1](./blog-post-01-기획.md)에서는 "왜 만들었는가"
-- [Part 2](./blog-post-02-개발.md)에서는 "어떻게 만들었는가"
+- [Part 1](/dev/markdown-hangul/part-1/)에서는 "왜 만들었는가"
+- [Part 2](/dev/markdown-hangul/part-2/)에서는 "어떻게 만들었는가"
 - Part 3에서는 "어떻게 세상에 내놓았는가"
 
 개인 프로젝트지만 실제 사용자들의 피드백을 받으며 개선하는 과정이 즐거웠습니다. 무엇보다 "이런 거 찾고 있었어요!"라는 반응이 가장 큰 보람이었습니다.

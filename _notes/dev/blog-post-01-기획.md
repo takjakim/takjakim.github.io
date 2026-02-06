@@ -1,9 +1,10 @@
 ---
 title: "마크다운ㅎ글 개발기 (1) - 기획: 마크다운으로 공문서 쓰기"
-date: 2026-02-06
-categories: [개발, 프로젝트]
-tags: [markdown, pdf, hwp, korean, web-app, 한글, 마크다운, 공문서]
+last_modified_at: 2026-02-06
+categories: [dev, project]
+tags: [markdown, pdf, hwp, korean, web-app, hangul, official-doc]
 description: "개발자를 위한 마크다운 기반 한글 문서 작성 도구, 마크다운ㅎ글의 기획 과정. 아래한글의 불편함을 해소하고 마크다운으로 공식 문서를 작성할 수 있는 웹 앱을 만들기까지."
+permalink: /dev/markdown-hangul/part-1/
 ---
 
 # 마크다운ㅎ글 개발기 (1) - 기획: 마크다운으로 공문서 쓰기
@@ -120,7 +121,7 @@ version: "1.0"
 
 ### 2. 에디터 + A4 미리보기 Split View
 
-![마크다운ㅎ글 메인 에디터 인터페이스](./blog-images/01-main-editor.png)
+![마크다운ㅎ글 메인 에디터 인터페이스](/assets/images/dev/markdown-hangul/01-main-editor.png)
 *실시간 A4 미리보기가 제공되는 에디터 화면*
 
 - **왼쪽**: 마크다운 에디터 (Monaco Editor 기반)
