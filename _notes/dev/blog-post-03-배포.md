@@ -473,7 +473,7 @@ const notoSansKR = Noto_Sans_KR({
 
 서버리스 환경은 제약도 많지만, 제대로 이해하고 최적화하면 개인 개발자에게 최고의 도구입니다. 여러분의 사이드 프로젝트도 Vercel에 올려보세요!
 
-프로젝트 링크: [markdown-hangul.vercel.app](https://markdown-hangul.vercel.app)
+테스트 URL: [md.takjakim.kr](https://md.takjakim.kr)
 GitHub: [github.com/jahkim/markdown-hangul](https://github.com/jahkim/markdown-hangul)
 
 질문이나 피드백은 이슈나 Discussion으로 남겨주세요. 감사합니다! 🙇‍♂️

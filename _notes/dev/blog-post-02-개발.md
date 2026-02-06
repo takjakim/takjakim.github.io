@@ -804,5 +804,4 @@ Part 2에서는 Next.js 16 + Puppeteer 스택으로 마크다운 → HWP 스타�
 - [Part 3: 배포](/dev/markdown-hangul/part-3/)
 
 **프로젝트 링크:**
-- [마크다운ㅎ글 웹사이트](https://markdown-hangul.vercel.app)
-- [GitHub 저장소](https://github.com/yourusername/markdown-hangul)
+- [테스트 URL](https://md.takjakim.kr)

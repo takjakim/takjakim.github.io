@@ -355,6 +355,4 @@ HWP와 마크다운 사이의 간극을 메우고, 버전 관리 가능하면서
 - [마크다운ㅎ글 개발기 (2) - 개발: 브라우저에서 A4 PDF 만들기](#) _(작성 예정)_
 - [마크다운ㅎ글 개발기 (3) - 배포: Vercel 무료 티어로 운영하기](#) _(작성 예정)_
 
-**프로젝트 저장소:** [https://github.com/yourusername/markdown-hangul](https://github.com/yourusername/markdown-hangul)
-
-**데모 사이트:** [https://markdown-hangul.vercel.app](https://markdown-hangul.vercel.app)
+**테스트 URL:** [https://md.takjakim.kr](https://md.takjakim.kr)
