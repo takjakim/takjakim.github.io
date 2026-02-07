@@ -18,14 +18,72 @@ permalink: /tags/
   {% endif %}
 {% endfor %}
 
-{% assign uniq = all | uniq | sort %}
+{% assign uniq = all | uniq %}
 
 {% if uniq.size == 0 %}
 - (태그 없음)
 {% else %}
-<div class="note-tags">
-  {% for t in uniq %}
-    <a class="tag-pill" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }}</a>
+
+{% comment %}
+태그 빈도 기반 정렬 + 워드클라우드.
+Liquid에 hash/정렬이 불편해서 "00012::tag" 형태로 만들어 sort 후 reverse.
+{% endcomment %}
+
+{% assign pairs = "" | split: "" %}
+{% assign max_count = 1 %}
+
+{% for t in uniq %}
+  {% assign count = 0 %}
+  {% for d in docs %}
+    {% if d.tags contains t %}
+      {% assign count = count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
+  {% if count > max_count %}
+    {% assign max_count = count %}
+  {% endif %}
+
+  {% capture padded %}00000{{ count }}{% endcapture %}
+  {% assign padded = padded | slice: -5, 5 %}
+  {% capture item %}{{ padded }}::{{ t }}{% endcapture %}
+  {% assign pairs = pairs | push: item %}
+{% endfor %}
+
+{% assign pairs = pairs | sort | reverse %}
+
+## 많이 쓰인 태그
+
+<div class="tag-cloud" aria-label="tag cloud">
+  {% for item in pairs %}
+    {% assign parts = item | split: "::" %}
+    {% assign count = parts[0] | plus: 0 %}
+    {% assign t = parts[1] %}
+
+    {% comment %}
+    font-size: 0.85rem ~ 1.70rem (대략)
+    {% endcomment %}
+    {% assign ratio = count | times: 100 | divided_by: max_count %}
+    {% assign size = 85 | plus: ratio | divided_by: 100.0 %}
+
+    <a class="tag-pill" style="font-size: {{ size }}rem" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }} <span class="tag-count">({{ count }})</span></a>
   {% endfor %}
 </div>
+
+<hr />
+
+## 전체 태그 (빈도순)
+
+<ul class="tag-list">
+  {% for item in pairs %}
+    {% assign parts = item | split: "::" %}
+    {% assign count = parts[0] | plus: 0 %}
+    {% assign t = parts[1] %}
+    <li>
+      <a class="internal-link" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }}</a>
+      <span class="tag-list-count">{{ count }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
 {% endif %}
