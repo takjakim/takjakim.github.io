@@ -52,38 +52,48 @@ Liquid에 hash/정렬이 불편해서 "00012::tag" 형태로 만들어 sort 후 
 
 {% assign pairs = pairs | sort | reverse %}
 
-## 많이 쓰인 태그
+## 태그
+
+{% assign featured = pairs | first %}
+{% assign rest = pairs | shift %}
+
+{% assign fparts = featured | split: "::" %}
+{% assign fcount = fparts[0] | plus: 0 %}
+{% assign ftag = fparts[1] %}
 
 <div class="tag-cloud" aria-label="tag cloud">
-  {% for item in pairs %}
-    {% assign parts = item | split: "::" %}
-    {% assign count = parts[0] | plus: 0 %}
-    {% assign t = parts[1] %}
+  <div class="tag-featured">
+    <a class="tag-pill featured" href="{{ site.baseurl }}/tags/{{ ftag | slugify }}/">
+      {{ ftag }}
+      <span class="tag-count">({{ fcount }})</span>
+    </a>
+  </div>
 
-    {% comment %}
-    font-size: 0.85rem ~ 1.70rem (대략)
-    {% endcomment %}
-    {% assign ratio = count | times: 100 | divided_by: max_count %}
-    {% assign size = 85 | plus: ratio | divided_by: 100.0 %}
+  <div class="tag-cloud-items">
+    {% for item in rest %}
+      {% assign parts = item | split: "::" %}
+      {% assign count = parts[0] | plus: 0 %}
+      {% assign t = parts[1] %}
 
-    <a class="tag-pill" style="font-size: {{ size }}rem" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">{{ t }} <span class="tag-count">({{ count }})</span></a>
-  {% endfor %}
+      {% comment %}
+      font-size scale: min 0.65rem (count=1) ~ max 1.55rem (count=max_count)
+      {% endcomment %}
+      {% assign denom = max_count | minus: 1 %}
+      {% if denom <= 0 %}
+        {% assign ratio = 100 %}
+      {% else %}
+        {% assign ratio = count | minus: 1 | times: 100 | divided_by: denom %}
+      {% endif %}
+
+      {% assign size = 65 | plus: ratio | times: 90 | divided_by: 100 | plus: 0 %}
+      {% comment %} size = 65 + 0.90*ratio -> 65..155 (in "rem/100") {% endcomment %}
+
+      <a class="tag-pill" style="font-size: {{ size | divided_by: 100.0 }}rem" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">
+        {{ t }}
+        <span class="tag-count">({{ count }})</span>
+      </a>
+    {% endfor %}
+  </div>
 </div>
-
-<hr />
-
-## 전체 태그 (빈도순)
-
-<ul class="tag-list">
-  {% for item in pairs %}
-    {% assign parts = item | split: "::" %}
-    {% assign count = parts[0] | plus: 0 %}
-    {% assign t = parts[1] %}
-    <li>
-      <a class="internal-link" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">{{ t }}</a>
-      <span class="tag-list-count">{{ count }}</span>
-    </li>
-  {% endfor %}
-</ul>
 
 {% endif %}
