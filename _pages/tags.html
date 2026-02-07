@@ -66,7 +66,7 @@ Liquid에 hash/정렬이 불편해서 "00012::tag" 형태로 만들어 sort 후 
     {% assign ratio = count | times: 100 | divided_by: max_count %}
     {% assign size = 85 | plus: ratio | divided_by: 100.0 %}
 
-    <a class="tag-pill" style="font-size: {{ size }}rem" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }} <span class="tag-count">({{ count }})</span></a>
+    <a class="tag-pill" style="font-size: {{ size }}rem" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">{{ t }} <span class="tag-count">({{ count }})</span></a>
   {% endfor %}
 </div>
 
@@ -80,7 +80,7 @@ Liquid에 hash/정렬이 불편해서 "00012::tag" 형태로 만들어 sort 후 
     {% assign count = parts[0] | plus: 0 %}
     {% assign t = parts[1] %}
     <li>
-      <a class="internal-link" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }}</a>
+      <a class="internal-link" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">{{ t }}</a>
       <span class="tag-list-count">{{ count }}</span>
     </li>
   {% endfor %}
