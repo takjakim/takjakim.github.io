@@ -353,6 +353,126 @@
   gap: 0.5rem;
 }
 
+/* ===== Research Section ===== */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.research-card {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  padding: 1.6rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.research-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #1a1a2e;
+}
+
+.research-card p {
+  margin: 0.4rem 0 0;
+  color: #6b7280;
+  line-height: 1.65;
+}
+
+.research-actions {
+  margin-top: 1rem;
+}
+
+.research-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: #111;
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.research-btn:after {
+  content: "" !important;
+}
+
+.research-btn:hover {
+  background: #000 !important;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+}
+
+.metric {
+  text-align: center;
+  padding: 0.9rem 0.75rem;
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+}
+
+.metric-value {
+  font-weight: 950;
+  font-size: 1.6rem;
+  color: #111827;
+  line-height: 1.1;
+}
+
+.metric-label {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.metric-note {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.publications {
+  margin-top: 1.75rem;
+}
+
+.publications h3 {
+  margin: 0 0 0.9rem;
+  font-size: 1.25rem;
+  font-weight: 950;
+  color: #1a1a2e;
+}
+
+.pub-list {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.pub-list li {
+  margin: 0 0 1rem;
+}
+
+.pub-title {
+  font-weight: 850;
+  color: #111827;
+}
+
+.pub-meta {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+
 .tag-small {
   padding: 0.25rem 0.75rem;
   background: #f3f4f6;

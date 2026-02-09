@@ -31,6 +31,12 @@ permalink: /about
         <p class="profile-tagline">투자 · 개발 · AI에 관심이 많은 지식 탐험가</p>
         
         <div class="social-links">
+          <a href="https://scholar.google.com/citations?hl=ko&user=OPTcC6oAAAAJ" class="social-link" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path fill="currentColor" d="M12 2L1 9l11 7 9-5.73V18h2V9L12 2zm0 12.5L4.5 9 12 4.5 19.5 9 12 14.5z"/>
+            </svg>
+            <span>Scholar</span>
+          </a>
           <a href="https://github.com/takjakim" class="social-link" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" width="20" height="20">
               <path fill="currentColor" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
@@ -120,6 +126,81 @@ permalink: /about
         <span class="tag-small">Knowledge</span>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="section-header-about">
+    <h2>📚 Research</h2>
+  </div>
+
+  <div class="research-grid">
+    <div class="research-card">
+      <h3>Google Scholar</h3>
+      <p>논문/인용은 Google Scholar에서 관리해. (수치는 변할 수 있음)</p>
+      <div class="research-actions">
+        <a class="research-btn" href="https://scholar.google.com/citations?hl=ko&user=OPTcC6oAAAAJ" target="_blank" rel="noopener">프로필 보기</a>
+      </div>
+    </div>
+
+    <div class="research-card research-metrics">
+      <h3>Metrics (snapshot)</h3>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-value">136</div>
+          <div class="metric-label">Citations</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">5</div>
+          <div class="metric-label">h-index</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value">3</div>
+          <div class="metric-label">i10-index</div>
+        </div>
+      </div>
+      <p class="metric-note">※ Google Scholar 화면 기준(전체). 최신 값은 프로필에서 확인</p>
+    </div>
+
+    <div class="research-card">
+      <h3>Keywords</h3>
+      <div class="expertise-tags">
+        <span class="tag-small">Learning Analytics</span>
+        <span class="tag-small">HRD</span>
+        <span class="tag-small">Research Methodology</span>
+        <span class="tag-small">Education measurement</span>
+        <span class="tag-small">MOOC</span>
+        <span class="tag-small">VR/AR/MR</span>
+        <span class="tag-small">Metaverse</span>
+        <span class="tag-small">Workplace Learning</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="publications">
+    <h3>Selected publications</h3>
+    <ol class="pub-list">
+      <li>
+        <div class="pub-title">Creativity and knowledge creation: the moderated mediating effect of perceived organizational support on psychological ownership</div>
+        <div class="pub-meta">European Journal of Training and Development (2020) · citations 54</div>
+      </li>
+      <li>
+        <div class="pub-title">A meta-analysis on effects of VR, AR, MR-based learning in Korea</div>
+        <div class="pub-meta">교육정보미디어연구 (2018) · citations 46</div>
+      </li>
+      <li>
+        <div class="pub-title">The effect of MOOC-based learning in Korea: a meta-analysis</div>
+        <div class="pub-meta">교육공학연구 (2020) · citations 22</div>
+      </li>
+      <li>
+        <div class="pub-title">메타버스(Metaverse) 활용 학습 효과의 메타분석</div>
+        <div class="pub-meta">교육정보미디어연구 (2023)</div>
+      </li>
+      <li>
+        <div class="pub-title">국내 AI 기반 적응형 학습 플랫폼 활용 교육의 교육적 효과에 대한 메타분석</div>
+        <div class="pub-meta">교육정보미디어연구 (2024)</div>
+      </li>
+    </ol>
   </div>
 </section>
 
