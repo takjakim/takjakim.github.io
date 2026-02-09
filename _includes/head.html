@@ -14,6 +14,7 @@
   <!-- Language -->
   <meta http-equiv="content-language" content="{{ site.lang | default: 'ko' }}">
   <html lang="{{ site.lang | default: 'ko' }}">
+  <meta name="baseurl" content="{{ site.baseurl }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
@@ -82,6 +83,11 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+
+  <script>
+    // for small page-level JS that needs baseurl
+    document.documentElement.setAttribute('data-baseurl', '{{ site.baseurl }}');
+  </script>
 
   <!-- Mermaid -->
   <script type="module">

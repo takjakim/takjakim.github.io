@@ -178,31 +178,75 @@ permalink: /about
   </div>
 
   <div class="publications">
-    <h3>Selected publications</h3>
-    <ol class="pub-list">
-      <li>
+    <div class="pub-header">
+      <h3>Selected publications</h3>
+      <div class="pub-controls" role="group" aria-label="publication sorting">
+        <button class="pub-sort-btn is-active" data-sort="cites" type="button">인용순</button>
+        <button class="pub-sort-btn" data-sort="recent" type="button">최신순</button>
+      </div>
+    </div>
+
+    <ol class="pub-list" id="pub-list">
+      <li data-year="2020" data-cites="54">
         <div class="pub-title">Creativity and knowledge creation: the moderated mediating effect of perceived organizational support on psychological ownership</div>
         <div class="pub-meta">European Journal of Training and Development (2020) · citations 54</div>
       </li>
-      <li>
+      <li data-year="2018" data-cites="46">
         <div class="pub-title">A meta-analysis on effects of VR, AR, MR-based learning in Korea</div>
         <div class="pub-meta">교육정보미디어연구 (2018) · citations 46</div>
       </li>
-      <li>
+      <li data-year="2020" data-cites="22">
         <div class="pub-title">The effect of MOOC-based learning in Korea: a meta-analysis</div>
         <div class="pub-meta">교육공학연구 (2020) · citations 22</div>
       </li>
-      <li>
+      <li data-year="2023" data-cites="1">
         <div class="pub-title">메타버스(Metaverse) 활용 학습 효과의 메타분석</div>
         <div class="pub-meta">교육정보미디어연구 (2023)</div>
       </li>
-      <li>
+      <li data-year="2024" data-cites="1">
         <div class="pub-title">국내 AI 기반 적응형 학습 플랫폼 활용 교육의 교육적 효과에 대한 메타분석</div>
         <div class="pub-meta">교육정보미디어연구 (2024)</div>
       </li>
     </ol>
   </div>
+
+  <div class="publications" style="margin-top: 2rem;">
+    <div class="pub-header">
+      <h3>GitHub stars</h3>
+      <div class="pub-controls" role="group" aria-label="github star graph">
+        <button class="pub-sort-btn is-active" data-repo="takjakim/takjakim.github.io" type="button">blog</button>
+        <button class="pub-sort-btn" data-repo="jahkim/markdown-hangul" type="button">markdown-hangul</button>
+      </div>
+    </div>
+
+    <div class="stars-card">
+      <div class="stars-metrics">
+        <div class="metric">
+          <div class="metric-value" id="stars-current">–</div>
+          <div class="metric-label">Current stars</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value" id="stars-last30">–</div>
+          <div class="metric-label">Last 30d</div>
+        </div>
+        <div class="metric">
+          <div class="metric-value" id="stars-last365">–</div>
+          <div class="metric-label">Last 365d</div>
+        </div>
+      </div>
+
+      <div class="stars-chart" id="stars-chart" aria-label="star history chart">
+        <div class="stars-chart-empty" id="stars-chart-empty">스타 히스토리 데이터를 불러오는 중…</div>
+      </div>
+
+      <p class="metric-note" style="margin-top: 0.75rem;">
+        ※ star 히스토리는 /assets/data/github-stars.json 기반(자동 업데이트 가능)
+      </p>
+    </div>
+  </div>
 </section>
+
+<script src="{{ site.baseurl }}/assets/js/about.js" defer></script>
 
 <section class="about-section">
   <div class="section-header-about">
