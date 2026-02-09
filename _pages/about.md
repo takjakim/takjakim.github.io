@@ -212,35 +212,35 @@ permalink: /about
 
   <div class="publications" style="margin-top: 2rem;">
     <div class="pub-header">
-      <h3>GitHub stars</h3>
-      <div class="pub-controls" role="group" aria-label="github star graph">
-        <button class="pub-sort-btn is-active" data-repo="takjakim/takjakim.github.io" type="button">blog</button>
-        <button class="pub-sort-btn" data-repo="jahkim/markdown-hangul" type="button">markdown-hangul</button>
+      <h3>Citation trend</h3>
+      <div class="pub-controls" role="group" aria-label="scholar citations toggle">
+        <button class="pub-sort-btn is-active" data-scope="all" type="button">전체</button>
+        <button class="pub-sort-btn" data-scope="since2021" type="button">2021년 이후</button>
       </div>
     </div>
 
     <div class="stars-card">
       <div class="stars-metrics">
         <div class="metric">
-          <div class="metric-value" id="stars-current">–</div>
-          <div class="metric-label">Current stars</div>
+          <div class="metric-value" id="cites-total">–</div>
+          <div class="metric-label">Citations</div>
         </div>
         <div class="metric">
-          <div class="metric-value" id="stars-last30">–</div>
-          <div class="metric-label">Last 30d</div>
+          <div class="metric-value" id="cites-hindex">–</div>
+          <div class="metric-label">h-index</div>
         </div>
         <div class="metric">
-          <div class="metric-value" id="stars-last365">–</div>
-          <div class="metric-label">Last 365d</div>
+          <div class="metric-value" id="cites-i10">–</div>
+          <div class="metric-label">i10-index</div>
         </div>
       </div>
 
-      <div class="stars-chart" id="stars-chart" aria-label="star history chart">
-        <div class="stars-chart-empty" id="stars-chart-empty">스타 히스토리 데이터를 불러오는 중…</div>
+      <div class="stars-chart" id="cites-chart" aria-label="citations per year chart">
+        <div class="stars-chart-empty" id="cites-chart-empty">인용 그래프 데이터를 불러오는 중…</div>
       </div>
 
       <p class="metric-note" style="margin-top: 0.75rem;">
-        ※ star 히스토리는 /assets/data/github-stars.json 기반(자동 업데이트 가능)
+        ※ 인용 그래프는 /assets/data/scholar-metrics.json 기반(2018~2026)
       </p>
     </div>
   </div>

@@ -1,0 +1,30 @@
+{
+  "updatedAt": "2026-02-10",
+  "profile": {
+    "name": "Jaehyun Kim",
+    "url": "https://scholar.google.com/citations?hl=ko&user=OPTcC6oAAAAJ"
+  },
+  "scopes": {
+    "all": {
+      "citations": 136,
+      "hIndex": 5,
+      "i10Index": 3
+    },
+    "since2021": {
+      "citations": 121,
+      "hIndex": 5,
+      "i10Index": 3
+    }
+  },
+  "citationsByYear": [
+    {"year": 2018, "count": 0},
+    {"year": 2019, "count": 0},
+    {"year": 2020, "count": 0},
+    {"year": 2021, "count": 0},
+    {"year": 2022, "count": 0},
+    {"year": 2023, "count": 0},
+    {"year": 2024, "count": 0},
+    {"year": 2025, "count": 0},
+    {"year": 2026, "count": 0}
+  ]
+}
