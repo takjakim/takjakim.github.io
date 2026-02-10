@@ -1,9 +1,10 @@
 ---
-title: "Claude Code Team Dashboard: tmux 에이전트 팀을 한 화면에 모니터링"
+title: "팀으로 Claude Code 돌릴 때: tmux 에이전트 대시보드(실시간 모니터링)"
 last_modified_at: 2026-02-11
 categories: [dev, project]
-tags: [claude-code, dashboard, tmux, monitoring, automation]
-description: "Claude Code 에이전트 오케스트레이션 시스템을 위한 실시간 모니터링 대시보드(claude-code-team-dashboard) 소개 및 설치/운영 방법 정리."
+tags: [claude-code, dashboard, tmux, monitoring, automation, agent]
+description: "tmux pane에 여러 에이전트를 띄워놓고 일할 때, DOING/TODO/DONE·컨텍스트 사용량·압축 타이밍을 한 화면에서 보는 Team Dashboard. 설치/운영 방법까지 정리."
+image: /assets/og-default.png
 permalink: /dev/claude-code-team-dashboard/
 ---
 
