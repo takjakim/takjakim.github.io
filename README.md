@@ -38,21 +38,40 @@ _sass/             # SCSS 스타일
 _plugins/          # Jekyll 플러그인
 ```
 
-## Local Development
+## Writing workflow (how to add a note)
+
+1) Create a markdown note under `_notes/<category>/`.
+
+2) Use wikilinks to connect notes:
+
+```md
+- 관련: [[해외 지수 분석 시작하기]]
+- 다음: [[마크다운ㅎ글 개발기 (2) - 개발: 기술 스택과 핵심 구현]]
+```
+
+3) Recommended front matter:
+
+```yaml
+---
+title: "제목"
+last_modified_at: 2026-02-11
+tags: [tag1, tag2]
+# (optional) permalink: /dev/some-slug/
+---
+```
+
+## Local development
 
 ```bash
-# 의존성 설치
 bundle install
-
-# 로컬 서버 실행
 bundle exec jekyll serve
-
-# http://localhost:4000 에서 확인
+# http://localhost:4000
 ```
 
 ## Deployment
 
-GitHub Actions를 통해 `main` 브랜치 푸시 시 자동 배포됩니다.
+- GitHub Actions deploys automatically on every push to `main`.
+- If a page URL matters, set an explicit `permalink:` to avoid collisions.
 
 ## Credits
 
