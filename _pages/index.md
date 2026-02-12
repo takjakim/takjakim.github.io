@@ -17,7 +17,7 @@ permalink: /
         <span class="gradient-text">Digital</span>
         <span class="gradient-text-alt">Garden</span>
       </h1>
-      <p class="hero-desc">투자 · 개발 · AI · Theory에 대한 생각과 기록을 연결하는 공간</p>
+      <p class="hero-desc">Research · Theory · 개발 · AI에 대한 생각과 기록을 연결하는 공간</p>
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-number">{% assign note_count = site.notes | size %}{{ note_count }}</span>
