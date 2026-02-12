@@ -78,10 +78,10 @@ permalink: /
       <h2 class="section-title">최근 업데이트</h2>
       <div class="filter-pills">
         <button class="pill active" data-filter="all">전체</button>
-        <button class="pill" data-filter="investing">투자</button>
+        <button class="pill" data-filter="research">Research</button>
+        <button class="pill" data-filter="theory">Theory</button>
         <button class="pill" data-filter="dev">개발</button>
         <button class="pill" data-filter="ai">AI</button>
-        <button class="pill" data-filter="theory">Theory</button>
       </div>
     </div>
 
@@ -94,7 +94,7 @@ permalink: /
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
               {% if note_category == "investing" %}
-                <span class="glass-tag tag-investing">투자</span>
+                <span class="glass-tag tag-investing">Research</span>
               {% elsif note_category == "theory" %}
                 <span class="glass-tag tag-theory">Theory</span>
               {% elsif note_category == "dev" %}
@@ -135,7 +135,10 @@ document.addEventListener('DOMContentLoaded', function() {
   function updateVisibility() {
     let count = 0;
     cards.forEach(card => {
-      const matchesFilter = currentFilter === 'all' || card.dataset.category === currentFilter;
+      const matchesFilter =
+        currentFilter === 'all' ||
+        (currentFilter === 'research' && (card.dataset.category === 'investing' || card.dataset.category === 'market-analysis')) ||
+        card.dataset.category === currentFilter;
       if (matchesFilter) {
         count++;
         if (count <= visibleCount) {
