@@ -59,6 +59,9 @@ permalink: /ai/heyling-day2/
   - **Do you remember what we talked about yesterday? I’m a marathon runner, and Gyeongbokgung is about 2.8 km away.**
   - **In the summer, I run around Gyeongbokgung three or four times a week—usually for about 40 minutes to an hour.**
 
+상대가 *“Does it inspire you?”* 라고 물으면 이렇게 한 문장 추가:
+- **Yeah, it does. Running near such a historic place feels really special.**
+
 핵심:
 - `yesterday talking` → **our conversation yesterday / what we talked about yesterday**
 - `I am marathoner` → **I’m a marathon runner**
