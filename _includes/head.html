@@ -6,7 +6,7 @@
   <!-- Primary Meta Tags -->
   <title>{% if page.id == "home" %}{{ site.title }} - {{ site.description }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}</title>
   <meta name="title" content="{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.content %}{{ page.content | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.id == 'home' %}{{ site.description }}{% else %}{{ content | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   <meta name="author" content="{{ site.author }}">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
@@ -20,7 +20,7 @@
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.content %}{{ page.content | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.id == 'home' %}{{ site.description }}{% else %}{{ content | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="ko_KR">
   {% if page.image %}
@@ -35,7 +35,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.content %}{{ page.content | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.id == 'home' %}{{ site.description }}{% else %}{{ content | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   {% if page.image %}
   <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
   {% else %}
