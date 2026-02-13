@@ -32,13 +32,84 @@ function initHeatmaps() {
         return res.json();
       })
       .then(function(data) {
+        // Support two schemas:
+        // (1) legacy: {labels, parents, values, changes, title}
+        // (2) current: {label, asOf, source, items:[{ticker,name,sector,pct,mcap_usd_b}]}
+
+        function buildFromItems(items, rootLabel) {
+          var labels = [];
+          var parents = [];
+          var values = [];
+          var changes = [];
+
+          // root
+          labels.push(rootLabel || 'Market');
+          parents.push('');
+          values.push(0);
+          changes.push(0);
+
+          var sectorIndex = {}; // sector -> idx
+          var sectorAgg = {};   // sector -> {mcapSum, weightedPctSum}
+
+          items.forEach(function(it) {
+            var sector = (it.sector || 'Other').trim();
+            if (!sector) sector = 'Other';
+            var pct = Number(it.pct);
+            if (!isFinite(pct)) pct = 0;
+            var mcap = Number(it.mcap_usd_b);
+            if (!isFinite(mcap) || mcap <= 0) mcap = 1;
+
+            if (sectorIndex[sector] === undefined) {
+              sectorIndex[sector] = labels.length;
+              labels.push(sector);
+              parents.push(labels[0]);
+              values.push(0);
+              changes.push(0);
+              sectorAgg[sector] = { mcapSum: 0, weightedPctSum: 0 };
+            }
+
+            // stock leaf
+            var leafLabel = it.ticker || it.name || 'N/A';
+            labels.push(leafLabel);
+            parents.push(sector);
+            values.push(mcap);
+            changes.push(pct);
+
+            sectorAgg[sector].mcapSum += mcap;
+            sectorAgg[sector].weightedPctSum += pct * mcap;
+          });
+
+          // fill sector values + sector colors
+          Object.keys(sectorIndex).forEach(function(sector) {
+            var idx = sectorIndex[sector];
+            var agg = sectorAgg[sector];
+            values[idx] = agg.mcapSum;
+            changes[idx] = agg.mcapSum > 0 ? (agg.weightedPctSum / agg.mcapSum) : 0;
+            values[0] += agg.mcapSum;
+          });
+
+          return { labels: labels, parents: parents, values: values, changes: changes };
+        }
+
+        var hm;
+        if (data && Array.isArray(data.items)) {
+          hm = buildFromItems(data.items, data.label || (country.toUpperCase() + ' ' + index.toUpperCase()));
+        } else {
+          hm = {
+            labels: data.labels,
+            parents: data.parents,
+            values: data.values,
+            changes: data.changes
+          };
+        }
+
         var trace = {
           type: 'treemap',
-          labels: data.labels,
-          parents: data.parents,
-          values: data.values,
+          labels: hm.labels,
+          parents: hm.parents,
+          values: hm.values,
           marker: {
-            colors: data.changes,
+            colors: hm.changes,
             colorscale: [
               [0, '#dc2626'],
               [0.35, '#f87171'],
@@ -63,7 +134,7 @@ function initHeatmaps() {
 
         var layout = {
           title: {
-            text: data.title || (country.toUpperCase() + ' ' + index.toUpperCase() + ' (' + date + ')'),
+            text: (data && (data.title || data.label)) || (country.toUpperCase() + ' ' + index.toUpperCase() + ' (' + date + ')'),
             font: { size: 14 }
           },
           margin: { t: 40, l: 5, r: 5, b: 5 },
