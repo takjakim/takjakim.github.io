@@ -84,6 +84,15 @@
   <!-- Styles -->
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LBT9HW1EC7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LBT9HW1EC7');
+  </script>
+
   <script>
     // for small page-level JS that needs baseurl
     document.documentElement.setAttribute('data-baseurl', '{{ site.baseurl }}');
