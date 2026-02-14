@@ -667,6 +667,14 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(20px);
   border: 1px solid $color-glass-border;
   border-radius: 60px;
+
+  // Mobile: prevent the pill from overflowing the viewport (which clips the first label)
+  @media (max-width: 480px) {
+    max-width: calc(100vw - 2rem);
+    padding: 0.85rem 1.2rem;
+    gap: 1.1rem;
+    justify-content: center;
+  }
 }
 
 .stat-item {
@@ -691,6 +699,10 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: $color-subtext;
+
+  @media (max-width: 480px) {
+    letter-spacing: 0.08em;
+  }
 }
 
 .stat-divider {
