@@ -5,6 +5,8 @@ categories: [ai]
 tags: [english, paraphrasing, speaking, ai, heyling]
 description: "해이링 영어 회화 연습 2일차. 걷기/날씨(미세먼지)/경복궁/업무 소개/학령인구 이슈까지, 말하고 싶은 뜻을 유지하면서 더 자연스럽게 바꾼 문장 7개."
 permalink: /ai/heyling-day2/
+featured: true
+importance: 3
 ---
 
 # 해이링 2일차: 대화 이어가기(걷기/날씨/경복궁/일) 자연스러운 문장 7개
