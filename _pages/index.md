@@ -93,6 +93,8 @@ permalink: /
               {% assign pv = site.data.pageviews.paths[note.url].views %}
               {% if pv %}
                 <span class="glass-views">👀 {{ pv }}</span>
+              {% else %}
+                <span class="glass-views glass-views--new">NEW</span>
               {% endif %}
               {% if note_category == "investing" %}
                 <span class="glass-tag tag-investing">Research</span>
@@ -146,6 +148,8 @@ permalink: /
               {% assign pv = site.data.pageviews.paths[note.url].views %}
               {% if pv %}
                 <span class="glass-views">👀 {{ pv }}</span>
+              {% else %}
+                <span class="glass-views glass-views--new">NEW</span>
               {% endif %}
               {% if note_category == "investing" %}
                 <span class="glass-tag tag-investing">Research</span>
