@@ -1095,9 +1095,10 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
 .glass-meta {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 0.6rem;
   margin-bottom: 0.8rem;
+  flex-wrap: wrap;
 
   time {
     display: inline;
@@ -1107,6 +1108,13 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     margin: 0;
     font-family: 'SF Mono', 'Fira Code', monospace;
   }
+}
+
+.glass-views {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: $color-subtext;
+  font-family: 'SF Mono', 'Fira Code', monospace;
 }
 
 .glass-tag {

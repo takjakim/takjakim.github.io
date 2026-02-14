@@ -90,6 +90,10 @@ permalink: /
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
+              {% assign pv = site.data.pageviews.paths[note.url].views %}
+              {% if pv %}
+                <span class="glass-views">👀 {{ pv }}</span>
+              {% endif %}
               {% if note_category == "investing" %}
                 <span class="glass-tag tag-investing">Research</span>
               {% elsif note_category == "theory" %}
@@ -139,6 +143,10 @@ permalink: /
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
+              {% assign pv = site.data.pageviews.paths[note.url].views %}
+              {% if pv %}
+                <span class="glass-views">👀 {{ pv }}</span>
+              {% endif %}
               {% if note_category == "investing" %}
                 <span class="glass-tag tag-investing">Research</span>
               {% elsif note_category == "theory" %}
