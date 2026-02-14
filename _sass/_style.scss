@@ -670,12 +670,12 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
   // Mobile: prevent the pill from overflowing the viewport (which clips the first label)
   @media (max-width: 480px) {
-    width: calc(100vw - 2rem);
-    max-width: calc(100vw - 2rem);
+    width: calc(100vw - 1rem);
+    max-width: calc(100vw - 1rem);
     box-sizing: border-box;
-    padding: 0.85rem 1.1rem;
-    gap: 1rem;
-    justify-content: space-between;
+    padding: 0.8rem 0.9rem;
+    gap: 0.75rem;
+    justify-content: center;
   }
 }
 
@@ -718,7 +718,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   background: $color-border;
 
   @media (max-width: 480px) {
-    height: 24px;
+    display: none;
   }
 }
 
