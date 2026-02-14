@@ -42,10 +42,20 @@ def main():
 
     client = BetaAnalyticsDataClient(credentials=credentials)
 
+    # Use eventCount filtered to page_view for maximum compatibility.
+    # (Some properties may not return screenPageViews depending on configuration.)
+    from google.analytics.data_v1beta.types import FilterExpression, Filter, FilterExpressionList
+
     req = RunReportRequest(
         property=f"properties/{prop}",
         dimensions=[Dimension(name="pagePath")],
-        metrics=[Metric(name="screenPageViews")],
+        metrics=[Metric(name="eventCount")],
+        dimension_filter=FilterExpression(
+            filter=Filter(
+                field_name="eventName",
+                string_filter=Filter.StringFilter(value="page_view", match_type=Filter.StringFilter.MatchType.EXACT),
+            )
+        ),
         # Include today so the counter isn't empty right after installation.
         date_ranges=[DateRange(start_date="30daysAgo", end_date="today")],
         limit=100000,
