@@ -46,7 +46,8 @@ def main():
         property=f"properties/{prop}",
         dimensions=[Dimension(name="pagePath")],
         metrics=[Metric(name="screenPageViews")],
-        date_ranges=[DateRange(start_date="30daysAgo", end_date="yesterday")],
+        # Include today so the counter isn't empty right after installation.
+        date_ranges=[DateRange(start_date="30daysAgo", end_date="today")],
         limit=100000,
     )
 
@@ -64,7 +65,7 @@ def main():
     payload = {
         "meta": {
             "generated_at": datetime.now(timezone.utc).isoformat(),
-            "range": "last_30_days",
+            "range": "last_30_days_including_today",
             "property_id": prop,
         },
         "paths": paths,
