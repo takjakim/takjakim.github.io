@@ -77,16 +77,28 @@ def main():
             "generated_at": datetime.now(timezone.utc).isoformat(),
             "range": "last_30_days_including_today",
             "property_id": prop,
+            "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
         },
         "paths": paths,
     }
+
+    # Safeguard: if GA4 returns 0 rows, keep previous non-empty data (avoid wiping UI).
+    if len(paths) == 0 and os.path.exists(out_path):
+        try:
+            prev = json.load(open(out_path, "r", encoding="utf-8"))
+            prev_paths = prev.get("paths", {}) if isinstance(prev, dict) else {}
+            if isinstance(prev_paths, dict) and len(prev_paths) > 0:
+                payload["paths"] = prev_paths
+                payload["meta"]["note"] += " Kept previous snapshot because new result was empty."
+        except Exception:
+            pass
 
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, indent=2, sort_keys=True)
         f.write("\n")
 
-    print(f"Wrote {len(paths)} paths to {out_path}")
+    print(f"Wrote {len(payload['paths'])} paths to {out_path}")
 
 
 if __name__ == "__main__":
