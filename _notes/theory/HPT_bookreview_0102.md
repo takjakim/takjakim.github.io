@@ -3,10 +3,14 @@ date: 2024-10-19 23:48
 last_modified_at: 2024-10-19
 author: HPT_bookreview_0102
 tags:
-  - 행동주의심리학
-  - 시스템적접근
-  - 성인학습자
+- 행동주의심리학
+- 시스템적접근
+- 성인학습자
+title: HPT_bookreview_0102
+permalink: /theory/hptbookreview0102/
 ---
+
+# HPT_bookreview_0102
 
 ### 1. Review book
 

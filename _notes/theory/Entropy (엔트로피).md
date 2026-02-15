@@ -1,3 +1,9 @@
+---
+title: Entropy (엔트로피)
+last_modified_at: '2026-02-15'
+permalink: /theory/entropy/
+---
+
 # Entropy (엔트로피)
 
 ## 한 줄 요약

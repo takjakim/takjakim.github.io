@@ -3,10 +3,14 @@ date: 2024-11-17 19:40
 last_modified_at: 2024-11-17
 author: HPT_bookreview_0708
 tags:
-  - 메타컨틴전시
-  - 조직학습
-  - 변화관리
+- 메타컨틴전시
+- 조직학습
+- 변화관리
+title: HPT_bookreview_0708
+permalink: /theory/hptbookreview0708/
 ---
+
+# HPT_bookreview_0708
 
 ### 1. Review book
 

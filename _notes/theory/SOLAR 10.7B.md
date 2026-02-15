@@ -1,3 +1,9 @@
+---
+title: SOLAR 10.7B
+last_modified_at: '2026-02-15'
+permalink: /theory/solar-107b/
+---
+
 # SOLAR 10.7B
 
 ## 한 줄 요약

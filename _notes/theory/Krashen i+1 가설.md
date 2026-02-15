@@ -1,3 +1,9 @@
+---
+title: Krashen i+1 가설
+last_modified_at: '2026-02-15'
+permalink: /theory/krashen-i1/
+---
+
 # Krashen i+1 가설
 
 ## 한 줄 요약

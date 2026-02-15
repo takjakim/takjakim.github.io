@@ -1,3 +1,9 @@
+---
+title: R4 연구 Obsidian 노트 색인
+last_modified_at: '2026-02-15'
+permalink: /theory/r4-obsidian/
+---
+
 # R4 연구 Obsidian 노트 색인
 
 ## 개요

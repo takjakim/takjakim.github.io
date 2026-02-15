@@ -1,3 +1,9 @@
+---
+title: EMA (Exponential Moving Average)
+last_modified_at: '2026-02-15'
+permalink: /theory/ema-exponential-moving-average/
+---
+
 # EMA (Exponential Moving Average)
 
 ## 한 줄 요약

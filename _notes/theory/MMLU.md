@@ -1,3 +1,9 @@
+---
+title: MMLU
+last_modified_at: '2026-02-15'
+permalink: /theory/mmlu/
+---
+
 # MMLU
 
 ## 한 줄 요약

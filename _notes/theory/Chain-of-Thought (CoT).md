@@ -1,3 +1,9 @@
+---
+title: Chain-of-Thought (CoT)
+last_modified_at: '2026-02-15'
+permalink: /theory/chain-of-thought-cot/
+---
+
 # Chain-of-Thought (CoT)
 
 ## 한 줄 요약

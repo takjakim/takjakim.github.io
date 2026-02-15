@@ -1,3 +1,9 @@
+---
+title: Perplexity (PPL)
+last_modified_at: '2026-02-15'
+permalink: /theory/perplexity-ppl/
+---
+
 # Perplexity (PPL)
 
 ## 한 줄 요약

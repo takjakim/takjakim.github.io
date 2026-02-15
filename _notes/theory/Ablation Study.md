@@ -1,3 +1,9 @@
+---
+title: Ablation Study
+last_modified_at: '2026-02-15'
+permalink: /theory/ablation-study/
+---
+
 # Ablation Study
 
 ## 한 줄 요약

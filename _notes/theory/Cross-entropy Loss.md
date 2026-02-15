@@ -1,3 +1,9 @@
+---
+title: Cross-entropy Loss
+last_modified_at: '2026-02-15'
+permalink: /theory/cross-entropy-loss/
+---
+
 # Cross-entropy Loss
 
 ## 한 줄 요약

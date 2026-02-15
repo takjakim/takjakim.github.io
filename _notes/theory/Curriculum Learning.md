@@ -1,3 +1,9 @@
+---
+title: Curriculum Learning
+last_modified_at: '2026-02-15'
+permalink: /theory/curriculum-learning/
+---
+
 # Curriculum Learning
 
 ## 한 줄 요약

@@ -1,3 +1,9 @@
+---
+title: HumanEval
+last_modified_at: '2026-02-15'
+permalink: /theory/humaneval/
+---
+
 # HumanEval
 
 ## 한 줄 요약

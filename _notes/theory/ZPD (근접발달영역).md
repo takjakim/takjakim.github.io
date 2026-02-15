@@ -1,3 +1,9 @@
+---
+title: ZPD (근접발달영역)
+last_modified_at: '2026-02-15'
+permalink: /theory/zpd/
+---
+
 # ZPD (근접발달영역)
 
 ## 한 줄 요약

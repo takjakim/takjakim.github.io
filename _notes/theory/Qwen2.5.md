@@ -1,3 +1,9 @@
+---
+title: Qwen2.5
+last_modified_at: '2026-02-15'
+permalink: /theory/qwen25/
+---
+
 # Qwen2.5
 
 ## 한 줄 요약

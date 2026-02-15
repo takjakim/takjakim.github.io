@@ -1,3 +1,9 @@
+---
+title: Confidence (신뢰도)
+last_modified_at: '2026-02-15'
+permalink: /theory/confidence/
+---
+
 # Confidence (신뢰도)
 
 ## 한 줄 요약

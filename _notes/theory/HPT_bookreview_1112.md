@@ -3,10 +3,14 @@ date: 2024-11-24 14:30
 last_modified_at: 2024-11-24
 author: HPT_bookreview_1112
 tags:
-  - 성과모델링
-  - 조직변화
-  - 변화관리전략
+- 성과모델링
+- 조직변화
+- 변화관리전략
+title: HPT_bookreview_1112
+permalink: /theory/hptbookreview1112/
 ---
+
+# HPT_bookreview_1112
 
 ### 1. Review book
 

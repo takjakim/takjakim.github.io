@@ -1,3 +1,9 @@
+---
+title: Cohen's d
+last_modified_at: '2026-02-15'
+permalink: /theory/cohens-d/
+---
+
 # Cohen's d
 
 ## 한 줄 요약

@@ -1,3 +1,9 @@
+---
+title: Flesch-Kincaid Grade Level
+last_modified_at: '2026-02-15'
+permalink: /theory/flesch-kincaid-grade-level/
+---
+
 # Flesch-Kincaid Grade Level
 
 ## 한 줄 요약

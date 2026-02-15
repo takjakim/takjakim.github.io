@@ -1,3 +1,9 @@
+---
+title: ANOVA
+last_modified_at: '2026-02-15'
+permalink: /theory/anova/
+---
+
 # ANOVA
 
 ## 한 줄 요약

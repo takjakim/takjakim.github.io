@@ -1,3 +1,9 @@
+---
+title: GSM8K
+last_modified_at: '2026-02-15'
+permalink: /theory/gsm8k/
+---
+
 # GSM8K
 
 ## 한 줄 요약

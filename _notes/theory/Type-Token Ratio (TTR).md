@@ -1,3 +1,9 @@
+---
+title: Type-Token Ratio (TTR)
+last_modified_at: '2026-02-15'
+permalink: /theory/type-token-ratio-ttr/
+---
+
 # Type-Token Ratio (TTR)
 
 ## 한 줄 요약

@@ -3,10 +3,14 @@ date: 2024-11-10 18:09
 last_modified_at: 2024-11-10
 author: HPT_bookreview_0506
 tags:
-  - 메가플래닝
-  - 사회적가치
-  - 지속가능경영
+- 메가플래닝
+- 사회적가치
+- 지속가능경영
+title: HPT_bookreview_0506
+permalink: /theory/hptbookreview0506/
 ---
+
+# HPT_bookreview_0506
 
 ### 1. Review book
 

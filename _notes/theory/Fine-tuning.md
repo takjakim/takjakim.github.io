@@ -1,3 +1,9 @@
+---
+title: Fine-tuning
+last_modified_at: '2026-02-15'
+permalink: /theory/fine-tuning/
+---
+
 # Fine-tuning
 
 ## 한 줄 요약

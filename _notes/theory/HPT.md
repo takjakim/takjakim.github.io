@@ -1,5 +1,10 @@
 ---
+title: HPT
+last_modified_at: '2026-02-15'
+permalink: /theory/hpt/
 ---
+
+# HPT
 
 HPT 북리뷰 파일들을 분석해보니 다음과 같이 챕터별로 정리된 목차를 만들 수 있을 것 같습니다:
 

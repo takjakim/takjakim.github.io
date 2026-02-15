@@ -3,10 +3,14 @@ date: 2024-10-27 14:53
 last_modified_at: 2024-10-27
 author: HPT_bookreview_0304
 tags:
-  - 비즈니스로직모델
-  - 역할세트이론
-  - 성과목표정렬
+- 비즈니스로직모델
+- 역할세트이론
+- 성과목표정렬
+title: HPT_bookreview_0304
+permalink: /theory/hptbookreview0304/
 ---
+
+# HPT_bookreview_0304
 
 ### 1. Review book
 
