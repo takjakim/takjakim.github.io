@@ -107,7 +107,11 @@ permalink: /
               {% endif %}
             </div>
             <h3 class="glass-title">{{ note.title }}</h3>
-            <p class="glass-excerpt">{{ note.content | strip_html | truncate: 90 }}</p>
+            {% if forloop.first %}
+              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 160 }}</p>
+            {% else %}
+              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 110 }}</p>
+            {% endif %}
             <div class="glass-footer"><span class="read-more">읽기 →</span></div>
           </a>
         </article>
@@ -162,7 +166,13 @@ permalink: /
               {% endif %}
             </div>
             <h3 class="glass-title">{{ note.title }}</h3>
-            <p class="glass-excerpt">{{ note.content | strip_html | truncate: 80 }}</p>
+            {% if size_class == "glass-card--lg" %}
+              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 160 }}</p>
+            {% elsif size_class == "glass-card--md" %}
+              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 110 }}</p>
+            {% else %}
+              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 80 }}</p>
+            {% endif %}
             <div class="glass-footer"><span class="read-more">읽기 →</span></div>
           </a>
         </article>
