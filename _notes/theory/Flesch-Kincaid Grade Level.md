@@ -10,7 +10,7 @@ permalink: /theory/flesch-kincaid-grade-level/
 텍스트를 읽으려면 몇 학년 수준의 교육이 필요한지 계산하는 가독성(읽기 쉬움) 지표.
 
 ## 쉬운 설명
-Flesch-Kincaid Grade Level은 **"이 글은 몇 학년생이 읽을 수 있을까?"**를 숫자로 보여주는 공식입니다.
+Flesch-Kincaid Grade Level은 **"이 글은 몇 학년생이 읽을 수 있을까?"**를 숫자로 보여주는 공식이다.
 
 ### 예시:
 ```
@@ -61,7 +61,7 @@ Grade Level = 0.39 × (총 단어 수 / 총 문장 수)
 - [[Perplexity (PPL)]] - AI가 느끼는 텍스트 난이도
 
 ## R4 연구에서의 역할
-Flesch-Kincaid는 R4 연구의 **D1 (언어적 복잡성)** 측정에 사용됩니다.
+Flesch-Kincaid는 R4 연구의 **D1 (언어적 복잡성)** 측정에 사용된다.
 
 ### 다차원 난이도 정의:
 R4 연구는 데이터 난이도를 3차원으로 측정:

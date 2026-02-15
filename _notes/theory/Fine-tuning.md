@@ -10,7 +10,7 @@ permalink: /theory/fine-tuning/
 이미 훈련된 AI 모델을 특정 목적에 맞게 추가로 학습시켜 성능을 높이는 과정.
 
 ## 쉬운 설명
-Fine-tuning(미세조정)은 AI 모델 학습의 **2단계 전략**에서 두 번째 단계입니다.
+Fine-tuning(미세조정)은 AI 모델 학습의 **2단계 전략**에서 두 번째 단계이다.
 
 ### 요리로 비유하면:
 1. **Pre-training (사전학습)**: 요리학원에서 기본기 배우기
@@ -58,7 +58,7 @@ Fine-tuning(미세조정)은 AI 모델 학습의 **2단계 전략**에서 두 �
 - [[HumanEval]] - 코드 생성 Fine-tuning 평가
 
 ## R4 연구에서의 역할
-R4 연구는 **Fine-tuning 단계에서 Curriculum Learning을 적용**합니다.
+R4 연구는 **Fine-tuning 단계에서 Curriculum Learning을 적용**한다.
 
 ### 기존 Fine-tuning (Random):
 ```

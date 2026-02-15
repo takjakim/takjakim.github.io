@@ -10,7 +10,7 @@ permalink: /theory/anova/
 3개 이상의 그룹 평균을 비교해서 "이 차이가 진짜 차이인지 우연인지" 통계적으로 판단하는 분석 방법.
 
 ## 쉬운 설명
-ANOVA는 "Analysis of Variance"의 약자로, 한국어로는 **"분산분석"**입니다.
+ANOVA는 "Analysis of Variance"의 약자로, 한국어로는 **"분산분석"**이다.
 
 ### 쉬운 비유: 세 학교 수학 평균 비교
 A 학교: 평균 80점
@@ -55,7 +55,7 @@ F가 작으면 (예: F=1.2) → 그룹 간 차이가 우연일 수도...
 - [[Curriculum Learning]] - 4개 Curriculum 조건 비교에 ANOVA 사용
 
 ## R4 연구에서의 역할
-R4 연구는 **4-Arm 실험 설계**이므로 ANOVA가 핵심 통계 기법입니다.
+R4 연구는 **4-Arm 실험 설계**이므로 ANOVA가 핵심 통계 기법이다.
 
 ### R4의 4개 조건:
 1. Random Sampling

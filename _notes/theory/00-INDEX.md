@@ -7,7 +7,7 @@ permalink: /theory/r4-obsidian/
 # R4 연구 Obsidian 노트 색인
 
 ## 개요
-이 디렉토리는 **R4 연구: ZPD-inspired Adaptive Curriculum Learning**에 언급된 모든 이론, 방법론, 개념에 대한 Obsidian 형식 연계 노트를 포함합니다.
+이 디렉토리는 **R4 연구: ZPD-inspired Adaptive Curriculum Learning**에 언급된 모든 이론, 방법론, 개념에 대한 Obsidian 형식 연계 노트를 포함한다.
 
 **대상 독자**: 고등학생 수준
 **형식**: Obsidian [[]] 백링크 형식
