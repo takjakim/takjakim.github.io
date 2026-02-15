@@ -1,15 +1,23 @@
-# Part 1: 기획
+---
+title: "stats.takjakim.kr 개발기 (1): 기획"
+last_modified_at: 2026-02-15
+permalink: /dev/stats-method/planning/
+tags: [stats, education, product, planning]
+importance: 2
+---
+
+# stats.takjakim.kr 개발기 (1): 기획
 
 > Method 개발기 시리즈 (1/4)
 
-[← 목차로 돌아가기](./index.md) | [다음: 설계 →](./02-design.md)
+[← 시리즈 목차](/dev/stats-method/) | [다음: 설계 →](/dev/stats-method/design/)
 
 ---
 
 ## 개요
 
 <!-- 다이어그램: ./images/planning-diagram.excalidraw -->
-![홈페이지](../images/home.png)
+![홈페이지](/assets/img/stats-method/home.png)
 
 이 파트에서는 Method 프로젝트의 기획 과정을 다룹니다:
 - 문제 인식
@@ -63,7 +71,7 @@
 
 > **"브라우저에서 바로 Python 코드를 실행하며 통계를 배우자"**
 
-![홈페이지 스크린샷](./images/planning-home.png)
+![홈페이지 스크린샷](/assets/img/stats-method/planning-home.png)
 
 ### 핵심 기능 정의
 
@@ -173,4 +181,4 @@
 
 ---
 
-[← 목차로 돌아가기](./index.md) | [다음: 설계 →](./02-design.md)
+[← 시리즈 목차](/dev/stats-method/) | [다음: 설계 →](/dev/stats-method/design/)

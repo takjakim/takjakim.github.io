@@ -1,15 +1,23 @@
-# Part 2: 설계
+---
+title: "stats.takjakim.kr 개발기 (2): 설계"
+last_modified_at: 2026-02-15
+permalink: /dev/stats-method/design/
+tags: [stats, education, architecture, nextjs, supabase]
+importance: 2
+---
+
+# stats.takjakim.kr 개발기 (2): 설계
 
 > Method 개발기 시리즈 (2/4)
 
-[← 이전: 기획](./01-planning.md) | [목차](./index.md) | [다음: 개발 →](./03-development.md)
+[← 이전: 기획](/dev/stats-method/planning/) | [목차](/dev/stats-method/) | [다음: 개발 →](/dev/stats-method/development/)
 
 ---
 
 ## 개요
 
 <!-- 다이어그램: ./images/architecture-diagram.excalidraw -->
-![학습 페이지](./images/design-curriculum.png)
+![학습 페이지](/assets/img/stats-method/design-curriculum.png)
 
 이 파트에서는 Method 프로젝트의 설계를 다룹니다:
 - 기술 스택 선정
@@ -404,4 +412,4 @@ app/
 
 ---
 
-[← 이전: 기획](./01-planning.md) | [목차](./index.md) | [다음: 개발 →](./03-development.md)
+[← 이전: 기획](/dev/stats-method/planning/) | [목차](/dev/stats-method/) | [다음: 개발 →](/dev/stats-method/development/)

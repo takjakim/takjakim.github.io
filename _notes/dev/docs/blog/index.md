@@ -1,8 +1,17 @@
-# Method 개발기
+---
+title: "stats.takjakim.kr 개발기: Method (시리즈)"
+last_modified_at: 2026-02-15
+permalink: /dev/stats-method/
+tags: [stats, education, nextjs, pyodide, supabase, vercel]
+featured: true
+importance: 3
+---
 
-> **stats.takjakim.kr** - 대학(원)생을 위한 인터랙티브 통계학 학습 플랫폼
+# stats.takjakim.kr 개발기: Method
 
-![Method 홈페이지](../images/home.png)
+> 대학(원)생을 위한 인터랙티브 통계학 학습 플랫폼을 만들며 남긴 개발 기록.
+
+![Method 홈페이지](/assets/img/stats-method/home.png)
 
 ---
 
@@ -12,10 +21,10 @@
 
 | # | 파트 | 내용 | 핵심 키워드 |
 |---|------|------|------------|
-| 1 | [기획](./01-planning.md) | 문제 인식, 솔루션 컨셉, 타겟 사용자 | Problem-Solution Fit |
-| 2 | [설계](./02-design.md) | 기술 스택, 시스템 아키텍처, 데이터 모델 | Architecture |
-| 3 | [개발](./03-development.md) | Pyodide, MDX, 인증, 진도 추적 | Implementation |
-| 4 | [배포](./04-deployment.md) | Vercel, CI/CD, 모니터링 | DevOps |
+| 1 | [기획](/dev/stats-method/planning/) | 문제 인식, 솔루션 컨셉, 타겟 사용자 | Problem-Solution Fit |
+| 2 | [설계](/dev/stats-method/design/) | 기술 스택, 시스템 아키텍처, 데이터 모델 | Architecture |
+| 3 | [개발](/dev/stats-method/development/) | Pyodide, MDX, 인증, 진도 추적 | Implementation |
+| 4 | [배포](/dev/stats-method/deployment/) | Vercel, CI/CD, 모니터링 | DevOps |
 
 ---
 
@@ -42,12 +51,12 @@ Deploy:   Vercel
 
 <table>
   <tr>
-    <td><img src="../images/home.png" alt="홈페이지" /></td>
-    <td><img src="../images/learn.png" alt="학습 페이지" /></td>
+    <td><img src="/assets/img/stats-method/home.png" alt="홈페이지" /></td>
+    <td><img src="/assets/img/stats-method/learn.png" alt="학습 페이지" /></td>
   </tr>
   <tr>
-    <td><img src="../images/lesson-mean.png" alt="레슨" /></td>
-    <td><img src="../images/exercises.png" alt="연습문제" /></td>
+    <td><img src="/assets/img/stats-method/lesson-mean.png" alt="레슨" /></td>
+    <td><img src="/assets/img/stats-method/exercises.png" alt="연습문제" /></td>
   </tr>
 </table>
 

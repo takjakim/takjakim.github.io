@@ -1,15 +1,23 @@
-# Part 3: 개발
+---
+title: "stats.takjakim.kr 개발기 (3): 개발"
+last_modified_at: 2026-02-15
+permalink: /dev/stats-method/development/
+tags: [stats, education, implementation, pyodide, mdx, nextauth]
+importance: 2
+---
+
+# stats.takjakim.kr 개발기 (3): 개발
 
 > Method 개발기 시리즈 (3/4)
 
-[← 이전: 설계](./02-design.md) | [목차](./index.md) | [다음: 배포 →](./04-deployment.md)
+[← 이전: 설계](/dev/stats-method/design/) | [목차](/dev/stats-method/) | [다음: 배포 →](/dev/stats-method/deployment/)
 
 ---
 
 ## 개요
 
 <!-- 다이어그램: ./images/development-diagram.excalidraw -->
-![레슨 페이지](../images/lesson-mean.png)
+![레슨 페이지](/assets/img/stats-method/lesson-mean.png)
 
 이 파트에서는 핵심 기능 구현을 다룹니다:
 - Pyodide를 통한 브라우저 내 Python 실행
@@ -23,7 +31,7 @@
 
 ### 1.1 Pyodide란?
 
-![레슨 페이지](./images/dev-variance.png)
+![레슨 페이지](/assets/img/stats-method/dev-variance.png)
 
 **Pyodide**는 Python을 WebAssembly로 컴파일하여 브라우저에서 실행할 수 있게 해주는 프로젝트입니다.
 
@@ -384,7 +392,7 @@ export default function RevealAnswer({ children }: { children: React.ReactNode }
 
 ### 3.1 사이드바 컴포넌트
 
-![모바일 레슨](./images/dev-lesson-mobile.png)
+![모바일 레슨](/assets/img/stats-method/dev-lesson-mobile.png)
 
 ```tsx
 // components/learn/Sidebar.tsx
@@ -466,7 +474,7 @@ export default function Sidebar({ children }: { children: React.ReactNode }) {
 
 ### 4.1 NextAuth.js v5 설정
 
-![로그인 페이지](./images/dev-hypothesis.png)
+![로그인 페이지](/assets/img/stats-method/dev-hypothesis.png)
 
 ```ts
 // auth.ts
@@ -591,7 +599,7 @@ export async function POST(req: Request) {
 
 ### 5.1 진도 저장 API
 
-![회귀분석 레슨](./images/dev-regression.png)
+![회귀분석 레슨](/assets/img/stats-method/dev-regression.png)
 
 ```ts
 // app/api/progress/route.ts
@@ -735,9 +743,9 @@ export default function CompletionButton({
 
 ### 6.1 연습문제 페이지
 
-![연습문제](../images/exercises.png)
+![연습문제](/assets/img/stats-method/exercises.png)
 
-![가설검정 레슨](./images/dev-hypothesis.png)
+![가설검정 레슨](/assets/img/stats-method/dev-hypothesis.png)
 
 ```tsx
 // app/[locale]/learn/[topic]/[lesson]/exercises/page.tsx
@@ -803,4 +811,4 @@ print('결과:', round(result, 2))
 
 ---
 
-[← 이전: 설계](./02-design.md) | [목차](./index.md) | [다음: 배포 →](./04-deployment.md)
+[← 이전: 설계](/dev/stats-method/design/) | [목차](/dev/stats-method/) | [다음: 배포 →](/dev/stats-method/deployment/)

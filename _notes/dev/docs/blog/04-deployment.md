@@ -1,15 +1,23 @@
-# Part 4: 배포
+---
+title: "stats.takjakim.kr 개발기 (4): 배포"
+last_modified_at: 2026-02-15
+permalink: /dev/stats-method/deployment/
+tags: [stats, education, deployment, vercel, ci-cd]
+importance: 2
+---
+
+# stats.takjakim.kr 개발기 (4): 배포
 
 > Method 개발기 시리즈 (4/4)
 
-[← 이전: 개발](./03-development.md) | [목차](./index.md)
+[← 이전: 개발](/dev/stats-method/development/) | [목차](/dev/stats-method/)
 
 ---
 
 ## 개요
 
 <!-- 다이어그램: ./images/deployment-diagram.excalidraw -->
-![프로덕션 사이트](./images/deploy-production.png)
+![프로덕션 사이트](/assets/img/stats-method/deploy-production.png)
 
 이 파트에서는 배포 및 운영을 다룹니다:
 - Vercel 배포
@@ -405,6 +413,6 @@ ANALYZE=true npm run build
 
 ---
 
-[← 이전: 개발](./03-development.md) | [목차](./index.md)
+[← 이전: 개발](/dev/stats-method/development/) | [목차](/dev/stats-method/)
 
 *2026년 2월 작성*
