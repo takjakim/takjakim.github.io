@@ -1,0 +1,162 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "client",
+      "type": "rectangle",
+      "x": 100,
+      "y": 100,
+      "width": 200,
+      "height": 80,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "client-text",
+      "type": "text",
+      "x": 140,
+      "y": 125,
+      "text": "Client (Browser)\nNext.js + React",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center"
+    },
+    {
+      "id": "nextjs",
+      "type": "rectangle",
+      "x": 400,
+      "y": 100,
+      "width": 200,
+      "height": 80,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "nextjs-text",
+      "type": "text",
+      "x": 430,
+      "y": 125,
+      "text": "Next.js 15 Server\nApp Router + RSC",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center"
+    },
+    {
+      "id": "supabase",
+      "type": "rectangle",
+      "x": 700,
+      "y": 100,
+      "width": 200,
+      "height": 80,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffec99",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "supabase-text",
+      "type": "text",
+      "x": 730,
+      "y": 125,
+      "text": "Supabase\nPostgreSQL + Auth",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center"
+    },
+    {
+      "id": "pyodide",
+      "type": "rectangle",
+      "x": 100,
+      "y": 250,
+      "width": 200,
+      "height": 80,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "pyodide-text",
+      "type": "text",
+      "x": 130,
+      "y": 275,
+      "text": "Pyodide (WASM)\nIn-Browser Python",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center"
+    },
+    {
+      "id": "mdx",
+      "type": "rectangle",
+      "x": 400,
+      "y": 250,
+      "width": 200,
+      "height": 80,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "mdx-text",
+      "type": "text",
+      "x": 440,
+      "y": 275,
+      "text": "MDX Content\n20+ Lessons",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center"
+    },
+    {
+      "id": "vercel",
+      "type": "rectangle",
+      "x": 700,
+      "y": 250,
+      "width": 200,
+      "height": 80,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#c0eb75",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 1,
+      "opacity": 100,
+      "roundness": { "type": 3 }
+    },
+    {
+      "id": "vercel-text",
+      "type": "text",
+      "x": 750,
+      "y": 275,
+      "text": "Vercel\nEdge Deploy",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "center"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  },
+  "files": {}
+}
