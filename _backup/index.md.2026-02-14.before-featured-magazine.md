@@ -72,55 +72,7 @@ permalink: /
     {% endif %}
   </section>
 
-  <!-- Featured Posts -->
-  {% assign featured_notes = site.notes | where_exp: "n", "n.featured == true" | sort: "last_modified_at_timestamp" | reverse %}
-  {% if featured_notes and featured_notes.size > 0 %}
-  <section class="recent-section">
-    <div class="section-header">
-      <h2 class="section-title">추천</h2>
-      <div class="filter-pills">
-        <span class="pill pill-ghost">Featured</span>
-      </div>
-    </div>
-
-    <div class="featured-grid">
-      {% for note in featured_notes limit: 3 %}
-        {% assign note_category = note.path | split: "/" | slice: 1 | first %}
-        <article class="glass-card glass-card--featured {% if forloop.first %}glass-card--xl{% else %}glass-card--md{% endif %} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}">
-          <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
-            <div class="glass-meta">
-              <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
-              {% assign pv = site.data.pageviews.paths[note.url].views %}
-              {% if pv %}
-                <span class="glass-views">👀 {{ pv }}</span>
-              {% else %}
-                <span class="glass-views glass-views--new">NEW</span>
-              {% endif %}
-              {% if note_category == "investing" %}
-                <span class="glass-tag tag-investing">Research</span>
-              {% elsif note_category == "theory" %}
-                <span class="glass-tag tag-theory">Theory</span>
-              {% elsif note_category == "dev" %}
-                <span class="glass-tag tag-dev">개발</span>
-              {% elsif note_category == "ai" %}
-                <span class="glass-tag tag-ai">AI</span>
-              {% endif %}
-            </div>
-            <h3 class="glass-title">{{ note.title }}</h3>
-            {% if forloop.first %}
-              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 160 }}</p>
-            {% else %}
-              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 110 }}</p>
-            {% endif %}
-            <div class="glass-footer"><span class="read-more">읽기 →</span></div>
-          </a>
-        </article>
-      {% endfor %}
-    </div>
-  </section>
-  {% endif %}
-
-  <!-- Recent Posts (Magazine) -->
+  <!-- Recent Posts -->
   <section class="recent-section">
     <div class="section-header">
       <h2 class="section-title">최근 업데이트</h2>
@@ -133,28 +85,14 @@ permalink: /
       </div>
     </div>
 
-    <div class="glass-grid glass-grid--magazine" id="notes-grid">
+    <div class="glass-grid" id="notes-grid">
       {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
       {% for note in recent_notes %}
         {% assign note_category = note.path | split: "/" | slice: 1 | first %}
-        {% assign importance = note.importance | default: 1 %}
-        {% assign size_class = "" %}
-        {% if note.featured == true or importance >= 3 %}
-          {% assign size_class = "glass-card--lg" %}
-        {% elsif importance == 2 %}
-          {% assign size_class = "glass-card--md" %}
-        {% endif %}
-
-        <article class="glass-card {{ size_class }} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
+        <article class="glass-card {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
-              {% assign pv = site.data.pageviews.paths[note.url].views %}
-              {% if pv %}
-                <span class="glass-views">👀 {{ pv }}</span>
-              {% else %}
-                <span class="glass-views glass-views--new">NEW</span>
-              {% endif %}
               {% if note_category == "investing" %}
                 <span class="glass-tag tag-investing">Research</span>
               {% elsif note_category == "theory" %}
@@ -166,14 +104,10 @@ permalink: /
               {% endif %}
             </div>
             <h3 class="glass-title">{{ note.title }}</h3>
-            {% if size_class == "glass-card--lg" %}
-              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 160 }}</p>
-            {% elsif size_class == "glass-card--md" %}
-              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 110 }}</p>
-            {% else %}
-              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 80 }}</p>
-            {% endif %}
-            <div class="glass-footer"><span class="read-more">읽기 →</span></div>
+            <p class="glass-excerpt">{{ note.content | strip_html | truncate: 60 }}</p>
+            <div class="glass-footer">
+              <span class="read-more">읽기 →</span>
+            </div>
           </a>
         </article>
       {% endfor %}
@@ -221,11 +155,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Update load more button
     if (loadMoreBtn) {
-      const totalFiltered = Array.from(cards).filter(c => {
-        if (currentFilter === 'all') return true;
-        if (currentFilter === 'research') return (c.dataset.category === 'investing' || c.dataset.category === 'market-analysis');
-        return c.dataset.category === currentFilter;
-      }).length;
+      const totalFiltered = Array.from(cards).filter(c =>
+        currentFilter === 'all' || c.dataset.category === currentFilter
+      ).length;
       const remaining = totalFiltered - visibleCount;
       if (remaining > 0) {
         loadMoreBtn.parentElement.style.display = '';

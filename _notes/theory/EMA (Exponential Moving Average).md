@@ -1,10 +1,16 @@
+---
+title: EMA (Exponential Moving Average)
+last_modified_at: '2026-02-15'
+permalink: /theory/ema-exponential-moving-average/
+---
+
 # EMA (Exponential Moving Average)
 
 ## 한 줄 요약
 최근 값에 더 많은 가중치를 주고 과거 값은 점점 줄이면서 평균을 계산하는 방법으로, 잡음을 제거하고 추세를 부드럽게 보여준다.
 
 ## 쉬운 설명
-EMA는 "지수 이동 평균"으로, **"최근 것이 더 중요해!"**라는 철학으로 평균을 계산합니다.
+EMA는 "지수 이동 평균"으로, **"최근 것이 더 중요해!"**라는 철학으로 평균을 계산한다.
 
 ### 단순 평균 vs EMA:
 
@@ -51,7 +57,7 @@ EMA_new = α × 현재값 + (1-α) × EMA_old
 - [[Cross-entropy Loss]] - Loss 값을 EMA로 평활화
 
 ## R4 연구에서의 역할
-R4 연구는 EMA를 **PPL 안정화**에 사용합니다.
+R4 연구는 EMA를 **PPL 안정화**에 사용한다.
 
 ### 문제 상황:
 모델 학습 중 PPL이 불안정하게 변동:

@@ -1,3 +1,9 @@
+---
+title: Cohen's d
+last_modified_at: '2026-02-15'
+permalink: /theory/cohens-d/
+---
+
 # Cohen's d
 
 ## 한 줄 요약
@@ -23,7 +29,7 @@ Cohen's d는 **"차이의 크기"**를 표준화된 숫자로 나타냅니다.
 - 성별 간: 큰 의미
 - 같은 성별 내: 작은 의미
 
-Cohen's d는 이런 **상대적 크기**를 측정합니다.
+Cohen's d는 이런 **상대적 크기**를 측정한다.
 
 ### 계산 방법:
 ```
@@ -56,7 +62,7 @@ Cohen's d = (80 - 70) / 10 = 1.0
 - [[Curriculum Learning]] - Curriculum 효과의 실질적 크기 평가
 
 ## R4 연구에서의 역할
-R4 연구는 Cohen's d로 **실질적 효과 크기**를 평가합니다.
+R4 연구는 Cohen's d로 **실질적 효과 크기**를 평가한다.
 
 ### 왜 Cohen's d가 중요한가?
 p-value만으로는 부족:

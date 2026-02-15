@@ -1,10 +1,16 @@
+---
+title: Chain-of-Thought (CoT)
+last_modified_at: '2026-02-15'
+permalink: /theory/chain-of-thought-cot/
+---
+
 # Chain-of-Thought (CoT)
 
 ## 한 줄 요약
 AI에게 답만 요구하는 게 아니라 "단계별로 생각하는 과정"을 보여주게 하면 복잡한 문제를 더 잘 푼다는 추론 기법.
 
 ## 쉬운 설명
-Chain-of-Thought(사고의 연쇄)는 **"과정을 보여주면서 생각하기"**입니다.
+Chain-of-Thought(사고의 연쇄)는 **"과정을 보여주면서 생각하기"**이다.
 
 ### 쉬운 비유: 수학 문제 풀이
 **일반적인 방법 (Direct Answer)**:
@@ -66,7 +72,7 @@ A: 1단계: 곱셈 먼저... 2단계: 덧셈...
 - [[Curriculum Learning]] - CoT 단계 수로 난이도 측정 가능
 
 ## R4 연구에서의 역할
-CoT는 R4 연구의 **D2 (추론 단계 수)** 측정에 핵심적으로 사용됩니다.
+CoT는 R4 연구의 **D2 (추론 단계 수)** 측정에 핵심적으로 사용된다.
 
 ### D2 (추론 단계 수) 계산:
 ```python

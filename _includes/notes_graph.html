@@ -72,6 +72,10 @@
     transition: all 0.3s ease;
   }
 
+  .hidden {
+    display: none !important;
+  }
+
   /* Node colors by category */
   .node-investing { fill: #10B981; }
   .node-theory { fill: #3B82F6; }
@@ -107,12 +111,24 @@
 
         const nodeSize = {};
 
+        // Category helpers
+        const getCategory = (path) => {
+          if (!path) return 'default';
+          if (path.includes('/investing/')) return 'research';
+          if (path.includes('/market-analysis/')) return 'research';
+          if (path.includes('/theory/')) return 'theory';
+          if (path.includes('/dev/')) return 'dev';
+          if (path.includes('/ai/')) return 'ai';
+          return 'default';
+        };
+
         // Category color mapping
         const getCategoryColor = (path) => {
-          if (path.includes('/investing/')) return '#10B981';
-          if (path.includes('/theory/')) return '#3B82F6';
-          if (path.includes('/dev/')) return '#8B5CF6';
-          if (path.includes('/ai/')) return '#F59E0B';
+          const cat = getCategory(path);
+          if (cat === 'research') return '#10B981';
+          if (cat === 'theory') return '#3B82F6';
+          if (cat === 'dev') return '#8B5CF6';
+          if (cat === 'ai') return '#F59E0B';
           return null; // Will use gradient
         };
 
@@ -366,6 +382,147 @@
 
         zoomHandler(svg);
         restart();
+
+        // ===== Graph View controls (only when #graph-controls exists) =====
+        const controls = document.getElementById('graph-controls');
+        const state = {
+          allowed: new Set(['research', 'theory', 'dev', 'ai', 'default']),
+          focusedId: null,
+          neighborsOnly: false,
+        };
+
+        const getNeighborsSet = (id) => {
+          const s = new Set([id]);
+          linksData.forEach((l) => {
+            const a = l.source.id;
+            const b = l.target.id;
+            if (a === id) s.add(b);
+            if (b === id) s.add(a);
+          });
+          return s;
+        };
+
+        const applyVisibility = () => {
+          const neighborSet = (state.neighborsOnly && state.focusedId) ? getNeighborsSet(state.focusedId) : null;
+
+          node.attr('class', (d) => {
+            const catOk = state.allowed.has(getCategory(d.path));
+            const neighOk = !neighborSet || neighborSet.has(d.id);
+            if (!catOk || !neighOk) return 'inactive';
+            return '';
+          });
+
+          text.attr('class', (d) => {
+            const catOk = state.allowed.has(getCategory(d.path));
+            const neighOk = !neighborSet || neighborSet.has(d.id);
+            if (!catOk || !neighOk) return 'inactive';
+            return '';
+          });
+
+          link.attr('class', (d) => {
+            const a = d.source.id;
+            const b = d.target.id;
+            const aNode = nodesData.find(n => n.id === a);
+            const bNode = nodesData.find(n => n.id === b);
+            const catOk = (!aNode || state.allowed.has(getCategory(aNode.path))) && (!bNode || state.allowed.has(getCategory(bNode.path)));
+            const neighOk = !neighborSet || (neighborSet.has(a) && neighborSet.has(b));
+            if (!catOk || !neighOk) return 'inactive';
+            return '';
+          });
+        };
+
+        const focusNode = (target) => {
+          if (!target) return;
+          state.focusedId = target.id;
+
+          node.attr('active', (d) => (d.id === target.id ? true : null));
+          text.attr('active', (d) => (d.id === target.id ? true : null));
+
+          // Center/zoom
+          const el = document.querySelector('#graph-wrapper svg');
+          const w = Number(el.getAttribute('width')) || window.innerWidth;
+          const h = Number(el.getAttribute('height')) || window.innerHeight;
+          const scale = 1.4;
+          const tx = (w / 2) - target.x * scale;
+          const ty = (h / 2) - target.y * scale;
+
+          svg.transition().duration(450).call(
+            zoomHandler.transform,
+            d3.zoomIdentity.translate(tx, ty).scale(scale)
+          );
+
+          applyVisibility();
+        };
+
+        const resetView = () => {
+          state.allowed = new Set(['research', 'theory', 'dev', 'ai', 'default']);
+          state.focusedId = null;
+          state.neighborsOnly = false;
+
+          node.attr('active', null);
+          text.attr('active', null);
+
+          if (controls) {
+            document.querySelectorAll('.graph-filter').forEach(cb => cb.checked = true);
+            const nb = document.getElementById('graph-neighbors');
+            if (nb) nb.checked = false;
+            const search = document.getElementById('graph-search');
+            if (search) search.value = '';
+          }
+
+          svg.transition().duration(350).call(zoomHandler.transform, d3.zoomIdentity);
+          applyVisibility();
+        };
+
+        if (controls) {
+          const search = document.getElementById('graph-search');
+          const resetBtn = document.getElementById('graph-reset');
+          const neighborsToggle = document.getElementById('graph-neighbors');
+
+          document.querySelectorAll('.graph-filter').forEach((cb) => {
+            cb.addEventListener('change', () => {
+              const v = cb.value;
+              if (cb.checked) state.allowed.add(v);
+              else state.allowed.delete(v);
+              applyVisibility();
+            });
+          });
+
+          if (neighborsToggle) {
+            neighborsToggle.addEventListener('change', () => {
+              state.neighborsOnly = neighborsToggle.checked;
+              applyVisibility();
+            });
+          }
+
+          if (resetBtn) resetBtn.addEventListener('click', resetView);
+
+          if (search) {
+            const doSearch = () => {
+              const q = (search.value || '').trim().toLowerCase();
+              if (!q) return;
+              // exact match first
+              let hit = nodesData.find(n => (n.label || '').toLowerCase() === q);
+              if (!hit) hit = nodesData.find(n => (n.label || '').toLowerCase().includes(q));
+              if (hit) focusNode(hit);
+            };
+            search.addEventListener('keydown', (e) => {
+              if (e.key === 'Enter') doSearch();
+            });
+          }
+
+          // Also allow clicking a node to set focus
+          node.on('click', (d) => {
+            focusNode(d);
+            onClick(d);
+          });
+          text.on('click', (d) => {
+            focusNode(d);
+            onClick(d);
+          });
+
+          applyVisibility();
+        }
 
         function isCurrentPath(notePath) {
           return window.location.pathname.includes(notePath)

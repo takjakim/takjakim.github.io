@@ -3,10 +3,14 @@ date: 2024-11-24 15:30
 last_modified_at: 2024-11-24
 author: HPT_bookreview_1314
 tags:
-  - 통합적평가
-  - 성과개선
-  - 변혁적리더십
+- 통합적평가
+- 성과개선
+- 변혁적리더십
+title: HPT_bookreview_1314
+permalink: /theory/hptbookreview1314/
 ---
+
+# HPT_bookreview_1314
 
 ### 1. Review book
 

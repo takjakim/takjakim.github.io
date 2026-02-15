@@ -1,10 +1,16 @@
+---
+title: HumanEval
+last_modified_at: '2026-02-15'
+permalink: /theory/humaneval/
+---
+
 # HumanEval
 
 ## 한 줄 요약
 AI가 프로그래밍 문제를 얼마나 잘 푸는지 평가하는 코딩 테스트로, 실제로 실행 가능한 코드를 작성하는지 확인한다.
 
 ## 쉬운 설명
-HumanEval은 AI의 **코딩 능력**을 평가하는 벤치마크입니다. "Human-level Evaluation"에서 이름이 왔어요.
+HumanEval은 AI의 **코딩 능력**을 평가하는 벤치마크이다. "Human-level Evaluation"에서 이름이 왔어요.
 
 ### 어떻게 평가하나?
 1. **문제 제공**: Python 함수를 완성하는 문제 164개
@@ -51,14 +57,14 @@ def greatest_common_divisor(a: int, b: int) -> int:
 - [[GSM8K]] - 수학 추론 평가 (수식 vs 코드의 차이)
 
 ## R4 연구에서의 역할
-HumanEval은 R4 연구의 **생성 태스크** 평가에 사용됩니다.
+HumanEval은 R4 연구의 **생성 태스크** 평가에 사용된다.
 
 ### 왜 HumanEval이 중요한가?
-R4 연구는 **태스크 유형별 효과 차이**를 검증합니다 (가설 H3b):
+R4 연구는 **태스크 유형별 효과 차이**를 검증한다 (가설 H3b):
 - **추론 태스크** (MMLU, GSM8K): ZPD-Adaptive 효과 **큼**
 - **생성 태스크** (HumanEval): ZPD-Adaptive 효과 **중간**
 
-코드 생성은 "정답이 여러 개"일 수 있어서, 난이도 정의가 추론 태스크보다 모호합니다.
+코드 생성은 "정답이 여러 개"일 수 있어서, 난이도 정의가 추론 태스크보다 모호한다.
 예: 최대공약수 함수를 구현하는 방법은 여러 가지 (유클리드 호제법, 반복문, 재귀 등)
 
 ### R4 연구의 HumanEval 사용:

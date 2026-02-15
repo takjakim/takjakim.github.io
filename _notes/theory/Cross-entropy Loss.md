@@ -1,17 +1,23 @@
+---
+title: Cross-entropy Loss
+last_modified_at: '2026-02-15'
+permalink: /theory/cross-entropy-loss/
+---
+
 # Cross-entropy Loss
 
 ## 한 줄 요약
 AI 모델의 예측과 정답이 얼마나 다른지 측정하는 "오차 점수"로, 낮을수록 모델이 정확하다는 의미.
 
 ## 쉬운 설명
-Cross-entropy Loss(교차 엔트로피 손실)는 AI가 학습할 때 **"얼마나 틀렸는지"** 계산하는 공식입니다.
+Cross-entropy Loss(교차 엔트로피 손실)는 AI가 학습할 때 **"얼마나 틀렸는지"** 계산하는 공식이다.
 
 ### 시험 점수로 비유하면:
 - **정답률 (Accuracy)**: 100점 만점에 80점 → 우리가 익숙한 점수
 - **Loss**: "틀린 정도"를 특별한 방법으로 계산 → 낮을수록 좋음
 
 ### 왜 Cross-entropy를 사용하나?
-단순히 "맞았다/틀렸다"보다 **"얼마나 확신했는지"**도 중요하기 때문입니다.
+단순히 "맞았다/틀렸다"보다 **"얼마나 확신했는지"**도 중요하기 때문이다.
 
 예를 들어:
 ```
@@ -30,7 +36,7 @@ Cross-entropy Loss(교차 엔트로피 손실)는 AI가 학습할 때 **"얼마�
 → Loss: 높음 (운으로 맞춤)
 ```
 
-Cross-entropy Loss는 **확신하고 정답 맞추기**를 권장합니다.
+Cross-entropy Loss는 **확신하고 정답 맞추기**를 권장한다.
 
 ### 수학적으로는:
 ```
@@ -55,7 +61,7 @@ Loss = -log(정답 확률)
 - [[Curriculum Learning]] - Loss 기반으로 난이도 측정
 
 ## R4 연구에서의 역할
-Cross-entropy Loss는 R4 연구에서 **세 가지 역할**을 합니다.
+Cross-entropy Loss는 R4 연구에서 **세 가지 역할**을 한다.
 
 ### 1. 학습 목표 함수:
 모델이 학습할 때 Loss를 최소화하도록 파라미터 업데이트

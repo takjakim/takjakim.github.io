@@ -3,10 +3,14 @@ date: 2024-11-17 18:40
 last_modified_at: 2024-11-17
 author: HPT_bookreview_0910
 tags:
-  - 분석설계
-  - 요구사항정의
-  - 성과중심설계
+- 분석설계
+- 요구사항정의
+- 성과중심설계
+title: HPT_bookreview_0910
+permalink: /theory/hptbookreview0910/
 ---
+
+# HPT_bookreview_0910
 
 ### 1. Review book
 

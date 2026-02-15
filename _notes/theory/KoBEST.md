@@ -1,12 +1,18 @@
+---
+title: KoBEST
+last_modified_at: '2026-02-15'
+permalink: /theory/kobest/
+---
+
 # KoBEST
 
 ## 한 줄 요약
 한국어 AI가 한국어를 얼마나 잘 이해하는지 평가하는 5가지 태스크로 구성된 종합 한국어 벤치마크.
 
 ## 쉬운 설명
-KoBEST는 "Korean Benchmark Suite of Tasks"의 약자입니다. 쉽게 말해 **한국어판 종합 평가 시험**이에요.
+KoBEST는 "Korean Benchmark Suite of Tasks"의 약자이다. 쉽게 말해 **한국어판 종합 평가 시험**이에요.
 
-[[MMLU]]가 영어로 된 57개 과목 시험이라면, KoBEST는 한국어로 된 5개 영역 시험입니다.
+[[MMLU]]가 영어로 된 57개 과목 시험이라면, KoBEST는 한국어로 된 5개 영역 시험이다.
 
 ### 왜 KoBEST가 필요한가요?
 영어 벤치마크(MMLU, HumanEval)만으로는 **한국어 능력**을 제대로 평가할 수 없어요. 왜냐하면:
@@ -64,7 +70,7 @@ KoBEST는 "Korean Benchmark Suite of Tasks"의 약자입니다. 쉽게 말해 **
 - [[Perplexity (PPL)]] - 한국어 난이도 측정
 
 ## R4 연구에서의 역할
-KoBEST는 R4 연구에서 **한국어 능력 평가** 지표로 사용됩니다.
+KoBEST는 R4 연구에서 **한국어 능력 평가** 지표로 사용된다.
 
 ### 왜 KoBEST를 사용하나?
 1. **SOLAR 10.7B 평가**: 한국어 특화 모델이므로 한국어 벤치마크 필수

@@ -923,6 +923,49 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 }
 
+/* ===== Graph View Controls ===== */
+.graph-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.graph-search {
+  flex: 1 1 220px;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.85);
+}
+
+.graph-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: $color-subtext;
+}
+
+.graph-toggle {
+  font-size: 0.9rem;
+  color: $color-subtext;
+}
+
+.graph-btn {
+  padding: 0.55rem 0.85rem;
+  border: 1px solid $color-border;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+
+.graph-btn:hover {
+  border-color: $color-primary;
+  color: $color-primary;
+}
+
 /* ===== Glass Cards ===== */
 .glass-grid {
   display: grid;
