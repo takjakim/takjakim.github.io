@@ -1,16 +1,31 @@
 {
   "meta": {
-    "generated_at": "2026-02-15T03:19:51.085888+00:00",
+    "generated_at": "2026-02-16T03:16:48.301113+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 3
+      "views": 11
+    },
+    "/Posttest/": {
+      "views": 1
+    },
+    "/ai-investment-analysis/": {
+      "views": 1
     },
     "/dev/macos/Safari-to-Chrome/": {
       "views": 1
+    },
+    "/dev/tech/GA-N3160N-NAS/": {
+      "views": 1
+    },
+    "/graph/": {
+      "views": 2
+    },
+    "/investing/2026-02-12-heatmaps/": {
+      "views": 3
     },
     "/tags/": {
       "views": 1
@@ -19,6 +34,27 @@
       "views": 1
     },
     "/tags/index/": {
+      "views": 1
+    },
+    "/theory/curriculum-learning/": {
+      "views": 1
+    },
+    "/theory/r4-obsidian/": {
+      "views": 1
+    },
+    "/theory/theory/": {
+      "views": 1
+    },
+    "/theory/type-token-ratio-ttr/": {
+      "views": 1
+    },
+    "/theory/zpd/": {
+      "views": 1
+    },
+    "/welcome-to-investing/": {
+      "views": 1
+    },
+    "/welcome-to-market-analysis/": {
       "views": 1
     }
   }
