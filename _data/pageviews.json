@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-02-16T03:16:48.301113+00:00",
+    "generated_at": "2026-02-17T03:11:29.023726+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 11
+      "views": 12
     },
     "/Posttest/": {
       "views": 1
@@ -15,7 +15,13 @@
     "/ai-investment-analysis/": {
       "views": 1
     },
+    "/category/tech/": {
+      "views": 2
+    },
     "/dev/macos/Safari-to-Chrome/": {
+      "views": 1
+    },
+    "/dev/stats-method/": {
       "views": 1
     },
     "/dev/tech/GA-N3160N-NAS/": {
