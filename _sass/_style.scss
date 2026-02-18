@@ -1468,12 +1468,26 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 }
 
+.note-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
 .note-date {
-  display: block;
+  display: inline;
   font-size: 0.85rem;
   color: $color-subtext;
   font-family: 'SF Mono', 'Fira Code', monospace;
   margin: 0;
+}
+
+.note-views {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: $color-subtext;
+  font-family: 'SF Mono', 'Fira Code', monospace;
 }
 
 .note-tags {

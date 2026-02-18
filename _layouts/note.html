@@ -13,9 +13,17 @@ layout: default
 <article class="note-page">
   <header class="note-header">
     <h1 class="note-title">{{ page.title }}</h1>
-    <time class="note-date" datetime="{{ page.last_modified_at | date_to_xmlschema }}">
-      {% if page.type != 'pages' %}{{ page.last_modified_at | date: "%Y.%m.%d" }}{% endif %}
-    </time>
+
+    <div class="note-meta">
+      <time class="note-date" datetime="{{ page.last_modified_at | date_to_xmlschema }}">
+        {% if page.type != 'pages' %}{{ page.last_modified_at | date: "%Y.%m.%d" }}{% endif %}
+      </time>
+
+      {% assign pv = site.data.pageviews.paths[page.url].views %}
+      {% if pv != nil %}
+        <span class="note-views">👀 {{ pv }}</span>
+      {% endif %}
+    </div>
 
     {% if page.tags and page.tags.size > 0 %}
       <div class="note-tags" aria-label="tags">

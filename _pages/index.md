@@ -91,7 +91,7 @@ permalink: /
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
               {% assign pv = site.data.pageviews.paths[note.url].views %}
-              {% if pv %}
+              {% if pv != nil %}
                 <span class="glass-views">👀 {{ pv }}</span>
               {% else %}
                 <span class="glass-views glass-views--new">NEW</span>
@@ -150,7 +150,7 @@ permalink: /
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
               {% assign pv = site.data.pageviews.paths[note.url].views %}
-              {% if pv %}
+              {% if pv != nil %}
                 <span class="glass-views">👀 {{ pv }}</span>
               {% else %}
                 <span class="glass-views glass-views--new">NEW</span>
