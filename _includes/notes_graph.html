@@ -149,7 +149,26 @@
           });
         };
 
+        const togglePin = (d) => {
+          if (d._pinned) {
+            d._pinned = false;
+            d.fx = null;
+            d.fy = null;
+          } else {
+            d._pinned = true;
+            d.fx = d.x;
+            d.fy = d.y;
+          }
+        };
+
         const onClick = (d) => {
+          // Shift+Click: pin/unpin (sticky)
+          if (d3.event && d3.event.shiftKey) {
+            togglePin(d);
+            // Keep sim alive a bit
+            if (isGraphPage) simulation.alpha(0.6).restart();
+            return;
+          }
           window.location = d.path
         };
 
@@ -273,21 +292,66 @@
         linkGradient.append("stop").attr("offset", "0%").attr("stop-color", "#FF6F61").attr("stop-opacity", "0.6");
         linkGradient.append("stop").attr("offset", "100%").attr("stop-color", "#4ECDC4").attr("stop-opacity", "0.6");
 
+        // ===== Scoring (hub-ness) =====
+        const degree = new Map();
+        nodesData.forEach(n => degree.set(n.id, 0));
+        linksData.forEach(l => {
+          degree.set(l.source.id, (degree.get(l.source.id) || 0) + 1);
+          degree.set(l.target.id, (degree.get(l.target.id) || 0) + 1);
+        });
+        const maxDeg = Math.max(...Array.from(degree.values()), 1);
+        nodesData.forEach(n => {
+          const d = degree.get(n.id) || 0;
+          // Normalize 0..1
+          n._deg = d;
+          n._hub = d / maxDeg;
+        });
+
+        // Keep the /graph page dynamic. Other embeds (home) stay settled/static.
+        const isGraphPage = !!document.getElementById('graph-controls');
+
+        // Hub targets (for sticky-ish centrality) — only used on the graph page.
+        const HUB_COUNT = 10;
+        const hubs = [...nodesData]
+          .sort((a, b) => (b._deg || 0) - (a._deg || 0))
+          .slice(0, HUB_COUNT);
+
         const simulation = d3
           .forceSimulation(nodesData)
-          .force("forceX", d3.forceX().x(width / 2))
-          .force("forceY", d3.forceY().y(height / 2))
-          .force("charge", d3.forceManyBody().strength(-100))
+          .velocityDecay(isGraphPage ? 0.35 : 0.6)
+          .alphaDecay(isGraphPage ? 0.02 : 0.12)
+          .force(
+            "forceX",
+            d3.forceX(width / 2).strength(d => isGraphPage ? (0.02 + 0.12 * (d._hub || 0)) : 0.06)
+          )
+          .force(
+            "forceY",
+            d3.forceY(height / 2).strength(d => isGraphPage ? (0.02 + 0.12 * (d._hub || 0)) : 0.06)
+          )
+          .force("charge", d3.forceManyBody().strength(d => isGraphPage ? (-60 - 140 * (d._hub || 0)) : -100))
           .force(
             "link",
             d3
               .forceLink(linksData)
               .id((d) => d.id)
-              .distance(100)
+              .distance(d => isGraphPage ? (90 - 30 * (d.source._hub || 0)) : 100)
           )
           .force("center", d3.forceCenter(width / 2, height / 2))
-          .force("collision", d3.forceCollide().radius(60))
+          .force("collision", d3.forceCollide().radius(d => 18 + (nodeSize[d.id] || MINIMAL_NODE_SIZE) * 2.2))
           .stop();
+
+        // Make top hubs "sticky" near the center by pinning them to a small circle.
+        if (isGraphPage) {
+          const cx = width / 2;
+          const cy = height / 2;
+          const r = Math.min(width, height) * 0.08;
+          hubs.forEach((n, i) => {
+            const a = (2 * Math.PI * i) / Math.max(hubs.length, 1);
+            n.fx = cx + r * Math.cos(a);
+            n.fy = cy + r * Math.sin(a);
+            n._pinned = true;
+          });
+        }
 
         const g = svg.append("g");
         let link = g.append("g").attr("class", "links").selectAll(".link");
@@ -329,6 +393,21 @@
             .attr("y2", (d) => d.target.y);
         };
 
+        const drag = d3.drag()
+          .on('start', (d) => {
+            if (!d3.event.active && isGraphPage) simulation.alphaTarget(0.2).restart();
+            d._pinned = true;
+            d.fx = d.x;
+            d.fy = d.y;
+          })
+          .on('drag', (d) => {
+            d.fx = d3.event.x;
+            d.fy = d3.event.y;
+          })
+          .on('end', (d) => {
+            if (!d3.event.active && isGraphPage) simulation.alphaTarget(0);
+          });
+
         const restart = () => {
           updateNodeSize();
           node = node.data(nodesData, (d) => d.id);
@@ -340,6 +419,9 @@
               return nodeSize[d.id];
             })
             .attr("fill", (d) => getCategoryColor(d.path) || "url(#node-gradient)")
+            .attr("stroke", (d) => (d._pinned ? '#111827' : null))
+            .attr("stroke-width", (d) => (d._pinned ? 2 : null))
+            .call(drag)
             .on("click", onClick)
             .on("mouseover", onMouseover)
             .on("mouseout", onMouseout)
@@ -368,14 +450,17 @@
 
           simulation.nodes(nodesData);
           simulation.force("link").links(linksData);
-          simulation.alpha(1).restart();
-          simulation.stop();
 
-          for (let i = 0; i < TICKS; i++) {
-            simulation.tick();
+          // Render continuously on the /graph page; elsewhere, settle to a static layout.
+          if (isGraphPage) {
+            simulation.on('tick', ticked);
+            simulation.alpha(1).restart();
+          } else {
+            simulation.alpha(1).restart();
+            simulation.stop();
+            for (let i = 0; i < TICKS; i++) simulation.tick();
+            ticked();
           }
-
-          ticked();
         };
 
         const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
@@ -511,7 +596,8 @@
             });
           }
 
-          // Also allow clicking a node to set focus
+          // Also allow clicking a node to set focus.
+          // Shift+click keeps the node on screen (pin/unpin) without navigating.
           node.on('click', (d) => {
             focusNode(d);
             onClick(d);
