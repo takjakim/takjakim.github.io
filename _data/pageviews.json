@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-02-17T03:11:29.023726+00:00",
+    "generated_at": "2026-02-18T03:14:26.574740+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -19,7 +19,7 @@
       "views": 2
     },
     "/dev/macos/Safari-to-Chrome/": {
-      "views": 1
+      "views": 3
     },
     "/dev/stats-method/": {
       "views": 1
@@ -32,6 +32,9 @@
     },
     "/investing/2026-02-12-heatmaps/": {
       "views": 3
+    },
+    "/macos/mac-util/": {
+      "views": 1
     },
     "/tags/": {
       "views": 1
