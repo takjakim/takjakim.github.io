@@ -1,0 +1,546 @@
+{
+  "label": "US · S&P 500 (sample 80)",
+  "asOf": "2026-02-18",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": [
+    {
+      "ticker": "MMM",
+      "name": "3M",
+      "sector": "Industrials",
+      "pct": -2.0582269418923826,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AOS",
+      "name": "A. O. Smith",
+      "sector": "Industrials",
+      "pct": -0.641751604379015,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ABT",
+      "name": "Abbott Laboratories",
+      "sector": "Health Care",
+      "pct": 0.9175129164439744,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie",
+      "sector": "Health Care",
+      "pct": -1.7778922958000543,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture",
+      "sector": "Information Technology",
+      "pct": 1.6917549683933109,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "pct": 1.0405068151276842,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "pct": -1.4624778412448247,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AES",
+      "name": "AES Corporation",
+      "sector": "Utilities",
+      "pct": -0.6101281269066616,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AFL",
+      "name": "Aflac",
+      "sector": "Financials",
+      "pct": -1.5595217466643496,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies",
+      "sector": "Health Care",
+      "pct": 2.478404779204002,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "APD",
+      "name": "Air Products",
+      "sector": "Materials",
+      "pct": 1.6925348410097518,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb",
+      "sector": "Consumer Discretionary",
+      "pct": 0.03219834178538328,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AKAM",
+      "name": "Akamai Technologies",
+      "sector": "Information Technology",
+      "pct": 0.8208817561335513,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle Corporation",
+      "sector": "Materials",
+      "pct": 1.3615912858157886,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ARE",
+      "name": "Alexandria Real Estate Equities",
+      "sector": "Real Estate",
+      "pct": -0.45947436133063624,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ALGN",
+      "name": "Align Technology",
+      "sector": "Health Care",
+      "pct": 1.9388954171562833,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ALLE",
+      "name": "Allegion",
+      "sector": "Industrials",
+      "pct": -0.04917932009589343,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "LNT",
+      "name": "Alliant Energy",
+      "sector": "Utilities",
+      "pct": -2.208157524613208,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "sector": "Financials",
+      "pct": -1.361152976639024,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc. (Class A)",
+      "sector": "Communication Services",
+      "pct": 0.39401364148070606,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "sector": "Communication Services",
+      "pct": 0.3698566805362846,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "MO",
+      "name": "Altria",
+      "sector": "Consumer Staples",
+      "pct": 0.345656747820855,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "sector": "Consumer Discretionary",
+      "pct": 1.7613721103654,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMCR",
+      "name": "Amcor",
+      "sector": "Materials",
+      "pct": 0.0605326876513379,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AEE",
+      "name": "Ameren",
+      "sector": "Utilities",
+      "pct": -2.017369278089387,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AEP",
+      "name": "American Electric Power",
+      "sector": "Utilities",
+      "pct": -2.280405405405417,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AXP",
+      "name": "American Express",
+      "sector": "Financials",
+      "pct": 0.49632833134996,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AIG",
+      "name": "American International Group",
+      "sector": "Financials",
+      "pct": 0.4911838790931933,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower",
+      "sector": "Real Estate",
+      "pct": -3.35076907141747,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AWK",
+      "name": "American Water Works",
+      "sector": "Utilities",
+      "pct": -1.7601677776945546,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMP",
+      "name": "Ameriprise Financial",
+      "sector": "Financials",
+      "pct": 1.9220103246725628,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AME",
+      "name": "Ametek",
+      "sector": "Industrials",
+      "pct": 0.4200060000857153,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "sector": "Health Care",
+      "pct": 1.7088065138204378,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol",
+      "sector": "Information Technology",
+      "pct": -0.5653900518274191,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "sector": "Information Technology",
+      "pct": 2.633996029747254,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "pct": -0.9142226040004808,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "APA",
+      "name": "APA Corporation",
+      "sector": "Energy",
+      "pct": 4.681784930504751,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "pct": 0.16779864163003477,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Information Technology",
+      "pct": 0.17811126269517974,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "sector": "Information Technology",
+      "pct": 2.7984295380502955,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "sector": "Information Technology",
+      "pct": 7.444603857803278,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "sector": "Consumer Discretionary",
+      "pct": 1.2564938987555951,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ACGL",
+      "name": "Arch Capital Group",
+      "sector": "Financials",
+      "pct": -0.8292880258899626,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADM",
+      "name": "Archer Daniels Midland",
+      "sector": "Consumer Staples",
+      "pct": -1.5312819017062829,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ARES",
+      "name": "Ares Management",
+      "sector": "Financials",
+      "pct": 2.729852005214317,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "sector": "Information Technology",
+      "pct": -2.132136344508362,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "pct": 0.22897196261681962,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AIZ",
+      "name": "Assurant",
+      "sector": "Financials",
+      "pct": -0.6062251176257694,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ATO",
+      "name": "Atmos Energy",
+      "sector": "Utilities",
+      "pct": -1.1762094984465232,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk",
+      "sector": "Information Technology",
+      "pct": 1.8995206816971422,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing",
+      "sector": "Industrials",
+      "pct": 1.9288530129528692,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AZO",
+      "name": "AutoZone",
+      "sector": "Consumer Discretionary",
+      "pct": 0.07055050774986693,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AVB",
+      "name": "AvalonBay Communities",
+      "sector": "Real Estate",
+      "pct": 0.230790880945686,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AVY",
+      "name": "Avery Dennison",
+      "sector": "Materials",
+      "pct": 0.5247183497093522,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "sector": "Industrials",
+      "pct": -0.44219104505256457,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "sector": "Energy",
+      "pct": 2.8065486134313478,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BALL",
+      "name": "Ball Corporation",
+      "sector": "Materials",
+      "pct": -0.3606311044327515,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BAC",
+      "name": "Bank of America",
+      "sector": "Financials",
+      "pct": 1.175578308684111,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International",
+      "sector": "Health Care",
+      "pct": 5.448408871745425,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BDX",
+      "name": "Becton Dickinson",
+      "sector": "Health Care",
+      "pct": 2.987935505694006,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BRK-B",
+      "name": "Berkshire Hathaway",
+      "sector": "Financials",
+      "pct": -0.8621203392860766,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BBY",
+      "name": "Best Buy",
+      "sector": "Consumer Discretionary",
+      "pct": 1.2254160363086353,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BIIB",
+      "name": "Biogen",
+      "sector": "Health Care",
+      "pct": -0.7616808097331562,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BLK",
+      "name": "BlackRock",
+      "sector": "Financials",
+      "pct": 1.8262839456682833,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "pct": 1.1492503234645124,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BK",
+      "name": "BNY Mellon",
+      "sector": "Financials",
+      "pct": 0.5808080808080707,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BA",
+      "name": "Boeing",
+      "sector": "Industrials",
+      "pct": -2.093919029667257,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings",
+      "sector": "Consumer Discretionary",
+      "pct": 3.1361182565849077,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific",
+      "sector": "Health Care",
+      "pct": -0.013107877834583892,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol Myers Squibb",
+      "sector": "Health Care",
+      "pct": -1.0273405136702607,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "Information Technology",
+      "pct": 0.2916942322727989,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BR",
+      "name": "Broadridge Financial Solutions",
+      "sector": "Industrials",
+      "pct": 2.2913914891173226,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BRO",
+      "name": "Brown & Brown",
+      "sector": "Financials",
+      "pct": 1.2494551794275832,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BF-B",
+      "name": "Brown–Forman",
+      "sector": "Consumer Staples",
+      "pct": 0.5468215994531844,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BLDR",
+      "name": "Builders FirstSource",
+      "sector": "Industrials",
+      "pct": -0.6368315449707618,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "sector": "Consumer Staples",
+      "pct": -0.09025270758122872,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BXP",
+      "name": "BXP, Inc.",
+      "sector": "Real Estate",
+      "pct": 1.467194197164523,
+      "mcap_usd_b": 1.0
+    }
+  ]
+}

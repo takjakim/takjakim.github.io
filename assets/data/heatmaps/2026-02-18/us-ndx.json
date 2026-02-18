@@ -1,0 +1,420 @@
+{
+  "label": "US · NASDAQ 100 (sample 60)",
+  "asOf": "2026-02-18",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": [
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Computer Software",
+      "pct": 1.0405068151276842,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "Semiconductors",
+      "pct": -1.4624778412448247,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb",
+      "sector": "Diversified Commercial Services",
+      "pct": 0.03219834178538328,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ALNY",
+      "name": "Alnylam Pharmaceuticals",
+      "sector": "Biotechnology",
+      "pct": 0.060130483148435054,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "GOOGL",
+      "name": "Alphabet Inc. (Class A)",
+      "sector": "Computer Software",
+      "pct": 0.39401364148070606,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "GOOG",
+      "name": "Alphabet Inc. (Class C)",
+      "sector": "Computer Software",
+      "pct": 0.3698566805362846,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "sector": "Catalog/Specialty Distribution",
+      "pct": 1.7613721103654,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AEP",
+      "name": "American Electric Power",
+      "sector": "Electric Utilities",
+      "pct": -2.280405405405417,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "sector": "Biotechnology",
+      "pct": 1.7088065138204378,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "sector": "Semiconductors",
+      "pct": 2.633996029747254,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Computer Manufacturing",
+      "pct": 0.17811126269517974,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "sector": "Semiconductors",
+      "pct": 2.7984295380502955,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "sector": "Computer Software",
+      "pct": 7.444603857803278,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ARM",
+      "name": "Arm Holdings",
+      "sector": "Semiconductors",
+      "pct": 0.2876507210969992,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding",
+      "sector": "Industrial Machinery",
+      "pct": 3.4470129174942743,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk",
+      "sector": "Computer Software",
+      "pct": 1.8995206816971422,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing",
+      "sector": "Diversified Commercial Services",
+      "pct": 1.9288530129528692,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "sector": "Ordnance & Accessories",
+      "pct": -0.44219104505256457,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "sector": "Oil Equipment & Services",
+      "pct": 2.8065486134313478,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings",
+      "sector": "Transportation Services",
+      "pct": 3.1361182565849077,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "Semiconductors",
+      "pct": 0.2916942322727989,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "sector": "Computer Software",
+      "pct": 7.528399068651681,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications",
+      "sector": "Cable & Other Pay Television Services",
+      "pct": 0.8818193325176082,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CTAS",
+      "name": "Cintas",
+      "sector": "Garments & Clothing",
+      "pct": 0.7438949312538634,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco",
+      "sector": "Computer Communications Equipment",
+      "pct": 1.730644111906332,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CCEP",
+      "name": "Coca-Cola Europacific Partners",
+      "sector": "Soft Drinks",
+      "pct": 0.1914425193835667,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant",
+      "sector": "EDP Services",
+      "pct": 2.454740718011661,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast",
+      "sector": "Cable & Other Pay Television Services",
+      "pct": 0.15847860538826808,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "sector": "Electric Utilities",
+      "pct": -2.960298339988765,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart",
+      "sector": "Retail",
+      "pct": 0.613006396588478,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CSGP",
+      "name": "CoStar Group",
+      "sector": "Real Estate",
+      "pct": 6.941407958023604,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco",
+      "sector": "Department/Specialty Retail Stores",
+      "pct": -1.607134034879698,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "sector": "Computer Software",
+      "pct": 0.36569028567290385,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX Corporation",
+      "sector": "Railroads",
+      "pct": 0.8286619546673091,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "sector": "Computer Software",
+      "pct": -0.6364229765013052,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "DXCM",
+      "name": "DexCom",
+      "sector": "Medical/Dental Instruments",
+      "pct": 3.3650433054096096,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "sector": "Oil & Gas Production",
+      "pct": 3.21490005338394,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "sector": "EDP Services",
+      "pct": 6.80054207219416,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "EA",
+      "name": "Electronic Arts",
+      "sector": "Miscellaneous Amusement & Recreation Services",
+      "pct": 0.3307773267177794,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "EXC",
+      "name": "Exelon",
+      "sector": "Power Generation",
+      "pct": -1.6652789342214813,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "FAST",
+      "name": "Fastenal",
+      "sector": "Construction & Materials",
+      "pct": 0.6128255635806656,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "FER",
+      "name": "Ferrovial",
+      "sector": "Military, Government, Technical",
+      "pct": 0.8389492504469853,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet",
+      "sector": "Computer Peripheral Equipment",
+      "pct": -1.2241400416207582,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare",
+      "sector": "Medical Electronics",
+      "pct": 1.6174488420536814,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences",
+      "sector": "Biotechnology",
+      "pct": -1.6423005087911502,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell",
+      "sector": "Aerospace",
+      "pct": -0.6222954873274289,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "IDXX",
+      "name": "Idexx Laboratories",
+      "sector": "Biotechnology",
+      "pct": 1.3159365667470446,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "INSM",
+      "name": "Insmed Incorporated",
+      "sector": "Biotechnology",
+      "pct": 0.478341748604838,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "sector": "Semiconductors",
+      "pct": -1.5591165006496266,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit",
+      "sector": "Computer Software",
+      "pct": 2.7296463327794784,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical",
+      "sector": "Industrial Specialties",
+      "pct": 1.5019762845849716,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "KDP",
+      "name": "Keurig Dr Pepper",
+      "sector": "Soft Drinks",
+      "pct": 0.0343288705801692,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Electronic Components",
+      "pct": 0.6665805100021016,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "KHC",
+      "name": "Kraft Heinz",
+      "sector": "Packaged Foods",
+      "pct": 0.6728343145500526,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "sector": "Industrial Machinery",
+      "pct": 1.9653620850666353,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "sector": "Major Chemicals",
+      "pct": 0.5702791257102602,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "MAR",
+      "name": "Marriott International",
+      "sector": "Hotels/Resorts",
+      "pct": -1.1335222537089518,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "sector": "Semiconductors",
+      "pct": 0.08859638020501936,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "MELI",
+      "name": "Mercado Libre",
+      "sector": "Catalog/Specialty Distribution",
+      "pct": 1.6309712428689283,
+      "mcap_usd_b": 1.0
+    }
+  ]
+}
