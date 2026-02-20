@@ -1,16 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-02-19T03:13:02.844955+00:00",
+    "generated_at": "2026-02-20T02:52:42.514591+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 12
+      "views": 19
     },
     "/Posttest/": {
       "views": 1
+    },
+    "/about/": {
+      "views": 3
     },
     "/ai-investment-analysis/": {
       "views": 1
@@ -18,17 +21,23 @@
     "/category/tech/": {
       "views": 2
     },
+    "/consistency/": {
+      "views": 1
+    },
     "/dev/macos/Safari-to-Chrome/": {
       "views": 3
     },
     "/dev/stats-method/": {
+      "views": 4
+    },
+    "/dev/stats-method/deployment/": {
       "views": 1
     },
     "/dev/tech/GA-N3160N-NAS/": {
       "views": 1
     },
     "/graph/": {
-      "views": 2
+      "views": 7
     },
     "/investing/2026-02-12-heatmaps/": {
       "views": 3
@@ -48,7 +57,13 @@
     "/theory/curriculum-learning/": {
       "views": 1
     },
+    "/theory/lora/": {
+      "views": 1
+    },
     "/theory/r4-obsidian/": {
+      "views": 2
+    },
+    "/theory/solar-107b/": {
       "views": 1
     },
     "/theory/theory/": {
