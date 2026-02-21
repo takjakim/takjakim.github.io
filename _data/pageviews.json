@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-02-20T02:52:42.514591+00:00",
+    "generated_at": "2026-02-21T02:45:54.581580+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 19
+      "views": 22
     },
     "/Posttest/": {
       "views": 1
@@ -27,10 +27,19 @@
     "/dev/macos/Safari-to-Chrome/": {
       "views": 3
     },
+    "/dev/markdown-hangul/part-2/": {
+      "views": 1
+    },
     "/dev/stats-method/": {
-      "views": 4
+      "views": 6
     },
     "/dev/stats-method/deployment/": {
+      "views": 1
+    },
+    "/dev/stats-method/design/": {
+      "views": 1
+    },
+    "/dev/stats-method/development/": {
       "views": 1
     },
     "/dev/tech/GA-N3160N-NAS/": {
@@ -40,7 +49,7 @@
       "views": 7
     },
     "/investing/2026-02-12-heatmaps/": {
-      "views": 3
+      "views": 4
     },
     "/macos/mac-util/": {
       "views": 1
