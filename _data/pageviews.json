@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-02-21T02:45:54.581580+00:00",
+    "generated_at": "2026-02-22T03:14:04.766399+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 22
+      "views": 36
     },
     "/Posttest/": {
       "views": 1
     },
     "/about/": {
-      "views": 3
+      "views": 1
     },
     "/ai-investment-analysis/": {
       "views": 1
@@ -31,13 +31,13 @@
       "views": 1
     },
     "/dev/stats-method/": {
-      "views": 6
+      "views": 7
     },
     "/dev/stats-method/deployment/": {
       "views": 1
     },
     "/dev/stats-method/design/": {
-      "views": 1
+      "views": 2
     },
     "/dev/stats-method/development/": {
       "views": 1
@@ -46,31 +46,55 @@
       "views": 1
     },
     "/graph/": {
-      "views": 7
+      "views": 10
     },
     "/investing/2026-02-12-heatmaps/": {
       "views": 4
     },
+    "/investing/2026-02-13-us/": {
+      "views": 1
+    },
+    "/investing/csi300/": {
+      "views": 1
+    },
     "/macos/mac-util/": {
       "views": 1
     },
-    "/tags/": {
+    "/mermaidtest/": {
       "views": 1
+    },
+    "/tags/": {
+      "views": 4
     },
     "/tags/csi300/": {
+      "views": 2
+    },
+    "/tags/dow/": {
       "views": 1
     },
+    "/tags/english/": {
+      "views": 2
+    },
     "/tags/index/": {
+      "views": 3
+    },
+    "/theory/cohens-d/": {
       "views": 1
     },
     "/theory/curriculum-learning/": {
+      "views": 4
+    },
+    "/theory/fine-tuning/": {
       "views": 1
     },
     "/theory/lora/": {
+      "views": 2
+    },
+    "/theory/perplexity-ppl/": {
       "views": 1
     },
     "/theory/r4-obsidian/": {
-      "views": 2
+      "views": 3
     },
     "/theory/solar-107b/": {
       "views": 1
@@ -82,7 +106,7 @@
       "views": 1
     },
     "/theory/zpd/": {
-      "views": 1
+      "views": 5
     },
     "/welcome-to-investing/": {
       "views": 1
