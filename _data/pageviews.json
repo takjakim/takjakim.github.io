@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-02-23T03:16:55.087569+00:00",
+    "generated_at": "2026-02-24T03:11:44.438333+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 36
+      "views": 37
     },
     "/Posttest/": {
       "views": 1
@@ -43,6 +43,9 @@
       "views": 1
     },
     "/dev/tech/GA-N3160N-NAS/": {
+      "views": 1
+    },
+    "/ga-n3160n-nas/": {
       "views": 1
     },
     "/graph/": {
