@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-02-24T03:11:44.438333+00:00",
+    "generated_at": "2026-02-25T03:12:43.026691+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 37
+      "views": 39
     },
     "/Posttest/": {
       "views": 1
@@ -26,6 +26,9 @@
     },
     "/dev/macos/Safari-to-Chrome/": {
       "views": 3
+    },
+    "/dev/macos/mp4-to-gif/": {
+      "views": 1
     },
     "/dev/markdown-hangul/part-2/": {
       "views": 1
@@ -49,7 +52,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 10
+      "views": 12
     },
     "/investing/2026-02-12-heatmaps/": {
       "views": 4
@@ -94,7 +97,7 @@
       "views": 2
     },
     "/theory/perplexity-ppl/": {
-      "views": 1
+      "views": 2
     },
     "/theory/r4-obsidian/": {
       "views": 3
