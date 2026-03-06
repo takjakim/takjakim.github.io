@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-05T02:50:53.853181+00:00",
+    "generated_at": "2026-03-06T02:48:58.052143+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 44
+      "views": 45
     },
     "/Posttest/": {
       "views": 1
@@ -28,7 +28,7 @@
       "views": 3
     },
     "/dev/macos/mp4-to-gif/": {
-      "views": 1
+      "views": 3
     },
     "/dev/markdown-hangul/part-2/": {
       "views": 1
