@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-12T02:52:53.142928+00:00",
+    "generated_at": "2026-03-13T02:50:32.517629+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
