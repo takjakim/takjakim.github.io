@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-16T03:31:41.455794+00:00",
+    "generated_at": "2026-03-17T02:53:01.115175+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 53
+      "views": 50
     },
     "/Posttest/": {
       "views": 1
@@ -24,8 +24,11 @@
     "/consistency/": {
       "views": 1
     },
+    "/dev/claude-code-team-dashboard/": {
+      "views": 2
+    },
     "/dev/macos/Safari-to-Chrome/": {
-      "views": 3
+      "views": 2
     },
     "/dev/macos/mp4-to-gif/": {
       "views": 3
@@ -70,10 +73,10 @@
       "views": 1
     },
     "/tags/": {
-      "views": 4
+      "views": 3
     },
     "/tags/csi300/": {
-      "views": 2
+      "views": 1
     },
     "/tags/dow/": {
       "views": 1
@@ -82,7 +85,7 @@
       "views": 2
     },
     "/tags/index/": {
-      "views": 3
+      "views": 2
     },
     "/theory/cohens-d/": {
       "views": 1
