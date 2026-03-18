@@ -1,22 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-03-17T02:53:01.115175+00:00",
+    "generated_at": "2026-03-18T03:17:19.304074+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 50
-    },
-    "/Posttest/": {
-      "views": 1
+      "views": 44
     },
     "/about/": {
       "views": 3
-    },
-    "/ai-investment-analysis/": {
-      "views": 1
     },
     "/category/tech/": {
       "views": 2
@@ -48,17 +42,14 @@
     "/dev/stats-method/development/": {
       "views": 1
     },
-    "/dev/tech/GA-N3160N-NAS/": {
-      "views": 1
-    },
     "/ga-n3160n-nas/": {
       "views": 1
     },
     "/graph/": {
-      "views": 13
+      "views": 11
     },
     "/investing/2026-02-12-heatmaps/": {
-      "views": 4
+      "views": 1
     },
     "/investing/2026-02-13-us/": {
       "views": 1
@@ -87,11 +78,14 @@
     "/tags/index/": {
       "views": 2
     },
+    "/tags/ixic/": {
+      "views": 1
+    },
     "/theory/cohens-d/": {
       "views": 1
     },
     "/theory/curriculum-learning/": {
-      "views": 4
+      "views": 3
     },
     "/theory/fine-tuning/": {
       "views": 1
@@ -106,24 +100,15 @@
       "views": 1
     },
     "/theory/r4-obsidian/": {
-      "views": 3
+      "views": 2
     },
     "/theory/solar-107b/": {
       "views": 1
     },
-    "/theory/theory/": {
-      "views": 1
-    },
-    "/theory/type-token-ratio-ttr/": {
-      "views": 1
-    },
     "/theory/zpd/": {
-      "views": 5
+      "views": 4
     },
-    "/welcome-to-investing/": {
-      "views": 1
-    },
-    "/welcome-to-market-analysis/": {
+    "/welcome-to-theory/": {
       "views": 1
     }
   }
