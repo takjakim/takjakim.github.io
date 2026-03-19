@@ -1,25 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-03-18T03:17:19.304074+00:00",
+    "generated_at": "2026-03-19T03:18:11.339538+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 44
+      "views": 48
     },
     "/about/": {
       "views": 3
-    },
-    "/category/tech/": {
-      "views": 2
     },
     "/consistency/": {
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
-      "views": 2
+      "views": 3
     },
     "/dev/macos/Safari-to-Chrome/": {
       "views": 2
@@ -31,7 +28,7 @@
       "views": 1
     },
     "/dev/stats-method/": {
-      "views": 7
+      "views": 6
     },
     "/dev/stats-method/deployment/": {
       "views": 1
@@ -64,9 +61,12 @@
       "views": 1
     },
     "/tags/": {
-      "views": 3
+      "views": 4
     },
     "/tags/csi300/": {
+      "views": 1
+    },
+    "/tags/dashboard/": {
       "views": 1
     },
     "/tags/dow/": {
@@ -76,12 +76,18 @@
       "views": 2
     },
     "/tags/index/": {
-      "views": 2
+      "views": 3
     },
     "/tags/ixic/": {
       "views": 1
     },
+    "/theory/chain-of-thought-cot/": {
+      "views": 1
+    },
     "/theory/cohens-d/": {
+      "views": 1
+    },
+    "/theory/cross-entropy-loss/": {
       "views": 1
     },
     "/theory/curriculum-learning/": {
@@ -90,8 +96,14 @@
     "/theory/fine-tuning/": {
       "views": 1
     },
+    "/theory/hptbookreview1112/": {
+      "views": 1
+    },
+    "/theory/kobest/": {
+      "views": 1
+    },
     "/theory/lora/": {
-      "views": 2
+      "views": 3
     },
     "/theory/perplexity-ppl/": {
       "views": 2
@@ -100,13 +112,16 @@
       "views": 1
     },
     "/theory/r4-obsidian/": {
-      "views": 2
+      "views": 3
     },
     "/theory/solar-107b/": {
       "views": 1
     },
     "/theory/zpd/": {
       "views": 4
+    },
+    "/welcome-to-investing/": {
+      "views": 1
     },
     "/welcome-to-theory/": {
       "views": 1
