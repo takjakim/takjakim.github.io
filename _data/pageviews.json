@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-20T02:51:40.879365+00:00",
+    "generated_at": "2026-03-21T02:45:49.142276+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 51
+      "views": 52
     },
     "/about/": {
       "views": 3
@@ -49,6 +49,9 @@
       "views": 1
     },
     "/investing/csi300/": {
+      "views": 1
+    },
+    "/investing/hstech/": {
       "views": 1
     },
     "/mermaidtest/": {
@@ -96,6 +99,9 @@
     "/theory/curriculum-learning/": {
       "views": 3
     },
+    "/theory/entropy/": {
+      "views": 1
+    },
     "/theory/fine-tuning/": {
       "views": 1
     },
@@ -127,6 +133,9 @@
       "views": 1
     },
     "/welcome-to-theory/": {
+      "views": 1
+    },
+    "/안녕하세요/": {
       "views": 1
     }
   }
