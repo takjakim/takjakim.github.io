@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-03-21T02:45:49.142276+00:00",
+    "generated_at": "2026-03-22T03:18:52.662012+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 52
+      "views": 48
     },
     "/about/": {
-      "views": 3
+      "views": 2
     },
     "/consistency/": {
-      "views": 2
+      "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
       "views": 3
@@ -25,10 +25,7 @@
       "views": 1
     },
     "/dev/stats-method/": {
-      "views": 6
-    },
-    "/dev/stats-method/deployment/": {
-      "views": 1
+      "views": 3
     },
     "/dev/stats-method/design/": {
       "views": 2
@@ -40,7 +37,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 11
+      "views": 6
     },
     "/investing/2026-02-12-heatmaps/": {
       "views": 1
@@ -57,10 +54,19 @@
     "/mermaidtest/": {
       "views": 1
     },
+    "/snapshot-mltb/": {
+      "views": 1
+    },
     "/tags/": {
       "views": 5
     },
     "/tags/ai/": {
+      "views": 1
+    },
+    "/tags/architecture/": {
+      "views": 1
+    },
+    "/tags/china/": {
       "views": 1
     },
     "/tags/csi300/": {
@@ -70,9 +76,12 @@
       "views": 1
     },
     "/tags/dow/": {
-      "views": 1
+      "views": 2
     },
     "/tags/editor/": {
+      "views": 1
+    },
+    "/tags/education/": {
       "views": 1
     },
     "/tags/english/": {
@@ -91,7 +100,7 @@
       "views": 1
     },
     "/theory/cohens-d/": {
-      "views": 1
+      "views": 2
     },
     "/theory/cross-entropy-loss/": {
       "views": 1
@@ -105,6 +114,9 @@
     "/theory/fine-tuning/": {
       "views": 1
     },
+    "/theory/hptbookreview0708/": {
+      "views": 1
+    },
     "/theory/hptbookreview1112/": {
       "views": 1
     },
@@ -112,7 +124,7 @@
       "views": 1
     },
     "/theory/lora/": {
-      "views": 3
+      "views": 2
     },
     "/theory/perplexity-ppl/": {
       "views": 2
@@ -121,10 +133,7 @@
       "views": 2
     },
     "/theory/r4-obsidian/": {
-      "views": 3
-    },
-    "/theory/solar-107b/": {
-      "views": 1
+      "views": 2
     },
     "/theory/zpd/": {
       "views": 4
