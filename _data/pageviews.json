@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-03-22T03:18:52.662012+00:00",
+    "generated_at": "2026-03-23T03:21:27.413295+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -21,16 +21,10 @@
     "/dev/macos/mp4-to-gif/": {
       "views": 3
     },
-    "/dev/markdown-hangul/part-2/": {
+    "/dev/stats-method/": {
       "views": 1
     },
-    "/dev/stats-method/": {
-      "views": 3
-    },
     "/dev/stats-method/design/": {
-      "views": 2
-    },
-    "/dev/stats-method/development/": {
       "views": 1
     },
     "/ga-n3160n-nas/": {
@@ -39,14 +33,11 @@
     "/graph/": {
       "views": 6
     },
-    "/investing/2026-02-12-heatmaps/": {
-      "views": 1
-    },
     "/investing/2026-02-13-us/": {
       "views": 1
     },
     "/investing/csi300/": {
-      "views": 1
+      "views": 2
     },
     "/investing/hstech/": {
       "views": 1
@@ -75,6 +66,9 @@
     "/tags/dashboard/": {
       "views": 1
     },
+    "/tags/deployment/": {
+      "views": 1
+    },
     "/tags/dow/": {
       "views": 2
     },
@@ -87,10 +81,16 @@
     "/tags/english/": {
       "views": 2
     },
+    "/tags/hwp/": {
+      "views": 1
+    },
     "/tags/index/": {
       "views": 3
     },
     "/tags/ixic/": {
+      "views": 1
+    },
+    "/tags/markdown/": {
       "views": 1
     },
     "/theory/anova/": {
