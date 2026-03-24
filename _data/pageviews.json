@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-23T03:21:27.413295+00:00",
+    "generated_at": "2026-03-24T02:53:24.053904+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 48
+      "views": 38
     },
     "/about/": {
       "views": 2
@@ -24,32 +24,26 @@
     "/dev/stats-method/": {
       "views": 1
     },
-    "/dev/stats-method/design/": {
-      "views": 1
-    },
     "/ga-n3160n-nas/": {
       "views": 1
     },
     "/graph/": {
-      "views": 6
-    },
-    "/investing/2026-02-13-us/": {
-      "views": 1
+      "views": 3
     },
     "/investing/csi300/": {
-      "views": 2
+      "views": 1
     },
     "/investing/hstech/": {
       "views": 1
     },
-    "/mermaidtest/": {
+    "/python/tutorial01/": {
       "views": 1
     },
     "/snapshot-mltb/": {
       "views": 1
     },
     "/tags/": {
-      "views": 5
+      "views": 2
     },
     "/tags/ai/": {
       "views": 1
@@ -60,9 +54,6 @@
     "/tags/china/": {
       "views": 1
     },
-    "/tags/csi300/": {
-      "views": 1
-    },
     "/tags/dashboard/": {
       "views": 1
     },
@@ -70,7 +61,7 @@
       "views": 1
     },
     "/tags/dow/": {
-      "views": 2
+      "views": 1
     },
     "/tags/editor/": {
       "views": 1
@@ -93,6 +84,15 @@
     "/tags/markdown/": {
       "views": 1
     },
+    "/tags/market/": {
+      "views": 1
+    },
+    "/tags/mdx/": {
+      "views": 1
+    },
+    "/tags/stats/": {
+      "views": 1
+    },
     "/theory/anova/": {
       "views": 1
     },
@@ -100,18 +100,12 @@
       "views": 1
     },
     "/theory/cohens-d/": {
-      "views": 2
+      "views": 1
     },
     "/theory/cross-entropy-loss/": {
       "views": 1
     },
-    "/theory/curriculum-learning/": {
-      "views": 3
-    },
     "/theory/entropy/": {
-      "views": 1
-    },
-    "/theory/fine-tuning/": {
       "views": 1
     },
     "/theory/hptbookreview0708/": {
@@ -124,19 +118,16 @@
       "views": 1
     },
     "/theory/lora/": {
-      "views": 2
+      "views": 1
     },
     "/theory/perplexity-ppl/": {
-      "views": 2
+      "views": 1
     },
     "/theory/qwen25/": {
       "views": 2
     },
     "/theory/r4-obsidian/": {
-      "views": 2
-    },
-    "/theory/zpd/": {
-      "views": 4
+      "views": 1
     },
     "/welcome-to-investing/": {
       "views": 1
