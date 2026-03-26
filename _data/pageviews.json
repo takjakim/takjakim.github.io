@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-25T03:16:03.944555+00:00",
+    "generated_at": "2026-03-26T03:24:10.414019+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 38
+      "views": 39
     },
     "/about/": {
       "views": 2
@@ -22,9 +22,6 @@
       "views": 3
     },
     "/dev/stats-method/": {
-      "views": 1
-    },
-    "/ga-n3160n-nas/": {
       "views": 1
     },
     "/graph/": {
@@ -69,6 +66,9 @@
     "/tags/education/": {
       "views": 1
     },
+    "/tags/hsi/": {
+      "views": 1
+    },
     "/tags/hwp/": {
       "views": 1
     },
@@ -87,7 +87,13 @@
     "/tags/mdx/": {
       "views": 1
     },
+    "/tags/paraphrasing/": {
+      "views": 1
+    },
     "/tags/stats/": {
+      "views": 1
+    },
+    "/tags/역할세트이론/": {
       "views": 1
     },
     "/theory/anova/": {
