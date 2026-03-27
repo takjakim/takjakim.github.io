@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-26T03:24:10.414019+00:00",
+    "generated_at": "2026-03-27T03:27:42.253660+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 39
+      "views": 36
     },
     "/about/": {
       "views": 2
@@ -19,18 +19,21 @@
       "views": 3
     },
     "/dev/macos/mp4-to-gif/": {
-      "views": 3
+      "views": 2
     },
     "/dev/stats-method/": {
       "views": 1
     },
     "/graph/": {
-      "views": 3
+      "views": 1
     },
     "/investing/csi300/": {
       "views": 1
     },
     "/investing/hstech/": {
+      "views": 1
+    },
+    "/investing/spx/": {
       "views": 1
     },
     "/python/tutorial01/": {
@@ -93,6 +96,9 @@
     "/tags/stats/": {
       "views": 1
     },
+    "/tags/성과목표정렬/": {
+      "views": 1
+    },
     "/tags/역할세트이론/": {
       "views": 1
     },
@@ -106,6 +112,9 @@
       "views": 1
     },
     "/theory/cross-entropy-loss/": {
+      "views": 1
+    },
+    "/theory/ema-exponential-moving-average/": {
       "views": 1
     },
     "/theory/entropy/": {
@@ -124,9 +133,6 @@
       "views": 1
     },
     "/theory/lora/": {
-      "views": 1
-    },
-    "/theory/perplexity-ppl/": {
       "views": 1
     },
     "/theory/qwen25/": {
