@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-29T03:32:36.500957+00:00",
+    "generated_at": "2026-03-30T03:35:19.825258+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 36
+      "views": 38
     },
     "/about/": {
       "views": 2
@@ -25,7 +25,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 1
+      "views": 2
     },
     "/investing/csi300/": {
       "views": 1
@@ -84,6 +84,9 @@
     "/tags/ixic/": {
       "views": 1
     },
+    "/tags/korean/": {
+      "views": 1
+    },
     "/tags/markdown/": {
       "views": 1
     },
@@ -97,6 +100,12 @@
       "views": 1
     },
     "/tags/stats/": {
+      "views": 1
+    },
+    "/tags/tmux/": {
+      "views": 1
+    },
+    "/tags/마크다운쇼/": {
       "views": 1
     },
     "/tags/성과목표정렬/": {
@@ -121,6 +130,9 @@
       "views": 1
     },
     "/theory/entropy/": {
+      "views": 1
+    },
+    "/theory/fine-tuning/": {
       "views": 1
     },
     "/theory/hptbookreview0102/": {
