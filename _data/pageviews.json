@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-03-30T03:35:19.825258+00:00",
+    "generated_at": "2026-03-31T03:26:50.976333+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 38
+      "views": 39
     },
     "/about/": {
       "views": 2
@@ -112,6 +112,9 @@
       "views": 1
     },
     "/tags/역할세트이론/": {
+      "views": 1
+    },
+    "/tags/요구사항정의/": {
       "views": 1
     },
     "/theory/anova/": {
