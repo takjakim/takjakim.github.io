@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-01T03:38:33.948181+00:00",
+    "generated_at": "2026-04-02T03:23:07.597503+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 46
+      "views": 48
     },
     "/about/": {
       "views": 2
@@ -26,6 +26,9 @@
     },
     "/graph/": {
       "views": 2
+    },
+    "/investing/2026-02-10-global/": {
+      "views": 1
     },
     "/investing/csi300/": {
       "views": 1
@@ -96,6 +99,12 @@
     "/tags/mdx/": {
       "views": 1
     },
+    "/tags/monitoring/": {
+      "views": 1
+    },
+    "/tags/optimization/": {
+      "views": 1
+    },
     "/tags/paraphrasing/": {
       "views": 1
     },
@@ -109,6 +118,9 @@
       "views": 1
     },
     "/tags/마크다운쇼/": {
+      "views": 1
+    },
+    "/tags/변화관리전략/": {
       "views": 1
     },
     "/tags/성과목표정렬/": {
@@ -130,6 +142,9 @@
       "views": 1
     },
     "/theory/cross-entropy-loss/": {
+      "views": 1
+    },
+    "/theory/curriculum-learning/": {
       "views": 1
     },
     "/theory/ema-exponential-moving-average/": {
