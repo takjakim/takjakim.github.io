@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-02T03:23:07.597503+00:00",
+    "generated_at": "2026-04-03T03:25:10.702452+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -33,10 +33,16 @@
     "/investing/csi300/": {
       "views": 1
     },
+    "/investing/djia/": {
+      "views": 1
+    },
     "/investing/hstech/": {
       "views": 1
     },
     "/investing/spx/": {
+      "views": 1
+    },
+    "/oopy/tutorial01/": {
       "views": 1
     },
     "/python/tutorial01/": {
@@ -75,6 +81,9 @@
     "/tags/english/": {
       "views": 1
     },
+    "/tags/hangul/": {
+      "views": 1
+    },
     "/tags/hsi/": {
       "views": 1
     },
@@ -94,6 +103,9 @@
       "views": 1
     },
     "/tags/market/": {
+      "views": 1
+    },
+    "/tags/marp/": {
       "views": 1
     },
     "/tags/mdx/": {
@@ -126,8 +138,14 @@
     "/tags/성과목표정렬/": {
       "views": 1
     },
-    "/tags/역할세트이론/": {
+    "/tags/성과중심설계/": {
       "views": 1
+    },
+    "/tags/시스템적접근/": {
+      "views": 1
+    },
+    "/tags/역할세트이론/": {
+      "views": 2
     },
     "/tags/요구사항정의/": {
       "views": 1
@@ -178,6 +196,12 @@
       "views": 2
     },
     "/theory/r4-obsidian/": {
+      "views": 1
+    },
+    "/theory/solar-107b/": {
+      "views": 1
+    },
+    "/welcome-to-ai/": {
       "views": 1
     },
     "/welcome-to-investing/": {
