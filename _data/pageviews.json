@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-03T03:25:10.702452+00:00",
+    "generated_at": "2026-04-04T03:12:53.188930+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 48
+      "views": 46
     },
     "/about/": {
       "views": 2
@@ -25,7 +25,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-02-10-global/": {
       "views": 1
@@ -123,6 +123,9 @@
     "/tags/pptx/": {
       "views": 1
     },
+    "/tags/pyodide/": {
+      "views": 1
+    },
     "/tags/stats/": {
       "views": 1
     },
@@ -150,6 +153,9 @@
     "/tags/요구사항정의/": {
       "views": 1
     },
+    "/tags/통합적평가/": {
+      "views": 1
+    },
     "/theory/anova/": {
       "views": 1
     },
@@ -157,6 +163,9 @@
       "views": 1
     },
     "/theory/cohens-d/": {
+      "views": 1
+    },
+    "/theory/confidence/": {
       "views": 1
     },
     "/theory/cross-entropy-loss/": {
