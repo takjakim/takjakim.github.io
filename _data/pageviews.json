@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-06T03:36:54.668542+00:00",
+    "generated_at": "2026-04-07T03:27:51.673779+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -79,6 +79,9 @@
       "views": 1
     },
     "/tags/hangul/": {
+      "views": 1
+    },
+    "/tags/hongkong/": {
       "views": 1
     },
     "/tags/hsi/": {
@@ -172,7 +175,7 @@
       "views": 1
     },
     "/theory/cross-entropy-loss/": {
-      "views": 1
+      "views": 2
     },
     "/theory/curriculum-learning/": {
       "views": 1
@@ -208,7 +211,7 @@
       "views": 1
     },
     "/theory/qwen25/": {
-      "views": 2
+      "views": 3
     },
     "/theory/r4-obsidian/": {
       "views": 1
