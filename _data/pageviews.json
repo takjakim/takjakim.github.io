@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-04-09T03:24:52.906564+00:00",
+    "generated_at": "2026-04-10T03:37:27.375270+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -37,6 +37,9 @@
       "views": 1
     },
     "/investing/spx/": {
+      "views": 1
+    },
+    "/macos/mac-util/": {
       "views": 1
     },
     "/oopy/tutorial01/": {
