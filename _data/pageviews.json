@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-13T03:49:30.147836+00:00",
+    "generated_at": "2026-04-14T03:36:59.759091+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 51
+      "views": 54
     },
     "/about/": {
       "views": 3
@@ -85,6 +85,9 @@
       "views": 1
     },
     "/tags/hangul/": {
+      "views": 1
+    },
+    "/tags/heyling/": {
       "views": 1
     },
     "/tags/hongkong/": {
@@ -220,7 +223,7 @@
       "views": 1
     },
     "/theory/qwen25/": {
-      "views": 3
+      "views": 2
     },
     "/theory/r4-obsidian/": {
       "views": 1
