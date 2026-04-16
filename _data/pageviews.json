@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-15T03:36:22.186890+00:00",
+    "generated_at": "2026-04-16T03:43:54.948712+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 56
+      "views": 59
     },
     "/about/": {
       "views": 3
@@ -16,7 +16,7 @@
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
-      "views": 3
+      "views": 1
     },
     "/dev/stats-method/": {
       "views": 1
