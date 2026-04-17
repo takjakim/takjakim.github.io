@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-16T03:43:54.948712+00:00",
+    "generated_at": "2026-04-17T03:40:06.700734+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 59
+      "views": 62
     },
     "/about/": {
       "views": 3
@@ -25,9 +25,12 @@
       "views": 1
     },
     "/graph/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-02-10-global/": {
+      "views": 1
+    },
+    "/investing/2026-02-12-heatmaps/": {
       "views": 1
     },
     "/investing/csi300/": {
@@ -126,6 +129,9 @@
     "/tags/monitoring/": {
       "views": 1
     },
+    "/tags/nextjs/": {
+      "views": 1
+    },
     "/tags/optimization/": {
       "views": 1
     },
@@ -136,6 +142,9 @@
       "views": 1
     },
     "/tags/pyodide/": {
+      "views": 1
+    },
+    "/tags/speaking/": {
       "views": 1
     },
     "/tags/stats/": {
@@ -237,7 +246,7 @@
     "/welcome-to-investing/": {
       "views": 1
     },
-    "/welcome-to-theory/": {
+    "/welcome-to-market-analysis/": {
       "views": 1
     },
     "/안녕하세요/": {
