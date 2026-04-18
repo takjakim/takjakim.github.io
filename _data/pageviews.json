@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-17T03:40:06.700734+00:00",
+    "generated_at": "2026-04-18T03:27:11.629296+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 62
+      "views": 56
     },
     "/about/": {
       "views": 3
@@ -58,7 +58,7 @@
       "views": 1
     },
     "/tags/": {
-      "views": 2
+      "views": 1
     },
     "/tags/ai/": {
       "views": 1
@@ -67,9 +67,6 @@
       "views": 1
     },
     "/tags/china/": {
-      "views": 1
-    },
-    "/tags/dashboard/": {
       "views": 1
     },
     "/tags/deployment/": {
@@ -90,6 +87,9 @@
     "/tags/hangul/": {
       "views": 1
     },
+    "/tags/heatmap/": {
+      "views": 1
+    },
     "/tags/heyling/": {
       "views": 1
     },
@@ -106,9 +106,6 @@
       "views": 1
     },
     "/tags/index/": {
-      "views": 2
-    },
-    "/tags/ixic/": {
       "views": 1
     },
     "/tags/korean/": {
@@ -216,16 +213,7 @@
     "/theory/hptbookreview0708/": {
       "views": 1
     },
-    "/theory/hptbookreview1112/": {
-      "views": 1
-    },
     "/theory/humaneval/": {
-      "views": 1
-    },
-    "/theory/kobest/": {
-      "views": 1
-    },
-    "/theory/lora/": {
       "views": 1
     },
     "/theory/perplexity-ppl/": {
@@ -234,16 +222,10 @@
     "/theory/qwen25/": {
       "views": 2
     },
-    "/theory/r4-obsidian/": {
-      "views": 1
-    },
     "/theory/solar-107b/": {
       "views": 1
     },
     "/welcome-to-ai/": {
-      "views": 1
-    },
-    "/welcome-to-investing/": {
       "views": 1
     },
     "/welcome-to-market-analysis/": {
