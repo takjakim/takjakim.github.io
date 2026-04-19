@@ -1,0 +1,6 @@
+{
+  "label": "US · NASDAQ 100 (sample 60)",
+  "asOf": "2026-04-17",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": []
+}
