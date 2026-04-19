@@ -1,22 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-04-18T03:27:11.629296+00:00",
+    "generated_at": "2026-04-19T03:47:17.587434+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 56
+      "views": 54
     },
     "/about/": {
       "views": 3
-    },
-    "/consistency/": {
-      "views": 1
-    },
-    "/dev/claude-code-team-dashboard/": {
-      "views": 1
     },
     "/dev/stats-method/": {
       "views": 1
@@ -25,7 +19,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 2
+      "views": 3
     },
     "/investing/2026-02-10-global/": {
       "views": 1
@@ -55,12 +49,6 @@
       "views": 1
     },
     "/snapshot-mltb/": {
-      "views": 1
-    },
-    "/tags/": {
-      "views": 1
-    },
-    "/tags/ai/": {
       "views": 1
     },
     "/tags/architecture/": {
@@ -147,6 +135,9 @@
     "/tags/stats/": {
       "views": 1
     },
+    "/tags/tech/": {
+      "views": 1
+    },
     "/tags/tmux/": {
       "views": 1
     },
@@ -180,12 +171,6 @@
     "/tags/통합적평가/": {
       "views": 1
     },
-    "/theory/anova/": {
-      "views": 1
-    },
-    "/theory/chain-of-thought-cot/": {
-      "views": 1
-    },
     "/theory/cohens-d/": {
       "views": 2
     },
@@ -193,7 +178,7 @@
       "views": 1
     },
     "/theory/cross-entropy-loss/": {
-      "views": 2
+      "views": 1
     },
     "/theory/curriculum-learning/": {
       "views": 1
@@ -220,7 +205,7 @@
       "views": 1
     },
     "/theory/qwen25/": {
-      "views": 2
+      "views": 1
     },
     "/theory/solar-107b/": {
       "views": 1
