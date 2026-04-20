@@ -37,12 +37,15 @@ function initHeatmaps() {
         // (2) current: {label, asOf, source, items:[{ticker,name,sector,pct,mcap_usd_b}]}
 
         function buildFromItems(items, rootLabel) {
+          // Use explicit ids to avoid label/parent resolution issues on some browsers (notably iOS Safari).
+          var ids = [];
           var labels = [];
           var parents = [];
           var values = [];
           var changes = [];
 
           // root
+          ids.push('root');
           labels.push(rootLabel || 'Market');
           parents.push('');
           values.push(0);
@@ -61,8 +64,9 @@ function initHeatmaps() {
 
             if (sectorIndex[sector] === undefined) {
               sectorIndex[sector] = labels.length;
+              ids.push('sector:' + sector);
               labels.push(sector);
-              parents.push(labels[0]);
+              parents.push('root');
               values.push(0);
               changes.push(0);
               sectorAgg[sector] = { mcapSum: 0, weightedPctSum: 0 };
@@ -70,8 +74,9 @@ function initHeatmaps() {
 
             // stock leaf
             var leafLabel = it.ticker || it.name || 'N/A';
+            ids.push('leaf:' + sector + ':' + leafLabel);
             labels.push(leafLabel);
-            parents.push(sector);
+            parents.push('sector:' + sector);
             values.push(mcap);
             changes.push(pct);
 
@@ -88,7 +93,7 @@ function initHeatmaps() {
             values[0] += agg.mcapSum;
           });
 
-          return { labels: labels, parents: parents, values: values, changes: changes };
+          return { ids: ids, labels: labels, parents: parents, values: values, changes: changes };
         }
 
         var hm;
@@ -105,9 +110,11 @@ function initHeatmaps() {
 
         var trace = {
           type: 'treemap',
+          ids: hm.ids,
           labels: hm.labels,
           parents: hm.parents,
           values: hm.values,
+          branchvalues: 'total',
           marker: {
             colors: hm.changes,
             colorscale: [
