@@ -1,18 +1,24 @@
 {
   "meta": {
-    "generated_at": "2026-04-19T03:47:17.587434+00:00",
+    "generated_at": "2026-04-20T03:48:48.041262+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 54
+      "views": 58
     },
     "/about/": {
-      "views": 3
+      "views": 5
+    },
+    "/ai/heyling-day2/": {
+      "views": 1
     },
     "/dev/stats-method/": {
+      "views": 2
+    },
+    "/dev/stats-method/planning/": {
       "views": 1
     },
     "/dev/tech/test/": {
@@ -25,7 +31,7 @@
       "views": 1
     },
     "/investing/2026-02-12-heatmaps/": {
-      "views": 1
+      "views": 2
     },
     "/investing/csi300/": {
       "views": 1
@@ -61,9 +67,6 @@
       "views": 1
     },
     "/tags/dow/": {
-      "views": 1
-    },
-    "/tags/editor/": {
       "views": 1
     },
     "/tags/education/": {
@@ -186,9 +189,6 @@
     "/theory/ema-exponential-moving-average/": {
       "views": 1
     },
-    "/theory/entropy/": {
-      "views": 1
-    },
     "/theory/fine-tuning/": {
       "views": 1
     },
@@ -196,6 +196,9 @@
       "views": 1
     },
     "/theory/hptbookreview0708/": {
+      "views": 1
+    },
+    "/theory/hptbookreview0910/": {
       "views": 1
     },
     "/theory/humaneval/": {
