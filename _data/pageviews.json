@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-20T03:48:48.041262+00:00",
+    "generated_at": "2026-04-21T03:42:38.719542+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 58
+      "views": 55
     },
     "/about/": {
       "views": 5
@@ -30,16 +30,22 @@
     "/investing/2026-02-10-global/": {
       "views": 1
     },
+    "/investing/2026-02-11-korea/": {
+      "views": 1
+    },
     "/investing/2026-02-12-heatmaps/": {
+      "views": 2
+    },
+    "/investing/2026-02-20-korea/": {
+      "views": 1
+    },
+    "/investing/2026-02-20-us/": {
       "views": 2
     },
     "/investing/csi300/": {
       "views": 1
     },
     "/investing/djia/": {
-      "views": 1
-    },
-    "/investing/hstech/": {
       "views": 1
     },
     "/investing/spx/": {
@@ -54,19 +60,7 @@
     "/python/tutorial01/": {
       "views": 1
     },
-    "/snapshot-mltb/": {
-      "views": 1
-    },
-    "/tags/architecture/": {
-      "views": 1
-    },
-    "/tags/china/": {
-      "views": 1
-    },
     "/tags/deployment/": {
-      "views": 1
-    },
-    "/tags/dow/": {
       "views": 1
     },
     "/tags/education/": {
@@ -175,7 +169,7 @@
       "views": 1
     },
     "/theory/cohens-d/": {
-      "views": 2
+      "views": 1
     },
     "/theory/confidence/": {
       "views": 1
@@ -193,9 +187,6 @@
       "views": 1
     },
     "/theory/hptbookreview0102/": {
-      "views": 1
-    },
-    "/theory/hptbookreview0708/": {
       "views": 1
     },
     "/theory/hptbookreview0910/": {
@@ -216,10 +207,10 @@
     "/welcome-to-ai/": {
       "views": 1
     },
-    "/welcome-to-market-analysis/": {
+    "/welcome-to-dev/": {
       "views": 1
     },
-    "/안녕하세요/": {
+    "/welcome-to-market-analysis/": {
       "views": 1
     }
   }
