@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-21T03:42:38.719542+00:00",
+    "generated_at": "2026-04-22T03:37:43.068723+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 55
+      "views": 62
     },
     "/about/": {
       "views": 5
@@ -36,17 +36,32 @@
     "/investing/2026-02-12-heatmaps/": {
       "views": 2
     },
+    "/investing/2026-02-13-us/": {
+      "views": 2
+    },
     "/investing/2026-02-20-korea/": {
       "views": 1
     },
     "/investing/2026-02-20-us/": {
       "views": 2
     },
-    "/investing/csi300/": {
+    "/investing/2026-03-20-korea/": {
       "views": 1
     },
-    "/investing/djia/": {
+    "/investing/2026-04-15-korea/": {
       "views": 1
+    },
+    "/investing/2026-04-16-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-17-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-17-us/": {
+      "views": 6
+    },
+    "/investing/djia/": {
+      "views": 2
     },
     "/investing/spx/": {
       "views": 1
@@ -58,12 +73,6 @@
       "views": 1
     },
     "/python/tutorial01/": {
-      "views": 1
-    },
-    "/tags/deployment/": {
-      "views": 1
-    },
-    "/tags/education/": {
       "views": 1
     },
     "/tags/english/": {
@@ -87,16 +96,10 @@
     "/tags/hstech/": {
       "views": 1
     },
-    "/tags/hwp/": {
-      "views": 1
-    },
     "/tags/index/": {
       "views": 1
     },
     "/tags/korean/": {
-      "views": 1
-    },
-    "/tags/markdown/": {
       "views": 1
     },
     "/tags/market/": {
