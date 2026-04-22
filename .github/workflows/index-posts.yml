@@ -1,0 +1,51 @@
+name: Generate daily index posts (US/KR)
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # 07:10 KST daily (22:10 UTC)
+    - cron: '10 22 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: index-posts
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Generate posts for yesterday (KST)
+        env:
+          TZ: Asia/Seoul
+        run: |
+          YESTERDAY=$(date -d 'yesterday' +%F)
+          echo "Generating index posts for ${YESTERDAY}"
+          python scripts/generate_index_posts.py --start ${YESTERDAY} --end ${YESTERDAY} --force
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _notes/investing scripts/generate_index_posts.py
+          git commit -m "chore(investing): daily index posts"
+          git push
