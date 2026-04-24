@@ -1,18 +1,21 @@
 {
   "meta": {
-    "generated_at": "2026-04-23T03:43:04.204493+00:00",
+    "generated_at": "2026-04-24T03:46:28.581963+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 59
+      "views": 62
     },
     "/about/": {
       "views": 5
     },
     "/ai/heyling-day2/": {
+      "views": 1
+    },
+    "/dev/claude-code-team-dashboard/": {
       "views": 1
     },
     "/dev/stats-method/": {
@@ -58,7 +61,13 @@
       "views": 1
     },
     "/investing/2026-04-17-us/": {
-      "views": 6
+      "views": 7
+    },
+    "/investing/2026-04-21-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-22-us/": {
+      "views": 1
     },
     "/investing/djia/": {
       "views": 2
@@ -70,6 +79,9 @@
       "views": 1
     },
     "/oopy/tutorial01/": {
+      "views": 1
+    },
+    "/tags/claude-code/": {
       "views": 1
     },
     "/tags/english/": {
@@ -99,13 +111,7 @@
     "/tags/korean/": {
       "views": 1
     },
-    "/tags/market/": {
-      "views": 1
-    },
     "/tags/marp/": {
-      "views": 1
-    },
-    "/tags/mdx/": {
       "views": 1
     },
     "/tags/monitoring/": {
@@ -181,9 +187,6 @@
       "views": 1
     },
     "/theory/fine-tuning/": {
-      "views": 1
-    },
-    "/theory/hptbookreview0102/": {
       "views": 1
     },
     "/theory/hptbookreview0910/": {
