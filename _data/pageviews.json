@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-04-24T03:46:28.581963+00:00",
+    "generated_at": "2026-04-25T03:29:18.412885+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 62
+      "views": 61
     },
     "/about/": {
-      "views": 5
+      "views": 2
     },
     "/ai/heyling-day2/": {
       "views": 1
@@ -99,9 +99,6 @@
     "/tags/hongkong/": {
       "views": 1
     },
-    "/tags/hsi/": {
-      "views": 1
-    },
     "/tags/hstech/": {
       "views": 1
     },
@@ -121,9 +118,6 @@
       "views": 1
     },
     "/tags/optimization/": {
-      "views": 1
-    },
-    "/tags/paraphrasing/": {
       "views": 1
     },
     "/tags/pptx/": {
@@ -163,7 +157,7 @@
       "views": 1
     },
     "/tags/역할세트이론/": {
-      "views": 2
+      "views": 1
     },
     "/tags/요구사항정의/": {
       "views": 1
