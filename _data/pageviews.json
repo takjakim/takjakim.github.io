@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-25T03:29:18.412885+00:00",
+    "generated_at": "2026-04-26T03:52:21.631241+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 61
+      "views": 60
     },
     "/about/": {
       "views": 2
@@ -71,9 +71,6 @@
     },
     "/investing/djia/": {
       "views": 2
-    },
-    "/investing/spx/": {
-      "views": 1
     },
     "/macos/mac-util/": {
       "views": 1
@@ -147,9 +144,6 @@
     "/tags/성과개선/": {
       "views": 1
     },
-    "/tags/성과목표정렬/": {
-      "views": 1
-    },
     "/tags/성과중심설계/": {
       "views": 1
     },
@@ -175,9 +169,6 @@
       "views": 1
     },
     "/theory/curriculum-learning/": {
-      "views": 1
-    },
-    "/theory/ema-exponential-moving-average/": {
       "views": 1
     },
     "/theory/fine-tuning/": {
