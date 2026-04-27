@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T03:52:21.631241+00:00",
+    "generated_at": "2026-04-27T03:56:32.522851+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 60
+      "views": 63
     },
     "/about/": {
       "views": 2
@@ -130,6 +130,9 @@
       "views": 1
     },
     "/tags/tmux/": {
+      "views": 1
+    },
+    "/tags/마크다운ㅎ글/": {
       "views": 1
     },
     "/tags/마크다운쇼/": {
