@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-04-28T04:01:42.730095+00:00",
+    "generated_at": "2026-04-29T03:58:53.292598+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 62
+      "views": 61
     },
     "/about/": {
       "views": 2
@@ -28,7 +28,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 3
+      "views": 2
     },
     "/investing/2026-02-10-global/": {
       "views": 1
@@ -129,13 +129,7 @@
     "/tags/tech/": {
       "views": 1
     },
-    "/tags/tmux/": {
-      "views": 1
-    },
     "/tags/마크다운ㅎ글/": {
-      "views": 1
-    },
-    "/tags/마크다운쇼/": {
       "views": 1
     },
     "/tags/변화관리전략/": {
@@ -174,9 +168,6 @@
     "/theory/curriculum-learning/": {
       "views": 1
     },
-    "/theory/fine-tuning/": {
-      "views": 1
-    },
     "/theory/hptbookreview0910/": {
       "views": 1
     },
@@ -187,6 +178,9 @@
       "views": 1
     },
     "/theory/solar-107b/": {
+      "views": 1
+    },
+    "/volatility/": {
       "views": 1
     },
     "/welcome-to-ai/": {
