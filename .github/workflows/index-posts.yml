@@ -30,13 +30,14 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r scripts/requirements.txt
 
-      - name: Generate posts for yesterday (KST)
+      - name: Generate posts (KST) — backfill last 7 days
         env:
           TZ: Asia/Seoul
         run: |
-          YESTERDAY=$(date -d 'yesterday' +%F)
-          echo "Generating index posts for ${YESTERDAY}"
-          python scripts/generate_index_posts.py --start ${YESTERDAY} --end ${YESTERDAY} --force
+          END=$(date -d 'yesterday' +%F)
+          START=$(date -d '7 days ago' +%F)
+          echo "Generating index posts for ${START}..${END} (KST)"
+          python scripts/generate_index_posts.py --start ${START} --end ${END} --force
 
       - name: Commit and push
         run: |

@@ -345,8 +345,12 @@ def main():
 
     OUTDIR.mkdir(parents=True, exist_ok=True)
 
-    us_closes = download_closes([s.ticker for s in US_INDEXES], start, end)
-    kr_closes = download_closes([s.ticker for s in KR_INDEXES], start, end)
+    # Download a wider window so the first day in the requested range has a valid "prev close"
+    # (pct/delta need the prior trading day).
+    dl_start = start - timedelta(days=14)
+
+    us_closes = download_closes([s.ticker for s in US_INDEXES], dl_start, end)
+    kr_closes = download_closes([s.ticker for s in KR_INDEXES], dl_start, end)
 
     us_daily = compute_daily(us_closes)
     kr_daily = compute_daily(kr_closes)
