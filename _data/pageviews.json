@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-04-26T03:52:21.631241+00:00",
+    "generated_at": "2026-04-30T04:00:21.169326+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 60
+      "views": 59
     },
     "/about/": {
-      "views": 2
+      "views": 5
     },
     "/ai/heyling-day2/": {
       "views": 1
@@ -28,7 +28,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 3
+      "views": 2
     },
     "/investing/2026-02-10-global/": {
       "views": 1
@@ -81,9 +81,6 @@
     "/tags/claude-code/": {
       "views": 1
     },
-    "/tags/english/": {
-      "views": 1
-    },
     "/tags/hangul/": {
       "views": 1
     },
@@ -96,13 +93,13 @@
     "/tags/hongkong/": {
       "views": 1
     },
-    "/tags/hstech/": {
+    "/tags/hsi/": {
       "views": 1
+    },
+    "/tags/hstech/": {
+      "views": 2
     },
     "/tags/index/": {
-      "views": 1
-    },
-    "/tags/korean/": {
       "views": 1
     },
     "/tags/marp/": {
@@ -129,10 +126,7 @@
     "/tags/tech/": {
       "views": 1
     },
-    "/tags/tmux/": {
-      "views": 1
-    },
-    "/tags/마크다운쇼/": {
+    "/tags/마크다운ㅎ글/": {
       "views": 1
     },
     "/tags/변화관리전략/": {
@@ -153,9 +147,6 @@
     "/tags/역할세트이론/": {
       "views": 1
     },
-    "/tags/요구사항정의/": {
-      "views": 1
-    },
     "/tags/통합적평가/": {
       "views": 1
     },
@@ -171,22 +162,19 @@
     "/theory/curriculum-learning/": {
       "views": 1
     },
-    "/theory/fine-tuning/": {
-      "views": 1
-    },
     "/theory/hptbookreview0910/": {
       "views": 1
     },
     "/theory/humaneval/": {
       "views": 1
     },
-    "/theory/perplexity-ppl/": {
-      "views": 1
-    },
     "/theory/qwen25/": {
       "views": 1
     },
     "/theory/solar-107b/": {
+      "views": 1
+    },
+    "/volatility/": {
       "views": 1
     },
     "/welcome-to-ai/": {
