@@ -108,6 +108,10 @@ function initHeatmaps() {
           };
         }
 
+        // Hard-normalize numeric arrays (some browsers are strict)
+        hm.values = (hm.values || []).map(function(x) { x = Number(x); return isFinite(x) && x > 0 ? x : 0; });
+        hm.changes = (hm.changes || []).map(function(x) { x = Number(x); return isFinite(x) ? x : 0; });
+
         var trace = {
           type: 'treemap',
           ids: hm.ids,
@@ -134,8 +138,9 @@ function initHeatmaps() {
               thickness: 15
             }
           },
-          texttemplate: '<b>%{label}</b><br>%{color:+.1f}%',
-          hovertemplate: '<b>%{label}</b><br>등락률: %{color:+.2f}%<extra></extra>',
+          customdata: hm.changes,
+          texttemplate: '<b>%{label}</b><br>%{customdata:+.1f}%',
+          hovertemplate: '<b>%{label}</b><br>등락률: %{customdata:+.2f}%<extra></extra>',
           textfont: { size: 10 }
         };
 
