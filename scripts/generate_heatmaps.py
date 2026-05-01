@@ -144,9 +144,8 @@ def stooq_symbol(ticker: str) -> str:
 def fetch_pct_change_stooq(tickers: list[str], as_of: str) -> pd.Series:
     """Compute pct change for each ticker on as_of using Stooq daily CSV.
 
-    Notes:
-    - This does 1 HTTP request per ticker. Keep ticker counts reasonable.
-    - If a ticker is missing for that date, it's skipped.
+    WARNING: This does 1 HTTP request per ticker and can be slow/fragile.
+    Prefer yfinance batch when possible.
     """
     out = {}
     target = as_of
@@ -157,7 +156,7 @@ def fetch_pct_change_stooq(tickers: list[str], as_of: str) -> pd.Series:
         sym = stooq_symbol(t)
         url = f"{STOOQ_BASE}?s={sym}&i=d"
         try:
-            txt = sess.get(url, headers=UA, timeout=30).text
+            txt = sess.get(url, headers=UA, timeout=15).text
             if not txt.startswith("Date,"):
                 continue
             lines = [ln for ln in txt.splitlines() if ln.strip()]
@@ -178,6 +177,58 @@ def fetch_pct_change_stooq(tickers: list[str], as_of: str) -> pd.Series:
             out[t] = (cur_close / prev_close - 1.0) * 100.0
         except Exception:
             continue
+
+    return pd.Series(out, name="pct")
+
+
+def fetch_pct_change_yf(tickers: list[str], as_of: str) -> pd.Series:
+    """Compute pct change for each ticker on as_of via yfinance batch download."""
+    start = (pd.to_datetime(as_of) - pd.Timedelta(days=10)).strftime("%Y-%m-%d")
+    end = (pd.to_datetime(as_of) + pd.Timedelta(days=2)).strftime("%Y-%m-%d")
+
+    df = yf.download(
+        tickers=tickers,
+        start=start,
+        end=end,
+        interval="1d",
+        group_by="ticker",
+        auto_adjust=False,
+        threads=True,
+        progress=False,
+    )
+
+    out = {}
+    target = pd.to_datetime(as_of)
+
+    def get_close(frame, t):
+        if isinstance(frame.columns, pd.MultiIndex):
+            if (t, "Close") in frame.columns:
+                s = frame[(t, "Close")].dropna()
+            else:
+                return None
+        else:
+            # single ticker
+            s = frame["Close"].dropna()
+        if s.empty:
+            return None
+        return s
+
+    for t in tickers:
+        s = get_close(df, t)
+        if s is None or s.empty:
+            continue
+        # find target close and previous close
+        if target not in s.index:
+            continue
+        cur = float(s.loc[target])
+        # previous available date
+        prev_idx = s.index[s.index < target]
+        if len(prev_idx) == 0:
+            continue
+        prev = float(s.loc[prev_idx[-1]])
+        if prev <= 0:
+            continue
+        out[t] = (cur / prev - 1.0) * 100.0
 
     return pd.Series(out, name="pct")
 
@@ -210,8 +261,9 @@ def fetch_market_caps_cached(tickers: list[str]) -> pd.Series:
 
 def build_payload(label: str, df_const: pd.DataFrame, pct: pd.Series, mcap: pd.Series, as_of: str, source: str):
     df = df_const.set_index("ticker").join(pct).join(mcap)
-    # require pct; mcap can be missing (we'll fill to 1.0)
-    df = df.dropna(subset=["pct"])
+    # Keep items even if pct is missing (treat as 0) so the heatmap always renders.
+    df["pct"] = df["pct"].fillna(0.0)
+
     if "mcap" in df.columns:
         # If we don't have market caps, use a neutral default so treemap still renders.
         # 1e9 => 1B USD-sized tiles (uniform).
@@ -290,8 +342,14 @@ def main():
     # Fetch market data once for all tickers
     all_tickers = sorted({t for _, _, df in specs for t in df["ticker"].astype(str).tolist()})
 
-    # Daily % change via Stooq (free+more reliable)
-    pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
+    # Daily % change: prefer yfinance batch (faster, fewer requests).
+    pct = fetch_pct_change_yf(all_tickers, as_of=as_of)
+    if pct.empty:
+        # Fallback to Stooq (can be slow).
+        pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
+    if pct.empty:
+        # Last resort: neutral colors.
+        pct = pd.Series({t: 0.0 for t in all_tickers}, name="pct")
 
     # Market cap via local cache (optional). If missing, fill with 1 (uniform size).
     mcap = fetch_market_caps_cached(all_tickers)
@@ -311,7 +369,8 @@ def main():
     for key, label, df_const in specs:
         country = key.split("-")[0].upper()
         df = df_const.set_index("ticker").join(pct).join(mcap)
-        df = df.dropna(subset=["pct"])
+        # Keep rows even if pct is missing; treat as 0 so integrated heatmap stays renderable.
+        df["pct"] = df["pct"].fillna(0.0)
         if "mcap" in df.columns:
             df["mcap"] = df["mcap"].fillna(1.0)
         if df.empty:

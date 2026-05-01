@@ -38,11 +38,17 @@ jobs:
         run: |
           python scripts/generate_heatmaps.py
 
+      - name: Render static heatmap PNGs
+        run: |
+          DATE=$(date -u +%F)
+          # The generator uses "as_of" = today UTC by default; render for that date.
+          python scripts/render_heatmaps_png.py --date ${DATE}
+
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/data/heatmaps data/constituents || true
+          git add assets/data/heatmaps assets/img/heatmaps data/constituents scripts/requirements.txt scripts/render_heatmaps_png.py || true
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
