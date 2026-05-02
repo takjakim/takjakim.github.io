@@ -1,7 +1,7 @@
 {
   "label": "US · NASDAQ 100 (sample 60)",
   "asOf": "2026-05-01",
-  "source": "static fallback (pct=0, size=uniform)",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
   "items": [
     {
       "ticker": "ADBE",
