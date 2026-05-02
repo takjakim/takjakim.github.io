@@ -35,6 +35,9 @@ jobs:
           python scripts/bootstrap_constituents.py || true
 
       - name: Generate heatmap JSON
+        env:
+          MAX_NDX: "40"
+          MAX_SPX: "40"
         run: |
           python scripts/generate_heatmaps.py
 

@@ -315,8 +315,8 @@ def main():
     spx_df = wiki_tickers("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
 
     os = __import__("os")
-    MAX_NDX = int(os.environ.get("MAX_NDX", "60"))
-    MAX_SPX = int(os.environ.get("MAX_SPX", "80"))
+    MAX_NDX = int(os.environ.get("MAX_NDX", "40"))
+    MAX_SPX = int(os.environ.get("MAX_SPX", "40"))
 
     if len(ndx_df) > MAX_NDX:
         ndx_df = ndx_df.head(MAX_NDX)
@@ -342,11 +342,9 @@ def main():
     # Fetch market data once for all tickers
     all_tickers = sorted({t for _, _, df in specs for t in df["ticker"].astype(str).tolist()})
 
-    # Daily % change: prefer yfinance batch (faster, fewer requests).
-    pct = fetch_pct_change_yf(all_tickers, as_of=as_of)
-    if pct.empty:
-        # Fallback to Stooq (can be slow).
-        pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
+    # Daily % change: avoid yfinance rate limits.
+    # For reliability we compute pct via Stooq per-ticker, but keep ticker counts capped (MAX_NDX/MAX_SPX).
+    pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
     if pct.empty:
         # Last resort: neutral colors.
         pct = pd.Series({t: 0.0 for t in all_tickers}, name="pct")
