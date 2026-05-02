@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-01T04:12:22.455265+00:00",
+    "generated_at": "2026-05-02T03:46:42.815564+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 60
+      "views": 52
     },
     "/about/": {
       "views": 5
@@ -36,8 +36,11 @@
     "/graph/": {
       "views": 2
     },
+    "/hpt-bookreview-0102/": {
+      "views": 1
+    },
     "/investing/2026-02-10-global/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-02-11-korea/": {
       "views": 1
@@ -114,10 +117,10 @@
     "/tags/monitoring/": {
       "views": 1
     },
-    "/tags/nextjs/": {
+    "/tags/nextauth/": {
       "views": 1
     },
-    "/tags/optimization/": {
+    "/tags/nextjs/": {
       "views": 1
     },
     "/tags/pyodide/": {
