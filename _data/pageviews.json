@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-02T03:46:42.815564+00:00",
+    "generated_at": "2026-05-03T04:07:12.347636+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 52
+      "views": 53
     },
     "/about/": {
       "views": 5
@@ -79,7 +79,7 @@
       "views": 1
     },
     "/investing/djia/": {
-      "views": 2
+      "views": 1
     },
     "/macos/mac-util/": {
       "views": 1
@@ -111,12 +111,6 @@
     "/tags/index/": {
       "views": 1
     },
-    "/tags/marp/": {
-      "views": 1
-    },
-    "/tags/monitoring/": {
-      "views": 1
-    },
     "/tags/nextauth/": {
       "views": 1
     },
@@ -135,16 +129,10 @@
     "/tags/마크다운ㅎ글/": {
       "views": 1
     },
-    "/tags/변화관리전략/": {
-      "views": 1
-    },
     "/tags/비즈니스로직모델/": {
       "views": 1
     },
     "/tags/성과개선/": {
-      "views": 1
-    },
-    "/tags/성과중심설계/": {
       "views": 1
     },
     "/tags/시스템적접근/": {
@@ -165,9 +153,6 @@
     "/theory/cross-entropy-loss/": {
       "views": 1
     },
-    "/theory/curriculum-learning/": {
-      "views": 1
-    },
     "/theory/hptbookreview0910/": {
       "views": 1
     },
@@ -177,14 +162,11 @@
     "/theory/qwen25/": {
       "views": 1
     },
-    "/theory/solar-107b/": {
-      "views": 1
-    },
     "/volatility/": {
       "views": 1
     },
     "/welcome-to-ai/": {
-      "views": 2
+      "views": 1
     },
     "/welcome-to-dev/": {
       "views": 2
