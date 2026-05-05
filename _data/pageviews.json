@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-04T04:04:07.910442+00:00",
+    "generated_at": "2026-05-05T03:46:07.487851+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 55
+      "views": 54
     },
     "/about/": {
       "views": 5
@@ -100,7 +100,7 @@
       "views": 1
     },
     "/tags/hstech/": {
-      "views": 2
+      "views": 1
     },
     "/tags/index/": {
       "views": 1
@@ -120,28 +120,16 @@
     "/tags/마크다운ㅎ글/": {
       "views": 1
     },
-    "/tags/비즈니스로직모델/": {
-      "views": 1
-    },
     "/tags/성과개선/": {
       "views": 1
     },
-    "/tags/통합적평가/": {
-      "views": 1
-    },
     "/theory/cohens-d/": {
-      "views": 1
-    },
-    "/theory/confidence/": {
       "views": 1
     },
     "/theory/cross-entropy-loss/": {
       "views": 1
     },
     "/theory/hptbookreview0910/": {
-      "views": 1
-    },
-    "/theory/humaneval/": {
       "views": 1
     },
     "/theory/qwen25/": {
