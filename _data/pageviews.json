@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-05-05T03:46:07.487851+00:00",
+    "generated_at": "2026-05-06T03:59:57.699092+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 54
+      "views": 52
     },
     "/about/": {
-      "views": 5
+      "views": 7
     },
     "/ai-investment-analysis/": {
       "views": 1
