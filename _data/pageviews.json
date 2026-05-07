@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-06T03:59:57.699092+00:00",
+    "generated_at": "2026-05-07T03:59:45.023997+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 52
+      "views": 51
     },
     "/about/": {
       "views": 7
@@ -60,6 +60,9 @@
     "/investing/2026-03-20-korea/": {
       "views": 1
     },
+    "/investing/2026-04-08-korea/": {
+      "views": 1
+    },
     "/investing/2026-04-15-korea/": {
       "views": 1
     },
@@ -93,9 +96,6 @@
     "/tags/heyling/": {
       "views": 1
     },
-    "/tags/hongkong/": {
-      "views": 1
-    },
     "/tags/hsi/": {
       "views": 1
     },
@@ -124,9 +124,6 @@
       "views": 1
     },
     "/theory/cohens-d/": {
-      "views": 1
-    },
-    "/theory/cross-entropy-loss/": {
       "views": 1
     },
     "/theory/hptbookreview0910/": {
