@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-07T03:59:45.023997+00:00",
+    "generated_at": "2026-05-08T03:50:23.089613+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 51
+      "views": 49
     },
     "/about/": {
       "views": 7
@@ -127,9 +127,6 @@
       "views": 1
     },
     "/theory/hptbookreview0910/": {
-      "views": 1
-    },
-    "/theory/qwen25/": {
       "views": 1
     },
     "/volatility/": {
