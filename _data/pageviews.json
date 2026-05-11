@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-05-10T04:09:36.760298+00:00",
+    "generated_at": "2026-05-11T04:19:42.057738+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 48
+      "views": 50
     },
     "/about/": {
-      "views": 7
+      "views": 10
     },
     "/ai-investment-analysis/": {
       "views": 1
@@ -82,9 +82,6 @@
       "views": 1
     },
     "/investing/djia/": {
-      "views": 1
-    },
-    "/macos/mac-util/": {
       "views": 1
     },
     "/tags/claude-code/": {
