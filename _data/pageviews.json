@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-17T04:16:48.677809+00:00",
+    "generated_at": "2026-05-18T04:38:06.012856+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 35
+      "views": 37
     },
     "/about/": {
       "views": 13
@@ -84,9 +84,6 @@
     "/tags/claude-code/": {
       "views": 1
     },
-    "/tags/heatmap/": {
-      "views": 1
-    },
     "/tags/hsi/": {
       "views": 1
     },
@@ -94,9 +91,6 @@
       "views": 1
     },
     "/tags/nextauth/": {
-      "views": 1
-    },
-    "/tags/nextjs/": {
       "views": 1
     },
     "/tags/tech/": {
