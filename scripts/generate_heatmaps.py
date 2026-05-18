@@ -25,7 +25,8 @@ from pathlib import Path
 
 import pandas as pd
 import requests
-import yfinance as yf
+# yfinance often rate-limits in GitHub Actions / CI. Prefer Yahoo chart endpoint via requests.
+# import yfinance as yf
 
 ROOT = Path(__file__).resolve().parents[1]
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X)"}
@@ -181,54 +182,59 @@ def fetch_pct_change_stooq(tickers: list[str], as_of: str) -> pd.Series:
     return pd.Series(out, name="pct")
 
 
-def fetch_pct_change_yf(tickers: list[str], as_of: str) -> pd.Series:
-    """Compute pct change for each ticker on as_of via yfinance batch download."""
-    start = (pd.to_datetime(as_of) - pd.Timedelta(days=10)).strftime("%Y-%m-%d")
-    end = (pd.to_datetime(as_of) + pd.Timedelta(days=2)).strftime("%Y-%m-%d")
+def fetch_pct_change_yahoo(tickers: list[str], as_of: str) -> pd.Series:
+    """Compute pct change for each ticker on as_of using Yahoo public chart endpoint.
 
-    df = yf.download(
-        tickers=tickers,
-        start=start,
-        end=end,
-        interval="1d",
-        group_by="ticker",
-        auto_adjust=False,
-        threads=True,
-        progress=False,
-    )
+    This avoids yfinance and is more reliable in CI, but it is 1 request per ticker.
+    We keep ticker counts capped upstream.
+    """
+    import requests
 
-    out = {}
     target = pd.to_datetime(as_of)
+    out = {}
 
-    def get_close(frame, t):
-        if isinstance(frame.columns, pd.MultiIndex):
-            if (t, "Close") in frame.columns:
-                s = frame[(t, "Close")].dropna()
-            else:
-                return None
-        else:
-            # single ticker
-            s = frame["Close"].dropna()
-        if s.empty:
+    sess = requests.Session()
+
+    def last_two_closes(t: str):
+        url = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}"
+        params = {"interval": "1d", "range": "14d"}
+        r = sess.get(url, params=params, headers=UA, timeout=30)
+        if r.status_code == 429:
+            raise RuntimeError("rate_limited")
+        r.raise_for_status()
+        j = r.json()
+        result = (((j or {}).get("chart") or {}).get("result") or [None])[0]
+        if not result:
             return None
-        return s
+        ts = result.get("timestamp") or []
+        quote = (((result.get("indicators") or {}).get("quote") or [None])[0]) or {}
+        closes = quote.get("close") or []
+        rows = []
+        for tt, c in zip(ts, closes):
+            if c is None:
+                continue
+            d = pd.to_datetime(int(tt), unit="s").tz_localize(None)
+            rows.append((d, float(c)))
+        if len(rows) < 2:
+            return None
+        rows.sort(key=lambda x: x[0])
+        rows = [rc for rc in rows if rc[0] <= target]
+        if len(rows) < 2:
+            return None
+        return rows[-1], rows[-2]
 
     for t in tickers:
-        s = get_close(df, t)
-        if s is None or s.empty:
+        try:
+            r = last_two_closes(t)
+            if r is None:
+                continue
+            (d_last, last_close), (d_prev, prev_close) = r
+            if prev_close <= 0:
+                continue
+            out[t] = (last_close / prev_close - 1.0) * 100.0
+            time.sleep(0.15)
+        except Exception:
             continue
-        # find target close and previous close
-        if target not in s.index:
-            continue
-        cur = float(s.loc[target])
-        # previous available date
-        prev_idx = s.index[s.index < target]
-        if len(prev_idx) == 0:
-            continue
-        prev = float(s.loc[prev_idx[-1]])
-        if prev <= 0:
-            continue
-        out[t] = (cur / prev - 1.0) * 100.0
 
     return pd.Series(out, name="pct")
 
@@ -342,9 +348,11 @@ def main():
     # Fetch market data once for all tickers
     all_tickers = sorted({t for _, _, df in specs for t in df["ticker"].astype(str).tolist()})
 
-    # Daily % change: avoid yfinance rate limits.
-    # For reliability we compute pct via Stooq per-ticker, but keep ticker counts capped (MAX_NDX/MAX_SPX).
-    pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
+    # Daily % change: use Yahoo public chart endpoint (more reliable in CI than yfinance).
+    pct = fetch_pct_change_yahoo(all_tickers, as_of=as_of)
+    if pct.empty:
+        # Fallback: Stooq per-ticker.
+        pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
     if pct.empty:
         # Last resort: neutral colors.
         pct = pd.Series({t: 0.0 for t in all_tickers}, name="pct")
@@ -395,7 +403,7 @@ def main():
         payload = {
             "label": "통합 · 섹터 히트맵",
             "asOf": as_of,
-            "source": "yfinance (pct+market cap), Wikipedia/CSV constituents",
+            "source": "Yahoo chart (pct) + Wikipedia/CSV constituents",
             "items": out_items,
         }
         write_json(out_dir / "all-sectors.json", payload)
