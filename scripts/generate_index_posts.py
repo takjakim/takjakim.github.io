@@ -21,7 +21,7 @@ from datetime import date, timedelta
 from pathlib import Path
 
 import pandas as pd
-import yfinance as yf
+import requests
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTDIR = ROOT / "_notes" / "investing"
@@ -71,23 +71,52 @@ def daterange(start: date, end: date):
         d += timedelta(days=1)
 
 
+UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X)"}
+
+
+def _yahoo_chart_closes(ticker: str, start: date, end: date) -> pd.Series:
+    """Fetch daily close series for [start, end] inclusive via Yahoo chart endpoint."""
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
+    # Using range is simpler; keep it small.
+    # We request ~30 days to cover weekends/holidays.
+    params = {"interval": "1d", "range": "30d"}
+    r = requests.get(url, params=params, headers=UA, timeout=30)
+    r.raise_for_status()
+    j = r.json()
+    result = (((j or {}).get("chart") or {}).get("result") or [None])[0]
+    if not result:
+        return pd.Series(dtype=float)
+
+    ts = result.get("timestamp") or []
+    quote = (((result.get("indicators") or {}).get("quote") or [None])[0]) or {}
+    closes = quote.get("close") or []
+
+    rows = []
+    for t, c in zip(ts, closes):
+        if c is None:
+            continue
+        d = pd.to_datetime(int(t), unit="s").tz_localize(None)
+        rows.append((d, float(c)))
+
+    if not rows:
+        return pd.Series(dtype=float)
+
+    s = pd.Series({d: v for d, v in rows}).sort_index()
+    s = s[(s.index >= pd.Timestamp(start)) & (s.index <= pd.Timestamp(end))]
+    s.name = ticker
+    return s
+
+
 def download_closes(tickers: list[str], start: date, end: date) -> pd.DataFrame:
-    df = yf.download(
-        tickers=tickers,
-        start=to_datestr(start),
-        end=to_datestr(end + timedelta(days=1)),
-        interval="1d",
-        auto_adjust=False,
-        group_by="ticker",
-        progress=False,
-        threads=True,
-    )
+    # Yahoo endpoint is 1 request per ticker, but we only have a few indices.
+    series = []
+    for t in tickers:
+        try:
+            series.append(_yahoo_chart_closes(t, start, end))
+        except Exception:
+            series.append(pd.Series(dtype=float, name=t))
 
-    if isinstance(df.columns, pd.MultiIndex):
-        closes = pd.DataFrame({t: df[t]["Close"] for t in tickers})
-    else:
-        closes = df[["Close"]].rename(columns={"Close": tickers[0]})
-
+    closes = pd.concat(series, axis=1)
     closes.index = pd.to_datetime(closes.index).tz_localize(None)
     closes = closes.sort_index()
     closes = closes.dropna(how="all")
