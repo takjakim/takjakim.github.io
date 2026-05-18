@@ -10,7 +10,11 @@
     {%- comment -%}
     Heatmaps are rendered as static PNGs under /assets/img/heatmaps/YYYY-MM-DD/*.png
     to avoid Plotly rendering issues on iOS Safari.
+
+    Legacy posts may still include <div class="market-heatmap" ...>. We keep a tiny
+    script that replaces those divs with the corresponding static PNG if present.
     {%- endcomment -%}
+    {% include market-heatmap.html %}
     {% include link-previews.html wrapperQuerySelector="content" %}
   </body>
 </html>
