@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-18T04:38:06.012856+00:00",
+    "generated_at": "2026-05-19T04:21:36.135736+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 37
+      "views": 42
     },
     "/about/": {
       "views": 13
@@ -24,6 +24,9 @@
     "/dev/claude-code-team-dashboard/": {
       "views": 1
     },
+    "/dev/markdown-hangul/part-1/": {
+      "views": 1
+    },
     "/dev/stats-method/": {
       "views": 1
     },
@@ -31,7 +34,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 1
+      "views": 2
     },
     "/hpt-bookreview-0102/": {
       "views": 1
@@ -78,7 +81,19 @@
     "/investing/2026-04-22-us/": {
       "views": 1
     },
+    "/investing/2026-05-07-korea/": {
+      "views": 1
+    },
+    "/investing/2026-05-07-us/": {
+      "views": 1
+    },
+    "/investing/2026-05-08-us/": {
+      "views": 4
+    },
     "/investing/djia/": {
+      "views": 1
+    },
+    "/tags/": {
       "views": 1
     },
     "/tags/claude-code/": {
@@ -93,11 +108,8 @@
     "/tags/nextauth/": {
       "views": 1
     },
-    "/tags/tech/": {
-      "views": 1
-    },
     "/tags/마크다운ㅎ글/": {
-      "views": 1
+      "views": 2
     },
     "/theory/hptbookreview0910/": {
       "views": 1
