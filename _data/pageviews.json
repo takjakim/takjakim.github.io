@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-05-19T04:21:36.135736+00:00",
+    "generated_at": "2026-05-20T04:23:35.287317+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 42
+      "views": 40
     },
     "/about/": {
-      "views": 13
+      "views": 11
     },
     "/ai-investment-analysis/": {
       "views": 1
@@ -19,7 +19,7 @@
       "views": 1
     },
     "/ai/heyling-day2/": {
-      "views": 2
+      "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
       "views": 1
@@ -34,7 +34,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 2
+      "views": 1
     },
     "/hpt-bookreview-0102/": {
       "views": 1
@@ -43,9 +43,6 @@
       "views": 1
     },
     "/investing/2026-02-11-korea/": {
-      "views": 1
-    },
-    "/investing/2026-02-12-heatmaps/": {
       "views": 1
     },
     "/investing/2026-02-13-us/": {
@@ -93,6 +90,9 @@
     "/investing/djia/": {
       "views": 1
     },
+    "/macos/tidal-dl/": {
+      "views": 4
+    },
     "/tags/": {
       "views": 1
     },
@@ -110,9 +110,6 @@
     },
     "/tags/마크다운ㅎ글/": {
       "views": 2
-    },
-    "/theory/hptbookreview0910/": {
-      "views": 1
     },
     "/volatility/": {
       "views": 1
