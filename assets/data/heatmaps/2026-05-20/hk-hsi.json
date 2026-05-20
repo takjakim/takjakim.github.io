@@ -1,6 +1,6 @@
 {
   "label": "HK · Hang Seng",
-  "asOf": "2026-04-30",
+  "asOf": "2026-05-20",
   "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
   "items": [
     {
