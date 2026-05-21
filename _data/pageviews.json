@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-20T04:23:35.287317+00:00",
+    "generated_at": "2026-05-21T04:40:11.993300+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 40
+      "views": 38
     },
     "/about/": {
       "views": 11
@@ -27,10 +27,10 @@
     "/dev/markdown-hangul/part-1/": {
       "views": 1
     },
-    "/dev/stats-method/": {
+    "/dev/marp-editor/devlog-1/": {
       "views": 1
     },
-    "/dev/stats-method/planning/": {
+    "/dev/marp-editor/devlog-3/": {
       "views": 1
     },
     "/graph/": {
@@ -48,11 +48,8 @@
     "/investing/2026-02-13-us/": {
       "views": 2
     },
-    "/investing/2026-02-20-korea/": {
-      "views": 1
-    },
     "/investing/2026-02-20-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-03-20-korea/": {
       "views": 1
@@ -105,6 +102,12 @@
     "/tags/hstech/": {
       "views": 1
     },
+    "/tags/index/": {
+      "views": 1
+    },
+    "/tags/markdown/": {
+      "views": 1
+    },
     "/tags/nextauth/": {
       "views": 1
     },
@@ -118,7 +121,7 @@
       "views": 1
     },
     "/welcome-to-dev/": {
-      "views": 2
+      "views": 1
     },
     "/welcome-to-investing/": {
       "views": 1
