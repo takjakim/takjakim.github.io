@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-23T04:04:52.150949+00:00",
+    "generated_at": "2026-05-24T04:35:16.697365+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 28
+      "views": 25
     },
     "/about/": {
       "views": 14
@@ -19,9 +19,6 @@
       "views": 1
     },
     "/ai/heyling-day2/": {
-      "views": 1
-    },
-    "/dev/claude-code-team-dashboard/": {
       "views": 1
     },
     "/dev/markdown-hangul/part-1/": {
@@ -45,15 +42,6 @@
     "/investing/2026-04-08-korea/": {
       "views": 1
     },
-    "/investing/2026-04-17-us/": {
-      "views": 1
-    },
-    "/investing/2026-04-21-us/": {
-      "views": 1
-    },
-    "/investing/2026-04-22-us/": {
-      "views": 1
-    },
     "/investing/2026-05-07-korea/": {
       "views": 1
     },
@@ -67,9 +55,6 @@
       "views": 4
     },
     "/tags/": {
-      "views": 1
-    },
-    "/tags/claude-code/": {
       "views": 1
     },
     "/tags/hsi/": {
