@@ -43,8 +43,12 @@ class IndexSpec:
 
 
 def wiki_tickers(url: str) -> pd.DataFrame:
+    # pd.read_html on large pages can be surprisingly slow; constrain parsing.
+    from io import StringIO
+
     html = requests.get(url, headers=UA, timeout=30).text
-    tables = pd.read_html(html)
+    # Use StringIO to avoid deprecation and match to reduce work.
+    tables = pd.read_html(StringIO(html), match=r"(?i)(ticker|symbol)")
     target = None
     ticker_col = None
     for t in tables:
@@ -198,7 +202,7 @@ def fetch_pct_change_yahoo(tickers: list[str], as_of: str) -> pd.Series:
     def last_two_closes(t: str):
         url = f"https://query1.finance.yahoo.com/v8/finance/chart/{t}"
         params = {"interval": "1d", "range": "14d"}
-        r = sess.get(url, params=params, headers=UA, timeout=30)
+        r = sess.get(url, params=params, headers=UA, timeout=8)
         if r.status_code == 429:
             raise RuntimeError("rate_limited")
         r.raise_for_status()
@@ -232,7 +236,7 @@ def fetch_pct_change_yahoo(tickers: list[str], as_of: str) -> pd.Series:
             if prev_close <= 0:
                 continue
             out[t] = (last_close / prev_close - 1.0) * 100.0
-            time.sleep(0.15)
+            # Avoid slow runs in cron/CI; if we get rate-limited we fall back to Stooq anyway.
         except Exception:
             continue
 
