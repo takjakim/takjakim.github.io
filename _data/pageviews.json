@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-05-26T04:22:04.047471+00:00",
+    "generated_at": "2026-05-27T04:45:03.885381+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 24
+      "views": 22
     },
     "/about/": {
-      "views": 14
+      "views": 17
     },
     "/ai-investment-analysis/": {
       "views": 1
@@ -25,10 +25,13 @@
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
+      "views": 2
+    },
+    "/dev/marp-editor/devlog-2/": {
       "views": 1
     },
     "/dev/marp-editor/devlog-3/": {
-      "views": 1
+      "views": 2
     },
     "/graph/": {
       "views": 1
@@ -73,7 +76,7 @@
       "views": 1
     },
     "/tags/마크다운ㅎ글/": {
-      "views": 2
+      "views": 1
     },
     "/theory/cohens-d/": {
       "views": 1
