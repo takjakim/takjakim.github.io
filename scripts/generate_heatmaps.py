@@ -43,55 +43,107 @@ class IndexSpec:
 
 
 def wiki_tickers(url: str) -> pd.DataFrame:
-    # pd.read_html on large pages can be surprisingly slow; constrain parsing.
-    from io import StringIO
+    """Fetch a Wikipedia constituents table.
 
+    pd.read_html can hang on some large pages; prefer a lightweight BeautifulSoup parse,
+    and fall back to pd.read_html if bs4 isn't available.
+    """
     html = requests.get(url, headers=UA, timeout=30).text
-    # Use StringIO to avoid deprecation and match to reduce work.
-    tables = pd.read_html(StringIO(html), match=r"(?i)(ticker|symbol)")
-    target = None
-    ticker_col = None
-    for t in tables:
-        cols = [str(c).lower() for c in t.columns]
-        for c in t.columns:
-            lc = str(c).lower()
-            if lc == "ticker" or "ticker" in lc or "symbol" in lc:
-                target = t
-                ticker_col = c
-                break
-        if target is not None:
-            break
-    if target is None or ticker_col is None:
+
+    # Fast path: bs4
+    try:
+        from bs4 import BeautifulSoup  # type: ignore
+
+        soup = BeautifulSoup(html, "lxml")
+        tables = soup.find_all("table", class_="wikitable")
+        for table in tables:
+            # header row
+            header = [th.get_text(strip=True) for th in table.find_all("th")]
+            header_low = [h.lower() for h in header]
+            # We only care about tables that have a Ticker/Symbol-like column.
+            try:
+                t_idx = next(i for i, h in enumerate(header_low) if h in ("ticker", "symbol") or "ticker" in h or "symbol" in h)
+            except StopIteration:
+                continue
+
+            # Optional columns
+            def find_idx(keys):
+                for k in keys:
+                    kl = k.lower()
+                    for i, h in enumerate(header_low):
+                        if h == kl or kl in h:
+                            return i
+                return None
+
+            n_idx = find_idx(["company", "name", "security", "issuer"])
+            s_idx = find_idx(["sector", "industry", "gics sector"])
+
+            rows = []
+            for tr in table.find_all("tr"):
+                tds = tr.find_all(["td", "th"])
+                if not tds or len(tds) <= t_idx:
+                    continue
+                # skip header-like rows
+                if tr.find("th") and not tr.find("td"):
+                    continue
+
+                def cell(i):
+                    if i is None or i >= len(tds):
+                        return ""
+                    return tds[i].get_text(" ", strip=True)
+
+                ticker = cell(t_idx).strip().replace(".", "-")
+                if not ticker:
+                    continue
+                name = cell(n_idx).strip() if n_idx is not None else ticker
+                sector = cell(s_idx).strip() if s_idx is not None else ""
+                rows.append({"ticker": ticker, "name": name, "sector": sector})
+
+            df = pd.DataFrame(rows)
+            df = df[df["ticker"].astype(str).str.len() > 0].drop_duplicates("ticker")
+            if not df.empty:
+                return df
+
         raise RuntimeError(f"Could not find ticker table on {url}")
 
-    # best-effort name/sector
-    def pick(cols, hints):
-        low = {c: str(c).lower() for c in cols}
-        for h in hints:
-            hl = h.lower()
-            for c, cl in low.items():
-                if hl == cl or hl in cl:
-                    return c
-        return None
+    except Exception:
+        # Slow fallback: pandas html tables
+        from io import StringIO
 
-    name_col = pick(target.columns, ["Company", "Name", "Security", "Issuer"])
-    sector_col = pick(target.columns, ["Sector", "Industry", "GICS Sector"])
+        tables = pd.read_html(StringIO(html), match=r"(?i)(ticker|symbol)")
+        target = None
+        ticker_col = None
+        for t in tables:
+            for c in t.columns:
+                lc = str(c).lower()
+                if lc == "ticker" or "ticker" in lc or "symbol" in lc:
+                    target = t
+                    ticker_col = c
+                    break
+            if target is not None:
+                break
+        if target is None or ticker_col is None:
+            raise RuntimeError(f"Could not find ticker table on {url}")
 
-    df = pd.DataFrame({
-        "ticker": target[ticker_col].astype(str).str.strip().str.replace(".", "-", regex=False)
-    })
-    if name_col is not None:
-        df["name"] = target[name_col].astype(str).str.strip()
-    else:
-        df["name"] = df["ticker"]
+        def pick(cols, hints):
+            low = {c: str(c).lower() for c in cols}
+            for h in hints:
+                hl = h.lower()
+                for c, cl in low.items():
+                    if hl == cl or hl in cl:
+                        return c
+            return None
 
-    if sector_col is not None:
-        df["sector"] = target[sector_col].astype(str).str.strip()
-    else:
-        df["sector"] = ""
+        name_col = pick(target.columns, ["Company", "Name", "Security", "Issuer"])
+        sector_col = pick(target.columns, ["Sector", "Industry", "GICS Sector"])
 
-    df = df[df["ticker"].str.len() > 0].drop_duplicates("ticker")
-    return df
+        df = pd.DataFrame({
+            "ticker": target[ticker_col].astype(str).str.strip().str.replace(".", "-", regex=False)
+        })
+        df["name"] = target[name_col].astype(str).str.strip() if name_col is not None else df["ticker"]
+        df["sector"] = target[sector_col].astype(str).str.strip() if sector_col is not None else ""
+        df = df[df["ticker"].str.len() > 0].drop_duplicates("ticker")
+        return df
 
 
 def csv_constituents(path: Path) -> pd.DataFrame:
@@ -319,10 +371,21 @@ def main():
     specs: list[tuple[str, str, pd.DataFrame]] = []
 
     # US
-    # NOTE: yfinance can rate-limit (429 / connection resets) when requesting too many tickers.
-    # Keep SPX capped by default for reliability on free endpoints.
-    ndx_df = wiki_tickers("https://en.wikipedia.org/wiki/Nasdaq-100")
-    spx_df = wiki_tickers("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
+    # NOTE: Wikipedia parsing via pd.read_html can be surprisingly slow/flaky.
+    # Prefer pinned CSV constituents if present; otherwise fall back to Wikipedia.
+    cdir = ROOT / "data" / "constituents"
+    us_ndx_path = cdir / "us_ndx.csv"
+    us_spx_path = cdir / "us_spx.csv"
+
+    if us_ndx_path.exists():
+        ndx_df = csv_constituents(us_ndx_path)
+    else:
+        ndx_df = wiki_tickers("https://en.wikipedia.org/wiki/Nasdaq-100")
+
+    if us_spx_path.exists():
+        spx_df = csv_constituents(us_spx_path)
+    else:
+        spx_df = wiki_tickers("https://en.wikipedia.org/wiki/List_of_S%26P_500_companies")
 
     os = __import__("os")
     MAX_NDX = int(os.environ.get("MAX_NDX", "40"))
@@ -337,29 +400,46 @@ def main():
     specs.append(("us-spx", f"US · S&P 500 (sample {len(spx_df)})", spx_df))
 
     # CN/HK pinned CSV
-    cdir = ROOT / "data" / "constituents"
     cn_path = cdir / "cn_csi300.csv"
     hk_hsi_path = cdir / "hk_hsi.csv"
     hk_hstech_path = cdir / "hk_hstech.csv"
 
+    MAX_HK = int(os.environ.get("MAX_HK", "999999"))
+    MAX_CN = int(os.environ.get("MAX_CN", "999999"))
+
     if cn_path.exists():
-        specs.append(("cn-csi300", "CN · CSI 300", csv_constituents(cn_path)))
+        cn_df = csv_constituents(cn_path)
+        if len(cn_df) > MAX_CN:
+            cn_df = cn_df.head(MAX_CN)
+        specs.append(("cn-csi300", f"CN · CSI 300 (sample {len(cn_df)})", cn_df))
     if hk_hsi_path.exists():
-        specs.append(("hk-hsi", "HK · Hang Seng", csv_constituents(hk_hsi_path)))
+        hk_hsi_df = csv_constituents(hk_hsi_path)
+        if len(hk_hsi_df) > MAX_HK:
+            hk_hsi_df = hk_hsi_df.head(MAX_HK)
+        specs.append(("hk-hsi", f"HK · Hang Seng (sample {len(hk_hsi_df)})", hk_hsi_df))
     if hk_hstech_path.exists():
-        specs.append(("hk-hstech", "HK · Hang Seng Tech", csv_constituents(hk_hstech_path)))
+        hk_hstech_df = csv_constituents(hk_hstech_path)
+        if len(hk_hstech_df) > MAX_HK:
+            hk_hstech_df = hk_hstech_df.head(MAX_HK)
+        specs.append(("hk-hstech", f"HK · Hang Seng Tech (sample {len(hk_hstech_df)})", hk_hstech_df))
 
     # Fetch market data once for all tickers
     all_tickers = sorted({t for _, _, df in specs for t in df["ticker"].astype(str).tolist()})
 
+    os = __import__("os")
+    FORCE_NEUTRAL = os.environ.get("FORCE_NEUTRAL_PCT", "").strip() not in ("", "0", "false", "False")
+
     # Daily % change: use Yahoo public chart endpoint (more reliable in CI than yfinance).
-    pct = fetch_pct_change_yahoo(all_tickers, as_of=as_of)
-    if pct.empty:
-        # Fallback: Stooq per-ticker.
-        pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
-    if pct.empty:
-        # Last resort: neutral colors.
+    if FORCE_NEUTRAL:
         pct = pd.Series({t: 0.0 for t in all_tickers}, name="pct")
+    else:
+        pct = fetch_pct_change_yahoo(all_tickers, as_of=as_of)
+        if pct.empty:
+            # Fallback: Stooq per-ticker.
+            pct = fetch_pct_change_stooq(all_tickers, as_of=as_of)
+        if pct.empty:
+            # Last resort: neutral colors.
+            pct = pd.Series({t: 0.0 for t in all_tickers}, name="pct")
 
     # Market cap via local cache (optional). If missing, fill with 1 (uniform size).
     mcap = fetch_market_caps_cached(all_tickers)
