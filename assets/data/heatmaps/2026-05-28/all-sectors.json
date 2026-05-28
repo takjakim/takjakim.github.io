@@ -8,14 +8,14 @@
       "name": "CN nan",
       "sector": "CN",
       "pct": 0.0,
-      "mcap_usd_b": 50.0
+      "mcap_usd_b": 300.0
     },
     {
       "ticker": "HK-Consumer",
       "name": "HK Consumer",
       "sector": "HK",
       "pct": 0.0,
-      "mcap_usd_b": 1.0
+      "mcap_usd_b": 3.0
     },
     {
       "ticker": "HK-Health",
@@ -23,6 +23,13 @@
       "sector": "HK",
       "pct": 0.0,
       "mcap_usd_b": 3.0
+    },
+    {
+      "ticker": "HK-Industrials",
+      "name": "HK Industrials",
+      "sector": "HK",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
     },
     {
       "ticker": "HK-Tech",
@@ -36,7 +43,7 @@
       "name": "HK nan",
       "sector": "HK",
       "pct": 0.0,
-      "mcap_usd_b": 25.0
+      "mcap_usd_b": 85.0
     },
     {
       "ticker": "US-Biotechnology",
