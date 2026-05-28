@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-05-27T04:45:03.885381+00:00",
+    "generated_at": "2026-05-28T04:35:29.747205+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 22
+      "views": 21
     },
     "/about/": {
       "views": 17
@@ -61,13 +61,13 @@
       "views": 1
     },
     "/tags/hsi/": {
-      "views": 2
+      "views": 1
     },
     "/tags/hstech/": {
       "views": 1
     },
     "/tags/index/": {
-      "views": 1
+      "views": 2
     },
     "/tags/markdown/": {
       "views": 1
