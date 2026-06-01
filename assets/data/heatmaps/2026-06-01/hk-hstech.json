@@ -1,5 +1,5 @@
 {
-  "label": "HK · Hang Seng Tech (sample 25)",
+  "label": "HK · Hang Seng Tech (sample 28)",
   "asOf": "2026-06-01",
   "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
   "items": [
@@ -175,6 +175,27 @@
       "ticker": "6618-HK",
       "name": "JD Health",
       "sector": "Health",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1833-HK",
+      "name": "Flat Glass",
+      "sector": "Industrials",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9866-HK",
+      "name": "NIO",
+      "sector": "Consumer",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9868-HK",
+      "name": "Xpeng",
+      "sector": "Consumer",
       "pct": 0.0,
       "mcap_usd_b": 1.0
     }
