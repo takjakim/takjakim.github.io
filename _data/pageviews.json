@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-01T05:10:40.175237+00:00",
+    "generated_at": "2026-06-02T04:57:52.155870+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 32
+      "views": 31
     },
     "/about/": {
       "views": 1
@@ -55,9 +55,6 @@
       "views": 2
     },
     "/tags/markdown/": {
-      "views": 1
-    },
-    "/tags/nextauth/": {
       "views": 1
     },
     "/tags/마크다운ㅎ글/": {
