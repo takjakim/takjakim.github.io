@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-04T05:01:12.510129+00:00",
+    "generated_at": "2026-06-05T04:43:30.837512+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 28
+      "views": 33
     },
     "/about/": {
       "views": 1
@@ -16,7 +16,7 @@
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
-      "views": 2
+      "views": 3
     },
     "/dev/marp-editor/devlog-2/": {
       "views": 1
@@ -66,8 +66,11 @@
     "/theory/cohens-d/": {
       "views": 1
     },
+    "/theory/perplexity-ppl/": {
+      "views": 1
+    },
     "/workbook/": {
-      "views": 12
+      "views": 1
     },
     "/workbook/a/": {
       "views": 4
