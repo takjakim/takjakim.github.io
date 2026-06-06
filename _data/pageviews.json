@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-06-05T04:43:30.837512+00:00",
+    "generated_at": "2026-06-06T04:16:34.859921+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -28,9 +28,6 @@
       "views": 1
     },
     "/graph/": {
-      "views": 1
-    },
-    "/investing/2026-04-08-korea/": {
       "views": 1
     },
     "/investing/2026-05-07-korea/": {
