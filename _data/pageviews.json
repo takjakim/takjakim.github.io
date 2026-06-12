@@ -1,15 +1,21 @@
 {
   "meta": {
-    "generated_at": "2026-06-11T04:55:50.417416+00:00",
+    "generated_at": "2026-06-12T04:58:33.359646+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 34
+      "views": 33
     },
     "/about/": {
+      "views": 1
+    },
+    "/ai/heyling-day1/": {
+      "views": 1
+    },
+    "/ai/heyling-day2/": {
       "views": 1
     },
     "/dev/markdown-hangul/part-1/": {
