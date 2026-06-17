@@ -47,7 +47,7 @@ class GenerateIndexPostsTests(unittest.TestCase):
             finally:
                 gip.ROOT = original_root
 
-    def test_write_kr_post_skips_implausible_index_values(self):
+    def test_write_kr_post_accepts_2026_kospi_range(self):
         original_outdir = gip.OUTDIR
         with tempfile.TemporaryDirectory() as tmp:
             gip.OUTDIR = Path(tmp)
@@ -58,6 +58,29 @@ class GenerateIndexPostsTests(unittest.TestCase):
                 )
                 daily = pd.DataFrame(
                     [[8545.98, 1034.03, 422.36, 4.98, 5.20, 0.48]],
+                    index=[idx],
+                    columns=columns,
+                )
+
+                written = gip.write_kr_post(date(2026, 6, 15), daily, force=True)
+
+                self.assertEqual(written, Path(tmp) / "2026-06-15-korea.md")
+                self.assertTrue((Path(tmp) / "2026-06-15-korea.md").exists())
+
+            finally:
+                gip.OUTDIR = original_outdir
+
+    def test_write_kr_post_skips_extreme_vendor_errors(self):
+        original_outdir = gip.OUTDIR
+        with tempfile.TemporaryDirectory() as tmp:
+            gip.OUTDIR = Path(tmp)
+            try:
+                idx = pd.Timestamp("2026-06-15")
+                columns = pd.MultiIndex.from_product(
+                    [["close", "delta", "pct"], ["^KS11", "^KQ11"]]
+                )
+                daily = pd.DataFrame(
+                    [[50000.0, 1034.03, 422.36, 4.98, 5.20, 0.48]],
                     index=[idx],
                     columns=columns,
                 )

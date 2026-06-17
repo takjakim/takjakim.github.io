@@ -130,8 +130,8 @@ def plausible_index_close(ticker: str, close: float) -> bool:
     Keep bounds intentionally broad so normal market moves do not get filtered.
     """
     bounds = {
-        "^KS11": (1_000.0, 6_000.0),
-        "^KQ11": (300.0, 2_000.0),
+        "^KS11": (1_000.0, 15_000.0),
+        "^KQ11": (300.0, 3_000.0),
     }
     lo_hi = bounds.get(ticker)
     if lo_hi is None:
