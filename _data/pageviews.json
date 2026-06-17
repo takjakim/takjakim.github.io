@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-16T05:27:07.578031+00:00",
+    "generated_at": "2026-06-17T05:08:16.965869+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 37
+      "views": 48
     },
     "/about/": {
       "views": 1
@@ -19,7 +19,7 @@
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
-      "views": 1
+      "views": 2
     },
     "/dev/markdown-hangul/part-1/": {
       "views": 1
@@ -48,6 +48,9 @@
     "/investing/2026-03-20-korea/": {
       "views": 1
     },
+    "/investing/2026-04-22-us/": {
+      "views": 1
+    },
     "/investing/2026-05-07-korea/": {
       "views": 1
     },
@@ -57,6 +60,18 @@
     "/investing/2026-05-08-us/": {
       "views": 4
     },
+    "/investing/2026-06-12-us/": {
+      "views": 2
+    },
+    "/investing/2026-06-15-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-15-us/": {
+      "views": 1
+    },
+    "/investing/djia/": {
+      "views": 1
+    },
     "/macos/tidal-dl/": {
       "views": 5
     },
@@ -64,6 +79,9 @@
       "views": 1
     },
     "/tags/ci-cd/": {
+      "views": 1
+    },
+    "/tags/djia/": {
       "views": 1
     },
     "/tags/hsi/": {
