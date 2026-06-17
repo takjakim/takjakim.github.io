@@ -564,7 +564,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   inset: 0;
   z-index: 0;
   opacity: 0.4;
-  pointer-events: auto;
+  pointer-events: none;
 
   #graph-wrapper {
     background: transparent !important;
@@ -605,9 +605,11 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   justify-content: center;
 
   @media (max-width: 600px) {
-    width: 320px;
-    height: 320px;
+    width: min(360px, calc(100vw - 2rem));
+    height: auto;
+    min-height: 390px;
     padding: 2rem 1rem;
+    border-radius: 32px;
   }
 }
 
@@ -654,8 +656,51 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .hero-desc {
   font-size: 1.1rem;
   color: $color-subtext;
-  margin: 0 0 2rem;
+  margin: 0 0 1.25rem;
   font-weight: 400;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(26, 26, 46, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: $color-primary;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(26, 26, 46, 0.12);
+
+  &:after { content: '' !important; }
+
+  &:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.92) !important;
+  }
+}
+
+.hero-cta--primary {
+  background: linear-gradient(135deg, $color-primary 0%, #334155 100%);
+  color: white;
+  border-color: transparent;
+
+  &:hover {
+    background: linear-gradient(135deg, #0f172a 0%, $color-primary 100%) !important;
+  }
 }
 
 .hero-stats {
@@ -892,6 +937,73 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   color: $color-primary;
 }
 
+.section-subtitle {
+  margin: 0.35rem 0 0;
+  color: $color-subtext;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.topic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+
+  @media (min-width: 680px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1100px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.topic-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-height: 132px;
+  padding: 1.15rem;
+  border: 1px solid rgba(255,255,255,0.62);
+  border-radius: 20px;
+  background: rgba(255,255,255,0.62);
+  box-shadow: 0 8px 26px rgba(15, 23, 42, 0.06);
+  color: $color-primary;
+  border-bottom: 1px solid rgba(255,255,255,0.62);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+
+  &:after { content: '' !important; }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 38px rgba(15, 23, 42, 0.1);
+    background: rgba(255,255,255,0.82) !important;
+  }
+
+  strong {
+    font-size: 1.05rem;
+  }
+
+  > span:last-child {
+    color: $color-subtext;
+    font-size: 0.84rem;
+    line-height: 1.5;
+  }
+}
+
+.topic-kicker {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topic-card--research .topic-kicker { color: #059669; }
+.topic-card--dev .topic-kicker { color: #7C3AED; }
+.topic-card--ai .topic-kicker { color: #D97706; }
+.topic-card--running .topic-kicker { color: #16A34A; }
+
 .filter-pills {
   display: flex;
   gap: 0.5rem;
@@ -1125,6 +1237,11 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   &::before { background: linear-gradient(90deg, #F59E0B, #FBBF24); }
   &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(245,158,11,0.1)); }
 }
+.glass-running {
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(34,197,94,0.05));
+  &::before { background: linear-gradient(90deg, #22C55E, #14B8A6); }
+  &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(34,197,94,0.1)); }
+}
 
 .glass-link {
   display: block;
@@ -1181,6 +1298,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .tag-theory { background: rgba(59, 130, 246, 0.15); color: #2563EB; }
 .tag-dev { background: rgba(139, 92, 246, 0.15); color: #7C3AED; }
 .tag-ai { background: rgba(245, 158, 11, 0.15); color: #D97706; }
+.tag-running { background: rgba(34, 197, 94, 0.15); color: #16A34A; }
 
 .glass-title {
   margin: 0 0 0.6rem;
@@ -1495,6 +1613,10 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+.note-tags--featured {
+  margin-top: 1rem;
 }
 
 .tag-pill {

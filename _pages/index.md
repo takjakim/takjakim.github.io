@@ -8,7 +8,7 @@ permalink: /
 <div class="garden-container">
   <!-- Hero Section with Graph Background -->
   <header class="hero-2026">
-    <div class="hero-graph-bg">
+    <div class="hero-graph-bg" aria-hidden="true">
       {% include notes_graph.html %}
     </div>
     <div class="hero-content">
@@ -17,33 +17,63 @@ permalink: /
         <span class="gradient-text">Digital</span>
         <span class="gradient-text-alt">Garden</span>
       </h1>
-      <p class="hero-desc">Research · Theory · 개발 · AI에 대한 생각과 기록을 연결하는 공간</p>
+      <p class="hero-desc">Research · Theory · 개발 · AI · Running에 대한 생각과 기록을 연결하는 공간</p>
+      <div class="hero-actions" aria-label="주요 탐색">
+        <a class="hero-cta hero-cta--primary" href="#recent-notes">최근 글 보기</a>
+        <a class="hero-cta" href="{{ site.baseurl }}/tags/">태그 탐색</a>
+      </div>
       <div class="hero-stats">
-        <div class="stat-item">
+        <a class="stat-item stat-link" href="#recent-notes">
           <span class="stat-number">{% assign note_count = site.notes | size %}{{ note_count }}</span>
           <span class="stat-label">Notes</span>
-        </div>
+        </a>
         <div class="stat-divider"></div>
-        <div class="stat-item">
-          <span class="stat-number">4</span>
+        <a class="stat-item stat-link" href="#topic-explore">
+          <span class="stat-number">5</span>
           <span class="stat-label">Categories</span>
-        </div>
+        </a>
         <div class="stat-divider"></div>
-        <div class="stat-item">
+        <a class="stat-item stat-link" href="{{ site.baseurl }}/tags/">
           <span class="stat-number">&infin;</span>
           <span class="stat-label">Connections</span>
-        </div>
+        </a>
       </div>
     </div>
   </header>
 
-  <!-- Tags / Knowledge Base -->
-  <section class="recent-section">
+  <!-- Topic entry points / Knowledge Base -->
+  <section class="recent-section" id="topic-explore">
     <div class="section-header">
-      <h2 class="section-title">태그로 탐색</h2>
+      <div>
+        <h2 class="section-title">주제별 탐색</h2>
+        <p class="section-subtitle">자주 쓰는 길을 먼저 열어두고, 세부 태그는 필요할 때 깊게 들어간다.</p>
+      </div>
       <div class="filter-pills">
         <a class="pill" href="{{ site.baseurl }}/tags/">전체 태그 보기</a>
       </div>
+    </div>
+
+    <div class="topic-grid" aria-label="주요 주제">
+      <a class="topic-card topic-card--research" href="{{ site.baseurl }}/tags/market/">
+        <span class="topic-kicker">Research</span>
+        <strong>시장 · 투자</strong>
+        <span>증시 요약, 히트맵, 매크로 관찰</span>
+      </a>
+      <a class="topic-card topic-card--dev" href="{{ site.baseurl }}/tags/dev/">
+        <span class="topic-kicker">Dev</span>
+        <strong>개발 · 자동화</strong>
+        <span>서비스 개발기, 배포, 자동화 실험</span>
+      </a>
+      <a class="topic-card topic-card--ai" href="{{ site.baseurl }}/tags/ai/">
+        <span class="topic-kicker">AI</span>
+        <strong>AI 활용</strong>
+        <span>AI 도구, 에이전트, 생산성 실험</span>
+      </a>
+      <a class="topic-card topic-card--running" href="{{ site.baseurl }}/tags/running/">
+        <span class="topic-kicker">Running</span>
+        <strong>러닝 · 트레일</strong>
+        <span>트랜스제주, 훈련 로그, 장비 기록</span>
+      </a>
     </div>
 
     {% comment %}GitHub Pages 환경에서 collections.notes.docs가 비어 보일 때가 있어 site.notes 사용{% endcomment %}
@@ -57,16 +87,16 @@ permalink: /
       {% endif %}
     {% endfor %}
     {% assign uniq_tags = all_tags | uniq | sort %}
+    {% assign priority_tags = "ai,automation,dev,github,market,heatmap,running,trail-running,transjeju,training,english,theory" | split: "," %}
 
     {% if uniq_tags.size > 0 %}
-      <div class="note-tags" style="margin-top: 0;">
-        {% for t in uniq_tags limit: 30 %}
-          <a class="tag-pill" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }}</a>
+      <div class="note-tags note-tags--featured">
+        {% for t in priority_tags %}
+          {% if uniq_tags contains t %}
+            <a class="tag-pill" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">#{{ t }}</a>
+          {% endif %}
         {% endfor %}
       </div>
-      {% if uniq_tags.size > 30 %}
-        <p style="margin-top: 0.75rem; color: #6b7280;">+ {{ uniq_tags.size | minus: 30 }} more…</p>
-      {% endif %}
     {% else %}
       <p>(태그 없음)</p>
     {% endif %}
@@ -86,7 +116,7 @@ permalink: /
     <div class="featured-grid">
       {% for note in featured_notes limit: 3 %}
         {% assign note_category = note.path | split: "/" | slice: 1 | first %}
-        <article class="glass-card glass-card--featured {% if forloop.first %}glass-card--xl{% else %}glass-card--md{% endif %} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}">
+        <article class="glass-card glass-card--featured {% if forloop.first %}glass-card--xl{% else %}glass-card--md{% endif %} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% elsif note_category == 'running' %}glass-running{% endif %}">
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
@@ -104,6 +134,8 @@ permalink: /
                 <span class="glass-tag tag-dev">개발</span>
               {% elsif note_category == "ai" %}
                 <span class="glass-tag tag-ai">AI</span>
+              {% elsif note_category == "running" %}
+                <span class="glass-tag tag-running">Running</span>
               {% endif %}
             </div>
             <h3 class="glass-title">{{ note.title }}</h3>
@@ -121,7 +153,7 @@ permalink: /
   {% endif %}
 
   <!-- Recent Posts (Magazine) -->
-  <section class="recent-section">
+  <section class="recent-section" id="recent-notes">
     <div class="section-header">
       <h2 class="section-title">최근 업데이트</h2>
       <div class="filter-pills">
@@ -130,6 +162,7 @@ permalink: /
         <button class="pill" data-filter="theory">Theory</button>
         <button class="pill" data-filter="dev">개발</button>
         <button class="pill" data-filter="ai">AI</button>
+        <button class="pill" data-filter="running">Running</button>
       </div>
     </div>
 
@@ -145,7 +178,7 @@ permalink: /
           {% assign size_class = "glass-card--md" %}
         {% endif %}
 
-        <article class="glass-card {{ size_class }} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
+        <article class="glass-card {{ size_class }} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% elsif note_category == 'running' %}glass-running{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
@@ -163,6 +196,8 @@ permalink: /
                 <span class="glass-tag tag-dev">개발</span>
               {% elsif note_category == "ai" %}
                 <span class="glass-tag tag-ai">AI</span>
+              {% elsif note_category == "running" %}
+                <span class="glass-tag tag-running">Running</span>
               {% endif %}
             </div>
             <h3 class="glass-title">{{ note.title }}</h3>
@@ -191,8 +226,8 @@ permalink: /
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const pills = document.querySelectorAll('.pill');
-  const cards = document.querySelectorAll('.glass-card');
+  const pills = document.querySelectorAll('#recent-notes button.pill[data-filter]');
+  const cards = document.querySelectorAll('#notes-grid .glass-card');
   const loadMoreBtn = document.getElementById('load-more');
   const ITEMS_PER_PAGE = 9;
   let visibleCount = ITEMS_PER_PAGE;
