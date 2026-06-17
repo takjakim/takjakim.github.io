@@ -117,10 +117,44 @@ def download_closes(tickers: list[str], start: date, end: date) -> pd.DataFrame:
             series.append(pd.Series(dtype=float, name=t))
 
     closes = pd.concat(series, axis=1)
-    closes.index = pd.to_datetime(closes.index).tz_localize(None)
+    closes.index = pd.to_datetime(closes.index).tz_localize(None).normalize()
     closes = closes.sort_index()
     closes = closes.dropna(how="all")
     return closes
+
+
+def plausible_index_close(ticker: str, close: float) -> bool:
+    """Reject obviously bad vendor data before writing public notes.
+
+    Yahoo occasionally returns corrupt / wrong-market values for Korean indices.
+    Keep bounds intentionally broad so normal market moves do not get filtered.
+    """
+    bounds = {
+        "^KS11": (1_000.0, 6_000.0),
+        "^KQ11": (300.0, 2_000.0),
+    }
+    lo_hi = bounds.get(ticker)
+    if lo_hi is None:
+        return True
+    lo, hi = lo_hi
+    return lo <= close <= hi
+
+
+def heatmap_asset_date(d: date, slug: str) -> str | None:
+    """Return the nearest heatmap image date for a market slug.
+
+    The heatmap workflow dates assets by UTC run date, while US index posts are
+    dated by the prior US trading session. For Monday US closes the matching
+    heatmap often appears under the next calendar day (e.g. 2026-06-16 for the
+    2026-06-15 US post). Search a small forward/backward window and skip broken
+    image links when no asset exists.
+    """
+    candidates = [d, d + timedelta(days=1), d - timedelta(days=1), d + timedelta(days=2)]
+    for cand in candidates:
+        rel = Path("assets") / "img" / "heatmaps" / cand.isoformat() / f"{slug}.png"
+        if (ROOT / rel).exists():
+            return cand.isoformat()
+    return None
 
 
 def compute_daily(closes: pd.DataFrame) -> pd.DataFrame:
@@ -256,6 +290,30 @@ def write_us_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
     one = us_one_liner(spx_p, dji_p, ixic_p)
     ins = us_insights(spx_p, dji_p, ixic_p)
 
+    spx_heatmap_date = heatmap_asset_date(d, "us-spx")
+    ndx_heatmap_date = heatmap_asset_date(d, "us-ndx")
+    heatmap_lines = [
+        "## 2) 히트맵으로 보는 분위기",
+        "",
+    ]
+    if spx_heatmap_date:
+        heatmap_lines.extend([
+            "### S&P 500",
+            f'![S&P 500 heatmap](/assets/img/heatmaps/{spx_heatmap_date}/us-spx.png)',
+            "",
+        ])
+    if ndx_heatmap_date:
+        heatmap_lines.extend([
+            "### NASDAQ 100",
+            f'![NASDAQ 100 heatmap](/assets/img/heatmaps/{ndx_heatmap_date}/us-ndx.png)',
+            "",
+        ])
+    if not spx_heatmap_date and not ndx_heatmap_date:
+        heatmap_lines.extend([
+            "- 해당 날짜에 연결할 수 있는 히트맵 이미지가 아직 없다.",
+            "",
+        ])
+
     md = "\n".join(
         [
             "---",
@@ -277,14 +335,7 @@ def write_us_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
             "",
             one,
             "",
-            "## 2) 히트맵으로 보는 분위기",
-            "",
-            "### S&P 500",
-            f'![S&P 500 heatmap](/assets/img/heatmaps/{d.isoformat()}/us-spx.png)',
-            "",
-            "### NASDAQ 100",
-            f'![NASDAQ 100 heatmap](/assets/img/heatmaps/{d.isoformat()}/us-ndx.png)',
-            "",
+            *heatmap_lines,
             "## 3) 인사이트 (내가 보는 포인트)",
             "",
             f"1. {ins[0]}",
@@ -320,6 +371,12 @@ def write_kr_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
     kosdaq_p = float(row[("pct", KR_INDEXES[1].ticker)])
 
     if any(pd.isna(x) for x in [kospi_c, kosdaq_c, kospi_d, kosdaq_d, kospi_p, kosdaq_p]):
+        return None
+    if not plausible_index_close(KR_INDEXES[0].ticker, kospi_c):
+        print(f"Skipping {d.isoformat()} Korea post: implausible KOSPI close {kospi_c:,.2f}")
+        return None
+    if not plausible_index_close(KR_INDEXES[1].ticker, kosdaq_c):
+        print(f"Skipping {d.isoformat()} Korea post: implausible KOSDAQ close {kosdaq_c:,.2f}")
         return None
 
     last_mod = d.isoformat()
