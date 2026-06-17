@@ -18,25 +18,21 @@ permalink: /
         <span class="gradient-text-alt">Garden</span>
       </h1>
       <p class="hero-desc">Research · Theory · 개발 · AI · Running에 대한 생각과 기록을 연결하는 공간</p>
-      <div class="hero-actions" aria-label="주요 탐색">
-        <a class="hero-cta hero-cta--primary" href="#recent-notes">최근 글 보기</a>
-        <a class="hero-cta" href="{{ site.baseurl }}/tags/">태그 탐색</a>
-      </div>
       <div class="hero-stats">
-        <a class="stat-item stat-link" href="#recent-notes">
+        <div class="stat-item">
           <span class="stat-number">{% assign note_count = site.notes | size %}{{ note_count }}</span>
           <span class="stat-label">Notes</span>
-        </a>
+        </div>
         <div class="stat-divider"></div>
-        <a class="stat-item stat-link" href="#topic-explore">
+        <div class="stat-item">
           <span class="stat-number">5</span>
           <span class="stat-label">Categories</span>
-        </a>
+        </div>
         <div class="stat-divider"></div>
-        <a class="stat-item stat-link" href="{{ site.baseurl }}/tags/">
+        <div class="stat-item">
           <span class="stat-number">&infin;</span>
           <span class="stat-label">Connections</span>
-        </a>
+        </div>
       </div>
     </div>
   </header>
@@ -44,10 +40,7 @@ permalink: /
   <!-- Topic entry points / Knowledge Base -->
   <section class="recent-section" id="topic-explore">
     <div class="section-header">
-      <div>
-        <h2 class="section-title">주제별 탐색</h2>
-        <p class="section-subtitle">자주 쓰는 길을 먼저 열어두고, 세부 태그는 필요할 때 깊게 들어간다.</p>
-      </div>
+      <h2 class="section-title">주제별 탐색</h2>
       <div class="filter-pills">
         <a class="pill" href="{{ site.baseurl }}/tags/">전체 태그 보기</a>
       </div>
