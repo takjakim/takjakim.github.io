@@ -57,10 +57,10 @@ permalink: /
         <strong>개발 · 자동화</strong>
         <span>서비스 개발기, 배포, 자동화 실험</span>
       </a>
-      <a class="topic-card topic-card--ai" href="{{ site.baseurl }}/tags/ai/">
+      <a class="topic-card topic-card--ai" href="{{ site.baseurl }}/worldcup-2026-scenarios/">
         <span class="topic-kicker">AI</span>
-        <strong>AI 활용</strong>
-        <span>AI 도구, 에이전트, 생산성 실험</span>
+        <strong>월드컵 경우의 수</strong>
+        <span>전적 현황판, 32강 대진표, 국가별 시나리오</span>
       </a>
       <a class="topic-card topic-card--running" href="{{ site.baseurl }}/tags/running/">
         <span class="topic-kicker">Running</span>
