@@ -45,6 +45,18 @@ KR_INDEXES = [
     IndexSpec("KOSDAQ", "^KQ11", "KOSDAQ"),
 ]
 
+SIGNAL_TICKERS = [
+    "KRW=X",       # USD/KRW
+    "^TNX",        # US 10Y yield index (Yahoo quotes yield * 10)
+    "DX-Y.NYB",    # US Dollar Index
+    "CL=F",        # WTI crude oil futures
+    "005930.KS",   # Samsung Electronics
+    "000660.KS",   # SK hynix
+    "012450.KS",   # Hanwha Aerospace (defense)
+    "247540.KQ",   # EcoPro BM (battery)
+    "068270.KS",   # Celltrion (bio)
+]
+
 
 def fmt_num(x: float) -> str:
     return f"{x:,.2f}"
@@ -112,13 +124,16 @@ def download_closes(tickers: list[str], start: date, end: date) -> pd.DataFrame:
     series = []
     for t in tickers:
         try:
-            series.append(_yahoo_chart_closes(t, start, end))
+            s = _yahoo_chart_closes(t, start, end)
         except Exception:
-            series.append(pd.Series(dtype=float, name=t))
+            s = pd.Series(dtype=float)
+        s.name = t
+        series.append(s)
 
     closes = pd.concat(series, axis=1)
     closes.index = pd.to_datetime(closes.index).tz_localize(None).normalize()
     closes = closes.sort_index()
+    closes = closes.groupby(level=0).last()
     closes = closes.dropna(how="all")
     return closes
 
@@ -158,7 +173,7 @@ def heatmap_asset_date(d: date, slug: str) -> str | None:
 
 
 def compute_daily(closes: pd.DataFrame) -> pd.DataFrame:
-    prev = closes.shift(1)
+    prev = closes.ffill().shift(1)
     delta = closes - prev
     pct = (delta / prev) * 100.0
 
@@ -258,12 +273,99 @@ def kr_insights(kospi: float, kosdaq: float) -> list[str]:
         "(가능하면 시총 상위/등락 상위를 같이 체크)"
     )
 
-    a3 = (
-        "**체크리스트 (다음 거래일)** — (1) 원/달러·금리 방향, (2) 반도체/2차전지/바이오 등 핵심 테마 수급, "
-        "(3) 코스닥 변동이 과했는지(되돌림) 같이 보자."
+    return [a1, a2]
+
+
+def daily_value(daily: pd.DataFrame | None, d: date, field: str, ticker: str) -> float | None:
+    if daily is None:
+        return None
+    idx = pd.Timestamp(d)
+    if idx not in daily.index or (field, ticker) not in daily.columns:
+        return None
+    value = daily.loc[idx, (field, ticker)]
+    if pd.isna(value):
+        return None
+    return float(value)
+
+
+def pct_phrase(label: str, pct: float | None) -> str:
+    if pct is None:
+        return f"{label} 데이터는 아직 비어 있어서 방향만 체크한다."
+    direction = "상승" if pct >= 0 else "하락"
+    return f"{label} {direction}({fmt_pct(pct)})"
+
+
+def kr_next_session_checklist(
+    d: date,
+    kospi_pct: float,
+    kosdaq_pct: float,
+    signal_daily: pd.DataFrame | None = None,
+) -> list[str]:
+    usdkrw = daily_value(signal_daily, d, "pct", "KRW=X")
+    us10y = daily_value(signal_daily, d, "pct", "^TNX")
+    dxy = daily_value(signal_daily, d, "pct", "DX-Y.NYB")
+    wti = daily_value(signal_daily, d, "pct", "CL=F")
+    samsung = daily_value(signal_daily, d, "pct", "005930.KS")
+    hynix = daily_value(signal_daily, d, "pct", "000660.KS")
+    defense = daily_value(signal_daily, d, "pct", "012450.KS")
+    battery = daily_value(signal_daily, d, "pct", "247540.KQ")
+    bio = daily_value(signal_daily, d, "pct", "068270.KS")
+
+    if usdkrw is None:
+        fx_note = "**원/달러** — 환율 데이터가 비어 있어서, 다음 장에서는 원/달러가 재상승하는지 먼저 확인하자."
+    elif usdkrw > 0.3:
+        fx_note = f"**원/달러** — 원/달러가 {fmt_pct(usdkrw)} 상승했다. 다음 장에서도 오르면 외국인 수급과 코스피 대형주에는 부담으로 볼 수 있다."
+    elif usdkrw < -0.3:
+        fx_note = f"**원/달러** — 원/달러가 {fmt_pct(usdkrw)} 하락했다. 원화 강세가 이어지면 외국인 수급과 대형주 반등에는 우호적이다."
+    else:
+        fx_note = f"**원/달러** — 원/달러 변동이 {fmt_pct(usdkrw)}로 크지 않았다. 환율보다 업종/개별 테마 수급을 더 봐야 한다."
+
+    risk_parts = [pct_phrase("미 10년물", us10y), pct_phrase("DXY", dxy), pct_phrase("WTI", wti)]
+    if (us10y is not None and us10y > 1.0) or (dxy is not None and dxy > 0.4):
+        macro_bias = "금리/달러가 다시 위로 가면 성장주·코스닥의 단기 변동성이 커질 수 있다."
+    elif (us10y is not None and us10y < -1.0) or (dxy is not None and dxy < -0.4):
+        macro_bias = "금리/달러가 내려가면 성장주와 코스닥 쪽 위험선호가 이어질 여지가 있다."
+    elif wti is not None and wti < -3.0:
+        macro_bias = "유가 하락은 한국 수입물가·항공/화학 마진 기대에는 우호적인 변수다."
+    else:
+        macro_bias = "방향성이 엇갈리면 지수보다 업종별 상대강도 확인이 더 중요하다."
+    macro_note = f"**금리·달러·유가** — {'; '.join(risk_parts)}. {macro_bias}"
+
+    semis = [x for x in [samsung, hynix] if x is not None]
+    semis_avg = sum(semis) / len(semis) if semis else None
+    theme_bits = []
+    if samsung is not None:
+        theme_bits.append(f"삼성전자 {fmt_pct(samsung)}")
+    if hynix is not None:
+        theme_bits.append(f"SK하이닉스 {fmt_pct(hynix)}")
+    if defense is not None:
+        theme_bits.append(f"방산(한화에어로) {fmt_pct(defense)}")
+    if battery is not None:
+        theme_bits.append(f"2차전지(에코프로비엠) {fmt_pct(battery)}")
+    if bio is not None:
+        theme_bits.append(f"바이오(셀트리온) {fmt_pct(bio)}")
+
+    if semis_avg is not None and semis_avg > 1.0:
+        theme_bias = "반도체가 지수 상승을 계속 끌고 가는지 확인하자."
+    elif semis_avg is not None and semis_avg < -1.0:
+        theme_bias = "반도체가 밀리면 코스피 랠리의 질이 약해질 수 있다."
+    elif kosdaq_pct - kospi_pct > 1.0:
+        theme_bias = "코스닥 우위가 이어지면 2차전지/바이오 같은 모멘텀 테마 확산을 보자."
+    else:
+        theme_bias = "주도주가 좁아지는지, 아니면 반도체 외 테마로 확산되는지 체크하자."
+
+    theme_summary = "; ".join(theme_bits) if theme_bits else "대표 테마 데이터는 비어 있음"
+    theme_note = f"**핵심 테마 수급** — {theme_summary}. {theme_bias}"
+
+    breadth_note = (
+        "**되돌림/확산** — 코스피가 코스닥보다 크게 앞섰다. 다음 장에서는 대형주 랠리가 중소형주로 확산되는지, 아니면 대형주만 버티는 장인지 구분하자."
+        if kospi_pct - kosdaq_pct > 1.0
+        else "**되돌림/확산** — 코스닥 탄력이 더 강하다. 급등 테마는 추격보다 거래대금 지속성과 눌림 강도를 보는 게 안전하다."
+        if kosdaq_pct - kospi_pct > 1.0
+        else "**되돌림/확산** — 코스피·코스닥 온도차가 크지 않다. 상승/하락 종목 수와 거래대금 확산 여부를 같이 보자."
     )
 
-    return [a1, a2, a3]
+    return [fx_note, macro_note, theme_note, breadth_note]
 
 
 def write_us_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
@@ -353,7 +455,12 @@ def write_us_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
     return path
 
 
-def write_kr_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
+def write_kr_post(
+    d: date,
+    daily: pd.DataFrame,
+    force: bool,
+    signal_daily: pd.DataFrame | None = None,
+) -> Path | None:
     path = OUTDIR / f"{d.isoformat()}-korea.md"
     if path.exists() and not force:
         return None
@@ -382,6 +489,7 @@ def write_kr_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
     last_mod = d.isoformat()
     one = kr_one_liner(kospi_p, kosdaq_p)
     ins = kr_insights(kospi_p, kosdaq_p)
+    checklist = kr_next_session_checklist(d, kospi_p, kosdaq_p, signal_daily)
 
     md = "\n".join(
         [
@@ -407,7 +515,13 @@ def write_kr_post(d: date, daily: pd.DataFrame, force: bool) -> Path | None:
             "",
             f"1. {ins[0]}",
             f"2. {ins[1]}",
-            f"3. {ins[2]}",
+            "",
+            "## 3) 다음 거래일 체크포인트",
+            "",
+            f"1. {checklist[0]}",
+            f"2. {checklist[1]}",
+            f"3. {checklist[2]}",
+            f"4. {checklist[3]}",
             "",
             "## 연결",
             "",
@@ -437,14 +551,16 @@ def main():
 
     us_closes = download_closes([s.ticker for s in US_INDEXES], dl_start, end)
     kr_closes = download_closes([s.ticker for s in KR_INDEXES], dl_start, end)
+    signal_closes = download_closes(SIGNAL_TICKERS, dl_start, end)
 
     us_daily = compute_daily(us_closes)
     kr_daily = compute_daily(kr_closes)
+    signal_daily = compute_daily(signal_closes)
 
     wrote: list[Path] = []
     for d in daterange(start, end):
         p1 = write_us_post(d, us_daily, force=args.force)
-        p2 = write_kr_post(d, kr_daily, force=args.force)
+        p2 = write_kr_post(d, kr_daily, force=args.force, signal_daily=signal_daily)
         if p1:
             wrote.append(p1)
         if p2:
