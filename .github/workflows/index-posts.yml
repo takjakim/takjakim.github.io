@@ -2,9 +2,6 @@ name: Generate daily index posts (US/KR)
 
 on:
   workflow_dispatch: {}
-  schedule:
-    # 07:10 KST daily (22:10 UTC)
-    - cron: '10 22 * * *'
 
 permissions:
   contents: write
