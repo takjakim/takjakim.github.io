@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-17T05:08:16.965869+00:00",
+    "generated_at": "2026-06-18T04:58:20.513679+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 48
+      "views": 74
     },
     "/about/": {
       "views": 1
@@ -21,9 +21,6 @@
     "/dev/claude-code-team-dashboard/": {
       "views": 2
     },
-    "/dev/markdown-hangul/part-1/": {
-      "views": 1
-    },
     "/dev/marp-editor/devlog-1/": {
       "views": 3
     },
@@ -33,13 +30,16 @@
     "/dev/marp-editor/devlog-3/": {
       "views": 2
     },
+    "/dev/stats-method/": {
+      "views": 1
+    },
+    "/dev/stats-method/deployment/": {
+      "views": 1
+    },
     "/dev/stats-method/development/": {
       "views": 1
     },
     "/dev/tech/GA-N3160N-NAS/": {
-      "views": 1
-    },
-    "/graph/": {
       "views": 1
     },
     "/investing/2026-02-23-korea/": {
@@ -51,22 +51,19 @@
     "/investing/2026-04-22-us/": {
       "views": 1
     },
-    "/investing/2026-05-07-korea/": {
-      "views": 1
-    },
-    "/investing/2026-05-07-us/": {
-      "views": 1
-    },
-    "/investing/2026-05-08-us/": {
-      "views": 4
-    },
     "/investing/2026-06-12-us/": {
-      "views": 2
+      "views": 3
     },
     "/investing/2026-06-15-korea/": {
       "views": 1
     },
     "/investing/2026-06-15-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-16-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-16-us/": {
       "views": 1
     },
     "/investing/djia/": {
@@ -75,11 +72,23 @@
     "/macos/tidal-dl/": {
       "views": 5
     },
-    "/tags/": {
+    "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
+    },
+    "/running/2026-06-17-transjeju-60k-training-plan/": {
+      "views": 2
+    },
+    "/tags/": {
+      "views": 4
+    },
+    "/tags/ai/": {
+      "views": 2
     },
     "/tags/ci-cd/": {
       "views": 1
+    },
+    "/tags/dev/": {
+      "views": 2
     },
     "/tags/djia/": {
       "views": 1
@@ -93,10 +102,13 @@
     "/tags/markdown/": {
       "views": 1
     },
-    "/tags/us/": {
-      "views": 1
+    "/tags/market/": {
+      "views": 2
     },
-    "/tags/마크다운ㅎ글/": {
+    "/tags/running/": {
+      "views": 2
+    },
+    "/tags/us/": {
       "views": 1
     },
     "/tags/메가플래닝/": {
@@ -109,6 +121,9 @@
       "views": 1
     },
     "/theory/perplexity-ppl/": {
+      "views": 1
+    },
+    "/welcome-to-dev/": {
       "views": 1
     },
     "/workbook/": {
@@ -125,6 +140,9 @@
     },
     "/workbook/code-note/": {
       "views": 1
+    },
+    "/worldcup-2026-scenarios/": {
+      "views": 5
     }
   }
 }
