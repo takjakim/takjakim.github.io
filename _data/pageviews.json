@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-18T04:58:20.513679+00:00",
+    "generated_at": "2026-06-19T05:20:08.178717+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 74
+      "views": 88
     },
     "/about/": {
       "views": 1
@@ -16,6 +16,9 @@
       "views": 11
     },
     "/ai/heyling-day2/": {
+      "views": 1
+    },
+    "/big-tech/": {
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
@@ -51,6 +54,9 @@
     "/investing/2026-04-22-us/": {
       "views": 1
     },
+    "/investing/2026-05-07-korea/": {
+      "views": 1
+    },
     "/investing/2026-06-12-us/": {
       "views": 3
     },
@@ -61,7 +67,7 @@
       "views": 1
     },
     "/investing/2026-06-16-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-06-16-us/": {
       "views": 1
@@ -70,7 +76,7 @@
       "views": 1
     },
     "/macos/tidal-dl/": {
-      "views": 5
+      "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
@@ -142,7 +148,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 5
+      "views": 12
     }
   }
 }
