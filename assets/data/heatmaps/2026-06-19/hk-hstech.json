@@ -1,0 +1,203 @@
+{
+  "label": "HK · Hang Seng Tech (sample 28)",
+  "asOf": "2026-06-19",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": [
+    {
+      "ticker": "0700-HK",
+      "name": "Tencent",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9988-HK",
+      "name": "Alibaba",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "3690-HK",
+      "name": "Meituan",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9618-HK",
+      "name": "JD.com",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1810-HK",
+      "name": "Xiaomi",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9999-HK",
+      "name": "NetEase",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9888-HK",
+      "name": "Baidu",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1024-HK",
+      "name": "Kuaishou",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9961-HK",
+      "name": "Trip.com",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0241-HK",
+      "name": "Alibaba Health",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0268-HK",
+      "name": "Kingdee",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0388-HK",
+      "name": "HKEX",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2382-HK",
+      "name": "Sunny Optical",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2688-HK",
+      "name": "ENN Energy",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0728-HK",
+      "name": "China Telecom",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0763-HK",
+      "name": "ZTE",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0992-HK",
+      "name": "Lenovo",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0772-HK",
+      "name": "China Literature",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0780-HK",
+      "name": "Tongcheng Travel",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2013-HK",
+      "name": "Weimob",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9626-HK",
+      "name": "Bilibili",
+      "sector": "Tech",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1797-HK",
+      "name": "Innovent",
+      "sector": "Health",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "6690-HK",
+      "name": "Haier Smart Home",
+      "sector": "Consumer",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9926-HK",
+      "name": "Akeso",
+      "sector": "Health",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "6618-HK",
+      "name": "JD Health",
+      "sector": "Health",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1833-HK",
+      "name": "Flat Glass",
+      "sector": "Industrials",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9866-HK",
+      "name": "NIO",
+      "sector": "Consumer",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9868-HK",
+      "name": "Xpeng",
+      "sector": "Consumer",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    }
+  ]
+}
