@@ -1733,6 +1733,61 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 }
 
+.sidebar-toc {
+  max-height: calc(100vh - 4rem);
+  overflow: auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.92), rgba(248,250,252,0.96));
+  border: 1px solid rgba(0,0,0,0.06);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.note-toc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.note-toc-link {
+  display: block;
+  padding: 0.36rem 0.55rem;
+  border-radius: 9px;
+  border: none;
+  color: $color-subtext;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: all 0.18s ease;
+
+  &:after {
+    content: '' !important;
+  }
+
+  &.h3 {
+    padding-left: 1.15rem;
+    font-size: 0.78rem;
+    opacity: 0.9;
+  }
+
+  &:hover,
+  &.active {
+    color: $color-primary;
+    background: rgba(99, 102, 241, 0.08);
+  }
+}
+
+@media (max-width: 899px) {
+  .sidebar-toc {
+    position: static !important;
+    max-height: none;
+  }
+}
+
 .sidebar-graph {
   position: relative !important;
   margin-top: 2rem;

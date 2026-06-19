@@ -40,6 +40,11 @@ layout: default
     </div>
 
     <aside class="note-sidebar">
+      <div class="sidebar-section sidebar-toc" id="note-toc-section" hidden>
+        <h3 class="sidebar-title">Contents</h3>
+        <nav class="note-toc" id="note-toc" aria-label="Table of contents"></nav>
+      </div>
+
       <div class="sidebar-section">
         <h3 class="sidebar-title">Backlinks</h3>
         {% if page.backlinks.size > 0 %}
@@ -65,3 +70,55 @@ layout: default
 </article>
 
 {% include sidebar_graph.html category=current_category %}
+
+<script>
+  (function () {
+    const content = document.querySelector('.note-content');
+    const toc = document.getElementById('note-toc');
+    const section = document.getElementById('note-toc-section');
+    if (!content || !toc || !section) return;
+
+    const headings = Array.from(content.querySelectorAll('h2, h3'))
+      .filter((heading) => heading.textContent.trim().length > 0);
+    if (headings.length < 2) return;
+
+    const slugCounts = new Map();
+    const slugify = (text) => {
+      const base = text.trim().toLowerCase()
+        .replace(/[^\p{L}\p{N}\s-]/gu, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-') || 'section';
+      const count = slugCounts.get(base) || 0;
+      slugCounts.set(base, count + 1);
+      return count ? `${base}-${count + 1}` : base;
+    };
+
+    headings.forEach((heading) => {
+      if (!heading.id) heading.id = slugify(heading.textContent);
+      const level = heading.tagName.toLowerCase();
+      const link = document.createElement('a');
+      link.className = `note-toc-link ${level}`;
+      link.href = `#${encodeURIComponent(heading.id)}`;
+      link.textContent = heading.textContent.trim();
+      toc.appendChild(link);
+    });
+    section.hidden = false;
+
+    const links = Array.from(toc.querySelectorAll('.note-toc-link'));
+    const byId = new Map(links.map((link) => [decodeURIComponent(link.hash.slice(1)), link]));
+
+    const setActive = (id) => {
+      links.forEach((link) => link.classList.toggle('active', link === byId.get(id)));
+    };
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0];
+        if (visible) setActive(visible.target.id);
+      }, { rootMargin: '-18% 0px -72% 0px', threshold: 0.01 });
+      headings.forEach((heading) => observer.observe(heading));
+    }
+  })();
+</script>
