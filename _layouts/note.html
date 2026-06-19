@@ -41,7 +41,10 @@ layout: default
 
     <aside class="note-sidebar">
       <div class="sidebar-section sidebar-toc" id="note-toc-section" hidden>
-        <h3 class="sidebar-title">Contents</h3>
+        <div class="sidebar-toc-header">
+          <h3 class="sidebar-title">Contents</h3>
+          <button class="note-toc-toggle" id="note-toc-toggle" type="button" aria-expanded="false" hidden>펼치기</button>
+        </div>
         <nav class="note-toc" id="note-toc" aria-label="Table of contents"></nav>
       </div>
 
@@ -76,6 +79,7 @@ layout: default
     const content = document.querySelector('.note-content');
     const toc = document.getElementById('note-toc');
     const section = document.getElementById('note-toc-section');
+    const toggle = document.getElementById('note-toc-toggle');
     if (!content || !toc || !section) return;
 
     const headings = Array.from(content.querySelectorAll('h2, h3'))
@@ -103,6 +107,18 @@ layout: default
       toc.appendChild(link);
     });
     section.hidden = false;
+
+    const hasNestedHeadings = headings.some((heading) => heading.tagName.toLowerCase() === 'h3');
+    toc.classList.add('is-collapsed');
+    if (toggle && hasNestedHeadings) {
+      toggle.hidden = false;
+      toggle.addEventListener('click', () => {
+        const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isExpanded));
+        toggle.textContent = isExpanded ? '펼치기' : '접기';
+        toc.classList.toggle('is-collapsed', isExpanded);
+      });
+    }
 
     const links = Array.from(toc.querySelectorAll('.note-toc-link'));
     const byId = new Map(links.map((link) => [decodeURIComponent(link.hash.slice(1)), link]));
