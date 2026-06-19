@@ -210,7 +210,7 @@
       "ticker": "CPRT",
       "name": "Copart",
       "sector": "Retail",
-      "pct": 2.405145912814266,
+      "pct": -3.968768127645683,
       "mcap_usd_b": 1.0
     },
     {
@@ -245,7 +245,7 @@
       "ticker": "DXCM",
       "name": "DexCom",
       "sector": "Medical/Dental Instruments",
-      "pct": 1.7408364528019193,
+      "pct": -2.63805386627578,
       "mcap_usd_b": 1.0
     },
     {
@@ -273,7 +273,7 @@
       "ticker": "EXC",
       "name": "Exelon",
       "sector": "Power Generation",
-      "pct": 0.548726936927979,
+      "pct": -2.2107722170498056,
       "mcap_usd_b": 1.0
     },
     {

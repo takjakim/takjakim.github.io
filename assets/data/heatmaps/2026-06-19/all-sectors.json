@@ -154,7 +154,7 @@
       "ticker": "US-Financials",
       "name": "US Financials",
       "sector": "US",
-      "pct": -1.0498591305130216,
+      "pct": -0.9901385154829999,
       "mcap_usd_b": 7.0
     },
     {
@@ -168,7 +168,7 @@
       "ticker": "US-Health Care",
       "name": "US Health Care",
       "sector": "US",
-      "pct": 0.7380602967594995,
+      "pct": -0.3259946384706237,
       "mcap_usd_b": 5.0
     },
     {
@@ -203,7 +203,7 @@
       "ticker": "US-Medical/Dental Instruments",
       "name": "US Medical/Dental Instruments",
       "sector": "US",
-      "pct": 1.7408364528019196,
+      "pct": -2.63805386627578,
       "mcap_usd_b": 1.0
     },
     {
@@ -238,7 +238,7 @@
       "ticker": "US-Power Generation",
       "name": "US Power Generation",
       "sector": "US",
-      "pct": 0.548726936927979,
+      "pct": -2.2107722170498056,
       "mcap_usd_b": 1.0
     },
     {
@@ -259,7 +259,7 @@
       "ticker": "US-Retail",
       "name": "US Retail",
       "sector": "US",
-      "pct": 2.405145912814266,
+      "pct": -3.968768127645683,
       "mcap_usd_b": 1.0
     },
     {
