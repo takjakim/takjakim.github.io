@@ -1,22 +1,28 @@
 {
   "meta": {
-    "generated_at": "2026-06-19T05:20:08.178717+00:00",
+    "generated_at": "2026-06-20T04:37:31.654562+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 88
+      "views": 103
     },
     "/about/": {
       "views": 1
+    },
+    "/ai/ai-productivity-governance-keynote/": {
+      "views": 3
     },
     "/ai/heyling-day1/": {
       "views": 11
     },
     "/ai/heyling-day2/": {
       "views": 1
+    },
+    "/ai/session1-esg-patent-startup-innovation/": {
+      "views": 8
     },
     "/big-tech/": {
       "views": 1
@@ -25,13 +31,13 @@
       "views": 2
     },
     "/dev/marp-editor/devlog-1/": {
-      "views": 3
+      "views": 2
     },
     "/dev/marp-editor/devlog-2/": {
       "views": 1
     },
     "/dev/marp-editor/devlog-3/": {
-      "views": 2
+      "views": 1
     },
     "/dev/stats-method/": {
       "views": 1
@@ -82,7 +88,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 2
+      "views": 3
     },
     "/tags/": {
       "views": 4
@@ -105,6 +111,12 @@
     "/tags/index/": {
       "views": 2
     },
+    "/tags/innovation/": {
+      "views": 1
+    },
+    "/tags/kosdaq/": {
+      "views": 1
+    },
     "/tags/markdown/": {
       "views": 1
     },
@@ -112,7 +124,7 @@
       "views": 2
     },
     "/tags/running/": {
-      "views": 2
+      "views": 4
     },
     "/tags/us/": {
       "views": 1
