@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-20T04:37:31.654562+00:00",
+    "generated_at": "2026-06-21T05:15:07.067882+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 103
+      "views": 112
     },
     "/about/": {
       "views": 1
@@ -22,7 +22,7 @@
       "views": 1
     },
     "/ai/session1-esg-patent-startup-innovation/": {
-      "views": 8
+      "views": 7
     },
     "/big-tech/": {
       "views": 1
@@ -82,7 +82,7 @@
       "views": 1
     },
     "/macos/tidal-dl/": {
-      "views": 1
+      "views": 3
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
@@ -109,7 +109,7 @@
       "views": 1
     },
     "/tags/index/": {
-      "views": 2
+      "views": 1
     },
     "/tags/innovation/": {
       "views": 1
@@ -117,22 +117,16 @@
     "/tags/kosdaq/": {
       "views": 1
     },
-    "/tags/markdown/": {
-      "views": 1
-    },
     "/tags/market/": {
       "views": 2
     },
     "/tags/running/": {
-      "views": 4
+      "views": 3
     },
     "/tags/us/": {
       "views": 1
     },
     "/tags/메가플래닝/": {
-      "views": 1
-    },
-    "/theory/cohens-d/": {
       "views": 1
     },
     "/theory/flesch-kincaid-grade-level/": {
@@ -160,7 +154,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 12
+      "views": 13
     }
   }
 }
