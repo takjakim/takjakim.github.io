@@ -1,6 +1,6 @@
 ---
 title: "세션6 메모: 에너지 전환은 기술보다 설계의 문제다"
-last_modified_at: 2026-06-22
+last_modified_at: 2026-06-21
 categories: [ai]
 tags: [productivity, energy-transition, renewable-energy, esg, climate-finance, tou, just-transition, conference]
 description: "한국생산성학회 춘계학술대회 세션6 발표 네 편을 바탕으로 재생에너지 이익공유, 국가 ESG 성과, 주거용 시간대별 요금제, 개발도상국 기후금융을 정리했다."
