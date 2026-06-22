@@ -1,0 +1,8 @@
+featured:
+  # Manually keep one strategic note at the front of the home recommendation rail.
+  # The rest is filled automatically by _plugins/home_recommendations_generator.rb
+  # using importance, featured, pageviews, and recency.
+  pinned:
+    - /ai/ai-productivity-conference-synthesis/
+  limit: 3
+  recent_days: 45

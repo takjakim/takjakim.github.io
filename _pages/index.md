@@ -96,28 +96,30 @@ permalink: /
   </section>
 
   <!-- Featured Posts -->
-  {% assign featured_notes = site.notes | where_exp: "n", "n.featured == true" | sort: "last_modified_at_timestamp" | reverse %}
+  {% assign featured_notes = site.data.home_recommendations %}
   {% if featured_notes and featured_notes.size > 0 %}
   <section class="recent-section">
     <div class="section-header">
       <h2 class="section-title">추천</h2>
       <div class="filter-pills">
-        <span class="pill pill-ghost">Featured</span>
+        <span class="pill pill-ghost">큐레이션 + 자동</span>
       </div>
     </div>
 
     <div class="featured-grid">
       {% for note in featured_notes limit: 3 %}
-        {% assign note_category = note.path | split: "/" | slice: 1 | first %}
+        {% assign note_category = note.category %}
         <article class="glass-card glass-card--featured {% if forloop.first %}glass-card--xl{% else %}glass-card--md{% endif %} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% elsif note_category == 'running' %}glass-running{% endif %}">
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
-              <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
-              {% assign pv = site.data.pageviews.paths[note.url].views %}
-              {% if pv != nil %}
-                <span class="glass-views">👀 {{ pv }}</span>
+              <time>{{ note.date_label }}</time>
+              {% if note.views and note.views > 0 %}
+                <span class="glass-views">👀 {{ note.views }}</span>
               {% else %}
                 <span class="glass-views glass-views--new">NEW</span>
+              {% endif %}
+              {% if note.reason %}
+                <span class="glass-views glass-views--new">{{ note.reason }}</span>
               {% endif %}
               {% if note_category == "investing" %}
                 <span class="glass-tag tag-investing">Research</span>
@@ -133,9 +135,9 @@ permalink: /
             </div>
             <h3 class="glass-title">{{ note.title }}</h3>
             {% if forloop.first %}
-              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 160 }}</p>
+              <p class="glass-excerpt">{{ note.excerpt | strip_html | truncate: 160 }}</p>
             {% else %}
-              <p class="glass-excerpt">{{ note.content | strip_html | truncate: 110 }}</p>
+              <p class="glass-excerpt">{{ note.excerpt | strip_html | truncate: 110 }}</p>
             {% endif %}
             <div class="glass-footer"><span class="read-more">읽기 →</span></div>
           </a>
