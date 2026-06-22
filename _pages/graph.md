@@ -42,6 +42,7 @@ permalink: /graph
             <label class="graph-chip graph-chip--dev"><input type="checkbox" class="graph-filter" value="dev" checked /> 개발</label>
             <label class="graph-chip graph-chip--ai"><input type="checkbox" class="graph-filter" value="ai" checked /> AI</label>
             <label class="graph-chip graph-chip--running"><input type="checkbox" class="graph-filter" value="running" checked /> Running</label>
+            <label class="graph-chip graph-chip--education"><input type="checkbox" class="graph-filter" value="education" checked /> 교육·진로</label>
             <label class="graph-chip graph-chip--default"><input type="checkbox" class="graph-filter" value="default" checked /> 기타</label>
           </div>
 

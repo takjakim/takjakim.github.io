@@ -95,6 +95,7 @@
   .node-dev { fill: #8B5CF6; }
   .node-ai { fill: #F59E0B; }
   .node-running { fill: #14B8A6; }
+  .node-education { fill: #EC4899; }
   .node-default { fill: url(#node-gradient); }
 </style>
 
@@ -129,7 +130,7 @@
         const getCategory = (path, datum = null) => {
           const explicit = datum && datum.category;
           if (explicit === 'investing' || explicit === 'market-analysis') return 'research';
-          if (explicit === 'theory' || explicit === 'dev' || explicit === 'ai' || explicit === 'running') return explicit;
+          if (explicit === 'theory' || explicit === 'dev' || explicit === 'ai' || explicit === 'running' || explicit === 'education') return explicit;
           if (!path) return 'default';
           if (path.includes('/investing/')) return 'research';
           if (path.includes('/market-analysis/')) return 'research';
@@ -137,6 +138,7 @@
           if (path.includes('/dev/')) return 'dev';
           if (path.includes('/ai/')) return 'ai';
           if (path.includes('/running/')) return 'running';
+          if (path.includes('/education/')) return 'education';
           return 'default';
         };
 
@@ -148,6 +150,7 @@
           if (cat === 'dev') return '#8B5CF6';
           if (cat === 'ai') return '#F59E0B';
           if (cat === 'running') return '#14B8A6';
+          if (cat === 'education') return '#EC4899';
           return null; // Will use gradient
         };
 
@@ -516,7 +519,7 @@
         // ===== Graph View controls (only when #graph-controls exists) =====
         const controls = document.getElementById('graph-controls');
         const state = {
-          allowed: new Set(['research', 'theory', 'dev', 'ai', 'running', 'default']),
+          allowed: new Set(['research', 'theory', 'dev', 'ai', 'running', 'education', 'default']),
           focusedId: null,
           neighborsOnly: false,
         };
@@ -527,6 +530,7 @@
           if (cat === 'dev') return '개발';
           if (cat === 'ai') return 'AI';
           if (cat === 'running') return 'Running';
+          if (cat === 'education') return '교육·진로';
           return '기타';
         };
 
@@ -626,7 +630,7 @@
         };
 
         const resetView = () => {
-          state.allowed = new Set(['research', 'theory', 'dev', 'ai', 'running', 'default']);
+          state.allowed = new Set(['research', 'theory', 'dev', 'ai', 'running', 'education', 'default']);
           state.focusedId = null;
           state.neighborsOnly = false;
 
