@@ -4,10 +4,13 @@ last_modified_at: 2026-06-19
 categories: [ai]
 tags: [productivity, generative-ai, trade, carbon, low-altitude-economy, digital-infrastructure, conference]
 description: "한국생산성학회 춘계학술대회 세션2 발표 세 편을 바탕으로 생성형 AI 수용, FTA 환경조항과 체화탄소, 디지털 경제와 저공경제 발전을 조건부 생산성 관점에서 정리했다."
+image: /assets/images/ai/session-covers/session2-conference-cover-og.png
 permalink: /ai/session2-ai-green-trade-low-altitude-economy/
 ---
 
 # 세션2 메모: 생성형 AI, 녹색무역, 저공경제가 보여준 조건부 생산성
+
+![세션2 발표 표지 콜라주](/assets/images/ai/session-covers/session2-conference-cover-og.png)
 
 세션2는 주제가 꽤 넓었다. 생성형 AI 수용, FTA 환경조항과 체화탄소, 중국의 저공경제 발전까지 한 세션 안에 들어왔다. 처음에는 서로 다른 발표처럼 보였지만, 듣고 나니 하나의 질문으로 묶을 수 있었다.
 

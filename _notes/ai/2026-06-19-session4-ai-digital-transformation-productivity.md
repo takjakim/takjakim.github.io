@@ -4,10 +4,13 @@ last_modified_at: 2026-06-19
 categories: [ai]
 tags: [productivity, generative-ai, digital-trade, green-innovation, media, labor, dstri, conference]
 description: "한국생산성학회 춘계학술대회 세션4 발표 세 편을 바탕으로 생성형 AI 활용 유형, AI 선도구 정책과 녹색혁신, 디지털 무역장벽과 서비스무역을 정리했다."
+image: /assets/images/ai/session-covers/session4-conference-cover-og.png
 permalink: /ai/session4-ai-digital-transformation-productivity/
 ---
 
 # 세션4 메모: AI와 디지털 전환은 왜 항상 생산성을 높이지 않는가
+
+![세션4 발표 표지 콜라주](/assets/images/ai/session-covers/session4-conference-cover-og.png)
 
 세션4는 AI와 디지털 전환에 대한 낙관론을 조금 차분하게 식히는 세션이었다. 생성형 AI를 쓰면 생산성이 오를까? AI 산업정책은 기업의 녹색혁신을 촉진할까? 디지털 전환은 서비스무역을 더 자유롭게 만들까?
 

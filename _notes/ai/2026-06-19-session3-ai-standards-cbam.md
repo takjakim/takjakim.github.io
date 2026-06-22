@@ -4,10 +4,13 @@ last_modified_at: 2026-06-19
 categories: [ai]
 tags: [productivity, llm, ultimatum-game, standards, export-resilience, cbam, trade, conference]
 description: "한국생산성학회 춘계학술대회 세션3 발표 세 편을 바탕으로 LLM의 최후통첩 게임, 국제표준 네트워크와 수출 회복탄력성, CBAM 하 중국 수출전략을 정리했다."
+image: /assets/images/ai/session-covers/session3-conference-cover-og.png
 permalink: /ai/session3-ai-standards-cbam/
 ---
 
 # 세션3 메모: AI도 기업도 산업도, 이제 규칙을 내면화한다
+
+![세션3 발표 표지 콜라주](/assets/images/ai/session-covers/session3-conference-cover-og.png)
 
 세션3은 발표 주제가 꽤 흥미롭게 흩어져 있었다. 하나는 LLM이 최후통첩 게임에서 인간처럼 행동하는지 보는 연구였고, 하나는 국제표준 네트워크가 기업의 수출 회복탄력성을 높이는지 보는 연구였고, 하나는 CBAM이 중국 고탄소 제조업의 수출전략을 어떻게 바꾸는지 보는 연구였다.
 

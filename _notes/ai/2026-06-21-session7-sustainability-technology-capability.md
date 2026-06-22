@@ -4,10 +4,13 @@ last_modified_at: 2026-06-21
 categories: [ai]
 tags: [productivity, sustainability, digital-transformation, esg, fdi, carbon-emissions, intellectual-capital, conference]
 description: "한국생산성학회 춘계학술대회 세션7 발표 다섯 편을 바탕으로 교통 탄소배출, 디지털 전환과 ESG, 녹색혁신투자와 생산성, FDI와 탄소배출, 은행 지적자본을 정리했다."
+image: /assets/images/ai/session-covers/session7-conference-cover-og.png
 permalink: /ai/session7-sustainability-technology-capability/
 ---
 
 # 세션7 메모: 지속가능성은 기술보다 전환 역량의 문제다
+
+![세션7 발표 표지 콜라주](/assets/images/ai/session-covers/session7-conference-cover-og.png)
 
 세션7은 발표 주제가 넓었다. 교통부문 탄소배출과 기온의 비선형 관계, 인도네시아 기업의 디지털 전환과 ESG, 중국 상장기업의 AI·녹색혁신투자와 생산성, ECOWAS 국가의 FDI와 탄소배출, 인도네시아 은행산업의 지적자본까지 다뤘다.
 

@@ -4,10 +4,13 @@ last_modified_at: 2026-06-21
 categories: [ai]
 tags: [productivity, technology, working-poverty, public-leadership, inclusive-leadership, labor, conference]
 description: "한국생산성학회 춘계학술대회 세션5 발표 세 편을 바탕으로 정보기술 도입과 근로빈곤, 공공리더십 연구동향, 포용적 리더십 연구동향을 정리했다."
+image: /assets/images/ai/session-covers/session5-conference-cover-og.png
 permalink: /ai/session5-technology-leadership-working-poverty/
 ---
 
 # 세션5 메모: 기술, 리더십, 생산성의 그림자
+
+![세션5 발표 표지 콜라주](/assets/images/ai/session-covers/session5-conference-cover-og.png)
 
 세션5는 앞선 세션들보다 조금 더 “사람”에 가까운 세션이었다. 정보기술이 노동시장에 미치는 영향, 공공조직에서 리더십 연구가 어떻게 축적되어 왔는지, 그리고 포용적 리더십이 왜 중요해졌는지를 다뤘다.
 

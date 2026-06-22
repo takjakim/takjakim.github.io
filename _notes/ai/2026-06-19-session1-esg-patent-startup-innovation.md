@@ -4,10 +4,13 @@ last_modified_at: 2026-06-19
 categories: [ai]
 tags: [productivity, esg, patent, startup, innovation, project-management, conference]
 description: "한국생산성학회 춘계학술대회 세션1 발표 세 편을 바탕으로 특허품질과 환경성과, 중국 기업의 자발적 환경인증과 OFDI, 스타트업 프로젝트 관리 역량과 혁신성과를 정리했다."
+image: /assets/images/ai/session-covers/session1-conference-cover-og.png
 permalink: /ai/session1-esg-patent-startup-innovation/
 ---
 
 # 세션1 메모: ESG, 특허품질, 스타트업 프로젝트 관리가 말하는 생산성의 조건
+
+![세션1 발표 표지 콜라주](/assets/images/ai/session-covers/session1-conference-cover-og.png)
 
 기조강연이 AI 시대 생산성의 큰 방향을 다뤘다면, 세션1 발표들은 조금 더 실증 연구에 가까웠다. 세 편의 발표는 서로 다른 주제를 다루지만 한 가지 질문으로 묶인다.
 
