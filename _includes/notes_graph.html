@@ -81,6 +81,7 @@
   .node-theory { fill: #3B82F6; }
   .node-dev { fill: #8B5CF6; }
   .node-ai { fill: #F59E0B; }
+  .node-running { fill: #14B8A6; }
   .node-default { fill: url(#node-gradient); }
 </style>
 
@@ -112,23 +113,28 @@
         const nodeSize = {};
 
         // Category helpers
-        const getCategory = (path) => {
+        const getCategory = (path, datum = null) => {
+          const explicit = datum && datum.category;
+          if (explicit === 'investing' || explicit === 'market-analysis') return 'research';
+          if (explicit === 'theory' || explicit === 'dev' || explicit === 'ai' || explicit === 'running') return explicit;
           if (!path) return 'default';
           if (path.includes('/investing/')) return 'research';
           if (path.includes('/market-analysis/')) return 'research';
           if (path.includes('/theory/')) return 'theory';
           if (path.includes('/dev/')) return 'dev';
           if (path.includes('/ai/')) return 'ai';
+          if (path.includes('/running/')) return 'running';
           return 'default';
         };
 
         // Category color mapping
-        const getCategoryColor = (path) => {
-          const cat = getCategory(path);
+        const getCategoryColor = (path, datum = null) => {
+          const cat = getCategory(path, datum);
           if (cat === 'research') return '#10B981';
           if (cat === 'theory') return '#3B82F6';
           if (cat === 'dev') return '#8B5CF6';
           if (cat === 'ai') return '#F59E0B';
+          if (cat === 'running') return '#14B8A6';
           return null; // Will use gradient
         };
 
@@ -161,15 +167,24 @@
           }
         };
 
+        const openNode = (d) => {
+          if (d && d.path) window.location = d.path;
+        };
+
         const onClick = (d) => {
           // Shift+Click: pin/unpin (sticky)
           if (d3.event && d3.event.shiftKey) {
             togglePin(d);
+            updateSelectedPanel(d);
             // Keep sim alive a bit
             if (isGraphPage) simulation.alpha(0.6).restart();
             return;
           }
-          window.location = d.path
+          if (isGraphPage) {
+            focusNode(d);
+            return;
+          }
+          openNode(d);
         };
 
         const onMouseover = function (d) {
@@ -257,13 +272,15 @@
 
         const graphWrapper = document.getElementById('graph-wrapper')
         const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-        element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
-        element.setAttribute("height", window.innerHeight * 0.8);
+        const graphBounds = graphWrapper.getBoundingClientRect();
+        element.setAttribute("width", graphBounds.width || window.innerWidth);
+        element.setAttribute("height", graphBounds.height || window.innerHeight * 0.8);
         graphWrapper.appendChild(element);
 
         const reportWindowSize = () => {
-          element.setAttribute("width", window.innerWidth);
-          element.setAttribute("height", window.innerHeight);
+          const bounds = graphWrapper.getBoundingClientRect();
+          element.setAttribute("width", bounds.width || window.innerWidth);
+          element.setAttribute("height", bounds.height || window.innerHeight * 0.8);
         };
 
         window.onresize = reportWindowSize;
@@ -418,7 +435,7 @@
             .attr("r", (d) => {
               return nodeSize[d.id];
             })
-            .attr("fill", (d) => getCategoryColor(d.path) || "url(#node-gradient)")
+            .attr("fill", (d) => getCategoryColor(d.path, d) || "url(#node-gradient)")
             .attr("stroke", (d) => (d._pinned ? '#111827' : null))
             .attr("stroke-width", (d) => (d._pinned ? 2 : null))
             .call(drag)
@@ -471,9 +488,46 @@
         // ===== Graph View controls (only when #graph-controls exists) =====
         const controls = document.getElementById('graph-controls');
         const state = {
-          allowed: new Set(['research', 'theory', 'dev', 'ai', 'default']),
+          allowed: new Set(['research', 'theory', 'dev', 'ai', 'running', 'default']),
           focusedId: null,
           neighborsOnly: false,
+        };
+
+        const categoryLabel = (cat) => {
+          if (cat === 'research') return 'Research';
+          if (cat === 'theory') return 'Theory';
+          if (cat === 'dev') return '개발';
+          if (cat === 'ai') return 'AI';
+          if (cat === 'running') return 'Running';
+          return '기타';
+        };
+
+        const updateStats = () => {
+          const nodeCountEl = document.getElementById('graph-node-count');
+          const edgeCountEl = document.getElementById('graph-edge-count');
+          const visibleCountEl = document.getElementById('graph-visible-count');
+          if (nodeCountEl) nodeCountEl.textContent = nodesData.length;
+          if (edgeCountEl) edgeCountEl.textContent = linksData.length;
+          if (visibleCountEl) {
+            const visible = nodesData.filter((d) => state.allowed.has(getCategory(d.path, d))).length;
+            visibleCountEl.textContent = visible;
+          }
+        };
+
+        const updateSelectedPanel = (target) => {
+          const empty = document.getElementById('graph-selected-empty');
+          const card = document.getElementById('graph-selected-card');
+          if (!target || !card) return;
+          const title = document.getElementById('graph-selected-title');
+          const category = document.getElementById('graph-selected-category');
+          const degreeEl = document.getElementById('graph-selected-degree');
+          const linkEl = document.getElementById('graph-selected-link');
+          if (empty) empty.hidden = true;
+          card.hidden = false;
+          if (title) title.textContent = target.label || 'Untitled';
+          if (category) category.textContent = categoryLabel(getCategory(target.path, target));
+          if (degreeEl) degreeEl.textContent = target._deg || 0;
+          if (linkEl) linkEl.href = target.path || '#';
         };
 
         const getNeighborsSet = (id) => {
@@ -491,14 +545,14 @@
           const neighborSet = (state.neighborsOnly && state.focusedId) ? getNeighborsSet(state.focusedId) : null;
 
           node.attr('class', (d) => {
-            const catOk = state.allowed.has(getCategory(d.path));
+            const catOk = state.allowed.has(getCategory(d.path, d));
             const neighOk = !neighborSet || neighborSet.has(d.id);
             if (!catOk || !neighOk) return 'inactive';
             return '';
           });
 
           text.attr('class', (d) => {
-            const catOk = state.allowed.has(getCategory(d.path));
+            const catOk = state.allowed.has(getCategory(d.path, d));
             const neighOk = !neighborSet || neighborSet.has(d.id);
             if (!catOk || !neighOk) return 'inactive';
             return '';
@@ -509,11 +563,13 @@
             const b = d.target.id;
             const aNode = nodesData.find(n => n.id === a);
             const bNode = nodesData.find(n => n.id === b);
-            const catOk = (!aNode || state.allowed.has(getCategory(aNode.path))) && (!bNode || state.allowed.has(getCategory(bNode.path)));
+            const catOk = (!aNode || state.allowed.has(getCategory(aNode.path, aNode))) && (!bNode || state.allowed.has(getCategory(bNode.path, bNode)));
             const neighOk = !neighborSet || (neighborSet.has(a) && neighborSet.has(b));
             if (!catOk || !neighOk) return 'inactive';
             return '';
           });
+
+          updateStats();
         };
 
         const focusNode = (target) => {
@@ -522,6 +578,7 @@
 
           node.attr('active', (d) => (d.id === target.id ? true : null));
           text.attr('active', (d) => (d.id === target.id ? true : null));
+          updateSelectedPanel(target);
 
           // Center/zoom
           const el = document.querySelector('#graph-wrapper svg');
@@ -540,12 +597,16 @@
         };
 
         const resetView = () => {
-          state.allowed = new Set(['research', 'theory', 'dev', 'ai', 'default']);
+          state.allowed = new Set(['research', 'theory', 'dev', 'ai', 'running', 'default']);
           state.focusedId = null;
           state.neighborsOnly = false;
 
           node.attr('active', null);
           text.attr('active', null);
+          const empty = document.getElementById('graph-selected-empty');
+          const card = document.getElementById('graph-selected-card');
+          if (empty) empty.hidden = false;
+          if (card) card.hidden = true;
 
           if (controls) {
             document.querySelectorAll('.graph-filter').forEach(cb => cb.checked = true);
@@ -596,17 +657,13 @@
             });
           }
 
-          // Also allow clicking a node to set focus.
-          // Shift+click keeps the node on screen (pin/unpin) without navigating.
-          node.on('click', (d) => {
-            focusNode(d);
-            onClick(d);
-          });
-          text.on('click', (d) => {
-            focusNode(d);
-            onClick(d);
-          });
+          // Click selects/focuses. Double-click opens the note.
+          node.on('click', (d) => onClick(d));
+          text.on('click', (d) => onClick(d));
+          node.on('dblclick', (d) => openNode(d));
+          text.on('dblclick', (d) => openNode(d));
 
+          updateStats();
           applyVisibility();
         }
 
