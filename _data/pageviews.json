@@ -1,15 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-06-21T05:15:07.067882+00:00",
+    "generated_at": "2026-06-22T05:25:54.190684+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 112
+      "views": 136
     },
     "/about/": {
+      "views": 1
+    },
+    "/ai/ai-productivity-conference-synthesis/": {
       "views": 1
     },
     "/ai/ai-productivity-governance-keynote/": {
@@ -23,6 +26,18 @@
     },
     "/ai/session1-esg-patent-startup-innovation/": {
       "views": 7
+    },
+    "/ai/session4-ai-digital-transformation-productivity/": {
+      "views": 1
+    },
+    "/ai/session5-technology-leadership-working-poverty/": {
+      "views": 1
+    },
+    "/ai/session6-energy-transition-esg-climate-finance/": {
+      "views": 1
+    },
+    "/ai/session7-sustainability-technology-capability/": {
+      "views": 5
     },
     "/big-tech/": {
       "views": 1
@@ -91,7 +106,7 @@
       "views": 3
     },
     "/tags/": {
-      "views": 4
+      "views": 5
     },
     "/tags/ai/": {
       "views": 2
@@ -120,11 +135,17 @@
     "/tags/market/": {
       "views": 2
     },
+    "/tags/productivity/": {
+      "views": 1
+    },
     "/tags/running/": {
       "views": 3
     },
     "/tags/us/": {
       "views": 1
+    },
+    "/tags/마크다운쇼/": {
+      "views": 3
     },
     "/tags/메가플래닝/": {
       "views": 1
@@ -154,7 +175,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 13
+      "views": 14
     }
   }
 }
