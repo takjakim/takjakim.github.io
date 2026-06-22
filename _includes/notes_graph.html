@@ -97,14 +97,14 @@
         "sha512-FHsFVKQ/T1KWJDGSbrUhTJyS1ph3eRrxI228ND0EGaEp6v4a/vGwPWd3Dtd/+9cI7ccofZvl/wulICEurHN1pg==";
       document.body.appendChild(oScript);
       oScript.onload = () => {
-        const MINIMAL_NODE_SIZE = 8;
-        const MAX_NODE_SIZE = 14;
-        const ACTIVE_RADIUS_FACTOR = 1.5;
-        const STROKE = 1.5;
-        const FONT_SIZE = 14;
-        const TICKS = 200;
-        const FONT_BASELINE = 40;
-        const MAX_LABEL_LENGTH = 50;
+        const MINIMAL_NODE_SIZE = 6;
+        const MAX_NODE_SIZE = 13;
+        const ACTIVE_RADIUS_FACTOR = 1.65;
+        const STROKE = 1.25;
+        const FONT_SIZE = 12;
+        const TICKS = 90;
+        const FONT_BASELINE = 34;
+        const MAX_LABEL_LENGTH = 34;
 
         const graphData = {% include notes_graph.json %}
         let nodesData = graphData.nodes;
@@ -140,12 +140,7 @@
 
         const updateNodeSize = () => {
           nodesData.forEach((el) => {
-            let weight =
-              3 *
-              Math.sqrt(
-                linksData.filter((l) => l.source.id === el.id || l.target.id === el.id)
-                  .length + 1
-              );
+            let weight = 3 * Math.sqrt((el._deg || 0) + 1);
             if (weight < MINIMAL_NODE_SIZE) {
               weight = MINIMAL_NODE_SIZE;
             } else if (weight > MAX_NODE_SIZE) {
@@ -176,8 +171,7 @@
           if (d3.event && d3.event.shiftKey) {
             togglePin(d);
             updateSelectedPanel(d);
-            // Keep sim alive a bit
-            if (isGraphPage) simulation.alpha(0.6).restart();
+            if (isGraphPage) settleSimulation(20);
             return;
           }
           if (isGraphPage) {
@@ -323,6 +317,7 @@
           n._deg = d;
           n._hub = d / maxDeg;
         });
+        updateNodeSize();
 
         // Keep the /graph page dynamic. Other embeds (home) stay settled/static.
         const isGraphPage = !!document.getElementById('graph-controls');
@@ -332,11 +327,14 @@
         const hubs = [...nodesData]
           .sort((a, b) => (b._deg || 0) - (a._deg || 0))
           .slice(0, HUB_COUNT);
+        const labelNodes = isGraphPage
+          ? [...nodesData].sort((a, b) => (b._deg || 0) - (a._deg || 0)).slice(0, 72)
+          : nodesData;
 
         const simulation = d3
           .forceSimulation(nodesData)
-          .velocityDecay(isGraphPage ? 0.35 : 0.6)
-          .alphaDecay(isGraphPage ? 0.02 : 0.12)
+          .velocityDecay(isGraphPage ? 0.48 : 0.6)
+          .alphaDecay(isGraphPage ? 0.08 : 0.12)
           .force(
             "forceX",
             d3.forceX(width / 2).strength(d => isGraphPage ? (0.02 + 0.12 * (d._hub || 0)) : 0.06)
@@ -345,16 +343,16 @@
             "forceY",
             d3.forceY(height / 2).strength(d => isGraphPage ? (0.02 + 0.12 * (d._hub || 0)) : 0.06)
           )
-          .force("charge", d3.forceManyBody().strength(d => isGraphPage ? (-60 - 140 * (d._hub || 0)) : -100))
+          .force("charge", d3.forceManyBody().strength(d => isGraphPage ? (-36 - 110 * (d._hub || 0)) : -100))
           .force(
             "link",
             d3
               .forceLink(linksData)
               .id((d) => d.id)
-              .distance(d => isGraphPage ? (90 - 30 * (d.source._hub || 0)) : 100)
+              .distance(d => isGraphPage ? (72 - 22 * (d.source._hub || 0)) : 100)
           )
           .force("center", d3.forceCenter(width / 2, height / 2))
-          .force("collision", d3.forceCollide().radius(d => 18 + (nodeSize[d.id] || MINIMAL_NODE_SIZE) * 2.2))
+          .force("collision", d3.forceCollide().radius(d => 12 + (nodeSize[d.id] || MINIMAL_NODE_SIZE) * 1.8))
           .stop();
 
         // Make top hubs "sticky" near the center by pinning them to a small circle.
@@ -412,17 +410,19 @@
 
         const drag = d3.drag()
           .on('start', (d) => {
-            if (!d3.event.active && isGraphPage) simulation.alphaTarget(0.2).restart();
             d._pinned = true;
             d.fx = d.x;
             d.fy = d.y;
           })
           .on('drag', (d) => {
-            d.fx = d3.event.x;
-            d.fy = d3.event.y;
+            d.x = d3.event.x;
+            d.y = d3.event.y;
+            d.fx = d.x;
+            d.fy = d.y;
+            ticked();
           })
-          .on('end', (d) => {
-            if (!d3.event.active && isGraphPage) simulation.alphaTarget(0);
+          .on('end', () => {
+            if (isGraphPage) settleSimulation(18);
           });
 
         const restart = () => {
@@ -448,7 +448,7 @@
           link.exit().remove();
           link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
 
-          text = text.data(nodesData, (d) => d.label);
+          text = text.data(labelNodes, (d) => d.label);
           text.exit().remove();
           text = text
             .enter()
@@ -468,16 +468,15 @@
           simulation.nodes(nodesData);
           simulation.force("link").links(linksData);
 
-          // Render continuously on the /graph page; elsewhere, settle to a static layout.
-          if (isGraphPage) {
-            simulation.on('tick', ticked);
-            simulation.alpha(1).restart();
-          } else {
-            simulation.alpha(1).restart();
-            simulation.stop();
-            for (let i = 0; i < TICKS; i++) simulation.tick();
-            ticked();
-          }
+          // Settle once instead of running a continuous force loop. This keeps pan/zoom/search snappy.
+          settleSimulation(isGraphPage ? TICKS : TICKS);
+        };
+
+        const settleSimulation = (iterations = TICKS) => {
+          simulation.stop();
+          simulation.alpha(0.9);
+          for (let i = 0; i < iterations; i++) simulation.tick();
+          ticked();
         };
 
         const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
