@@ -266,11 +266,11 @@
 
           const set = new Set();
           for (const edge of previous) {
-            set.add(`${edge.source.id}-${edge.target.id}`);
+            set.add(`${endpointId(edge.source)}-${endpointId(edge.target)}`);
           }
 
           for (const edge of next) {
-            if (!set.has(`${edge.source.id}-${edge.target.id}`)) {
+            if (!set.has(`${endpointId(edge.source)}-${endpointId(edge.target)}`)) {
               return false;
             }
           }
@@ -317,12 +317,19 @@
         linkGradient.append("stop").attr("offset", "0%").attr("stop-color", "#FF6F61").attr("stop-opacity", "0.6");
         linkGradient.append("stop").attr("offset", "100%").attr("stop-color", "#4ECDC4").attr("stop-opacity", "0.6");
 
+        const endpointId = (endpoint) => {
+          if (endpoint && typeof endpoint === 'object') return endpoint.id;
+          return endpoint;
+        };
+
         // ===== Scoring (hub-ness) =====
         const degree = new Map();
         nodesData.forEach(n => degree.set(n.id, 0));
         linksData.forEach(l => {
-          degree.set(l.source.id, (degree.get(l.source.id) || 0) + 1);
-          degree.set(l.target.id, (degree.get(l.target.id) || 0) + 1);
+          const sourceId = endpointId(l.source);
+          const targetId = endpointId(l.target);
+          degree.set(sourceId, (degree.get(sourceId) || 0) + 1);
+          degree.set(targetId, (degree.get(targetId) || 0) + 1);
         });
         const maxDeg = Math.max(...Array.from(degree.values()), 1);
         nodesData.forEach(n => {
@@ -554,8 +561,8 @@
         const getNeighborsSet = (id) => {
           const s = new Set([id]);
           linksData.forEach((l) => {
-            const a = l.source.id;
-            const b = l.target.id;
+            const a = endpointId(l.source);
+            const b = endpointId(l.target);
             if (a === id) s.add(b);
             if (b === id) s.add(a);
           });
@@ -581,8 +588,8 @@
           });
 
           link.attr('class', (d) => {
-            const a = d.source.id;
-            const b = d.target.id;
+            const a = endpointId(d.source);
+            const b = endpointId(d.target);
             const aNode = nodesData.find(n => n.id === a);
             const bNode = nodesData.find(n => n.id === b);
             const catOk = (!aNode || state.allowed.has(getCategory(aNode.path, aNode))) && (!bNode || state.allowed.has(getCategory(bNode.path, bNode)));
