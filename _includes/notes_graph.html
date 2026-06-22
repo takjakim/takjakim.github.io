@@ -65,6 +65,19 @@
   .text text[active] {
     fill: #FF6F61;
     font-weight: 700;
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .text text.label-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .text text.label-hover,
+  .text text.label-hidden[active] {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .inactive {
@@ -211,17 +224,18 @@
             return STROKE;
           });
           text.attr("class", (text_d) => {
-            if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
-              return "inactive";
+            const base = defaultLabelClass(text_d);
+            if (text_d.id === d.id || relatedNodesSet.has(text_d.id)) {
+              return `${base} label-hover`.trim();
             }
-            return "";
+            return `${base} inactive`.trim();
           });
         };
 
         const onMouseout = function (d) {
           node.attr("class", "");
           link.attr("class", "");
-          text.attr("class", "");
+          setDefaultLabelClasses();
           link.attr("stroke-width", STROKE);
         };
 
@@ -327,9 +341,16 @@
         const hubs = [...nodesData]
           .sort((a, b) => (b._deg || 0) - (a._deg || 0))
           .slice(0, HUB_COUNT);
-        const labelNodes = isGraphPage
-          ? [...nodesData].sort((a, b) => (b._deg || 0) - (a._deg || 0)).slice(0, 72)
-          : nodesData;
+        const labelNodes = nodesData;
+        const defaultLabelIds = new Set(
+          isGraphPage
+            ? [...nodesData].sort((a, b) => (b._deg || 0) - (a._deg || 0)).slice(0, 72).map(n => n.id)
+            : nodesData.map(n => n.id)
+        );
+        const defaultLabelClass = (d) => defaultLabelIds.has(d.id) ? '' : 'label-hidden';
+        const setDefaultLabelClasses = () => {
+          text.attr('class', (d) => defaultLabelClass(d));
+        };
 
         const simulation = d3
           .forceSimulation(nodesData)
@@ -464,6 +485,7 @@
 
           node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
           text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+          setDefaultLabelClasses();
 
           simulation.nodes(nodesData);
           simulation.force("link").links(linksData);
@@ -551,10 +573,11 @@
           });
 
           text.attr('class', (d) => {
+            const base = defaultLabelClass(d);
             const catOk = state.allowed.has(getCategory(d.path, d));
             const neighOk = !neighborSet || neighborSet.has(d.id);
-            if (!catOk || !neighOk) return 'inactive';
-            return '';
+            if (!catOk || !neighOk) return `${base} inactive`.trim();
+            return base;
           });
 
           link.attr('class', (d) => {
