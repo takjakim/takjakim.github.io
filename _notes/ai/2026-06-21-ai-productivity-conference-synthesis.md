@@ -4,10 +4,13 @@ last_modified_at: 2026-06-21
 categories: [ai]
 tags: [productivity, ai, esg, digital-transformation, sustainability, conference, governance, innovation]
 description: "한국생산성학회 춘계학술대회 기조강연과 세션1~7을 관통해 AI 시대 생산성이 속도, 효율, 자동화가 아니라 지식 생태계, 전환 역량, 제도 설계에서 나온다는 관점으로 정리했다."
+image: /assets/images/ai/ai-productivity-conference-synthesis-og.png
 permalink: /ai/ai-productivity-conference-synthesis/
 ---
 
 # AI 시대 생산성은 어디서 오는가: 한국생산성학회 춘계학술대회 총괄 메모
+
+![AI 시대 생산성은 어디서 오는가 — 속도보다 전환 역량](/assets/images/ai/ai-productivity-conference-synthesis-og.png)
 
 이번 한국생산성학회 춘계학술대회 자료들을 정리하면서 계속 같은 질문이 남았다.
 
