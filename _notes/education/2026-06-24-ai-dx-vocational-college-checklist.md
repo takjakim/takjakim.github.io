@@ -4,7 +4,7 @@ title: "AI·DX 전문대 선택, ‘사업 선정’보다 확인해야 할 5가
 categories: [education]
 tags: [대입, 진로, 대학, 전공, 전문대, AI, DX, 취업]
 description: "전문대학 AI·DX 교육과 정부·지자체 사업 소식을 학생·학부모가 전공 선택과 입시 상담에서 어떻게 해석해야 하는지 정리한다."
-date: 2026-06-24 09:00:00 +0900
+date: 2026-06-24 08:00:00 +0900
 permalink: /education/ai-dx-vocational-college-checklist/
 ---
 
