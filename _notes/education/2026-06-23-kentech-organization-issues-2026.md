@@ -2,7 +2,9 @@
 layout: note
 title: "에너지공대 조직 이슈 정리: KENTECH 총장 공백, 이사회, 에너지정책연구소, 재정 안정화"
 categories: [education]
-tags: [한국에너지공대, KENTECH, 에너지공대, 대학조직, 대입, 진로, 에너지공학]
+type: university_review
+label: UNIV
+tags: [한국에너지공대, KENTECH, 에너지공대, 대학조직, 대입, 진로, 에너지공학, 대학리뷰, 대학컨설팅, 대입컨설팅, 대학선택, 진로진학]
 description: "한국에너지공과대학교(KENTECH) 조직 관련 이슈를 입시 상담 관점에서 정리했다. 총장 공백과 이사회 선임 부결, 직무대행 체제, 에너지정책연구소 출범, 2026년 정부 출연금 회복이 학생·학부모에게 어떤 의미인지 해석한다."
 date: 2026-06-23 10:05:00 +0900
 permalink: /education/kentech-organization-issues-2026/

@@ -2,7 +2,9 @@
 layout: note
 title: "창원대 최근 이슈 정리: 국립창원대 4개 캠퍼스, GAST, 방산·우주항공, 법인화 논의"
 categories: [education]
-tags: [창원대, 국립창원대학교, 대입, 진로, 대학, 기계공학, 우주항공, 방산, 글로컬대학]
+type: university_review
+label: UNIV
+tags: [창원대, 국립창원대학교, 대입, 진로, 대학, 기계공학, 우주항공, 방산, 글로컬대학, 대학리뷰, 대학컨설팅, 대입컨설팅, 대학선택, 진로진학]
 description: "국립창원대학교 최근 이슈를 입시 상담 관점에서 정리했다. 4개 캠퍼스 통합, 다층학사제, GAST-기계공학대학, 방산·우주항공 특성화, 법인화·과학기술원 전환 논의를 학생·학부모 체크포인트로 해석한다."
 date: 2026-06-23 09:40:00 +0900
 permalink: /education/changwon-university-issues-2026/

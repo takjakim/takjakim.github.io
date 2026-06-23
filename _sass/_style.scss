@@ -953,6 +953,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .topic-card--dev .topic-kicker { color: #7C3AED; }
 .topic-card--ai .topic-kicker { color: #D97706; }
 .topic-card--running .topic-kicker { color: #16A34A; }
+.topic-card--education .topic-kicker { color: #DB2777; }
 
 .filter-pills {
   display: flex;
@@ -1514,6 +1515,11 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   &::before { background: linear-gradient(90deg, #F59E0B, #FBBF24); }
   &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(245,158,11,0.1)); }
 }
+.glass-education {
+  background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(236,72,153,0.05));
+  &::before { background: linear-gradient(90deg, #EC4899, #F97316); }
+  &:hover { background: linear-gradient(135deg, rgba(255,255,255,0.85), rgba(236,72,153,0.1)); }
+}
 .glass-running {
   background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(34,197,94,0.05));
   &::before { background: linear-gradient(90deg, #22C55E, #14B8A6); }
@@ -1575,7 +1581,48 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .tag-theory { background: rgba(59, 130, 246, 0.15); color: #2563EB; }
 .tag-dev { background: rgba(139, 92, 246, 0.15); color: #7C3AED; }
 .tag-ai { background: rgba(245, 158, 11, 0.15); color: #D97706; }
+.tag-education { background: rgba(236, 72, 153, 0.14); color: #DB2777; }
 .tag-running { background: rgba(34, 197, 94, 0.15); color: #16A34A; }
+
+.review-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.review-list-card {
+  margin: 0;
+
+  a {
+    display: block;
+    padding: 1.2rem 1.3rem;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.86), rgba(252,247,251,0.82));
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    text-decoration: none;
+
+    &:after { content: '' !important; }
+
+    &:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, rgba(255,255,255,0.96), rgba(253,242,248,0.92));
+    }
+  }
+
+  h2 {
+    margin: 0.55rem 0 0.45rem;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+  p {
+    margin: 0;
+    color: $color-subtext;
+    font-size: 0.94rem;
+    line-height: 1.6;
+  }
+}
 
 .glass-title {
   margin: 0 0 0.6rem;

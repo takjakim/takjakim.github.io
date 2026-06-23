@@ -2,7 +2,9 @@
 title: "대구한의대 이슈 정리: 한의학을 K-MEDI 산업으로 확장하는 대학"
 date: 2026-06-23 09:00:00 +0900
 categories: [education]
-tags: [대구한의대, 대구한의대학교, 한의예과, KMEDI, 글로컬대학30, RISE, K뷰티, 화장품학과, 보건계열, 모듈형교육과정]
+type: university_review
+label: UNIV
+tags: [대구한의대, 대구한의대학교, 한의예과, KMEDI, 글로컬대학30, RISE, K뷰티, 화장품학과, 보건계열, 모듈형교육과정, 대학리뷰, 대학컨설팅, 대입컨설팅, 대학선택, 진로진학]
 image: /assets/images/education/daegu-haany-university-kmedi-2026-campus-og.jpg
 excerpt: "대구한의대학교의 최근 핵심 이슈는 한의예과만이 아니다. 글로컬대학30, RISE, K-MEDI 실크로드, 화장품·뷰티계열 통합모집, 모듈형 교육과정을 함께 봐야 한다."
 ---

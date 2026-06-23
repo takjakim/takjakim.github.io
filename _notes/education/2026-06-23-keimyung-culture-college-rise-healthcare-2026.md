@@ -2,7 +2,9 @@
 layout: note
 title: "지방 전문대의 생존전략: 계명문화대가 RISE와 보건계열에 집중하는 이유"
 categories: [education]
-tags: [계명문화대, 계명문화대학교, 전문대입시, 대구전문대, RISE, 보건계열, 치위생과, 응급구조과, 성인학습자, KMove]
+type: university_review
+label: UNIV
+tags: [계명문화대, 계명문화대학교, 전문대입시, 대구전문대, RISE, 보건계열, 치위생과, 응급구조과, 성인학습자, KMove, 대학리뷰, 대학컨설팅, 대입컨설팅, 대학선택, 진로진학]
 description: "계명문화대학교 최근 이슈를 입시·진로 상담 관점에서 정리했다. RISE 지역정주 전략, 2026 수시1차 경쟁률, 치위생과·응급구조과 강세, 성인학습자 장학, K-Move 해외취업이 학생·학부모에게 어떤 의미인지 해석한다."
 date: 2026-06-23 09:00:00 +0900
 permalink: /education/keimyung-culture-college-rise-healthcare-2026/

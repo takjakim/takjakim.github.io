@@ -67,6 +67,11 @@ permalink: /
         <strong>러닝 · 트레일</strong>
         <span>트랜스제주, 훈련 로그, 장비 기록</span>
       </a>
+      <a class="topic-card topic-card--education" href="{{ site.baseurl }}/college-consulting/">
+        <span class="topic-kicker">Education</span>
+        <strong>대학컨설팅</strong>
+        <span>대학리뷰, 전공 선택, 진로진학 전략</span>
+      </a>
     </div>
 
     {% comment %}GitHub Pages 환경에서 collections.notes.docs가 비어 보일 때가 있어 site.notes 사용{% endcomment %}
@@ -109,7 +114,7 @@ permalink: /
     <div class="featured-grid">
       {% for note in featured_notes limit: 3 %}
         {% assign note_category = note.category %}
-        <article class="glass-card glass-card--featured {% if forloop.first %}glass-card--xl{% else %}glass-card--md{% endif %} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% elsif note_category == 'running' %}glass-running{% endif %}">
+        <article class="glass-card glass-card--featured {% if forloop.first %}glass-card--xl{% else %}glass-card--md{% endif %} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% elsif note_category == 'education' %}glass-education{% elsif note_category == 'running' %}glass-running{% endif %}">
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.date_label }}</time>
@@ -129,6 +134,8 @@ permalink: /
                 <span class="glass-tag tag-dev">개발</span>
               {% elsif note_category == "ai" %}
                 <span class="glass-tag tag-ai">AI</span>
+              {% elsif note_category == "education" %}
+                <span class="glass-tag tag-education">{{ note.label | default: "EDU" }}</span>
               {% elsif note_category == "running" %}
                 <span class="glass-tag tag-running">Running</span>
               {% endif %}
@@ -157,6 +164,7 @@ permalink: /
         <button class="pill" data-filter="theory">Theory</button>
         <button class="pill" data-filter="dev">개발</button>
         <button class="pill" data-filter="ai">AI</button>
+        <button class="pill" data-filter="education">Education</button>
         <button class="pill" data-filter="running">Running</button>
       </div>
     </div>
@@ -173,7 +181,7 @@ permalink: /
           {% assign size_class = "glass-card--md" %}
         {% endif %}
 
-        <article class="glass-card {{ size_class }} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% elsif note_category == 'running' %}glass-running{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
+        <article class="glass-card {{ size_class }} {% if note_category == 'investing' %}glass-investing{% elsif note_category == 'theory' %}glass-theory{% elsif note_category == 'dev' %}glass-dev{% elsif note_category == 'ai' %}glass-ai{% elsif note_category == 'education' %}glass-education{% elsif note_category == 'running' %}glass-running{% endif %}" data-category="{{ note_category }}" data-index="{{ forloop.index }}"{% if forloop.index > 9 %} style="display: none;"{% endif %}>
           <a href="{{ site.baseurl }}{{ note.url }}" class="glass-link internal-link">
             <div class="glass-meta">
               <time>{{ note.last_modified_at | date: "%m.%d" }}</time>
@@ -191,6 +199,8 @@ permalink: /
                 <span class="glass-tag tag-dev">개발</span>
               {% elsif note_category == "ai" %}
                 <span class="glass-tag tag-ai">AI</span>
+              {% elsif note_category == "education" %}
+                <span class="glass-tag tag-education">{{ note.label | default: "EDU" }}</span>
               {% elsif note_category == "running" %}
                 <span class="glass-tag tag-running">Running</span>
               {% endif %}

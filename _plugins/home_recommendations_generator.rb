@@ -89,6 +89,7 @@ module HomeRecommendations
         'title' => doc.data['title'] || doc.basename_without_ext,
         'url' => url,
         'category' => category_for(doc),
+        'label' => doc.data['label'],
         'date_label' => modified_time.strftime('%m.%d'),
         'timestamp' => modified_time.to_i,
         'views' => views,
