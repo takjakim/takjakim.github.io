@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-06-22T05:25:54.190684+00:00",
+    "generated_at": "2026-06-23T04:17:12.351941+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 136
+      "views": 163
     },
     "/about/": {
       "views": 1
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 3
@@ -26,6 +26,9 @@
     },
     "/ai/session1-esg-patent-startup-innovation/": {
       "views": 7
+    },
+    "/ai/session2-ai-green-trade-low-altitude-economy/": {
+      "views": 2
     },
     "/ai/session4-ai-digital-transformation-productivity/": {
       "views": 1
@@ -66,16 +69,31 @@
     "/dev/tech/GA-N3160N-NAS/": {
       "views": 1
     },
+    "/education/2026-06-23-adiga-check-routine/": {
+      "views": 2
+    },
+    "/graph/": {
+      "views": 11
+    },
+    "/investing/2026-02-12-global/": {
+      "views": 1
+    },
     "/investing/2026-02-23-korea/": {
       "views": 1
     },
     "/investing/2026-03-20-korea/": {
       "views": 1
     },
+    "/investing/2026-04-03-korea/": {
+      "views": 1
+    },
     "/investing/2026-04-22-us/": {
       "views": 1
     },
     "/investing/2026-05-07-korea/": {
+      "views": 1
+    },
+    "/investing/2026-05-07-us/": {
       "views": 1
     },
     "/investing/2026-06-12-us/": {
@@ -91,6 +109,9 @@
       "views": 2
     },
     "/investing/2026-06-16-us/": {
+      "views": 1
+    },
+    "/investing/csi300/": {
       "views": 1
     },
     "/investing/djia/": {
@@ -115,9 +136,12 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 2
+      "views": 3
     },
     "/tags/djia/": {
+      "views": 1
+    },
+    "/tags/hongkong/": {
       "views": 1
     },
     "/tags/hsi/": {
@@ -157,7 +181,7 @@
       "views": 1
     },
     "/welcome-to-dev/": {
-      "views": 1
+      "views": 2
     },
     "/workbook/": {
       "views": 1
@@ -175,7 +199,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 14
+      "views": 24
     }
   }
 }
