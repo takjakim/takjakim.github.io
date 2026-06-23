@@ -11,8 +11,10 @@ image: /assets/images/education/kentech-organization-issues-2026-og.jpg
 
 한국에너지공과대학교, 즉 에너지공대(KENTECH)를 볼 때 지금 가장 중요한 조직 이슈는 **총장 공백이 길어지는 가운데, 연구·정책 조직은 오히려 확장되고 있다는 점**이다.
 
-![한국에너지공과대학교 조직 이슈 SEO 커버 이미지](/assets/images/education/kentech-organization-issues-2026-og.jpg)
-*이미지: 한국에너지공과대학교 공식 홈페이지에 게시된 캠퍼스 이미지 기반 제작.[^image]*
+<figure class="note-cover-figure">
+  <img src="/assets/images/education/kentech-organization-issues-2026-og.jpg" alt="한국에너지공과대학교 조직 이슈 SEO 커버 이미지">
+  <figcaption>이미지: 한국에너지공과대학교 공식 홈페이지에 게시된 캠퍼스 이미지 기반 제작.[^image]</figcaption>
+</figure>
 
 ## 오늘의 핵심
 

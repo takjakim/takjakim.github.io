@@ -11,8 +11,10 @@ image: /assets/images/education/changwon-university-issues-2026-og.jpg
 
 국립창원대학교를 볼 때는 이제 단순히 “경남권 국립대”가 아니라 **4개 캠퍼스 통합 이후 기계·방산·우주항공·AI 제조 분야로 방향을 강하게 잡는 대학**으로 읽어야 한다.
 
-![국립창원대학교 창원캠퍼스 전경과 창원대 최근 이슈 SEO 커버 이미지](/assets/images/education/changwon-university-issues-2026-og.jpg)
-*이미지: 국립창원대학교 공식 홈페이지 게시 이미지 기반으로 제작.[^image]*
+<figure class="note-cover-figure">
+  <img src="/assets/images/education/changwon-university-issues-2026-og.jpg" alt="국립창원대학교 창원캠퍼스 전경과 창원대 최근 이슈 SEO 커버 이미지">
+  <figcaption>이미지: 국립창원대학교 공식 홈페이지 게시 이미지 기반 제작.[^image]</figcaption>
+</figure>
 
 ## 오늘의 핵심
 
