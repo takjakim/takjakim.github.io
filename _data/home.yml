@@ -4,5 +4,6 @@ featured:
   # using importance, featured, pageviews, and recency.
   pinned:
     - /ai/ai-productivity-conference-synthesis/
+    - /education/keimyung-culture-college-rise-healthcare-2026/
   limit: 3
   recent_days: 45
