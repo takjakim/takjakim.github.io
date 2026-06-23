@@ -2,6 +2,7 @@
 title: "해외취업"
 date: 2026-06-23 09:00:00 +0900
 categories: [education]
+type: concept
 tags: [해외취업, KMove, 글로벌취업, 대학리뷰]
 excerpt: "해외취업 프로그램은 국가, 직무, 비자, 급여, 사후관리까지 확인해야 한다."
 ---

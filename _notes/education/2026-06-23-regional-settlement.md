@@ -2,6 +2,7 @@
 title: "지역정주"
 date: 2026-06-23 09:00:00 +0900
 categories: [education]
+type: concept
 tags: [지역정주, 지방대학, RISE, 대학정책, 대학리뷰]
 excerpt: "지역정주는 학생이 지역에서 배우고 일하고 머무를 수 있는지를 보는 지방대학 리뷰의 핵심 기준이다."
 ---

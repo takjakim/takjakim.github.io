@@ -10,7 +10,7 @@ module HomeRecommendations
     priority :low
 
     def generate(site)
-      notes = site.collections['notes']&.docs || []
+      notes = (site.collections['notes']&.docs || []).reject { |doc| concept_note?(doc) }
       home_config = site.data['home'] || {}
       featured_config = home_config['featured'] || {}
       limit = (featured_config['limit'] || 3).to_i
@@ -145,6 +145,10 @@ module HomeRecommendations
       return 15 if age_days <= 120
 
       0
+    end
+
+    def concept_note?(doc)
+      doc.data['type'].to_s == 'concept' || doc.data['hide_from_recent'] == true
     end
 
     def normalize_url(url)

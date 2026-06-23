@@ -162,7 +162,7 @@ permalink: /
     </div>
 
     <div class="glass-grid glass-grid--magazine" id="notes-grid">
-      {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
+      {% assign recent_notes = site.notes | where_exp: "note", "note.type != 'concept'" | sort: "last_modified_at_timestamp" | reverse %}
       {% for note in recent_notes %}
         {% assign note_category = note.path | split: "/" | slice: 1 | first %}
         {% assign importance = note.importance | default: 1 %}
