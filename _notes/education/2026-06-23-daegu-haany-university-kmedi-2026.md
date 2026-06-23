@@ -1,6 +1,6 @@
 ---
 title: "대구한의대 이슈 정리: 한의학을 K-MEDI 산업으로 확장하는 대학"
-date: 2026-06-23 17:45:00 +0900
+date: 2026-06-23 09:00:00 +0900
 categories: [education]
 tags: [대구한의대, 대구한의대학교, 한의예과, KMEDI, 글로컬대학30, RISE, K뷰티, 화장품학과, 보건계열, 모듈형교육과정]
 image: /assets/images/education/daegu-haany-university-kmedi-2026-campus-og.jpg
