@@ -173,33 +173,58 @@ module HomeRecommendations
         memo[doc.basename_without_ext.to_s] = doc
       end
 
+      source_item = selected_items.first
+      source = docs_by_url[normalize_url(source_item['url'])]
+      return { 'nodes' => [], 'edges' => [] } unless source
+
       nodes = []
       edges = []
       seen = {}
+      add_graph_node(nodes, seen, source, 'featured', source_item['reason'])
 
-      selected_docs = selected_items.filter_map { |item| docs_by_url[normalize_url(item['url'])] }
-      selected_docs.each_with_index do |doc, index|
-        add_graph_node(nodes, seen, doc, 'featured', selected_items[index]&.dig('reason'))
+      related_docs = direct_wiki_docs(source, docs_by_title)
+      related_docs.concat(tag_matched_concepts(source, all_docs, related_docs))
+
+      related_docs.uniq { |doc| normalize_url(doc.url) }.first(7).each do |target_doc|
+        next if normalize_url(target_doc.url) == normalize_url(source.url)
+
+        add_graph_node(nodes, seen, target_doc, concept_note?(target_doc) ? 'concept' : 'note', nil)
+        edges << { 'source' => node_id(source), 'target' => node_id(target_doc) }
       end
 
-      linked_docs = []
-      selected_docs.each do |source|
-        wiki_targets(source.content).each do |target|
-          target_doc = docs_by_title[target]
-          next unless target_doc
-          next if normalize_url(target_doc.url) == normalize_url(source.url)
-
-          add_graph_node(nodes, seen, target_doc, concept_note?(target_doc) ? 'concept' : 'note', nil)
-          edge_id = "#{normalize_url(source.url)}->#{normalize_url(target_doc.url)}"
-          edges << { 'source' => node_id(source), 'target' => node_id(target_doc) } unless linked_docs.include?(edge_id)
-          linked_docs << edge_id
-          break if nodes.size >= 12
-        end
-        break if nodes.size >= 12
-      end
+      return { 'nodes' => [], 'edges' => [] } if edges.empty?
 
       position_graph_nodes(nodes)
-      { 'nodes' => nodes, 'edges' => edges }
+      {
+        'center_title' => source.data['title'] || source.basename_without_ext,
+        'nodes' => nodes,
+        'edges' => edges
+      }
+    end
+
+    def direct_wiki_docs(source, docs_by_title)
+      wiki_targets(source.content).filter_map { |target| docs_by_title[target] }
+    end
+
+    def tag_matched_concepts(source, all_docs, already)
+      source_tags = Array(source.data['tags']).map { |tag| tag.to_s.downcase }
+      source_text = "#{source.data['title']} #{source.data['description']} #{source.content}".downcase
+      skip_urls = already.map { |doc| normalize_url(doc.url) }
+
+      all_docs
+        .select { |doc| concept_note?(doc) }
+        .reject { |doc| skip_urls.include?(normalize_url(doc.url)) }
+        .map do |doc|
+          title = doc.data['title'].to_s
+          tags = Array(doc.data['tags']).map { |tag| tag.to_s.downcase }
+          title_hit = !title.empty? && source_text.include?(title.downcase)
+          tag_hits = (source_tags & tags).size
+          score = tag_hits * 3 + (title_hit ? 4 : 0)
+          [score, doc]
+        end
+        .select { |score, _doc| score.positive? }
+        .sort_by { |score, doc| [-score, doc.data['title'].to_s] }
+        .map(&:last)
     end
 
     def wiki_targets(content)
@@ -231,15 +256,19 @@ module HomeRecommendations
       featured = nodes.select { |node| node['kind'] == 'featured' }
       related = nodes.reject { |node| node['kind'] == 'featured' }
 
-      featured.each_with_index do |node, index|
-        node['x'] = 120 + index * 92
-        node['y'] = 92 + (index % 2) * 78
+      featured.each do |node|
+        node['x'] = 112
+        node['y'] = 78
       end
 
       related.each_with_index do |node, index|
-        angle = (Math::PI * 2 * index / [related.size, 1].max) - Math::PI / 2
-        node['x'] = (300 + Math.cos(angle) * 158).round
-        node['y'] = (142 + Math.sin(angle) * 96).round
+        slots = [
+          [250, 34], [360, 48], [456, 86], [352, 124],
+          [236, 118], [438, 42], [286, 78]
+        ]
+        x, y = slots[index % slots.size]
+        node['x'] = x
+        node['y'] = y
       end
 
       nodes
