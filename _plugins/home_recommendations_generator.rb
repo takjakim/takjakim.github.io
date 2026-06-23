@@ -183,7 +183,9 @@ module HomeRecommendations
       add_graph_node(nodes, seen, source, 'featured', source_item['reason'])
 
       related_docs = direct_wiki_docs(source, docs_by_title)
+      related_docs.concat(local_link_docs(source, docs_by_url))
       related_docs.concat(tag_matched_concepts(source, all_docs, related_docs))
+      related_docs.concat(tag_matched_notes(source, all_docs, related_docs))
 
       related_docs.uniq { |doc| normalize_url(doc.url) }.first(7).each do |target_doc|
         next if normalize_url(target_doc.url) == normalize_url(source.url)
@@ -204,6 +206,35 @@ module HomeRecommendations
 
     def direct_wiki_docs(source, docs_by_title)
       wiki_targets(source.content).filter_map { |target| docs_by_title[target] }
+    end
+
+    def local_link_docs(source, docs_by_url)
+      source.content
+            .to_s
+            .scan(/\[[^\]]+\]\((\/[^)#?]+)\)/)
+            .flatten
+            .map { |url| normalize_url(url) }
+            .uniq
+            .filter_map { |url| docs_by_url[url] }
+    end
+
+    def tag_matched_notes(source, all_docs, already)
+      source_tags = Array(source.data['tags']).map { |tag| tag.to_s.downcase }
+      source_category = category_for(source)
+      skip_urls = already.map { |doc| normalize_url(doc.url) } << normalize_url(source.url)
+
+      all_docs
+        .reject { |doc| skip_urls.include?(normalize_url(doc.url)) }
+        .reject { |doc| concept_note?(doc) }
+        .select { |doc| category_for(doc) == source_category }
+        .map do |doc|
+          tags = Array(doc.data['tags']).map { |tag| tag.to_s.downcase }
+          tag_hits = (source_tags & tags).size
+          [tag_hits, doc]
+        end
+        .select { |score, _doc| score.positive? }
+        .sort_by { |score, doc| [-score, doc.data['title'].to_s] }
+        .map(&:last)
     end
 
     def tag_matched_concepts(source, all_docs, already)
