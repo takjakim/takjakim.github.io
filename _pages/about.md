@@ -14,7 +14,7 @@ permalink: /about
 
         <div class="profile-info">
           <div class="profile-eyebrow">Higher Education Strategy · Curriculum Design</div>
-          <h1 class="profile-name">생각을 기록하고, 고등교육 전략으로 연결하는 개인 지식 베이스.</h1>
+          <h1 class="profile-name">생각을 기록하고, 전략 기획으로 연결하는 개인 지식 베이스.</h1>
           <p class="profile-tagline">
             흩어진 생각과 자료를 연결해 대학·고등교육기관의 전략, 교육과정, 학습경험, 성과체계를 읽고 기록합니다.
           </p>
