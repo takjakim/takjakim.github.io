@@ -1974,14 +1974,23 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 }
 
 .note-content {
-  font-size: 0.95rem;
-  line-height: 1.75;
+  font-size: clamp(1rem, 0.96rem + 0.2vw, 1.06rem);
+  line-height: 1.72;
   min-width: 0;
   max-width: 100%;
 
   /* Korean readability: keep words/eojjeol intact; only break long unspaced strings when needed. */
   overflow-wrap: break-word;
   word-break: keep-all;
+
+  h2,
+  h3,
+  p,
+  ul,
+  ol,
+  blockquote {
+    max-width: 72ch;
+  }
 
   h2 {
     font-size: 1.32rem;
@@ -2079,8 +2088,8 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 
   @media (max-width: 640px) {
-    font-size: 0.91rem;
-    line-height: 1.72;
+    font-size: 1rem;
+    line-height: 1.7;
 
     h2 {
       font-size: 1.18rem;
