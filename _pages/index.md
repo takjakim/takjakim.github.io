@@ -151,6 +151,55 @@ permalink: /
         </article>
       {% endfor %}
     </div>
+
+    {% assign recommendation_graph = site.data.home_recommendations_graph %}
+    {% if recommendation_graph and recommendation_graph.nodes and recommendation_graph.nodes.size > 1 %}
+      <div class="home-mini-graph-card" aria-label="추천 노트 연결 그래프">
+        <div class="home-mini-graph-copy">
+          <span class="home-mini-graph-kicker">PKM Map</span>
+          <h3>추천 노트 주변 연결</h3>
+          <p>지금 추천된 글과 그 글이 불러오는 개념 노트를 함께 보여주는 작은 지식 지도.</p>
+          <a href="{{ site.baseurl }}/graph/" class="home-mini-graph-link">전체 그래프 보기 →</a>
+        </div>
+        <div class="home-mini-graph-canvas" aria-hidden="false">
+          <svg viewBox="0 0 520 280" role="img" aria-label="추천 노트와 관련 개념의 미니 그래프">
+            <defs>
+              <linearGradient id="home-mini-graph-line" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0%" stop-color="#ec4899" stop-opacity="0.45" />
+                <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.35" />
+              </linearGradient>
+              <filter id="home-mini-graph-glow" x="-30%" y="-30%" width="160%" height="160%">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            {% for edge in recommendation_graph.edges %}
+              {% assign sx = nil %}{% assign sy = nil %}{% assign tx = nil %}{% assign ty = nil %}
+              {% for node in recommendation_graph.nodes %}
+                {% if node.id == edge.source %}{% assign sx = node.x %}{% assign sy = node.y %}{% endif %}
+                {% if node.id == edge.target %}{% assign tx = node.x %}{% assign ty = node.y %}{% endif %}
+              {% endfor %}
+              {% if sx and sy and tx and ty %}
+                <line class="home-mini-graph-edge" x1="{{ sx }}" y1="{{ sy }}" x2="{{ tx }}" y2="{{ ty }}" />
+              {% endif %}
+            {% endfor %}
+            {% for node in recommendation_graph.nodes %}
+              {% assign node_radius = 11 %}
+              {% if node.kind == 'featured' %}{% assign node_radius = 15 %}{% endif %}
+              <a href="{{ site.baseurl }}{{ node.url }}" class="home-mini-graph-node-link" aria-label="{{ node.title | escape }}">
+                <circle class="home-mini-graph-node home-mini-graph-node--{{ node.kind }} home-mini-graph-node--{{ node.category }}" cx="{{ node.x }}" cy="{{ node.y }}" r="{{ node_radius }}" />
+                <text class="home-mini-graph-label {% if node.kind == 'featured' %}home-mini-graph-label--featured{% endif %}" x="{{ node.x }}" y="{{ node.y | plus: node_radius | plus: 14 }}">
+                  {{ node.title | truncate: 16 | escape }}
+                </text>
+              </a>
+            {% endfor %}
+          </svg>
+        </div>
+      </div>
+    {% endif %}
   </section>
   {% endif %}
 
