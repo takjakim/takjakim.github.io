@@ -17,7 +17,7 @@ permalink: /
         <span class="gradient-text">Digital</span>
         <span class="gradient-text-alt">Garden</span>
       </h1>
-      <p class="hero-desc">대학컨설팅 · 교육과정 개발 · 고등교육 전략과 Research · 개발 · AI · Running 기록을 연결하는 공간</p>
+      <p class="hero-desc">개인의 생각과 고등교육 전략 기획을 연결하는 공간</p>
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-number">{% assign note_count = site.notes | size %}{{ note_count }}</span>
