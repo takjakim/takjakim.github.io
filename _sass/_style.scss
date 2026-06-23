@@ -1979,9 +1979,9 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   min-width: 0;
   max-width: 100%;
 
-  /* Mobile line-wrapping: prevent long URLs/words from blowing out layout */
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  /* Korean readability: keep words/eojjeol intact; only break long unspaced strings when needed. */
+  overflow-wrap: break-word;
+  word-break: keep-all;
 
   h2 {
     font-size: 1.32rem;
@@ -2002,8 +2002,8 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 
   a {
-    overflow-wrap: anywhere;
-    word-break: break-word;
+    overflow-wrap: break-word;
+    word-break: keep-all;
   }
 
   ul, ol {
@@ -2112,6 +2112,8 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     th, td {
       padding: 0.46rem 0.58rem;
       white-space: normal;
+      word-break: keep-all;
+      overflow-wrap: break-word;
       min-width: 7.5rem;
     }
   }
