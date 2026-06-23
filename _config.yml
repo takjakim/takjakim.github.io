@@ -1,5 +1,5 @@
 title:               Digital Garden
-description:         "대학컨설팅·대학리뷰·고등교육 전략과 Research, Theory, 개발, AI 기록을 연결하는 개인 지식 베이스"
+description:         "대학컨설팅·교육과정 개발·고등교육 전략과 Research, Theory, 개발, AI 기록을 연결하는 개인 지식 베이스"
 url:                 "https://takjakim.kr"
 author:              "takjakim"
 lang:                "ko"
@@ -77,5 +77,5 @@ categories:
     color: "#F59E0B"
   education:
     name: "교육·대학전략"
-    description: "대학 전략·정책사업·교육과정·지역산업 연계 분석"
+    description: "대학 전략·정책사업·교육과정 개발·지역산업 연계 분석"
     color: "#EC4899"

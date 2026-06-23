@@ -17,7 +17,7 @@ permalink: /
         <span class="gradient-text">Digital</span>
         <span class="gradient-text-alt">Garden</span>
       </h1>
-      <p class="hero-desc">대학컨설팅 · 대학리뷰 · 고등교육 전략과 Research · 개발 · AI · Running 기록을 연결하는 공간</p>
+      <p class="hero-desc">대학컨설팅 · 교육과정 개발 · 고등교육 전략과 Research · 개발 · AI · Running 기록을 연결하는 공간</p>
       <div class="hero-stats">
         <div class="stat-item">
           <span class="stat-number">{% assign note_count = site.notes | size %}{{ note_count }}</span>
@@ -70,7 +70,7 @@ permalink: /
       <a class="topic-card topic-card--education" href="{{ site.baseurl }}/college-consulting/">
         <span class="topic-kicker">Education</span>
         <strong>대학컨설팅</strong>
-        <span>대학 전략, 정책사업, 교육과정 분석</span>
+        <span>대학 전략, 정책사업, 교육과정 개발</span>
       </a>
     </div>
 
