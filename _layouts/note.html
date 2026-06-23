@@ -48,25 +48,29 @@ layout: default
         <nav class="note-toc" id="note-toc" aria-label="Table of contents"></nav>
       </div>
 
-      <div class="sidebar-section">
-        <h3 class="sidebar-title">Backlinks</h3>
-        {% if page.backlinks.size > 0 %}
-          <div class="backlinks-list">
-          {% for backlink in page.backlinks %}
-            <a href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}" class="backlink-item">
-              <span class="backlink-title">{{ backlink.title }}</span>
-              <span class="backlink-excerpt">{{ backlink.excerpt | strip_html | truncatewords: 15 }}</span>
-            </a>
-          {% endfor %}
-          </div>
-        {% else %}
-          <p class="no-backlinks">No backlinks yet</p>
-        {% endif %}
-      </div>
+      <div class="sidebar-connections" aria-label="Related note connections">
+        <h3 class="sidebar-title sidebar-connections-title">Connections</h3>
 
-      <div class="sidebar-section sidebar-graph">
-        <h3 class="sidebar-title">Related Notes</h3>
-        <div id="sidebar-graph-wrapper" data-category="{{ current_category }}"></div>
+        <div class="sidebar-section sidebar-backlinks">
+          <h4 class="sidebar-subtitle">Backlinks</h4>
+          {% if page.backlinks.size > 0 %}
+            <div class="backlinks-list">
+            {% for backlink in page.backlinks %}
+              <a href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}" class="backlink-item">
+                <span class="backlink-title">{{ backlink.title }}</span>
+                <span class="backlink-excerpt">{{ backlink.excerpt | strip_html | truncatewords: 15 }}</span>
+              </a>
+            {% endfor %}
+            </div>
+          {% else %}
+            <p class="no-backlinks">No backlinks yet</p>
+          {% endif %}
+        </div>
+
+        <div class="sidebar-section sidebar-graph">
+          <h4 class="sidebar-subtitle">Related Notes</h4>
+          <div id="sidebar-graph-wrapper" data-category="{{ current_category }}"></div>
+        </div>
       </div>
     </aside>
   </div>
