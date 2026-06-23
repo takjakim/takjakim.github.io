@@ -955,6 +955,61 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .topic-card--running .topic-kicker { color: #16A34A; }
 .topic-card--education .topic-kicker { color: #DB2777; }
 
+.consulting-contact-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.4rem 0 2rem;
+  padding: 1.05rem 1.1rem;
+  border: 1px solid rgba(251, 191, 36, 0.45);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 247, 190, 0.82), rgba(255, 255, 255, 0.9));
+  box-shadow: 0 10px 28px rgba(146, 64, 14, 0.08);
+
+  strong {
+    display: block;
+    color: #713f12;
+    font-size: 0.98rem;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+
+  a {
+    flex: 0 0 auto;
+    padding: 0.72rem 1rem;
+    border-radius: 999px;
+    background: #fee500;
+    color: #191919;
+    font-size: 0.88rem;
+    font-weight: 800;
+    border-bottom: none;
+    box-shadow: 0 8px 18px rgba(120, 53, 15, 0.14);
+
+    &:after { content: '' !important; }
+
+    &:hover {
+      background: #f7d900 !important;
+      transform: translateY(-1px);
+    }
+  }
+
+  @media (max-width: 640px) {
+    align-items: stretch;
+    flex-direction: column;
+
+    a {
+      text-align: center;
+    }
+  }
+}
+
 .filter-pills {
   display: flex;
   gap: 0.5rem;

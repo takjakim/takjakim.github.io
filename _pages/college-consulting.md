@@ -11,6 +11,14 @@ description: "경영컨설팅과 교육공학 관점에서 대학의 전략, 정
 
 이 블로그의 대학컨설팅 관점은 대학을 하나의 교육기관이자 지역·산업·정책과 연결된 조직으로 본다. 대학의 특성화 전략, 정부 재정지원사업, 교육과정 개발·개편, 학과 구조, 산학협력, 지역정주, 성인학습자·평생교육, 글로벌 취업 같은 요소를 함께 읽는다.
 
+<div class="consulting-contact-card">
+  <div>
+    <strong>대학컨설팅 문의</strong>
+    <p>대학 전략, 교육과정 개발, 정책사업 기획 관련 논의가 필요하면 카카오톡 오픈채팅으로 편하게 남겨주세요.</p>
+  </div>
+  <a href="https://open.kakao.com/o/s1FJhUAi" target="_blank" rel="noopener noreferrer">카카오톡 문의하기</a>
+</div>
+
 ## 대학컨설팅에서 중요하게 보는 것
 
 | 영역 | 보는 기준 |
@@ -86,3 +94,7 @@ description: "경영컨설팅과 교육공학 관점에서 대학의 전략, 정
 - [[모듈형 교육과정]]
 - [[산학협력]]
 - [[평생교육]]
+
+---
+
+대학컨설팅 문의는 [카카오톡 오픈채팅](https://open.kakao.com/o/s1FJhUAi){:target="_blank" rel="noopener noreferrer"}으로 받을 수 있습니다.
