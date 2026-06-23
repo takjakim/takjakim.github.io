@@ -41,7 +41,7 @@ permalink: /about
   <section class="about-section about-section--compact">
     <div class="section-header-about section-header-about--left">
       <span class="section-kicker">Focus</span>
-      <h2>What I Work On</h2>
+      <h2>하는 일</h2>
       <p>대학을 홍보 문구가 아니라 전략, 조직, 교육과정, 지역·산업 연결의 관점에서 봅니다.</p>
     </div>
 
@@ -81,7 +81,7 @@ permalink: /about
   <section class="about-section about-section--compact">
     <div class="section-header-about section-header-about--left">
       <span class="section-kicker">Research</span>
-      <h2>Research & Publications</h2>
+      <h2>연구와 출판</h2>
       <p>교육공학, 조직학습, 학습기술의 효과를 중심으로 연구와 실무 사이의 연결점을 봅니다.</p>
     </div>
 
