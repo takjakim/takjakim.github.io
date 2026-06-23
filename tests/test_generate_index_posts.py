@@ -13,6 +13,31 @@ import scripts.generate_index_posts as gip
 
 
 class GenerateIndexPostsTests(unittest.TestCase):
+    def test_yahoo_chart_closes_keeps_intraday_timestamp_on_end_date(self):
+        class FakeResponse:
+            def raise_for_status(self):
+                return None
+
+            def json(self):
+                return {
+                    "chart": {
+                        "result": [{
+                            "timestamp": [1782135000],  # 2026-06-22 13:30:00 UTC
+                            "indicators": {"quote": [{"close": [7472.79]}]},
+                        }]
+                    }
+                }
+
+        original_get = gip.requests.get
+        try:
+            gip.requests.get = lambda *args, **kwargs: FakeResponse()
+            closes = gip._yahoo_chart_closes("^GSPC", date(2026, 6, 22), date(2026, 6, 22))
+
+            self.assertIn(pd.Timestamp("2026-06-22"), closes.index)
+            self.assertEqual(float(closes.loc[pd.Timestamp("2026-06-22")]), 7472.79)
+        finally:
+            gip.requests.get = original_get
+
     def test_download_closes_normalizes_intraday_timestamps_to_date(self):
         original = gip._yahoo_chart_closes
         try:

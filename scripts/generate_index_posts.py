@@ -107,7 +107,11 @@ def _yahoo_chart_closes(ticker: str, start: date, end: date) -> pd.Series:
     for t, c in zip(ts, closes):
         if c is None:
             continue
-        d = pd.to_datetime(int(t), unit="s").tz_localize(None)
+        # Yahoo daily timestamps are often intraday UTC values (e.g. US
+        # indices at 13:30 UTC). Normalize before date filtering so the
+        # requested end date is not accidentally excluded by a midnight
+        # comparison.
+        d = pd.to_datetime(int(t), unit="s").tz_localize(None).normalize()
         rows.append((d, float(c)))
 
     if not rows:
