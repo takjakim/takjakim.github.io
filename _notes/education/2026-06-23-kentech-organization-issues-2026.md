@@ -13,7 +13,7 @@ image: /assets/images/education/kentech-organization-issues-2026-og.jpg
 
 <figure class="note-cover-figure">
   <img src="/assets/images/education/kentech-organization-issues-2026-og.jpg" alt="한국에너지공과대학교 조직 이슈 SEO 커버 이미지">
-  <figcaption>이미지: 한국에너지공과대학교 공식 홈페이지에 게시된 캠퍼스 이미지 기반 제작.[^image]</figcaption>
+  <figcaption>이미지: <a href="https://www.kentech.ac.kr/main.do">한국에너지공과대학교 공식 홈페이지</a> 게시 캠퍼스 이미지 기반 제작.</figcaption>
 </figure>
 
 ## 오늘의 핵심
@@ -177,7 +177,6 @@ KENTECH는 2025년 에너지정책연구소를 출범시키며 탄소중립, 에
 
 ## 확인할 출처
 
-[^image]: 한국에너지공과대학교 공식 홈페이지 메인 이미지. <https://www.kentech.ac.kr/main.do>
 [^yna-president]: 연합뉴스, 「한국에너지공대 총장 선임안 부결…후보 재공모 가닥」, 2026.02.06. <https://www.yna.co.kr/view/AKR20260206106300054>
 [^news1-president]: 뉴스1, 「한국에너지공대 총장 선임 건 부결…이사회 \"재공모하기로\"」, 2026.02.06. <https://www.news1.kr/local/gwangju-jeonnam/6064637>
 [^org-chart]: 한국에너지공과대학교, Organization Chart. <https://www.kentech.ac.kr/submenu.do?menuurl=VoWm06Qnx%2bL4QnZhKMGPhA%3d%3d&>
