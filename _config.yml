@@ -18,7 +18,7 @@ open_external_links_in_new_tab: true
 
 # Google AdSense. Fill publisher_id with ca-pub-XXXXXXXXXXXX after site approval/setup.
 adsense:
-  publisher_id: ""
+  publisher_id: "ca-pub-2264730047882218"
 
 # Set to `true` to replace tweet URLs with Twitter embeds.
 # Note that doing so will negatively the reader's privacy
