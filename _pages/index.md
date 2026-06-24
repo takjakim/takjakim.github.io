@@ -147,12 +147,11 @@ permalink: /
             {% else %}
               <p class="glass-excerpt">{{ note.excerpt | strip_html | truncate: 110 }}</p>
             {% endif %}
-            <div class="glass-footer"><span class="read-more">읽기 →</span></div>
             {% if forloop.first and recommendation_graph and recommendation_graph.nodes and recommendation_graph.nodes.size > 1 %}
               <div class="home-feature-graph home-feature-graph--embedded" aria-label="이 추천 노트의 주변 연결">
                 <div class="home-feature-graph-head">
-                  <span>관련 노드</span>
-                  <strong>이 글과 직접 연결된 노트</strong>
+                  <span>Graph View</span>
+                  <strong>이 글 주변의 연결된 노트</strong>
                 </div>
                 <svg viewBox="0 0 520 156" role="img" aria-label="가장 큰 추천 노트와 주변 노트의 미니 그래프">
                   <defs>
@@ -191,6 +190,7 @@ permalink: /
                 </svg>
               </div>
             {% endif %}
+            <div class="glass-footer"><span class="read-more">읽기 →</span></div>
           </a>
         </article>
       {% endfor %}

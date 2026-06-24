@@ -1455,23 +1455,39 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 }
 
 .home-feature-graph {
-  margin-top: 0.85rem;
-  padding: 0.9rem 1rem 0.35rem;
-  border: 1px solid rgba(226, 232, 240, 0.78);
-  border-radius: 18px;
+  position: relative;
+  margin: 1rem 0 0.9rem;
+  padding: 0.8rem 0.9rem 0.2rem;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 16px;
   background:
-    linear-gradient(rgba(148, 163, 184, 0.055) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(148, 163, 184, 0.055) 1px, transparent 1px),
-    rgba(255, 255, 255, 0.58);
-  background-size: 26px 26px;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.82);
+    radial-gradient(circle at 16% 24%, rgba(236, 72, 153, 0.08), transparent 28%),
+    radial-gradient(circle at 84% 70%, rgba(59, 130, 246, 0.08), transparent 30%),
+    linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
+    rgba(255, 255, 255, 0.66);
+  background-size: auto, auto, 24px 24px, 24px 24px, auto;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.9),
+    0 8px 22px rgba(15, 23, 42, 0.045);
   overflow: hidden;
 
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.35), transparent 42%);
+  }
+
   svg {
+    position: relative;
+    z-index: 1;
     display: block;
     width: 100%;
     height: auto;
-    margin-top: 0.15rem;
+    margin-top: 0.2rem;
   }
 }
 
@@ -1531,6 +1547,37 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   stroke: url(#home-mini-graph-line);
   stroke-width: 1.35;
   stroke-linecap: round;
+  stroke-dasharray: 5 8;
+  animation: homeGraphFlow 9s linear infinite;
+}
+
+.home-mini-graph-node-group {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: homeGraphFloat 7.5s ease-in-out infinite;
+
+  &:nth-of-type(2n) { animation-duration: 8.8s; animation-delay: -1.2s; }
+  &:nth-of-type(3n) { animation-duration: 10.2s; animation-delay: -2.4s; }
+  &:nth-of-type(4n) { animation-duration: 9.4s; animation-delay: -3.1s; }
+}
+
+@keyframes homeGraphFlow {
+  from { stroke-dashoffset: 0; opacity: 0.58; }
+  50% { opacity: 0.9; }
+  to { stroke-dashoffset: -26; opacity: 0.58; }
+}
+
+@keyframes homeGraphFloat {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  35% { transform: translate3d(2px, -3px, 0); }
+  70% { transform: translate3d(-2px, 2px, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-mini-graph-edge,
+  .home-mini-graph-node-group {
+    animation: none;
+  }
 }
 
 .home-mini-graph-node {
