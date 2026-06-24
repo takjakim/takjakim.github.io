@@ -63,7 +63,7 @@ image: /assets/images/education/suncheon-jeil-ai-digital-twin-2026-campus-og.jpg
 
 <figure class="note-inline-figure">
   <img src="/assets/images/education/suncheon-jeil-ai-digital-twin-2026-strategy.svg" alt="순천제일대학교 AI와 디지털 트윈 전략을 교육과정, 실습, 하이플렉스, 지역산업으로 연결한 도식">
-  <figcaption>도식: 공개 출처를 바탕으로 재현의 대학컨설팅 관점에서 재구성한 전략 해석.</figcaption>
+  <figcaption>도식: 공개 출처를 바탕으로 필자의 대학컨설팅 관점에서 재구성한 전략 해석.</figcaption>
 </figure>
 
 ## 정책·교육과정·지역연계 포인트
@@ -115,7 +115,6 @@ image: /assets/images/education/suncheon-jeil-ai-digital-twin-2026-campus-og.jpg
 
 ## 확인한 출처
 
-- [재현 교육·대학 뉴스 시트: 순천제일대학교 검색 결과](https://docs.google.com/spreadsheets/d/1hJlD6X9qybQWzjg0wSgQifxOWxdc_uY0_1oY_SY9izI/) — `대학명`, `제목`, `내용`에서 순천제일대학교·순천제일대학 항목 확인.
 - [한국대학신문, 「[ICK 혁신 대학을 가다/순천제일대학교] ‘AI 리터러시 전면 도입·디지털 트윈 실습실’로 미래 직업인 양성」](https://news.unn.net/news/articleView.html?idxno=584124)
 - [순천제일대학교 뉴스레터, 「[LINC 3.0 우수대학/순천제일대학교] ‘디지털 트윈 실감형 체험교육’으로 창의적 실무 인재 양성」](https://www.suncheon.ac.kr/news/0001/0001/?boardId=bbs_0000000000000366&mode=view&cntId=382&category=&pageIdx=&searchKeyword=&searchCondition=)
 - [순천제일대학교 공식 캠퍼스투어(VR)](https://www.suncheon.ac.kr/kor/0001/0010/0006)
