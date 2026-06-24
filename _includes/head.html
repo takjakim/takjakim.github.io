@@ -92,6 +92,13 @@
     gtag('config', 'G-LBT9HW1EC7');
   </script>
 
+  {% assign adsense_publisher_id = site.adsense.publisher_id | default: '' | strip %}
+  {% if adsense_publisher_id != '' %}
+  <!-- Google AdSense -->
+  <meta name="google-adsense-account" content="{{ adsense_publisher_id }}">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ adsense_publisher_id }}" crossorigin="anonymous"></script>
+  {% endif %}
+
   <script>
     // for small page-level JS that needs baseurl
     document.documentElement.setAttribute('data-baseurl', '{{ site.baseurl }}');
