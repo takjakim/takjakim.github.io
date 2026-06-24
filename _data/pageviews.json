@@ -1,19 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-06-23T04:17:12.351941+00:00",
+    "generated_at": "2026-06-24T04:21:03.749681+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 163
+      "views": 209
     },
     "/about/": {
-      "views": 1
+      "views": 12
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 2
+      "views": 3
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 3
@@ -40,9 +40,15 @@
       "views": 1
     },
     "/ai/session7-sustainability-technology-capability/": {
-      "views": 5
+      "views": 6
     },
     "/big-tech/": {
+      "views": 1
+    },
+    "/college-consulting/": {
+      "views": 2
+    },
+    "/daegu-haany-university-kmedi-2026/": {
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
@@ -70,10 +76,25 @@
       "views": 1
     },
     "/education/2026-06-23-adiga-check-routine/": {
-      "views": 2
+      "views": 3
+    },
+    "/education/changwon-university-issues-2026/": {
+      "views": 7
+    },
+    "/education/keimyung-culture-college-rise-healthcare-2026/": {
+      "views": 6
+    },
+    "/education/kentech-organization-issues-2026/": {
+      "views": 11
+    },
+    "/education/kentech/": {
+      "views": 1
     },
     "/graph/": {
-      "views": 11
+      "views": 12
+    },
+    "/industry-academic-cooperation/": {
+      "views": 1
     },
     "/investing/2026-02-12-global/": {
       "views": 1
@@ -111,14 +132,29 @@
     "/investing/2026-06-16-us/": {
       "views": 1
     },
+    "/investing/2026-06-19-korea/": {
+      "views": 2
+    },
+    "/investing/2026-06-22-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-22-us/": {
+      "views": 1
+    },
     "/investing/csi300/": {
       "views": 1
     },
     "/investing/djia/": {
       "views": 1
     },
+    "/macos/pip_install/": {
+      "views": 1
+    },
     "/macos/tidal-dl/": {
       "views": 3
+    },
+    "/rise/": {
+      "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
@@ -142,9 +178,6 @@
       "views": 1
     },
     "/tags/hongkong/": {
-      "views": 1
-    },
-    "/tags/hsi/": {
       "views": 1
     },
     "/tags/index/": {
