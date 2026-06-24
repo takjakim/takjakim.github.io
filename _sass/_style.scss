@@ -2764,6 +2764,8 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   color: var(--cc-navy);
   margin: -0.5rem auto 0;
   max-width: 1120px;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 
   a {
     border-bottom: none;
@@ -2779,6 +2781,52 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   font-weight: 800;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.cc-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 1rem;
+  padding: 0.7rem 0.85rem;
+  border: 1px solid rgba(229, 237, 245, 0.95);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.74);
+  box-shadow: rgba(23,23,23,0.06) 0 16px 28px -24px;
+  backdrop-filter: blur(12px);
+}
+
+.cc-brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.2rem;
+  color: var(--cc-navy);
+  font-size: 0.98rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+
+  span { color: #f87171; }
+  strong { color: #9ca3af; }
+}
+
+.cc-topbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+
+  a {
+    padding: 0.38rem 0.6rem;
+    border-radius: 999px;
+    color: #475569;
+    font-size: 0.78rem;
+    font-weight: 700;
+
+    &:hover {
+      color: var(--cc-purple) !important;
+      background: rgba(83, 58, 253, 0.06) !important;
+    }
+  }
 }
 
 .cc-hero {
@@ -2838,6 +2886,12 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   overflow-wrap: break-word;
 
   strong { color: var(--cc-navy); }
+}
+
+.cc-lead-secondary {
+  margin-top: 0.7rem;
+  color: #64748d;
+  font-size: clamp(0.96rem, 1.6vw, 1.08rem);
 }
 
 .cc-hero-actions {
@@ -3306,6 +3360,16 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 @media (max-width: 640px) {
   .college-consulting-page {
     margin-top: 0;
+  }
+
+  .cc-topbar {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+
+  .cc-topbar-links {
+    justify-content: space-between;
   }
 
   .cc-hero {
