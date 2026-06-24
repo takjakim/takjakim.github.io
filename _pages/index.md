@@ -111,6 +111,7 @@ permalink: /
       </div>
     </div>
 
+    {% assign recommendation_graph = site.data.home_recommendations_graph %}
     <div class="featured-grid">
       {% for note in featured_notes limit: 3 %}
         {% assign note_category = note.category %}
@@ -147,56 +148,53 @@ permalink: /
               <p class="glass-excerpt">{{ note.excerpt | strip_html | truncate: 110 }}</p>
             {% endif %}
             <div class="glass-footer"><span class="read-more">읽기 →</span></div>
+            {% if forloop.first and recommendation_graph and recommendation_graph.nodes and recommendation_graph.nodes.size > 1 %}
+              <div class="home-feature-graph home-feature-graph--embedded" aria-label="이 추천 노트의 주변 연결">
+                <div class="home-feature-graph-head">
+                  <span>관련 노드</span>
+                  <strong>이 글과 직접 연결된 노트</strong>
+                </div>
+                <svg viewBox="0 0 520 156" role="img" aria-label="가장 큰 추천 노트와 주변 노트의 미니 그래프">
+                  <defs>
+                    <linearGradient id="home-mini-graph-line" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.42" />
+                      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.32" />
+                    </linearGradient>
+                    <filter id="home-mini-graph-glow" x="-30%" y="-30%" width="160%" height="160%">
+                      <feGaussianBlur stdDeviation="3" result="coloredBlur" />
+                      <feMerge>
+                        <feMergeNode in="coloredBlur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  {% for edge in recommendation_graph.edges %}
+                    {% assign sx = nil %}{% assign sy = nil %}{% assign tx = nil %}{% assign ty = nil %}
+                    {% for graph_node in recommendation_graph.nodes %}
+                      {% if graph_node.id == edge.source %}{% assign sx = graph_node.x %}{% assign sy = graph_node.y %}{% endif %}
+                      {% if graph_node.id == edge.target %}{% assign tx = graph_node.x %}{% assign ty = graph_node.y %}{% endif %}
+                    {% endfor %}
+                    {% if sx and sy and tx and ty %}
+                      <line class="home-mini-graph-edge" x1="{{ sx }}" y1="{{ sy }}" x2="{{ tx }}" y2="{{ ty }}" />
+                    {% endif %}
+                  {% endfor %}
+                  {% for graph_node in recommendation_graph.nodes %}
+                    {% assign node_radius = 9 %}
+                    {% if graph_node.kind == 'featured' %}{% assign node_radius = 14 %}{% endif %}
+                    <g class="home-mini-graph-node-group" aria-label="{{ graph_node.title | escape }}">
+                      <circle class="home-mini-graph-node home-mini-graph-node--{{ graph_node.kind }} home-mini-graph-node--{{ graph_node.category }}" cx="{{ graph_node.x }}" cy="{{ graph_node.y }}" r="{{ node_radius }}" />
+                      <text class="home-mini-graph-label {% if graph_node.kind == 'featured' %}home-mini-graph-label--featured{% endif %}" x="{{ graph_node.x }}" y="{{ graph_node.y | plus: node_radius | plus: 13 }}">
+                        {{ graph_node.title | truncate: 15 | escape }}
+                      </text>
+                    </g>
+                  {% endfor %}
+                </svg>
+              </div>
+            {% endif %}
           </a>
         </article>
       {% endfor %}
     </div>
-
-    {% assign recommendation_graph = site.data.home_recommendations_graph %}
-    {% if recommendation_graph and recommendation_graph.nodes and recommendation_graph.nodes.size > 1 %}
-      <div class="home-feature-graph" aria-label="가장 큰 추천 노트의 주변 연결">
-        <div class="home-feature-graph-head">
-          <span>이 글의 연결</span>
-          <strong>{{ recommendation_graph.center_title | truncate: 34 }}</strong>
-          <a href="{{ site.baseurl }}/graph/">전체 그래프 →</a>
-        </div>
-        <svg viewBox="0 0 520 156" role="img" aria-label="가장 큰 추천 노트와 주변 노트의 미니 그래프">
-          <defs>
-            <linearGradient id="home-mini-graph-line" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0%" stop-color="#ec4899" stop-opacity="0.42" />
-              <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.32" />
-            </linearGradient>
-            <filter id="home-mini-graph-glow" x="-30%" y="-30%" width="160%" height="160%">
-              <feGaussianBlur stdDeviation="3" result="coloredBlur" />
-              <feMerge>
-                <feMergeNode in="coloredBlur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs>
-          {% for edge in recommendation_graph.edges %}
-            {% assign sx = nil %}{% assign sy = nil %}{% assign tx = nil %}{% assign ty = nil %}
-            {% for node in recommendation_graph.nodes %}
-              {% if node.id == edge.source %}{% assign sx = node.x %}{% assign sy = node.y %}{% endif %}
-              {% if node.id == edge.target %}{% assign tx = node.x %}{% assign ty = node.y %}{% endif %}
-            {% endfor %}
-            {% if sx and sy and tx and ty %}
-              <line class="home-mini-graph-edge" x1="{{ sx }}" y1="{{ sy }}" x2="{{ tx }}" y2="{{ ty }}" />
-            {% endif %}
-          {% endfor %}
-          {% for node in recommendation_graph.nodes %}
-            {% assign node_radius = 9 %}
-            {% if node.kind == 'featured' %}{% assign node_radius = 14 %}{% endif %}
-            <a href="{{ site.baseurl }}{{ node.url }}" class="home-mini-graph-node-link" aria-label="{{ node.title | escape }}">
-              <circle class="home-mini-graph-node home-mini-graph-node--{{ node.kind }} home-mini-graph-node--{{ node.category }}" cx="{{ node.x }}" cy="{{ node.y }}" r="{{ node_radius }}" />
-              <text class="home-mini-graph-label {% if node.kind == 'featured' %}home-mini-graph-label--featured{% endif %}" x="{{ node.x }}" y="{{ node.y | plus: node_radius | plus: 13 }}">
-                {{ node.title | truncate: 15 | escape }}
-              </text>
-            </a>
-          {% endfor %}
-        </svg>
-      </div>
-    {% endif %}
   </section>
   {% endif %}
 
