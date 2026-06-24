@@ -52,13 +52,27 @@ document.addEventListener("DOMContentLoaded", function() {
   if (typeof d3 === 'undefined') {
     const script = document.createElement('script');
     script.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js';
-    script.onload = initSidebarGraph;
+    script.onload = runWhenVisible;
     document.body.appendChild(script);
   } else {
+    runWhenVisible();
+  }
+
+  let graphInitialized = false;
+  function runWhenVisible() {
+    const disclosure = wrapper.closest('details');
+    if (disclosure && !disclosure.open) {
+      disclosure.addEventListener('toggle', () => {
+        if (disclosure.open && !graphInitialized) initSidebarGraph();
+      }, { once: false });
+      return;
+    }
     initSidebarGraph();
   }
 
   function initSidebarGraph() {
+    if (graphInitialized) return;
+    graphInitialized = true;
     const graphData = {% include notes_graph.json %};
 
     // Filter nodes by category

@@ -51,26 +51,32 @@ layout: default
       <div class="sidebar-connections" aria-label="Related note connections">
         <h3 class="sidebar-title sidebar-connections-title">Connections</h3>
 
-        <div class="sidebar-section sidebar-backlinks">
-          <h4 class="sidebar-subtitle">Backlinks</h4>
+        <details class="sidebar-section sidebar-disclosure sidebar-backlinks">
+          <summary class="sidebar-disclosure-summary">
+            <span class="sidebar-subtitle">Backlinks</span>
+            {% if page.backlinks.size > 0 %}
+              <span class="sidebar-count">{{ page.backlinks.size }}</span>
+            {% endif %}
+          </summary>
           {% if page.backlinks.size > 0 %}
             <div class="backlinks-list">
             {% for backlink in page.backlinks %}
               <a href="{{ site.baseurl }}{{ backlink.url }}{%- if site.use_html_extension -%}.html{%- endif -%}" class="backlink-item">
                 <span class="backlink-title">{{ backlink.title }}</span>
-                <span class="backlink-excerpt">{{ backlink.excerpt | strip_html | truncatewords: 15 }}</span>
               </a>
             {% endfor %}
             </div>
           {% else %}
             <p class="no-backlinks">No backlinks yet</p>
           {% endif %}
-        </div>
+        </details>
 
-        <div class="sidebar-section sidebar-graph">
-          <h4 class="sidebar-subtitle">Related Notes</h4>
+        <details class="sidebar-section sidebar-disclosure sidebar-graph">
+          <summary class="sidebar-disclosure-summary">
+            <span class="sidebar-subtitle">Related Notes</span>
+          </summary>
           <div id="sidebar-graph-wrapper" data-category="{{ current_category }}"></div>
-        </div>
+        </details>
       </div>
     </aside>
   </div>

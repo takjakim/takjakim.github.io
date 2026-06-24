@@ -2591,7 +2591,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 }
 
 .sidebar-subtitle {
-  margin: 0 0 0.75rem;
+  margin: 0;
   color: mix($color-text, white, 72%);
   font-size: 0.72rem;
   font-weight: 700;
@@ -2601,10 +2601,72 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
 .sidebar-backlinks,
 .sidebar-graph {
-  padding: 0.9rem;
+  padding: 0;
   background: rgba(250, 250, 250, 0.58);
   border: 1px solid rgba(0,0,0,0.045);
   border-radius: 14px;
+  overflow: hidden;
+}
+
+.sidebar-disclosure-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  min-height: 2.75rem;
+  padding: 0.85rem 0.95rem;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &::after {
+    content: '+';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.72);
+    color: $color-subtext;
+    font-size: 0.95rem;
+    line-height: 1;
+    transition: transform 0.18s ease, background 0.18s ease;
+  }
+
+  &:hover {
+    background: rgba(255,255,255,0.56);
+  }
+}
+
+.sidebar-disclosure[open] > .sidebar-disclosure-summary {
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+
+  &::after {
+    content: '−';
+    background: rgba(236, 72, 153, 0.12);
+    color: $color-primary;
+  }
+}
+
+.sidebar-count {
+  margin-left: auto;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: rgba(236, 72, 153, 0.1);
+  color: $color-primary;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.sidebar-disclosure[open] > .backlinks-list,
+.sidebar-disclosure[open] > .no-backlinks,
+.sidebar-disclosure[open] > #sidebar-graph-wrapper {
+  margin: 0.85rem;
 }
 
 .sidebar-graph {
@@ -2632,30 +2694,32 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .backlinks-list {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.45rem;
 }
 
 .backlink-item {
   display: block;
-  padding: 1rem;
-  background: #fafafa;
-  border-radius: 8px;
+  padding: 0.72rem 0.8rem;
+  background: rgba(255,255,255,0.72);
+  border-radius: 10px;
   border: none;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 
   &:after { content: '' !important; }
 
   &:hover {
     background: #f0f0f0 !important;
+    transform: translateX(2px);
   }
 }
 
 .backlink-title {
   display: block;
-  font-size: 0.9rem;
+  font-size: 0.86rem;
   font-weight: 600;
   color: $color-primary;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0;
+  line-height: 1.35;
 }
 
 .backlink-excerpt {
