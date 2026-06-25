@@ -4,8 +4,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   {% if page.id == "home" %}
-    {% assign seo_title = "대학컨설팅·고등교육 전략 | Digital Garden" %}
-    {% assign seo_description = "대학컨설팅, 고등교육 전략, 교육과정 개발, 정책사업과 개인의 생각을 연결하는 지식 기록." %}
+    {% assign seo_title = "Digital Garden | 대학컨설팅·AI·러닝 기록" %}
+    {% assign seo_description = "대학컨설팅과 고등교육 전략, AI·개발, 러닝과 일상의 생각을 함께 기록하고 기획으로 연결하는 개인 지식 베이스." %}
   {% elsif page.title %}
     {% capture seo_title %}{{ page.title }} | {{ site.title }}{% endcapture %}
     {% assign seo_description = page.description | default: page.excerpt | strip_html | strip_newlines | truncate: 160 %}
