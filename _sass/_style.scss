@@ -2531,20 +2531,30 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
 .note-toc-toggle {
   flex: 0 0 auto;
-  padding: 0.22rem 0.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.35rem;
+  height: 1.35rem;
+  padding: 0;
   border: 1px solid rgba(0,0,0,0.08);
   border-radius: 999px;
   background: rgba(255,255,255,0.72);
   color: $color-subtext;
-  font-size: 0.72rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1;
   cursor: pointer;
   transition: all 0.18s ease;
 
   &:hover {
     color: $color-primary;
-    background: rgba(99, 102, 241, 0.08);
+    background: rgba(236, 72, 153, 0.12);
+  }
+
+  &[aria-expanded="true"] {
+    color: $color-primary;
+    background: rgba(236, 72, 153, 0.12);
   }
 
   &[hidden] {

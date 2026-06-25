@@ -47,7 +47,7 @@ layout: default
       <div class="sidebar-section sidebar-toc" id="note-toc-section" hidden>
         <div class="sidebar-toc-header">
           <h3 class="sidebar-title">Contents</h3>
-          <button class="note-toc-toggle" id="note-toc-toggle" type="button" aria-expanded="false" hidden>펼치기</button>
+          <button class="note-toc-toggle" id="note-toc-toggle" type="button" aria-expanded="false" aria-label="목차 전체 펼치기" hidden>+</button>
         </div>
         <nav class="note-toc" id="note-toc" aria-label="Table of contents"></nav>
       </div>
@@ -75,7 +75,7 @@ layout: default
           {% endif %}
         </details>
 
-        <details class="sidebar-section sidebar-disclosure sidebar-graph">
+        <details class="sidebar-section sidebar-disclosure sidebar-graph" open>
           <summary class="sidebar-disclosure-summary">
             <span class="sidebar-subtitle">Related Notes</span>
           </summary>
@@ -184,7 +184,8 @@ layout: default
       toggle.addEventListener('click', () => {
         const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
         toggle.setAttribute('aria-expanded', String(!isExpanded));
-        toggle.textContent = isExpanded ? '펼치기' : '접기';
+        toggle.setAttribute('aria-label', isExpanded ? '목차 전체 펼치기' : '목차 접기');
+        toggle.textContent = isExpanded ? '+' : '−';
         toc.classList.toggle('is-collapsed', isExpanded);
       });
     }
