@@ -13,9 +13,9 @@ permalink: /
     </div>
     <div class="hero-content">
       <div class="hero-badge">Personal Knowledge Base</div>
-      <h1 class="hero-title">
-        <span class="gradient-text">Digital</span>
-        <span class="gradient-text-alt">Garden</span>
+      <h1 class="hero-title hero-title--seo">
+        <span class="gradient-text">대학컨설팅과 고등교육 전략을 기록하는</span>
+        <span class="gradient-text-alt">Digital Garden</span>
       </h1>
       <p class="hero-desc">생각을 기록하고, 기획으로 연결하는 공간</p>
       <div class="hero-stats">

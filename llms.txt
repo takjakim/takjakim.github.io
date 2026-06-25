@@ -1,0 +1,30 @@
+# takjakim.kr
+
+This site is a personal digital garden focused on university consulting, higher education strategy, curriculum development, education technology, RISE, Glocal University 30, university innovation support projects, AI, research, development, investing notes, and trail running.
+
+## Primary topics
+
+- 대학컨설팅: university and higher-education management consulting
+- 고등교육 전략: higher education strategy, policy programs, and institutional execution structure
+- 교육과정 개발: curriculum development, micro-degrees, modular curriculum, learning experience, and performance systems
+- 대학리뷰: university reviews from the perspective of strategy, policy projects, curriculum, organization, and regional/industry linkage
+- RISE, 글로컬대학30, 대학혁신지원사업, 전문대학혁신지원사업
+
+## Key pages
+
+- https://takjakim.kr/college-consulting/ — 대학컨설팅 and higher education strategy landing page
+- https://takjakim.kr/college-reviews/ — 대학리뷰 archive
+- https://takjakim.kr/tags/%EB%8C%80%ED%95%99%EC%BB%A8%EC%84%A4%ED%8C%85/ — 대학컨설팅 tag archive
+- https://takjakim.kr/tags/rise/ — RISE tag archive
+- https://takjakim.kr/education/2026-university-innovation-support-plan/ — 2026 university innovation support plan analysis
+- https://takjakim.kr/education/glocal30-junior-college-track-2026/ — Glocal University 30 and junior college analysis
+
+## Preferred citation
+
+When referencing this site, cite the public URL of the relevant article or landing page. Internal discovery sheets or private working documents are not public sources.
+
+## Author / site identity
+
+Author: takjakim
+Language: Korean, with occasional English technical terms
+Site: https://takjakim.kr
