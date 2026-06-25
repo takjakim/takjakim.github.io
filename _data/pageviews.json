@@ -1,22 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-06-24T04:21:03.749681+00:00",
+    "generated_at": "2026-06-25T04:20:23.938587+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 209
+      "views": 281
     },
     "/about/": {
       "views": 12
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 3
+      "views": 15
     },
     "/ai/ai-productivity-governance-keynote/": {
-      "views": 3
+      "views": 4
     },
     "/ai/heyling-day1/": {
       "views": 11
@@ -37,25 +37,34 @@
       "views": 1
     },
     "/ai/session6-energy-transition-esg-climate-finance/": {
-      "views": 1
+      "views": 2
     },
     "/ai/session7-sustainability-technology-capability/": {
       "views": 6
+    },
+    "/anchor-policy/": {
+      "views": 1
     },
     "/big-tech/": {
       "views": 1
     },
     "/college-consulting/": {
+      "views": 12
+    },
+    "/college-reviews/": {
       "views": 2
     },
-    "/daegu-haany-university-kmedi-2026/": {
+    "/consistency/": {
       "views": 1
     },
+    "/daegu-haany-university-kmedi-2026/": {
+      "views": 3
+    },
     "/dev/claude-code-team-dashboard/": {
-      "views": 2
+      "views": 3
     },
     "/dev/marp-editor/devlog-1/": {
-      "views": 2
+      "views": 3
     },
     "/dev/marp-editor/devlog-2/": {
       "views": 1
@@ -78,20 +87,32 @@
     "/education/2026-06-23-adiga-check-routine/": {
       "views": 3
     },
+    "/education/ai-dx-vocational-college-checklist/": {
+      "views": 6
+    },
     "/education/changwon-university-issues-2026/": {
       "views": 7
     },
     "/education/keimyung-culture-college-rise-healthcare-2026/": {
-      "views": 6
+      "views": 8
     },
     "/education/kentech-organization-issues-2026/": {
-      "views": 11
+      "views": 13
     },
     "/education/kentech/": {
       "views": 1
     },
+    "/education/sehan-university-rise-aviation-welfare-2026/": {
+      "views": 3
+    },
+    "/g7-gx-industry-axis/": {
+      "views": 1
+    },
     "/graph/": {
-      "views": 12
+      "views": 2
+    },
+    "/gyeonggi-rise/": {
+      "views": 1
     },
     "/industry-academic-cooperation/": {
       "views": 1
@@ -106,6 +127,9 @@
       "views": 1
     },
     "/investing/2026-04-03-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-16-korea/": {
       "views": 1
     },
     "/investing/2026-04-22-us/": {
@@ -153,6 +177,15 @@
     "/macos/tidal-dl/": {
       "views": 3
     },
+    "/performance-indexing/": {
+      "views": 1
+    },
+    "/regional-industry-academic-network/": {
+      "views": 1
+    },
+    "/regional-settlement/": {
+      "views": 1
+    },
     "/rise/": {
       "views": 1
     },
@@ -160,7 +193,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 3
+      "views": 4
     },
     "/tags/": {
       "views": 5
@@ -172,7 +205,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 3
+      "views": 4
     },
     "/tags/djia/": {
       "views": 1
@@ -190,7 +223,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 2
+      "views": 3
     },
     "/tags/productivity/": {
       "views": 1
@@ -199,6 +232,12 @@
       "views": 3
     },
     "/tags/us/": {
+      "views": 1
+    },
+    "/tags/고등교육컨설팅/": {
+      "views": 1
+    },
+    "/tags/대학컨설팅/": {
       "views": 1
     },
     "/tags/마크다운쇼/": {
@@ -211,6 +250,9 @@
       "views": 1
     },
     "/theory/perplexity-ppl/": {
+      "views": 1
+    },
+    "/theory/r4-obsidian/": {
       "views": 1
     },
     "/welcome-to-dev/": {
@@ -232,7 +274,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 24
+      "views": 26
     }
   }
 }
