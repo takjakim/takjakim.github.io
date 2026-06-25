@@ -1,10 +1,9 @@
 ---
 layout: page
 title: "Tags"
+description: "Digital Garden의 태그 아카이브. 주제별 노트와 글을 태그로 탐색합니다."
 permalink: /tags/
 ---
-
-# Tags
 
 {% comment %}GitHub Pages 환경에서 collections.notes.docs가 비어 보일 때가 있어서 site.notes를 우선 사용{% endcomment %}
 {% assign docs = site.notes %}
@@ -20,80 +19,156 @@ permalink: /tags/
 
 {% assign uniq = all | uniq %}
 
-{% if uniq.size == 0 %}
-- (태그 없음)
-{% else %}
+<div class="tags-archive-page">
+  <a href="{{ site.baseurl }}/" class="note-hero-banner tags-archive-home">
+    <span class="gradient-text">Digital</span>
+    <span class="gradient-text-alt">Garden</span>
+  </a>
 
-{% comment %}
-태그 빈도 기반 정렬 + 워드클라우드.
-Liquid에 hash/정렬이 불편해서 "00012::tag" 형태로 만들어 sort 후 reverse.
-{% endcomment %}
+  <header class="tags-archive-hero">
+    <div class="tags-archive-kicker">Archive Map</div>
+    <h1>태그로 읽는 생각의 지도</h1>
+    <p>흩어진 노트를 주제별로 묶어 보는 아카이브야. 검색으로 좁히거나, 자주 등장한 태그부터 따라가면 글의 흐름이 보인다.</p>
+  </header>
 
-{% assign pairs = "" | split: "" %}
-{% assign max_count = 1 %}
+  {% if uniq.size == 0 %}
+    <section class="tags-empty-state">
+      <p>아직 태그가 없어.</p>
+    </section>
+  {% else %}
+    {% comment %}
+    태그 빈도 기반 정렬. Liquid에 hash/정렬이 불편해서 "00012::tag" 형태로 만들어 sort 후 reverse.
+    {% endcomment %}
+    {% assign pairs = "" | split: "" %}
+    {% assign max_count = 1 %}
+    {% assign tagged_docs_count = 0 %}
 
-{% for t in uniq %}
-  {% assign count = 0 %}
-  {% for d in docs %}
-    {% if d.tags contains t %}
-      {% assign count = count | plus: 1 %}
-    {% endif %}
-  {% endfor %}
+    {% for d in docs %}
+      {% if d.tags and d.tags.size > 0 %}
+        {% assign tagged_docs_count = tagged_docs_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
 
-  {% if count > max_count %}
-    {% assign max_count = count %}
-  {% endif %}
+    {% for t in uniq %}
+      {% assign count = 0 %}
+      {% for d in docs %}
+        {% if d.tags contains t %}
+          {% assign count = count | plus: 1 %}
+        {% endif %}
+      {% endfor %}
 
-  {% capture padded %}00000{{ count }}{% endcapture %}
-  {% assign padded = padded | slice: -5, 5 %}
-  {% capture item %}{{ padded }}::{{ t }}{% endcapture %}
-  {% assign pairs = pairs | push: item %}
-{% endfor %}
-
-{% assign pairs = pairs | sort | reverse %}
-
-## 태그
-
-{% assign featured = pairs | first %}
-{% assign rest = pairs | shift %}
-
-{% assign fparts = featured | split: "::" %}
-{% assign fcount = fparts[0] | plus: 0 %}
-{% assign ftag = fparts[1] %}
-
-<div class="tag-cloud" aria-label="tag cloud">
-  <div class="tag-featured">
-    <a class="tag-pill featured" href="{{ site.baseurl }}/tags/{{ ftag | slugify }}/">
-      {{ ftag }}
-      <span class="tag-count">({{ fcount }})</span>
-    </a>
-  </div>
-
-  <div class="tag-cloud-items">
-    {% for item in rest %}
-      {% assign parts = item | split: "::" %}
-      {% assign count = parts[0] | plus: 0 %}
-      {% assign t = parts[1] %}
-
-      {% comment %}
-      font-size scale: min 0.65rem (count=1) ~ max 1.55rem (count=max_count)
-      {% endcomment %}
-      {% assign denom = max_count | minus: 1 %}
-      {% if denom <= 0 %}
-        {% assign ratio = 100 %}
-      {% else %}
-        {% assign ratio = count | minus: 1 | times: 100 | divided_by: denom %}
+      {% if count > max_count %}
+        {% assign max_count = count %}
       {% endif %}
 
-      {% assign size = 65 | plus: ratio | times: 90 | divided_by: 100 | plus: 0 %}
-      {% comment %} size = 65 + 0.90*ratio -> 65..155 (in "rem/100") {% endcomment %}
-
-      <a class="tag-pill" style="font-size: {{ size | divided_by: 100.0 }}rem" href="{{ site.baseurl }}/tags/{{ t | slugify }}/">
-        {{ t }}
-        <span class="tag-count">({{ count }})</span>
-      </a>
+      {% capture padded %}00000{{ count }}{% endcapture %}
+      {% assign padded = padded | slice: -5, 5 %}
+      {% capture item %}{{ padded }}::{{ t }}{% endcapture %}
+      {% assign pairs = pairs | push: item %}
     {% endfor %}
-  </div>
+
+    {% assign pairs = pairs | sort | reverse %}
+    {% assign featured = pairs | first %}
+    {% assign fparts = featured | split: "::" %}
+    {% assign fcount = fparts[0] | plus: 0 %}
+    {% assign ftag = fparts[1] %}
+
+    <section class="tags-archive-stats" aria-label="태그 아카이브 요약">
+      <div class="tags-stat-card">
+        <span class="tags-stat-label">Tags</span>
+        <strong>{{ uniq.size }}</strong>
+      </div>
+      <div class="tags-stat-card">
+        <span class="tags-stat-label">Tagged notes</span>
+        <strong>{{ tagged_docs_count }}</strong>
+      </div>
+      <div class="tags-stat-card tags-stat-card--accent">
+        <span class="tags-stat-label">Top tag</span>
+        <a href="{{ site.baseurl }}/tags/{{ ftag | slugify }}/">#{{ ftag }}</a>
+        <small>{{ fcount }} notes</small>
+      </div>
+    </section>
+
+    <section class="tags-archive-controls" aria-label="태그 검색">
+      <label class="tags-search-label" for="tag-search">태그 검색</label>
+      <div class="tags-search-box">
+        <span aria-hidden="true">⌕</span>
+        <input id="tag-search" type="search" placeholder="대학컨설팅, RISE, running..." autocomplete="off">
+      </div>
+      <p class="tags-search-result" id="tag-search-result" aria-live="polite">전체 {{ uniq.size }}개 태그</p>
+    </section>
+
+    <section class="tags-featured-section" aria-label="많이 쓰인 태그">
+      <div class="tags-section-heading">
+        <h2>자주 등장한 태그</h2>
+        <p>반복해서 등장한 주제부터 보면 이 블로그의 관심사가 빠르게 잡힌다.</p>
+      </div>
+      <div class="tags-featured-grid">
+        {% for item in pairs limit: 12 %}
+          {% assign parts = item | split: "::" %}
+          {% assign count = parts[0] | plus: 0 %}
+          {% assign t = parts[1] %}
+          <a class="tags-featured-card" href="{{ site.baseurl }}/tags/{{ t | slugify }}/" data-tag-card data-tag-name="{{ t | downcase | escape }}" data-count="{{ count }}">
+            <span class="tags-featured-name">#{{ t }}</span>
+            <span class="tags-featured-count">{{ count }} notes</span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="tags-all-section" aria-label="전체 태그">
+      <div class="tags-section-heading">
+        <h2>전체 태그</h2>
+        <p>작은 태그도 남겨둔다. 가끔은 한 번 등장한 단어가 다음 글감의 씨앗이 된다.</p>
+      </div>
+      <div class="tags-card-grid" id="tags-card-grid">
+        {% for item in pairs %}
+          {% assign parts = item | split: "::" %}
+          {% assign count = parts[0] | plus: 0 %}
+          {% assign t = parts[1] %}
+          {% assign denom = max_count | minus: 1 %}
+          {% if denom <= 0 %}
+            {% assign ratio = 100 %}
+          {% else %}
+            {% assign ratio = count | minus: 1 | times: 100 | divided_by: denom %}
+          {% endif %}
+          {% assign bar_extra = ratio | times: 82 | divided_by: 100 %}
+          {% assign bar_width = 18 | plus: bar_extra %}
+          <a class="tags-card" href="{{ site.baseurl }}/tags/{{ t | slugify }}/" data-tag-card data-tag-name="{{ t | downcase | escape }}" data-count="{{ count }}" style="--tag-strength: {{ ratio }}%;">
+            <span class="tags-card-title">#{{ t }}</span>
+            <span class="tags-card-meta">{{ count }} note{% if count > 1 %}s{% endif %}</span>
+            <span class="tags-card-bar" aria-hidden="true"><i style="width: {{ bar_width }}%;"></i></span>
+          </a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 </div>
 
-{% endif %}
+<script>
+  (function () {
+    const input = document.getElementById('tag-search');
+    const result = document.getElementById('tag-search-result');
+    const cards = Array.from(document.querySelectorAll('[data-tag-card]'));
+    if (!input || !result || cards.length === 0) return;
+
+    const totalUnique = new Set(cards.map((card) => card.dataset.tagName)).size;
+
+    input.addEventListener('input', () => {
+      const q = input.value.trim().toLowerCase();
+      let visible = 0;
+      const seen = new Set();
+
+      cards.forEach((card) => {
+        const match = !q || (card.dataset.tagName || '').includes(q);
+        card.hidden = !match;
+        if (match && !seen.has(card.dataset.tagName)) {
+          seen.add(card.dataset.tagName);
+          visible += 1;
+        }
+      });
+
+      result.textContent = q ? `${visible}개 태그가 보여` : `전체 ${totalUnique}개 태그`;
+    });
+  })();
+</script>

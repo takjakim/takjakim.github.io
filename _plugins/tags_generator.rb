@@ -53,10 +53,15 @@ module Jekyll
           'title' => d.data['title'],
           'url' => d.url,
           'slug' => d.data['slug'] || d.basename_without_ext,
-          'last_modified_at' => d.data['last_modified_at']
+          'description' => d.data['description'],
+          'categories' => d.data['categories'],
+          'label' => d.data['label'],
+          'type' => d.data['type'],
+          'last_modified_at' => d.data['last_modified_at'] || d.data['date']
         }
       end
       self.data['title'] = "##{tag}"
+      self.data['description'] = "#{tag} 태그로 묶인 Digital Garden 노트와 글 아카이브"
     end
   end
 end

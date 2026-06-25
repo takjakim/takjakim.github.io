@@ -2,32 +2,61 @@
 layout: default
 ---
 
-<article class="note-page">
-  <header class="note-header">
-    <h1 class="note-title">#{{ page.tag }}</h1>
-    <p class="note-date">태그 아카이브</p>
+<article class="tag-archive-page">
+  <a href="{{ site.baseurl }}/" class="note-hero-banner tag-archive-home">
+    <span class="gradient-text">Digital</span>
+    <span class="gradient-text-alt">Garden</span>
+  </a>
+
+  <header class="tag-archive-hero">
+    <div class="tag-archive-kicker">Tag Archive</div>
+    <h1>#{{ page.tag }}</h1>
+    {% assign items = page.items | default: empty %}
+    <p>{{ items.size }}개의 글과 노트가 이 태그로 연결되어 있어.</p>
+    <a class="tag-back-link" href="{{ site.baseurl }}/tags/">← 모든 태그 보기</a>
   </header>
 
-  <div class="note-container">
-    <div class="note-content">
-      {% assign items = page.items | default: empty %}
-      {% if items and items.size > 0 %}
-        <ul>
-          {% for it in items %}
-            <li>
-              <a href="{{ site.baseurl }}{{ it.url }}">{{ it.title | default: it.slug }}</a>
-              {% if it.last_modified_at %}
-                <span class="note-date">({{ it.last_modified_at | date: "%Y.%m.%d" }})</span>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      {% else %}
-        <p>이 태그로 분류된 글이 아직 없어.</p>
-      {% endif %}
+  <main class="tag-archive-main">
+    {% if items and items.size > 0 %}
+      <div class="tag-archive-toolbar" aria-label="태그 아카이브 요약">
+        <div>
+          <span class="tag-toolbar-label">Current tag</span>
+          <strong>#{{ page.tag }}</strong>
+        </div>
+        <div>
+          <span class="tag-toolbar-label">Items</span>
+          <strong>{{ items.size }}</strong>
+        </div>
+      </div>
 
-      <hr />
-      <p><a href="{{ site.baseurl }}/tags/">← 모든 태그 보기</a></p>
-    </div>
-  </div>
+      <div class="tag-entry-grid">
+        {% for it in items %}
+          <a class="tag-entry-card" href="{{ site.baseurl }}{{ it.url }}">
+            <div class="tag-entry-card-topline">
+              {% if it.label %}
+                <span class="tag-entry-label">{{ it.label }}</span>
+              {% elsif it.type %}
+                <span class="tag-entry-label">{{ it.type }}</span>
+              {% endif %}
+              {% if it.last_modified_at %}
+                <time datetime="{{ it.last_modified_at | date_to_xmlschema }}">{{ it.last_modified_at | date: "%Y.%m.%d" }}</time>
+              {% endif %}
+            </div>
+            <h2>{{ it.title | default: it.slug }}</h2>
+            {% if it.description %}
+              <p>{{ it.description | strip_html | strip_newlines | truncate: 150 }}</p>
+            {% endif %}
+            {% if it.categories and it.categories.size > 0 %}
+              <span class="tag-entry-category">{{ it.categories | first }}</span>
+            {% endif %}
+          </a>
+        {% endfor %}
+      </div>
+    {% else %}
+      <section class="tags-empty-state">
+        <p>이 태그로 분류된 글이 아직 없어.</p>
+        <a href="{{ site.baseurl }}/tags/">모든 태그로 돌아가기</a>
+      </section>
+    {% endif %}
+  </main>
 </article>
