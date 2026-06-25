@@ -68,7 +68,21 @@ permalink: /tags/
     {% endfor %}
 
     {% assign pairs = pairs | sort | reverse %}
-    {% assign featured = pairs | first %}
+    {% assign navigation_noise_tags = 'index|market|us|spx|ndx|dow|kr|kospi|kosdaq' | split: '|' %}
+    {% assign topic_pairs = '' | split: '' %}
+    {% for item in pairs %}
+      {% assign parts = item | split: "::" %}
+      {% assign t = parts[1] %}
+      {% assign normalized_tag = t | downcase %}
+      {% unless navigation_noise_tags contains normalized_tag %}
+        {% assign topic_pairs = topic_pairs | push: item %}
+      {% endunless %}
+    {% endfor %}
+    {% if topic_pairs.size > 0 %}
+      {% assign featured = topic_pairs | first %}
+    {% else %}
+      {% assign featured = pairs | first %}
+    {% endif %}
     {% assign fparts = featured | split: "::" %}
     {% assign fcount = fparts[0] | plus: 0 %}
     {% assign ftag = fparts[1] %}
@@ -83,7 +97,7 @@ permalink: /tags/
         <strong>{{ tagged_docs_count }}</strong>
       </div>
       <div class="tags-stat-card tags-stat-card--accent">
-        <span class="tags-stat-label">Top tag</span>
+        <span class="tags-stat-label">Focus tag</span>
         <a href="{{ site.baseurl }}/tags/{{ ftag | slugify }}/">#{{ ftag }}</a>
         <small>{{ fcount }} notes</small>
       </div>
@@ -100,11 +114,11 @@ permalink: /tags/
 
     <section class="tags-featured-section" aria-label="많이 쓰인 태그">
       <div class="tags-section-heading">
-        <h2>자주 등장한 태그</h2>
-        <p>반복해서 등장한 주제부터 보면 이 블로그의 관심사가 빠르게 잡힌다.</p>
+        <h2>핵심 주제 태그</h2>
+        <p>시장 지표용 태그는 전체 목록에 남기고, 이곳에는 글의 방향을 보여주는 주제 태그를 우선 모았다.</p>
       </div>
       <div class="tags-featured-grid">
-        {% for item in pairs limit: 12 %}
+        {% for item in topic_pairs limit: 12 %}
           {% assign parts = item | split: "::" %}
           {% assign count = parts[0] | plus: 0 %}
           {% assign t = parts[1] %}
