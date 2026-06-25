@@ -15,6 +15,9 @@
   <meta http-equiv="content-language" content="{{ site.lang | default: 'ko' }}">
   <meta name="baseurl" content="{{ site.baseurl }}">
 
+  {% assign seo_image = page.image | default: '/assets/og-default.png' %}
+  {% assign seo_image_url = seo_image | absolute_url %}
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{% if page.date %}article{% else %}website{% endif %}">
   <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
@@ -22,11 +25,8 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.id == 'home' %}{{ site.description }}{% else %}{{ content | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:locale" content="ko_KR">
-  {% if page.image %}
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}">
-  {% else %}
-  <meta property="og:image" content="{{ site.url }}/assets/og-default.png">
-  {% endif %}
+  <meta property="og:image" content="{{ seo_image_url }}">
+  <meta property="og:image:secure_url" content="{{ seo_image_url }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -35,11 +35,7 @@
   <meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif page.id == 'home' %}{{ site.description }}{% else %}{{ content | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-  {% if page.image %}
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-  {% else %}
-  <meta name="twitter:image" content="{{ site.url }}/assets/og-default.png">
-  {% endif %}
+  <meta name="twitter:image" content="{{ seo_image_url }}">
 
   <!-- Article specific -->
   {% if page.date %}
@@ -60,6 +56,7 @@
     {% if page.last_modified_at %}
     "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
     {% endif %}
+    "image": "{{ seo_image_url }}",
     "author": {
       "@type": "Person",
       "name": "{{ site.author }}"

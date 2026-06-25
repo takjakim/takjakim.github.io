@@ -23,6 +23,10 @@ layout: default
       {% if pv != nil %}
         <span class="note-views">👀 {{ pv }}</span>
       {% endif %}
+
+      <button class="note-share-button" type="button" data-share-url="{{ page.url | absolute_url }}" aria-label="현재 글 공유하기">
+        공유
+      </button>
     </div>
 
     {% if page.tags and page.tags.size > 0 %}
@@ -83,6 +87,50 @@ layout: default
 </article>
 
 {% include sidebar_graph.html category=current_category %}
+
+<script>
+  (function () {
+    const button = document.querySelector('.note-share-button');
+    if (!button) return;
+
+    const url = button.dataset.shareUrl || window.location.href;
+    const title = document.querySelector('.note-title')?.textContent?.trim() || document.title;
+    const originalText = button.textContent.trim();
+    const setStatus = (text) => {
+      button.textContent = text;
+      window.setTimeout(() => { button.textContent = originalText; }, 1600);
+    };
+
+    button.addEventListener('click', async () => {
+      try {
+        if (navigator.share) {
+          await navigator.share({ title, url });
+          return;
+        }
+
+        if (navigator.clipboard && window.isSecureContext) {
+          await navigator.clipboard.writeText(url);
+          setStatus('복사됨');
+          return;
+        }
+
+        const input = document.createElement('input');
+        input.value = url;
+        input.setAttribute('readonly', 'readonly');
+        input.style.position = 'fixed';
+        input.style.opacity = '0';
+        document.body.appendChild(input);
+        input.select();
+        document.execCommand('copy');
+        document.body.removeChild(input);
+        setStatus('복사됨');
+      } catch (error) {
+        if (error && error.name === 'AbortError') return;
+        setStatus('복사 실패');
+      }
+    });
+  })();
+</script>
 
 <script>
   (function () {

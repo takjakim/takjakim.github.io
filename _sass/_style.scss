@@ -2183,6 +2183,33 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   font-family: 'SF Mono', 'Fira Code', monospace;
 }
 
+.note-share-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.65rem;
+  padding: 0.18rem 0.62rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: $color-subtext;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+  transition: color 0.18s ease, background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-primary;
+    background: rgba(255, 255, 255, 0.92);
+    border-color: rgba(99, 102, 241, 0.22);
+    transform: translateY(-1px);
+  }
+}
+
 .note-tags {
   margin-top: 0.75rem;
   display: flex;
