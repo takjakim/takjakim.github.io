@@ -6,8 +6,8 @@ type: analysis
 label: POLICY
 tags: [RISE, 라이즈, ANCHOR, 앵커사업, 강원RISE, 지역혁신중심대학지원체계, 지역성장인재양성체계, 대학컨설팅, 고등교육컨설팅, 경영컨설팅, 대학전략, 대학경영, 대학혁신, 정책사업, 교육과정, 지역연계, 산학협력, 지역정주, 성과관리]
 description: "강원 RISE·ANCHOR 선도대학 기사들을 대학컨설팅 관점에서 묶어 읽었다. 이제 지역대학 평가는 선정 여부보다 성과환류, 교육과정, 정주, 지역산업 실행 구조로 이동하고 있다."
-date: 2026-06-26 21:30:00 +0900
-last_modified_at: 2026-06-26 21:30:00 +0900
+date: 2026-06-26 20:50:00 +0900
+last_modified_at: 2026-06-26 20:50:00 +0900
 permalink: /education/gangwon-rise-anchor-performance-2026/
 image: /assets/images/education/gangwon-rise-anchor-performance-2026-og.jpg
 ---
