@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-06-25T04:20:23.938587+00:00",
+    "generated_at": "2026-06-26T04:36:13.243525+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 281
+      "views": 329
     },
     "/about/": {
-      "views": 12
+      "views": 9
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 15
@@ -49,10 +49,10 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 12
+      "views": 15
     },
     "/college-reviews/": {
-      "views": 2
+      "views": 4
     },
     "/consistency/": {
       "views": 1
@@ -64,13 +64,7 @@
       "views": 3
     },
     "/dev/marp-editor/devlog-1/": {
-      "views": 3
-    },
-    "/dev/marp-editor/devlog-2/": {
-      "views": 1
-    },
-    "/dev/marp-editor/devlog-3/": {
-      "views": 1
+      "views": 2
     },
     "/dev/stats-method/": {
       "views": 1
@@ -87,17 +81,23 @@
     "/education/2026-06-23-adiga-check-routine/": {
       "views": 3
     },
+    "/education/2026-university-innovation-support-plan/": {
+      "views": 8
+    },
     "/education/ai-dx-vocational-college-checklist/": {
       "views": 6
     },
     "/education/changwon-university-issues-2026/": {
       "views": 7
     },
+    "/education/glocal30-junior-college-track-2026/": {
+      "views": 6
+    },
     "/education/keimyung-culture-college-rise-healthcare-2026/": {
       "views": 8
     },
     "/education/kentech-organization-issues-2026/": {
-      "views": 13
+      "views": 14
     },
     "/education/kentech/": {
       "views": 1
@@ -105,11 +105,14 @@
     "/education/sehan-university-rise-aviation-welfare-2026/": {
       "views": 3
     },
+    "/education/suncheon-jeil-ai-digital-twin-2026/": {
+      "views": 4
+    },
     "/g7-gx-industry-axis/": {
       "views": 1
     },
     "/graph/": {
-      "views": 2
+      "views": 4
     },
     "/gyeonggi-rise/": {
       "views": 1
@@ -117,7 +120,13 @@
     "/industry-academic-cooperation/": {
       "views": 1
     },
+    "/investing/2026-02-06/": {
+      "views": 1
+    },
     "/investing/2026-02-12-global/": {
+      "views": 1
+    },
+    "/investing/2026-02-19-us/": {
       "views": 1
     },
     "/investing/2026-02-23-korea/": {
@@ -165,10 +174,22 @@
     "/investing/2026-06-22-us/": {
       "views": 1
     },
+    "/investing/2026-06-23-korea/": {
+      "views": 4
+    },
+    "/investing/2026-06-24-us/": {
+      "views": 2
+    },
     "/investing/csi300/": {
       "views": 1
     },
     "/investing/djia/": {
+      "views": 1
+    },
+    "/investing/hsi/": {
+      "views": 1
+    },
+    "/investing/ixic/": {
       "views": 1
     },
     "/macos/pip_install/": {
@@ -196,10 +217,16 @@
       "views": 4
     },
     "/tags/": {
-      "views": 5
+      "views": 11
+    },
+    "/tags/agent/": {
+      "views": 1
     },
     "/tags/ai/": {
       "views": 2
+    },
+    "/tags/automation/": {
+      "views": 1
     },
     "/tags/ci-cd/": {
       "views": 1
@@ -210,10 +237,19 @@
     "/tags/djia/": {
       "views": 1
     },
+    "/tags/heatmap/": {
+      "views": 3
+    },
     "/tags/hongkong/": {
       "views": 1
     },
+    "/tags/implementation/": {
+      "views": 1
+    },
     "/tags/index/": {
+      "views": 1
+    },
+    "/tags/inflation/": {
       "views": 1
     },
     "/tags/innovation/": {
@@ -223,27 +259,69 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 3
+      "views": 4
+    },
+    "/tags/paraphrasing/": {
+      "views": 1
+    },
+    "/tags/pdf/": {
+      "views": 1
+    },
+    "/tags/presentation/": {
+      "views": 1
     },
     "/tags/productivity/": {
+      "views": 2
+    },
+    "/tags/react/": {
       "views": 1
     },
     "/tags/running/": {
       "views": 3
     },
+    "/tags/spx/": {
+      "views": 1
+    },
+    "/tags/supabase/": {
+      "views": 1
+    },
+    "/tags/trail-running/": {
+      "views": 1
+    },
     "/tags/us/": {
+      "views": 2
+    },
+    "/tags/vercel/": {
+      "views": 1
+    },
+    "/tags/경영컨설팅/": {
       "views": 1
     },
     "/tags/고등교육컨설팅/": {
+      "views": 2
+    },
+    "/tags/대학경영/": {
+      "views": 1
+    },
+    "/tags/대학리뷰/": {
+      "views": 1
+    },
+    "/tags/대학전략/": {
       "views": 1
     },
     "/tags/대학컨설팅/": {
+      "views": 3
+    },
+    "/tags/대학혁신지원사업/": {
       "views": 1
     },
     "/tags/마크다운쇼/": {
       "views": 3
     },
     "/tags/메가플래닝/": {
+      "views": 1
+    },
+    "/tags/지방대학특성화/": {
       "views": 1
     },
     "/theory/flesch-kincaid-grade-level/": {
