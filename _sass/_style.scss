@@ -529,15 +529,22 @@ code {
 }
 
 .invalid-link {
-  color: #444444;
-  cursor: help;
-  background: #fafafa;
-  padding: 0 0.1em;
+  color: #64748b;
+  cursor: pointer;
+  background-color: #fafafa;
+  border-bottom: 1px dashed rgba(100, 116, 139, 0.5);
+  text-decoration: none;
 }
 
 .invalid-link-brackets {
-  color: #ccc;
-  cursor: help;
+  color: #cbd5e1;
+  cursor: pointer;
+}
+
+.missing-node-link:hover {
+  color: #2563eb !important;
+  background-color: #eff6ff;
+  border-bottom-color: rgba(37, 99, 235, 0.55);
 }
 
 /* ===== Hero Section ===== */

@@ -59,18 +59,16 @@ class BidirectionalLinksGenerator < Jekyll::Generator
         )
       end
 
-      # At this point, all remaining double-bracket-wrapped words are
-      # pointing to non-existing pages, so let's turn them into disabled
-      # links by greying them out and changing the cursor
-      current_note.content = current_note.content.gsub(
-        /\[\[([^\]]+)\]\]/i, # match on the remaining double-bracket links
-        <<~HTML.delete("\n") # replace with this HTML (\\1 is what was inside the brackets)
-          <span title='There is no note that matches this link.' class='invalid-link'>
-            <span class='invalid-link-brackets'>[[</span>
-            \\1
-            <span class='invalid-link-brackets'>]]</span></span>
-        HTML
-      )
+      # At this point, all remaining double-bracket-wrapped words point to
+      # not-yet-written notes. Keep them clickable so intentional missing
+      # concept links land on the custom 404 "missing node" page instead of
+      # rendering as dead grey text.
+      current_note.content = current_note.content.gsub(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/i) do
+        target = Regexp.last_match(1).strip
+        label = (Regexp.last_match(2) || target).strip
+        href = "#{site.baseurl}/notes/#{missing_note_slug(target)}/#{link_extension}"
+        "<a title='This concept note is not written yet.' class='invalid-link missing-node-link' href='#{href}'><span class='invalid-link-brackets'>[[</span>#{label}<span class='invalid-link-brackets'>]]</span></a>"
+      end
     end
 
     # Identify note backlinks and add them to each note
@@ -113,5 +111,16 @@ class BidirectionalLinksGenerator < Jekyll::Generator
 
   def note_id_from_note(note)
     note.data['title'].bytes.join
+  end
+
+  def missing_note_slug(title)
+    title
+      .downcase
+      .strip
+      .gsub(/[`*_]/, '')
+      .gsub(/\s+/, '-')
+      .gsub(%r{[^0-9a-z가-힣\-]+}i, '')
+      .gsub(/-+/, '-')
+      .gsub(/^-|-$/, '')
   end
 end
