@@ -1,11 +1,52 @@
 ---
 permalink: 404.html
 layout: default
-title: "404"
+title: "노드 연결 중"
 id: "not-found"
 ---
 
-<div>
-  <h1>Oops, that's a 404. 🙈</h1>
-  <p>Looks like this page doesn't exist. <a href="{{ site.baseurl }}/">Return home</a> to get a fresh start.</p>
-</div>
+<section class="not-found-garden" aria-labelledby="not-found-title">
+  <div class="not-found-orbit" aria-hidden="true">
+    <span class="node node-a"></span>
+    <span class="node node-b"></span>
+    <span class="node node-c"></span>
+    <span class="node node-d"></span>
+    <span class="edge edge-a"></span>
+    <span class="edge edge-b"></span>
+    <span class="edge edge-c"></span>
+  </div>
+
+  <div class="not-found-copy">
+    <p class="not-found-kicker">404 · missing node</p>
+    <h1 id="not-found-title">아직 연결 중인 노드입니다.</h1>
+    <p class="not-found-lead">
+      이 링크는 글 안에서 먼저 표시된 개념일 수 있습니다. 아직 별도 컨셉노트로 정리되지 않았지만,
+      다음 백링크 정리 때 후보로 올라올 수 있어요.
+    </p>
+    <div class="not-found-path" aria-live="polite">
+      <span>찾고 있던 경로</span>
+      <code id="missing-path">/unknown-node</code>
+    </div>
+    <div class="not-found-actions">
+      <a class="not-found-button not-found-button-primary" href="{{ site.baseurl }}/">Digital Garden으로 돌아가기</a>
+      <a class="not-found-button" href="{{ site.baseurl }}/graph/">Graph 보기</a>
+      <a class="not-found-button" href="{{ site.baseurl }}/tags/">태그에서 찾기</a>
+    </div>
+    <p class="not-found-note">
+      없는 개념 링크가 보이면 실패가 아니라, 아직 자라지 않은 연결입니다. 조금 뒤에 노트가 생길 수도 있습니다.
+    </p>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var target = document.getElementById('missing-path');
+    if (!target) return;
+    try {
+      var path = decodeURIComponent(window.location.pathname || '/unknown-node');
+      target.textContent = path;
+    } catch (error) {
+      target.textContent = window.location.pathname || '/unknown-node';
+    }
+  })();
+</script>
