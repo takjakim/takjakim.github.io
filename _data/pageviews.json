@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-26T04:36:13.243525+00:00",
+    "generated_at": "2026-06-27T04:13:01.452870+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 329
+      "views": 353
     },
     "/about/": {
       "views": 9
@@ -49,7 +49,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 15
+      "views": 16
     },
     "/college-reviews/": {
       "views": 4
@@ -102,6 +102,9 @@
     "/education/kentech/": {
       "views": 1
     },
+    "/education/rise-linked-investment-university-strategy/": {
+      "views": 3
+    },
     "/education/sehan-university-rise-aviation-welfare-2026/": {
       "views": 3
     },
@@ -133,6 +136,9 @@
       "views": 1
     },
     "/investing/2026-03-20-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-26-us/": {
       "views": 1
     },
     "/investing/2026-04-03-korea/": {
@@ -178,7 +184,7 @@
       "views": 4
     },
     "/investing/2026-06-24-us/": {
-      "views": 2
+      "views": 4
     },
     "/investing/csi300/": {
       "views": 1
@@ -246,9 +252,6 @@
     "/tags/implementation/": {
       "views": 1
     },
-    "/tags/index/": {
-      "views": 1
-    },
     "/tags/inflation/": {
       "views": 1
     },
@@ -270,19 +273,31 @@
     "/tags/presentation/": {
       "views": 1
     },
+    "/tags/product/": {
+      "views": 1
+    },
     "/tags/productivity/": {
       "views": 2
     },
     "/tags/react/": {
       "views": 1
     },
+    "/tags/rise/": {
+      "views": 1
+    },
     "/tags/running/": {
       "views": 3
+    },
+    "/tags/serverless/": {
+      "views": 1
     },
     "/tags/spx/": {
       "views": 1
     },
     "/tags/supabase/": {
+      "views": 1
+    },
+    "/tags/tech/": {
       "views": 1
     },
     "/tags/trail-running/": {
@@ -336,6 +351,9 @@
     "/welcome-to-dev/": {
       "views": 2
     },
+    "/welcome-to-market-analysis/": {
+      "views": 2
+    },
     "/workbook/": {
       "views": 1
     },
@@ -352,7 +370,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 26
+      "views": 27
     }
   }
 }
