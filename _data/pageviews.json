@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-27T04:13:01.452870+00:00",
+    "generated_at": "2026-06-28T04:46:21.310728+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 353
+      "views": 382
     },
     "/about/": {
       "views": 9
@@ -102,6 +102,9 @@
     "/education/kentech/": {
       "views": 1
     },
+    "/education/kumoh-anchor-superregional-2026/": {
+      "views": 1
+    },
     "/education/rise-linked-investment-university-strategy/": {
       "views": 3
     },
@@ -135,10 +138,16 @@
     "/investing/2026-02-23-korea/": {
       "views": 1
     },
+    "/investing/2026-02-24-us/": {
+      "views": 1
+    },
     "/investing/2026-03-20-korea/": {
       "views": 1
     },
     "/investing/2026-03-26-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-01-korea/": {
       "views": 1
     },
     "/investing/2026-04-03-korea/": {
@@ -154,6 +163,9 @@
       "views": 1
     },
     "/investing/2026-05-07-us/": {
+      "views": 1
+    },
+    "/investing/2026-05-15-korea/": {
       "views": 1
     },
     "/investing/2026-06-12-us/": {
@@ -204,6 +216,9 @@
     "/macos/tidal-dl/": {
       "views": 3
     },
+    "/notes/학생-이동성/": {
+      "views": 1
+    },
     "/performance-indexing/": {
       "views": 1
     },
@@ -214,13 +229,16 @@
       "views": 1
     },
     "/rise/": {
-      "views": 1
+      "views": 2
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 4
+    },
+    "/super-regional-cooperation/": {
+      "views": 1
     },
     "/tags/": {
       "views": 11
@@ -295,7 +313,7 @@
       "views": 1
     },
     "/tags/supabase/": {
-      "views": 1
+      "views": 2
     },
     "/tags/tech/": {
       "views": 1
