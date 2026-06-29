@@ -1,7 +1,7 @@
 ---
 title: "졸업생 경로 추적"
-date: 2026-06-30 08:20:00 +0900
-last_modified_at: 2026-06-30 08:20:00 +0900
+date: 2026-06-30 08:05:00 +0900
+last_modified_at: 2026-06-30 08:18:00 +0900
 categories: [education]
 type: concept
 tags: [졸업생경로추적, RISE, 성과관리, 대학전략, 대학컨설팅, 고등교육컨설팅, 취업, 정주율]

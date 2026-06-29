@@ -1,7 +1,7 @@
 ---
 title: "결과지표"
-date: 2026-06-30 08:20:00 +0900
-last_modified_at: 2026-06-30 08:20:00 +0900
+date: 2026-06-30 08:05:00 +0900
+last_modified_at: 2026-06-30 08:18:00 +0900
 categories: [education]
 type: concept
 tags: [결과지표, 성과관리, RISE, 정주율, 취업률, 대학전략, 대학컨설팅, 고등교육컨설팅]

@@ -1,7 +1,7 @@
 ---
 title: "RISE 성과지표"
-date: 2026-06-30 08:20:00 +0900
-last_modified_at: 2026-06-30 08:20:00 +0900
+date: 2026-06-30 08:05:00 +0900
+last_modified_at: 2026-06-30 08:18:00 +0900
 categories: [education]
 type: concept
 tags: [RISE, 성과지표, 대학전략, 대학컨설팅, 고등교육컨설팅, 대학경영, 지역연계, 정책사업]
