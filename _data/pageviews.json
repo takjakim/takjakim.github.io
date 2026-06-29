@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-28T04:46:21.310728+00:00",
+    "generated_at": "2026-06-29T04:56:01.372975+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 382
+      "views": 394
     },
     "/about/": {
       "views": 9
@@ -17,6 +17,9 @@
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 4
+    },
+    "/ai/generative-ai-privacy-guide-2026/": {
+      "views": 1
     },
     "/ai/heyling-day1/": {
       "views": 11
@@ -49,7 +52,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 16
+      "views": 17
     },
     "/college-reviews/": {
       "views": 4
@@ -103,6 +106,9 @@
       "views": 1
     },
     "/education/kumoh-anchor-superregional-2026/": {
+      "views": 1
+    },
+    "/education/rise-kpi-autonomy-university-strategy/": {
       "views": 1
     },
     "/education/rise-linked-investment-university-strategy/": {
@@ -216,6 +222,9 @@
     "/macos/tidal-dl/": {
       "views": 3
     },
+    "/notes/생성형-ai-개인정보-보호/": {
+      "views": 1
+    },
     "/notes/학생-이동성/": {
       "views": 1
     },
@@ -241,13 +250,13 @@
       "views": 1
     },
     "/tags/": {
-      "views": 11
+      "views": 12
     },
     "/tags/agent/": {
       "views": 1
     },
     "/tags/ai/": {
-      "views": 2
+      "views": 3
     },
     "/tags/automation/": {
       "views": 1
@@ -297,6 +306,9 @@
     "/tags/productivity/": {
       "views": 2
     },
+    "/tags/puppeteer/": {
+      "views": 1
+    },
     "/tags/react/": {
       "views": 1
     },
@@ -307,6 +319,9 @@
       "views": 3
     },
     "/tags/serverless/": {
+      "views": 1
+    },
+    "/tags/snapshot/": {
       "views": 1
     },
     "/tags/spx/": {
@@ -351,9 +366,6 @@
     "/tags/마크다운쇼/": {
       "views": 3
     },
-    "/tags/메가플래닝/": {
-      "views": 1
-    },
     "/tags/지방대학특성화/": {
       "views": 1
     },
@@ -366,6 +378,9 @@
     "/theory/r4-obsidian/": {
       "views": 1
     },
+    "/volatility/": {
+      "views": 1
+    },
     "/welcome-to-dev/": {
       "views": 2
     },
@@ -375,20 +390,8 @@
     "/workbook/": {
       "views": 1
     },
-    "/workbook/a/": {
-      "views": 4
-    },
-    "/workbook/b/": {
-      "views": 1
-    },
-    "/workbook/case-note/": {
-      "views": 1
-    },
-    "/workbook/code-note/": {
-      "views": 1
-    },
     "/worldcup-2026-scenarios/": {
-      "views": 27
+      "views": 29
     }
   }
 }
