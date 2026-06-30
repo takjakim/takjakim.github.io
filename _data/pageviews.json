@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-06-29T04:56:01.372975+00:00",
+    "generated_at": "2026-06-30T04:21:30.847764+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 394
+      "views": 393
     },
     "/about/": {
       "views": 9
@@ -78,9 +78,6 @@
     "/dev/stats-method/development/": {
       "views": 1
     },
-    "/dev/tech/GA-N3160N-NAS/": {
-      "views": 1
-    },
     "/education/2026-06-23-adiga-check-routine/": {
       "views": 3
     },
@@ -109,7 +106,7 @@
       "views": 1
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
-      "views": 1
+      "views": 2
     },
     "/education/rise-linked-investment-university-strategy/": {
       "views": 3
