@@ -9,13 +9,13 @@ description: "부산·울산·경남의 ANCHOR 협업 논의를 대학컨설팅 
 date: 2026-06-30 21:15:00 +0900
 last_modified_at: 2026-06-30 21:15:00 +0900
 permalink: /education/buk-anchor-superregional-university-2026/
-image: /assets/images/education/buk-anchor-superregional-university-2026-og.jpg
+image: /assets/images/education/buk-anchor-superregional-university-2026-og-v2.jpg
 ---
 
 부산·울산·경남이 [[앵커|ANCHOR]] 개편에 맞춰 초광역 협업 논의를 구체화하고 있다. 대학컨설팅 관점에서 보면 이 흐름은 단순한 지자체 회의가 아니다. [[RISE]] 이후 대학 지원사업이 **개별 대학 단위에서 권역 단위 산업·교육 포트폴리오로 이동하는 장면**에 가깝다.
 
 <figure class="note-cover-figure">
-  <img src="/assets/images/education/buk-anchor-superregional-university-2026-og.jpg" alt="부울경 ANCHOR 초광역 공유대학 전략 SEO 커버 이미지">
+  <img src="/assets/images/education/buk-anchor-superregional-university-2026-og-v2.jpg" alt="부울경 ANCHOR 초광역 공유대학 전략 SEO 커버 이미지">
   <figcaption>도식: 부울경 ANCHOR 협업 관련 공개 보도를 바탕으로 필자의 대학컨설팅 관점에서 재구성.</figcaption>
 </figure>
 
