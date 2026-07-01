@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ko" data-lang="kr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NotchDrawer — 노치 너머의 아이콘까지</title>
+<script>document.documentElement.classList.add('js');</script>
+<meta name="description" content="노치에 가려진 메뉴바 아이콘을 노치 아래 드로어로 펼치는 macOS 유틸리티. 일회성 $5, 구독 없음.">
+<meta name="theme-color" content="#000000">
+<link rel="canonical" href="https://takjakim.kr/notchdrawer/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://takjakim.kr/notchdrawer/">
+<meta property="og:title" content="NotchDrawer — 노치 너머의 아이콘까지">
+<meta property="og:description" content="가려진 메뉴바 아이콘을 노치 아래 드로어로. macOS 유틸리티 · 일회성 $5.">
+<meta property="og:image" content="https://takjakim.kr/notchdrawer/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://takjakim.kr/notchdrawer/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%23000'/%3E%3Crect x='22' width='20' height='9' rx='4' fill='%23111'/%3E%3Crect x='13' y='31' width='38' height='16' rx='7' fill='%2318181d' stroke='%230A84FF' stroke-width='2'/%3E%3Ccircle cx='23' cy='39' r='2.6' fill='%230A84FF'/%3E%3Ccircle cx='32' cy='39' r='2.6' fill='%23fff'/%3E%3Ccircle cx='41' cy='39' r='2.6' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#000006; --ink:#f5f5f7; --dim:#a1a1aa; --dim2:#6e6e78;
+    --blue:#0A84FF; --cyan:#5AC8FA; --line:rgba(255,255,255,.09);
+    --glass:rgba(255,255,255,.055);
+    --sans:"SF Pro Display","SF Pro Text",-apple-system,BlinkMacSystemFont,"Helvetica Neue","Apple SD Gothic Neo","Pretendard",sans-serif;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,monospace;
+    --maxw:1120px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;background:#000006;-webkit-text-size-adjust:100%}
+  body{
+    font-family:var(--sans);color:var(--ink);background:var(--bg);
+    line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;position:relative;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+  /* atmosphere: aurora orbs + grain */
+  .aura{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;will-change:transform}
+  .orb.b{width:640px;height:640px;left:-160px;top:-120px;background:radial-gradient(circle,#0a4bd0,transparent 65%)}
+  .orb.c{width:560px;height:560px;right:-140px;top:180px;background:radial-gradient(circle,#0b6fb8,transparent 65%);opacity:.4}
+  .orb.d{width:720px;height:720px;left:30%;bottom:-360px;background:radial-gradient(circle,#123a86,transparent 60%);opacity:.35}
+  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .content{position:relative;z-index:2}
+
+  /* nav */
+  nav{position:sticky;top:0;z-index:100;backdrop-filter:saturate(160%) blur(20px);
+    background:rgba(0,0,6,.55);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;height:56px}
+  .brand{display:flex;align-items:center;gap:9px;font-weight:600;font-size:16px;letter-spacing:-.01em}
+  .nav-right{display:flex;align-items:center;gap:12px}
+  .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;font-family:var(--mono);font-size:11px;font-weight:600}
+  .lang button{background:none;border:0;color:var(--dim);padding:6px 11px;cursor:pointer;font:inherit;transition:.2s}
+  .lang button.active{background:var(--ink);color:#000}
+  .btn{display:inline-flex;align-items:center;gap:7px;border-radius:999px;padding:11px 22px;font-weight:600;font-size:15px;
+    cursor:pointer;border:1px solid transparent;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,background .2s;white-space:nowrap}
+  .btn-p{background:linear-gradient(180deg,#3a9dff,var(--blue));color:#fff;box-shadow:0 8px 30px rgba(10,132,255,.4)}
+  .btn-p:hover{transform:translateY(-2px) scale(1.02);box-shadow:0 14px 40px rgba(10,132,255,.55)}
+  .btn-g{background:var(--glass);border-color:var(--line);color:var(--ink);backdrop-filter:blur(10px)}
+  .btn-g:hover{background:rgba(255,255,255,.1)}
+  .btn-sm{padding:8px 16px;font-size:14px}
+  .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--cyan)}
+
+  /* hero */
+  .hero{text-align:center;padding:86px 0 20px;position:relative}
+  h1{font-size:clamp(44px,8.5vw,104px);line-height:.98;letter-spacing:-.045em;font-weight:700;margin:22px 0 0}
+  h1 .g{background:linear-gradient(180deg,#fff 30%,#7fbcff);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--dim);font-size:clamp(17px,2.2vw,22px);max-width:600px;margin:24px auto 0;letter-spacing:-.01em;font-weight:400}
+  .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:36px}
+  .fine{color:var(--dim2);font-size:13px;margin-top:16px;font-family:var(--mono);letter-spacing:.02em}
+
+  /* 3D device */
+  .stage{perspective:1500px;margin:64px auto 0;max-width:900px;padding:0 10px}
+  .device{position:relative;transform-style:preserve-3d;transition:transform .1s linear;will-change:transform}
+  .screen{position:relative;border-radius:26px;background:
+      linear-gradient(180deg,#1a1a22,#0c0c12);
+      border:1px solid rgba(255,255,255,.09);
+      box-shadow:0 60px 120px -30px rgba(0,0,0,.9),0 0 0 1px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.06);
+      padding:0;overflow:hidden;aspect-ratio:16/10}
+  .glowbed{position:absolute;left:50%;top:0;width:70%;height:60%;transform:translate(-50%,-30%) translateZ(-60px);
+    background:radial-gradient(ellipse at center,rgba(10,132,255,.5),transparent 70%);filter:blur(30px)}
+  /* menubar */
+  .mbar{position:absolute;top:0;left:0;right:0;height:9%;min-height:26px;background:rgba(0,0,0,.5);
+    display:flex;align-items:center;transform:translateZ(10px)}
+  .mbar .l{display:flex;gap:14px;align-items:center;padding-left:16px}
+  .mbar .r{display:flex;gap:16px;align-items:center;margin-left:auto;padding-right:16px}
+  .dot{width:9px;height:9px;border-radius:50%;background:rgba(255,255,255,.75)}
+  .bar{height:7px;border-radius:4px;background:rgba(255,255,255,.4)}
+  .notch{position:absolute;top:0;left:50%;transform:translateX(-50%) translateZ(24px);
+    width:min(30%,190px);height:min(9%,30px);min-height:26px;background:#000;
+    border-radius:0 0 16px 16px;box-shadow:0 3px 10px rgba(0,0,0,.6);z-index:5}
+  .hid{position:absolute;top:calc(4.5% - 3px);left:50%;transform:translate(-50%,-50%) translateZ(12px);display:flex;gap:9px;z-index:2}
+  .hid i{width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 10px var(--blue);animation:pulse 2.4s ease-in-out infinite}
+  .hid i:nth-child(2){animation-delay:.3s}.hid i:nth-child(3){animation-delay:.6s}
+  @keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}
+  /* drawer floats forward */
+  .drawer{position:absolute;top:12%;left:50%;transform:translateX(-50%) translateZ(70px);
+    display:flex;gap:14px;align-items:center;padding:15px 18px;border-radius:22px;
+    background:linear-gradient(180deg,rgba(48,48,58,.92),rgba(24,24,30,.92));
+    border:1.5px solid rgba(10,132,255,.8);backdrop-filter:blur(6px);
+    box-shadow:0 30px 60px -12px rgba(0,0,0,.85),0 0 30px rgba(10,132,255,.25);z-index:6}
+  .drawer .app{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;box-shadow:0 4px 10px rgba(0,0,0,.4)}
+  .link{position:absolute;top:9%;left:50%;width:2px;height:5%;transform:translateX(-50%) translateZ(40px);
+    background:repeating-linear-gradient(180deg,var(--blue) 0 3px,transparent 3px 7px);opacity:.7;z-index:4}
+
+  /* sections */
+  section{padding:clamp(80px,12vw,150px) 0;position:relative}
+  .statement{text-align:center;max-width:840px;margin:0 auto}
+  .statement h2{font-size:clamp(30px,5.2vw,60px);line-height:1.04;letter-spacing:-.035em;font-weight:700}
+  .statement h2 .d{color:var(--dim2)}
+  .statement p{color:var(--dim);font-size:clamp(16px,2vw,20px);margin-top:20px;letter-spacing:-.01em}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:70px}
+  .card{background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:30px 26px;
+    backdrop-filter:blur(14px);transition:transform .3s cubic-bezier(.2,.8,.2,1),border-color .3s;transform-style:preserve-3d}
+  .card:hover{border-color:rgba(10,132,255,.4)}
+  .step .k{font-family:var(--mono);font-size:12px;color:var(--cyan);letter-spacing:.1em}
+  .step h3{font-size:20px;margin:14px 0 8px;letter-spacing:-.02em}
+  .step p{color:var(--dim);font-size:15px}
+  .step .ic{width:46px;height:46px;border-radius:13px;background:rgba(10,132,255,.14);display:grid;place-items:center;margin-bottom:18px}
+
+  /* feature grid */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:64px}
+  .feat h3{font-size:17px;margin:14px 0 7px;letter-spacing:-.01em}
+  .feat p{color:var(--dim);font-size:14.5px}
+  .feat .ic{width:44px;height:44px;border-radius:12px;background:linear-gradient(180deg,rgba(90,200,250,.18),rgba(10,132,255,.12));display:grid;place-items:center}
+
+  /* pricing */
+  .price{max-width:460px;margin:64px auto 0;border-radius:30px;padding:44px 38px;text-align:center;position:relative;
+    background:linear-gradient(180deg,rgba(28,28,36,.9),rgba(12,12,18,.9));border:1px solid var(--line);
+    box-shadow:0 40px 90px -30px rgba(0,0,0,.9),inset 0 1px 0 rgba(255,255,255,.06);overflow:hidden}
+  .price::after{content:"";position:absolute;top:-40%;left:-10%;width:120%;height:80%;
+    background:radial-gradient(ellipse,rgba(10,132,255,.22),transparent 70%);pointer-events:none}
+  .tag{font-size:72px;font-weight:700;letter-spacing:-.05em;position:relative}
+  .tag small{font-size:20px;color:var(--dim);font-weight:500;letter-spacing:0}
+  .psub{color:var(--cyan);font-family:var(--mono);font-size:13px;letter-spacing:.06em;margin-top:2px}
+  .plist{list-style:none;text-align:left;margin:28px 0;display:grid;gap:13px}
+  .plist li{display:flex;gap:11px;align-items:flex-start;font-size:15px;color:#dcdce2}
+  .plist svg{flex:none;margin-top:3px}
+
+  /* faq */
+  .faq{max-width:780px;margin:56px auto 0;display:grid;gap:12px}
+  details{background:var(--glass);border:1px solid var(--line);border-radius:18px;padding:0 24px;backdrop-filter:blur(10px)}
+  summary{list-style:none;cursor:pointer;padding:22px 0;font-weight:600;font-size:17px;display:flex;justify-content:space-between;gap:12px;letter-spacing:-.01em}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--blue);font-size:24px;font-weight:300;transition:.3s;line-height:1}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{color:var(--dim);padding:0 0 22px;font-size:15px}
+
+  /* footer */
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--dim2);font-size:13px}
+  .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}
+  .foot-in a{color:var(--dim)}.foot-in a:hover{color:var(--ink)}
+
+  /* reveal */
+  .reveal{opacity:1;transform:none}
+  .js .reveal{opacity:0;transform:translateY(40px) scale(.97);transition:opacity .9s cubic-bezier(.2,.8,.2,1),transform .9s cubic-bezier(.2,.8,.2,1)}
+  .js .reveal.in{opacity:1;transform:none}
+  .d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+  @media (max-width:820px){.steps,.grid{grid-template-columns:1fr}.stage{perspective:1000px}}
+  @media (max-width:520px){.nav-right .btn{display:none}}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    .reveal{opacity:1;transform:none;transition:none}
+    .device{transform:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="aura"><div class="orb b"></div><div class="orb c"></div><div class="orb d"></div></div>
+<div class="grain"></div>
+
+<div class="content">
+<nav>
+  <div class="wrap nav-in">
+    <a class="brand" href="#top">
+      <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
+        <rect width="64" height="64" rx="15" fill="#101018" stroke="rgba(255,255,255,.1)"/>
+        <rect x="22" width="20" height="9" rx="4" fill="#000"/>
+        <rect x="13" y="31" width="38" height="16" rx="7" fill="#18181d" stroke="#0A84FF" stroke-width="2"/>
+        <circle cx="23" cy="39" r="2.6" fill="#0A84FF"/><circle cx="32" cy="39" r="2.6" fill="#fff"/><circle cx="41" cy="39" r="2.6" fill="#fff"/>
+      </svg>NotchDrawer
+    </a>
+    <div class="nav-right">
+      <div class="lang" role="group" aria-label="Language"><button data-setlang="kr">KR</button><button data-setlang="en">EN</button></div>
+      <a class="btn btn-p btn-sm" href="https://takjakim.gumroad.com/l/notch" target="_blank" rel="noopener" data-kr="구매 · $5" data-en="Buy · $5">구매 · $5</a>
+    </div>
+  </div>
+</nav>
+
+<span id="top"></span>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow reveal" data-kr="MACOS 노치 유틸리티" data-en="MACOS NOTCH UTILITY">MACOS 노치 유틸리티</p>
+    <h1 class="reveal d1"><span data-kr="노치가 가린 아이콘," data-en="The icons your notch hides,">노치가 가린 아이콘,</span><br><span class="g" data-kr="다시 손끝으로." data-en="back in reach.">다시 손끝으로.</span></h1>
+    <p class="lead reveal d2" data-kr="메뉴바가 노치에 삼켜질 때, NotchDrawer는 숨은 아이콘을 노치 아래 드로어로 펼칩니다. 마우스만 올리면 됩니다." data-en="When the notch swallows your menu bar, NotchDrawer fans the hidden icons into a drawer beneath it. Just hover.">메뉴바가 노치에 삼켜질 때, NotchDrawer는 숨은 아이콘을 노치 아래 드로어로 펼칩니다. 마우스만 올리면 됩니다.</p>
+    <div class="cta reveal d3">
+      <a class="btn btn-p" href="https://takjakim.gumroad.com/l/notch" target="_blank" rel="noopener" data-kr="$5로 시작하기" data-en="Get it — $5">$5로 시작하기</a>
+      <a class="btn btn-g" href="#how" data-kr="작동 방식" data-en="See how">작동 방식</a>
+    </div>
+    <p class="fine reveal d3" data-kr="노치 탑재 Mac · 7일 무료 체험 · 구독 없음" data-en="For notch Macs · 7-day trial · No subscription">노치 탑재 Mac · 7일 무료 체험 · 구독 없음</p>
+  </div>
+
+  <div class="stage reveal d3">
+    <div class="device" id="device">
+      <div class="screen">
+        <div class="glowbed"></div>
+        <div class="mbar">
+          <div class="l"><div class="dot"></div><div class="bar" style="width:34px"></div><div class="bar" style="width:24px;opacity:.6"></div></div>
+          <div class="r"><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="bar" style="width:20px"></div></div>
+        </div>
+        <div class="notch"></div>
+        <div class="hid"><i></i><i></i><i></i></div>
+        <div class="link"></div>
+        <div class="drawer">
+          <div class="app" style="background:linear-gradient(180deg,#3a9dff,#0A84FF)"></div>
+          <div class="app" style="background:linear-gradient(180deg,#59d97a,#34C759)"></div>
+          <div class="app" style="background:linear-gradient(180deg,#ffc04d,#FF9F0A)"></div>
+          <div class="app" style="background:linear-gradient(180deg,#ff6b8a,#FF375F)"></div>
+          <div class="app" style="background:rgba(255,255,255,.12);color:#fff;font-size:16px">+</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- statement 1 -->
+<section id="problem">
+  <div class="wrap statement reveal">
+    <p class="eyebrow" data-kr="문제" data-en="The problem">문제</p>
+    <h2 style="margin-top:14px"><span data-kr="노치는 메뉴바 한가운데를 가로막습니다." data-en="The notch cuts right through your menu bar.">노치는 메뉴바 한가운데를 가로막습니다.</span> <span class="d" data-kr="아이콘이 늘수록, 클릭조차 불가능해지죠." data-en="Add more apps, and they become impossible to click.">아이콘이 늘수록, 클릭조차 불가능해지죠.</span></h2>
+  </div>
+</section>
+
+<!-- how it works -->
+<section id="how">
+  <div class="wrap">
+    <div class="statement reveal">
+      <p class="eyebrow" data-kr="작동 방식" data-en="How it works">작동 방식</p>
+      <h2 style="margin-top:14px" data-kr="hover 한 번이면 충분합니다" data-en="One hover is all it takes">hover 한 번이면 충분합니다</h2>
+    </div>
+    <div class="steps">
+      <div class="card step reveal d1">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 40 40" fill="none"><rect x="12" y="2" width="16" height="6" rx="3" fill="#000" stroke="#0A84FF" stroke-width="1.6"/><path d="M20 12v9" stroke="#0A84FF" stroke-width="2" stroke-dasharray="2 3"/><circle cx="20" cy="30" r="6" stroke="#fff" stroke-width="1.6" opacity=".7"/><path d="M20 27v6M17 30h6" stroke="#fff" stroke-width="1.6" opacity=".7"/></svg></div>
+        <div class="k">01</div><h3 data-kr="노치에 마우스 올리기" data-en="Hover the notch">노치에 마우스 올리기</h3>
+        <p data-kr="노치 주변에 커서를 대면 드로어가 스르륵 내려옵니다." data-en="Bring the cursor near the notch and the drawer glides down.">노치 주변에 커서를 대면 드로어가 스르륵 내려옵니다.</p>
+      </div>
+      <div class="card step reveal d2">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 40 40"><rect x="4" y="16" width="32" height="14" rx="6" fill="#141418" stroke="#0A84FF" stroke-width="1.6"/><circle cx="13" cy="23" r="3" fill="#0A84FF"/><circle cx="20" cy="23" r="3" fill="#34C759"/><circle cx="27" cy="23" r="3" fill="#FF9F0A"/></svg></div>
+        <div class="k">02</div><h3 data-kr="가려진 아이콘이 펼쳐짐" data-en="Hidden icons fan out">가려진 아이콘이 펼쳐짐</h3>
+        <p data-kr="노치에 가려졌던 아이콘을 자동으로 찾아 정리해 보여줍니다." data-en="It auto-detects the notch-hidden icons and lays them out.">노치에 가려졌던 아이콘을 자동으로 찾아 정리해 보여줍니다.</p>
+      </div>
+      <div class="card step reveal d3">
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 40 40"><circle cx="20" cy="18" r="10" fill="#0A84FF"/><path d="M24 30l4 6" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M26 33l6-2-2 6z" fill="#fff"/></svg></div>
+        <div class="k">03</div><h3 data-kr="클릭하면 바로 실행" data-en="Click to launch">클릭하면 바로 실행</h3>
+        <p data-kr="드로어의 아이콘을 클릭하면 원래 앱의 메뉴가 그대로 열립니다." data-en="Click an icon and its original menu opens instantly.">드로어의 아이콘을 클릭하면 원래 앱의 메뉴가 그대로 열립니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- features -->
+<section id="features">
+  <div class="wrap">
+    <div class="statement reveal">
+      <p class="eyebrow" data-kr="기능" data-en="Features">기능</p>
+      <h2 style="margin-top:14px" data-kr="작지만, 빈틈이 없습니다" data-en="Small app. No compromises.">작지만, 빈틈이 없습니다</h2>
+    </div>
+    <div class="grid">
+      <div class="card feat reveal d1"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5AC8FA" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></div><h3 data-kr="자동 감지" data-en="Auto-detect">자동 감지</h3><p data-kr="손쉬운 사용 API로 노치에 가려진 아이콘만 인식합니다." data-en="Spots exactly the notch-hidden icons via the Accessibility API.">손쉬운 사용 API로 노치에 가려진 아이콘만 인식합니다.</p></div>
+      <div class="card feat reveal d2"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5AC8FA" stroke-width="1.8"><path d="M6 3l14 9-6 2-2 6z"/></svg></div><h3 data-kr="클릭으로 실행" data-en="Click to activate">클릭으로 실행</h3><p data-kr="드로어의 아이콘을 누르면 원래 메뉴가 그대로 열립니다." data-en="Tap an icon in the drawer to open its real menu.">드로어의 아이콘을 누르면 원래 메뉴가 그대로 열립니다.</p></div>
+      <div class="card feat reveal d3"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5AC8FA" stroke-width="1.8"><path d="M12 17V4M8 8l4-4 4 4"/><rect x="4" y="17" width="16" height="4" rx="2"/></svg></div><h3 data-kr="앱 고정" data-en="Pin apps">앱 고정</h3><p data-kr="자주 쓰는 앱은 가려지지 않아도 항상 드로어에 고정." data-en="Keep favorite apps in the drawer, always.">자주 쓰는 앱은 가려지지 않아도 항상 드로어에 고정.</p></div>
+      <div class="card feat reveal d1"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5AC8FA" stroke-width="1.8"><path d="M8 6v12M16 6v12M4 12h16"/></svg></div><h3 data-kr="간격 조절" data-en="Spacing control">간격 조절</h3><p data-kr="메뉴바·드로어 아이콘 간격을 시각적으로 조절." data-en="Tune menu bar and drawer spacing, visually.">메뉴바·드로어 아이콘 간격을 시각적으로 조절.</p></div>
+      <div class="card feat reveal d2"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5AC8FA" stroke-width="1.8"><path d="M5 9l-3 3 3 3M9 5l3-3 3 3M15 19l-3 3-3-3M19 9l3 3-3 3M2 12h20M12 2v20"/></svg></div><h3 data-kr="위치 이동" data-en="Drag to move">위치 이동</h3><p data-kr="드로어를 원하는 위치로 드래그. 풀면 제자리로 복귀." data-en="Drag the drawer anywhere; unpin to snap back.">드로어를 원하는 위치로 드래그. 풀면 제자리로 복귀.</p></div>
+      <div class="card feat reveal d3"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5AC8FA" stroke-width="1.8"><path d="M12 2l2.5 6.5L21 9l-5 4 1.5 7L12 16l-5.5 4L8 13 3 9l6.5-.5z"/></svg></div><h3 data-kr="평생 라이선스 · 한/영" data-en="Lifetime · KR & EN">평생 라이선스 · 한/영</h3><p data-kr="한 번 결제로 계속. UI는 시스템 언어에 맞춰 자동." data-en="Pay once. UI follows your system language.">한 번 결제로 계속. UI는 시스템 언어에 맞춰 자동.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- pricing -->
+<section id="pricing">
+  <div class="wrap statement reveal">
+    <p class="eyebrow" data-kr="가격" data-en="Pricing">가격</p>
+    <h2 style="margin-top:14px" data-kr="커피 한 잔 값, 평생 사용" data-en="Less than a coffee. Yours forever.">커피 한 잔 값, 평생 사용</h2>
+  </div>
+  <div class="wrap"><div class="price reveal d1">
+    <div class="tag">$5<small> USD</small></div>
+    <div class="psub" data-kr="일회성 · 평생 라이선스" data-en="ONE-TIME · LIFETIME">일회성 · 평생 라이선스</div>
+    <ul class="plist">
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg><span data-kr="7일 무료 체험 — 결제 전에 전부 사용" data-en="7-day free trial — try everything first">7일 무료 체험 — 결제 전에 전부 사용</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg><span data-kr="구독 없음 · 한 번 결제로 끝" data-en="No subscription · pay once">구독 없음 · 한 번 결제로 끝</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg><span data-kr="한 라이선스로 최대 5대" data-en="Up to 5 devices per license">한 라이선스로 최대 5대</span></li>
+      <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34C759" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg><span data-kr="업데이트 무료 · 데이터 수집 없음" data-en="Free updates · zero data collection">업데이트 무료 · 데이터 수집 없음</span></li>
+    </ul>
+    <a class="btn btn-p" style="width:100%;justify-content:center" href="https://takjakim.gumroad.com/l/notch" target="_blank" rel="noopener" data-kr="지금 구매하기" data-en="Buy now">지금 구매하기</a>
+  </div></div>
+</section>
+
+<!-- faq -->
+<section id="faq">
+  <div class="wrap">
+    <div class="statement reveal"><p class="eyebrow" data-kr="자주 묻는 질문" data-en="FAQ">자주 묻는 질문</p><h2 style="margin-top:14px" data-kr="궁금한 점" data-en="Questions">궁금한 점</h2></div>
+    <div class="faq reveal d1">
+      <details><summary data-kr="어떤 Mac에서 쓸 수 있나요?" data-en="Which Macs are supported?">어떤 Mac에서 쓸 수 있나요?</summary><p data-kr="노치가 있는 MacBook Pro(2021년 이후)와 MacBook Air(2022년 이후)에서 가장 유용합니다. 최신 macOS에서 테스트되었습니다." data-en="Best on notch-equipped MacBook Pro (2021+) and MacBook Air (2022+). Tested on recent macOS.">노치가 있는 MacBook Pro(2021년 이후)와 MacBook Air(2022년 이후)에서 가장 유용합니다. 최신 macOS에서 테스트되었습니다.</p></details>
+      <details><summary data-kr="손쉬운 사용 권한이 왜 필요한가요?" data-en="Why does it need Accessibility permission?">손쉬운 사용 권한이 왜 필요한가요?</summary><p data-kr="다른 앱의 메뉴바 아이콘을 읽고 클릭하려면 macOS의 손쉬운 사용 권한이 필요합니다. 화면 녹화 권한은 전혀 사용하지 않습니다." data-en="To read and click other apps’ menu bar icons, macOS requires Accessibility. It never uses Screen Recording.">다른 앱의 메뉴바 아이콘을 읽고 클릭하려면 macOS의 손쉬운 사용 권한이 필요합니다. 화면 녹화 권한은 전혀 사용하지 않습니다.</p></details>
+      <details><summary data-kr="데이터를 수집하나요?" data-en="Do you collect any data?">데이터를 수집하나요?</summary><p data-kr="아니요. 모든 동작은 기기 안에서만 이뤄지며, 추적·분석·전송이 전혀 없습니다." data-en="No. Everything runs locally — no tracking, analytics, or transmission.">아니요. 모든 동작은 기기 안에서만 이뤄지며, 추적·분석·전송이 전혀 없습니다.</p></details>
+      <details><summary data-kr="안전한가요?" data-en="Is it safe to install?">안전한가요?</summary><p data-kr="Apple 개발자 서명과 공증(Notarization)을 거쳐 배포되므로 Gatekeeper 경고 없이 설치할 수 있습니다." data-en="Distributed with an Apple Developer signature and notarization — installs without Gatekeeper warnings.">Apple 개발자 서명과 공증(Notarization)을 거쳐 배포되므로 Gatekeeper 경고 없이 설치할 수 있습니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- final -->
+<section style="padding-top:20px">
+  <div class="wrap statement reveal">
+    <h2 data-kr="노치를, 되찾으세요." data-en="Take back your notch.">노치를, 되찾으세요.</h2>
+    <div class="cta"><a class="btn btn-p" href="https://takjakim.gumroad.com/l/notch" target="_blank" rel="noopener" data-kr="$5로 시작하기" data-en="Get started — $5">$5로 시작하기</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>© <span id="year"></span> NotchDrawer · <span data-kr="만든 사람 takjakim" data-en="Made by takjakim">만든 사람 takjakim</span></div>
+    <div style="display:flex;gap:20px">
+      <a href="mailto:gimwogus@gmail.com" data-kr="문의" data-en="Contact">문의</a>
+      <a href="https://takjakim.gumroad.com/l/notch" target="_blank" rel="noopener" data-kr="구매" data-en="Buy">구매</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var KEY='nd-lang';
+  var reduce = matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function detect(){var s=localStorage.getItem(KEY);if(s)return s;return (navigator.language||'en').toLowerCase().indexOf('ko')===0?'kr':'en';}
+  function apply(lang){
+    document.documentElement.lang=lang==='kr'?'ko':'en';
+    document.documentElement.dataset.lang=lang;
+    document.querySelectorAll('[data-kr]').forEach(function(el){var v=el.getAttribute('data-'+lang);if(v!=null)el.textContent=v;});
+    document.querySelectorAll('[data-setlang]').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-setlang')===lang);});
+    try{localStorage.setItem(KEY,lang);}catch(e){}
+  }
+  document.querySelectorAll('[data-setlang]').forEach(function(b){b.addEventListener('click',function(){apply(b.getAttribute('data-setlang'));});});
+  apply(detect());
+  document.getElementById('year').textContent=new Date().getFullYear();
+
+  // reveal on scroll
+  var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+
+  if(reduce) return;
+
+  // 3D mouse tilt on hero device + scroll depth
+  var device=document.getElementById('device');
+  var stage=device.parentElement;
+  var trx=0,try_=0,crx=0,cry=0,active=false;
+  function move(e){
+    var r=stage.getBoundingClientRect();
+    var x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+    try_=x*16; trx=y*-11; active=true;
+  }
+  function leave(){trx=0;try_=0;}
+  window.addEventListener('mousemove',move,{passive:true});
+  stage.addEventListener('mouseleave',leave);
+  // gentle idle drift until first interaction
+  var t0=performance.now();
+  (function loop(now){
+    if(!active){var e=(now-t0)/1000;trx=Math.sin(e*.6)*3;try_=Math.cos(e*.5)*5;}
+    crx+=(trx-crx)*.07; cry+=(try_-cry)*.07;
+    device.style.transform='rotateX('+crx.toFixed(2)+'deg) rotateY('+cry.toFixed(2)+'deg)';
+    requestAnimationFrame(loop);
+  })(t0);
+
+  // parallax orbs on scroll
+  var orbs=document.querySelectorAll('.orb');
+  window.addEventListener('scroll',function(){
+    var y=window.scrollY;
+    orbs.forEach(function(o,i){o.style.transform='translateY('+(y*(0.06+i*0.04))+'px)';});
+  },{passive:true});
+})();
+</script>
+</body>
+</html>
