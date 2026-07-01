@@ -1,16 +1,19 @@
 {
   "meta": {
-    "generated_at": "2026-06-30T04:21:30.847764+00:00",
+    "generated_at": "2026-07-01T04:49:44.801478+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 393
+      "views": 422
     },
     "/about/": {
       "views": 9
+    },
+    "/ai-work-data-control/": {
+      "views": 1
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 15
@@ -20,6 +23,9 @@
     },
     "/ai/generative-ai-privacy-guide-2026/": {
       "views": 1
+    },
+    "/ai/google-saif-ai-security-framework-2026/": {
+      "views": 5
     },
     "/ai/heyling-day1/": {
       "views": 11
@@ -82,16 +88,19 @@
       "views": 3
     },
     "/education/2026-university-innovation-support-plan/": {
-      "views": 8
+      "views": 9
     },
     "/education/ai-dx-vocational-college-checklist/": {
-      "views": 6
+      "views": 7
     },
     "/education/changwon-university-issues-2026/": {
       "views": 7
     },
+    "/education/global-talent-settlement-university-strategy/": {
+      "views": 2
+    },
     "/education/glocal30-junior-college-track-2026/": {
-      "views": 6
+      "views": 7
     },
     "/education/keimyung-culture-college-rise-healthcare-2026/": {
       "views": 8
@@ -103,10 +112,10 @@
       "views": 1
     },
     "/education/kumoh-anchor-superregional-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
-      "views": 2
+      "views": 4
     },
     "/education/rise-linked-investment-university-strategy/": {
       "views": 3
@@ -114,10 +123,16 @@
     "/education/sehan-university-rise-aviation-welfare-2026/": {
       "views": 3
     },
+    "/education/soonchunhyang-glamp-research-hub-2026/": {
+      "views": 2
+    },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 4
     },
     "/g7-gx-industry-axis/": {
+      "views": 1
+    },
+    "/generative-ai-privacy-protection/": {
       "views": 1
     },
     "/graph/": {
@@ -133,6 +148,9 @@
       "views": 1
     },
     "/investing/2026-02-12-global/": {
+      "views": 1
+    },
+    "/investing/2026-02-18-us/": {
       "views": 1
     },
     "/investing/2026-02-19-us/": {
@@ -226,6 +244,9 @@
       "views": 1
     },
     "/performance-indexing/": {
+      "views": 1
+    },
+    "/prompt-injection/": {
       "views": 1
     },
     "/regional-industry-academic-network/": {
