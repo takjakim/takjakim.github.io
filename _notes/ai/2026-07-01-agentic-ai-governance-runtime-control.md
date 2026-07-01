@@ -6,8 +6,8 @@ type: analysis
 label: AI
 tags: [AI거버넌스, 에이전틱AI, AgenticAI, AI에이전트, 런타임통제, 섀도우AI, ResponsibleAI, 기업AI, AI보안, 프롬프트인젝션, AI위험관리]
 description: "에이전틱 AI 시대의 AI 거버넌스를 윤리 체크리스트가 아니라 런타임 통제, 데이터 추적성, 권한 관리, 리더십 책임 구조가 결합된 전사 아키텍처 문제로 정리했다."
-date: 2026-07-01 20:05:00 +0900
-last_modified_at: 2026-07-01 20:05:00 +0900
+date: 2026-07-01 19:55:00 +0900
+last_modified_at: 2026-07-01 19:55:00 +0900
 permalink: /ai/agentic-ai-governance-runtime-control/
 image: /assets/images/ai/agentic-ai-governance-runtime-control-2026-og.jpg
 ---
