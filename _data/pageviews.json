@@ -1,22 +1,37 @@
 {
   "meta": {
-    "generated_at": "2026-07-01T04:49:44.801478+00:00",
+    "generated_at": "2026-07-02T04:17:36.114104+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 422
+      "views": 436
     },
     "/about/": {
-      "views": 9
+      "views": 7
+    },
+    "/adult-learners/": {
+      "views": 1
+    },
+    "/ai-governance/": {
+      "views": 2
     },
     "/ai-work-data-control/": {
       "views": 1
     },
+    "/ai-x/": {
+      "views": 1
+    },
+    "/ai/": {
+      "views": 1
+    },
+    "/ai/agentic-ai-governance-runtime-control/": {
+      "views": 1
+    },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 15
+      "views": 16
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 4
@@ -32,6 +47,9 @@
     },
     "/ai/heyling-day2/": {
       "views": 1
+    },
+    "/ai/karpathy-llm-wiki-digital-garden/": {
+      "views": 4
     },
     "/ai/session1-esg-patent-startup-innovation/": {
       "views": 7
@@ -54,14 +72,17 @@
     "/anchor-policy/": {
       "views": 1
     },
+    "/backlink/": {
+      "views": 1
+    },
     "/big-tech/": {
       "views": 1
     },
     "/college-consulting/": {
-      "views": 17
+      "views": 18
     },
     "/college-reviews/": {
-      "views": 4
+      "views": 5
     },
     "/consistency/": {
       "views": 1
@@ -69,8 +90,11 @@
     "/daegu-haany-university-kmedi-2026/": {
       "views": 3
     },
+    "/dev/": {
+      "views": 1
+    },
     "/dev/claude-code-team-dashboard/": {
-      "views": 3
+      "views": 4
     },
     "/dev/marp-editor/devlog-1/": {
       "views": 2
@@ -84,14 +108,26 @@
     "/dev/stats-method/development/": {
       "views": 1
     },
+    "/dev/stats-method/planning/": {
+      "views": 1
+    },
+    "/digital-badge/": {
+      "views": 1
+    },
+    "/digital-garden-concept/": {
+      "views": 1
+    },
     "/education/2026-06-23-adiga-check-routine/": {
       "views": 3
     },
     "/education/2026-university-innovation-support-plan/": {
-      "views": 9
+      "views": 10
     },
     "/education/ai-dx-vocational-college-checklist/": {
       "views": 7
+    },
+    "/education/ai-microdegree-digital-badge-university-strategy-2026/": {
+      "views": 3
     },
     "/education/changwon-university-issues-2026/": {
       "views": 7
@@ -113,6 +149,9 @@
     },
     "/education/kumoh-anchor-superregional-2026/": {
       "views": 2
+    },
+    "/education/rise-governance-operating-model-2026/": {
+      "views": 3
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
       "views": 4
@@ -139,6 +178,9 @@
       "views": 4
     },
     "/gyeonggi-rise/": {
+      "views": 1
+    },
+    "/human-in-the-loop/": {
       "views": 1
     },
     "/industry-academic-cooperation/": {
@@ -219,6 +261,9 @@
     "/investing/2026-06-24-us/": {
       "views": 4
     },
+    "/investing/2026-06-30-korea/": {
+      "views": 1
+    },
     "/investing/csi300/": {
       "views": 1
     },
@@ -231,11 +276,23 @@
     "/investing/ixic/": {
       "views": 1
     },
+    "/llm-wiki/": {
+      "views": 1
+    },
+    "/macos/aptx/": {
+      "views": 2
+    },
     "/macos/pip_install/": {
       "views": 1
     },
     "/macos/tidal-dl/": {
       "views": 3
+    },
+    "/notchdrawer/": {
+      "views": 2
+    },
+    "/notes/개념-노트/": {
+      "views": 1
     },
     "/notes/생성형-ai-개인정보-보호/": {
       "views": 1
@@ -243,10 +300,16 @@
     "/notes/학생-이동성/": {
       "views": 1
     },
+    "/obsidian/": {
+      "views": 2
+    },
     "/performance-indexing/": {
       "views": 1
     },
     "/prompt-injection/": {
+      "views": 1
+    },
+    "/rag/": {
       "views": 1
     },
     "/regional-industry-academic-network/": {
@@ -263,6 +326,9 @@
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 4
+    },
+    "/student-portfolio/": {
+      "views": 1
     },
     "/super-regional-cooperation/": {
       "views": 1
@@ -315,14 +381,17 @@
     "/tags/pdf/": {
       "views": 1
     },
+    "/tags/planning/": {
+      "views": 1
+    },
     "/tags/presentation/": {
       "views": 1
     },
     "/tags/product/": {
-      "views": 1
+      "views": 2
     },
     "/tags/productivity/": {
-      "views": 2
+      "views": 3
     },
     "/tags/puppeteer/": {
       "views": 1
