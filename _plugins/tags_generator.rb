@@ -38,12 +38,21 @@ module Jekyll
     end
 
     def initialize(site, tag, docs)
-      super(site, site.source, File.join('tags', Utils.slugify(tag)), 'index.html')
-      self.data['layout'] = 'tag'
-      self.data['tag'] = tag
+      # Generated pages do not have a source file on disk. Do not call Page#initialize
+      # with tags/<tag>/index.html, because Jekyll will try to read that non-existent
+      # source file and emit hundreds of "Error reading file" messages during builds.
+      @site = site
+      @base = site.source
+      @dir = File.join('tags', Utils.slugify(tag))
+      @name = 'index.html'
 
-      # This is a generated page (no real source file on disk).
-      # Provide a stable last_modified_at so plugins/sitemap don't try to stat a missing file.
+      process(@name)
+      self.content = ''
+      self.data = {
+        'layout' => 'tag',
+        'tag' => tag
+      }
+
       now = Time.now
       self.data['last_modified_at'] = now
       self.data['last_modified_at_timestamp'] = now.to_i
