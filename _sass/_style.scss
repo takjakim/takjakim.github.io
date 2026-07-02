@@ -1049,10 +1049,16 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
 .garden-sidebar-group {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.34rem;
 }
 
+.garden-sidebar-group--contact {
+  grid-template-columns: 1fr;
+}
+
 .garden-sidebar-label {
+  grid-column: 1 / -1;
   margin: 0.1rem 0.2rem 0.04rem;
 }
 
@@ -1080,6 +1086,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     color: #64748b;
     font-size: 0.74rem;
     line-height: 1.25;
+    word-break: keep-all;
   }
 
   &:hover {
