@@ -6,6 +6,51 @@ permalink: /
 ---
 
 <div class="garden-container">
+  <button class="garden-sidebar-toggle" id="garden-sidebar-toggle" type="button" aria-controls="garden-sidebar" aria-expanded="false">
+    <span class="garden-sidebar-toggle-icon" aria-hidden="true">☰</span>
+    <span>Garden Map</span>
+  </button>
+
+  <div class="garden-sidebar-backdrop" id="garden-sidebar-backdrop" hidden></div>
+
+  <aside class="garden-sidebar" id="garden-sidebar" aria-label="Garden Map" aria-hidden="true">
+    <div class="garden-sidebar-panel">
+      <div class="garden-sidebar-head">
+        <div>
+          <span class="garden-sidebar-kicker">Navigation</span>
+          <strong>Garden Map</strong>
+        </div>
+        <button class="garden-sidebar-close" id="garden-sidebar-close" type="button" aria-label="Garden Map 닫기">×</button>
+      </div>
+
+      <nav class="garden-sidebar-nav" aria-label="주요 탐색">
+        <div class="garden-sidebar-group">
+          <span class="garden-sidebar-label">주제</span>
+          <a href="{{ site.baseurl }}/tags/ai/"><span>AI</span><small>생성형 AI · 거버넌스</small></a>
+          <a href="{{ site.baseurl }}/college-consulting/"><span>대학컨설팅</span><small>대학전략 · 교육과정</small></a>
+          <a href="{{ site.baseurl }}/tags/market/"><span>Market</span><small>증시 · 매크로 관찰</small></a>
+          <a href="{{ site.baseurl }}/tags/running/"><span>Running</span><small>트레일 · 훈련 로그</small></a>
+          <a href="{{ site.baseurl }}/tags/dev/"><span>Dev</span><small>개발 · 자동화</small></a>
+        </div>
+
+        <div class="garden-sidebar-group">
+          <span class="garden-sidebar-label">탐색</span>
+          <a href="{{ site.baseurl }}/graph/"><span>Graph View</span><small>노트 연결 보기</small></a>
+          <a href="{{ site.baseurl }}/tags/"><span>Tags</span><small>태그 지도</small></a>
+          <a href="#recent-notes"><span>최근 업데이트</span><small>새로 쓴 노트</small></a>
+          <a href="#topic-explore"><span>주제별 탐색</span><small>카테고리 입구</small></a>
+        </div>
+
+        <div class="garden-sidebar-group garden-sidebar-group--contact">
+          <span class="garden-sidebar-label">문의</span>
+          <a class="garden-sidebar-kakao" href="https://open.kakao.com/o/s1FJhUAi" target="_blank" rel="noopener noreferrer">
+            <span>대학컨설팅 문의</span><small>카카오톡 오픈채팅</small>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </aside>
+
   <!-- Hero Section with Graph Background -->
   <header class="hero-2026">
     <div class="hero-graph-bg" aria-hidden="true">
@@ -275,6 +320,70 @@ permalink: /
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  const sidebar = document.getElementById('garden-sidebar');
+  const sidebarToggle = document.getElementById('garden-sidebar-toggle');
+  const sidebarClose = document.getElementById('garden-sidebar-close');
+  const sidebarBackdrop = document.getElementById('garden-sidebar-backdrop');
+  const sidebarStorageKey = 'takjakim:garden-sidebar-open';
+
+  function setSidebarState(isOpen, options = {}) {
+    if (!sidebar || !sidebarToggle || !sidebarBackdrop) return;
+    sidebar.classList.toggle('is-open', isOpen);
+    sidebar.setAttribute('aria-hidden', String(!isOpen));
+    sidebarToggle.setAttribute('aria-expanded', String(isOpen));
+    sidebarBackdrop.hidden = !isOpen;
+    document.body.classList.toggle('garden-sidebar-open', isOpen);
+
+    if (options.persist !== false) {
+      try {
+        window.localStorage.setItem(sidebarStorageKey, isOpen ? '1' : '0');
+      } catch (error) {}
+    }
+
+    if (isOpen && options.focus !== false && sidebarClose) {
+      sidebarClose.focus({ preventScroll: true });
+    }
+  }
+
+  if (sidebar && sidebarToggle && sidebarBackdrop) {
+    let shouldRestoreSidebar = false;
+    try {
+      shouldRestoreSidebar = window.localStorage.getItem(sidebarStorageKey) === '1' && window.matchMedia('(min-width: 900px)').matches;
+    } catch (error) {}
+
+    setSidebarState(shouldRestoreSidebar, { persist: false, focus: false });
+
+    sidebarToggle.addEventListener('click', function() {
+      setSidebarState(!sidebar.classList.contains('is-open'));
+    });
+
+    if (sidebarClose) {
+      sidebarClose.addEventListener('click', function() {
+        setSidebarState(false);
+        sidebarToggle.focus({ preventScroll: true });
+      });
+    }
+
+    sidebarBackdrop.addEventListener('click', function() {
+      setSidebarState(false);
+    });
+
+    sidebar.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', function() {
+        if (this.getAttribute('href') && this.getAttribute('href').startsWith('#')) {
+          setSidebarState(false);
+        }
+      });
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && sidebar.classList.contains('is-open')) {
+        setSidebarState(false);
+        sidebarToggle.focus({ preventScroll: true });
+      }
+    });
+  }
+
   const pills = document.querySelectorAll('#recent-notes button.pill[data-filter]');
   const cards = document.querySelectorAll('#notes-grid .glass-card');
   const loadMoreBtn = document.getElementById('load-more');
