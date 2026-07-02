@@ -977,7 +977,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 .garden-sidebar-panel {
   height: calc(100dvh - 1.2rem);
   margin: 0.6rem;
-  padding: 1.05rem;
+  padding: 0.9rem;
   border: 1px solid rgba(15, 23, 42, 0.1);
   border-radius: 28px;
   background:
@@ -995,7 +995,7 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  padding: 0.25rem 0.2rem 1rem;
+  padding: 0.15rem 0.15rem 0.72rem;
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 
   strong {
@@ -1043,26 +1043,26 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
 .garden-sidebar-nav {
   display: grid;
-  gap: 1rem;
-  padding-top: 1rem;
+  gap: 0.74rem;
+  padding-top: 0.78rem;
 }
 
 .garden-sidebar-group {
   display: grid;
-  gap: 0.48rem;
+  gap: 0.34rem;
 }
 
 .garden-sidebar-label {
-  margin: 0.2rem 0.2rem 0.1rem;
+  margin: 0.1rem 0.2rem 0.04rem;
 }
 
 .garden-sidebar-nav a {
   display: flex;
   flex-direction: column;
-  gap: 0.18rem;
-  padding: 0.78rem 0.9rem;
+  gap: 0.1rem;
+  padding: 0.58rem 0.76rem;
   border: 1px solid rgba(15, 23, 42, 0.08);
-  border-radius: 17px;
+  border-radius: 15px;
   background: rgba(255, 255, 255, 0.66);
   color: $color-primary;
   text-decoration: none;
@@ -1078,8 +1078,8 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
   small {
     color: #64748b;
-    font-size: 0.78rem;
-    line-height: 1.35;
+    font-size: 0.74rem;
+    line-height: 1.25;
   }
 
   &:hover {
