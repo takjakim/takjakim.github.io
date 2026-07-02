@@ -1,7 +1,7 @@
 ---
 title: "전문대 위기는 지방만의 문제가 아니다: AI 전환과 앵커 시대의 고등직업교육 전략"
-date: 2026-07-03 08:28:00 +0900
-last_modified_at: 2026-07-03 08:28:00 +0900
+date: 2026-07-03 08:10:00 +0900
+last_modified_at: 2026-07-03 08:21:00 +0900
 categories: [education]
 type: note
 label: POLICY
