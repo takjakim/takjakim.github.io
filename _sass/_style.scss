@@ -2684,22 +2684,6 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
     margin-bottom: 1.5rem;
   }
 
-  blockquote {
-    margin: 1.65rem 0 1.9rem;
-    padding: 1.15rem 1.35rem 1.15rem 1.55rem;
-    font-size: 1rem;
-    line-height: 1.78;
-    letter-spacing: -0.01em;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    p + p {
-      margin-top: 0.78em;
-    }
-  }
-
   a {
     overflow-wrap: break-word;
     word-break: keep-all;
@@ -2872,11 +2856,27 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
   }
 
   blockquote {
-    border-left: 3px solid $color-accent-coral;
-    padding-left: 1.5rem;
-    margin: 1.5rem 0;
-    color: $color-subtext;
-    font-style: italic;
+    position: relative;
+    padding: 1.15rem 1.35rem 1.15rem 1.55rem;
+    margin: 1.65rem 0 1.9rem;
+    font-size: 1rem;
+    line-height: 1.78;
+    letter-spacing: -0.01em;
+    color: mix($color-text, $color-subtext, 88%);
+    font-style: normal;
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.72));
+    border: 1px solid rgba(203, 213, 225, 0.78);
+    border-left: 4px solid rgba(59, 130, 246, 0.72);
+    border-radius: $border-radius;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.045);
+
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      margin-top: 0.78em;
+    }
   }
 
   hr {
