@@ -57,14 +57,24 @@ img {
 }
 
 blockquote {
-  padding: 1.5em;
-  margin: 0;
-  font-size: 0.88em;
-  background: $color-box-background;
+  position: relative;
+  padding: 1.15em 1.35em 1.15em 1.55em;
+  margin: 1.35em 0;
+  font-size: 0.96em;
+  line-height: 1.72;
+  color: mix($color-text, $color-subtext, 88%);
+  background: linear-gradient(135deg, rgba(248, 250, 252, 0.96), rgba(241, 245, 249, 0.72));
+  border: 1px solid rgba(203, 213, 225, 0.78);
+  border-left: 4px solid rgba(59, 130, 246, 0.72);
   border-radius: $border-radius;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.045);
 
   p {
     margin: 0;
+  }
+
+  p + p {
+    margin-top: 0.78em;
   }
 }
 
@@ -2672,6 +2682,22 @@ $color-glass-border: rgba(255, 255, 255, 0.12);
 
   p {
     margin-bottom: 1.5rem;
+  }
+
+  blockquote {
+    margin: 1.65rem 0 1.9rem;
+    padding: 1.15rem 1.35rem 1.15rem 1.55rem;
+    font-size: 1rem;
+    line-height: 1.78;
+    letter-spacing: -0.01em;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    p + p {
+      margin-top: 0.78em;
+    }
   }
 
   a {
