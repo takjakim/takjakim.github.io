@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-02T04:17:36.114104+00:00",
+    "generated_at": "2026-07-03T04:04:06.137818+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 436
+      "views": 464
     },
     "/about/": {
       "views": 7
@@ -36,6 +36,18 @@
     "/ai/ai-productivity-governance-keynote/": {
       "views": 4
     },
+    "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
+      "views": 3
+    },
+    "/ai/ai-workstation/": {
+      "views": 2
+    },
+    "/ai/apple-memory-exit-strategy-nasdaq-memory-selloff/": {
+      "views": 2
+    },
+    "/ai/apple-price-increase-device-sovereignty/": {
+      "views": 9
+    },
     "/ai/generative-ai-privacy-guide-2026/": {
       "views": 1
     },
@@ -49,7 +61,10 @@
       "views": 1
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
-      "views": 4
+      "views": 8
+    },
+    "/ai/local-finetuning/": {
+      "views": 1
     },
     "/ai/session1-esg-patent-startup-innovation/": {
       "views": 7
@@ -79,7 +94,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 18
+      "views": 19
     },
     "/college-reviews/": {
       "views": 5
@@ -95,6 +110,9 @@
     },
     "/dev/claude-code-team-dashboard/": {
       "views": 4
+    },
+    "/dev/markdown-hang/": {
+      "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
       "views": 2
@@ -129,6 +147,9 @@
     "/education/ai-microdegree-digital-badge-university-strategy-2026/": {
       "views": 3
     },
+    "/education/anchor-forest-regional-talent-strategy/": {
+      "views": 1
+    },
     "/education/changwon-university-issues-2026/": {
       "views": 7
     },
@@ -137,6 +158,9 @@
     },
     "/education/glocal30-junior-college-track-2026/": {
       "views": 7
+    },
+    "/education/junior-college-presidents-survival-strategy/": {
+      "views": 3
     },
     "/education/keimyung-culture-college-rise-healthcare-2026/": {
       "views": 8
@@ -150,8 +174,11 @@
     "/education/kumoh-anchor-superregional-2026/": {
       "views": 2
     },
+    "/education/pknu-ax-innovation-college-strategy/": {
+      "views": 1
+    },
     "/education/rise-governance-operating-model-2026/": {
-      "views": 3
+      "views": 6
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
       "views": 4
@@ -168,6 +195,9 @@
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 4
     },
+    "/education/vocational-college-strategy-ai-anchor/": {
+      "views": 1
+    },
     "/g7-gx-industry-axis/": {
       "views": 1
     },
@@ -175,7 +205,10 @@
       "views": 1
     },
     "/graph/": {
-      "views": 4
+      "views": 5
+    },
+    "/gyeongbuk-robot-specialization-university/": {
+      "views": 1
     },
     "/gyeonggi-rise/": {
       "views": 1
@@ -214,6 +247,9 @@
       "views": 1
     },
     "/investing/2026-04-03-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-08-us/": {
       "views": 1
     },
     "/investing/2026-04-16-korea/": {
@@ -276,6 +312,12 @@
     "/investing/ixic/": {
       "views": 1
     },
+    "/investing/ndx/": {
+      "views": 1
+    },
+    "/knowledge-base/": {
+      "views": 2
+    },
     "/llm-wiki/": {
       "views": 1
     },
@@ -291,10 +333,25 @@
     "/notchdrawer/": {
       "views": 2
     },
+    "/notes/ai-인플레이션/": {
+      "views": 1
+    },
+    "/notes/anchor/": {
+      "views": 1
+    },
     "/notes/개념-노트/": {
       "views": 1
     },
+    "/notes/고등직업교육/": {
+      "views": 1
+    },
+    "/notes/기기-주권/": {
+      "views": 1
+    },
     "/notes/생성형-ai-개인정보-보호/": {
+      "views": 1
+    },
+    "/notes/실습교육/": {
       "views": 1
     },
     "/notes/학생-이동성/": {
@@ -340,7 +397,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 3
+      "views": 6
     },
     "/tags/automation/": {
       "views": 1
@@ -418,7 +475,7 @@
       "views": 2
     },
     "/tags/tech/": {
-      "views": 1
+      "views": 2
     },
     "/tags/trail-running/": {
       "views": 1
@@ -463,6 +520,9 @@
       "views": 1
     },
     "/theory/r4-obsidian/": {
+      "views": 1
+    },
+    "/tigers/": {
       "views": 1
     },
     "/volatility/": {
