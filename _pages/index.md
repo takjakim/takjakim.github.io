@@ -42,9 +42,9 @@ permalink: /
         </div>
 
         <div class="garden-sidebar-group garden-sidebar-group--contact">
-          <span class="garden-sidebar-label">문의</span>
+          <span class="garden-sidebar-label">Contacts</span>
           <a class="garden-sidebar-kakao" href="https://open.kakao.com/o/s1FJhUAi" target="_blank" rel="noopener noreferrer">
-            <span>대학컨설팅 문의</span><small>카카오톡 오픈채팅</small>
+            <span>KakaoTalk</span><small>Open Chat</small>
           </a>
         </div>
       </nav>
