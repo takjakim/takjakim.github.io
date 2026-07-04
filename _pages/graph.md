@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Graph View
-permalink: /graph
+permalink: /graph/
 ---
 
 <section id="graph-page" class="graph-page-shell">
