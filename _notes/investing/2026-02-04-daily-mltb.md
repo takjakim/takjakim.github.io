@@ -43,5 +43,5 @@ last_modified_at: 2026-02-05
 3) AI 인프라(전력/데이터센터/메모리) 쪽에서 **병목 완화 시그널**이 나오는지
 
 ## 6) 연결 노트
-- 분석 가이드: [[welcome-to-market-analysis]] / [[welcome-to-investing]]
+- 분석 가이드: [[해외 지수 분석 시작하기|welcome-to-market-analysis]] / [[지수 투자 시작하기|welcome-to-investing]]
 - 원칙/도구: [[지수 투자 시작하기]] / [[AI 투자 분석 활용하기]]

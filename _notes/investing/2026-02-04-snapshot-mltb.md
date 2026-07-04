@@ -38,5 +38,5 @@ last_modified_at: 2026-02-06
   2) 무료 유지면: 미국 movers/지수 범위를 더 줄이고, 캐시 기반으로 “최소한의 스냅샷”만 보내기
 
 ## 4) 연결 노트
-- 분석 가이드: [[welcome-to-market-analysis]]
+- 분석 가이드: [[해외 지수 분석 시작하기|welcome-to-market-analysis]]
 - 투자 원칙: [[지수 투자 시작하기]]
