@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-03T04:04:06.137818+00:00",
+    "generated_at": "2026-07-04T03:57:24.748248+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 464
+      "views": 481
     },
     "/about/": {
       "views": 7
@@ -17,6 +17,9 @@
     },
     "/ai-governance/": {
       "views": 2
+    },
+    "/ai-quality-management/": {
+      "views": 1
     },
     "/ai-work-data-control/": {
       "views": 1
@@ -28,7 +31,7 @@
       "views": 1
     },
     "/ai/agentic-ai-governance-runtime-control/": {
-      "views": 1
+      "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 16
@@ -37,22 +40,22 @@
       "views": 4
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 3
+      "views": 4
     },
     "/ai/ai-workstation/": {
       "views": 2
     },
     "/ai/apple-memory-exit-strategy-nasdaq-memory-selloff/": {
-      "views": 2
+      "views": 3
     },
     "/ai/apple-price-increase-device-sovereignty/": {
-      "views": 9
+      "views": 11
     },
     "/ai/generative-ai-privacy-guide-2026/": {
       "views": 1
     },
     "/ai/google-saif-ai-security-framework-2026/": {
-      "views": 5
+      "views": 8
     },
     "/ai/heyling-day1/": {
       "views": 11
@@ -94,7 +97,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 19
+      "views": 20
     },
     "/college-reviews/": {
       "views": 5
@@ -104,6 +107,9 @@
     },
     "/daegu-haany-university-kmedi-2026/": {
       "views": 3
+    },
+    "/daily/": {
+      "views": 1
     },
     "/dev/": {
       "views": 1
@@ -205,7 +211,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 5
+      "views": 6
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -214,7 +220,7 @@
       "views": 1
     },
     "/human-in-the-loop/": {
-      "views": 1
+      "views": 2
     },
     "/industry-academic-cooperation/": {
       "views": 1
@@ -282,6 +288,9 @@
     "/investing/2026-06-16-us/": {
       "views": 1
     },
+    "/investing/2026-06-17-us/": {
+      "views": 1
+    },
     "/investing/2026-06-19-korea/": {
       "views": 2
     },
@@ -289,7 +298,7 @@
       "views": 1
     },
     "/investing/2026-06-22-us/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-06-23-korea/": {
       "views": 4
@@ -299,6 +308,9 @@
     },
     "/investing/2026-06-30-korea/": {
       "views": 1
+    },
+    "/investing/2026-07-02-us/": {
+      "views": 2
     },
     "/investing/csi300/": {
       "views": 1
@@ -328,7 +340,7 @@
       "views": 1
     },
     "/macos/tidal-dl/": {
-      "views": 3
+      "views": 7
     },
     "/notchdrawer/": {
       "views": 2
@@ -382,7 +394,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 4
+      "views": 5
     },
     "/student-portfolio/": {
       "views": 1
@@ -397,7 +409,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 6
+      "views": 8
     },
     "/tags/automation/": {
       "views": 1
@@ -406,7 +418,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 4
+      "views": 5
     },
     "/tags/djia/": {
       "views": 1
@@ -430,7 +442,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 4
+      "views": 6
     },
     "/tags/paraphrasing/": {
       "views": 1
@@ -460,7 +472,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 3
+      "views": 5
     },
     "/tags/serverless/": {
       "views": 1
