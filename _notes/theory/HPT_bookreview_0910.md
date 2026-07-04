@@ -25,13 +25,13 @@ APA: Stolovitch, H. D., & Keeps, E. J. (2006). Handbook of human performance tec
 ### 3. 해당 챕터 학습 후 전체적으로 본인이 학습하게 된 부분
 
 **문제와 기회에 대한 체계적 접근**
-- [[분석(Analysis)]]은 조직의 현재 상태를 파악하고 [[성과 격차(Performance Gap)]]를 정의하며, [[요구사항 정의(Requirements)]]는 이를 해결하기 위한 구체적이고 측정 가능한 방향성을 제공한다. 이러한 체계적 접근은 데이터에 기반하여 조직의 [[전략적 목표(Strategic Goals)]]와 [[성과 향상(Performance Improvement)]]을 연결하는 핵심 과정임을 이해했다.
+- 분석(Analysis)은 조직의 현재 상태를 파악하고 성과 격차(Performance Gap)를 정의하며, 요구사항 정의(Requirements)는 이를 해결하기 위한 구체적이고 측정 가능한 방향성을 제공한다. 이러한 체계적 접근은 데이터에 기반하여 조직의 전략적 목표(Strategic Goals)와 성과 향상(Performance Improvement)을 연결하는 핵심 과정임을 이해했다.
 
 **분석과 평가의 순환적 관계**
-- [[분석(Analysis)]]은 성과를 개선하기 위한 이상적인 상태를 설계하는 데 초점을 맞추고, [[평가(Evaluation)]]는 실행 결과를 검증하며 지속적인 피드백을 제공한다. 두 과정은 상호 보완적이며 [[순환적 관계(Cyclical Relationship)]]를 가지며, 이를 통해 조직은 끊임없이 학습하고 발전할 수 있다.
+- 분석(Analysis)은 성과를 개선하기 위한 이상적인 상태를 설계하는 데 초점을 맞추고, 평가(Evaluation)는 실행 결과를 검증하며 지속적인 피드백을 제공한다. 두 과정은 상호 보완적이며 순환적 관계(Cyclical Relationship)를 가지며, 이를 통해 조직은 끊임없이 학습하고 발전할 수 있다.
 
 **요구사항 정의와 성과 중심의 설계**
-- [[요구사항(Requirements)]]은 [[설계(Design)]]와 [[실행(Implementation)]]의 기준이 되는 핵심 요소로, 모든 레벨에서 [[일관성(Consistency)]]과 [[정렬(Alignment)]]이 유지되어야 한다. 이를 통해 조직은 부분적인 개선이 아닌 [[시스템 차원의 성과 향상(System-level Performance Improvement)]]을 달성할 수 있으며, [[ROI]]와 조직 신뢰도를 높일 수 있다.
+- 요구사항(Requirements)은 설계(Design)와 실행(Implementation)의 기준이 되는 핵심 요소로, 모든 레벨에서 일관성(Consistency)과 정렬(Alignment)이 유지되어야 한다. 이를 통해 조직은 부분적인 개선이 아닌 시스템 차원의 성과 향상(System-level Performance Improvement)을 달성할 수 있으며, ROI와 조직 신뢰도를 높일 수 있다.
 
 ### 4. 도식화 및 설명 
 
