@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-04T03:57:24.748248+00:00",
+    "generated_at": "2026-07-05T04:16:33.324131+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 481
+      "views": 478
     },
     "/about/": {
       "views": 7
@@ -121,7 +121,7 @@
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
-      "views": 2
+      "views": 1
     },
     "/dev/stats-method/": {
       "views": 1
@@ -154,6 +154,9 @@
       "views": 3
     },
     "/education/anchor-forest-regional-talent-strategy/": {
+      "views": 1
+    },
+    "/education/changwon-ipms-data-governance-2026/": {
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
@@ -211,7 +214,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 6
+      "views": 10
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -286,7 +289,7 @@
       "views": 2
     },
     "/investing/2026-06-16-us/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-06-17-us/": {
       "views": 1
@@ -528,9 +531,6 @@
     "/theory/flesch-kincaid-grade-level/": {
       "views": 1
     },
-    "/theory/perplexity-ppl/": {
-      "views": 1
-    },
     "/theory/r4-obsidian/": {
       "views": 1
     },
@@ -545,9 +545,6 @@
     },
     "/welcome-to-market-analysis/": {
       "views": 2
-    },
-    "/workbook/": {
-      "views": 1
     },
     "/worldcup-2026-scenarios/": {
       "views": 29
