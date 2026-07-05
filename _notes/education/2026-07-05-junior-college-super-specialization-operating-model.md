@@ -12,7 +12,7 @@ permalink: /education/junior-college-super-specialization-operating-model-2026/
 image: /assets/images/education/junior-college-super-specialization-operating-model-2026-og.jpg
 ---
 
-전문대학 혁신을 말할 때 “무슨 학과를 새로 만들었는가”만 보면 절반만 본 것이다. 대학컨설팅 관점에서 더 중요한 질문은 따로 있다. **그 학과와 프로그램이 [[전략분야]], [[교육과정]], [[산학협력]], [[학생 포트폴리오]], [[성과환류]]를 한 줄로 연결하는 운영모델을 갖췄는가**다.
+전문대학 혁신을 말할 때 “무슨 학과를 새로 만들었는가”만 보면 절반만 본 것이다. 대학컨설팅 관점에서 더 중요한 질문은 따로 있다. **그 학과와 프로그램이 [[전략분야]], [[교육과정 개편|교육과정]], [[산학협력]], [[학생 포트폴리오]], [[성과환류]]를 한 줄로 연결하는 운영모델을 갖췄는가**다.
 
 <figure class="note-cover-figure">
   <img src="/assets/images/education/junior-college-super-specialization-operating-model-2026-og.jpg" alt="초특성화 전문대학 운영모델 전략 커버 이미지">
