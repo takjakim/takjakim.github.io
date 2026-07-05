@@ -8,6 +8,7 @@ tags: [AI튜터, LLM, 교육공학, 고등교육, 성찰적사고, 스캐폴딩,
 description: "Xi, Zhang & Wang(2026)의 소크라테스식 LLM 대화 에이전트 연구를 바탕으로, 대학 수업에서 AI 튜터를 어떻게 설계하고 평가해야 하는지 대학컨설팅 관점에서 정리한다."
 excerpt: "AI 튜터의 성과는 답변의 유창함이 아니라, 학생이 남긴 사고의 흔적에서 확인되어야 한다."
 permalink: /education/llm-socratic-tutor-higher-education-2026/
+image: /assets/images/education/llm-socratic-tutor-higher-education-2026-og.jpg
 ---
 
 생성형 AI를 대학 수업에 넣자는 논의는 이제 낯설지 않다. 하지만 질문은 여전히 거칠다. “AI 튜터가 효과가 있나?”라고 묻는 순간, 서로 다른 효과가 한데 섞인다. 지식 점수가 오르는가, 과제 산출물이 좋아지는가, 학생이 더 깊게 생각하는가, 아니면 그저 편하게 느끼는가. 이 질문들은 같지 않다.
