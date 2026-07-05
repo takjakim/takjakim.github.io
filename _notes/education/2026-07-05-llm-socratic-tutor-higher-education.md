@@ -11,6 +11,11 @@ permalink: /education/llm-socratic-tutor-higher-education-2026/
 image: /assets/images/education/llm-socratic-tutor-higher-education-2026-og.jpg
 ---
 
+<figure class="note-hero-image">
+  <img src="/assets/images/education/llm-socratic-tutor-higher-education-2026-og.jpg" alt="LLM 튜터는 답이 아니라 질문을 설계한다 - SEO 이미지" loading="eager">
+  <figcaption>LLM 기반 소크라테스식 대화 에이전트를 대학 수업 설계 관점에서 읽기.</figcaption>
+</figure>
+
 생성형 AI를 대학 수업에 넣자는 논의는 이제 낯설지 않다. 하지만 질문은 여전히 거칠다. “AI 튜터가 효과가 있나?”라고 묻는 순간, 서로 다른 효과가 한데 섞인다. 지식 점수가 오르는가, 과제 산출물이 좋아지는가, 학생이 더 깊게 생각하는가, 아니면 그저 편하게 느끼는가. 이 질문들은 같지 않다.
 
 Xi, Zhang & Wang(2026)의 논문은 이 구분을 비교적 선명하게 보여준다. 연구진은 대학생을 대상으로 [[소크라테스식 질문]] 전략이 들어간 [[AI 튜터|LLM 대화 에이전트]]와 그렇지 않은 대조 에이전트를 비교했다. 학생들은 6주 동안 팀 단위로 실험연구 계획서를 작성했고, 연구진은 개념지식, 계획서 품질, [[성찰적 사고]], 동기, 대화로그를 함께 측정했다.
