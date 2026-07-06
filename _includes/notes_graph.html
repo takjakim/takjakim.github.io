@@ -34,15 +34,17 @@
 
   .nodes circle {
     cursor: pointer;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    filter: none;
   }
 
   .nodes circle:hover {
-    filter: drop-shadow(0 4px 12px rgba(255, 111, 97, 0.5));
+    stroke: rgba(255, 111, 97, 0.75);
+    stroke-width: 2px;
   }
 
   .nodes circle[active] {
-    filter: drop-shadow(0 0 12px rgba(255, 111, 97, 0.6));
+    stroke: rgba(255, 111, 97, 0.95);
+    stroke-width: 2.5px;
   }
 
   .text text {
@@ -101,7 +103,11 @@
 
 <div id="graph-wrapper">
   <script>
-    window.addEventListener("load", loadGraph);
+    if (document.readyState === 'loading') {
+      window.addEventListener("DOMContentLoaded", loadGraph, { once: true });
+    } else {
+      loadGraph();
+    }
 
     function loadGraph() {
       var oScript = document.createElement("script");
@@ -116,7 +122,7 @@
         const ACTIVE_RADIUS_FACTOR = 1.65;
         const STROKE = 1.25;
         const FONT_SIZE = 12;
-        const TICKS = 90;
+        const TICKS = 56;
         const FONT_BASELINE = 34;
         const MAX_LABEL_LENGTH = 34;
 
@@ -198,13 +204,7 @@
         };
 
         const onMouseover = function (d) {
-          const relatedNodesSet = new Set();
-          linksData
-            .filter((n) => n.target.id == d.id || n.source.id == d.id)
-            .forEach((n) => {
-              relatedNodesSet.add(n.target.id);
-              relatedNodesSet.add(n.source.id);
-            });
+          const relatedNodesSet = neighborMap.get(d.id) || new Set([d.id]);
 
           node.attr("class", (node_d) => {
             if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
@@ -326,13 +326,19 @@
         };
 
         // ===== Scoring (hub-ness) =====
+        const nodeById = new Map(nodesData.map(n => [n.id, n]));
         const degree = new Map();
+        const neighborMap = new Map(nodesData.map(n => [n.id, new Set([n.id])]));
         nodesData.forEach(n => degree.set(n.id, 0));
         linksData.forEach(l => {
           const sourceId = endpointId(l.source);
           const targetId = endpointId(l.target);
           degree.set(sourceId, (degree.get(sourceId) || 0) + 1);
           degree.set(targetId, (degree.get(targetId) || 0) + 1);
+          if (!neighborMap.has(sourceId)) neighborMap.set(sourceId, new Set([sourceId]));
+          if (!neighborMap.has(targetId)) neighborMap.set(targetId, new Set([targetId]));
+          neighborMap.get(sourceId).add(targetId);
+          neighborMap.get(targetId).add(sourceId);
         });
         const maxDeg = Math.max(...Array.from(degree.values()), 1);
         nodesData.forEach(n => {
@@ -563,14 +569,7 @@
         };
 
         const getNeighborsSet = (id) => {
-          const s = new Set([id]);
-          linksData.forEach((l) => {
-            const a = endpointId(l.source);
-            const b = endpointId(l.target);
-            if (a === id) s.add(b);
-            if (b === id) s.add(a);
-          });
-          return s;
+          return neighborMap.get(id) || new Set([id]);
         };
 
         const applyVisibility = () => {
@@ -594,8 +593,8 @@
           link.attr('class', (d) => {
             const a = endpointId(d.source);
             const b = endpointId(d.target);
-            const aNode = nodesData.find(n => n.id === a);
-            const bNode = nodesData.find(n => n.id === b);
+            const aNode = nodeById.get(a);
+            const bNode = nodeById.get(b);
             const catOk = (!aNode || state.allowed.has(getCategory(aNode.path, aNode))) && (!bNode || state.allowed.has(getCategory(bNode.path, bNode)));
             const neighOk = !neighborSet || (neighborSet.has(a) && neighborSet.has(b));
             if (!catOk || !neighOk) return 'inactive';
