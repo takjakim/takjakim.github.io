@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-05T04:16:33.324131+00:00",
+    "generated_at": "2026-07-06T04:35:21.276588+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 478
+      "views": 485
     },
     "/about/": {
       "views": 7
@@ -38,6 +38,9 @@
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 4
+    },
+    "/ai/ai-tutor/": {
+      "views": 2
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 4
@@ -103,7 +106,7 @@
       "views": 5
     },
     "/consistency/": {
-      "views": 1
+      "views": 2
     },
     "/daegu-haany-university-kmedi-2026/": {
       "views": 3
@@ -168,6 +171,9 @@
     "/education/glocal30-junior-college-track-2026/": {
       "views": 7
     },
+    "/education/jeju-rise-anchor-learncation-strategy/": {
+      "views": 1
+    },
     "/education/junior-college-presidents-survival-strategy/": {
       "views": 3
     },
@@ -182,6 +188,9 @@
     },
     "/education/kumoh-anchor-superregional-2026/": {
       "views": 2
+    },
+    "/education/llm-socratic-tutor-higher-education-2026/": {
+      "views": 8
     },
     "/education/pknu-ax-innovation-college-strategy/": {
       "views": 1
@@ -325,7 +334,7 @@
       "views": 1
     },
     "/investing/ixic/": {
-      "views": 1
+      "views": 2
     },
     "/investing/ndx/": {
       "views": 1
@@ -517,7 +526,7 @@
       "views": 1
     },
     "/tags/대학컨설팅/": {
-      "views": 3
+      "views": 5
     },
     "/tags/대학혁신지원사업/": {
       "views": 1
