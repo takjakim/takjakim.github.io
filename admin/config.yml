@@ -10,6 +10,8 @@ backend:
   name: github
   repo: takjakim/takjakim.github.io
   branch: main
+  base_url: https://devkpc-macmini.tail1a3125.ts.net
+  auth_endpoint: auth
   commit_messages:
     create: "cms: create {{collection}} {{slug}}"
     update: "cms: update {{collection}} {{slug}}"
