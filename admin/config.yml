@@ -1,0 +1,132 @@
+# Decap CMS configuration for takjakim.kr
+#
+# The /admin UI can be loaded from GitHub Pages.
+# To save from production, configure a GitHub OAuth provider and then set:
+#   base_url: https://<your-oauth-provider-host>
+#   auth_endpoint: auth
+# Local editing is available with `npx decap-server` from the repo root.
+
+backend:
+  name: github
+  repo: takjakim/takjakim.github.io
+  branch: main
+  commit_messages:
+    create: "cms: create {{collection}} {{slug}}"
+    update: "cms: update {{collection}} {{slug}}"
+    delete: "cms: delete {{collection}} {{slug}}"
+    uploadMedia: "cms: upload {{path}}"
+    deleteMedia: "cms: delete {{path}}"
+
+local_backend: true
+publish_mode: editorial_workflow
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+site_url: "https://takjakim.kr"
+display_url: "https://takjakim.kr"
+logo_url: "/assets/og-default.png"
+locale: "ko"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "education"
+    label: "Education / 대학전략"
+    label_singular: "Education note"
+    folder: "_notes/education"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{permalink}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title", "type"]
+    view_filters:
+      - label: "Articles"
+        field: "type"
+        pattern: "article"
+      - label: "Concept notes"
+        field: "type"
+        pattern: "concept"
+    fields: &note_fields
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss Z", format: "YYYY-MM-DD HH:mm:ss Z", required: false }
+      - { label: "Last modified", name: "last_modified_at", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm:ss Z", format: "YYYY-MM-DD HH:mm:ss Z", required: false }
+      - { label: "Categories", name: "categories", widget: "list", default: ["education"], required: false }
+      - { label: "Type", name: "type", widget: "select", options: ["article", "concept", "university_review", "note"], default: "article", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Excerpt", name: "excerpt", widget: "text", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "예: /education/my-post-slug/", required: false }
+      - { label: "SEO / OG image", name: "image", widget: "image", required: false, hint: "1200×630 권장" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "ai"
+    label: "AI"
+    folder: "_notes/ai"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{permalink}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title", "type"]
+    fields: *note_fields
+
+  - name: "running"
+    label: "Running"
+    folder: "_notes/running"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{permalink}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title", "type"]
+    fields: *note_fields
+
+  - name: "dev"
+    label: "Dev"
+    folder: "_notes/dev"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{permalink}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title", "type"]
+    fields: *note_fields
+
+  - name: "investing"
+    label: "Investing"
+    folder: "_notes/investing"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{permalink}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title", "type"]
+    fields: *note_fields
+
+  - name: "theory"
+    label: "Theory / 연구노트"
+    folder: "_notes/theory"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    preview_path: "{{permalink}}"
+    summary: "{{title}} — {{date}}"
+    sortable_fields: ["date", "title", "type"]
+    fields: *note_fields
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "_pages/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Permalink", name: "permalink", widget: "string", required: false }
+          - { label: "Layout", name: "layout", widget: "string", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
+      - label: "College consulting"
+        name: "college_consulting"
+        file: "_pages/college-consulting.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Permalink", name: "permalink", widget: "string", required: false }
+          - { label: "Description", name: "description", widget: "text", required: false }
+          - { label: "Body", name: "body", widget: "markdown" }
