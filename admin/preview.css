@@ -1,0 +1,41 @@
+/* Decap CMS preview-only adjustments.
+   The main site stylesheet is also loaded via CMS.registerPreviewStyle('/styles.css'). */
+
+body {
+  margin: 0;
+  padding: 32px 20px 48px;
+  background: #f8fafc;
+  color: #111827;
+}
+
+.decap-note-preview {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.decap-note-preview .note-container {
+  display: block;
+}
+
+.decap-note-preview .note-content {
+  max-width: 72ch;
+  margin: 0 auto;
+}
+
+.decap-note-preview .note-sidebar,
+.decap-note-preview .note-share-button {
+  display: none !important;
+}
+
+.decap-note-preview .note-tags {
+  margin-bottom: 1.4rem;
+}
+
+.decap-note-preview .tag-pill {
+  pointer-events: none;
+}
+
+.decap-preview-empty {
+  color: #64748b;
+  font-style: italic;
+}
