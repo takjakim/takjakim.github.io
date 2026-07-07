@@ -1,16 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-07-06T04:35:21.276588+00:00",
+    "generated_at": "2026-07-07T04:13:14.543186+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 485
+      "views": 531
     },
     "/about/": {
-      "views": 7
+      "views": 4
     },
     "/adult-learners/": {
       "views": 1
@@ -34,16 +34,16 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 16
+      "views": 17
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 4
     },
     "/ai/ai-tutor/": {
-      "views": 2
+      "views": 3
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 4
+      "views": 12
     },
     "/ai/ai-workstation/": {
       "views": 2
@@ -52,7 +52,7 @@
       "views": 3
     },
     "/ai/apple-price-increase-device-sovereignty/": {
-      "views": 11
+      "views": 12
     },
     "/ai/generative-ai-privacy-guide-2026/": {
       "views": 1
@@ -100,10 +100,10 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 20
+      "views": 23
     },
     "/college-reviews/": {
-      "views": 5
+      "views": 6
     },
     "/consistency/": {
       "views": 2
@@ -132,9 +132,6 @@
     "/dev/stats-method/deployment/": {
       "views": 1
     },
-    "/dev/stats-method/development/": {
-      "views": 1
-    },
     "/dev/stats-method/planning/": {
       "views": 1
     },
@@ -144,8 +141,11 @@
     "/digital-garden-concept/": {
       "views": 1
     },
+    "/education-jeju-rise-anchor-learncation-strategy/": {
+      "views": 1
+    },
     "/education/2026-06-23-adiga-check-routine/": {
-      "views": 3
+      "views": 7
     },
     "/education/2026-university-innovation-support-plan/": {
       "views": 10
@@ -160,7 +160,7 @@
       "views": 1
     },
     "/education/changwon-ipms-data-governance-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/changwon-university-issues-2026/": {
       "views": 7
@@ -172,10 +172,16 @@
       "views": 7
     },
     "/education/jeju-rise-anchor-learncation-strategy/": {
+      "views": 7
+    },
+    "/education/junior-college-innovation-student-outcomes-2026/": {
       "views": 1
     },
     "/education/junior-college-presidents-survival-strategy/": {
       "views": 3
+    },
+    "/education/kangwon-gangneung-campus-rise-industry-portfolio-2026/": {
+      "views": 1
     },
     "/education/keimyung-culture-college-rise-healthcare-2026/": {
       "views": 8
@@ -190,7 +196,7 @@
       "views": 2
     },
     "/education/llm-socratic-tutor-higher-education-2026/": {
-      "views": 8
+      "views": 17
     },
     "/education/pknu-ax-innovation-college-strategy/": {
       "views": 1
@@ -223,7 +229,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 10
+      "views": 15
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -381,6 +387,9 @@
     "/notes/학생-이동성/": {
       "views": 1
     },
+    "/oauth-test/": {
+      "views": 5
+    },
     "/obsidian/": {
       "views": 2
     },
@@ -421,7 +430,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 8
+      "views": 9
     },
     "/tags/automation/": {
       "views": 1
@@ -454,7 +463,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 6
+      "views": 7
     },
     "/tags/paraphrasing/": {
       "views": 1
