@@ -1,0 +1,63 @@
+{
+  "label": "US · NASDAQ 100 (sample 8)",
+  "asOf": "2026-07-08",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": [
+    {
+      "ticker": "Exchange-traded funds",
+      "name": "Exchange-traded funds",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : QQQ ( Invesco QQQ )",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : QQQM",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : IQQ",
+      "name": "BlackRock iShares",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : QNDX",
+      "name": "State Street Corporation",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Mutual funds",
+      "name": "Mutual funds",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : USNQX",
+      "name": "Victory Capital [ 3 ]",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : OTPIX",
+      "name": "ProShares",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    }
+  ]
+}
