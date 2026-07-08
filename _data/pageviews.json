@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-07T04:13:14.543186+00:00",
+    "generated_at": "2026-07-08T03:38:34.569126+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -58,7 +58,7 @@
       "views": 1
     },
     "/ai/google-saif-ai-security-framework-2026/": {
-      "views": 8
+      "views": 9
     },
     "/ai/heyling-day1/": {
       "views": 11
@@ -270,6 +270,9 @@
     "/investing/2026-04-01-korea/": {
       "views": 1
     },
+    "/investing/2026-04-01-us/": {
+      "views": 1
+    },
     "/investing/2026-04-03-korea/": {
       "views": 1
     },
@@ -358,7 +361,7 @@
       "views": 1
     },
     "/macos/tidal-dl/": {
-      "views": 7
+      "views": 8
     },
     "/notchdrawer/": {
       "views": 2
