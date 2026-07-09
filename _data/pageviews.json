@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-08T03:38:34.569126+00:00",
+    "generated_at": "2026-07-09T04:08:56.170943+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 531
+      "views": 532
     },
     "/about/": {
       "views": 4
@@ -53,6 +53,9 @@
     },
     "/ai/apple-price-increase-device-sovereignty/": {
       "views": 12
+    },
+    "/ai/claude-code-domain-expertise/": {
+      "views": 10
     },
     "/ai/generative-ai-privacy-guide-2026/": {
       "views": 1
@@ -180,6 +183,9 @@
     "/education/junior-college-presidents-survival-strategy/": {
       "views": 3
     },
+    "/education/k-wellness-consortium-regional-strategy/": {
+      "views": 1
+    },
     "/education/kangwon-gangneung-campus-rise-industry-portfolio-2026/": {
       "views": 1
     },
@@ -196,7 +202,7 @@
       "views": 2
     },
     "/education/llm-socratic-tutor-higher-education-2026/": {
-      "views": 17
+      "views": 18
     },
     "/education/pknu-ax-innovation-college-strategy/": {
       "views": 1
@@ -216,6 +222,9 @@
     "/education/soonchunhyang-glamp-research-hub-2026/": {
       "views": 2
     },
+    "/education/student-data-portability-career-strategy/": {
+      "views": 2
+    },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 4
     },
@@ -229,7 +238,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 15
+      "views": 16
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -283,6 +292,9 @@
       "views": 1
     },
     "/investing/2026-04-22-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-28-us/": {
       "views": 1
     },
     "/investing/2026-05-07-korea/": {
@@ -346,7 +358,7 @@
       "views": 2
     },
     "/investing/ndx/": {
-      "views": 1
+      "views": 2
     },
     "/knowledge-base/": {
       "views": 2
@@ -379,6 +391,9 @@
       "views": 1
     },
     "/notes/기기-주권/": {
+      "views": 1
+    },
+    "/notes/도메인-전문성/": {
       "views": 1
     },
     "/notes/생성형-ai-개인정보-보호/": {
@@ -438,9 +453,6 @@
     "/tags/automation/": {
       "views": 1
     },
-    "/tags/ci-cd/": {
-      "views": 1
-    },
     "/tags/dev/": {
       "views": 5
     },
@@ -454,7 +466,7 @@
       "views": 1
     },
     "/tags/implementation/": {
-      "views": 1
+      "views": 2
     },
     "/tags/inflation/": {
       "views": 1
