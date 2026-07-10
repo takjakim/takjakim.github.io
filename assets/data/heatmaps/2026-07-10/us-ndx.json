@@ -1,0 +1,231 @@
+{
+  "label": "US · NASDAQ 100 (sample 32)",
+  "asOf": "2026-07-10",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": [
+    {
+      "ticker": "Exchange-traded funds - United States",
+      "name": "Exchange-traded funds - United States",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : QQQ ( Invesco QQQ )",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : QQQM",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : IQQ",
+      "name": "BlackRock iShares",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : QNDX",
+      "name": "State Street Corporation",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Mutual funds - United States",
+      "name": "Mutual funds - United States",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : IVNQX",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : USNQX",
+      "name": "Victory Capital",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : NASDX",
+      "name": "Shelton Capital",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Nasdaq : OTPIX",
+      "name": "ProShares",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Exchange-traded funds - Canada",
+      "name": "Exchange-traded funds - Canada",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "TSX : ZNQ",
+      "name": "BMO Bank",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "TSX : QQQX",
+      "name": "Global X",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "TSX : QQC",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "TSX : XQQU",
+      "name": "BlackRock iShares",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "Mutual funds - Canada",
+      "name": "Mutual funds - Canada",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BMO 95120",
+      "name": "BMO Bank",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CIB520",
+      "name": "CIBC",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BNS597",
+      "name": "Scotiabank",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "TDB908",
+      "name": "TD Bank",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "UCITS Exchange-traded funds - Europe",
+      "name": "UCITS Exchange-traded funds - Europe",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "UST",
+      "name": "Amundi",
+      "sector": "",
+      "pct": 0.5292307489011439,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ANX",
+      "name": "Amundi",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "ANAU",
+      "name": "Axa",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "D6RH",
+      "name": "Deka",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "EQQQ",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "EQQS",
+      "name": "Invesco",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "CNDX",
+      "name": "BlackRock iShares",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "N100",
+      "name": "BlackRock iShares",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "XNAS",
+      "name": "Xtrackers by DWS Group",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "XNDQ",
+      "name": "Xtrackers by DWS Group",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "BCFP",
+      "name": "UBS",
+      "sector": "",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    }
+  ]
+}
