@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-09T04:08:56.170943+00:00",
+    "generated_at": "2026-07-10T04:08:51.129676+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -33,6 +33,9 @@
     "/ai/agentic-ai-governance-runtime-control/": {
       "views": 4
     },
+    "/ai/ai-agent-responsibility-bottleneck/": {
+      "views": 6
+    },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 17
     },
@@ -43,7 +46,7 @@
       "views": 3
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 12
+      "views": 13
     },
     "/ai/ai-workstation/": {
       "views": 2
@@ -295,6 +298,9 @@
       "views": 1
     },
     "/investing/2026-04-28-us/": {
+      "views": 1
+    },
+    "/investing/2026-05-06-us/": {
       "views": 1
     },
     "/investing/2026-05-07-korea/": {
