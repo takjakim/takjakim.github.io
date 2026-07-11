@@ -1,18 +1,21 @@
 {
   "meta": {
-    "generated_at": "2026-07-10T04:08:51.129676+00:00",
+    "generated_at": "2026-07-11T03:35:50.277687+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 532
+      "views": 541
     },
     "/about/": {
-      "views": 4
+      "views": 1
     },
     "/adult-learners/": {
+      "views": 1
+    },
+    "/agentic-ai/": {
       "views": 1
     },
     "/ai-governance/": {
@@ -34,7 +37,7 @@
       "views": 4
     },
     "/ai/ai-agent-responsibility-bottleneck/": {
-      "views": 6
+      "views": 10
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 17
@@ -171,6 +174,9 @@
     "/education/changwon-university-issues-2026/": {
       "views": 7
     },
+    "/education/environment-specialization-workforce-strategy-2026/": {
+      "views": 1
+    },
     "/education/global-talent-settlement-university-strategy/": {
       "views": 2
     },
@@ -187,7 +193,7 @@
       "views": 3
     },
     "/education/k-wellness-consortium-regional-strategy/": {
-      "views": 1
+      "views": 2
     },
     "/education/kangwon-gangneung-campus-rise-industry-portfolio-2026/": {
       "views": 1
@@ -196,7 +202,7 @@
       "views": 8
     },
     "/education/kentech-organization-issues-2026/": {
-      "views": 14
+      "views": 17
     },
     "/education/kentech/": {
       "views": 1
@@ -567,9 +573,6 @@
     "/tags/지방대학특성화/": {
       "views": 1
     },
-    "/theory/flesch-kincaid-grade-level/": {
-      "views": 1
-    },
     "/theory/r4-obsidian/": {
       "views": 1
     },
@@ -584,6 +587,9 @@
     },
     "/welcome-to-market-analysis/": {
       "views": 2
+    },
+    "/workbook/": {
+      "views": 1
     },
     "/worldcup-2026-scenarios/": {
       "views": 29
