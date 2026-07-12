@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-11T03:35:50.277687+00:00",
+    "generated_at": "2026-07-12T03:50:29.192960+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 541
+      "views": 544
     },
     "/about/": {
       "views": 1
@@ -60,6 +60,9 @@
     "/ai/apple-price-increase-device-sovereignty/": {
       "views": 12
     },
+    "/ai/chatgpt-desktop-codex-work-os/": {
+      "views": 4
+    },
     "/ai/claude-code-domain-expertise/": {
       "views": 10
     },
@@ -70,10 +73,7 @@
       "views": 9
     },
     "/ai/heyling-day1/": {
-      "views": 11
-    },
-    "/ai/heyling-day2/": {
-      "views": 1
+      "views": 10
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 8
@@ -233,6 +233,9 @@
     },
     "/education/student-data-portability-career-strategy/": {
       "views": 2
+    },
+    "/education/student-startup-revenue-governance/": {
+      "views": 1
     },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 4
@@ -465,6 +468,9 @@
     "/tags/automation/": {
       "views": 1
     },
+    "/tags/cbam/": {
+      "views": 1
+    },
     "/tags/dev/": {
       "views": 5
     },
@@ -541,7 +547,7 @@
       "views": 1
     },
     "/tags/us/": {
-      "views": 2
+      "views": 1
     },
     "/tags/vercel/": {
       "views": 1
