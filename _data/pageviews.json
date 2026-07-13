@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-12T03:50:29.192960+00:00",
+    "generated_at": "2026-07-13T03:52:35.776822+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 544
+      "views": 542
     },
     "/about/": {
       "views": 1
@@ -73,7 +73,7 @@
       "views": 9
     },
     "/ai/heyling-day1/": {
-      "views": 10
+      "views": 8
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 8
@@ -127,7 +127,7 @@
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
-      "views": 4
+      "views": 3
     },
     "/dev/markdown-hang/": {
       "views": 1
@@ -388,7 +388,7 @@
       "views": 1
     },
     "/macos/tidal-dl/": {
-      "views": 8
+      "views": 7
     },
     "/notchdrawer/": {
       "views": 2
@@ -496,7 +496,10 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 7
+      "views": 8
+    },
+    "/tags/mdx/": {
+      "views": 1
     },
     "/tags/paraphrasing/": {
       "views": 1
