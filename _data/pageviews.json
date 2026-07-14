@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-13T03:52:35.776822+00:00",
+    "generated_at": "2026-07-14T03:27:26.710795+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 542
+      "views": 545
     },
     "/about/": {
       "views": 1
@@ -97,6 +97,9 @@
       "views": 2
     },
     "/ai/session7-sustainability-technology-capability/": {
+      "views": 6
+    },
+    "/ai/why-ai-managed-wiki-rots/": {
       "views": 6
     },
     "/anchor-policy/": {
@@ -276,13 +279,7 @@
     "/investing/2026-02-19-us/": {
       "views": 1
     },
-    "/investing/2026-02-23-korea/": {
-      "views": 1
-    },
     "/investing/2026-02-24-us/": {
-      "views": 1
-    },
-    "/investing/2026-03-20-korea/": {
       "views": 1
     },
     "/investing/2026-03-26-us/": {
@@ -584,6 +581,9 @@
     },
     "/theory/r4-obsidian/": {
       "views": 1
+    },
+    "/theory/zpd/": {
+      "views": 2
     },
     "/tigers/": {
       "views": 1
