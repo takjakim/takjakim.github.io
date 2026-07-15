@@ -1,0 +1,133 @@
+{
+  "label": "통합 · 섹터 히트맵",
+  "asOf": "2026-07-15",
+  "source": "Yahoo chart (pct) + Wikipedia/CSV constituents",
+  "items": [
+    {
+      "ticker": "CN-nan",
+      "name": "CN nan",
+      "sector": "CN",
+      "pct": 0.0,
+      "mcap_usd_b": 300.0
+    },
+    {
+      "ticker": "HK-Consumer",
+      "name": "HK Consumer",
+      "sector": "HK",
+      "pct": 0.0,
+      "mcap_usd_b": 3.0
+    },
+    {
+      "ticker": "HK-Health",
+      "name": "HK Health",
+      "sector": "HK",
+      "pct": 0.0,
+      "mcap_usd_b": 3.0
+    },
+    {
+      "ticker": "HK-Industrials",
+      "name": "HK Industrials",
+      "sector": "HK",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "HK-Tech",
+      "name": "HK Tech",
+      "sector": "HK",
+      "pct": 0.0,
+      "mcap_usd_b": 21.0
+    },
+    {
+      "ticker": "HK-nan",
+      "name": "HK nan",
+      "sector": "HK",
+      "pct": 0.0,
+      "mcap_usd_b": 85.0
+    },
+    {
+      "ticker": "US-(Unknown)",
+      "name": "US (Unknown)",
+      "sector": "US",
+      "pct": 0.018898161517087037,
+      "mcap_usd_b": 32.0
+    },
+    {
+      "ticker": "US-Communication Services",
+      "name": "US Communication Services",
+      "sector": "US",
+      "pct": 1.9424864867320089,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Consumer Discretionary",
+      "name": "US Consumer Discretionary",
+      "sector": "US",
+      "pct": 0.10814587807869147,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Consumer Staples",
+      "name": "US Consumer Staples",
+      "sector": "US",
+      "pct": -2.37929458622983,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Energy",
+      "name": "US Energy",
+      "sector": "US",
+      "pct": -0.40380558708491554,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "US-Financials",
+      "name": "US Financials",
+      "sector": "US",
+      "pct": -0.8067101481488955,
+      "mcap_usd_b": 7.0
+    },
+    {
+      "ticker": "US-Health Care",
+      "name": "US Health Care",
+      "sector": "US",
+      "pct": -1.2949806644093196,
+      "mcap_usd_b": 5.0
+    },
+    {
+      "ticker": "US-Industrials",
+      "name": "US Industrials",
+      "sector": "US",
+      "pct": 0.6130343603293704,
+      "mcap_usd_b": 4.0
+    },
+    {
+      "ticker": "US-Information Technology",
+      "name": "US Information Technology",
+      "sector": "US",
+      "pct": 0.2827992458988599,
+      "mcap_usd_b": 8.0
+    },
+    {
+      "ticker": "US-Materials",
+      "name": "US Materials",
+      "sector": "US",
+      "pct": 0.7767394360204757,
+      "mcap_usd_b": 3.0
+    },
+    {
+      "ticker": "US-Real Estate",
+      "name": "US Real Estate",
+      "sector": "US",
+      "pct": -0.8008028567349668,
+      "mcap_usd_b": 2.0
+    },
+    {
+      "ticker": "US-Utilities",
+      "name": "US Utilities",
+      "sector": "US",
+      "pct": -0.20961612007946995,
+      "mcap_usd_b": 5.0
+    }
+  ]
+}

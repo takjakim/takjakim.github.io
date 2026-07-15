@@ -1,0 +1,2107 @@
+{
+  "label": "CN · CSI 300 (sample 300)",
+  "asOf": "2026-07-15",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": [
+    {
+      "ticker": "SSE: 600519",
+      "name": "Kweichow Moutai",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601318",
+      "name": "Ping An Insurance",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300750",
+      "name": "CATL",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600036",
+      "name": "China Merchants Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000333",
+      "name": "Midea Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000858",
+      "name": "Wuliangye Yibin",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600900",
+      "name": "China Yangtze Power",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601166",
+      "name": "Industrial Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601899",
+      "name": "Zijin Mining Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600030",
+      "name": "CITIC Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600276",
+      "name": "Jiangsu Hengrui Medicine",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601398",
+      "name": "Industrial and Commercial Bank of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600887",
+      "name": "Inner Mongolia Yili Industrial Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300059",
+      "name": "East Money",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000651",
+      "name": "Gree Electric",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300760",
+      "name": "Mindray",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002594",
+      "name": "BYD",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601328",
+      "name": "Bank of Communications",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600309",
+      "name": "Wanhua Chemical Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000725",
+      "name": "BOE Technology Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600919",
+      "name": "Bank of Jiangsu",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002475",
+      "name": "Luxshare Precision Industry",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300124",
+      "name": "Shenzhen Inovance Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601288",
+      "name": "Agricultural Bank of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002415",
+      "name": "Hangzhou Hikvision Digital Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000568",
+      "name": "Luzhou Lao Jiao",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601012",
+      "name": "Longi Green Energy Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601088",
+      "name": "China Shenhua Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601816",
+      "name": "Beijing-Shanghai High Speed Railway",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600028",
+      "name": "China Petroleum & Chemical Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600809",
+      "name": "Shanxi Xinghuacun Fen Wine Factory",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601668",
+      "name": "China State Construction Engineering",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603259",
+      "name": "WuXi AppTec",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002714",
+      "name": "Muyuan Foodstuff",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000001",
+      "name": "Ping An Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300498",
+      "name": "Wens Foodstuff Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600016",
+      "name": "China Minsheng Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601857",
+      "name": "PetroChina",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601225",
+      "name": "Shaanxi Coal Industry Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300308",
+      "name": "Zhongji Innolight",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688981",
+      "name": "Semiconductor Manufacturing International Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000063",
+      "name": "ZTE",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601988",
+      "name": "Bank of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002352",
+      "name": "S.F. Holding",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600406",
+      "name": "NARI Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600941",
+      "name": "China Mobile",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000338",
+      "name": "Weichai Power",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600050",
+      "name": "China United Network Communications",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002230",
+      "name": "Iflytek",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600690",
+      "name": "Qingdao Haier",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601728",
+      "name": "China Telecom Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300274",
+      "name": "Sungrow Power Supply",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002142",
+      "name": "Bank of Ningbo",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600837",
+      "name": "Haitong Securities Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000792",
+      "name": "Qinghai Salt Lake Potash",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601601",
+      "name": "China Pacific Insurance",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000100",
+      "name": "TCL Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601888",
+      "name": "China International Travel Service",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600000",
+      "name": "Shanghai Pudong Development Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600031",
+      "name": "Sany Heavy Industry",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601985",
+      "name": "China National Nuclear Power",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600150",
+      "name": "China CSSC Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688041",
+      "name": "Hygon Information Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601766",
+      "name": "CRRC Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601169",
+      "name": "Bank of Beijing",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002371",
+      "name": "NAURA Technology Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600089",
+      "name": "TBEA",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601688",
+      "name": "Huatai Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601138",
+      "name": "Foxconn Industrial Internet",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000625",
+      "name": "Chongqing Changan Automobile",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600438",
+      "name": "Tongwei Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600048",
+      "name": "Poly Real Estate Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603501",
+      "name": "Will Semiconductor",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600104",
+      "name": "SAIC Motor",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600660",
+      "name": "Fuyao Glass Industry Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000002",
+      "name": "China Vanke",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300015",
+      "name": "Aier Eye Hospital",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601211",
+      "name": "Guotai Junan Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603288",
+      "name": "Foshan Haitian Flavouring & Food Co",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600436",
+      "name": "Zhangzhou Pientzehuang Pharmaceutical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601919",
+      "name": "China Cosco Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600905",
+      "name": "China Three Gorges Renewables (Group)",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601390",
+      "name": "China Railway Group Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601229",
+      "name": "Bank of Shanghai",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300122",
+      "name": "Chongqing Zhifei Biological Products",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002027",
+      "name": "Focus Media Information Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688012",
+      "name": "Advanced Micro-Fabrication Equipment",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688111",
+      "name": "Beijing Kingsoft Office Software",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601006",
+      "name": "Daqin Railway",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002304",
+      "name": "Jiangsu Yanghe Brewery Joint-Stock",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601818",
+      "name": "China Everbright Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600019",
+      "name": "Baoshan Iron and Steel",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688271",
+      "name": "United Imaging",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603019",
+      "name": "Dawning Information Industry",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600585",
+      "name": "Anhui Conch Cement",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002050",
+      "name": "ZHEJIANG SANHUA INTELLIGENT CONTROLS",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002466",
+      "name": "Tianqi Lithium Industries",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601658",
+      "name": "Postal Savings Bank of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601989",
+      "name": "China Shipbuilding Industry Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600938",
+      "name": "CNOOC Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600999",
+      "name": "China Merchants Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688036",
+      "name": "Transsion",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000938",
+      "name": "Unisplendour",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601628",
+      "name": "China Life Insurance Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603986",
+      "name": "GigaDevice",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002049",
+      "name": "Unigroup Guoxin Microelectronics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601600",
+      "name": "Aluminum Corporation of China Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600111",
+      "name": "China Northern Rare Earth Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688008",
+      "name": "Montage Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300014",
+      "name": "Eve Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601939",
+      "name": "China Construction Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600958",
+      "name": "Orient Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600893",
+      "name": "AVIC Aviation Engine Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002460",
+      "name": "Ganfeng Lithium",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601009",
+      "name": "Bank of Nanjing",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000538",
+      "name": "Yunnan Baiyao Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601669",
+      "name": "Power Construction Corporation of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600009",
+      "name": "Shanghai International Airport",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002129",
+      "name": "Tianjin Zhonghuan Semiconductor",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603993",
+      "name": "China Molybdenum",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600886",
+      "name": "SDIC Power Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600760",
+      "name": "AVIC SHENYANG AIRCRAFT COMPANY",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000425",
+      "name": "XCMG Construction Machinery",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000776",
+      "name": "GF Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601916",
+      "name": "China Zheshang Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600795",
+      "name": "GD Power Development",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000661",
+      "name": "Chang Chun High and New Technology Industry (Group)",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000166",
+      "name": "Shenwan Hongyuan",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600426",
+      "name": "Shandong Hualu-Hengsheng Chemical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600015",
+      "name": "Hua Xia Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300782",
+      "name": "Maxscend Microelectronics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601377",
+      "name": "Industrial Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601186",
+      "name": "China Railway Construction",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000157",
+      "name": "Zoomlion Heavy Industry Science & Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002241",
+      "name": "GoerTek",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600926",
+      "name": "Bank of Hangzhou",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600547",
+      "name": "Shandong Gold-Mining",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600011",
+      "name": "Huaneng Power International",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000977",
+      "name": "Inspur Electronic Information Industry",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002252",
+      "name": "Shanghai RAAS Blood Products",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600674",
+      "name": "Sichuan Chuantou Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603799",
+      "name": "ZHEJIANG HUAYOU COBALT",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600584",
+      "name": "JCET",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600570",
+      "name": "Hundsun Technologies",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002236",
+      "name": "Zhejiang Dahua Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002179",
+      "name": "AVIC Jonhon Optronic Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000596",
+      "name": "Anhui Gujing Distillery",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002311",
+      "name": "Guangdong Haid Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600188",
+      "name": "Yanzhou Coal Mining",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300896",
+      "name": "IMEIK TECHNOLOGY DEVELOPMENT",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688256",
+      "name": "Cambricon Technologies",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600010",
+      "name": "Inner Mongolia Baotou Steel Union",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002271",
+      "name": "Beijing Oriental Yuhong Waterproof Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601111",
+      "name": "Air China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 001979",
+      "name": "China Merchants Shekou Industrial Zone Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300408",
+      "name": "Chaozhou Three-Circle",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600845",
+      "name": "Baosight Software",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603369",
+      "name": "Jiangsu King's Luck Brewery Joint-Stock",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600989",
+      "name": "Ningxia Baofeng Energy Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600745",
+      "name": "Wingtech",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601788",
+      "name": "Everbright Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600115",
+      "name": "China Eastern Airlines Corp",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600029",
+      "name": "China Southern Airlines",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002601",
+      "name": "LB Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601360",
+      "name": "360 Security Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601901",
+      "name": "Founder Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002493",
+      "name": "Rongsheng Petro Chemical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600196",
+      "name": "Fosun Pharmaceutical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002459",
+      "name": "JA Solar Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601699",
+      "name": "Shanxi Lu'an Environmental Energy Development",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601995",
+      "name": "China International Capital Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600085",
+      "name": "Beijing Tongrentang",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601100",
+      "name": "Jiangsu Hengli Hydraulic",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601800",
+      "name": "China Communications Construction Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000895",
+      "name": "Henan Shuanghui Investment & Development",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002555",
+      "name": "37 Interactive Entertainment Network Technology Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 003816",
+      "name": "CGN Power",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600489",
+      "name": "Zhongjin Gold",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601066",
+      "name": "China Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000963",
+      "name": "Huadong Medicine",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300142",
+      "name": "Walvax Biotechnology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300033",
+      "name": "Hithink RoyalFlush Information Network",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000768",
+      "name": "AVIC Aircraft",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601633",
+      "name": "Great Wall Motor",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000786",
+      "name": "Beijing New Building Materials Public",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002920",
+      "name": "Huizhou Desay SV Automotive",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600600",
+      "name": "Tsingtao Brewery",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601868",
+      "name": "China Energy Engineering Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002648",
+      "name": "SATELLITE CHEMICAL",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601021",
+      "name": "Spring Airlines",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603392",
+      "name": "BEIJING WANTAI BIOLOGICAL PHARMACY ENTERPRISE",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000301",
+      "name": "Jiangsu Eastern Shenghong",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002001",
+      "name": "Zhejiang NHU",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600741",
+      "name": "HUAYU Automotive Systems Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601336",
+      "name": "New China Life Insurance",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601689",
+      "name": "Ningbo Tuopu Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688599",
+      "name": "Trina Solar",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002812",
+      "name": "Yunnan Energy New Material",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600346",
+      "name": "Hengli Petrochemical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000983",
+      "name": "Shanxi Coking Coal Energy Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601881",
+      "name": "China Galaxy Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600588",
+      "name": "Yonyou Network Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600515",
+      "name": "Hainan Airport Infrastructure",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601117",
+      "name": "China National Chemical Engineering",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601838",
+      "name": "BANK OF CHENGDU",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688126",
+      "name": "National Silicon Industry Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300450",
+      "name": "WUXI LEAD INTELLIGENT EQUIPMENT",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002736",
+      "name": "Guosen Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002821",
+      "name": "Asymchem Laboratories (Tianjin)",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300316",
+      "name": "Zhejiang Jingsheng Mechanical & Electrical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300433",
+      "name": "Lens Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600176",
+      "name": "CHINA JUSHI",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002709",
+      "name": "Guangzhou Tinci Materials Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300347",
+      "name": "Hangzhou Tigermed Consulting",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601618",
+      "name": "Metallurgical Corporation of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601872",
+      "name": "China Merchants Energy Shipping",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000408",
+      "name": "ZANGGE MINING COMPANY",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002180",
+      "name": "Ninestar Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300661",
+      "name": "SG Micro",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600372",
+      "name": "China Avionics Systems",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601898",
+      "name": "China Coal Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688396",
+      "name": "China Resources Microelectronics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300496",
+      "name": "Thunder Software Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000733",
+      "name": "China Zhenhua (Group) Science & Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601877",
+      "name": "Zhejiang Chint Electrics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600233",
+      "name": "YTO Express Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000999",
+      "name": "China Resources Sanjiu Medical & Pharmaceutical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600219",
+      "name": "Shandong Nanshan Aluminium",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002007",
+      "name": "Hualan Biological Engineering",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600023",
+      "name": "Zhejiang Zheneng Electric Power",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002074",
+      "name": "GUOXUAN HIGH-TECH",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002202",
+      "name": "Xinjiang Goldwind Science & Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300759",
+      "name": "Pharmaron Beijing",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600332",
+      "name": "Guangzhou Baiyunshan Pharmaceutical Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603806",
+      "name": "HANGZHOU FIRST PV MATERIAL",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600362",
+      "name": "Jiangxi Copper",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000876",
+      "name": "New Hope Liuhe",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600183",
+      "name": "Shengyi Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601607",
+      "name": "Shanghai Pharmaceuticals Holding",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601799",
+      "name": "Changzhou Xingyu Automotive Lighting Systems",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 301269",
+      "name": "Empyrean Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601238",
+      "name": "Guangzhou Automobile Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601878",
+      "name": "ZHESHANG SECURITIES",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601998",
+      "name": "China Citic Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600918",
+      "name": "Zhongtai Securities",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300999",
+      "name": "Yihai Kerry",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300223",
+      "name": "Ingenic Semiconductor",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603260",
+      "name": "Hoshine Silicon Industry",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688303",
+      "name": "XinJiang Daqo New Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300413",
+      "name": "Mango Excellent Media",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601615",
+      "name": "MingYangSmartEnergyGroup",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002410",
+      "name": "Glodon Software",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600875",
+      "name": "Dongfang Electric Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002603",
+      "name": "Shijiazhuang Yiling Pharmaceutical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600061",
+      "name": "SDIC Essence",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688223",
+      "name": "Jinko Solar",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600460",
+      "name": "Hangzhou Silan Microelectronics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600803",
+      "name": "ENN Ecological Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300751",
+      "name": "Suzhou Maxwell Technologies",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600025",
+      "name": "HuanengLancang River Hydropower",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601319",
+      "name": "People's Insurance Company of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002841",
+      "name": "Guangzhou Shiyuan Electronic Technology Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600732",
+      "name": "Shanghai Aiko Solar Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603659",
+      "name": "Shanghai Putailai New Energy Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300454",
+      "name": "Sangfor Technologies",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300919",
+      "name": "CNGR Advanced Material",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600132",
+      "name": "Chongqing Brewery",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000617",
+      "name": "CNPC Capital Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300763",
+      "name": "Ginlong Technologies",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000069",
+      "name": "Shenzhen Overseas Chinese Town Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600018",
+      "name": "Shanghai International Port Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000708",
+      "name": "CITIC Pacific Special Steel Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300628",
+      "name": "Yealink Network Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002938",
+      "name": "Avary Holding (Shenzhen) Co",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 002916",
+      "name": "Shennan Circuits",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 605117",
+      "name": "Ningbo Deye Technology",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600039",
+      "name": "Sichuan Road&Bridge",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 605499",
+      "name": "Eastroc Beverage (Group)",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603195",
+      "name": "GONGNIU GROUP",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600754",
+      "name": "Shanghai Jin Jiang International Hotels",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603899",
+      "name": "SHANGHAI M&G STATIONERY",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603290",
+      "name": "StarPower Semiconductor",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603833",
+      "name": "Oppein Home Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601865",
+      "name": "Flat Glass Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688363",
+      "name": "Bloomage Biotechnology Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000877",
+      "name": "Xinjiang Tianshan Cement",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688065",
+      "name": "Cathay Biotech",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300957",
+      "name": "Yunnan Botanee Bio-Technology Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601236",
+      "name": "HONGTA SECURITIES",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601698",
+      "name": "China Satellite Communications",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688187",
+      "name": "Zhuzhou CRRC Times Electric",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 688561",
+      "name": "Qi An Xin Technology Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601155",
+      "name": "Future Land Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 600606",
+      "name": "China Development Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 300979",
+      "name": "Huali Industrial Group Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601808",
+      "name": "China Oilfield Services",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 603486",
+      "name": "Ecovacs Robotics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 000800",
+      "name": "FAW Car",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SSE: 601059",
+      "name": "CINDA SECURITIES",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "SZSE: 001289",
+      "name": "China Longyuan Power Group Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    }
+  ]
+}

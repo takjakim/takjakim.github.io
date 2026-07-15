@@ -1,0 +1,602 @@
+{
+  "label": "HK · Hang Seng (sample 85)",
+  "asOf": "2026-07-15",
+  "source": "Stooq (daily % change) + local mcap cache (if available); constituents via Wikipedia/CSV",
+  "items": [
+    {
+      "ticker": "0005-HK",
+      "name": "HSBC Holdings plc",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0388-HK",
+      "name": "HKEx Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0939-HK",
+      "name": "China Construction Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1299-HK",
+      "name": "AIA Group Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1398-HK",
+      "name": "Industrial and Commercial Bank of China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2318-HK",
+      "name": "Ping An Insurance",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2388-HK",
+      "name": "BOC Hong Kong (Holdings) Ltd",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2628-HK",
+      "name": "China Life",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "3968-HK",
+      "name": "China Merchants Bank",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "3988-HK",
+      "name": "Bank of China Ltd",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0002-HK",
+      "name": "CLP Holdings Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0003-HK",
+      "name": "Hong Kong and China Gas Company Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0006-HK",
+      "name": "Power Assets Holdings Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0836-HK",
+      "name": "China Resources Power",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1038-HK",
+      "name": "Cheung Kong Infrastructure Holdings Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2688-HK",
+      "name": "ENN Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0012-HK",
+      "name": "Henderson Land Development Company Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0016-HK",
+      "name": "Sun Hung Kai Properties Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0101-HK",
+      "name": "Hang Lung Properties Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0688-HK",
+      "name": "China Overseas Land & Investment Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0823-HK",
+      "name": "Link REIT",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0960-HK",
+      "name": "Longfor Properties",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1109-HK",
+      "name": "China Resources Land Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1113-HK",
+      "name": "CK Asset Holdings",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1209-HK",
+      "name": "China Resources Mixc Lifestyle",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1997-HK",
+      "name": "Wharf Real Estate Investment Company Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0001-HK",
+      "name": "CK Hutchison Holdings Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0027-HK",
+      "name": "Galaxy Entertainment Group Ltd.",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0066-HK",
+      "name": "MTR Corporation Ltd",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0175-HK",
+      "name": "Geely Auto",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0241-HK",
+      "name": "Alibaba Health",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0267-HK",
+      "name": "CITIC Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0285-HK",
+      "name": "BYD Electronics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0288-HK",
+      "name": "WH Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0291-HK",
+      "name": "China Resources Beer",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0300-HK",
+      "name": "Midea Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0316-HK",
+      "name": "Orient Overseas (International) Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0322-HK",
+      "name": "Tingyi",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0386-HK",
+      "name": "Sinopec Corp",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0669-HK",
+      "name": "Techtronic Industries",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0700-HK",
+      "name": "Tencent Holdings Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0762-HK",
+      "name": "China Unicom",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0857-HK",
+      "name": "PetroChina Company Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0868-HK",
+      "name": "Xinyi Glass",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0881-HK",
+      "name": "Zhongsheng Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0883-HK",
+      "name": "CNOOC Limited",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0941-HK",
+      "name": "China Mobile Ltd",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0968-HK",
+      "name": "Xinyi Solar",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0981-HK",
+      "name": "Semiconductor Manufacturing International Corporation",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "0992-HK",
+      "name": "Lenovo",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1024-HK",
+      "name": "Kuaishou",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1044-HK",
+      "name": "Hengan International Group Co. Ltd",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1088-HK",
+      "name": "China Shenhua Energy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1093-HK",
+      "name": "CSPC Pharmaceutical Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1099-HK",
+      "name": "Sinopharm Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1177-HK",
+      "name": "Sino Biopharm",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1211-HK",
+      "name": "BYD Company",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1378-HK",
+      "name": "China Hongqiao Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1810-HK",
+      "name": "Xiaomi",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1876-HK",
+      "name": "Budweiser Brewing Company APAC",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1928-HK",
+      "name": "Sands China",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "1929-HK",
+      "name": "Chow Tai Fook",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2015-HK",
+      "name": "Li Auto",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2020-HK",
+      "name": "Anta Sports",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2057-HK",
+      "name": "ZTO Express",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2269-HK",
+      "name": "WuXi Biologics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2313-HK",
+      "name": "Shenzhou International",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2319-HK",
+      "name": "Mengniu Dairy",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2331-HK",
+      "name": "Li-Ning",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2359-HK",
+      "name": "WuXi AppTec",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2382-HK",
+      "name": "Sunny Optical",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2618-HK",
+      "name": "JD Logistics",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "2899-HK",
+      "name": "Zijin Mining",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "3690-HK",
+      "name": "Meituan",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "3692-HK",
+      "name": "Hansoh Pharmaceutical Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "6618-HK",
+      "name": "JD Health",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "6690-HK",
+      "name": "Haier",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "6862-HK",
+      "name": "Haidilao",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9618-HK",
+      "name": "JD.com",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9633-HK",
+      "name": "Nongfu Spring",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9888-HK",
+      "name": "Baidu",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9961-HK",
+      "name": "Trip.com Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9988-HK",
+      "name": "Alibaba Group",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9992-HK",
+      "name": "Pop Mart",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    },
+    {
+      "ticker": "9999-HK",
+      "name": "NetEase",
+      "sector": "nan",
+      "pct": 0.0,
+      "mcap_usd_b": 1.0
+    }
+  ]
+}
