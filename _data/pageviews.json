@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-07-14T03:27:26.710795+00:00",
+    "generated_at": "2026-07-15T03:26:56.223600+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -271,12 +271,15 @@
       "views": 1
     },
     "/investing/2026-02-12-global/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-02-18-us/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-02-19-us/": {
+      "views": 1
+    },
+    "/investing/2026-02-23-us/": {
       "views": 1
     },
     "/investing/2026-02-24-us/": {
