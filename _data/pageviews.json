@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-15T03:26:56.223600+00:00",
+    "generated_at": "2026-07-16T03:31:09.024758+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 545
+      "views": 544
     },
     "/about/": {
       "views": 1
@@ -73,7 +73,7 @@
       "views": 9
     },
     "/ai/heyling-day1/": {
-      "views": 8
+      "views": 1
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 8
@@ -354,6 +354,9 @@
     "/investing/2026-06-24-us/": {
       "views": 4
     },
+    "/investing/2026-06-29-us/": {
+      "views": 1
+    },
     "/investing/2026-06-30-korea/": {
       "views": 1
     },
@@ -545,6 +548,9 @@
     },
     "/tags/tech/": {
       "views": 2
+    },
+    "/tags/tmux/": {
+      "views": 1
     },
     "/tags/trail-running/": {
       "views": 1
