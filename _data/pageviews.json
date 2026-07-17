@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-16T03:31:09.024758+00:00",
+    "generated_at": "2026-07-17T03:32:00.482062+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 544
+      "views": 548
     },
     "/about/": {
       "views": 1
@@ -72,9 +72,6 @@
     "/ai/google-saif-ai-security-framework-2026/": {
       "views": 9
     },
-    "/ai/heyling-day1/": {
-      "views": 1
-    },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 8
     },
@@ -100,7 +97,7 @@
       "views": 6
     },
     "/ai/why-ai-managed-wiki-rots/": {
-      "views": 6
+      "views": 7
     },
     "/anchor-policy/": {
       "views": 1
@@ -112,7 +109,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 23
+      "views": 24
     },
     "/college-reviews/": {
       "views": 6
@@ -171,8 +168,11 @@
     "/education/anchor-forest-regional-talent-strategy/": {
       "views": 1
     },
+    "/education/anchor-shared-university-operating-model/": {
+      "views": 1
+    },
     "/education/changwon-ipms-data-governance-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/changwon-university-issues-2026/": {
       "views": 7
@@ -238,7 +238,7 @@
       "views": 2
     },
     "/education/student-startup-revenue-governance/": {
-      "views": 1
+      "views": 2
     },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 4
@@ -253,7 +253,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 16
+      "views": 17
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -301,9 +301,6 @@
       "views": 1
     },
     "/investing/2026-04-16-korea/": {
-      "views": 1
-    },
-    "/investing/2026-04-22-us/": {
       "views": 1
     },
     "/investing/2026-04-28-us/": {
@@ -363,10 +360,10 @@
     "/investing/2026-07-02-us/": {
       "views": 2
     },
-    "/investing/csi300/": {
+    "/investing/2026-07-13-us/": {
       "views": 1
     },
-    "/investing/djia/": {
+    "/investing/csi300/": {
       "views": 1
     },
     "/investing/hsi/": {
@@ -477,9 +474,6 @@
     "/tags/dev/": {
       "views": 5
     },
-    "/tags/djia/": {
-      "views": 1
-    },
     "/tags/heatmap/": {
       "views": 3
     },
@@ -499,7 +493,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 8
+      "views": 9
     },
     "/tags/mdx/": {
       "views": 1
