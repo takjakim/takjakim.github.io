@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-17T03:32:00.482062+00:00",
+    "generated_at": "2026-07-18T03:24:53.356018+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 548
+      "views": 516
     },
     "/about/": {
       "views": 1
@@ -78,6 +78,9 @@
     "/ai/local-finetuning/": {
       "views": 1
     },
+    "/ai/reflect-with-claude-ai-fluency/": {
+      "views": 1
+    },
     "/ai/session1-esg-patent-startup-innovation/": {
       "views": 7
     },
@@ -127,18 +130,12 @@
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
-      "views": 3
+      "views": 2
     },
     "/dev/markdown-hang/": {
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
-      "views": 1
-    },
-    "/dev/stats-method/": {
-      "views": 1
-    },
-    "/dev/stats-method/deployment/": {
       "views": 1
     },
     "/dev/stats-method/planning/": {
@@ -318,15 +315,6 @@
     "/investing/2026-05-15-korea/": {
       "views": 1
     },
-    "/investing/2026-06-12-us/": {
-      "views": 3
-    },
-    "/investing/2026-06-15-korea/": {
-      "views": 1
-    },
-    "/investing/2026-06-15-us/": {
-      "views": 1
-    },
     "/investing/2026-06-16-korea/": {
       "views": 2
     },
@@ -379,6 +367,9 @@
       "views": 2
     },
     "/llm-wiki/": {
+      "views": 1
+    },
+    "/macos/application10/": {
       "views": 1
     },
     "/macos/aptx/": {
@@ -444,11 +435,8 @@
     "/rise/": {
       "views": 2
     },
-    "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 1
-    },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 5
+      "views": 3
     },
     "/student-portfolio/": {
       "views": 1
@@ -457,13 +445,13 @@
       "views": 1
     },
     "/tags/": {
-      "views": 12
+      "views": 9
     },
     "/tags/agent/": {
       "views": 1
     },
     "/tags/ai/": {
-      "views": 9
+      "views": 7
     },
     "/tags/automation/": {
       "views": 1
@@ -472,7 +460,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 5
+      "views": 4
     },
     "/tags/heatmap/": {
       "views": 3
@@ -526,7 +514,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 5
+      "views": 3
     },
     "/tags/serverless/": {
       "views": 1
@@ -595,7 +583,7 @@
       "views": 1
     },
     "/welcome-to-dev/": {
-      "views": 2
+      "views": 1
     },
     "/welcome-to-market-analysis/": {
       "views": 2
