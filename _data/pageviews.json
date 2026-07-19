@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-18T03:24:53.356018+00:00",
+    "generated_at": "2026-07-19T03:46:18.057133+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 516
+      "views": 497
     },
     "/about/": {
       "views": 1
@@ -44,6 +44,9 @@
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 4
+    },
+    "/ai/ai-slop-taste-editor/": {
+      "views": 1
     },
     "/ai/ai-tutor/": {
       "views": 3
@@ -106,9 +109,6 @@
       "views": 1
     },
     "/backlink/": {
-      "views": 1
-    },
-    "/big-tech/": {
       "views": 1
     },
     "/college-consulting/": {
@@ -182,6 +182,9 @@
     },
     "/education/glocal30-junior-college-track-2026/": {
       "views": 7
+    },
+    "/education/gyeongnam-anchor-talent-operating-model/": {
+      "views": 1
     },
     "/education/jeju-rise-anchor-learncation-strategy/": {
       "views": 7
@@ -306,20 +309,14 @@
     "/investing/2026-05-06-us/": {
       "views": 1
     },
-    "/investing/2026-05-07-korea/": {
-      "views": 1
-    },
     "/investing/2026-05-07-us/": {
       "views": 1
     },
     "/investing/2026-05-15-korea/": {
       "views": 1
     },
-    "/investing/2026-06-16-korea/": {
-      "views": 2
-    },
     "/investing/2026-06-16-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-06-17-us/": {
       "views": 1
@@ -445,7 +442,7 @@
       "views": 1
     },
     "/tags/": {
-      "views": 9
+      "views": 8
     },
     "/tags/agent/": {
       "views": 1
@@ -460,7 +457,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 4
+      "views": 3
     },
     "/tags/heatmap/": {
       "views": 3
@@ -481,7 +478,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 9
+      "views": 7
     },
     "/tags/mdx/": {
       "views": 1
@@ -592,7 +589,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 29
+      "views": 17
     }
   }
 }
