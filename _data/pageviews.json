@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-19T03:46:18.057133+00:00",
+    "generated_at": "2026-07-20T03:57:54.597737+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 497
+      "views": 482
     },
     "/about/": {
       "views": 1
@@ -43,7 +43,7 @@
       "views": 17
     },
     "/ai/ai-productivity-governance-keynote/": {
-      "views": 4
+      "views": 2
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
@@ -83,9 +83,6 @@
     },
     "/ai/reflect-with-claude-ai-fluency/": {
       "views": 1
-    },
-    "/ai/session1-esg-patent-startup-innovation/": {
-      "views": 7
     },
     "/ai/session2-ai-green-trade-low-altitude-economy/": {
       "views": 2
@@ -433,7 +430,7 @@
       "views": 2
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 3
+      "views": 2
     },
     "/student-portfolio/": {
       "views": 1
@@ -471,16 +468,13 @@
     "/tags/inflation/": {
       "views": 1
     },
-    "/tags/innovation/": {
-      "views": 1
-    },
-    "/tags/kosdaq/": {
-      "views": 1
-    },
     "/tags/market/": {
       "views": 7
     },
     "/tags/mdx/": {
+      "views": 1
+    },
+    "/tags/monitoring/": {
       "views": 1
     },
     "/tags/paraphrasing/": {
@@ -511,7 +505,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 3
+      "views": 2
     },
     "/tags/serverless/": {
       "views": 1
