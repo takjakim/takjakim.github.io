@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-20T03:57:54.597737+00:00",
+    "generated_at": "2026-07-21T03:37:36.040352+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 482
+      "views": 474
     },
     "/about/": {
       "views": 1
@@ -583,7 +583,7 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 17
+      "views": 16
     }
   }
 }
