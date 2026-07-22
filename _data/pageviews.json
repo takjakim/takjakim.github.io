@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-21T03:37:36.040352+00:00",
+    "generated_at": "2026-07-22T03:38:08.081625+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 474
+      "views": 464
     },
     "/about/": {
       "views": 1
@@ -370,10 +370,10 @@
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 1
+      "views": 2
     },
     "/macos/tidal-dl/": {
-      "views": 7
+      "views": 5
     },
     "/notchdrawer/": {
       "views": 2
@@ -428,6 +428,9 @@
     },
     "/rise/": {
       "views": 2
+    },
+    "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
+      "views": 1
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 2
