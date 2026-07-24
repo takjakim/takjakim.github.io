@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-23T03:38:19.918579+00:00",
+    "generated_at": "2026-07-24T03:36:57.764864+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 424
+      "views": 380
     },
     "/about/": {
       "views": 1
@@ -40,7 +40,7 @@
       "views": 10
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 15
+      "views": 14
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 2
@@ -87,9 +87,6 @@
     "/ai/session6-energy-transition-esg-climate-finance/": {
       "views": 1
     },
-    "/ai/session7-sustainability-technology-capability/": {
-      "views": 1
-    },
     "/ai/why-ai-managed-wiki-rots/": {
       "views": 7
     },
@@ -100,7 +97,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 24
+      "views": 22
     },
     "/college-reviews/": {
       "views": 6
@@ -109,7 +106,7 @@
       "views": 2
     },
     "/daegu-haany-university-kmedi-2026/": {
-      "views": 3
+      "views": 2
     },
     "/daily/": {
       "views": 1
@@ -139,7 +136,7 @@
       "views": 1
     },
     "/education/2026-06-23-adiga-check-routine/": {
-      "views": 7
+      "views": 4
     },
     "/education/2026-university-innovation-support-plan/": {
       "views": 10
@@ -158,9 +155,6 @@
     },
     "/education/changwon-ipms-data-governance-2026/": {
       "views": 3
-    },
-    "/education/changwon-university-issues-2026/": {
-      "views": 7
     },
     "/education/environment-specialization-workforce-strategy-2026/": {
       "views": 1
@@ -190,13 +184,10 @@
       "views": 1
     },
     "/education/keimyung-culture-college-rise-healthcare-2026/": {
-      "views": 8
+      "views": 2
     },
     "/education/kentech-organization-issues-2026/": {
-      "views": 17
-    },
-    "/education/kentech/": {
-      "views": 1
+      "views": 6
     },
     "/education/kumoh-anchor-superregional-2026/": {
       "views": 2
@@ -241,7 +232,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 13
+      "views": 12
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -251,9 +242,6 @@
     },
     "/human-in-the-loop/": {
       "views": 2
-    },
-    "/industry-academic-cooperation/": {
-      "views": 1
     },
     "/investing/2026-02-06/": {
       "views": 1
@@ -303,14 +291,8 @@
     "/investing/2026-06-17-us/": {
       "views": 1
     },
-    "/investing/2026-06-19-korea/": {
-      "views": 2
-    },
-    "/investing/2026-06-22-korea/": {
-      "views": 1
-    },
     "/investing/2026-06-22-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-06-23-korea/": {
       "views": 4
@@ -346,13 +328,13 @@
       "views": 1
     },
     "/macos/application10/": {
-      "views": 1
+      "views": 2
     },
     "/macos/aptx/": {
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 2
+      "views": 1
     },
     "/macos/tidal-dl/": {
       "views": 5
@@ -409,7 +391,7 @@
       "views": 1
     },
     "/rise/": {
-      "views": 2
+      "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
