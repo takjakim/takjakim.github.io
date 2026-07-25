@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-24T03:36:57.764864+00:00",
+    "generated_at": "2026-07-25T03:33:01.584975+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 380
+      "views": 301
     },
     "/about/": {
       "views": 1
@@ -40,10 +40,10 @@
       "views": 10
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 14
+      "views": 2
     },
     "/ai/ai-productivity-governance-keynote/": {
-      "views": 2
+      "views": 1
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
@@ -84,29 +84,20 @@
     "/ai/reflect-with-claude-ai-fluency/": {
       "views": 1
     },
-    "/ai/session6-energy-transition-esg-climate-finance/": {
-      "views": 1
-    },
     "/ai/why-ai-managed-wiki-rots/": {
       "views": 7
-    },
-    "/anchor-policy/": {
-      "views": 1
     },
     "/backlink/": {
       "views": 1
     },
     "/college-consulting/": {
-      "views": 22
+      "views": 12
     },
     "/college-reviews/": {
-      "views": 6
+      "views": 4
     },
     "/consistency/": {
-      "views": 2
-    },
-    "/daegu-haany-university-kmedi-2026/": {
-      "views": 2
+      "views": 1
     },
     "/daily/": {
       "views": 1
@@ -115,12 +106,9 @@
       "views": 1
     },
     "/dev/claude-code-team-dashboard/": {
-      "views": 2
-    },
-    "/dev/markdown-hang/": {
       "views": 1
     },
-    "/dev/marp-editor/devlog-1/": {
+    "/dev/markdown-hang/": {
       "views": 1
     },
     "/dev/stats-method/planning/": {
@@ -142,7 +130,7 @@
       "views": 10
     },
     "/education/ai-dx-vocational-college-checklist/": {
-      "views": 7
+      "views": 1
     },
     "/education/ai-microdegree-digital-badge-university-strategy-2026/": {
       "views": 3
@@ -155,6 +143,9 @@
     },
     "/education/changwon-ipms-data-governance-2026/": {
       "views": 3
+    },
+    "/education/changwon-university-issues-2026/": {
+      "views": 1
     },
     "/education/environment-specialization-workforce-strategy-2026/": {
       "views": 1
@@ -183,11 +174,8 @@
     "/education/kangwon-gangneung-campus-rise-industry-portfolio-2026/": {
       "views": 1
     },
-    "/education/keimyung-culture-college-rise-healthcare-2026/": {
-      "views": 2
-    },
     "/education/kentech-organization-issues-2026/": {
-      "views": 6
+      "views": 4
     },
     "/education/kumoh-anchor-superregional-2026/": {
       "views": 2
@@ -207,9 +195,6 @@
     "/education/rise-linked-investment-university-strategy/": {
       "views": 3
     },
-    "/education/sehan-university-rise-aviation-welfare-2026/": {
-      "views": 3
-    },
     "/education/soonchunhyang-glamp-research-hub-2026/": {
       "views": 2
     },
@@ -225,19 +210,13 @@
     "/education/vocational-college-strategy-ai-anchor/": {
       "views": 1
     },
-    "/g7-gx-industry-axis/": {
-      "views": 1
-    },
     "/generative-ai-privacy-protection/": {
       "views": 1
     },
     "/graph/": {
-      "views": 12
+      "views": 5
     },
     "/gyeongbuk-robot-specialization-university/": {
-      "views": 1
-    },
-    "/gyeonggi-rise/": {
       "views": 1
     },
     "/human-in-the-loop/": {
@@ -271,9 +250,6 @@
       "views": 1
     },
     "/investing/2026-04-08-us/": {
-      "views": 1
-    },
-    "/investing/2026-04-16-korea/": {
       "views": 1
     },
     "/investing/2026-04-28-us/": {
@@ -375,19 +351,10 @@
     "/obsidian/": {
       "views": 2
     },
-    "/performance-indexing/": {
-      "views": 1
-    },
     "/prompt-injection/": {
       "views": 1
     },
     "/rag/": {
-      "views": 1
-    },
-    "/regional-industry-academic-network/": {
-      "views": 1
-    },
-    "/regional-settlement/": {
       "views": 1
     },
     "/rise/": {
@@ -397,7 +364,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 2
+      "views": 1
     },
     "/student-portfolio/": {
       "views": 1
@@ -421,7 +388,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 2
+      "views": 1
     },
     "/tags/heatmap/": {
       "views": 3
@@ -433,7 +400,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 7
+      "views": 6
     },
     "/tags/mdx/": {
       "views": 1
@@ -502,7 +469,7 @@
       "views": 1
     },
     "/tags/고등교육컨설팅/": {
-      "views": 2
+      "views": 1
     },
     "/tags/대학경영/": {
       "views": 1
@@ -514,15 +481,12 @@
       "views": 1
     },
     "/tags/대학컨설팅/": {
-      "views": 5
+      "views": 4
     },
     "/tags/대학혁신지원사업/": {
       "views": 1
     },
     "/tags/지방대학특성화/": {
-      "views": 1
-    },
-    "/theory/r4-obsidian/": {
       "views": 1
     },
     "/theory/zpd/": {
@@ -541,7 +505,10 @@
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 5
+      "views": 3
+    },
+    "/your-first-note/": {
+      "views": 2
     }
   }
 }
