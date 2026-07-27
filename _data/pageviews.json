@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-26T03:49:33.291039+00:00",
+    "generated_at": "2026-07-27T03:57:35.141440+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 253
+      "views": 235
     },
     "/about/": {
       "views": 1
@@ -39,8 +39,11 @@
     "/ai/ai-agent-responsibility-bottleneck/": {
       "views": 10
     },
-    "/ai/ai-productivity-conference-synthesis/": {
+    "/ai/ai-goes-to-work/": {
       "views": 2
+    },
+    "/ai/ai-productivity-conference-synthesis/": {
+      "views": 3
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -91,7 +94,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 9
+      "views": 8
     },
     "/college-reviews/": {
       "views": 2
@@ -147,6 +150,9 @@
     "/education/changwon-university-issues-2026/": {
       "views": 1
     },
+    "/education/daegu-health-glocal-care/": {
+      "views": 1
+    },
     "/education/environment-specialization-workforce-strategy-2026/": {
       "views": 1
     },
@@ -192,9 +198,6 @@
     "/education/rise-kpi-autonomy-university-strategy/": {
       "views": 4
     },
-    "/education/rise-linked-investment-university-strategy/": {
-      "views": 3
-    },
     "/education/soonchunhyang-glamp-research-hub-2026/": {
       "views": 2
     },
@@ -231,9 +234,6 @@
     "/investing/2026-02-24-us/": {
       "views": 1
     },
-    "/investing/2026-03-26-us/": {
-      "views": 1
-    },
     "/investing/2026-04-01-korea/": {
       "views": 1
     },
@@ -261,9 +261,6 @@
     "/investing/2026-06-22-us/": {
       "views": 1
     },
-    "/investing/2026-06-24-us/": {
-      "views": 2
-    },
     "/investing/2026-06-29-us/": {
       "views": 1
     },
@@ -276,11 +273,8 @@
     "/investing/2026-07-13-us/": {
       "views": 1
     },
-    "/investing/hsi/": {
-      "views": 1
-    },
     "/investing/ixic/": {
-      "views": 2
+      "views": 1
     },
     "/investing/ndx/": {
       "views": 2
@@ -363,9 +357,6 @@
     "/tags/": {
       "views": 1
     },
-    "/tags/agent/": {
-      "views": 1
-    },
     "/tags/ai/": {
       "views": 7
     },
@@ -373,7 +364,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 1
+      "views": 3
     },
     "/tags/implementation/": {
       "views": 1
@@ -390,11 +381,8 @@
     "/tags/planning/": {
       "views": 1
     },
-    "/tags/presentation/": {
-      "views": 1
-    },
     "/tags/product/": {
-      "views": 2
+      "views": 1
     },
     "/tags/productivity/": {
       "views": 1
@@ -402,17 +390,8 @@
     "/tags/puppeteer/": {
       "views": 1
     },
-    "/tags/react/": {
-      "views": 1
-    },
-    "/tags/rise/": {
-      "views": 1
-    },
     "/tags/running/": {
       "views": 2
-    },
-    "/tags/serverless/": {
-      "views": 1
     },
     "/tags/snapshot/": {
       "views": 1
@@ -421,7 +400,7 @@
       "views": 1
     },
     "/tags/tech/": {
-      "views": 2
+      "views": 1
     },
     "/tags/tmux/": {
       "views": 1
@@ -438,14 +417,11 @@
     "/volatility/": {
       "views": 1
     },
-    "/welcome-to-market-analysis/": {
-      "views": 2
-    },
     "/workbook/": {
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
-      "views": 3
+      "views": 2
     },
     "/your-first-note/": {
       "views": 2
