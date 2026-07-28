@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-27T03:57:35.141440+00:00",
+    "generated_at": "2026-07-28T03:29:13.662410+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 235
+      "views": 215
     },
     "/about/": {
       "views": 1
@@ -231,12 +231,6 @@
     "/investing/2026-02-23-us/": {
       "views": 1
     },
-    "/investing/2026-02-24-us/": {
-      "views": 1
-    },
-    "/investing/2026-04-01-korea/": {
-      "views": 1
-    },
     "/investing/2026-04-01-us/": {
       "views": 1
     },
@@ -247,9 +241,6 @@
       "views": 1
     },
     "/investing/2026-05-06-us/": {
-      "views": 1
-    },
-    "/investing/2026-05-15-korea/": {
       "views": 1
     },
     "/investing/2026-06-16-us/": {
@@ -322,9 +313,6 @@
       "views": 1
     },
     "/notes/실습교육/": {
-      "views": 1
-    },
-    "/notes/학생-이동성/": {
       "views": 1
     },
     "/oauth-test/": {
