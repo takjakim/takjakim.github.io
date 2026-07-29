@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-28T03:29:13.662410+00:00",
+    "generated_at": "2026-07-29T03:31:41.226578+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 215
+      "views": 193
     },
     "/about/": {
       "views": 1
@@ -72,9 +72,6 @@
     "/ai/claude-code-domain-expertise/": {
       "views": 10
     },
-    "/ai/generative-ai-privacy-guide-2026/": {
-      "views": 1
-    },
     "/ai/google-saif-ai-security-framework-2026/": {
       "views": 9
     },
@@ -94,7 +91,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 8
+      "views": 7
     },
     "/college-reviews/": {
       "views": 2
@@ -162,6 +159,9 @@
     "/education/glocal30-junior-college-track-2026/": {
       "views": 1
     },
+    "/education/gyeongnam-anchor-career-pipeline/": {
+      "views": 1
+    },
     "/education/gyeongnam-anchor-talent-operating-model/": {
       "views": 1
     },
@@ -184,7 +184,7 @@
       "views": 3
     },
     "/education/kumoh-anchor-superregional-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/llm-socratic-tutor-higher-education-2026/": {
       "views": 18
@@ -309,9 +309,6 @@
     "/notes/도메인-전문성/": {
       "views": 1
     },
-    "/notes/생성형-ai-개인정보-보호/": {
-      "views": 1
-    },
     "/notes/실습교육/": {
       "views": 1
     },
@@ -327,9 +324,6 @@
     "/rag/": {
       "views": 1
     },
-    "/rise/": {
-      "views": 1
-    },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
     },
@@ -339,14 +333,8 @@
     "/student-portfolio/": {
       "views": 1
     },
-    "/super-regional-cooperation/": {
-      "views": 1
-    },
-    "/tags/": {
-      "views": 1
-    },
     "/tags/ai/": {
-      "views": 7
+      "views": 6
     },
     "/tags/cbam/": {
       "views": 1
@@ -375,16 +363,10 @@
     "/tags/productivity/": {
       "views": 1
     },
-    "/tags/puppeteer/": {
-      "views": 1
-    },
     "/tags/running/": {
       "views": 2
     },
     "/tags/snapshot/": {
-      "views": 1
-    },
-    "/tags/supabase/": {
       "views": 1
     },
     "/tags/tech/": {
@@ -407,9 +389,6 @@
     },
     "/workbook/": {
       "views": 1
-    },
-    "/worldcup-2026-scenarios/": {
-      "views": 2
     },
     "/your-first-note/": {
       "views": 2
