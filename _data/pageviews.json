@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-29T03:31:41.226578+00:00",
+    "generated_at": "2026-07-30T03:20:41.714198+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 193
+      "views": 189
     },
     "/about/": {
       "views": 1
@@ -22,7 +22,7 @@
       "views": 2
     },
     "/ai-quality-management/": {
-      "views": 1
+      "views": 2
     },
     "/ai-work-data-control/": {
       "views": 1
@@ -196,7 +196,7 @@
       "views": 6
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
-      "views": 4
+      "views": 2
     },
     "/education/soonchunhyang-glamp-research-hub-2026/": {
       "views": 2
@@ -366,9 +366,6 @@
     "/tags/running/": {
       "views": 2
     },
-    "/tags/snapshot/": {
-      "views": 1
-    },
     "/tags/tech/": {
       "views": 1
     },
@@ -378,20 +375,20 @@
     "/tags/대학컨설팅/": {
       "views": 2
     },
+    "/theory/perplexity-ppl/": {
+      "views": 1
+    },
     "/theory/zpd/": {
       "views": 2
     },
     "/tigers/": {
       "views": 1
     },
-    "/volatility/": {
-      "views": 1
-    },
     "/workbook/": {
       "views": 1
     },
     "/your-first-note/": {
-      "views": 2
+      "views": 4
     }
   }
 }
