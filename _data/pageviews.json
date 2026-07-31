@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-07-30T03:20:41.714198+00:00",
+    "generated_at": "2026-07-31T03:46:03.059153+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 189
+      "views": 162
     },
     "/about/": {
       "views": 1
@@ -23,9 +23,6 @@
     },
     "/ai-quality-management/": {
       "views": 2
-    },
-    "/ai-work-data-control/": {
-      "views": 1
     },
     "/ai-x/": {
       "views": 1
@@ -73,7 +70,7 @@
       "views": 10
     },
     "/ai/google-saif-ai-security-framework-2026/": {
-      "views": 9
+      "views": 4
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 8
@@ -127,9 +124,6 @@
       "views": 4
     },
     "/education/2026-university-innovation-support-plan/": {
-      "views": 2
-    },
-    "/education/ai-dx-vocational-college-checklist/": {
       "views": 1
     },
     "/education/ai-microdegree-digital-badge-university-strategy-2026/": {
@@ -151,12 +145,6 @@
       "views": 1
     },
     "/education/environment-specialization-workforce-strategy-2026/": {
-      "views": 1
-    },
-    "/education/global-talent-settlement-university-strategy/": {
-      "views": 2
-    },
-    "/education/glocal30-junior-college-track-2026/": {
       "views": 1
     },
     "/education/gyeongnam-anchor-career-pipeline/": {
@@ -183,9 +171,6 @@
     "/education/kentech-organization-issues-2026/": {
       "views": 3
     },
-    "/education/kumoh-anchor-superregional-2026/": {
-      "views": 1
-    },
     "/education/llm-socratic-tutor-higher-education-2026/": {
       "views": 18
     },
@@ -195,12 +180,6 @@
     "/education/rise-governance-operating-model-2026/": {
       "views": 6
     },
-    "/education/rise-kpi-autonomy-university-strategy/": {
-      "views": 2
-    },
-    "/education/soonchunhyang-glamp-research-hub-2026/": {
-      "views": 2
-    },
     "/education/student-data-portability-career-strategy/": {
       "views": 2
     },
@@ -208,9 +187,6 @@
       "views": 2
     },
     "/education/vocational-college-strategy-ai-anchor/": {
-      "views": 1
-    },
-    "/generative-ai-privacy-protection/": {
       "views": 1
     },
     "/graph/": {
@@ -226,7 +202,7 @@
       "views": 1
     },
     "/investing/2026-02-18-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-02-23-us/": {
       "views": 1
@@ -317,9 +293,6 @@
     },
     "/obsidian/": {
       "views": 2
-    },
-    "/prompt-injection/": {
-      "views": 1
     },
     "/rag/": {
       "views": 1
