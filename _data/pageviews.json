@@ -1,37 +1,25 @@
 {
   "meta": {
-    "generated_at": "2026-07-31T03:46:03.059153+00:00",
+    "generated_at": "2026-08-01T03:45:28.115828+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 162
+      "views": 148
     },
     "/about/": {
-      "views": 1
-    },
-    "/adult-learners/": {
-      "views": 1
+      "views": 3
     },
     "/agentic-ai/": {
       "views": 1
     },
-    "/ai-governance/": {
-      "views": 2
-    },
     "/ai-quality-management/": {
       "views": 2
     },
-    "/ai-x/": {
-      "views": 1
-    },
-    "/ai/": {
-      "views": 1
-    },
     "/ai/agentic-ai-governance-runtime-control/": {
-      "views": 4
+      "views": 3
     },
     "/ai/ai-agent-responsibility-bottleneck/": {
       "views": 10
@@ -73,7 +61,7 @@
       "views": 4
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
-      "views": 8
+      "views": 6
     },
     "/ai/local-finetuning/": {
       "views": 1
@@ -84,14 +72,11 @@
     "/ai/why-ai-managed-wiki-rots/": {
       "views": 7
     },
-    "/backlink/": {
-      "views": 1
-    },
     "/college-consulting/": {
-      "views": 7
+      "views": 6
     },
     "/college-reviews/": {
-      "views": 2
+      "views": 1
     },
     "/consistency/": {
       "views": 1
@@ -99,22 +84,7 @@
     "/daily/": {
       "views": 1
     },
-    "/dev/": {
-      "views": 1
-    },
-    "/dev/claude-code-team-dashboard/": {
-      "views": 1
-    },
     "/dev/markdown-hang/": {
-      "views": 1
-    },
-    "/dev/stats-method/planning/": {
-      "views": 1
-    },
-    "/digital-badge/": {
-      "views": 1
-    },
-    "/digital-garden-concept/": {
       "views": 1
     },
     "/education-jeju-rise-anchor-learncation-strategy/": {
@@ -123,13 +93,10 @@
     "/education/2026-06-23-adiga-check-routine/": {
       "views": 4
     },
-    "/education/2026-university-innovation-support-plan/": {
-      "views": 1
-    },
-    "/education/ai-microdegree-digital-badge-university-strategy-2026/": {
-      "views": 3
-    },
     "/education/anchor-forest-regional-talent-strategy/": {
+      "views": 2
+    },
+    "/education/anchor-regulation-operating-model/": {
       "views": 1
     },
     "/education/anchor-shared-university-operating-model/": {
@@ -196,7 +163,7 @@
       "views": 1
     },
     "/human-in-the-loop/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-02-12-global/": {
       "views": 1
@@ -207,10 +174,16 @@
     "/investing/2026-02-23-us/": {
       "views": 1
     },
+    "/investing/2026-03-31-us/": {
+      "views": 1
+    },
     "/investing/2026-04-01-us/": {
       "views": 1
     },
     "/investing/2026-04-08-us/": {
+      "views": 2
+    },
+    "/investing/2026-04-21-korea/": {
       "views": 1
     },
     "/investing/2026-04-28-us/": {
@@ -231,9 +204,6 @@
     "/investing/2026-06-29-us/": {
       "views": 1
     },
-    "/investing/2026-06-30-korea/": {
-      "views": 1
-    },
     "/investing/2026-07-02-us/": {
       "views": 2
     },
@@ -249,9 +219,6 @@
     "/knowledge-base/": {
       "views": 2
     },
-    "/llm-wiki/": {
-      "views": 1
-    },
     "/macos/application10/": {
       "views": 2
     },
@@ -264,16 +231,10 @@
     "/macos/tidal-dl/": {
       "views": 5
     },
-    "/notchdrawer/": {
-      "views": 2
-    },
     "/notes/ai-인플레이션/": {
       "views": 1
     },
     "/notes/anchor/": {
-      "views": 1
-    },
-    "/notes/개념-노트/": {
       "views": 1
     },
     "/notes/고등직업교육/": {
@@ -292,9 +253,6 @@
       "views": 5
     },
     "/obsidian/": {
-      "views": 2
-    },
-    "/rag/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
@@ -307,7 +265,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 6
+      "views": 7
     },
     "/tags/cbam/": {
       "views": 1
@@ -319,21 +277,12 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 5
+      "views": 6
     },
     "/tags/mdx/": {
       "views": 1
     },
     "/tags/monitoring/": {
-      "views": 1
-    },
-    "/tags/planning/": {
-      "views": 1
-    },
-    "/tags/product/": {
-      "views": 1
-    },
-    "/tags/productivity/": {
       "views": 1
     },
     "/tags/running/": {
