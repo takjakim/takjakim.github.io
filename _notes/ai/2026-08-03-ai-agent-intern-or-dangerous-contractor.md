@@ -181,9 +181,3 @@ AI가 일을 대신할수록 사람은 더 많은 일을 검수하고, 더 많�
 
 [^anthropic]: Anthropic, “Investigating three real-world incidents in our cybersecurity evaluations,” 2026-07-30. https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals
 [^microsoft]: Microsoft WorkLab, “2025: The year the Frontier Firm is born,” 2025-04-23. https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born
-
-## 공개 전 체크 메모
-
-- `OpenAI/Hugging Face 보안 사고`는 기사 배경으로만 언급 가능. 공식 URL은 추가 확인 후 출처 보강 권장.
-- Anthropic 사례는 “모델 정렬 실패”로 단정하지 말고, Anthropic 표현처럼 “평가 환경/운영 실패에 가까운 사건”으로 조심스럽게 다루는 것이 안전하다.
-- 핵심 위키링크 후보: [[에이전틱 AI|AI 에이전트]], [[AI 리터러시]], [[검증]], [[Human-in-the-Loop]], [[책임성]].

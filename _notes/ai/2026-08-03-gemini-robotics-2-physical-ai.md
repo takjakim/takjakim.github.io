@@ -216,9 +216,3 @@ AI 경쟁은 텍스트 생성에서 멀티모달 이해로, 다시 물리적 행
 ## 출처
 
 [^deepmind]: Google DeepMind, “Gemini Robotics 2 brings whole body intelligence to robots,” 2026-07-30. https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
-
-## 공개 전 체크 메모
-
-- `Gemini Robotics ER 2`의 Google AI Studio/Enterprise 제공 범위는 공개 시점 기준으로 다시 확인 권장.
-- Tesla Optimus 연결은 해석/비교 관점이므로 공식 협력처럼 표현하지 말 것.
-- 핵심 위키링크 후보: [[피지컬 AI]], [[에이전틱 AI|AI 에이전트]], [[멀티모달 AI]], [[로봇공학]], [[Human-in-the-Loop]], [[책임성]].
