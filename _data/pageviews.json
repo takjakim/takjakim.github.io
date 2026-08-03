@@ -1,25 +1,22 @@
 {
   "meta": {
-    "generated_at": "2026-08-02T03:47:14.023751+00:00",
+    "generated_at": "2026-08-03T03:48:36.078147+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 127
+      "views": 98
     },
     "/about/": {
-      "views": 3
+      "views": 1
     },
     "/agentic-ai/": {
       "views": 1
     },
     "/ai-quality-management/": {
-      "views": 2
-    },
-    "/ai/agentic-ai-governance-runtime-control/": {
-      "views": 3
+      "views": 1
     },
     "/ai/ai-agent-responsibility-bottleneck/": {
       "views": 10
@@ -40,13 +37,10 @@
       "views": 3
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 10
-    },
-    "/ai/apple-memory-exit-strategy-nasdaq-memory-selloff/": {
-      "views": 3
+      "views": 9
     },
     "/ai/apple-price-increase-device-sovereignty/": {
-      "views": 8
+      "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 4
@@ -55,9 +49,6 @@
       "views": 10
     },
     "/ai/google-saif-ai-security-framework-2026/": {
-      "views": 4
-    },
-    "/ai/local-finetuning/": {
       "views": 1
     },
     "/ai/reflect-with-claude-ai-fluency/": {
@@ -67,15 +58,12 @@
       "views": 7
     },
     "/college-consulting/": {
-      "views": 5
+      "views": 4
     },
     "/college-reviews/": {
       "views": 1
     },
     "/consistency/": {
-      "views": 1
-    },
-    "/daily/": {
       "views": 1
     },
     "/education-jeju-rise-anchor-learncation-strategy/": {
@@ -97,7 +85,7 @@
       "views": 3
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/daegu-health-glocal-care/": {
       "views": 1
@@ -117,9 +105,6 @@
     "/education/junior-college-innovation-student-outcomes-2026/": {
       "views": 1
     },
-    "/education/junior-college-presidents-survival-strategy/": {
-      "views": 2
-    },
     "/education/k-wellness-consortium-regional-strategy/": {
       "views": 2
     },
@@ -138,13 +123,7 @@
     "/education/student-startup-revenue-governance/": {
       "views": 2
     },
-    "/education/vocational-college-strategy-ai-anchor/": {
-      "views": 1
-    },
     "/graph/": {
-      "views": 2
-    },
-    "/human-in-the-loop/": {
       "views": 1
     },
     "/investing/2026-02-12-global/": {
@@ -177,17 +156,8 @@
     "/investing/2026-06-16-us/": {
       "views": 1
     },
-    "/investing/2026-06-17-us/": {
-      "views": 1
-    },
-    "/investing/2026-06-22-us/": {
-      "views": 1
-    },
     "/investing/2026-06-29-us/": {
       "views": 1
-    },
-    "/investing/2026-07-02-us/": {
-      "views": 2
     },
     "/investing/2026-07-13-us/": {
       "views": 1
@@ -199,7 +169,7 @@
       "views": 1
     },
     "/investing/ndx/": {
-      "views": 2
+      "views": 1
     },
     "/macos/application10/": {
       "views": 2
@@ -208,15 +178,9 @@
       "views": 1
     },
     "/macos/tidal-dl/": {
-      "views": 5
-    },
-    "/notes/고등직업교육/": {
-      "views": 1
+      "views": 3
     },
     "/notes/도메인-전문성/": {
-      "views": 1
-    },
-    "/notes/실습교육/": {
       "views": 1
     },
     "/oauth-test/": {
@@ -225,32 +189,26 @@
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
     },
-    "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 1
-    },
     "/tags/ai/": {
-      "views": 4
+      "views": 2
     },
     "/tags/cbam/": {
       "views": 1
     },
     "/tags/dev/": {
-      "views": 3
+      "views": 2
     },
     "/tags/implementation/": {
       "views": 1
     },
     "/tags/market/": {
-      "views": 6
+      "views": 4
     },
     "/tags/mdx/": {
       "views": 1
     },
     "/tags/monitoring/": {
       "views": 1
-    },
-    "/tags/running/": {
-      "views": 2
     },
     "/tags/tmux/": {
       "views": 1
@@ -263,9 +221,6 @@
     },
     "/theory/zpd/": {
       "views": 2
-    },
-    "/tigers/": {
-      "views": 1
     },
     "/workbook/": {
       "views": 1
