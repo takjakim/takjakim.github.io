@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-04T03:31:43.271990+00:00",
+    "generated_at": "2026-08-05T03:27:20.714706+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 105
+      "views": 109
     },
     "/about/": {
       "views": 1
@@ -18,11 +18,14 @@
     "/ai-quality-management/": {
       "views": 1
     },
+    "/ai/ai-agent-intern-or-dangerous-contractor/": {
+      "views": 2
+    },
     "/ai/ai-agent-responsibility-bottleneck/": {
       "views": 10
     },
     "/ai/ai-goes-to-work/": {
-      "views": 3
+      "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 3
@@ -49,7 +52,7 @@
       "views": 10
     },
     "/ai/gemini-robotics-2-physical-ai/": {
-      "views": 3
+      "views": 5
     },
     "/ai/google-saif-ai-security-framework-2026/": {
       "views": 1
@@ -66,7 +69,7 @@
     "/college-reviews/": {
       "views": 1
     },
-    "/consistency/": {
+    "/dev/stats-method/planning/": {
       "views": 1
     },
     "/education-jeju-rise-anchor-learncation-strategy/": {
@@ -124,7 +127,7 @@
       "views": 3
     },
     "/education/llm-socratic-tutor-higher-education-2026/": {
-      "views": 18
+      "views": 14
     },
     "/education/student-data-portability-career-strategy/": {
       "views": 2
@@ -142,6 +145,9 @@
       "views": 1
     },
     "/investing/2026-02-23-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-11-korea/": {
       "views": 1
     },
     "/investing/2026-03-31-us/": {
@@ -162,7 +168,7 @@
     "/investing/2026-05-06-us/": {
       "views": 1
     },
-    "/investing/2026-06-16-us/": {
+    "/investing/2026-06-23-korea/": {
       "views": 1
     },
     "/investing/2026-06-29-us/": {
@@ -175,9 +181,6 @@
       "views": 1
     },
     "/investing/csi300/": {
-      "views": 1
-    },
-    "/investing/ixic/": {
       "views": 1
     },
     "/investing/ndx/": {
@@ -226,6 +229,9 @@
       "views": 1
     },
     "/tags/tmux/": {
+      "views": 1
+    },
+    "/tags/경영컨설팅/": {
       "views": 1
     },
     "/tags/대학컨설팅/": {
