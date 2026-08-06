@@ -1,16 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-05T03:27:20.714706+00:00",
+    "generated_at": "2026-08-06T03:30:33.965934+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 109
-    },
-    "/about/": {
-      "views": 1
+      "views": 67
     },
     "/agentic-ai/": {
       "views": 1
@@ -28,7 +25,7 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -36,14 +33,8 @@
     "/ai/ai-slop-taste-editor/": {
       "views": 1
     },
-    "/ai/ai-tutor/": {
-      "views": 3
-    },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 9
-    },
-    "/ai/apple-price-increase-device-sovereignty/": {
-      "views": 1
+      "views": 8
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 4
@@ -64,19 +55,13 @@
       "views": 7
     },
     "/college-consulting/": {
-      "views": 4
-    },
-    "/college-reviews/": {
       "views": 1
     },
     "/dev/stats-method/planning/": {
       "views": 1
     },
-    "/education-jeju-rise-anchor-learncation-strategy/": {
-      "views": 1
-    },
     "/education/2026-06-23-adiga-check-routine/": {
-      "views": 4
+      "views": 1
     },
     "/education/anchor-forest-regional-talent-strategy/": {
       "views": 1
@@ -88,7 +73,7 @@
       "views": 1
     },
     "/education/changwon-ipms-data-governance-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/changwon-university-issues-2026/": {
       "views": 2
@@ -111,12 +96,6 @@
     "/education/gyeongnam-lifelong-education-hub/": {
       "views": 1
     },
-    "/education/jeju-rise-anchor-learncation-strategy/": {
-      "views": 7
-    },
-    "/education/junior-college-innovation-student-outcomes-2026/": {
-      "views": 1
-    },
     "/education/k-wellness-consortium-regional-strategy/": {
       "views": 2
     },
@@ -127,7 +106,7 @@
       "views": 3
     },
     "/education/llm-socratic-tutor-higher-education-2026/": {
-      "views": 14
+      "views": 1
     },
     "/education/student-data-portability-career-strategy/": {
       "views": 2
@@ -136,7 +115,7 @@
       "views": 2
     },
     "/graph/": {
-      "views": 10
+      "views": 5
     },
     "/investing/2026-02-12-global/": {
       "views": 1
@@ -201,14 +180,11 @@
     "/notes/원격대학/": {
       "views": 1
     },
-    "/oauth-test/": {
-      "views": 5
-    },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
     },
     "/tags/ai/": {
-      "views": 2
+      "views": 1
     },
     "/tags/cbam/": {
       "views": 1
@@ -220,7 +196,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 4
+      "views": 3
     },
     "/tags/mdx/": {
       "views": 1
@@ -233,9 +209,6 @@
     },
     "/tags/경영컨설팅/": {
       "views": 1
-    },
-    "/tags/대학컨설팅/": {
-      "views": 2
     },
     "/theory/perplexity-ppl/": {
       "views": 1
