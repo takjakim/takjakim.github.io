@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-06T03:30:33.965934+00:00",
+    "generated_at": "2026-08-07T03:12:53.706480+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 67
+      "views": 69
     },
     "/agentic-ai/": {
       "views": 1
@@ -25,16 +25,16 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 2
+      "views": 3
     },
     "/ai/ai-productivity-governance-keynote/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 8
+      "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 4
@@ -44,9 +44,6 @@
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 5
-    },
-    "/ai/google-saif-ai-security-framework-2026/": {
-      "views": 1
     },
     "/ai/reflect-with-claude-ai-fluency/": {
       "views": 1
@@ -58,9 +55,6 @@
       "views": 1
     },
     "/dev/stats-method/planning/": {
-      "views": 1
-    },
-    "/education/2026-06-23-adiga-check-routine/": {
       "views": 1
     },
     "/education/anchor-forest-regional-talent-strategy/": {
@@ -79,7 +73,7 @@
       "views": 2
     },
     "/education/cyber-university-governance/": {
-      "views": 2
+      "views": 3
     },
     "/education/daegu-health-glocal-care/": {
       "views": 1
@@ -99,13 +93,13 @@
     "/education/k-wellness-consortium-regional-strategy/": {
       "views": 2
     },
-    "/education/kangwon-gangneung-campus-rise-industry-portfolio-2026/": {
-      "views": 1
-    },
     "/education/kentech-organization-issues-2026/": {
       "views": 3
     },
     "/education/llm-socratic-tutor-higher-education-2026/": {
+      "views": 1
+    },
+    "/education/regional-admissions-autonomy-operating-model/": {
       "views": 1
     },
     "/education/student-data-portability-career-strategy/": {
@@ -115,7 +109,7 @@
       "views": 2
     },
     "/graph/": {
-      "views": 5
+      "views": 7
     },
     "/investing/2026-02-12-global/": {
       "views": 1
@@ -130,9 +124,6 @@
       "views": 1
     },
     "/investing/2026-03-31-us/": {
-      "views": 1
-    },
-    "/investing/2026-04-01-us/": {
       "views": 1
     },
     "/investing/2026-04-08-us/": {
@@ -157,6 +148,9 @@
       "views": 1
     },
     "/investing/2026-07-31-us/": {
+      "views": 2
+    },
+    "/investing/2026-08-05-us/": {
       "views": 1
     },
     "/investing/csi300/": {
@@ -190,7 +184,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 2
+      "views": 4
     },
     "/tags/implementation/": {
       "views": 1
@@ -202,6 +196,9 @@
       "views": 1
     },
     "/tags/monitoring/": {
+      "views": 1
+    },
+    "/tags/running/": {
       "views": 1
     },
     "/tags/tmux/": {
