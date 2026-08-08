@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-07T03:12:53.706480+00:00",
+    "generated_at": "2026-08-08T02:17:41.463211+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 69
+      "views": 67
     },
     "/agentic-ai/": {
       "views": 1
@@ -38,9 +38,6 @@
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 4
-    },
-    "/ai/claude-code-domain-expertise/": {
-      "views": 10
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 5
@@ -96,20 +93,17 @@
     "/education/kentech-organization-issues-2026/": {
       "views": 3
     },
-    "/education/llm-socratic-tutor-higher-education-2026/": {
+    "/education/kookmin-ax-alliance-ai-x-strategy/": {
       "views": 1
     },
     "/education/regional-admissions-autonomy-operating-model/": {
       "views": 1
     },
-    "/education/student-data-portability-career-strategy/": {
-      "views": 2
-    },
     "/education/student-startup-revenue-governance/": {
       "views": 2
     },
     "/graph/": {
-      "views": 7
+      "views": 6
     },
     "/investing/2026-02-12-global/": {
       "views": 1
@@ -130,9 +124,6 @@
       "views": 1
     },
     "/investing/2026-04-21-korea/": {
-      "views": 1
-    },
-    "/investing/2026-04-28-us/": {
       "views": 1
     },
     "/investing/2026-05-06-us/": {
@@ -165,12 +156,6 @@
     "/macos/pip_install/": {
       "views": 1
     },
-    "/macos/tidal-dl/": {
-      "views": 1
-    },
-    "/notes/도메인-전문성/": {
-      "views": 1
-    },
     "/notes/원격대학/": {
       "views": 1
     },
@@ -186,7 +171,7 @@
     "/tags/dev/": {
       "views": 4
     },
-    "/tags/implementation/": {
+    "/tags/kosdaq/": {
       "views": 1
     },
     "/tags/market/": {
