@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-08T02:17:41.463211+00:00",
+    "generated_at": "2026-08-09T02:24:40.516284+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 67
+      "views": 66
     },
     "/agentic-ai/": {
       "views": 1
@@ -19,7 +19,7 @@
       "views": 2
     },
     "/ai/ai-agent-responsibility-bottleneck/": {
-      "views": 10
+      "views": 4
     },
     "/ai/ai-goes-to-work/": {
       "views": 4
@@ -31,9 +31,6 @@
       "views": 2
     },
     "/ai/ai-slop-taste-editor/": {
-      "views": 1
-    },
-    "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
@@ -88,7 +85,7 @@
       "views": 1
     },
     "/education/k-wellness-consortium-regional-strategy/": {
-      "views": 2
+      "views": 1
     },
     "/education/kentech-organization-issues-2026/": {
       "views": 3
@@ -126,9 +123,6 @@
     "/investing/2026-04-21-korea/": {
       "views": 1
     },
-    "/investing/2026-05-06-us/": {
-      "views": 1
-    },
     "/investing/2026-06-23-korea/": {
       "views": 1
     },
@@ -145,9 +139,6 @@
       "views": 1
     },
     "/investing/csi300/": {
-      "views": 1
-    },
-    "/investing/ndx/": {
       "views": 1
     },
     "/macos/application10/": {
