@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-10T02:29:39.116808+00:00",
+    "generated_at": "2026-08-11T02:22:53.237982+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 60
+      "views": 63
     },
     "/ai-quality-management/": {
       "views": 1
@@ -28,7 +28,10 @@
       "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
-      "views": 4
+      "views": 3
+    },
+    "/ai/from-prompt-to-graph-engineering/": {
+      "views": 5
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 5
@@ -82,7 +85,7 @@
       "views": 1
     },
     "/education/student-startup-revenue-governance/": {
-      "views": 2
+      "views": 1
     },
     "/graph/": {
       "views": 6
