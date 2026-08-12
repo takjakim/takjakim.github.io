@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-11T02:22:53.237982+00:00",
+    "generated_at": "2026-08-12T02:39:05.663621+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 63
+      "views": 60
     },
     "/ai-quality-management/": {
       "views": 1
@@ -26,9 +26,6 @@
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
-    },
-    "/ai/chatgpt-desktop-codex-work-os/": {
-      "views": 3
     },
     "/ai/from-prompt-to-graph-engineering/": {
       "views": 5
@@ -129,6 +126,9 @@
     "/investing/csi300/": {
       "views": 1
     },
+    "/investing/hsi/": {
+      "views": 1
+    },
     "/macos/application10/": {
       "views": 2
     },
@@ -144,9 +144,6 @@
     "/tags/ai/": {
       "views": 1
     },
-    "/tags/cbam/": {
-      "views": 1
-    },
     "/tags/dev/": {
       "views": 4
     },
@@ -154,10 +151,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 3
-    },
-    "/tags/mdx/": {
-      "views": 1
+      "views": 2
     },
     "/tags/monitoring/": {
       "views": 1
@@ -172,6 +166,9 @@
       "views": 1
     },
     "/theory/perplexity-ppl/": {
+      "views": 1
+    },
+    "/theory/qwen25/": {
       "views": 1
     },
     "/theory/zpd/": {
