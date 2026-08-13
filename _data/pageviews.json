@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-12T02:39:05.663621+00:00",
+    "generated_at": "2026-08-13T02:41:41.661441+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 60
+      "views": 58
     },
     "/ai-quality-management/": {
       "views": 1
@@ -37,7 +37,7 @@
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
-      "views": 7
+      "views": 1
     },
     "/college-consulting/": {
       "views": 1
@@ -114,8 +114,11 @@
     "/investing/2026-06-29-us/": {
       "views": 1
     },
-    "/investing/2026-07-13-us/": {
+    "/investing/2026-07-07-us/": {
       "views": 1
+    },
+    "/investing/2026-07-13-us/": {
+      "views": 2
     },
     "/investing/2026-07-31-us/": {
       "views": 2
@@ -129,6 +132,9 @@
     "/investing/hsi/": {
       "views": 1
     },
+    "/investing/ndx/": {
+      "views": 1
+    },
     "/macos/application10/": {
       "views": 2
     },
@@ -139,7 +145,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 1
+      "views": 2
     },
     "/tags/ai/": {
       "views": 1
@@ -170,9 +176,6 @@
     },
     "/theory/qwen25/": {
       "views": 1
-    },
-    "/theory/zpd/": {
-      "views": 2
     },
     "/your-first-note/": {
       "views": 6
