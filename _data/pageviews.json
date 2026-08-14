@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-13T02:41:41.661441+00:00",
+    "generated_at": "2026-08-14T02:40:00.520213+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 58
+      "views": 60
     },
     "/ai-quality-management/": {
       "views": 1
@@ -19,7 +19,7 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 3
+      "views": 4
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 2
@@ -87,16 +87,13 @@
     "/graph/": {
       "views": 6
     },
-    "/investing/2026-02-12-global/": {
-      "views": 1
-    },
     "/investing/2026-02-18-us/": {
       "views": 1
     },
-    "/investing/2026-02-23-us/": {
+    "/investing/2026-03-11-korea/": {
       "views": 1
     },
-    "/investing/2026-03-11-korea/": {
+    "/investing/2026-03-27-us/": {
       "views": 1
     },
     "/investing/2026-03-31-us/": {
@@ -119,6 +116,9 @@
     },
     "/investing/2026-07-13-us/": {
       "views": 2
+    },
+    "/investing/2026-07-16-us/": {
+      "views": 1
     },
     "/investing/2026-07-31-us/": {
       "views": 2
