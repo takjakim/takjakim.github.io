@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-15T01:46:03.413697+00:00",
+    "generated_at": "2026-08-16T01:54:13.494309+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 60
+      "views": 53
     },
     "/ai-quality-management/": {
       "views": 1
@@ -36,12 +36,6 @@
     "/ai/reflect-with-claude-ai-fluency/": {
       "views": 1
     },
-    "/ai/why-ai-managed-wiki-rots/": {
-      "views": 1
-    },
-    "/college-consulting/": {
-      "views": 1
-    },
     "/dev/stats-method/planning/": {
       "views": 1
     },
@@ -49,12 +43,6 @@
       "views": 1
     },
     "/education/anchor-regulation-operating-model/": {
-      "views": 1
-    },
-    "/education/anchor-shared-university-operating-model/": {
-      "views": 1
-    },
-    "/education/changwon-ipms-data-governance-2026/": {
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
@@ -81,11 +69,8 @@
     "/education/regional-admissions-autonomy-operating-model/": {
       "views": 1
     },
-    "/education/student-startup-revenue-governance/": {
-      "views": 1
-    },
     "/graph/": {
-      "views": 6
+      "views": 5
     },
     "/investing/2026-03-11-korea/": {
       "views": 1
@@ -115,7 +100,7 @@
       "views": 1
     },
     "/investing/2026-07-13-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-07-16-us/": {
       "views": 1
@@ -160,7 +145,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 2
+      "views": 1
     },
     "/tags/monitoring/": {
       "views": 1
