@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-16T01:54:13.494309+00:00",
+    "generated_at": "2026-08-17T01:51:48.372351+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -32,9 +32,6 @@
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 5
-    },
-    "/ai/reflect-with-claude-ai-fluency/": {
-      "views": 1
     },
     "/dev/stats-method/planning/": {
       "views": 1
@@ -121,7 +118,7 @@
       "views": 1
     },
     "/macos/application10/": {
-      "views": 2
+      "views": 1
     },
     "/macos/pip_install/": {
       "views": 1
