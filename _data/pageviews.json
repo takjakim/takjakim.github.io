@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-17T01:51:48.372351+00:00",
+    "generated_at": "2026-08-18T01:47:00.773542+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -24,7 +24,7 @@
     "/ai/ai-productivity-governance-keynote/": {
       "views": 2
     },
-    "/ai/ai-slop-taste-editor/": {
+    "/ai/chatgpt-work-codex-university-classroom/": {
       "views": 1
     },
     "/ai/from-prompt-to-graph-engineering/": {
@@ -52,9 +52,6 @@
       "views": 1
     },
     "/education/gyeongnam-anchor-career-pipeline/": {
-      "views": 1
-    },
-    "/education/gyeongnam-anchor-talent-operating-model/": {
       "views": 1
     },
     "/education/gyeongnam-lifelong-education-hub/": {
