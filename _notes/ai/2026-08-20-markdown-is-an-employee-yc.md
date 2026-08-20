@@ -6,7 +6,7 @@ categories: [ai]
 type: essay
 label: AI
 tags: [YC, Garry Tan, AI에이전트, 마크다운, 업무자동화, 에이전틱AI, AI리터러시]
-description: "YC Garry Tan의 'markdown file is an employee'라는 표현을 계기로, AI 에이전트 시대에 마크다운 파일이 업무 지시서·실행 루프·인수인계 단위가 되는 변화를 분석한다."
+description: "YC Garry Tan의 마크다운 파일은 직원이라는 표현을 계기로, AI 에이전트 시대에 마크다운 파일이 업무 지시서·실행 루프·인수인계 단위가 되는 변화를 분석한다."
 permalink: /ai/markdown-is-an-employee-yc/
 image: /assets/images/ai/markdown-is-an-employee-yc-2026-og.jpg
 ---
