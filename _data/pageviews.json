@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-19T01:49:03.550248+00:00",
+    "generated_at": "2026-08-20T01:47:58.983143+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -63,6 +63,9 @@
     "/education/gyeongnam-lifelong-education-hub/": {
       "views": 1
     },
+    "/education/kentech-organization-issues-2026/": {
+      "views": 1
+    },
     "/education/kookmin-ax-alliance-ai-x-strategy/": {
       "views": 1
     },
@@ -70,7 +73,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 5
+      "views": 6
     },
     "/investing/2026-03-11-korea/": {
       "views": 1
@@ -147,9 +150,6 @@
     "/tags/market/": {
       "views": 1
     },
-    "/tags/monitoring/": {
-      "views": 1
-    },
     "/tags/running/": {
       "views": 1
     },
@@ -160,6 +160,9 @@
       "views": 1
     },
     "/theory/qwen25/": {
+      "views": 1
+    },
+    "/theory/zpd/": {
       "views": 1
     },
     "/your-first-note/": {
