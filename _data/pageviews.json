@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-20T01:47:58.983143+00:00",
+    "generated_at": "2026-08-21T01:53:53.199175+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 54
+      "views": 55
     },
     "/ai-quality-management/": {
       "views": 1
@@ -31,10 +31,13 @@
       "views": 1
     },
     "/ai/from-prompt-to-graph-engineering/": {
-      "views": 7
+      "views": 8
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 5
+    },
+    "/ai/markdown-is-an-employee-yc/": {
+      "views": 1
     },
     "/ai/work-to-tool-ai-coding/": {
       "views": 1
@@ -126,9 +129,6 @@
     "/macos/application10/": {
       "views": 1
     },
-    "/macos/pip_install/": {
-      "views": 1
-    },
     "/notes/원격대학/": {
       "views": 1
     },
@@ -136,7 +136,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 2
+      "views": 1
     },
     "/tags/ai/": {
       "views": 1
