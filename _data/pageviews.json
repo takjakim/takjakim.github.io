@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-21T01:53:53.199175+00:00",
+    "generated_at": "2026-08-22T01:46:35.171251+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -37,6 +37,9 @@
       "views": 5
     },
     "/ai/markdown-is-an-employee-yc/": {
+      "views": 1
+    },
+    "/ai/will-ai-remove-middle-managers/": {
       "views": 1
     },
     "/ai/work-to-tool-ai-coding/": {
@@ -163,7 +166,7 @@
       "views": 1
     },
     "/theory/zpd/": {
-      "views": 1
+      "views": 2
     },
     "/your-first-note/": {
       "views": 6
