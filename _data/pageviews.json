@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-22T01:46:35.171251+00:00",
+    "generated_at": "2026-08-23T01:56:28.848431+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 55
+      "views": 54
     },
     "/ai-quality-management/": {
       "views": 1
@@ -78,6 +78,9 @@
     "/education/regional-admissions-autonomy-operating-model/": {
       "views": 1
     },
+    "/education/공유대학/": {
+      "views": 1
+    },
     "/graph/": {
       "views": 6
     },
@@ -127,9 +130,6 @@
       "views": 1
     },
     "/investing/ndx/": {
-      "views": 1
-    },
-    "/macos/application10/": {
       "views": 1
     },
     "/notes/원격대학/": {
