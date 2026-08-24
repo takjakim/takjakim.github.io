@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-23T01:56:28.848431+00:00",
+    "generated_at": "2026-08-24T01:54:12.593553+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 54
+      "views": 56
     },
     "/ai-quality-management/": {
       "views": 1
@@ -55,7 +55,7 @@
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/cyber-university-governance/": {
       "views": 3
