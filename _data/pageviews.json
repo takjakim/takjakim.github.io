@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-24T01:54:12.593553+00:00",
+    "generated_at": "2026-08-25T01:48:24.319645+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 56
+      "views": 57
     },
     "/ai-quality-management/": {
       "views": 1
@@ -120,6 +120,9 @@
     "/investing/2026-07-31-us/": {
       "views": 2
     },
+    "/investing/2026-08-03-us/": {
+      "views": 1
+    },
     "/investing/2026-08-05-us/": {
       "views": 1
     },
@@ -160,7 +163,7 @@
       "views": 1
     },
     "/theory/perplexity-ppl/": {
-      "views": 1
+      "views": 2
     },
     "/theory/qwen25/": {
       "views": 1
@@ -169,7 +172,7 @@
       "views": 2
     },
     "/your-first-note/": {
-      "views": 6
+      "views": 4
     }
   }
 }
