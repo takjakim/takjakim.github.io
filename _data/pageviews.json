@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-25T01:48:24.319645+00:00",
+    "generated_at": "2026-08-26T01:54:29.816628+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 57
+      "views": 56
     },
     "/ai-quality-management/": {
       "views": 1
@@ -25,6 +25,9 @@
       "views": 4
     },
     "/ai/ai-productivity-governance-keynote/": {
+      "views": 1
+    },
+    "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
     },
     "/ai/chatgpt-work-codex-university-classroom/": {
@@ -70,7 +73,7 @@
       "views": 1
     },
     "/education/kentech-organization-issues-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/kookmin-ax-alliance-ai-x-strategy/": {
       "views": 1
@@ -103,6 +106,9 @@
       "views": 1
     },
     "/investing/2026-05-07-korea/": {
+      "views": 1
+    },
+    "/investing/2026-05-15-korea/": {
       "views": 1
     },
     "/investing/2026-06-23-korea/": {
