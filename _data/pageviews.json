@@ -1,13 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-08-26T01:54:29.816628+00:00",
+    "generated_at": "2026-08-27T09:35:07.658876+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 56
+      "views": 51
+    },
+    "/agentic-ai/": {
+      "views": 1
     },
     "/ai-quality-management/": {
       "views": 1
@@ -15,11 +18,14 @@
     "/ai/accio-work-trade-agent/": {
       "views": 1
     },
+    "/ai/agentic-ai-governance-runtime-control/": {
+      "views": 2
+    },
     "/ai/ai-agent-intern-or-dangerous-contractor/": {
       "views": 4
     },
     "/ai/ai-goes-to-work/": {
-      "views": 6
+      "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 4
@@ -39,6 +45,9 @@
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 5
     },
+    "/ai/karpathy-llm-wiki-digital-garden/": {
+      "views": 1
+    },
     "/ai/markdown-is-an-employee-yc/": {
       "views": 1
     },
@@ -46,6 +55,9 @@
       "views": 1
     },
     "/ai/work-to-tool-ai-coding/": {
+      "views": 1
+    },
+    "/backlink/": {
       "views": 1
     },
     "/dev/stats-method/planning/": {
@@ -62,9 +74,6 @@
     },
     "/education/cyber-university-governance/": {
       "views": 3
-    },
-    "/education/daegu-health-glocal-care/": {
-      "views": 1
     },
     "/education/gyeongnam-anchor-career-pipeline/": {
       "views": 1
@@ -144,17 +153,32 @@
     "/notes/원격대학/": {
       "views": 1
     },
+    "/obsidian/": {
+      "views": 1
+    },
     "/regional-talent/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 1
     },
+    "/shadow-ai/": {
+      "views": 1
+    },
+    "/tags/": {
+      "views": 1
+    },
     "/tags/ai/": {
       "views": 1
     },
+    "/tags/ai에이전트/": {
+      "views": 1
+    },
     "/tags/dev/": {
-      "views": 4
+      "views": 3
+    },
+    "/tags/fdi/": {
+      "views": 1
     },
     "/tags/kosdaq/": {
       "views": 1
@@ -165,7 +189,13 @@
     "/tags/running/": {
       "views": 1
     },
+    "/tags/개념노트/": {
+      "views": 1
+    },
     "/tags/경영컨설팅/": {
+      "views": 1
+    },
+    "/tags/백링크/": {
       "views": 1
     },
     "/theory/perplexity-ppl/": {
