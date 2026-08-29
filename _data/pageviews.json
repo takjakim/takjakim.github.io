@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-28T11:17:21.519372+00:00",
+    "generated_at": "2026-08-29T06:59:12.646263+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -10,9 +10,6 @@
       "views": 54
     },
     "/agentic-ai/": {
-      "views": 1
-    },
-    "/ai-quality-management/": {
       "views": 1
     },
     "/ai/accio-work-trade-agent/": {
@@ -74,6 +71,9 @@
     },
     "/education/cyber-university-governance/": {
       "views": 3
+    },
+    "/education/dong-eui-anchor-operating-model-2026/": {
+      "views": 1
     },
     "/education/gyeongnam-lifelong-education-hub/": {
       "views": 1
@@ -201,8 +201,11 @@
     "/tags/백링크/": {
       "views": 1
     },
+    "/tags/전공자율선택제/": {
+      "views": 1
+    },
     "/theory/perplexity-ppl/": {
-      "views": 2
+      "views": 1
     },
     "/theory/qwen25/": {
       "views": 1
