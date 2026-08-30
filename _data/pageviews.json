@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-29T06:59:12.646263+00:00",
+    "generated_at": "2026-08-30T05:17:38.784049+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 54
+      "views": 55
     },
     "/agentic-ai/": {
       "views": 1
@@ -186,6 +186,9 @@
     "/tags/market/": {
       "views": 1
     },
+    "/tags/mdx/": {
+      "views": 1
+    },
     "/tags/running/": {
       "views": 1
     },
@@ -214,7 +217,7 @@
       "views": 2
     },
     "/your-first-note/": {
-      "views": 4
+      "views": 2
     }
   }
 }
