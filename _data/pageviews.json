@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-08-30T05:17:38.784049+00:00",
+    "generated_at": "2026-08-31T05:25:04.495446+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -25,7 +25,7 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 4
+      "views": 3
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -60,12 +60,6 @@
     "/dev/stats-method/planning/": {
       "views": 1
     },
-    "/education/anchor-forest-regional-talent-strategy/": {
-      "views": 1
-    },
-    "/education/anchor-regulation-operating-model/": {
-      "views": 1
-    },
     "/education/changwon-university-issues-2026/": {
       "views": 1
     },
@@ -91,21 +85,12 @@
       "views": 1
     },
     "/graph/": {
-      "views": 6
+      "views": 5
     },
     "/investing/2026-03-11-korea/": {
       "views": 1
     },
     "/investing/2026-03-27-us/": {
-      "views": 1
-    },
-    "/investing/2026-03-31-us/": {
-      "views": 1
-    },
-    "/investing/2026-04-08-us/": {
-      "views": 1
-    },
-    "/investing/2026-04-21-korea/": {
       "views": 1
     },
     "/investing/2026-04-30-korea/": {
@@ -138,6 +123,9 @@
     "/investing/2026-08-05-us/": {
       "views": 1
     },
+    "/investing/2026-08-07-us/": {
+      "views": 1
+    },
     "/investing/csi300/": {
       "views": 1
     },
@@ -165,9 +153,6 @@
     "/tags/": {
       "views": 1
     },
-    "/tags/ai/": {
-      "views": 1
-    },
     "/tags/ai에이전트/": {
       "views": 1
     },
@@ -181,9 +166,6 @@
       "views": 1
     },
     "/tags/kosdaq/": {
-      "views": 1
-    },
-    "/tags/market/": {
       "views": 1
     },
     "/tags/mdx/": {
@@ -202,6 +184,9 @@
       "views": 1
     },
     "/tags/백링크/": {
+      "views": 1
+    },
+    "/tags/앵커/": {
       "views": 1
     },
     "/tags/전공자율선택제/": {
