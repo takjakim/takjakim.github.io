@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-08-31T05:25:04.495446+00:00",
+    "generated_at": "2026-09-01T04:59:17.442010+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 55
+      "views": 57
     },
     "/agentic-ai/": {
       "views": 1
@@ -61,7 +61,7 @@
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/cyber-university-governance/": {
       "views": 3
@@ -190,6 +190,9 @@
       "views": 1
     },
     "/tags/전공자율선택제/": {
+      "views": 1
+    },
+    "/tags/통합모집/": {
       "views": 1
     },
     "/theory/perplexity-ppl/": {
