@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-01T04:59:17.442010+00:00",
+    "generated_at": "2026-09-02T04:22:35.179603+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 57
+      "views": 59
     },
     "/agentic-ai/": {
       "views": 1
@@ -57,16 +57,25 @@
     "/backlink/": {
       "views": 1
     },
+    "/daily-mltb/": {
+      "views": 1
+    },
     "/dev/stats-method/planning/": {
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/cyber-university-governance/": {
       "views": 3
     },
     "/education/dong-eui-anchor-operating-model-2026/": {
+      "views": 1
+    },
+    "/education/education-basic-statistics-operating-model-2026/": {
+      "views": 2
+    },
+    "/education/education-finance-future-fund/": {
       "views": 1
     },
     "/education/gyeongnam-lifelong-education-hub/": {
@@ -117,6 +126,9 @@
     "/investing/2026-07-31-us/": {
       "views": 2
     },
+    "/investing/2026-08-03-korea/": {
+      "views": 1
+    },
     "/investing/2026-08-03-us/": {
       "views": 1
     },
@@ -126,7 +138,10 @@
     "/investing/2026-08-07-us/": {
       "views": 1
     },
-    "/investing/csi300/": {
+    "/investing/2026-08-14-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-24-korea/": {
       "views": 1
     },
     "/investing/hsi/": {
@@ -135,13 +150,25 @@
     "/investing/ndx/": {
       "views": 1
     },
+    "/macos/pip_install/": {
+      "views": 1
+    },
+    "/news-mltb/": {
+      "views": 1
+    },
     "/notes/원격대학/": {
       "views": 1
     },
     "/obsidian/": {
       "views": 1
     },
+    "/performance-feedback-loop/": {
+      "views": 1
+    },
     "/regional-talent/": {
+      "views": 1
+    },
+    "/risk-off/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
@@ -186,6 +213,9 @@
     "/tags/백링크/": {
       "views": 1
     },
+    "/tags/사립대구조개선법/": {
+      "views": 1
+    },
     "/tags/앵커/": {
       "views": 1
     },
@@ -195,10 +225,16 @@
     "/tags/통합모집/": {
       "views": 1
     },
+    "/theory/mmlu/": {
+      "views": 1
+    },
     "/theory/perplexity-ppl/": {
       "views": 1
     },
     "/theory/qwen25/": {
+      "views": 1
+    },
+    "/theory/r4-obsidian/": {
       "views": 1
     },
     "/theory/zpd/": {
