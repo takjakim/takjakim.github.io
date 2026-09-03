@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-02T04:22:35.179603+00:00",
+    "generated_at": "2026-09-03T04:16:45.444606+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 59
+      "views": 49
     },
     "/agentic-ai/": {
       "views": 1
@@ -22,7 +22,7 @@
       "views": 4
     },
     "/ai/ai-goes-to-work/": {
-      "views": 4
+      "views": 3
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 3
@@ -37,10 +37,10 @@
       "views": 1
     },
     "/ai/from-prompt-to-graph-engineering/": {
-      "views": 8
+      "views": 9
     },
     "/ai/gemini-robotics-2-physical-ai/": {
-      "views": 5
+      "views": 2
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
@@ -67,7 +67,7 @@
       "views": 1
     },
     "/education/cyber-university-governance/": {
-      "views": 3
+      "views": 1
     },
     "/education/dong-eui-anchor-operating-model-2026/": {
       "views": 1
@@ -78,11 +78,8 @@
     "/education/education-finance-future-fund/": {
       "views": 1
     },
-    "/education/gyeongnam-lifelong-education-hub/": {
-      "views": 1
-    },
     "/education/kentech-organization-issues-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/kookmin-ax-alliance-ai-x-strategy/": {
       "views": 1
@@ -90,11 +87,17 @@
     "/education/regional-admissions-autonomy-operating-model/": {
       "views": 1
     },
+    "/education/rise-governance-operating-model-2026/": {
+      "views": 1
+    },
     "/education/공유대학/": {
       "views": 1
     },
+    "/education/실행-구조/": {
+      "views": 1
+    },
     "/graph/": {
-      "views": 5
+      "views": 4
     },
     "/investing/2026-03-11-korea/": {
       "views": 1
@@ -124,7 +127,7 @@
       "views": 1
     },
     "/investing/2026-07-31-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-08-03-korea/": {
       "views": 1
@@ -156,9 +159,6 @@
     "/news-mltb/": {
       "views": 1
     },
-    "/notes/원격대학/": {
-      "views": 1
-    },
     "/obsidian/": {
       "views": 1
     },
@@ -185,6 +185,9 @@
     },
     "/tags/dev/": {
       "views": 3
+    },
+    "/tags/dx/": {
+      "views": 1
     },
     "/tags/fdi/": {
       "views": 1
@@ -219,7 +222,13 @@
     "/tags/앵커/": {
       "views": 1
     },
+    "/tags/인제대/": {
+      "views": 1
+    },
     "/tags/전공자율선택제/": {
+      "views": 1
+    },
+    "/tags/전략산업/": {
       "views": 1
     },
     "/tags/통합모집/": {
@@ -238,9 +247,6 @@
       "views": 1
     },
     "/theory/zpd/": {
-      "views": 2
-    },
-    "/your-first-note/": {
       "views": 2
     }
   }
