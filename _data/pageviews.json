@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-03T04:16:45.444606+00:00",
+    "generated_at": "2026-09-04T04:23:06.508910+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 49
+      "views": 44
     },
     "/agentic-ai/": {
       "views": 1
@@ -19,10 +19,10 @@
       "views": 2
     },
     "/ai/ai-agent-intern-or-dangerous-contractor/": {
-      "views": 4
+      "views": 2
     },
     "/ai/ai-goes-to-work/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 3
@@ -38,9 +38,6 @@
     },
     "/ai/from-prompt-to-graph-engineering/": {
       "views": 9
-    },
-    "/ai/gemini-robotics-2-physical-ai/": {
-      "views": 2
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
@@ -60,7 +57,7 @@
     "/daily-mltb/": {
       "views": 1
     },
-    "/dev/stats-method/planning/": {
+    "/education/busan-anchor-open-uic/": {
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
@@ -76,7 +73,7 @@
       "views": 2
     },
     "/education/education-finance-future-fund/": {
-      "views": 1
+      "views": 2
     },
     "/education/kentech-organization-issues-2026/": {
       "views": 3
@@ -219,6 +216,9 @@
     "/tags/사립대구조개선법/": {
       "views": 1
     },
+    "/tags/성과환류/": {
+      "views": 1
+    },
     "/tags/앵커/": {
       "views": 1
     },
@@ -231,7 +231,16 @@
     "/tags/전략산업/": {
       "views": 1
     },
+    "/tags/충남대/": {
+      "views": 1
+    },
     "/tags/통합모집/": {
+      "views": 1
+    },
+    "/tags/해외인재/": {
+      "views": 1
+    },
+    "/theory/kobest/": {
       "views": 1
     },
     "/theory/mmlu/": {
