@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-04T04:23:06.508910+00:00",
+    "generated_at": "2026-09-05T04:18:29.785978+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 44
+      "views": 43
     },
     "/agentic-ai/": {
       "views": 1
@@ -63,6 +63,9 @@
     "/education/changwon-university-issues-2026/": {
       "views": 1
     },
+    "/education/cnu-kongju-integration-governance/": {
+      "views": 1
+    },
     "/education/cyber-university-governance/": {
       "views": 1
     },
@@ -81,6 +84,9 @@
     "/education/kookmin-ax-alliance-ai-x-strategy/": {
       "views": 1
     },
+    "/education/national-flagship-university-operating-model/": {
+      "views": 1
+    },
     "/education/regional-admissions-autonomy-operating-model/": {
       "views": 1
     },
@@ -96,9 +102,6 @@
     "/graph/": {
       "views": 4
     },
-    "/investing/2026-03-11-korea/": {
-      "views": 1
-    },
     "/investing/2026-03-27-us/": {
       "views": 1
     },
@@ -109,9 +112,6 @@
       "views": 1
     },
     "/investing/2026-05-15-korea/": {
-      "views": 1
-    },
-    "/investing/2026-06-23-korea/": {
       "views": 1
     },
     "/investing/2026-07-07-us/": {
@@ -139,9 +139,12 @@
       "views": 1
     },
     "/investing/2026-08-14-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-08-24-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-25-us/": {
       "views": 1
     },
     "/investing/hsi/": {
@@ -205,9 +208,6 @@
       "views": 1
     },
     "/tags/개념노트/": {
-      "views": 1
-    },
-    "/tags/경영컨설팅/": {
       "views": 1
     },
     "/tags/백링크/": {
