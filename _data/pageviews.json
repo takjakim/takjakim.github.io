@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-05T04:18:29.785978+00:00",
+    "generated_at": "2026-09-06T04:29:35.403741+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 43
+      "views": 42
     },
     "/agentic-ai/": {
       "views": 1
@@ -22,13 +22,10 @@
       "views": 2
     },
     "/ai/ai-goes-to-work/": {
-      "views": 2
+      "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 3
-    },
-    "/ai/ai-productivity-governance-keynote/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
@@ -39,6 +36,9 @@
     "/ai/from-prompt-to-graph-engineering/": {
       "views": 9
     },
+    "/ai/gemini-robotics-2-physical-ai/": {
+      "views": 1
+    },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
     },
@@ -46,7 +46,7 @@
       "views": 1
     },
     "/ai/will-ai-remove-middle-managers/": {
-      "views": 1
+      "views": 6
     },
     "/ai/work-to-tool-ai-coding/": {
       "views": 1
@@ -66,14 +66,11 @@
     "/education/cnu-kongju-integration-governance/": {
       "views": 1
     },
-    "/education/cyber-university-governance/": {
-      "views": 1
-    },
     "/education/dong-eui-anchor-operating-model-2026/": {
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/education-finance-future-fund/": {
       "views": 2
@@ -85,12 +82,12 @@
       "views": 1
     },
     "/education/national-flagship-university-operating-model/": {
-      "views": 1
-    },
-    "/education/regional-admissions-autonomy-operating-model/": {
-      "views": 1
+      "views": 2
     },
     "/education/rise-governance-operating-model-2026/": {
+      "views": 1
+    },
+    "/education/zpd/": {
       "views": 1
     },
     "/education/공유대학/": {
@@ -100,7 +97,10 @@
       "views": 1
     },
     "/graph/": {
-      "views": 4
+      "views": 2
+    },
+    "/investing/2026-03-10-us/": {
+      "views": 1
     },
     "/investing/2026-03-27-us/": {
       "views": 1
@@ -132,19 +132,22 @@
     "/investing/2026-08-03-us/": {
       "views": 1
     },
-    "/investing/2026-08-05-us/": {
-      "views": 1
-    },
     "/investing/2026-08-07-us/": {
       "views": 1
     },
     "/investing/2026-08-14-korea/": {
       "views": 2
     },
+    "/investing/2026-08-14-us/": {
+      "views": 1
+    },
     "/investing/2026-08-24-korea/": {
       "views": 1
     },
     "/investing/2026-08-25-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-04-us/": {
       "views": 1
     },
     "/investing/hsi/": {
@@ -178,7 +181,10 @@
       "views": 1
     },
     "/tags/": {
-      "views": 1
+      "views": 3
+    },
+    "/tags/ai/": {
+      "views": 3
     },
     "/tags/ai에이전트/": {
       "views": 1
@@ -201,13 +207,13 @@
     "/tags/mdx/": {
       "views": 1
     },
-    "/tags/running/": {
-      "views": 1
-    },
     "/tags/studykorea300k/": {
       "views": 1
     },
     "/tags/개념노트/": {
+      "views": 1
+    },
+    "/tags/공동교육/": {
       "views": 1
     },
     "/tags/백링크/": {
@@ -217,6 +223,9 @@
       "views": 1
     },
     "/tags/성과환류/": {
+      "views": 1
+    },
+    "/tags/식품영양/": {
       "views": 1
     },
     "/tags/앵커/": {
