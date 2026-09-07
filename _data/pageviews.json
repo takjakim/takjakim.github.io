@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-06T04:29:35.403741+00:00",
+    "generated_at": "2026-09-07T04:29:04.803015+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 42
+      "views": 39
     },
     "/agentic-ai/": {
       "views": 1
@@ -78,13 +78,13 @@
     "/education/kentech-organization-issues-2026/": {
       "views": 3
     },
-    "/education/kookmin-ax-alliance-ai-x-strategy/": {
-      "views": 1
-    },
     "/education/national-flagship-university-operating-model/": {
       "views": 2
     },
     "/education/rise-governance-operating-model-2026/": {
+      "views": 1
+    },
+    "/education/university-ai-ethics-operating-model/": {
       "views": 1
     },
     "/education/zpd/": {
@@ -99,10 +99,16 @@
     "/graph/": {
       "views": 2
     },
+    "/gyeonggi-five-regions/": {
+      "views": 1
+    },
     "/investing/2026-03-10-us/": {
       "views": 1
     },
     "/investing/2026-03-27-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-30-korea/": {
       "views": 1
     },
     "/investing/2026-04-30-korea/": {
@@ -121,9 +127,6 @@
       "views": 1
     },
     "/investing/2026-07-16-us/": {
-      "views": 1
-    },
-    "/investing/2026-07-31-us/": {
       "views": 1
     },
     "/investing/2026-08-03-korea/": {
@@ -190,7 +193,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 3
+      "views": 2
     },
     "/tags/dx/": {
       "views": 1
@@ -214,6 +217,9 @@
       "views": 1
     },
     "/tags/공동교육/": {
+      "views": 1
+    },
+    "/tags/반도체/": {
       "views": 1
     },
     "/tags/백링크/": {
