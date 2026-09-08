@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-07T04:29:04.803015+00:00",
+    "generated_at": "2026-09-08T04:27:18.413125+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 39
+      "views": 52
     },
     "/agentic-ai/": {
       "views": 1
@@ -21,11 +21,14 @@
     "/ai/ai-agent-intern-or-dangerous-contractor/": {
       "views": 2
     },
+    "/ai/ai-agents-have-taste/": {
+      "views": 9
+    },
     "/ai/ai-goes-to-work/": {
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 2
+      "views": 3
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
@@ -46,12 +49,18 @@
       "views": 1
     },
     "/ai/will-ai-remove-middle-managers/": {
-      "views": 6
+      "views": 7
     },
     "/ai/work-to-tool-ai-coding/": {
       "views": 1
     },
     "/backlink/": {
+      "views": 1
+    },
+    "/college-consulting/": {
+      "views": 1
+    },
+    "/daegu-haany-university-kmedi-2026/": {
       "views": 1
     },
     "/daily-mltb/": {
@@ -75,6 +84,9 @@
     "/education/education-finance-future-fund/": {
       "views": 2
     },
+    "/education/first-career-project-budget/": {
+      "views": 1
+    },
     "/education/kentech-organization-issues-2026/": {
       "views": 3
     },
@@ -85,7 +97,7 @@
       "views": 1
     },
     "/education/university-ai-ethics-operating-model/": {
-      "views": 1
+      "views": 4
     },
     "/education/zpd/": {
       "views": 1
@@ -97,7 +109,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 2
+      "views": 3
     },
     "/gyeonggi-five-regions/": {
       "views": 1
@@ -150,6 +162,9 @@
     "/investing/2026-08-25-us/": {
       "views": 1
     },
+    "/investing/2026-08-31-korea/": {
+      "views": 1
+    },
     "/investing/2026-09-04-us/": {
       "views": 1
     },
@@ -157,6 +172,9 @@
       "views": 1
     },
     "/investing/ndx/": {
+      "views": 1
+    },
+    "/kmedi/": {
       "views": 1
     },
     "/macos/pip_install/": {
@@ -178,7 +196,10 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 1
+      "views": 3
+    },
+    "/running/2026-06-17-transjeju-60k-training-plan/": {
+      "views": 2
     },
     "/shadow-ai/": {
       "views": 1
@@ -190,6 +211,12 @@
       "views": 3
     },
     "/tags/ai에이전트/": {
+      "views": 1
+    },
+    "/tags/ai인프라/": {
+      "views": 1
+    },
+    "/tags/codex/": {
       "views": 1
     },
     "/tags/dev/": {
@@ -204,11 +231,11 @@
     "/tags/hstech/": {
       "views": 1
     },
-    "/tags/kosdaq/": {
-      "views": 1
-    },
     "/tags/mdx/": {
       "views": 1
+    },
+    "/tags/running/": {
+      "views": 4
     },
     "/tags/studykorea300k/": {
       "views": 1
@@ -253,6 +280,9 @@
       "views": 1
     },
     "/tags/해외인재/": {
+      "views": 1
+    },
+    "/theory/confidence/": {
       "views": 1
     },
     "/theory/kobest/": {
