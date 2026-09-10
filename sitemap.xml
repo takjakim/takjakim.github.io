@@ -9,10 +9,13 @@ layout: null
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
-  {% for page in site.pages %}
-  {% assign sitemap_url = page.url | remove: "index.html" %}
-  {% assign is_tag_page = sitemap_url | slice: 0, 6 %}
-  {% unless page.url == "/" or page.url == "/404.html" or page.url == "/sitemap.xml" or page.url == "/robots.txt" or page.extname == ".css" or page.extname == ".js" or is_tag_page == "/tags/" %}
+
+  {% assign grouped_pages = site.pages | group_by_exp: "page", "page.url | remove: 'index.html'" %}
+  {% for group in grouped_pages %}
+    {% assign page = group.items | first %}
+    {% assign sitemap_url = group.name %}
+    {% assign is_tag_page = sitemap_url | slice: 0, 6 %}
+    {% unless sitemap_url == "/" or sitemap_url == "/404.html" or sitemap_url == "/sitemap.xml" or sitemap_url == "/robots.txt" or sitemap_url contains ".css" or sitemap_url contains ".js" or is_tag_page == "/tags/" %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ sitemap_url }}</loc>
     {% if page.last_modified_at %}
@@ -23,11 +26,14 @@ layout: null
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  {% endunless %}
+    {% endunless %}
   {% endfor %}
-  {% for note in site.notes %}
+
+  {% assign grouped_notes = site.notes | group_by: "url" %}
+  {% for group in grouped_notes %}
+    {% assign note = group.items | first %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}{{ note.url }}</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ group.name }}</loc>
     {% if note.last_modified_at %}
     <lastmod>{{ note.last_modified_at | date_to_xmlschema }}</lastmod>
     {% elsif note.date %}
