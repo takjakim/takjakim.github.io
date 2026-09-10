@@ -14,14 +14,11 @@ image: /assets/images/ai/ai-smarter-human-must-doubt-2026-og.jpg
   <img src="/assets/images/ai/ai-smarter-human-must-doubt-2026-og.jpg" alt="AI가 똑똑해질수록, 인간은 왜 더 의심해야 하는가 SEO 이미지">
   <figcaption>더 똑똑한 AI는 더 강한 검증과 멈춤의 설계를 요구한다.</figcaption>
 </figure>
-
-# AI가 똑똑해질수록, 인간은 왜 더 의심해야 하는가
-
 AI가 더 똑똑해질수록 사람은 더 편해질까.
 
 직관적으로는 그렇다. 더 좋은 모델은 더 좋은 답을 준다. 더 복잡한 문제를 풀고, 더 긴 작업을 처리하고, 더 많은 도구를 사용한다. 그러면 사람은 덜 의심하고 더 많이 맡기면 될 것처럼 보인다.
 
-하지만 OpenAI 수석과학자 Jakub Pachocki의 글 **An Alien Mind**가 던지는 메시지는 반대에 가깝다.[^openai-alien]
+하지만 OpenAI 수석과학자 Jakub Pachocki의 글 **An Alien Mind**가 던지는 메시지는 반대에 가깝다.
 
 AI가 더 똑똑해질수록, 사람은 더 많이 의심해야 한다.
 
@@ -45,7 +42,7 @@ AI가 더 똑똑해질수록, 사람은 더 많이 의심해야 한다.
 
 이 질문에 답하지 못하면 성능은 오히려 위험이 된다.
 
-Pachocki는 OpenAI가 chain-of-thought monitoring, 즉 모델의 추론 과정을 관찰하는 방식을 중요한 안전 장치로 봐왔다고 설명한다. 그런데 reasoning model이 더 복잡한 환경에서 도구를 쓰고, 사람과 다른 AI와 상호작용하고, 자기 추론 과정까지 다루기 시작하면서 이 감시의 경계가 흐려진다고 말한다.[^openai-alien]
+Pachocki는 OpenAI가 chain-of-thought monitoring, 즉 모델의 추론 과정을 관찰하는 방식을 중요한 안전 장치로 봐왔다고 설명한다. 그런데 reasoning model이 더 복잡한 환경에서 도구를 쓰고, 사람과 다른 AI와 상호작용하고, 자기 추론 과정까지 다루기 시작하면서 이 감시의 경계가 흐려진다고 말한다.
 
 쉽게 말하면 이렇다.
 
@@ -101,7 +98,7 @@ AI를 의심하자는 말은 AI를 쓰지 말자는 말이 아니다.
 
 이 네 가지가 없으면 똑똑한 AI는 업무를 줄이는 도구가 아니라 설명하기 어려운 행동자가 된다.
 
-Pachocki가 말한 핵심도 여기에 있다. 그는 어느 연구소도 alignment와 monitoring을 충분히 해결해서 계속 최대 속도로 스케일링할 수 있는 상태는 아니라고 본다. 따라서 voluntary slowdown, shared safety bars, 국제적 조정이 필요하다고 말한다.[^openai-alien-summary]
+Pachocki가 말한 핵심도 여기에 있다. 그는 어느 연구소도 alignment와 monitoring을 충분히 해결해서 계속 최대 속도로 스케일링할 수 있는 상태는 아니라고 본다. 따라서 voluntary slowdown, shared safety bars, 국제적 조정이 필요하다고 말한다.
 
 이건 기업과 대학에도 그대로 적용된다.
 
@@ -140,5 +137,5 @@ AI 시대의 운영 능력이다.
 
 ## 참고자료
 
-[^openai-alien]: OpenAI, "An Alien Mind", 2026. https://openai.com/index/an-alien-mind/
-[^openai-alien-summary]: Unite.AI, "In An Alien Mind, OpenAI's Jakub Pachocki Urges Shared Safety Bars", 2026. https://www.unite.ai/in-an-alien-mind-openais-jakub-pachocki-urges-shared-safety-bars/
+- OpenAI, "An Alien Mind", 2026. https://openai.com/index/an-alien-mind/
+- Unite.AI, "In An Alien Mind, OpenAI's Jakub Pachocki Urges Shared Safety Bars", 2026. https://www.unite.ai/in-an-alien-mind-openais-jakub-pachocki-urges-shared-safety-bars/

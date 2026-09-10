@@ -6,7 +6,7 @@ categories: [ai]
 type: essay
 label: AI
 tags: [AI에이전트, 중간관리자, 조직설계, AI네이티브조직, 업무자동화, 매니지먼트, 마크다운]
-description: "AI 에이전트와 회사 컨텍스트 시스템이 중간관리자의 정보 전달 기능을 흡수할 때, 중간관리자는 사라지는가 아니면 다른 역할로 바뀌는가를 분석한다."
+description: "AI 네이티브 조직, Microsoft Work Trend Index, BCG와 Gallup 자료를 바탕으로 AI 시대 중간관리자의 정보 전달 업무는 줄고 판단, 조율, 책임 설계 역할은 왜 더 중요해지는지 살펴본다."
 permalink: /ai/will-ai-remove-middle-managers/
 image: /assets/images/ai/will-ai-remove-middle-managers-2026-og.jpg
 ---
@@ -15,9 +15,6 @@ image: /assets/images/ai/will-ai-remove-middle-managers-2026-og.jpg
   <img src="/assets/images/ai/will-ai-remove-middle-managers-2026-og.jpg" alt="AI 네이티브 조직에서 중간관리자는 무엇을 해야 하는가 SEO 이미지">
   <figcaption>AI 네이티브 조직에서 중간관리자는 정보 전달자가 아니라 사람과 에이전트가 함께 일하는 루프 설계자가 된다.</figcaption>
 </figure>
-
-# AI 네이티브 조직에서 중간관리자는 무엇을 해야 하는가
-
 AI가 들어오면 중간관리자는 사라질까.
 
 요즘 이 질문이 자주 보인다. 질문 자체는 새롭지 않다. 새로운 기술이 나올 때마다 관리자는 늘 공격받았다. 이메일이 나왔을 때도, 협업툴이 나왔을 때도, 대시보드가 나왔을 때도 비슷한 말이 있었다.
@@ -61,9 +58,9 @@ CEO나 임원이 모든 실무자와 직접 이야기할 수 없다. 실무자�
 
 ## AI는 정보 전달형 관리자를 압박한다
 
-Microsoft의 2025 Work Trend Index는 앞으로의 조직을 "Frontier Firm"이라고 부른다. 이 조직은 "intelligence on tap", 인간-에이전트 팀, 그리고 모든 사람이 "agent boss"가 되는 구조를 말한다.[^ms-2025]
+Microsoft의 2025 Work Trend Index는 앞으로의 조직을 "Frontier Firm"이라고 부른다. 이 조직은 "intelligence on tap", 인간-에이전트 팀, 그리고 모든 사람이 "agent boss"가 되는 구조를 말한다.
 
-여기서 중요한 표현은 "human-agent teams will upend the org chart"다. 조직도가 사람만으로 구성되지 않는다는 뜻이다. Microsoft는 에이전트를 "reason, plan, and act"할 수 있고, 중요한 순간에 사람의 감독을 받는 시스템으로 정의한다. 그리고 "agent boss"를 하나 이상의 에이전트를 관리하는 사람이라고 설명한다.[^ms-2025]
+여기서 중요한 표현은 "human-agent teams will upend the org chart"다. 조직도가 사람만으로 구성되지 않는다는 뜻이다. Microsoft는 에이전트를 "reason, plan, and act"할 수 있고, 중요한 순간에 사람의 감독을 받는 시스템으로 정의한다. 그리고 "agent boss"를 하나 이상의 에이전트를 관리하는 사람이라고 설명한다.
 
 이 말은 중간관리자의 일부 기능이 에이전트 관리로 이동한다는 뜻이다.
 
@@ -83,7 +80,7 @@ AI 네이티브 조직에서는 이런 질문을 사람에게 먼저 묻지 않�
 
 ## 회사의 브레인이 생기면 보고 체계가 바뀐다
 
-sudoremove의 「오늘 회사를 시작한다면 어떤 모양으로 지을 것인가」 영상에서도 비슷한 논점이 나온다.[^sudoremove]
+sudoremove의 「오늘 회사를 시작한다면 어떤 모양으로 지을 것인가」 영상에서도 비슷한 논점이 나온다.
 
 영상에서는 YC와 Garry Tan의 "마크다운 파일이 직원이다"라는 표현을 다루면서, 회사의 모든 맥락을 AI가 읽을 수 있게 만들면 조직 구조가 달라질 수 있다고 말한다. 회의 녹음, DM 대신 공개 채널, 모든 행동의 아티팩트화 같은 이야기도 나온다.
 
@@ -129,9 +126,9 @@ AI는 두 번째 역할을 없애기보다 더 노출시킨다.
 
 ## 관리자에게 남는 일은 더 어려운 일이다
 
-Microsoft의 2024 Work Trend Index는 이미 많은 지식노동자가 AI를 쓰고 있다고 보고했다. 글로벌 지식노동자의 75%가 생성형 AI를 사용하고 있으며, AI에 익숙한 리더들은 향후 5년 안에 비즈니스 프로세스를 AI로 근본적으로 재설계하고, AI 봇 팀을 조율·훈련하며, 윤리적 사용을 보장하는 일이 자신의 핵심 역할이 될 것이라고 답했다.[^ms-2024]
+Microsoft의 2024 Work Trend Index는 이미 많은 지식노동자가 AI를 쓰고 있다고 보고했다. 글로벌 지식노동자의 75%가 생성형 AI를 사용하고 있으며, AI에 익숙한 리더들은 향후 5년 안에 비즈니스 프로세스를 AI로 근본적으로 재설계하고, AI 봇 팀을 조율·훈련하며, 윤리적 사용을 보장하는 일이 자신의 핵심 역할이 될 것이라고 답했다.
 
-2025년 자료에서는 더 나아가 28%의 관리자가 사람과 에이전트가 섞인 하이브리드 팀을 이끌 "AI workforce manager" 채용을 고려하고, 32%는 AI agent specialist 채용을 계획한다고 나온다.[^ms-2025]
+2025년 자료에서는 더 나아가 28%의 관리자가 사람과 에이전트가 섞인 하이브리드 팀을 이끌 "AI workforce manager" 채용을 고려하고, 32%는 AI agent specialist 채용을 계획한다고 나온다.
 
 이 숫자가 맞든 틀리든 방향은 분명하다.
 
@@ -156,9 +153,9 @@ AI 네이티브 조직의 관리자는 이렇게 물어야 한다.
 
 ## 현장의 문제는 도구가 아니라 채택 격차다
 
-BCG의 2025 AI at Work 조사도 비슷한 문제를 보여준다. 리더와 관리자의 4분의 3 이상은 생성형 AI를 주 여러 번 사용하지만, 현장 직원의 정기 사용률은 51%에 머물렀다고 한다.[^bcg-2025]
+BCG의 2025 AI at Work 조사도 비슷한 문제를 보여준다. 리더와 관리자의 4분의 3 이상은 생성형 AI를 주 여러 번 사용하지만, 현장 직원의 정기 사용률은 51%에 머물렀다고 한다.
 
-BCG는 이것을 "silicon ceiling"이라고 부른다. 도구를 배포하는 것만으로는 충분하지 않고, 리더십 지원, 적절한 도구, 훈련이 필요하다고 말한다. 강한 리더십 지원이 있을 때 GenAI에 긍정적인 현장 직원 비율이 15%에서 55%로 올라간다는 대목도 중요하다.[^bcg-2025]
+BCG는 이것을 "silicon ceiling"이라고 부른다. 도구를 배포하는 것만으로는 충분하지 않고, 리더십 지원, 적절한 도구, 훈련이 필요하다고 말한다. 강한 리더십 지원이 있을 때 GenAI에 긍정적인 현장 직원 비율이 15%에서 55%로 올라간다는 대목도 중요하다.
 
 이건 중간관리자에게 불리한 근거가 아니라 오히려 필요한 근거다.
 
@@ -294,12 +291,12 @@ AI 네이티브 조직에서 중간관리자는 사라지는 것이 아니다.
 
 ## 참고자료
 
-[^sudoremove]: sudoremove, 「오늘 회사를 시작한다면 어떤 모양으로 지을 것인가 - AI Native Startup Playbook」, YouTube, https://youtu.be/iGnIQPH0CIU . 한국어 자막 기준으로 "마크다운 파일이 곧 직원이다", YC 오피스아워 기록, 회사 컨텍스트, 중간관리자 역할 변화 논의를 확인했다.
+- sudoremove, 「오늘 회사를 시작한다면 어떤 모양으로 지을 것인가 - AI Native Startup Playbook」, YouTube, https://youtu.be/iGnIQPH0CIU . 한국어 자막 기준으로 "마크다운 파일이 곧 직원이다", YC 오피스아워 기록, 회사 컨텍스트, 중간관리자 역할 변화 논의를 확인했다.
 
-[^ms-2025]: Microsoft WorkLab, 「2025: The year the Frontier Firm is born」, https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born . Microsoft는 Frontier Firm을 "intelligence on tap", human-agent teams, agent boss 개념으로 설명하며, agent를 사람의 감독 아래 업무나 워크플로를 수행할 수 있는 AI 시스템으로 정의한다. 2025년 자료는 31개국 31,000명 설문, LinkedIn 노동시장 데이터, Microsoft 365 생산성 신호 등을 기반으로 한다.
+- Microsoft WorkLab, 「2025: The year the Frontier Firm is born」, https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born . Microsoft는 Frontier Firm을 "intelligence on tap", human-agent teams, agent boss 개념으로 설명하며, agent를 사람의 감독 아래 업무나 워크플로를 수행할 수 있는 AI 시스템으로 정의한다. 2025년 자료는 31개국 31,000명 설문, LinkedIn 노동시장 데이터, Microsoft 365 생산성 신호 등을 기반으로 한다.
 
-[^ms-2024]: Microsoft WorkLab, 「AI at Work Is Here. Now Comes the Hard Part」, https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part . 2024년 자료는 글로벌 지식노동자의 75%가 생성형 AI를 사용하고 있으며, AI에 매우 익숙한 리더들이 향후 5년 안에 비즈니스 프로세스 재설계, AI 봇 팀 조율·훈련, 윤리적 사용 보장을 핵심 역할로 예상한다고 보고한다.
+- Microsoft WorkLab, 「AI at Work Is Here. Now Comes the Hard Part」, https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part . 2024년 자료는 글로벌 지식노동자의 75%가 생성형 AI를 사용하고 있으며, AI에 매우 익숙한 리더들이 향후 5년 안에 비즈니스 프로세스 재설계, AI 봇 팀 조율·훈련, 윤리적 사용 보장을 핵심 역할로 예상한다고 보고한다.
 
-[^bcg-2025]: BCG, 「AI at Work: Momentum Builds, but Gaps Remain」, https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain . 11개 국가·지역, 10,600명 이상의 리더·관리자·현장 화이트칼라 직원을 대상으로 한 조사. 리더와 관리자의 4분의 3 이상은 GenAI를 주 여러 번 사용하지만 현장 직원의 정기 사용률은 51%에 머물렀고, 강한 리더십 지원이 있을 때 GenAI에 긍정적인 현장 직원 비율이 15%에서 55%로 상승한다고 보고한다.
+- BCG, 「AI at Work: Momentum Builds, but Gaps Remain」, https://www.bcg.com/publications/2025/ai-at-work-momentum-builds-but-gaps-remain . 11개 국가·지역, 10,600명 이상의 리더·관리자·현장 화이트칼라 직원을 대상으로 한 조사. 리더와 관리자의 4분의 3 이상은 GenAI를 주 여러 번 사용하지만 현장 직원의 정기 사용률은 51%에 머물렀고, 강한 리더십 지원이 있을 때 GenAI에 긍정적인 현장 직원 비율이 15%에서 55%로 상승한다고 보고한다.
 
-[^gallup-2025]: Gallup, 「U.S. Employee Engagement Sinks to 10-Year Low」, https://www.gallup.com/workplace/654911/manager-employee-relationship.aspx . 2024년 미국 직원 몰입도가 31%로 10년 최저 수준이라고 보고하며, 역할 명확성·돌봄·성장 지원 등 관리자와 연결되는 기본 요소의 약화를 지적한다.
+- Gallup, 「U.S. Employee Engagement Sinks to 10-Year Low」, https://www.gallup.com/workplace/654911/manager-employee-relationship.aspx . 2024년 미국 직원 몰입도가 31%로 10년 최저 수준이라고 보고하며, 역할 명확성·돌봄·성장 지원 등 관리자와 연결되는 기본 요소의 약화를 지적한다.

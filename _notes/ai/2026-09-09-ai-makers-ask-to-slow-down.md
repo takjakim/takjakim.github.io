@@ -14,9 +14,6 @@ image: /assets/images/ai/ai-makers-ask-to-slow-down-2026-og.jpg
   <img src="/assets/images/ai/ai-makers-ask-to-slow-down-2026-og.jpg" alt="AI를 만든 사람들이 왜 AI를 멈춰달라고 말할까 SEO 이미지">
   <figcaption>AI 내부자들의 속도 조절 요구는 종말론이 아니라 권한·로그·중단 조건의 설계 요구다.</figcaption>
 </figure>
-
-# AI를 만든 사람들이 왜 AI를 멈춰달라고 말할까
-
 AI를 비판하는 사람들은 늘 있었다.
 
 일자리가 사라진다. 개인정보가 위험하다. 편향이 심하다. 학생들이 생각하지 않는다. 언젠가 인간이 통제하지 못할 수 있다.
@@ -27,13 +24,13 @@ AI를 비판하는 사람들은 늘 있었다.
 
 AI를 비판하는 사람이 아니라, AI를 만드는 사람들 안에서 "속도를 늦춰야 한다"는 말이 나오고 있다.
 
-Axios는 최근 보도에서 이 흐름을 아주 노골적인 제목으로 잡았다. **OpenAI is begging for someone to slow the AI race.**[^axios-slow]
+Axios는 최근 보도에서 이 흐름을 아주 노골적인 제목으로 잡았다. **OpenAI is begging for someone to slow the AI race.**
 
 말이 세다. 하지만 과장이기만 한 것은 아니다.
 
-OpenAI 수석과학자 Jakub Pachocki는 **An Alien Mind**에서 현재 어떤 연구소도 alignment와 monitoring 문제를 충분히 해결해서 최대 속도로 계속 스케일링할 수 있는 상태는 아니라고 썼다.[^openai-alien]
+OpenAI 수석과학자 Jakub Pachocki는 **An Alien Mind**에서 현재 어떤 연구소도 alignment와 monitoring 문제를 충분히 해결해서 최대 속도로 계속 스케일링할 수 있는 상태는 아니라고 썼다.
 
-Anthropic 쪽에서도 비슷한 경고가 나왔다. BBC는 Anthropic alignment lead Evan Hubinger가 10년 안에 AI가 인류를 멸종시킬 가능성을 10% 이상으로 본다고 공개적으로 말했다고 보도했다.[^bbc-hubinger]
+Anthropic 쪽에서도 비슷한 경고가 나왔다. BBC는 Anthropic alignment lead Evan Hubinger가 10년 안에 AI가 인류를 멸종시킬 가능성을 10% 이상으로 본다고 공개적으로 말했다고 보도했다.
 
 이 정도면 단순한 논쟁이 아니다.
 
@@ -71,7 +68,7 @@ AI가 무슨 생각을 하는가보다, AI가 실제로 무엇을 할 수 있는
 
 그런데도 일부 연구자들이 공개적으로 경고한다는 것은, 최소한 그들이 보기에는 현재의 통제 장치가 충분하지 않다는 뜻이다.
 
-Pachocki는 chain-of-thought monitoring, 즉 모델의 추론 과정을 관찰하는 접근이 중요했지만, 더 복잡한 에이전트 환경에서는 감시가 어려워질 수 있다고 말한다.[^openai-alien]
+Pachocki는 chain-of-thought monitoring, 즉 모델의 추론 과정을 관찰하는 접근이 중요했지만, 더 복잡한 에이전트 환경에서는 감시가 어려워질 수 있다고 말한다.
 
 이 대목이 중요하다.
 
@@ -167,6 +164,6 @@ AI를 만든 사람들이 왜 AI를 멈춰달라고 말할까.
 
 ## 참고자료
 
-[^axios-slow]: Axios, "OpenAI is begging for someone to slow the AI race", 2026. https://www.axios.com/2026/09/09/openai-artificial-general-intelligence-safety
-[^openai-alien]: OpenAI, Jakub Pachocki, "An Alien Mind", 2026. https://openai.com/index/an-alien-mind/
-[^bbc-hubinger]: BBC News, "More than 10% chance AI could kill all humans, Anthropic researcher says", 2026. https://www.bbc.co.uk/news/articles/ckgwy1k42w4o
+- Axios, "OpenAI is begging for someone to slow the AI race", 2026. https://www.axios.com/2026/09/09/openai-artificial-general-intelligence-safety
+- OpenAI, Jakub Pachocki, "An Alien Mind", 2026. https://openai.com/index/an-alien-mind/
+- BBC News, "More than 10% chance AI could kill all humans, Anthropic researcher says", 2026. https://www.bbc.co.uk/news/articles/ckgwy1k42w4o

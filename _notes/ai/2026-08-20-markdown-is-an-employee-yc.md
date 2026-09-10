@@ -6,7 +6,7 @@ categories: [ai]
 type: essay
 label: AI
 tags: [YC, Garry Tan, AI에이전트, 마크다운, 업무자동화, 에이전틱AI, AI리터러시]
-description: "YC Garry Tan의 마크다운 파일은 직원이라는 표현을 계기로, AI 에이전트 시대에 마크다운 파일이 업무 지시서·실행 루프·인수인계 단위가 되는 변화를 분석한다."
+description: "YC Garry Tan의 마크다운 파일은 직원이라는 표현을 계기로, AI 에이전트 시대에 마크다운, 코드, 테스트, cron이 반복 가능한 업무 기억과 실행 루프가 되는 변화를 분석한다."
 permalink: /ai/markdown-is-an-employee-yc/
 image: /assets/images/ai/markdown-is-an-employee-yc-2026-og.jpg
 ---
@@ -15,9 +15,6 @@ image: /assets/images/ai/markdown-is-an-employee-yc-2026-og.jpg
   <img src="/assets/images/ai/markdown-is-an-employee-yc-2026-og.jpg" alt="마크다운이 직원이다 SEO 이미지">
   <figcaption>AI 에이전트 시대에는 잘 쓴 마크다운 파일이 업무 지시서, 실행 루프, 인수인계 단위가 된다.</figcaption>
 </figure>
-
-# 마크다운이 직원이다
-
 “마크다운 파일 하나가 직원이다.”
 
 처음 들으면 과장처럼 들린다.
@@ -26,7 +23,7 @@ image: /assets/images/ai/markdown-is-an-employee-yc-2026-og.jpg
 
 그런데 [[에이전틱 AI|AI 에이전트]]가 들어오면 이 말이 조금 덜 이상해진다.
 
-Y Combinator의 Garry Tan이 a16z 인터뷰 맥락에서 “A markdown file is an employee”라는 취지의 말을 했다는 공개 스니펫이 돌았다.[^garry-snippet] 함께 보이는 표현도 흥미롭다.
+Y Combinator의 Garry Tan이 a16z 인터뷰 맥락에서 “A markdown file is an employee”라는 취지의 말을 했다는 공개 스니펫이 돌았다. 함께 보이는 표현도 흥미롭다.
 
 ```text
 markdown + code + tests + cron
@@ -215,7 +212,7 @@ AI는 그 파일을 읽고 다시 실행한다.
 실패하면 파일이 고쳐진다.  
 고친 내용은 다음 실행에 반영된다.
 
-이게 Garry Tan이 말한 “bug fix가 영구히 남는다”는 감각과 맞닿아 있다.[^garry-snippet]
+이게 Garry Tan이 말한 “bug fix가 영구히 남는다”는 감각과 맞닿아 있다.
 
 ## 하지만 진짜 직원은 아니다
 
@@ -290,4 +287,4 @@ AI가 일을 실행할 수 있게 되면, 일을 설명하는 문서는 실행 �
 
 ## 출처와 참고
 
-[^garry-snippet]: Google News와 YouTube 검색 결과 스니펫에서 확인한 Garry Tan/a16z 인터뷰 맥락. 검색 결과에는 “The New Rules for Founders”, “A markdown file is an employee”, “markdown + code + tests + cron”, “skillify every task” 등의 문구가 노출된다. 원문 영상/기사 전체는 작성 시점 로컬 환경에서 직접 본문 추출이 제한되어, 본문에서는 이를 직접 인용문이 아니라 공개 스니펫 기반의 해석 단서로만 사용했다.
+- Google News와 YouTube 검색 결과 스니펫에서 확인한 Garry Tan/a16z 인터뷰 맥락. 검색 결과에는 “The New Rules for Founders”, “A markdown file is an employee”, “markdown + code + tests + cron”, “skillify every task” 등의 문구가 노출된다. 원문 영상/기사 전체는 작성 시점 로컬 환경에서 직접 본문 추출이 제한되어, 본문에서는 이를 직접 인용문이 아니라 공개 스니펫 기반의 해석 단서로만 사용했다.

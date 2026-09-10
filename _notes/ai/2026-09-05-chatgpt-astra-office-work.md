@@ -5,7 +5,7 @@ categories: [ai]
 type: essay
 label: AI
 tags: [ChatGPT, GPT6Astra, AI에이전트, 사무직, 업무자동화, 컴퓨터사용, AI리터러시, 검증]
-description: "OpenAI의 GPT-6 Astra는 컴퓨터를 직접 사용하는 AI로 소개됐다. 사무직을 곧바로 대체한다는 공포보다 중요한 것은 직업 안의 반복 업무가 AI에게 위임 가능한 단위로 쪼개진다는 변화다."
+description: "OpenAI ChatGPT Astra와 computer use 모델 흐름을 바탕으로 AI가 사무직을 곧바로 대체한다기보다 브라우저, 스프레드시트, 업무 앱을 쓰는 사무직 태스크를 어떻게 해체하는지 살펴본다."
 permalink: /ai/chatgpt-astra-office-work/
 image: /assets/images/ai/chatgpt-astra-office-work-2026-og.jpg
 ---
@@ -14,16 +14,13 @@ image: /assets/images/ai/chatgpt-astra-office-work-2026-og.jpg
   <img src="/assets/images/ai/chatgpt-astra-office-work-2026-og.jpg" alt="ChatGPT Astra는 과연 사무직을 대체할까 SEO 이미지">
   <figcaption>ChatGPT Astra가 보여준 변화는 챗봇의 답변 능력이 아니라 컴퓨터 앞 사무 업무를 AI에게 위임할 수 있는가라는 질문이다.</figcaption>
 </figure>
-
-# ChatGPT Astra는 과연 사무직을 대체할까
-
 사무직을 대체하는 것은 AI의 말솜씨가 아니다.
 
 진짜 변화는 [[이제 AI는 답변하지 않는다, 출근한다|AI가 컴퓨터를 쓰기 시작했다]]는 데 있다.
 
-OpenAI가 공개한 GPT-6 Astra는 단순히 더 똑똑한 챗봇으로 소개되지 않았다. OpenAI는 Astra를 컴퓨터 사용, 브라우징, 소프트웨어 엔지니어링, 사이버보안, 과학, 전문 업무에서 강한 모델로 설명한다. 특히 눈에 띄는 표현은 "컴퓨터 사용"이다.[^openai-astra]
+OpenAI가 공개한 GPT-6 Astra는 단순히 더 똑똑한 챗봇으로 소개되지 않았다. OpenAI는 Astra를 컴퓨터 사용, 브라우징, 소프트웨어 엔지니어링, 사이버보안, 과학, 전문 업무에서 강한 모델로 설명한다. 특히 눈에 띄는 표현은 "컴퓨터 사용"이다.
 
-Astra는 온라인 양식을 채우고, CRM 고객 기록을 업데이트하고, 캘린더를 정리하고, 온라인 리서치를 수행하고, 이메일이나 문서 편집기 안에서 요약문을 작성하고, 웹사이트를 만들고, 프론트엔드 QA까지 수행할 수 있다고 소개됐다.[^openai-astra]
+Astra는 온라인 양식을 채우고, CRM 고객 기록을 업데이트하고, 캘린더를 정리하고, 온라인 리서치를 수행하고, 이메일이나 문서 편집기 안에서 요약문을 작성하고, 웹사이트를 만들고, 프론트엔드 QA까지 수행할 수 있다고 소개됐다.
 
 이 목록을 보면 질문이 자연스럽게 나온다.
 
@@ -76,7 +73,7 @@ AI가 답을 주는 단계에서는 사람의 일이 줄어들 뿐이다. AI가 
 
 ## "인간이 컴퓨터로 하는 일은 할 수 있다"는 말의 의미
 
-NBC News는 Astra 보도에서 OpenAI 공동창업자 Greg Brockman의 발언을 인용했다.[^nbc-astra]
+NBC News는 Astra 보도에서 OpenAI 공동창업자 Greg Brockman의 발언을 인용했다.
 
 > "Astra can really do anything a human can do with a computer."
 
@@ -136,7 +133,7 @@ AI는 정부재정지원사업 보고서 초안을 만들고, 회의록을 요�
 
 ## 벤치마크는 강하지만, 100%는 아니다
 
-OpenAI는 Astra가 OSWorld 2.0에서 GPT-5.6 Sol보다 더 높은 성능을 보였고, 작업당 시간도 약 47% 줄였다고 발표했다. Astra는 72.6%를 약 40분/task에 기록했고, GPT-5.6 Sol은 65.7%를 약 75분/task에 기록했다는 설명이다.[^openai-astra]
+OpenAI는 Astra가 OSWorld 2.0에서 GPT-5.6 Sol보다 더 높은 성능을 보였고, 작업당 시간도 약 47% 줄였다고 발표했다. Astra는 72.6%를 약 40분/task에 기록했고, GPT-5.6 Sol은 65.7%를 약 75분/task에 기록했다는 설명이다.
 
 이 수치는 중요하다.
 
@@ -165,7 +162,7 @@ OpenAI는 Astra가 OSWorld 2.0에서 GPT-5.6 Sol보다 더 높은 성능을 보�
 
 Astra를 단순한 모델 발표로만 보면 놓치는 게 있다.
 
-OpenAI는 이미 GDPval이라는 평가를 발표한 바 있다. GDPval은 미국 GDP 상위 9개 산업의 44개 직업에서 나온 1,320개 전문 업무를 바탕으로, AI가 경제적으로 가치 있는 실제 업무를 얼마나 잘 수행하는지 보려는 평가다.[^gdpval]
+OpenAI는 이미 GDPval이라는 평가를 발표한 바 있다. GDPval은 미국 GDP 상위 9개 산업의 44개 직업에서 나온 1,320개 전문 업무를 바탕으로, AI가 경제적으로 가치 있는 실제 업무를 얼마나 잘 수행하는지 보려는 평가다.
 
 중요한 것은 평가의 방향이다.
 
@@ -194,7 +191,7 @@ AI가 똑똑해지는 것보다 중요한 것은, AI 평가의 무대가 사무�
 
 여기서 균형이 필요하다.
 
-BCG는 2026년 보고서에서 향후 2~3년 내 미국 일자리의 50~55%가 AI로 재편될 수 있다고 봤다. 동시에 5년 또는 그 이후 10~15%의 일자리는 제거될 가능성이 있다고 분석했다.[^bcg]
+BCG는 2026년 보고서에서 향후 2~3년 내 미국 일자리의 50~55%가 AI로 재편될 수 있다고 봤다. 동시에 5년 또는 그 이후 10~15%의 일자리는 제거될 가능성이 있다고 분석했다.
 
 핵심 문장은 이렇다.
 
@@ -202,7 +199,7 @@ BCG는 2026년 보고서에서 향후 2~3년 내 미국 일자리의 50~55%가 A
 
 업무 자동화가 곧 일자리 소멸은 아니다.
 
-Anthropic의 노동시장 영향 연구도 비슷하게 조심스럽다. AI의 이론적 가능성에 비해 실제 적용 범위는 아직 일부이고, 2022년 말 이후 AI 노출도가 높은 직업군에서 체계적인 실업 증가 증거는 아직 약하다고 밝혔다. 다만 젊은 노동자와 초기 커리어 채용 둔화 가능성은 시사했다.[^anthropic-labor]
+Anthropic의 노동시장 영향 연구도 비슷하게 조심스럽다. AI의 이론적 가능성에 비해 실제 적용 범위는 아직 일부이고, 2022년 말 이후 AI 노출도가 높은 직업군에서 체계적인 실업 증가 증거는 아직 약하다고 밝혔다. 다만 젊은 노동자와 초기 커리어 채용 둔화 가능성은 시사했다.
 
 이 대목이 중요하다.
 
@@ -333,10 +330,10 @@ AI가 컴퓨터를 쓰기 시작하면, 사람은 컴퓨터 사용자에서 업�
 
 ## 참고자료
 
-[^openai-astra]: OpenAI, "GPT-6 Astra: A new generation of intelligence", 2026. https://openai.com/index/gpt-6-astra/
-[^nbc-astra]: NBC News, "OpenAI debuts GPT-6 Astra, says it triggered security measures", 2026. https://www.nbcnews.com/tech/tech-news/openai-debuts-gpt-6-astra-security-measures-rcna595940
-[^venturebeat-astra]: VentureBeat, "Welcome to the AGI era: OpenAI launches GPT-6 Astra", 2026. https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra
-[^wired-astra]: Wired, "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era", 2026. https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/
-[^gdpval]: OpenAI, "Measuring the performance of our models on real-world tasks", 2025. https://openai.com/index/gdpval
-[^bcg]: BCG, "AI Will Reshape More Jobs Than It Replaces", 2026. https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces
-[^anthropic-labor]: Anthropic, "Labor market impacts of AI: A new measure and early evidence", 2026. https://www.anthropic.com/research/labor-market-impacts
+- OpenAI, "GPT-6 Astra: A new generation of intelligence", 2026. https://openai.com/index/gpt-6-astra/
+- NBC News, "OpenAI debuts GPT-6 Astra, says it triggered security measures", 2026. https://www.nbcnews.com/tech/tech-news/openai-debuts-gpt-6-astra-security-measures-rcna595940
+- VentureBeat, "Welcome to the AGI era: OpenAI launches GPT-6 Astra", 2026. https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra
+- Wired, "GPT-6 Astra Is Here—and OpenAI Thinks It May Kick Off the AGI Era", 2026. https://www.wired.com/story/openai-says-gpt-6-can-use-a-computer-better-than-a-human/
+- OpenAI, "Measuring the performance of our models on real-world tasks", 2025. https://openai.com/index/gdpval
+- BCG, "AI Will Reshape More Jobs Than It Replaces", 2026. https://www.bcg.com/publications/2026/ai-will-reshape-more-jobs-than-it-replaces
+- Anthropic, "Labor market impacts of AI: A new measure and early evidence", 2026. https://www.anthropic.com/research/labor-market-impacts

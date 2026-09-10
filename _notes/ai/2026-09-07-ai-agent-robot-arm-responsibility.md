@@ -5,7 +5,7 @@ categories: [ai]
 type: essay
 label: AI
 tags: [Anthropic, MHS, MCP, AI에이전트, 로봇, 피지컬AI, AI거버넌스, 책임]
-description: "Anthropic의 Model Hardware Standard 연구 프리뷰는 AI 에이전트가 화면 밖 물리 장비를 조작하기 시작할 때 책임·권한·감사 로그가 왜 핵심이 되는지 보여준다."
+description: "Anthropic Model Hardware Standard와 피지컬 AI 흐름을 통해 AI 에이전트가 로봇 팔·실험실·제조 장비를 조작할 때 책임, 권한, 감사 로그, 런타임 통제가 왜 핵심인지 살펴본다."
 permalink: /ai/ai-agent-robot-arm-responsibility/
 image: /assets/images/ai/ai-agent-robot-arm-responsibility-2026-og.jpg
 ---
@@ -14,10 +14,9 @@ image: /assets/images/ai/ai-agent-robot-arm-responsibility-2026-og.jpg
   <img src="/assets/images/ai/ai-agent-robot-arm-responsibility-2026-og.jpg" alt="AI 에이전트가 로봇 팔을 움직일 때, 책임은 어디에 기록되는가 SEO 이미지">
   <figcaption>Anthropic MHS는 AI 에이전트가 물리 장비를 조작할 때 책임·권한·감사 로그가 핵심임을 보여준다.</figcaption>
 </figure>
-
-# AI 에이전트가 로봇 팔을 움직일 때, 책임은 어디에 기록되는가
-
 AI 에이전트가 브라우저를 조작하는 것과 로봇 팔을 움직이는 것은 같은 문제일까.
+
+제조 AI와 피지컬 AI 관점의 관련 글은 [제조AI·AX 허브](/manufacturing-ai/)에 함께 묶어둔다.
 
 겉으로 보면 비슷하다. 둘 다 도구 사용이다. 하나는 화면 안의 버튼을 누르고, 다른 하나는 실험실이나 공장의 장비를 움직인다.
 
@@ -29,11 +28,11 @@ AI 에이전트가 브라우저를 조작하는 것과 로봇 팔을 움직이�
 
 샘플이 오염될 수 있다. 장비가 손상될 수 있다. 사람이 다칠 수 있다. 실험 결과가 왜곡될 수 있다. 생산 라인이 멈출 수 있다.
 
-그래서 Anthropic이 공개한 Model Hardware Standard, MHS 연구 프리뷰는 단순한 기술 표준 소개가 아니다.[^anthropic-mhs]
+그래서 Anthropic이 공개한 Model Hardware Standard, MHS 연구 프리뷰는 단순한 기술 표준 소개가 아니다.
 
 AI 에이전트가 화면 밖으로 나올 때, 책임을 어떻게 설계할 것인가에 대한 신호다.
 
-## MCP 다음의 질문은 MHS다
+## 피지컬 AI와 MHS: MCP 다음의 질문은 장비 권한이다
 
 우리는 최근 AI 에이전트를 주로 소프트웨어 연결의 문제로 봐왔다.
 
@@ -41,7 +40,7 @@ AI 에이전트가 화면 밖으로 나올 때, 책임을 어떻게 설계할 �
 
 MHS는 그 질문을 물리 장비로 확장한다.
 
-Anthropic 설명에 따르면 MHS는 AI 에이전트가 현미경, 액체 핸들러, 로봇 팔 같은 실험실·제조 장비를 안전하게 조작하기 위한 공유 사양이다. 연구실과 제조 현장의 장비는 보통 서로 다른 인터페이스를 가지고 있어 통합에 몇 주나 몇 달이 걸릴 수 있는데, MHS는 이를 시간 또는 분 단위로 줄이는 것을 목표로 한다.[^anthropic-mhs]
+Anthropic 설명에 따르면 MHS는 AI 에이전트가 현미경, 액체 핸들러, 로봇 팔 같은 실험실·제조 장비를 안전하게 조작하기 위한 공유 사양이다. 연구실과 제조 현장의 장비는 보통 서로 다른 인터페이스를 가지고 있어 통합에 몇 주나 몇 달이 걸릴 수 있는데, MHS는 이를 시간 또는 분 단위로 줄이는 것을 목표로 한다.
 
 핵심은 단순 연결이 아니다.
 
@@ -132,4 +131,4 @@ AI가 로봇 팔을 움직이는 시대에는, 책임도 함께 움직여야 한
 
 ## 참고자료
 
-[^anthropic-mhs]: Anthropic, "Previewing the Model Hardware Standard", 2026. https://www.anthropic.com/news/model-hardware-standard-research-preview
+- Anthropic, "Previewing the Model Hardware Standard", 2026. https://www.anthropic.com/news/model-hardware-standard-research-preview

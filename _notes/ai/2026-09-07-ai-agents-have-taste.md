@@ -5,7 +5,7 @@ categories: [ai]
 type: essay
 label: AI
 tags: [ClaudeCode, Codex, Cursor, AI에이전트, 코딩에이전트, 업무자동화, 검증]
-description: "Claude Code, Codex, Cursor가 같은 문제에서 서로 다른 도구를 고른다는 실험은 AI 에이전트도 객관적 추천기가 아니라 습관과 편향을 가진 작업자임을 보여준다."
+description: "Claude Code, Codex, Cursor 같은 AI 코딩 에이전트의 도구 선택 실험을 통해 AI 에이전트 추천이 객관적 결론이 아니라 모델별 탐색 습관과 취향을 가진 출발점임을 살펴본다."
 permalink: /ai/ai-agents-have-taste/
 image: /assets/images/ai/ai-agents-have-taste-2026-og.jpg
 ---
@@ -14,16 +14,13 @@ image: /assets/images/ai/ai-agents-have-taste-2026-og.jpg
   <img src="/assets/images/ai/ai-agents-have-taste-2026-og.jpg" alt="AI 에이전트도 취향이 있다 SEO 이미지">
   <figcaption>Claude Code, Codex, Cursor의 선택 차이는 에이전트 추천에도 취향과 편향이 있음을 보여준다.</figcaption>
 </figure>
-
-# AI 에이전트도 취향이 있다
-
 AI 에이전트는 객관적인 추천기일까.
 
 같은 코드베이스, 같은 요구사항, 같은 문제를 주면 Claude Code, Codex, Cursor는 같은 결론을 낼까.
 
-Armature가 공개한 실험은 꽤 불편한 답을 준다. 세 코딩 에이전트는 생각보다 자주 다른 선택을 했다.[^armature]
+Armature가 공개한 실험은 꽤 불편한 답을 준다. 세 코딩 에이전트는 생각보다 자주 다른 선택을 했다.
 
-이 실험은 16,893회 실행, 1,163개 프롬프트 변형, 75개 저장소, 3개 코딩 에이전트로 구성됐다. 유효한 1차 공개 분석 대상만 해도 5,292개 세션이다.[^geeknews-tools]
+이 실험은 16,893회 실행, 1,163개 프롬프트 변형, 75개 저장소, 3개 코딩 에이전트로 구성됐다. 유효한 1차 공개 분석 대상만 해도 5,292개 세션이다.
 
 결론은 단순하다.
 
@@ -33,7 +30,7 @@ AI 에이전트도 취향이 있다.
 
 ## 같은 문제, 다른 도구
 
-실험에서 세 에이전트가 같은 도구를 고른 비율은 42%에 그쳤다.[^geeknews-tools]
+실험에서 세 에이전트가 같은 도구를 고른 비율은 42%에 그쳤다.
 
 이 숫자가 중요한 이유는 코딩 에이전트가 단순히 코드를 쓰는 도구를 넘어, 어떤 외부 서비스를 쓸지까지 결정하기 시작했기 때문이다.
 
@@ -47,7 +44,7 @@ AI 에이전트도 취향이 있다.
 
 어떤 에이전트는 Neon을 고른다. 어떤 에이전트는 Supabase를 언급한다. 어떤 에이전트는 자체 구현을 시도한다. 어떤 에이전트는 웹 검색을 하고, 어떤 에이전트는 기존 지식에 더 의존한다.
 
-Armature 분석에 따르면 Codex는 세션의 94%에서 웹 검색을 사용했고, Claude Code는 약 30% 수준으로 더 많이 사전 지식에 의존했다. Claude Code는 자체 구현 비율도 Codex·Cursor보다 높았다.[^geeknews-tools]
+Armature 분석에 따르면 Codex는 세션의 94%에서 웹 검색을 사용했고, Claude Code는 약 30% 수준으로 더 많이 사전 지식에 의존했다. Claude Code는 자체 구현 비율도 Codex·Cursor보다 높았다.
 
 이건 단순한 성능 차이가 아니다.
 
@@ -65,7 +62,7 @@ Armature 분석에 따르면 Codex는 세션의 94%에서 웹 검색을 사용�
 
 이 결정은 나중에 비용, 락인, 운영 부담, 보안, 채용, 유지보수에 영향을 준다.
 
-그런데 실험은 흥미로운 장면을 보여준다. 유명 제품이 많이 언급된다고 실제 채택되는 것은 아니었다. PayPal은 결제 서비스 후보로 139회 언급됐지만 선택은 0회였고, LangChain도 194회 언급 중 4회만 선택됐다.[^geeknews-tools]
+그런데 실험은 흥미로운 장면을 보여준다. 유명 제품이 많이 언급된다고 실제 채택되는 것은 아니었다. PayPal은 결제 서비스 후보로 139회 언급됐지만 선택은 0회였고, LangChain도 194회 언급 중 4회만 선택됐다.
 
 AI가 어떤 도구를 언급했다는 사실과 실제로 적합하다는 사실은 다르다.
 
@@ -124,7 +121,7 @@ AI 에이전트의 추천은 출발점이지 결론이 아니다.
 
 가격, 제한, SDK, 예제, 마이그레이션, 보안, 실패 조건, 비교표가 명확해야 한다. 애매한 문구는 AI에게 불리하게 해석될 수 있다.
 
-Armature 실험에서도 제품 페이지의 요금·기능 표현이 선택에 영향을 미쳤다. Supabase는 데이터베이스만 필요한 상황에서도 여러 기능을 묶은 BaaS 요금 구조가 부각되며 불리해졌고, Mailgun은 무료 플랜의 1일 보관 기간이 확인되며 Postmark에 자주 밀렸다.[^geeknews-tools]
+Armature 실험에서도 제품 페이지의 요금·기능 표현이 선택에 영향을 미쳤다. Supabase는 데이터베이스만 필요한 상황에서도 여러 기능을 묶은 BaaS 요금 구조가 부각되며 불리해졌고, Mailgun은 무료 플랜의 1일 보관 기간이 확인되며 Postmark에 자주 밀렸다.
 
 AI 시대의 문서는 마케팅 자료가 아니라 [[마크다운이 직원이다|에이전트가 읽는 업무 지시서]]에 가까워진다.
 
@@ -144,5 +141,5 @@ AI 에이전트도 취향이 있다.
 
 ## 참고자료
 
-[^armature]: Armature, "Which tools do Claude Code, Codex and Cursor choose? We measured 16,893 sessions to find out.", 2026. https://armature.tech/blog/which-tools-coding-agents-install
-[^geeknews-tools]: GeekNews 요약, "Claude Code·Codex·Cursor는 어떤 도구를 선택할까? 1만7천 회 실행 분석", 2026. https://news.hada.io/topic?id=33247
+- Armature, "Which tools do Claude Code, Codex and Cursor choose? We measured 16,893 sessions to find out.", 2026. https://armature.tech/blog/which-tools-coding-agents-install
+- GeekNews 요약, "Claude Code·Codex·Cursor는 어떤 도구를 선택할까? 1만7천 회 실행 분석", 2026. https://news.hada.io/topic?id=33247

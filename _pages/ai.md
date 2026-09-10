@@ -7,6 +7,9 @@ permalink: /ai
 <div class="category-header category-header-ai">
   <h1>AI 활용</h1>
   <p>AI 활용 관련 포스팅</p>
+  <p style="margin-top: .75rem;">
+    <a class="internal-link" href="{{ site.baseurl }}/manufacturing-ai/">제조AI·AX 허브 보기 →</a>
+  </p>
 </div>
 
 <ul class="posts-list">

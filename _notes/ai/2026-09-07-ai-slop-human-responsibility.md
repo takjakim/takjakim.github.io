@@ -14,20 +14,17 @@ image: /assets/images/ai/ai-slop-human-responsibility-2026-og.jpg
   <img src="/assets/images/ai/ai-slop-human-responsibility-2026-og.jpg" alt="AI로 쓴 글이 문제가 아니다, 아무도 책임지지 않는 글이 문제다 SEO 이미지">
   <figcaption>AI 글쓰기의 기준은 사용량이 아니라 인간의 이해·판단·근거·책임이다.</figcaption>
 </figure>
-
-# AI로 쓴 글이 문제가 아니다, 아무도 책임지지 않는 글이 문제다
-
 AI로 쓴 글은 문제일까.
 
 질문이 조금 잘못됐다.
 
 진짜 문제는 AI가 썼느냐가 아니다. 아무도 이해하지 않고, 검증하지 않고, 책임지지 않는 글이 문제다.
 
-Ahrefs는 최근 흥미로운 글을 공개했다. 자신들은 모든 글에 어떤 방식으로든 AI를 사용하고, 조사·개요·초안·팩트체크까지 6~12분 안에 처리하는 파이프라인도 갖췄지만, 그것을 수만 개의 글을 자동 발행하는 데 쓰지는 않는다고 말한다.[^ahrefs]
+Ahrefs는 최근 흥미로운 글을 공개했다. 자신들은 모든 글에 어떤 방식으로든 AI를 사용하고, 조사·개요·초안·팩트체크까지 6~12분 안에 처리하는 파이프라인도 갖췄지만, 그것을 수만 개의 글을 자동 발행하는 데 쓰지는 않는다고 말한다.
 
 그리고 AI slop을 이렇게 정의한다.
 
-> AI slop is content published without enough human understanding, judgement, evidence, or original contribution to justify the reader’s attention.[^ahrefs]
+> AI slop is content published without enough human understanding, judgement, evidence, or original contribution to justify the reader’s attention.
 
 번역하면 이렇다.
 
@@ -49,7 +46,7 @@ AI 글을 비판할 때 흔히 문체를 본다.
 
 물론 이런 징후는 있다. 하지만 문체만 고친다고 좋은 글이 되는 것은 아니다.
 
-Ahrefs의 표현처럼, 대시를 지우고 금지어를 없애도 더 깔끔한 AI slop이 될 수 있다.[^ahrefs]
+Ahrefs의 표현처럼, 대시를 지우고 금지어를 없애도 더 깔끔한 AI slop이 될 수 있다.
 
 진짜 기준은 따로 있다.
 
@@ -81,7 +78,7 @@ AI slop의 본질은 독자의 시간에 대한 무례다.
 
 그러면 창작자는 시간을 아낀다. 하지만 독자는 비용을 치른다. 이 글이 믿을 만한지, 어디까지 사실인지, 무엇이 새롭고 무엇이 반복인지 독자가 직접 걸러야 한다.
 
-Ahrefs는 이것을 "slop transfers effort from the creator to the reader"라고 표현한다.[^ahrefs]
+Ahrefs는 이것을 "slop transfers effort from the creator to the reader"라고 표현한다.
 
 이건 블로그 운영에서도 중요한 기준이다.
 
@@ -124,7 +121,7 @@ AI 파이프라인의 위험은 결과가 너무 빨리 나온다는 데 있다.
 
 이런 질문 대신 이미 나온 글을 고치기 시작한다. 매몰 비용이 생긴다.
 
-그래서 Ahrefs는 아이디어, 개요, 근거, 초안 사이에 사람이 멈추고 판단하는 관문을 둔다.[^geeknews-slop]
+그래서 Ahrefs는 아이디어, 개요, 근거, 초안 사이에 사람이 멈추고 판단하는 관문을 둔다.
 
 이 구조는 블로그에도 그대로 적용할 수 있다.
 
@@ -179,5 +176,5 @@ AI 시대의 좋은 글쓰기는 인간이 사라지는 글쓰기가 아니다. 
 
 ## 참고자료
 
-[^ahrefs]: Ahrefs, "How We Use AI for Every Article Without Making AI Slop", 2026. https://ahrefs.com/blog/how-we-use-ai-without-making-ai-slop/
-[^geeknews-slop]: GeekNews 요약, "모든 글에 AI를 쓰면서도 AI 슬롭을 피하는 방법", 2026. https://news.hada.io/topic?id=33225
+- Ahrefs, "How We Use AI for Every Article Without Making AI Slop", 2026. https://ahrefs.com/blog/how-we-use-ai-without-making-ai-slop/
+- GeekNews 요약, "모든 글에 AI를 쓰면서도 AI 슬롭을 피하는 방법", 2026. https://news.hada.io/topic?id=33225

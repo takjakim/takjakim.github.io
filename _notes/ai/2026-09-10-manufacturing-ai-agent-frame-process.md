@@ -6,12 +6,10 @@ categories: [ai, manufacturing]
 type: essay
 label: AI
 tags: [제조AI, AI에이전트, AX, 현대자동차, EFORESTPOLARIS, 피지컬AI, 지식그래프, 대학컨설팅, 교육과정]
-description: "현대차 제조AI기술개발 직무 영상과 자동차 프레임 공정 예시를 통해 제조 AX가 챗봇 도입이 아니라 현장 노하우를 실행 가능한 에이전트로 바꾸는 일임을 살펴본다."
+description: "현대차 TEAM HMG 제조AI기술개발 직무 영상, E-FOREST POLARIS, 자동차 프레임 제조 공정 예시를 통해 제조 AX가 챗봇이 아니라 현장 노하우를 실행 가능한 AI 에이전트로 바꾸는 일임을 살펴본다."
 image: /assets/images/ai/manufacturing-ai-agent-frame-process-2026-og.jpg
 permalink: /ai/manufacturing-ai-agent-frame-process/
 ---
-
-# 제조 AI는 챗봇이 아니라, 현장 노하우를 실행하는 에이전트다
 
 <figure class="note-cover">
   <img src="/assets/images/ai/manufacturing-ai-agent-frame-process-2026-og.jpg" alt="제조 AI는 챗봇이 아니라 현장 노하우를 실행하는 에이전트다 - OG 이미지">
@@ -20,6 +18,8 @@ permalink: /ai/manufacturing-ai-agent-frame-process/
 
 
 제조 현장에 AI를 도입한다는 말은 이제 낯설지 않다.
+
+이 글은 현대차그룹 AX와 제조 AI 흐름을 자동차 프레임 제조 공정으로 풀어본 글이다. 관련 글은 [제조AI·AX 허브](/manufacturing-ai/)에서 이어볼 수 있다.
 
 하지만 여전히 많은 AI 도입 논의는 챗봇에 머문다. 작업자가 질문하면 매뉴얼을 찾아주고, 문서를 요약하고, 보고서를 대신 써주는 방식이다. 물론 이것도 필요하다. 그런데 제조 현장의 AI가 거기서 멈추면 아쉽다.
 
@@ -33,7 +33,7 @@ permalink: /ai/manufacturing-ai-agent-frame-process/
 
 현장의 데이터, 문서, 설비, 작업표준, 엔지니어의 암묵지를 AI가 실행 가능한 구조로 바꾸는 일이다.
 
-## POC에서 멈추는 AI와 공장에서 돌아가는 AI는 다르다
+## 제조 AX: POC에서 멈추는 AI와 공장에서 돌아가는 AI는 다르다
 
 AI 프로젝트가 POC에서 끝나는 이유는 대체로 비슷하다.
 

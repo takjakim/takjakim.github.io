@@ -6,12 +6,10 @@ categories: [ai]
 type: essay
 label: AI
 tags: [AX, DX, 현대자동차그룹, AI전환, 조직문화, 데이터전략, AI거버넌스, 제조AI, 대학컨설팅]
-description: "현대자동차그룹 AX 성과 발표회를 통해 AI 전환의 핵심이 사용량이 아니라 일하는 방식, 데이터 구조, 검수 루프, 조직 실행력에 있음을 살펴본다."
+description: "현대자동차그룹 AX 성과 발표회, H Chat Pro, DX와 데이터 표준화 사례를 통해 AI 전환의 핵심이 사용량이 아니라 일하는 방식과 운영 능력에 있음을 살펴본다."
 permalink: /ai/hyundai-ax-proper-ai-use/
 image: /assets/images/ai/hyundai-ax-proper-ai-use-2026-og.jpg
 ---
-
-# AI를 가장 많이 쓰는 회사보다, 가장 제대로 쓰는 회사
 
 <figure class="note-cover">
   <img src="/assets/images/ai/hyundai-ax-proper-ai-use-2026-og.jpg" alt="AI를 가장 많이 쓰는 회사보다 가장 제대로 쓰는 회사 - OG 이미지">
@@ -25,6 +23,8 @@ image: /assets/images/ai/hyundai-ax-proper-ai-use-2026-og.jpg
 
 이 문장은 많은 조직의 AI 도입 논의가 놓치는 지점을 정확히 찌른다.
 
+이 글은 [[제조 AI는 챗봇이 아니라, 현장 노하우를 실행하는 에이전트다]]와 함께 현대차그룹 AX, 제조 AI, H Chat Pro, 데이터 표준화가 어떻게 하나의 운영 구조로 연결되는지 읽기 위한 글이다. 관련 주제는 [제조AI·AX 허브](/manufacturing-ai/)에 모아둔다.
+
 요즘 기업과 기관의 AI 논의는 자주 숫자로 시작한다. 몇 명이 ChatGPT를 쓰는가. 몇 개 부서에 AI를 도입했는가. 몇 개 업무를 자동화했는가. 몇 개의 에이전트를 만들었는가.
 
 하지만 AI 전환의 성패는 사용량에서 갈리지 않는다.
@@ -33,7 +33,7 @@ image: /assets/images/ai/hyundai-ax-proper-ai-use-2026-og.jpg
 
 현대차그룹 AX 발표회가 흥미로운 이유는 여기에 있다. 이 발표는 “우리는 AI를 많이 쓴다”는 자랑으로 끝나지 않는다. 오히려 반복해서 말한다. AX는 기술 도입이 아니라 **일하는 방식의 변화**라고.
 
-## AX는 AI 도입이 아니라 일하는 방식의 변화다
+## 현대자동차그룹 AX: AI 도입이 아니라 일하는 방식의 변화다
 
 영상 초반 현대차그룹은 AX를 이렇게 설명한다. 생각하는 방식, 협업하는 방식, 문제를 해결하는 방식을 바꾸는 일. 사람, 데이터, 소프트웨어, 워크플로우가 연결되고, 그 위에 AI가 얹히면서 연구개발, 생산, 품질관리, 서비스가 하나의 흐름으로 이어지는 일.
 

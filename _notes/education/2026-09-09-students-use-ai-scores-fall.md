@@ -14,9 +14,6 @@ image: /assets/images/ai/students-use-ai-scores-fall-2026-og.jpg
   <img src="/assets/images/ai/students-use-ai-scores-fall-2026-og.jpg" alt="학생은 AI를 쓰는데, 왜 점수는 떨어질까 SEO 이미지">
   <figcaption>AI를 사고의 대체재로 쓰는가, 사고의 훈련 도구로 쓰는가가 학습 성과를 가른다.</figcaption>
 </figure>
-
-# 학생은 AI를 쓰는데, 왜 점수는 떨어질까
-
 학생은 AI를 쓴다.
 
 이제 이 문장은 새롭지 않다. 과제를 쓸 때도, 모르는 개념을 물을 때도, 발표 자료를 만들 때도, 코드를 짤 때도 학생들은 AI를 쓴다.
@@ -25,9 +22,9 @@ image: /assets/images/ai/students-use-ai-scores-fall-2026-og.jpg
 
 처음에는 "학생이 AI를 써도 되는가"였다. 이제는 "AI를 쓰는 학생이 정말 더 잘 배우는가"를 물어야 한다.
 
-최근 OECD PISA 관련 보도는 이 질문에 꽤 불편한 신호를 던진다.[^star-pisa]
+최근 OECD PISA 관련 보도는 이 질문에 꽤 불편한 신호를 던진다.
 
-보도에 따르면 AI를 글쓰기 과제에 거의 매일 사용하는 학생은 거의 사용하지 않는 학생보다 과학 점수가 낮았다. 사회경제적 배경을 보정한 뒤에도 28점 차이가 났고, 이는 약 1년 반의 학습량에 해당한다고 설명됐다.[^star-pisa]
+보도에 따르면 AI를 글쓰기 과제에 거의 매일 사용하는 학생은 거의 사용하지 않는 학생보다 과학 점수가 낮았다. 사회경제적 배경을 보정한 뒤에도 28점 차이가 났고, 이는 약 1년 반의 학습량에 해당한다고 설명됐다.
 
 이 숫자만 보면 결론은 쉬워 보인다.
 
@@ -35,7 +32,7 @@ AI를 쓰면 공부를 못하게 된다.
 
 하지만 그렇게 단순하게 읽으면 안 된다.
 
-같은 보도는 다른 신호도 함께 보여준다. AI를 일주일에 한두 번, 학습을 돕는 방식으로 쓰는 학생은 더 좋은 성과를 보일 수 있었다. 또 AI가 만든 정보를 평가하도록 수업에서 훈련받은 학생은 매일 AI를 쓰더라도 점수 차이가 줄었다.[^star-pisa]
+같은 보도는 다른 신호도 함께 보여준다. AI를 일주일에 한두 번, 학습을 돕는 방식으로 쓰는 학생은 더 좋은 성과를 보일 수 있었다. 또 AI가 만든 정보를 평가하도록 수업에서 훈련받은 학생은 매일 AI를 쓰더라도 점수 차이가 줄었다.
 
 문제는 AI 사용 여부가 아니다.
 
@@ -74,7 +71,7 @@ AI가 이 과정을 너무 빨리 대신하면 학생은 결과물을 얻지만 
 
 하지만 AI를 완전히 막는 전략은 오래가기 어렵다.
 
-학생들은 학교 밖에서 AI를 쓴다. 대학과 직장은 AI를 쓰는 방향으로 움직인다. 기업은 이미 문서 작성, 리서치, 코딩, 데이터 분석, 고객 응대에 AI를 넣고 있다. 대학도 ChatGPT Edu, Gemini for Education, Microsoft 365 Copilot 같은 도구를 전면 도입하는 사례가 늘고 있다.[^unsw]
+학생들은 학교 밖에서 AI를 쓴다. 대학과 직장은 AI를 쓰는 방향으로 움직인다. 기업은 이미 문서 작성, 리서치, 코딩, 데이터 분석, 고객 응대에 AI를 넣고 있다. 대학도 ChatGPT Edu, Gemini for Education, Microsoft 365 Copilot 같은 도구를 전면 도입하는 사례가 늘고 있다.
 
 따라서 교육의 목표는 AI 없는 공간을 영원히 지키는 것이 아니다.
 
@@ -84,7 +81,7 @@ AI를 쓰면서도 생각을 잃지 않는 방법을 가르치는 것이다.
 
 PISA 보도에서 가장 중요한 대목은 "많이 쓰면 나쁘다"가 아니다.
 
-AI를 비판적으로 평가하도록 배운 학생은 성과가 달라질 수 있다는 점이다.[^star-pisa]
+AI를 비판적으로 평가하도록 배운 학생은 성과가 달라질 수 있다는 점이다.
 
 이 말은 교육과정 설계에 직접 연결된다.
 
@@ -111,7 +108,7 @@ AI 사용 내역: 제출 시 기록
 
 앞으로 좋은 강의계획서는 "AI 사용 금지" 한 줄로 끝나지 않을 것이다.
 
-UNSW는 OpenAI와의 파트너십을 발표하면서 AI 평가에 대해 **Can, Can't, Must** 프레임워크를 사용한다고 밝혔다.[^unsw]
+UNSW는 OpenAI와의 파트너십을 발표하면서 AI 평가에 대해 **Can, Can't, Must** 프레임워크를 사용한다고 밝혔다.
 
 ```text
 Can: 이 과제에서는 AI를 이런 방식으로 사용할 수 있다.
@@ -169,5 +166,5 @@ AI를 금지하는 학교와 AI를 방치하는 학교 사이에, AI를 평가�
 
 ## 참고자료
 
-[^star-pisa]: The Star / Bloomberg, "School students who use AI get worse test scores, OECD warns", 2026. https://www.thestar.com.my/tech/tech-news/2026/09/09/school-students-who-use-ai-get-worse-test-scores-oecd-warns
-[^unsw]: Mirage News, "UNSW Partners With OpenAI To Support First Generation Of AI Natives In Workforce", 2026. https://www.miragenews.com/unsw-partners-with-openai-to-support-first-1740773/
+- The Star / Bloomberg, "School students who use AI get worse test scores, OECD warns", 2026. https://www.thestar.com.my/tech/tech-news/2026/09/09/school-students-who-use-ai-get-worse-test-scores-oecd-warns
+- Mirage News, "UNSW Partners With OpenAI To Support First Generation Of AI Natives In Workforce", 2026. https://www.miragenews.com/unsw-partners-with-openai-to-support-first-1740773/
