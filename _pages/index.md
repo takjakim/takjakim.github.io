@@ -53,8 +53,39 @@ permalink: /
 
   <!-- Hero Section with Graph Background -->
   <header class="hero-2026">
-    <div class="hero-graph-bg" aria-hidden="true">
-      {% include notes_graph.html %}
+    <div class="hero-graph-bg hero-graph-bg--static" aria-hidden="true">
+      <svg class="hero-mini-map" viewBox="0 0 640 360" focusable="false">
+        <defs>
+          <linearGradient id="hero-map-line" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.42" />
+            <stop offset="55%" stop-color="#ec4899" stop-opacity="0.32" />
+            <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.28" />
+          </linearGradient>
+          <radialGradient id="hero-map-node" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.9" />
+            <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.55" />
+          </radialGradient>
+        </defs>
+        <g stroke="url(#hero-map-line)" stroke-width="1.4" fill="none">
+          <path d="M95 224 L190 138 L310 190 L430 104 L548 168" />
+          <path d="M142 92 L190 138 L238 258 L310 190 L382 276" />
+          <path d="M310 190 L356 78 L430 104 L486 272" />
+          <path d="M95 224 L238 258 L382 276 L548 168" />
+          <path d="M142 92 L356 78 L548 168" />
+        </g>
+        <g fill="url(#hero-map-node)" stroke="rgba(255,255,255,0.55)" stroke-width="1.2">
+          <circle cx="95" cy="224" r="8" />
+          <circle cx="142" cy="92" r="6" />
+          <circle cx="190" cy="138" r="10" />
+          <circle cx="238" cy="258" r="7" />
+          <circle cx="310" cy="190" r="13" />
+          <circle cx="356" cy="78" r="7" />
+          <circle cx="382" cy="276" r="8" />
+          <circle cx="430" cy="104" r="10" />
+          <circle cx="486" cy="272" r="6" />
+          <circle cx="548" cy="168" r="9" />
+        </g>
+      </svg>
     </div>
     <div class="hero-content">
       <div class="hero-badge">Personal Knowledge Base</div>

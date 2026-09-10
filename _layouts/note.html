@@ -75,18 +75,48 @@ layout: default
           {% endif %}
         </details>
 
-        <details class="sidebar-section sidebar-disclosure sidebar-graph" open>
+        <details class="sidebar-section sidebar-disclosure sidebar-related" open>
           <summary class="sidebar-disclosure-summary">
             <span class="sidebar-subtitle">Related Notes</span>
           </summary>
-          <div id="sidebar-graph-wrapper" data-category="{{ current_category }}"></div>
+          {% assign related_count = 0 %}
+          <div class="sidebar-related-list">
+          {% for note in site.notes reversed %}
+            {% if related_count >= 12 %}
+              {% break %}
+            {% endif %}
+            {% if note.url == page.url %}
+              {% continue %}
+            {% endif %}
+            {% assign is_related = false %}
+            {% if page.tags and note.tags %}
+              {% for tag in page.tags %}
+                {% if note.tags contains tag %}
+                  {% assign is_related = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if is_related == false and note.path contains current_category %}
+              {% assign is_related = true %}
+            {% endif %}
+            {% if is_related %}
+              {% assign related_count = related_count | plus: 1 %}
+              <a href="{{ site.baseurl }}{{ note.url }}" class="backlink-item sidebar-related-item">
+                <span class="backlink-title">{{ note.title }}</span>
+              </a>
+            {% endif %}
+          {% endfor %}
+          {% if related_count == 0 %}
+            <p class="no-backlinks">No related notes yet</p>
+          {% endif %}
+          </div>
+          <a class="tag-back-link" href="{{ site.baseurl }}/graph/">전체 Graph 보기 →</a>
         </details>
       </div>
     </aside>
   </div>
 </article>
-
-{% include sidebar_graph.html category=current_category %}
 
 <script>
   (function () {

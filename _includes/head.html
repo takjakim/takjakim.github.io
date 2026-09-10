@@ -19,7 +19,12 @@
   <meta name="title" content="{{ seo_title | strip }}">
   <meta name="description" content="{{ seo_description | default: content | strip_html | strip_newlines | truncate: 160 | strip }}">
   <meta name="author" content="{{ site.author }}">
+  {% assign page_url_prefix = page.url | slice: 0, 6 %}
+  {% if page.layout == 'tag' or page_url_prefix == '/tags/' %}
+  <meta name="robots" content="noindex, follow">
+  {% else %}
   <meta name="robots" content="index, follow">
+  {% endif %}
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 
   <!-- Language -->

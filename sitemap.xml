@@ -10,9 +10,11 @@ layout: null
     <priority>1.0</priority>
   </url>
   {% for page in site.pages %}
-  {% if page.url != "/404.html" and page.url != "/sitemap.xml" and page.url != "/robots.txt" %}
+  {% assign sitemap_url = page.url | remove: "index.html" %}
+  {% assign is_tag_page = sitemap_url | slice: 0, 6 %}
+  {% unless page.url == "/" or page.url == "/404.html" or page.url == "/sitemap.xml" or page.url == "/robots.txt" or page.extname == ".css" or page.extname == ".js" or is_tag_page == "/tags/" %}
   <url>
-    <loc>{{ site.url }}{{ site.baseurl }}{{ page.url | remove: "index.html" }}</loc>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ sitemap_url }}</loc>
     {% if page.last_modified_at %}
     <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
     {% else %}
@@ -21,7 +23,7 @@ layout: null
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  {% endif %}
+  {% endunless %}
   {% endfor %}
   {% for note in site.notes %}
   <url>
