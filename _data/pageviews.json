@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-09T04:33:25.447669+00:00",
+    "generated_at": "2026-09-10T04:32:57.382299+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 50
+      "views": 47
     },
     "/agentic-ai/": {
       "views": 1
@@ -22,13 +22,19 @@
       "views": 2
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 9
+      "views": 10
     },
     "/ai/ai-goes-to-work/": {
       "views": 4
     },
+    "/ai/ai-makers-ask-to-slow-down/": {
+      "views": 1
+    },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 3
+    },
+    "/ai/ai-smarter-human-must-doubt/": {
+      "views": 1
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
@@ -37,7 +43,7 @@
       "views": 1
     },
     "/ai/from-prompt-to-graph-engineering/": {
-      "views": 9
+      "views": 5
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 1
@@ -73,7 +79,7 @@
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/cnu-kongju-integration-governance/": {
       "views": 1
@@ -99,6 +105,9 @@
     "/education/rise-governance-operating-model-2026/": {
       "views": 1
     },
+    "/education/suncheon-jeil-ai-digital-twin-2026/": {
+      "views": 1
+    },
     "/education/university-ai-ethics-operating-model/": {
       "views": 4
     },
@@ -109,6 +118,9 @@
       "views": 1
     },
     "/education/실행-구조/": {
+      "views": 1
+    },
+    "/education/지역특화형-비자/": {
       "views": 1
     },
     "/graph/": {
@@ -213,6 +225,9 @@
     "/tags/ai/": {
       "views": 3
     },
+    "/tags/ai디자인센터/": {
+      "views": 1
+    },
     "/tags/ai에이전트/": {
       "views": 1
     },
@@ -289,6 +304,9 @@
       "views": 1
     },
     "/tags/해외인재/": {
+      "views": 1
+    },
+    "/theory/cohens-d/": {
       "views": 1
     },
     "/theory/confidence/": {
