@@ -11,11 +11,13 @@ layout: null
   </url>
 
   {% assign grouped_pages = site.pages | group_by_exp: "page", "page.url | remove: 'index.html'" %}
+  {% capture page_sitemap_urls %}|/|{% endcapture %}
   {% for group in grouped_pages %}
     {% assign page = group.items | first %}
     {% assign sitemap_url = group.name %}
     {% assign is_tag_page = sitemap_url | slice: 0, 6 %}
     {% unless sitemap_url == "/" or sitemap_url == "/404.html" or sitemap_url == "/sitemap.xml" or sitemap_url == "/robots.txt" or sitemap_url contains ".css" or sitemap_url contains ".js" or is_tag_page == "/tags/" %}
+      {% capture page_sitemap_urls %}{{ page_sitemap_urls }}{{ sitemap_url }}|{% endcapture %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ sitemap_url }}</loc>
     {% if page.last_modified_at %}
@@ -32,6 +34,8 @@ layout: null
   {% assign grouped_notes = site.notes | group_by: "url" %}
   {% for group in grouped_notes %}
     {% assign note = group.items | first %}
+    {% capture note_url_key %}|{{ group.name }}|{% endcapture %}
+    {% unless page_sitemap_urls contains note_url_key %}
   <url>
     <loc>{{ site.url }}{{ site.baseurl }}{{ group.name }}</loc>
     {% if note.last_modified_at %}
@@ -44,5 +48,6 @@ layout: null
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+    {% endunless %}
   {% endfor %}
 </urlset>
