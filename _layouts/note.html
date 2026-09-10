@@ -80,33 +80,48 @@ layout: default
             <span class="sidebar-subtitle">Related Notes</span>
           </summary>
           {% assign related_count = 0 %}
+          {% capture category_path %}_notes/{{ current_category }}/{% endcapture %}
           <div class="sidebar-related-list">
-          {% for note in site.notes reversed %}
-            {% if related_count >= 12 %}
-              {% break %}
-            {% endif %}
-            {% if note.url == page.url %}
-              {% continue %}
-            {% endif %}
-            {% assign is_related = false %}
-            {% if page.tags and note.tags %}
-              {% for tag in page.tags %}
-                {% if note.tags contains tag %}
-                  {% assign is_related = true %}
-                  {% break %}
-                {% endif %}
-              {% endfor %}
-            {% endif %}
-            {% if is_related == false and note.path contains current_category %}
-              {% assign is_related = true %}
-            {% endif %}
-            {% if is_related %}
-              {% assign related_count = related_count | plus: 1 %}
-              <a href="{{ site.baseurl }}{{ note.url }}" class="backlink-item sidebar-related-item">
-                <span class="backlink-title">{{ note.title }}</span>
-              </a>
-            {% endif %}
-          {% endfor %}
+          {% if page.related and page.related.size > 0 %}
+            {% for related_url in page.related limit: 8 %}
+              {% assign related_note = site.notes | where: "url", related_url | first %}
+              {% if related_note %}
+                {% assign related_count = related_count | plus: 1 %}
+                <a href="{{ site.baseurl }}{{ related_note.url }}" class="backlink-item sidebar-related-item">
+                  <span class="backlink-title">{{ related_note.title }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+          {% if related_count == 0 %}
+            {% for note in site.notes reversed %}
+              {% if related_count >= 8 %}
+                {% break %}
+              {% endif %}
+              {% if note.url == page.url or note.type == 'concept' %}
+                {% continue %}
+              {% endif %}
+              {% assign is_related = false %}
+              {% if page.tags and note.tags %}
+                {% for tag in page.tags %}
+                  {% if note.tags contains tag %}
+                    {% assign is_related = true %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+              {% endif %}
+              {% if is_related == false and current_category != '' and note.path contains category_path %}
+                {% assign is_related = true %}
+              {% endif %}
+              {% if is_related %}
+                {% assign related_count = related_count | plus: 1 %}
+                <a href="{{ site.baseurl }}{{ note.url }}" class="backlink-item sidebar-related-item">
+                  <span class="backlink-title">{{ note.title }}</span>
+                </a>
+              {% endif %}
+            {% endfor %}
+          {% endif %}
           {% if related_count == 0 %}
             <p class="no-backlinks">No related notes yet</p>
           {% endif %}

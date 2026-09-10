@@ -6,6 +6,13 @@ categories: [ai]
 type: essay
 label: AI
 tags: [AX, DX, 현대자동차그룹, AI전환, 조직문화, 데이터전략, AI거버넌스, 제조AI, 대학컨설팅]
+related:
+  - /ai/manufacturing-ai-agent-frame-process/
+  - /ai/ai-agent-robot-arm-responsibility/
+  - /ai/gemini-robotics-2-physical-ai/
+  - /ai/chatgpt-astra-office-work/
+  - /ai/will-ai-remove-middle-managers/
+  - /ai/markdown-is-an-employee-yc/
 description: "현대자동차그룹 AX 성과 발표회, H Chat Pro, DX와 데이터 표준화 사례를 통해 AI 전환의 핵심이 사용량이 아니라 일하는 방식과 운영 능력에 있음을 살펴본다."
 permalink: /ai/hyundai-ax-proper-ai-use/
 image: /assets/images/ai/hyundai-ax-proper-ai-use-2026-og.jpg

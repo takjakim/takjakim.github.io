@@ -6,6 +6,12 @@ categories: [ai, manufacturing]
 type: essay
 label: AI
 tags: [제조AI, AI에이전트, AX, 현대자동차, EFORESTPOLARIS, 피지컬AI, 지식그래프, 대학컨설팅, 교육과정]
+related:
+  - /ai/hyundai-ax-proper-ai-use/
+  - /ai/ai-agent-robot-arm-responsibility/
+  - /ai/gemini-robotics-2-physical-ai/
+  - /ai/chatgpt-astra-office-work/
+  - /ai/ai-agents-have-taste/
 description: "현대차 TEAM HMG 제조AI기술개발 직무 영상, E-FOREST POLARIS, 자동차 프레임 제조 공정 예시를 통해 제조 AX가 챗봇이 아니라 현장 노하우를 실행 가능한 AI 에이전트로 바꾸는 일임을 살펴본다."
 image: /assets/images/ai/manufacturing-ai-agent-frame-process-2026-og.jpg
 permalink: /ai/manufacturing-ai-agent-frame-process/
