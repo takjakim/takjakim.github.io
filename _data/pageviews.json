@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-10T04:32:57.382299+00:00",
+    "generated_at": "2026-09-11T04:30:44.840423+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 47
+      "views": 69
     },
     "/agentic-ai/": {
       "views": 1
@@ -28,7 +28,7 @@
       "views": 4
     },
     "/ai/ai-makers-ask-to-slow-down/": {
-      "views": 1
+      "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 3
@@ -43,13 +43,19 @@
       "views": 1
     },
     "/ai/from-prompt-to-graph-engineering/": {
-      "views": 5
+      "views": 4
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 1
     },
+    "/ai/hyundai-ax-proper-ai-use/": {
+      "views": 17
+    },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
+    },
+    "/ai/manufacturing-ai-agent-frame-process/": {
+      "views": 3
     },
     "/ai/markdown-is-an-employee-yc/": {
       "views": 1
@@ -60,10 +66,16 @@
     "/ai/work-to-tool-ai-coding/": {
       "views": 1
     },
+    "/anchor-policy/": {
+      "views": 1
+    },
     "/backlink/": {
       "views": 1
     },
     "/college-consulting/": {
+      "views": 2
+    },
+    "/college-reviews/": {
       "views": 1
     },
     "/contact/": {
@@ -73,6 +85,9 @@
       "views": 1
     },
     "/daily-mltb/": {
+      "views": 1
+    },
+    "/education/anchor-performance-budget-2026/": {
       "views": 1
     },
     "/education/busan-anchor-open-uic/": {
@@ -103,6 +118,9 @@
       "views": 2
     },
     "/education/rise-governance-operating-model-2026/": {
+      "views": 1
+    },
+    "/education/students-use-ai-scores-fall/": {
       "views": 1
     },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
@@ -276,6 +294,9 @@
     "/tags/백링크/": {
       "views": 1
     },
+    "/tags/부산대학교/": {
+      "views": 1
+    },
     "/tags/사립대구조개선법/": {
       "views": 1
     },
@@ -306,10 +327,16 @@
     "/tags/해외인재/": {
       "views": 1
     },
+    "/theory/chain-of-thought-cot/": {
+      "views": 1
+    },
     "/theory/cohens-d/": {
       "views": 1
     },
     "/theory/confidence/": {
+      "views": 1
+    },
+    "/theory/flesch-kincaid-grade-level/": {
       "views": 1
     },
     "/theory/kobest/": {
