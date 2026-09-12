@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-11T04:30:44.840423+00:00",
+    "generated_at": "2026-09-12T04:27:21.206862+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 69
+      "views": 70
     },
     "/agentic-ai/": {
       "views": 1
@@ -165,9 +165,6 @@
     "/investing/2026-05-15-korea/": {
       "views": 1
     },
-    "/investing/2026-07-07-us/": {
-      "views": 1
-    },
     "/investing/2026-07-13-us/": {
       "views": 1
     },
@@ -201,12 +198,6 @@
     "/investing/2026-09-04-us/": {
       "views": 1
     },
-    "/investing/hsi/": {
-      "views": 1
-    },
-    "/investing/ndx/": {
-      "views": 1
-    },
     "/kmedi/": {
       "views": 1
     },
@@ -229,7 +220,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 3
+      "views": 2
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 2
@@ -318,6 +309,9 @@
     "/tags/전략산업/": {
       "views": 1
     },
+    "/tags/제조ai/": {
+      "views": 1
+    },
     "/tags/충남대/": {
       "views": 1
     },
@@ -346,9 +340,6 @@
       "views": 1
     },
     "/theory/perplexity-ppl/": {
-      "views": 1
-    },
-    "/theory/qwen25/": {
       "views": 1
     },
     "/theory/r4-obsidian/": {
