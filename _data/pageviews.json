@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-12T04:27:21.206862+00:00",
+    "generated_at": "2026-09-13T04:44:26.989368+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -24,6 +24,9 @@
     "/ai/ai-agents-have-taste/": {
       "views": 10
     },
+    "/ai/ai-fermat-math-understanding/": {
+      "views": 1
+    },
     "/ai/ai-goes-to-work/": {
       "views": 4
     },
@@ -31,13 +34,16 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 1
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
+    },
+    "/ai/chatgpt-desktop-codex-work-os/": {
+      "views": 2
     },
     "/ai/chatgpt-work-codex-university-classroom/": {
       "views": 1
@@ -49,7 +55,7 @@
       "views": 1
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 17
+      "views": 18
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
@@ -85,6 +91,9 @@
       "views": 1
     },
     "/daily-mltb/": {
+      "views": 1
+    },
+    "/education/anchor-growth-engine-talent/": {
       "views": 1
     },
     "/education/anchor-performance-budget-2026/": {
@@ -142,15 +151,12 @@
       "views": 1
     },
     "/graph/": {
-      "views": 3
+      "views": 4
     },
     "/gyeonggi-five-regions/": {
       "views": 1
     },
     "/investing/2026-03-10-us/": {
-      "views": 1
-    },
-    "/investing/2026-03-27-us/": {
       "views": 1
     },
     "/investing/2026-03-30-korea/": {
@@ -163,12 +169,6 @@
       "views": 1
     },
     "/investing/2026-05-15-korea/": {
-      "views": 1
-    },
-    "/investing/2026-07-13-us/": {
-      "views": 1
-    },
-    "/investing/2026-07-16-us/": {
       "views": 1
     },
     "/investing/2026-08-03-korea/": {
@@ -204,6 +204,9 @@
     "/macos/pip_install/": {
       "views": 1
     },
+    "/macos/tidal-dl/": {
+      "views": 1
+    },
     "/news-mltb/": {
       "views": 1
     },
@@ -217,6 +220,9 @@
       "views": 1
     },
     "/risk-off/": {
+      "views": 1
+    },
+    "/running/2026-05-31-trail-running-training-log/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
@@ -264,8 +270,11 @@
     "/tags/mhs/": {
       "views": 1
     },
+    "/tags/obsidian/": {
+      "views": 1
+    },
     "/tags/running/": {
-      "views": 4
+      "views": 5
     },
     "/tags/studykorea300k/": {
       "views": 1
@@ -277,6 +286,12 @@
       "views": 1
     },
     "/tags/공동교육/": {
+      "views": 2
+    },
+    "/tags/기술이전/": {
+      "views": 1
+    },
+    "/tags/대구한의대학교/": {
       "views": 1
     },
     "/tags/반도체/": {
