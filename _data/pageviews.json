@@ -1,15 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-09-14T04:48:09.939373+00:00",
+    "generated_at": "2026-09-15T04:47:03.743623+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 72
+      "views": 75
     },
     "/agentic-ai/": {
+      "views": 1
+    },
+    "/ai-work-data-control/": {
       "views": 1
     },
     "/ai/accio-work-trade-agent/": {
@@ -20,6 +23,9 @@
     },
     "/ai/ai-agent-intern-or-dangerous-contractor/": {
       "views": 2
+    },
+    "/ai/ai-agent-stop-conditions/": {
+      "views": 1
     },
     "/ai/ai-agents-have-taste/": {
       "views": 10
@@ -55,10 +61,10 @@
       "views": 1
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 6
+      "views": 7
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 18
+      "views": 19
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
@@ -82,7 +88,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 2
+      "views": 3
     },
     "/college-reviews/": {
       "views": 1
@@ -147,6 +153,9 @@
     "/education/공유대학/": {
       "views": 1
     },
+    "/education/사업-포트폴리오/": {
+      "views": 1
+    },
     "/education/실행-구조/": {
       "views": 1
     },
@@ -154,7 +163,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 4
+      "views": 7
     },
     "/gyeonggi-five-regions/": {
       "views": 1
@@ -205,6 +214,9 @@
       "views": 1
     },
     "/macos/tidal-dl/": {
+      "views": 1
+    },
+    "/manufacturing-ai/": {
       "views": 1
     },
     "/news-mltb/": {
@@ -282,13 +294,22 @@
     "/tags/개념노트/": {
       "views": 1
     },
+    "/tags/경영컨설팅/": {
+      "views": 1
+    },
     "/tags/공동교육/": {
       "views": 2
+    },
+    "/tags/교육품질/": {
+      "views": 1
     },
     "/tags/기술이전/": {
       "views": 1
     },
     "/tags/대구한의대학교/": {
+      "views": 1
+    },
+    "/tags/마이데이터/": {
       "views": 1
     },
     "/tags/반도체/": {
