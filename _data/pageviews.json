@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-16T04:43:15.518182+00:00",
+    "generated_at": "2026-09-17T04:46:22.121197+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -45,14 +45,14 @@
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 1
     },
+    "/ai/ai-tutor/": {
+      "views": 1
+    },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 3
-    },
-    "/ai/chatgpt-work-codex-university-classroom/": {
-      "views": 1
     },
     "/ai/from-prompt-to-graph-engineering/": {
       "views": 4
@@ -64,7 +64,7 @@
       "views": 7
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 19
+      "views": 20
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
@@ -216,7 +216,13 @@
     "/investing/2026-09-04-us/": {
       "views": 1
     },
+    "/investing/2026-09-08-us/": {
+      "views": 1
+    },
     "/kmedi/": {
+      "views": 1
+    },
+    "/macos/aptx/": {
       "views": 1
     },
     "/macos/pip_install/": {
@@ -247,7 +253,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 3
+      "views": 4
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 2
@@ -315,6 +321,9 @@
     "/tags/교육품질/": {
       "views": 1
     },
+    "/tags/기기주권/": {
+      "views": 1
+    },
     "/tags/기술이전/": {
       "views": 1
     },
@@ -346,6 +355,9 @@
       "views": 1
     },
     "/tags/인제대/": {
+      "views": 1
+    },
+    "/tags/재정지원사업/": {
       "views": 1
     },
     "/tags/전공자율선택제/": {
