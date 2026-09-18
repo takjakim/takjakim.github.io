@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-17T04:46:22.121197+00:00",
+    "generated_at": "2026-09-18T04:35:27.210012+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 78
+      "views": 76
     },
     "/agentic-ai/": {
       "views": 1
@@ -15,13 +15,7 @@
     "/ai-work-data-control/": {
       "views": 1
     },
-    "/ai/accio-work-trade-agent/": {
-      "views": 1
-    },
     "/ai/agentic-ai-governance-runtime-control/": {
-      "views": 2
-    },
-    "/ai/ai-agent-intern-or-dangerous-contractor/": {
       "views": 2
     },
     "/ai/ai-agent-stop-conditions/": {
@@ -34,7 +28,7 @@
       "views": 1
     },
     "/ai/ai-goes-to-work/": {
-      "views": 4
+      "views": 2
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 4
@@ -44,6 +38,9 @@
     },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 1
+    },
+    "/ai/ai-took-easy-work-first/": {
+      "views": 6
     },
     "/ai/ai-tutor/": {
       "views": 1
@@ -55,7 +52,7 @@
       "views": 3
     },
     "/ai/from-prompt-to-graph-engineering/": {
-      "views": 4
+      "views": 2
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 1
@@ -77,9 +74,6 @@
     },
     "/ai/will-ai-remove-middle-managers/": {
       "views": 7
-    },
-    "/ai/work-to-tool-ai-coding/": {
-      "views": 1
     },
     "/anchor-policy/": {
       "views": 1
@@ -345,6 +339,9 @@
     "/tags/사립대구조개선법/": {
       "views": 1
     },
+    "/tags/산업분석/": {
+      "views": 1
+    },
     "/tags/성과환류/": {
       "views": 1
     },
@@ -384,6 +381,9 @@
     "/tags/해외인재/": {
       "views": 1
     },
+    "/tags/훈련기록/": {
+      "views": 1
+    },
     "/theory/chain-of-thought-cot/": {
       "views": 1
     },
@@ -410,6 +410,9 @@
     },
     "/theory/zpd/": {
       "views": 2
+    },
+    "/welcome-to-market-analysis/": {
+      "views": 1
     }
   }
 }
