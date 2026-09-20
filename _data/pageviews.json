@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-19T04:31:20.177171+00:00",
+    "generated_at": "2026-09-20T04:48:07.078744+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -55,7 +55,7 @@
       "views": 3
     },
     "/ai/from-prompt-to-graph-engineering/": {
-      "views": 2
+      "views": 1
     },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 1
@@ -71,9 +71,6 @@
     },
     "/ai/manufacturing-ai-agent-frame-process/": {
       "views": 3
-    },
-    "/ai/markdown-is-an-employee-yc/": {
-      "views": 1
     },
     "/ai/will-ai-remove-middle-managers/": {
       "views": 7
@@ -247,6 +244,9 @@
       "views": 1
     },
     "/risk-off/": {
+      "views": 1
+    },
+    "/risk-on/": {
       "views": 1
     },
     "/running/2026-05-31-trail-running-training-log/": {
