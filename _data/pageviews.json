@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-20T04:48:07.078744+00:00",
+    "generated_at": "2026-09-21T04:48:17.171450+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 77
+      "views": 79
     },
     "/agentic-ai/": {
       "views": 1
@@ -51,6 +51,9 @@
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
     },
+    "/ai/chatbot-to-judgment-api-jev/": {
+      "views": 4
+    },
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 3
     },
@@ -61,7 +64,7 @@
       "views": 1
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 7
+      "views": 8
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 20
@@ -73,7 +76,7 @@
       "views": 3
     },
     "/ai/will-ai-remove-middle-managers/": {
-      "views": 7
+      "views": 6
     },
     "/anchor-policy/": {
       "views": 1
@@ -133,6 +136,9 @@
       "views": 2
     },
     "/education/korea-central-asia-education-cooperation-2026/": {
+      "views": 1
+    },
+    "/education/kyungwoon-anchor-air-mobility/": {
       "views": 1
     },
     "/education/national-flagship-university-operating-model/": {
@@ -226,7 +232,7 @@
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 1
+      "views": 2
     },
     "/macos/tidal-dl/": {
       "views": 1
@@ -291,6 +297,9 @@
     "/tags/fdi/": {
       "views": 1
     },
+    "/tags/gou컨소시엄/": {
+      "views": 1
+    },
     "/tags/hstech/": {
       "views": 1
     },
@@ -334,6 +343,9 @@
       "views": 1
     },
     "/tags/마이데이터/": {
+      "views": 1
+    },
+    "/tags/바이브코딩/": {
       "views": 1
     },
     "/tags/반도체/": {
@@ -415,9 +427,6 @@
       "views": 1
     },
     "/theory/r4-obsidian/": {
-      "views": 1
-    },
-    "/theory/zpd/": {
       "views": 1
     },
     "/welcome-to-market-analysis/": {
