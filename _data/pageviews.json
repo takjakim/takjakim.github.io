@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-21T04:48:17.171450+00:00",
+    "generated_at": "2026-09-22T04:46:33.558200+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 79
+      "views": 85
     },
     "/agentic-ai/": {
       "views": 1
@@ -31,7 +31,7 @@
       "views": 1
     },
     "/ai/ai-goes-to-work/": {
-      "views": 2
+      "views": 3
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 4
@@ -52,7 +52,7 @@
       "views": 1
     },
     "/ai/chatbot-to-judgment-api-jev/": {
-      "views": 4
+      "views": 6
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 3
@@ -74,6 +74,9 @@
     },
     "/ai/manufacturing-ai-agent-frame-process/": {
       "views": 3
+    },
+    "/ai/vibe-coding-to-spec-coding/": {
+      "views": 1
     },
     "/ai/will-ai-remove-middle-managers/": {
       "views": 6
@@ -120,6 +123,9 @@
     "/education/dong-eui-anchor-operating-model-2026/": {
       "views": 1
     },
+    "/education/edtech-softlab-ax-operating-model-2026/": {
+      "views": 1
+    },
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 3
     },
@@ -147,19 +153,22 @@
     "/education/rise-governance-operating-model-2026/": {
       "views": 1
     },
+    "/education/socratic-questioning/": {
+      "views": 1
+    },
     "/education/students-use-ai-scores-fall/": {
       "views": 1
     },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 1
     },
-    "/education/university-ai-ethics-operating-model/": {
-      "views": 4
-    },
-    "/education/zpd/": {
+    "/education/university-ai-basic-education-operating-model/": {
       "views": 1
     },
-    "/education/공유대학/": {
+    "/education/university-ai-ethics-operating-model/": {
+      "views": 5
+    },
+    "/education/zpd/": {
       "views": 1
     },
     "/education/사업-포트폴리오/": {
@@ -172,7 +181,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 7
+      "views": 8
     },
     "/gyeonggi-five-regions/": {
       "views": 1
@@ -225,6 +234,9 @@
     "/investing/2026-09-08-us/": {
       "views": 1
     },
+    "/investing/2026-09-18-us/": {
+      "views": 1
+    },
     "/kmedi/": {
       "views": 1
     },
@@ -247,6 +259,9 @@
       "views": 1
     },
     "/performance-feedback-loop/": {
+      "views": 1
+    },
+    "/regional-industry-academic-network/": {
       "views": 1
     },
     "/risk-off/": {
@@ -301,6 +316,9 @@
       "views": 1
     },
     "/tags/hstech/": {
+      "views": 1
+    },
+    "/tags/low-altitude-economy/": {
       "views": 1
     },
     "/tags/mdx/": {
@@ -370,6 +388,9 @@
       "views": 1
     },
     "/tags/앵커/": {
+      "views": 1
+    },
+    "/tags/에듀테크/": {
       "views": 1
     },
     "/tags/인제대/": {
