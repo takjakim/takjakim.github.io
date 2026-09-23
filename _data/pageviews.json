@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-22T04:46:33.558200+00:00",
+    "generated_at": "2026-09-23T04:38:48.117281+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 85
+      "views": 87
     },
     "/agentic-ai/": {
       "views": 1
@@ -117,6 +117,9 @@
     "/education/changwon-university-issues-2026/": {
       "views": 2
     },
+    "/education/chunhae-yoga-degree-wellness-strategy/": {
+      "views": 1
+    },
     "/education/cnu-kongju-integration-governance/": {
       "views": 1
     },
@@ -181,7 +184,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 8
+      "views": 9
     },
     "/gyeonggi-five-regions/": {
       "views": 1
@@ -277,7 +280,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 4
+      "views": 5
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 2
