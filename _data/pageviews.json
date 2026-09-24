@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-23T04:38:48.117281+00:00",
+    "generated_at": "2026-09-24T04:39:25.904658+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 87
+      "views": 86
     },
     "/agentic-ai/": {
       "views": 1
@@ -25,7 +25,7 @@
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 10
+      "views": 11
     },
     "/ai/ai-fermat-math-understanding/": {
       "views": 1
@@ -64,7 +64,7 @@
       "views": 1
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 8
+      "views": 9
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 20
@@ -169,7 +169,7 @@
       "views": 1
     },
     "/education/university-ai-ethics-operating-model/": {
-      "views": 5
+      "views": 6
     },
     "/education/zpd/": {
       "views": 1
@@ -208,9 +208,6 @@
       "views": 1
     },
     "/investing/2026-08-03-korea/": {
-      "views": 1
-    },
-    "/investing/2026-08-03-us/": {
       "views": 1
     },
     "/investing/2026-08-07-us/": {
@@ -420,6 +417,9 @@
     "/tags/통합모집/": {
       "views": 1
     },
+    "/tags/편집/": {
+      "views": 1
+    },
     "/tags/하네스엔지니어링/": {
       "views": 1
     },
@@ -444,10 +444,10 @@
     "/theory/kobest/": {
       "views": 1
     },
-    "/theory/mmlu/": {
+    "/theory/krashen-i1/": {
       "views": 1
     },
-    "/theory/perplexity-ppl/": {
+    "/theory/mmlu/": {
       "views": 1
     },
     "/theory/r4-obsidian/": {
