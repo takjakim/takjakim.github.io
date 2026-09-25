@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-24T04:39:25.904658+00:00",
+    "generated_at": "2026-09-25T04:49:25.190610+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -142,7 +142,7 @@
       "views": 1
     },
     "/education/kentech-organization-issues-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/korea-central-asia-education-cooperation-2026/": {
       "views": 1
@@ -199,9 +199,6 @@
       "views": 1
     },
     "/investing/2026-04-30-us/": {
-      "views": 1
-    },
-    "/investing/2026-05-15-korea/": {
       "views": 1
     },
     "/investing/2026-06-17-us/": {
@@ -333,6 +330,9 @@
     "/tags/running/": {
       "views": 5
     },
+    "/tags/snapshot/": {
+      "views": 1
+    },
     "/tags/studykorea300k/": {
       "views": 1
     },
@@ -363,6 +363,9 @@
     "/tags/마이데이터/": {
       "views": 1
     },
+    "/tags/무역실무/": {
+      "views": 1
+    },
     "/tags/바이브코딩/": {
       "views": 1
     },
@@ -384,6 +387,9 @@
     "/tags/성과환류/": {
       "views": 1
     },
+    "/tags/세한대/": {
+      "views": 1
+    },
     "/tags/식품영양/": {
       "views": 1
     },
@@ -391,6 +397,9 @@
       "views": 1
     },
     "/tags/에듀테크/": {
+      "views": 1
+    },
+    "/tags/연암대/": {
       "views": 1
     },
     "/tags/인제대/": {
@@ -409,6 +418,9 @@
       "views": 1
     },
     "/tags/지역성장-인재양성체계/": {
+      "views": 1
+    },
+    "/tags/체류자격/": {
       "views": 1
     },
     "/tags/충남대/": {
