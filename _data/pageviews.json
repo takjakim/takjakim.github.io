@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-26T04:49:56.809738+00:00",
+    "generated_at": "2026-09-27T05:11:53.424225+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 85
+      "views": 84
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -64,7 +64,7 @@
       "views": 1
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 9
+      "views": 10
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 20
@@ -124,7 +124,7 @@
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 3
+      "views": 5
     },
     "/education/education-finance-future-fund/": {
       "views": 2
@@ -184,6 +184,9 @@
       "views": 8
     },
     "/gyeonggi-five-regions/": {
+      "views": 1
+    },
+    "/investing/2026-02-11-us/": {
       "views": 1
     },
     "/investing/2026-03-10-us/": {
@@ -294,13 +297,7 @@
     "/tags/dx/": {
       "views": 1
     },
-    "/tags/fdi/": {
-      "views": 1
-    },
     "/tags/gou컨소시엄/": {
-      "views": 1
-    },
-    "/tags/hstech/": {
       "views": 1
     },
     "/tags/low-altitude-economy/": {
@@ -336,6 +333,9 @@
     "/tags/교육품질/": {
       "views": 1
     },
+    "/tags/국제교육협력/": {
+      "views": 1
+    },
     "/tags/기기주권/": {
       "views": 1
     },
@@ -363,6 +363,9 @@
     "/tags/부산대학교/": {
       "views": 1
     },
+    "/tags/분석설계/": {
+      "views": 1
+    },
     "/tags/분자대사/": {
       "views": 1
     },
@@ -372,10 +375,16 @@
     "/tags/산업분석/": {
       "views": 1
     },
+    "/tags/산학공동기술개발/": {
+      "views": 1
+    },
     "/tags/성과환류/": {
       "views": 1
     },
     "/tags/세한대/": {
+      "views": 1
+    },
+    "/tags/순천제일대/": {
       "views": 1
     },
     "/tags/식품영양/": {
