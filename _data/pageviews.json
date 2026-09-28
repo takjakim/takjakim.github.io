@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-27T05:11:53.424225+00:00",
+    "generated_at": "2026-09-28T05:15:34.622303+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 84
+      "views": 83
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -40,7 +40,7 @@
       "views": 1
     },
     "/ai/ai-smarter-human-must-doubt/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-took-easy-work-first/": {
       "views": 7
@@ -109,7 +109,7 @@
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/chunhae-yoga-degree-wellness-strategy/": {
       "views": 1
@@ -124,7 +124,7 @@
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 5
+      "views": 6
     },
     "/education/education-finance-future-fund/": {
       "views": 2
@@ -271,7 +271,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 5
+      "views": 6
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 2
@@ -312,13 +312,16 @@
     "/tags/obsidian/": {
       "views": 1
     },
+    "/tags/react/": {
+      "views": 1
+    },
     "/tags/running/": {
       "views": 5
     },
     "/tags/snapshot/": {
       "views": 1
     },
-    "/tags/studykorea300k/": {
+    "/tags/spx/": {
       "views": 1
     },
     "/tags/강원대학교강릉캠퍼스/": {
@@ -347,6 +350,9 @@
     },
     "/tags/디자인/": {
       "views": 1
+    },
+    "/tags/런케이션/": {
+      "views": 2
     },
     "/tags/마이데이터/": {
       "views": 1
@@ -378,6 +384,9 @@
     "/tags/산학공동기술개발/": {
       "views": 1
     },
+    "/tags/성과모델링/": {
+      "views": 1
+    },
     "/tags/성과환류/": {
       "views": 1
     },
@@ -387,10 +396,16 @@
     "/tags/순천제일대/": {
       "views": 1
     },
+    "/tags/스마트팩토리/": {
+      "views": 1
+    },
     "/tags/식품영양/": {
       "views": 1
     },
     "/tags/앵커/": {
+      "views": 1
+    },
+    "/tags/에너지공대/": {
       "views": 1
     },
     "/tags/에듀테크/": {
@@ -429,6 +444,9 @@
     "/tags/편집/": {
       "views": 1
     },
+    "/tags/품질관리/": {
+      "views": 1
+    },
     "/tags/하네스엔지니어링/": {
       "views": 1
     },
@@ -460,6 +478,9 @@
       "views": 1
     },
     "/theory/r4-obsidian/": {
+      "views": 1
+    },
+    "/theory/type-token-ratio-ttr/": {
       "views": 1
     },
     "/welcome-to-market-analysis/": {
