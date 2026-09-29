@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-09-28T05:15:34.622303+00:00",
+    "generated_at": "2026-09-29T05:37:23.630132+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 83
+      "views": 84
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -22,7 +22,7 @@
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 12
+      "views": 13
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 5
@@ -39,11 +39,14 @@
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 1
     },
+    "/ai/ai-slop-human-responsibility/": {
+      "views": 1
+    },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 2
     },
     "/ai/ai-took-easy-work-first/": {
-      "views": 7
+      "views": 10
     },
     "/ai/ai-tutor/": {
       "views": 1
@@ -117,9 +120,6 @@
     "/education/cnu-kongju-integration-governance/": {
       "views": 1
     },
-    "/education/dong-eui-anchor-operating-model-2026/": {
-      "views": 1
-    },
     "/education/edtech-softlab-ax-operating-model-2026/": {
       "views": 1
     },
@@ -130,6 +130,9 @@
       "views": 2
     },
     "/education/first-career-project-budget/": {
+      "views": 1
+    },
+    "/education/flagship-national-university/": {
       "views": 1
     },
     "/education/junior-college-presidents-survival-strategy/": {
@@ -145,7 +148,7 @@
       "views": 1
     },
     "/education/national-flagship-university-operating-model/": {
-      "views": 2
+      "views": 4
     },
     "/education/rise-governance-operating-model-2026/": {
       "views": 1
@@ -271,7 +274,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 6
+      "views": 7
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 2
@@ -283,6 +286,9 @@
       "views": 3
     },
     "/tags/ai디자인센터/": {
+      "views": 1
+    },
+    "/tags/ai시스템/": {
       "views": 1
     },
     "/tags/ai인프라/": {
@@ -301,9 +307,6 @@
       "views": 1
     },
     "/tags/low-altitude-economy/": {
-      "views": 1
-    },
-    "/tags/mdx/": {
       "views": 1
     },
     "/tags/mhs/": {
@@ -349,6 +352,9 @@
       "views": 1
     },
     "/tags/디자인/": {
+      "views": 1
+    },
+    "/tags/디지털트윈/": {
       "views": 1
     },
     "/tags/런케이션/": {
@@ -420,9 +426,6 @@
     "/tags/재정지원사업/": {
       "views": 1
     },
-    "/tags/전공자율선택제/": {
-      "views": 1
-    },
     "/tags/전략산업/": {
       "views": 1
     },
@@ -433,7 +436,7 @@
       "views": 1
     },
     "/tags/체류자격/": {
-      "views": 1
+      "views": 2
     },
     "/tags/충남대/": {
       "views": 1
