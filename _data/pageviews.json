@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-29T05:37:23.630132+00:00",
+    "generated_at": "2026-09-30T05:25:29.150725+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -22,7 +22,7 @@
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 13
+      "views": 14
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 5
@@ -46,7 +46,7 @@
       "views": 2
     },
     "/ai/ai-took-easy-work-first/": {
-      "views": 10
+      "views": 13
     },
     "/ai/ai-tutor/": {
       "views": 1
@@ -135,7 +135,13 @@
     "/education/flagship-national-university/": {
       "views": 1
     },
+    "/education/glamp-research-hub-operating-model/": {
+      "views": 1
+    },
     "/education/junior-college-presidents-survival-strategy/": {
+      "views": 1
+    },
+    "/education/kangwon-campus-innovation-park/": {
       "views": 1
     },
     "/education/kentech-organization-issues-2026/": {
@@ -208,9 +214,6 @@
       "views": 1
     },
     "/investing/2026-08-03-korea/": {
-      "views": 1
-    },
-    "/investing/2026-08-07-us/": {
       "views": 1
     },
     "/investing/2026-08-14-korea/": {
@@ -294,6 +297,9 @@
     "/tags/ai인프라/": {
       "views": 1
     },
+    "/tags/automation/": {
+      "views": 1
+    },
     "/tags/codex/": {
       "views": 1
     },
@@ -337,6 +343,9 @@
       "views": 2
     },
     "/tags/교육품질/": {
+      "views": 1
+    },
+    "/tags/국립금오공과대학교/": {
       "views": 1
     },
     "/tags/국제교육협력/": {
@@ -406,9 +415,6 @@
       "views": 1
     },
     "/tags/식품영양/": {
-      "views": 1
-    },
-    "/tags/앵커/": {
       "views": 1
     },
     "/tags/에너지공대/": {
