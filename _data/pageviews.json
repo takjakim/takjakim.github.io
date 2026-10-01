@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-09-30T05:25:29.150725+00:00",
+    "generated_at": "2026-10-01T05:43:23.288056+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -75,6 +75,9 @@
     "/ai/manufacturing-ai-agent-frame-process/": {
       "views": 3
     },
+    "/ai/session5-technology-leadership-working-poverty/": {
+      "views": 1
+    },
     "/ai/vibe-coding-to-spec-coding/": {
       "views": 1
     },
@@ -102,6 +105,9 @@
     "/daily-mltb/": {
       "views": 1
     },
+    "/education/ai-centered-university-ax-operating-model/": {
+      "views": 1
+    },
     "/education/anchor-growth-engine-talent/": {
       "views": 1
     },
@@ -112,7 +118,7 @@
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 3
+      "views": 2
     },
     "/education/chunhae-yoga-degree-wellness-strategy/": {
       "views": 1
@@ -306,6 +312,9 @@
     "/tags/dev/": {
       "views": 1
     },
+    "/tags/dow/": {
+      "views": 1
+    },
     "/tags/dx/": {
       "views": 1
     },
@@ -358,6 +367,9 @@
       "views": 1
     },
     "/tags/대구한의대학교/": {
+      "views": 1
+    },
+    "/tags/대학정보공시/": {
       "views": 1
     },
     "/tags/디자인/": {
@@ -445,9 +457,6 @@
       "views": 2
     },
     "/tags/충남대/": {
-      "views": 1
-    },
-    "/tags/통합모집/": {
       "views": 1
     },
     "/tags/편집/": {
