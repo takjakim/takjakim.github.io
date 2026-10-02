@@ -1,15 +1,18 @@
 {
   "meta": {
-    "generated_at": "2026-10-01T05:43:23.288056+00:00",
+    "generated_at": "2026-10-02T05:27:24.572724+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 84
+      "views": 97
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
+      "views": 1
+    },
+    "/about/": {
       "views": 1
     },
     "/ai-investment-analysis/": {
@@ -37,10 +40,10 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 1
+      "views": 3
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 2
@@ -102,16 +105,22 @@
     "/daegu-haany-university-kmedi-2026/": {
       "views": 2
     },
-    "/daily-mltb/": {
+    "/dev/tech/test/": {
       "views": 1
     },
     "/education/ai-centered-university-ax-operating-model/": {
+      "views": 4
+    },
+    "/education/ai-microdegree-digital-badge-university-strategy-2026/": {
       "views": 1
     },
     "/education/anchor-growth-engine-talent/": {
       "views": 1
     },
     "/education/anchor-performance-budget-2026/": {
+      "views": 1
+    },
+    "/education/arwu-award-research-governance/": {
       "views": 1
     },
     "/education/busan-anchor-open-uic/": {
@@ -130,15 +139,18 @@
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 6
+      "views": 4
     },
     "/education/education-finance-future-fund/": {
-      "views": 2
+      "views": 1
     },
     "/education/first-career-project-budget/": {
       "views": 1
     },
     "/education/flagship-national-university/": {
+      "views": 1
+    },
+    "/education/gangwon-rise-anchor-performance-2026/": {
       "views": 1
     },
     "/education/glamp-research-hub-operating-model/": {
@@ -163,7 +175,7 @@
       "views": 4
     },
     "/education/rise-governance-operating-model-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/socratic-questioning/": {
       "views": 1
@@ -178,7 +190,13 @@
       "views": 1
     },
     "/education/university-ai-ethics-operating-model/": {
-      "views": 6
+      "views": 7
+    },
+    "/education/university-merger-operating-model/": {
+      "views": 1
+    },
+    "/education/visa-based-student-pathway/": {
+      "views": 1
     },
     "/education/youth-policy-forum-feedback-loop/": {
       "views": 1
@@ -196,7 +214,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 8
+      "views": 12
     },
     "/gyeonggi-five-regions/": {
       "views": 1
@@ -219,16 +237,10 @@
     "/investing/2026-06-17-us/": {
       "views": 1
     },
-    "/investing/2026-08-03-korea/": {
-      "views": 1
-    },
     "/investing/2026-08-14-korea/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-08-14-us/": {
-      "views": 1
-    },
-    "/investing/2026-08-24-korea/": {
       "views": 1
     },
     "/investing/2026-08-25-us/": {
@@ -246,6 +258,12 @@
     "/investing/2026-09-18-us/": {
       "views": 1
     },
+    "/investing/2026-09-28-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-30-korea/": {
+      "views": 1
+    },
     "/kmedi/": {
       "views": 1
     },
@@ -253,7 +271,7 @@
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 2
+      "views": 1
     },
     "/macos/tidal-dl/": {
       "views": 1
@@ -261,16 +279,7 @@
     "/manufacturing-ai/": {
       "views": 1
     },
-    "/news-mltb/": {
-      "views": 1
-    },
-    "/performance-feedback-loop/": {
-      "views": 1
-    },
     "/regional-industry-academic-network/": {
-      "views": 1
-    },
-    "/risk-off/": {
       "views": 1
     },
     "/risk-on/": {
@@ -283,16 +292,16 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 7
+      "views": 8
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 2
     },
     "/tags/": {
-      "views": 2
+      "views": 3
     },
     "/tags/ai/": {
-      "views": 3
+      "views": 4
     },
     "/tags/ai디자인센터/": {
       "views": 1
@@ -310,7 +319,7 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 1
+      "views": 2
     },
     "/tags/dow/": {
       "views": 1
@@ -318,10 +327,16 @@
     "/tags/dx/": {
       "views": 1
     },
+    "/tags/global/": {
+      "views": 1
+    },
     "/tags/gou컨소시엄/": {
       "views": 1
     },
     "/tags/low-altitude-economy/": {
+      "views": 1
+    },
+    "/tags/market/": {
       "views": 1
     },
     "/tags/mhs/": {
@@ -367,6 +382,12 @@
       "views": 1
     },
     "/tags/대구한의대학교/": {
+      "views": 1
+    },
+    "/tags/대학구조개혁/": {
+      "views": 1
+    },
+    "/tags/대학리뷰/": {
       "views": 1
     },
     "/tags/대학정보공시/": {
@@ -450,8 +471,11 @@
     "/tags/제조ai/": {
       "views": 1
     },
-    "/tags/지역성장-인재양성체계/": {
+    "/tags/조직운영/": {
       "views": 1
+    },
+    "/tags/지역성장-인재양성체계/": {
+      "views": 2
     },
     "/tags/체류자격/": {
       "views": 2
@@ -490,12 +514,6 @@
       "views": 1
     },
     "/theory/krashen-i1/": {
-      "views": 1
-    },
-    "/theory/mmlu/": {
-      "views": 1
-    },
-    "/theory/r4-obsidian/": {
       "views": 1
     },
     "/theory/type-token-ratio-ttr/": {
