@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-02T05:27:24.572724+00:00",
+    "generated_at": "2026-10-03T05:10:44.761957+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 97
+      "views": 99
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -156,13 +156,13 @@
     "/education/glamp-research-hub-operating-model/": {
       "views": 1
     },
+    "/education/inje-uhs-hospital-roadmap/": {
+      "views": 1
+    },
     "/education/junior-college-presidents-survival-strategy/": {
       "views": 1
     },
     "/education/kangwon-campus-innovation-park/": {
-      "views": 1
-    },
-    "/education/kentech-organization-issues-2026/": {
       "views": 1
     },
     "/education/korea-central-asia-education-cooperation-2026/": {
@@ -175,7 +175,7 @@
       "views": 4
     },
     "/education/rise-governance-operating-model-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/socratic-questioning/": {
       "views": 1
@@ -222,6 +222,9 @@
     "/investing/2026-02-11-us/": {
       "views": 1
     },
+    "/investing/2026-03-09-korea/": {
+      "views": 1
+    },
     "/investing/2026-03-10-us/": {
       "views": 1
     },
@@ -231,7 +234,13 @@
     "/investing/2026-03-30-korea/": {
       "views": 1
     },
+    "/investing/2026-04-16-us/": {
+      "views": 1
+    },
     "/investing/2026-04-30-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-17-korea/": {
       "views": 1
     },
     "/investing/2026-06-17-us/": {
@@ -264,6 +273,9 @@
     "/investing/2026-09-30-korea/": {
       "views": 1
     },
+    "/investing/2026-09-30-us/": {
+      "views": 1
+    },
     "/kmedi/": {
       "views": 1
     },
@@ -288,6 +300,9 @@
     "/running/2026-05-31-trail-running-training-log/": {
       "views": 1
     },
+    "/running/2026-06-07-trail-running-training-log/": {
+      "views": 1
+    },
     "/running/2026-06-12-trail-running-training-log/": {
       "views": 1
     },
@@ -295,7 +310,7 @@
       "views": 8
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 2
+      "views": 3
     },
     "/tags/": {
       "views": 3
@@ -319,18 +334,21 @@
       "views": 1
     },
     "/tags/dev/": {
-      "views": 2
+      "views": 3
     },
     "/tags/dow/": {
-      "views": 1
-    },
-    "/tags/dx/": {
       "views": 1
     },
     "/tags/global/": {
       "views": 1
     },
     "/tags/gou컨소시엄/": {
+      "views": 1
+    },
+    "/tags/gx/": {
+      "views": 1
+    },
+    "/tags/hstech/": {
       "views": 1
     },
     "/tags/low-altitude-economy/": {
@@ -349,7 +367,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 5
+      "views": 6
     },
     "/tags/snapshot/": {
       "views": 1
@@ -390,6 +408,9 @@
     "/tags/대학리뷰/": {
       "views": 1
     },
+    "/tags/대학재정/": {
+      "views": 1
+    },
     "/tags/대학정보공시/": {
       "views": 1
     },
@@ -423,9 +444,6 @@
     "/tags/분자대사/": {
       "views": 1
     },
-    "/tags/사립대구조개선법/": {
-      "views": 1
-    },
     "/tags/산업분석/": {
       "views": 1
     },
@@ -450,6 +468,9 @@
     "/tags/식품영양/": {
       "views": 1
     },
+    "/tags/아이패드/": {
+      "views": 1
+    },
     "/tags/에너지공대/": {
       "views": 1
     },
@@ -459,13 +480,10 @@
     "/tags/연암대/": {
       "views": 1
     },
-    "/tags/인제대/": {
-      "views": 1
-    },
     "/tags/재정지원사업/": {
       "views": 1
     },
-    "/tags/전략산업/": {
+    "/tags/전문대학특성화/": {
       "views": 1
     },
     "/tags/제조ai/": {
@@ -477,10 +495,16 @@
     "/tags/지역성장-인재양성체계/": {
       "views": 2
     },
+    "/tags/지역정주/": {
+      "views": 1
+    },
     "/tags/체류자격/": {
       "views": 2
     },
     "/tags/충남대/": {
+      "views": 1
+    },
+    "/tags/특성화인센티브/": {
       "views": 1
     },
     "/tags/편집/": {
