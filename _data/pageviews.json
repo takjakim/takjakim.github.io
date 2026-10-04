@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-03T05:10:44.761957+00:00",
+    "generated_at": "2026-10-04T05:44:00.289681+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 99
+      "views": 97
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -63,9 +63,6 @@
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 3
     },
-    "/ai/from-prompt-to-graph-engineering/": {
-      "views": 1
-    },
     "/ai/gemini-robotics-2-physical-ai/": {
       "views": 1
     },
@@ -105,6 +102,9 @@
     "/daegu-haany-university-kmedi-2026/": {
       "views": 2
     },
+    "/dev/Github-Jekyll-한글폰트설정방법/": {
+      "views": 1
+    },
     "/dev/tech/test/": {
       "views": 1
     },
@@ -123,9 +123,6 @@
     "/education/arwu-award-research-governance/": {
       "views": 1
     },
-    "/education/busan-anchor-open-uic/": {
-      "views": 1
-    },
     "/education/changwon-university-issues-2026/": {
       "views": 2
     },
@@ -140,9 +137,6 @@
     },
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 4
-    },
-    "/education/education-finance-future-fund/": {
-      "views": 1
     },
     "/education/first-career-project-budget/": {
       "views": 1
@@ -165,6 +159,9 @@
     "/education/kangwon-campus-innovation-park/": {
       "views": 1
     },
+    "/education/kentech-organization-issues-2026/": {
+      "views": 1
+    },
     "/education/korea-central-asia-education-cooperation-2026/": {
       "views": 1
     },
@@ -173,6 +170,9 @@
     },
     "/education/national-flagship-university-operating-model/": {
       "views": 4
+    },
+    "/education/oecd-education-indicators-university-strategy-2026/": {
+      "views": 1
     },
     "/education/rise-governance-operating-model-2026/": {
       "views": 1
@@ -205,9 +205,6 @@
       "views": 1
     },
     "/education/사업-포트폴리오/": {
-      "views": 1
-    },
-    "/education/실행-구조/": {
       "views": 1
     },
     "/education/지역특화형-비자/": {
@@ -270,8 +267,11 @@
     "/investing/2026-09-28-us/": {
       "views": 1
     },
-    "/investing/2026-09-30-korea/": {
+    "/investing/2026-09-29-korea/": {
       "views": 1
+    },
+    "/investing/2026-09-30-korea/": {
+      "views": 2
     },
     "/investing/2026-09-30-us/": {
       "views": 1
@@ -315,6 +315,9 @@
     "/tags/": {
       "views": 3
     },
+    "/tags/agent/": {
+      "views": 1
+    },
     "/tags/ai/": {
       "views": 4
     },
@@ -351,6 +354,9 @@
     "/tags/hstech/": {
       "views": 1
     },
+    "/tags/labor/": {
+      "views": 1
+    },
     "/tags/low-altitude-economy/": {
       "views": 1
     },
@@ -361,6 +367,9 @@
       "views": 1
     },
     "/tags/obsidian/": {
+      "views": 1
+    },
+    "/tags/puppeteer/": {
       "views": 1
     },
     "/tags/react/": {
@@ -400,6 +409,9 @@
       "views": 1
     },
     "/tags/대구한의대학교/": {
+      "views": 1
+    },
+    "/tags/대학구조개선/": {
       "views": 1
     },
     "/tags/대학구조개혁/": {
@@ -501,6 +513,9 @@
     "/tags/체류자격/": {
       "views": 2
     },
+    "/tags/충남rise/": {
+      "views": 1
+    },
     "/tags/충남대/": {
       "views": 1
     },
@@ -516,7 +531,7 @@
     "/tags/하네스엔지니어링/": {
       "views": 1
     },
-    "/tags/해외인재/": {
+    "/tags/학습지원/": {
       "views": 1
     },
     "/tags/훈련기록/": {
@@ -535,7 +550,7 @@
       "views": 1
     },
     "/theory/kobest/": {
-      "views": 1
+      "views": 2
     },
     "/theory/krashen-i1/": {
       "views": 1
