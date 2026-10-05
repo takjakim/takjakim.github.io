@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-04T05:44:00.289681+00:00",
+    "generated_at": "2026-10-05T05:28:20.204947+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 97
+      "views": 98
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -129,9 +129,6 @@
     "/education/chunhae-yoga-degree-wellness-strategy/": {
       "views": 1
     },
-    "/education/cnu-kongju-integration-governance/": {
-      "views": 1
-    },
     "/education/edtech-softlab-ax-operating-model-2026/": {
       "views": 1
     },
@@ -169,7 +166,7 @@
       "views": 1
     },
     "/education/national-flagship-university-operating-model/": {
-      "views": 4
+      "views": 3
     },
     "/education/oecd-education-indicators-university-strategy-2026/": {
       "views": 1
@@ -184,6 +181,9 @@
       "views": 1
     },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
+      "views": 1
+    },
+    "/education/topik-ai-digital-operating-model/": {
       "views": 1
     },
     "/education/university-ai-basic-education-operating-model/": {
@@ -243,13 +243,7 @@
     "/investing/2026-06-17-us/": {
       "views": 1
     },
-    "/investing/2026-08-14-korea/": {
-      "views": 1
-    },
     "/investing/2026-08-14-us/": {
-      "views": 1
-    },
-    "/investing/2026-08-25-us/": {
       "views": 1
     },
     "/investing/2026-08-31-korea/": {
@@ -289,6 +283,9 @@
       "views": 1
     },
     "/manufacturing-ai/": {
+      "views": 1
+    },
+    "/notes/학생경로-관리/": {
       "views": 1
     },
     "/regional-industry-academic-network/": {
@@ -399,6 +396,9 @@
     "/tags/국립금오공과대학교/": {
       "views": 1
     },
+    "/tags/국립한밭대학교/": {
+      "views": 1
+    },
     "/tags/국제교육협력/": {
       "views": 1
     },
@@ -465,9 +465,6 @@
     "/tags/성과모델링/": {
       "views": 1
     },
-    "/tags/성과환류/": {
-      "views": 1
-    },
     "/tags/세한대/": {
       "views": 1
     },
@@ -516,9 +513,6 @@
     "/tags/충남rise/": {
       "views": 1
     },
-    "/tags/충남대/": {
-      "views": 1
-    },
     "/tags/특성화인센티브/": {
       "views": 1
     },
@@ -550,7 +544,7 @@
       "views": 1
     },
     "/theory/kobest/": {
-      "views": 2
+      "views": 1
     },
     "/theory/krashen-i1/": {
       "views": 1
