@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-05T05:28:20.204947+00:00",
+    "generated_at": "2026-10-06T06:12:28.754960+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 98
+      "views": 93
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -34,7 +34,7 @@
       "views": 1
     },
     "/ai/ai-goes-to-work/": {
-      "views": 3
+      "views": 1
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 4
@@ -63,9 +63,6 @@
     "/ai/chatgpt-desktop-codex-work-os/": {
       "views": 3
     },
-    "/ai/gemini-robotics-2-physical-ai/": {
-      "views": 1
-    },
     "/ai/hyundai-autonomous-data-flywheel/": {
       "views": 10
     },
@@ -82,7 +79,7 @@
       "views": 1
     },
     "/ai/will-ai-remove-middle-managers/": {
-      "views": 6
+      "views": 1
     },
     "/anchor-policy/": {
       "views": 1
@@ -129,11 +126,14 @@
     "/education/chunhae-yoga-degree-wellness-strategy/": {
       "views": 1
     },
+    "/education/data-standardization/": {
+      "views": 1
+    },
     "/education/edtech-softlab-ax-operating-model-2026/": {
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 4
+      "views": 3
     },
     "/education/first-career-project-budget/": {
       "views": 1
@@ -166,7 +166,7 @@
       "views": 1
     },
     "/education/national-flagship-university-operating-model/": {
-      "views": 3
+      "views": 2
     },
     "/education/oecd-education-indicators-university-strategy-2026/": {
       "views": 1
@@ -201,13 +201,13 @@
     "/education/youth-policy-forum-feedback-loop/": {
       "views": 1
     },
-    "/education/zpd/": {
-      "views": 1
-    },
     "/education/사업-포트폴리오/": {
       "views": 1
     },
     "/education/지역특화형-비자/": {
+      "views": 1
+    },
+    "/generative-ai-privacy-protection/": {
       "views": 1
     },
     "/graph/": {
@@ -220,9 +220,6 @@
       "views": 1
     },
     "/investing/2026-03-09-korea/": {
-      "views": 1
-    },
-    "/investing/2026-03-10-us/": {
       "views": 1
     },
     "/investing/2026-03-17-korea/": {
@@ -243,13 +240,7 @@
     "/investing/2026-06-17-us/": {
       "views": 1
     },
-    "/investing/2026-08-14-us/": {
-      "views": 1
-    },
     "/investing/2026-08-31-korea/": {
-      "views": 1
-    },
-    "/investing/2026-09-04-us/": {
       "views": 1
     },
     "/investing/2026-09-08-us/": {
@@ -310,13 +301,13 @@
       "views": 3
     },
     "/tags/": {
-      "views": 3
+      "views": 1
     },
     "/tags/agent/": {
       "views": 1
     },
     "/tags/ai/": {
-      "views": 4
+      "views": 1
     },
     "/tags/ai디자인센터/": {
       "views": 1
@@ -330,11 +321,17 @@
     "/tags/automation/": {
       "views": 1
     },
+    "/tags/b2b/": {
+      "views": 1
+    },
     "/tags/codex/": {
       "views": 1
     },
+    "/tags/cxmt/": {
+      "views": 1
+    },
     "/tags/dev/": {
-      "views": 3
+      "views": 2
     },
     "/tags/dow/": {
       "views": 1
@@ -349,6 +346,9 @@
       "views": 1
     },
     "/tags/hstech/": {
+      "views": 1
+    },
+    "/tags/knowledge-ecosystem/": {
       "views": 1
     },
     "/tags/labor/": {
@@ -381,6 +381,9 @@
     "/tags/spx/": {
       "views": 1
     },
+    "/tags/startup/": {
+      "views": 1
+    },
     "/tags/강원대학교강릉캠퍼스/": {
       "views": 1
     },
@@ -388,7 +391,7 @@
       "views": 1
     },
     "/tags/공동교육/": {
-      "views": 2
+      "views": 1
     },
     "/tags/교육품질/": {
       "views": 1
@@ -474,9 +477,6 @@
     "/tags/스마트팩토리/": {
       "views": 1
     },
-    "/tags/식품영양/": {
-      "views": 1
-    },
     "/tags/아이패드/": {
       "views": 1
     },
@@ -487,6 +487,9 @@
       "views": 1
     },
     "/tags/연암대/": {
+      "views": 1
+    },
+    "/tags/융합교육/": {
       "views": 1
     },
     "/tags/재정지원사업/": {
