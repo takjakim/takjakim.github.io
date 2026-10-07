@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-06T06:12:28.754960+00:00",
+    "generated_at": "2026-10-07T05:49:12.072352+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 93
+      "views": 92
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -207,6 +207,9 @@
     "/education/지역특화형-비자/": {
       "views": 1
     },
+    "/education/직무-한국어/": {
+      "views": 1
+    },
     "/generative-ai-privacy-protection/": {
       "views": 1
     },
@@ -225,7 +228,7 @@
     "/investing/2026-03-17-korea/": {
       "views": 1
     },
-    "/investing/2026-03-30-korea/": {
+    "/investing/2026-04-02-korea/": {
       "views": 1
     },
     "/investing/2026-04-16-us/": {
@@ -295,7 +298,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 8
+      "views": 9
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 3
@@ -336,8 +339,11 @@
     "/tags/dow/": {
       "views": 1
     },
-    "/tags/global/": {
+    "/tags/geminirobotics2/": {
       "views": 1
+    },
+    "/tags/global/": {
+      "views": 2
     },
     "/tags/gou컨소시엄/": {
       "views": 1
@@ -346,6 +352,9 @@
       "views": 1
     },
     "/tags/hstech/": {
+      "views": 1
+    },
+    "/tags/ixic/": {
       "views": 1
     },
     "/tags/knowledge-ecosystem/": {
@@ -364,6 +373,15 @@
       "views": 1
     },
     "/tags/obsidian/": {
+      "views": 1
+    },
+    "/tags/pdf/": {
+      "views": 1
+    },
+    "/tags/planning/": {
+      "views": 1
+    },
+    "/tags/product/": {
       "views": 1
     },
     "/tags/puppeteer/": {
@@ -441,6 +459,9 @@
     "/tags/마이데이터/": {
       "views": 1
     },
+    "/tags/메모리공급망/": {
+      "views": 1
+    },
     "/tags/무역실무/": {
       "views": 1
     },
@@ -475,6 +496,9 @@
       "views": 1
     },
     "/tags/스마트팩토리/": {
+      "views": 1
+    },
+    "/tags/실행지표/": {
       "views": 1
     },
     "/tags/아이패드/": {
@@ -529,6 +553,12 @@
       "views": 1
     },
     "/tags/학습지원/": {
+      "views": 1
+    },
+    "/tags/항공계열/": {
+      "views": 1
+    },
+    "/tags/해외영업/": {
       "views": 1
     },
     "/tags/훈련기록/": {
