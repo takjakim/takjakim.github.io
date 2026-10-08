@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-07T05:49:12.072352+00:00",
+    "generated_at": "2026-10-08T05:54:20.047080+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 92
+      "views": 87
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -25,7 +25,7 @@
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 14
+      "views": 5
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 5
@@ -190,7 +190,7 @@
       "views": 1
     },
     "/education/university-ai-ethics-operating-model/": {
-      "views": 7
+      "views": 5
     },
     "/education/university-merger-operating-model/": {
       "views": 1
@@ -214,10 +214,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 12
-    },
-    "/gyeonggi-five-regions/": {
-      "views": 1
+      "views": 11
     },
     "/investing/2026-02-11-us/": {
       "views": 1
@@ -226,6 +223,9 @@
       "views": 1
     },
     "/investing/2026-03-17-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-19-us/": {
       "views": 1
     },
     "/investing/2026-04-02-korea/": {
@@ -241,9 +241,6 @@
       "views": 1
     },
     "/investing/2026-06-17-us/": {
-      "views": 1
-    },
-    "/investing/2026-08-31-korea/": {
       "views": 1
     },
     "/investing/2026-09-08-us/": {
@@ -318,16 +315,10 @@
     "/tags/ai시스템/": {
       "views": 1
     },
-    "/tags/ai인프라/": {
-      "views": 1
-    },
     "/tags/automation/": {
       "views": 1
     },
     "/tags/b2b/": {
-      "views": 1
-    },
-    "/tags/codex/": {
       "views": 1
     },
     "/tags/cxmt/": {
@@ -367,7 +358,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 1
+      "views": 2
     },
     "/tags/mhs/": {
       "views": 1
@@ -379,6 +370,9 @@
       "views": 1
     },
     "/tags/planning/": {
+      "views": 1
+    },
+    "/tags/presentation/": {
       "views": 1
     },
     "/tags/product/": {
@@ -400,6 +394,9 @@
       "views": 1
     },
     "/tags/startup/": {
+      "views": 1
+    },
+    "/tags/tou/": {
       "views": 1
     },
     "/tags/강원대학교강릉캠퍼스/": {
@@ -466,9 +463,6 @@
       "views": 1
     },
     "/tags/바이브코딩/": {
-      "views": 1
-    },
-    "/tags/반도체/": {
       "views": 1
     },
     "/tags/부산대학교/": {
@@ -556,6 +550,9 @@
       "views": 1
     },
     "/tags/항공계열/": {
+      "views": 1
+    },
+    "/tags/항공정비학과/": {
       "views": 1
     },
     "/tags/해외영업/": {
