@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-08T05:54:20.047080+00:00",
+    "generated_at": "2026-10-09T06:00:32.851823+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 87
+      "views": 80
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -40,7 +40,7 @@
       "views": 4
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-slop-human-responsibility/": {
       "views": 2
@@ -78,26 +78,23 @@
     "/ai/vibe-coding-to-spec-coding/": {
       "views": 1
     },
-    "/ai/will-ai-remove-middle-managers/": {
-      "views": 1
-    },
     "/anchor-policy/": {
       "views": 1
     },
     "/big-tech/": {
       "views": 1
     },
+    "/cats/": {
+      "views": 2
+    },
     "/college-consulting/": {
-      "views": 4
+      "views": 3
     },
     "/college-reviews/": {
       "views": 1
     },
-    "/contact/": {
-      "views": 1
-    },
     "/daegu-haany-university-kmedi-2026/": {
-      "views": 2
+      "views": 1
     },
     "/dev/Github-Jekyll-한글폰트설정방법/": {
       "views": 1
@@ -134,9 +131,6 @@
     },
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 3
-    },
-    "/education/first-career-project-budget/": {
-      "views": 1
     },
     "/education/flagship-national-university/": {
       "views": 1
@@ -190,7 +184,7 @@
       "views": 1
     },
     "/education/university-ai-ethics-operating-model/": {
-      "views": 5
+      "views": 3
     },
     "/education/university-merger-operating-model/": {
       "views": 1
@@ -261,9 +255,6 @@
     "/investing/2026-09-30-us/": {
       "views": 1
     },
-    "/kmedi/": {
-      "views": 1
-    },
     "/macos/aptx/": {
       "views": 2
     },
@@ -274,6 +265,9 @@
       "views": 1
     },
     "/manufacturing-ai/": {
+      "views": 1
+    },
+    "/mixed/": {
       "views": 1
     },
     "/notes/학생경로-관리/": {
@@ -295,13 +289,13 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 9
+      "views": 7
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 3
+      "views": 1
     },
     "/tags/": {
-      "views": 1
+      "views": 2
     },
     "/tags/agent/": {
       "views": 1
@@ -360,9 +354,6 @@
     "/tags/market/": {
       "views": 2
     },
-    "/tags/mhs/": {
-      "views": 1
-    },
     "/tags/obsidian/": {
       "views": 1
     },
@@ -385,7 +376,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 6
+      "views": 2
     },
     "/tags/snapshot/": {
       "views": 1
@@ -399,6 +390,9 @@
     "/tags/tou/": {
       "views": 1
     },
+    "/tags/vercel/": {
+      "views": 1
+    },
     "/tags/강원대학교강릉캠퍼스/": {
       "views": 1
     },
@@ -409,7 +403,7 @@
       "views": 1
     },
     "/tags/교육품질/": {
-      "views": 1
+      "views": 2
     },
     "/tags/국립금오공과대학교/": {
       "views": 1
@@ -442,6 +436,9 @@
       "views": 1
     },
     "/tags/대학정보공시/": {
+      "views": 1
+    },
+    "/tags/동의대/": {
       "views": 1
     },
     "/tags/디자인/": {
@@ -565,9 +562,6 @@
       "views": 1
     },
     "/theory/cohens-d/": {
-      "views": 1
-    },
-    "/theory/confidence/": {
       "views": 1
     },
     "/theory/flesch-kincaid-grade-level/": {
