@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-09T06:00:32.851823+00:00",
+    "generated_at": "2026-10-10T05:43:36.981892+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 80
+      "views": 78
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -25,7 +25,7 @@
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 5
+      "views": 4
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 5
@@ -37,7 +37,7 @@
       "views": 1
     },
     "/ai/ai-makers-ask-to-slow-down/": {
-      "views": 4
+      "views": 3
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -46,7 +46,7 @@
       "views": 2
     },
     "/ai/ai-smarter-human-must-doubt/": {
-      "views": 2
+      "views": 1
     },
     "/ai/ai-took-easy-work-first/": {
       "views": 13
@@ -55,7 +55,7 @@
       "views": 1
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 1
+      "views": 2
     },
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 6
@@ -78,6 +78,9 @@
     "/ai/vibe-coding-to-spec-coding/": {
       "views": 1
     },
+    "/ai/why-ai-managed-wiki-rots/": {
+      "views": 1
+    },
     "/anchor-policy/": {
       "views": 1
     },
@@ -94,6 +97,9 @@
       "views": 1
     },
     "/daegu-haany-university-kmedi-2026/": {
+      "views": 1
+    },
+    "/daily/": {
       "views": 1
     },
     "/dev/Github-Jekyll-한글폰트설정방법/": {
@@ -118,7 +124,7 @@
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/chunhae-yoga-degree-wellness-strategy/": {
       "views": 1
@@ -174,9 +180,6 @@
     "/education/students-use-ai-scores-fall/": {
       "views": 1
     },
-    "/education/suncheon-jeil-ai-digital-twin-2026/": {
-      "views": 1
-    },
     "/education/topik-ai-digital-operating-model/": {
       "views": 1
     },
@@ -196,9 +199,6 @@
       "views": 1
     },
     "/education/사업-포트폴리오/": {
-      "views": 1
-    },
-    "/education/지역특화형-비자/": {
       "views": 1
     },
     "/education/직무-한국어/": {
@@ -303,10 +303,10 @@
     "/tags/ai/": {
       "views": 1
     },
-    "/tags/ai디자인센터/": {
+    "/tags/ai시스템/": {
       "views": 1
     },
-    "/tags/ai시스템/": {
+    "/tags/atriaai/": {
       "views": 1
     },
     "/tags/automation/": {
@@ -334,6 +334,9 @@
       "views": 1
     },
     "/tags/gx/": {
+      "views": 1
+    },
+    "/tags/hsi/": {
       "views": 1
     },
     "/tags/hstech/": {
@@ -393,13 +396,16 @@
     "/tags/vercel/": {
       "views": 1
     },
-    "/tags/강원대학교강릉캠퍼스/": {
+    "/tags/경북/": {
       "views": 1
     },
     "/tags/경영컨설팅/": {
       "views": 1
     },
     "/tags/공동교육/": {
+      "views": 1
+    },
+    "/tags/교수학습/": {
       "views": 1
     },
     "/tags/교육품질/": {
@@ -559,9 +565,6 @@
       "views": 1
     },
     "/theory/chain-of-thought-cot/": {
-      "views": 1
-    },
-    "/theory/cohens-d/": {
       "views": 1
     },
     "/theory/flesch-kincaid-grade-level/": {
