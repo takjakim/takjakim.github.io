@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-10T05:43:36.981892+00:00",
+    "generated_at": "2026-10-11T05:38:25.776616+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 78
+      "views": 57
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -35,9 +35,6 @@
     },
     "/ai/ai-goes-to-work/": {
       "views": 1
-    },
-    "/ai/ai-makers-ask-to-slow-down/": {
-      "views": 3
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -67,10 +64,7 @@
       "views": 10
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 20
-    },
-    "/ai/manufacturing-ai-agent-frame-process/": {
-      "views": 3
+      "views": 4
     },
     "/ai/session5-technology-leadership-working-poverty/": {
       "views": 1
@@ -81,9 +75,6 @@
     "/ai/why-ai-managed-wiki-rots/": {
       "views": 1
     },
-    "/anchor-policy/": {
-      "views": 1
-    },
     "/big-tech/": {
       "views": 1
     },
@@ -91,10 +82,7 @@
       "views": 2
     },
     "/college-consulting/": {
-      "views": 3
-    },
-    "/college-reviews/": {
-      "views": 1
+      "views": 2
     },
     "/daegu-haany-university-kmedi-2026/": {
       "views": 1
@@ -115,9 +103,6 @@
       "views": 1
     },
     "/education/anchor-growth-engine-talent/": {
-      "views": 1
-    },
-    "/education/anchor-performance-budget-2026/": {
       "views": 1
     },
     "/education/arwu-award-research-governance/": {
@@ -175,9 +160,6 @@
       "views": 1
     },
     "/education/socratic-questioning/": {
-      "views": 1
-    },
-    "/education/students-use-ai-scores-fall/": {
       "views": 1
     },
     "/education/topik-ai-digital-operating-model/": {
@@ -306,6 +288,9 @@
     "/tags/ai시스템/": {
       "views": 1
     },
+    "/tags/alienmind/": {
+      "views": 1
+    },
     "/tags/atriaai/": {
       "views": 1
     },
@@ -313,6 +298,9 @@
       "views": 1
     },
     "/tags/b2b/": {
+      "views": 1
+    },
+    "/tags/cuda/": {
       "views": 1
     },
     "/tags/cxmt/": {
@@ -391,7 +379,7 @@
       "views": 1
     },
     "/tags/tou/": {
-      "views": 1
+      "views": 2
     },
     "/tags/vercel/": {
       "views": 1
@@ -466,6 +454,9 @@
       "views": 1
     },
     "/tags/바이브코딩/": {
+      "views": 1
+    },
+    "/tags/보건의료인력/": {
       "views": 1
     },
     "/tags/부산대학교/": {
@@ -564,12 +555,6 @@
     "/tags/훈련기록/": {
       "views": 1
     },
-    "/theory/chain-of-thought-cot/": {
-      "views": 1
-    },
-    "/theory/flesch-kincaid-grade-level/": {
-      "views": 1
-    },
     "/theory/kobest/": {
       "views": 1
     },
@@ -580,6 +565,9 @@
       "views": 1
     },
     "/welcome-to-market-analysis/": {
+      "views": 1
+    },
+    "/worldcup-2026-scenarios/": {
       "views": 1
     }
   }
