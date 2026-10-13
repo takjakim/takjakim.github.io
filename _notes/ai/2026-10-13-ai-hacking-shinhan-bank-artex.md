@@ -10,6 +10,11 @@ permalink: /ai/ai-hacking-shinhan-bank-artex/
 image: /assets/images/ai/ai-hacking-shinhan-bank-artex-2026-og.png
 ---
 
+<figure class="note-cover">
+  <img src="/assets/images/ai/ai-hacking-shinhan-bank-artex-2026-og.png" alt="AI는 해킹을 쉽게 만들었지만, 해커를 똑똑하게 만들지는 않았다" loading="eager">
+  <figcaption>AI 해킹은 공격의 속도와 규모를 키우지만, 공격자의 운영보안 실수까지 없애주지는 않는다.</figcaption>
+</figure>
+
 신한은행 해킹 보도를 처음 보면 시선은 자연스럽게 AI로 간다.
 
 중국산 AI 침투테스트 도구 ARTEX. Claude Code 세션. DeepSeek, GLM, Grok 같은 모델 이름. 여러 금융사를 동시에 두드린 흔적. 기사 제목만 보면 이제 금융권은 “AI 해커”에게 무방비로 당한 것처럼 보인다.
