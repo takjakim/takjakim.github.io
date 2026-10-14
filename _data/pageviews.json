@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-13T06:42:17.999552+00:00",
+    "generated_at": "2026-10-14T04:45:33.574203+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 55
+      "views": 62
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -33,11 +33,14 @@
     "/ai/ai-goes-to-work/": {
       "views": 1
     },
+    "/ai/ai-hacking-shinhan-bank-artex/": {
+      "views": 8
+    },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 7
+      "views": 8
     },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 1
@@ -54,11 +57,8 @@
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 6
     },
-    "/ai/chatgpt-desktop-codex-work-os/": {
-      "views": 3
-    },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 10
+      "views": 5
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 2
@@ -91,6 +91,9 @@
       "views": 1
     },
     "/dev/tech/test/": {
+      "views": 1
+    },
+    "/education/admissions-platform-governance-2026/": {
       "views": 1
     },
     "/education/ai-centered-university-ax-operating-model/": {
@@ -129,6 +132,9 @@
     "/education/inje-uhs-hospital-roadmap/": {
       "views": 1
     },
+    "/education/joint-r-and-d/": {
+      "views": 1
+    },
     "/education/junior-college-presidents-survival-strategy/": {
       "views": 1
     },
@@ -148,6 +154,9 @@
       "views": 2
     },
     "/education/oecd-education-indicators-university-strategy-2026/": {
+      "views": 1
+    },
+    "/education/private-university-specialization-strategy-2026/": {
       "views": 1
     },
     "/education/rise-governance-operating-model-2026/": {
@@ -187,7 +196,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 10
+      "views": 11
     },
     "/investing/2026-02-11-us/": {
       "views": 1
@@ -195,7 +204,7 @@
     "/investing/2026-03-09-korea/": {
       "views": 1
     },
-    "/investing/2026-03-17-korea/": {
+    "/investing/2026-03-16-us/": {
       "views": 1
     },
     "/investing/2026-03-19-us/": {
@@ -282,6 +291,9 @@
     "/tags/ai시스템/": {
       "views": 1
     },
+    "/tags/alibaba/": {
+      "views": 1
+    },
     "/tags/alienmind/": {
       "views": 1
     },
@@ -309,6 +321,9 @@
     "/tags/eforestpolaris/": {
       "views": 1
     },
+    "/tags/english/": {
+      "views": 1
+    },
     "/tags/geminirobotics2/": {
       "views": 1
     },
@@ -324,6 +339,9 @@
     "/tags/gx/": {
       "views": 2
     },
+    "/tags/hpt/": {
+      "views": 1
+    },
     "/tags/hsi/": {
       "views": 1
     },
@@ -331,6 +349,9 @@
       "views": 1
     },
     "/tags/hwp/": {
+      "views": 1
+    },
+    "/tags/index/": {
       "views": 1
     },
     "/tags/innovation/": {
@@ -348,6 +369,9 @@
     "/tags/labor/": {
       "views": 1
     },
+    "/tags/langgraph/": {
+      "views": 1
+    },
     "/tags/low-altitude-economy/": {
       "views": 1
     },
@@ -355,6 +379,12 @@
       "views": 2
     },
     "/tags/monitoring/": {
+      "views": 1
+    },
+    "/tags/ndx/": {
+      "views": 2
+    },
+    "/tags/oecd/": {
       "views": 1
     },
     "/tags/pdf/": {
@@ -384,6 +414,9 @@
     "/tags/running/": {
       "views": 1
     },
+    "/tags/sdv/": {
+      "views": 1
+    },
     "/tags/snapshot/": {
       "views": 1
     },
@@ -405,7 +438,13 @@
     "/tags/trade/": {
       "views": 1
     },
+    "/tags/typescript/": {
+      "views": 1
+    },
     "/tags/vercel/": {
+      "views": 1
+    },
+    "/tags/yc/": {
       "views": 1
     },
     "/tags/경북/": {
@@ -430,9 +469,6 @@
       "views": 1
     },
     "/tags/기기주권/": {
-      "views": 1
-    },
-    "/tags/기술이전/": {
       "views": 1
     },
     "/tags/대학구조개선/": {
@@ -552,6 +588,9 @@
     "/tags/하네스엔지니어링/": {
       "views": 1
     },
+    "/tags/학생이동성/": {
+      "views": 1
+    },
     "/tags/학습지원/": {
       "views": 1
     },
@@ -574,6 +613,9 @@
       "views": 1
     },
     "/theory/type-token-ratio-ttr/": {
+      "views": 1
+    },
+    "/welcome-to-ai/": {
       "views": 1
     },
     "/welcome-to-market-analysis/": {
