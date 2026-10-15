@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-14T04:45:33.574203+00:00",
+    "generated_at": "2026-10-15T04:28:20.908300+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 62
+      "views": 65
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -18,23 +18,17 @@
     "/ai-investment-analysis/": {
       "views": 1
     },
-    "/ai-work-data-control/": {
-      "views": 1
-    },
-    "/ai/ai-agent-stop-conditions/": {
-      "views": 1
-    },
     "/ai/ai-agents-have-taste/": {
       "views": 4
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
-      "views": 5
+      "views": 6
     },
     "/ai/ai-goes-to-work/": {
       "views": 1
     },
     "/ai/ai-hacking-shinhan-bank-artex/": {
-      "views": 8
+      "views": 9
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -43,7 +37,7 @@
       "views": 8
     },
     "/ai/ai-smarter-human-must-doubt/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-took-easy-work-first/": {
       "views": 13
@@ -54,14 +48,20 @@
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 2
     },
+    "/ai/big-data-ai-world-2026-agent-operations/": {
+      "views": 1
+    },
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 6
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 5
+      "views": 3
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 2
+      "views": 1
+    },
+    "/ai/local-finetuning/": {
+      "views": 1
     },
     "/ai/session5-technology-leadership-working-poverty/": {
       "views": 1
@@ -79,7 +79,7 @@
       "views": 2
     },
     "/college-consulting/": {
-      "views": 2
+      "views": 1
     },
     "/daegu-haany-university-kmedi-2026/": {
       "views": 1
@@ -102,6 +102,9 @@
     "/education/ai-microdegree-digital-badge-university-strategy-2026/": {
       "views": 1
     },
+    "/education/ajou-defense-physical-ai-hub/": {
+      "views": 1
+    },
     "/education/arwu-award-research-governance/": {
       "views": 1
     },
@@ -119,6 +122,9 @@
     },
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 3
+    },
+    "/education/first-career-project-budget/": {
+      "views": 1
     },
     "/education/flagship-national-university/": {
       "views": 1
@@ -186,9 +192,6 @@
     "/education/youth-policy-forum-feedback-loop/": {
       "views": 1
     },
-    "/education/사업-포트폴리오/": {
-      "views": 1
-    },
     "/education/직무-한국어/": {
       "views": 1
     },
@@ -196,7 +199,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 11
+      "views": 8
     },
     "/investing/2026-02-11-us/": {
       "views": 1
@@ -252,9 +255,6 @@
     "/macos/pip_install/": {
       "views": 1
     },
-    "/manufacturing-ai/": {
-      "views": 1
-    },
     "/mixed/": {
       "views": 1
     },
@@ -274,13 +274,16 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 8
+      "views": 7
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
     },
     "/tags/": {
       "views": 2
+    },
+    "/tags/acciowork/": {
+      "views": 1
     },
     "/tags/agent/": {
       "views": 1
@@ -297,6 +300,9 @@
     "/tags/alienmind/": {
       "views": 1
     },
+    "/tags/anthropic/": {
+      "views": 1
+    },
     "/tags/atriaai/": {
       "views": 1
     },
@@ -304,6 +310,9 @@
       "views": 1
     },
     "/tags/b2b/": {
+      "views": 1
+    },
+    "/tags/claude/": {
       "views": 1
     },
     "/tags/cuda/": {
@@ -316,6 +325,9 @@
       "views": 2
     },
     "/tags/dow/": {
+      "views": 1
+    },
+    "/tags/editor/": {
       "views": 1
     },
     "/tags/eforestpolaris/": {
@@ -339,6 +351,9 @@
     "/tags/gx/": {
       "views": 2
     },
+    "/tags/hipergator/": {
+      "views": 1
+    },
     "/tags/hpt/": {
       "views": 1
     },
@@ -357,10 +372,16 @@
     "/tags/innovation/": {
       "views": 1
     },
+    "/tags/intellectual-capital/": {
+      "views": 1
+    },
     "/tags/ipms/": {
       "views": 1
     },
     "/tags/ixic/": {
+      "views": 1
+    },
+    "/tags/kedi/": {
       "views": 1
     },
     "/tags/knowledge-ecosystem/": {
@@ -385,6 +406,9 @@
       "views": 2
     },
     "/tags/oecd/": {
+      "views": 1
+    },
+    "/tags/patent/": {
       "views": 1
     },
     "/tags/pdf/": {
@@ -414,6 +438,9 @@
     "/tags/running/": {
       "views": 1
     },
+    "/tags/saif/": {
+      "views": 1
+    },
     "/tags/sdv/": {
       "views": 1
     },
@@ -439,7 +466,7 @@
       "views": 1
     },
     "/tags/typescript/": {
-      "views": 1
+      "views": 2
     },
     "/tags/vercel/": {
       "views": 1
@@ -450,14 +477,11 @@
     "/tags/경북/": {
       "views": 1
     },
-    "/tags/경영컨설팅/": {
-      "views": 1
-    },
     "/tags/교수학습/": {
       "views": 1
     },
     "/tags/교육품질/": {
-      "views": 2
+      "views": 1
     },
     "/tags/국립금오공과대학교/": {
       "views": 1
@@ -497,9 +521,6 @@
     },
     "/tags/런케이션/": {
       "views": 2
-    },
-    "/tags/마이데이터/": {
-      "views": 1
     },
     "/tags/메모리공급망/": {
       "views": 1
@@ -565,7 +586,7 @@
       "views": 1
     },
     "/tags/지역성장-인재양성체계/": {
-      "views": 2
+      "views": 1
     },
     "/tags/지역정주/": {
       "views": 1
@@ -592,6 +613,9 @@
       "views": 1
     },
     "/tags/학습지원/": {
+      "views": 1
+    },
+    "/tags/한의예과/": {
       "views": 1
     },
     "/tags/항공계열/": {
