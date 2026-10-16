@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-15T04:28:20.908300+00:00",
+    "generated_at": "2026-10-16T04:22:56.908826+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 65
+      "views": 67
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -28,7 +28,7 @@
       "views": 1
     },
     "/ai/ai-hacking-shinhan-bank-artex/": {
-      "views": 9
+      "views": 10
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -49,7 +49,7 @@
       "views": 2
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 1
+      "views": 5
     },
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 6
@@ -78,12 +78,6 @@
     "/cats/": {
       "views": 2
     },
-    "/college-consulting/": {
-      "views": 1
-    },
-    "/daegu-haany-university-kmedi-2026/": {
-      "views": 1
-    },
     "/daily/": {
       "views": 1
     },
@@ -103,7 +97,7 @@
       "views": 1
     },
     "/education/ajou-defense-physical-ai-hub/": {
-      "views": 1
+      "views": 2
     },
     "/education/arwu-award-research-governance/": {
       "views": 1
@@ -124,7 +118,7 @@
       "views": 3
     },
     "/education/first-career-project-budget/": {
-      "views": 1
+      "views": 2
     },
     "/education/flagship-national-university/": {
       "views": 1
@@ -139,9 +133,6 @@
       "views": 1
     },
     "/education/joint-r-and-d/": {
-      "views": 1
-    },
-    "/education/junior-college-presidents-survival-strategy/": {
       "views": 1
     },
     "/education/kangwon-campus-innovation-park/": {
@@ -199,7 +190,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 8
+      "views": 7
     },
     "/investing/2026-02-11-us/": {
       "views": 1
@@ -219,13 +210,7 @@
     "/investing/2026-04-16-us/": {
       "views": 1
     },
-    "/investing/2026-04-30-us/": {
-      "views": 1
-    },
     "/investing/2026-06-17-korea/": {
-      "views": 1
-    },
-    "/investing/2026-06-17-us/": {
       "views": 1
     },
     "/investing/2026-09-08-us/": {
@@ -255,6 +240,9 @@
     "/macos/pip_install/": {
       "views": 1
     },
+    "/macos/tidal-dl/": {
+      "views": 1
+    },
     "/mixed/": {
       "views": 1
     },
@@ -268,9 +256,6 @@
       "views": 1
     },
     "/running/2026-06-07-trail-running-training-log/": {
-      "views": 1
-    },
-    "/running/2026-06-12-trail-running-training-log/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
@@ -289,7 +274,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 1
+      "views": 2
     },
     "/tags/ai시스템/": {
       "views": 1
@@ -309,16 +294,25 @@
     "/tags/automation/": {
       "views": 1
     },
+    "/tags/ax/": {
+      "views": 1
+    },
     "/tags/b2b/": {
       "views": 1
     },
     "/tags/claude/": {
       "views": 1
     },
+    "/tags/codex/": {
+      "views": 1
+    },
     "/tags/cuda/": {
       "views": 1
     },
     "/tags/cxmt/": {
+      "views": 1
+    },
+    "/tags/dashboard/": {
       "views": 1
     },
     "/tags/dev/": {
@@ -330,13 +324,22 @@
     "/tags/editor/": {
       "views": 1
     },
+    "/tags/education/": {
+      "views": 1
+    },
     "/tags/eforestpolaris/": {
       "views": 1
     },
     "/tags/english/": {
       "views": 1
     },
+    "/tags/fdi/": {
+      "views": 1
+    },
     "/tags/geminirobotics2/": {
+      "views": 1
+    },
+    "/tags/generative-ai/": {
       "views": 1
     },
     "/tags/global/": {
@@ -435,6 +438,9 @@
     "/tags/react/": {
       "views": 1
     },
+    "/tags/responsibleai/": {
+      "views": 1
+    },
     "/tags/running/": {
       "views": 1
     },
@@ -454,6 +460,9 @@
       "views": 1
     },
     "/tags/startup/": {
+      "views": 1
+    },
+    "/tags/tmux/": {
       "views": 1
     },
     "/tags/topik/": {
@@ -597,6 +606,9 @@
     "/tags/충남rise/": {
       "views": 1
     },
+    "/tags/충남대/": {
+      "views": 1
+    },
     "/tags/특성화인센티브/": {
       "views": 1
     },
@@ -604,9 +616,6 @@
       "views": 1
     },
     "/tags/품질관리/": {
-      "views": 1
-    },
-    "/tags/하네스엔지니어링/": {
       "views": 1
     },
     "/tags/학생이동성/": {
