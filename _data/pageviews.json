@@ -1,13 +1,16 @@
 {
   "meta": {
-    "generated_at": "2026-10-16T04:22:56.908826+00:00",
+    "generated_at": "2026-10-17T04:16:23.881450+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 67
+      "views": 69
+    },
+    "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
+      "views": 1
     },
     "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
       "views": 1
@@ -56,9 +59,6 @@
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
       "views": 3
-    },
-    "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 1
     },
     "/ai/local-finetuning/": {
       "views": 1
@@ -195,6 +195,9 @@
     "/investing/2026-02-11-us/": {
       "views": 1
     },
+    "/investing/2026-02-24-us/": {
+      "views": 1
+    },
     "/investing/2026-03-09-korea/": {
       "views": 1
     },
@@ -210,10 +213,16 @@
     "/investing/2026-04-16-us/": {
       "views": 1
     },
+    "/investing/2026-05-07-us/": {
+      "views": 1
+    },
     "/investing/2026-06-17-korea/": {
       "views": 1
     },
-    "/investing/2026-09-08-us/": {
+    "/investing/2026-07-13-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-14-us/": {
       "views": 1
     },
     "/investing/2026-09-18-us/": {
@@ -235,13 +244,13 @@
       "views": 2
     },
     "/macos/aptx/": {
-      "views": 2
+      "views": 1
     },
     "/macos/pip_install/": {
       "views": 1
     },
     "/macos/tidal-dl/": {
-      "views": 1
+      "views": 2
     },
     "/mixed/": {
       "views": 1
@@ -259,7 +268,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 7
+      "views": 6
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
@@ -289,7 +298,7 @@
       "views": 1
     },
     "/tags/atriaai/": {
-      "views": 1
+      "views": 2
     },
     "/tags/automation/": {
       "views": 1
@@ -354,6 +363,9 @@
     "/tags/gx/": {
       "views": 2
     },
+    "/tags/heyling/": {
+      "views": 1
+    },
     "/tags/hipergator/": {
       "views": 1
     },
@@ -396,6 +408,9 @@
     "/tags/langgraph/": {
       "views": 1
     },
+    "/tags/llmwiki/": {
+      "views": 1
+    },
     "/tags/low-altitude-economy/": {
       "views": 1
     },
@@ -421,7 +436,7 @@
       "views": 1
     },
     "/tags/pisa/": {
-      "views": 1
+      "views": 2
     },
     "/tags/planning/": {
       "views": 1
@@ -483,7 +498,19 @@
     "/tags/yc/": {
       "views": 1
     },
+    "/tags/개발기/": {
+      "views": 1
+    },
+    "/tags/개발도구/": {
+      "views": 1
+    },
     "/tags/경북/": {
+      "views": 1
+    },
+    "/tags/공동교육/": {
+      "views": 1
+    },
+    "/tags/광주앵커센터/": {
       "views": 1
     },
     "/tags/교수학습/": {
@@ -504,6 +531,12 @@
     "/tags/기기주권/": {
       "views": 1
     },
+    "/tags/기술이전/": {
+      "views": 1
+    },
+    "/tags/대입자율성/": {
+      "views": 1
+    },
     "/tags/대학구조개선/": {
       "views": 1
     },
@@ -517,6 +550,15 @@
       "views": 1
     },
     "/tags/대학정보공시/": {
+      "views": 1
+    },
+    "/tags/대학정책/": {
+      "views": 1
+    },
+    "/tags/대학진학/": {
+      "views": 1
+    },
+    "/tags/대학혁신지원사업/": {
       "views": 1
     },
     "/tags/동의대/": {
@@ -534,6 +576,9 @@
     "/tags/메모리공급망/": {
       "views": 1
     },
+    "/tags/메모리반도체/": {
+      "views": 1
+    },
     "/tags/무역실무/": {
       "views": 1
     },
@@ -544,9 +589,12 @@
       "views": 1
     },
     "/tags/분석설계/": {
-      "views": 1
+      "views": 2
     },
     "/tags/분자대사/": {
+      "views": 1
+    },
+    "/tags/블로그/": {
       "views": 1
     },
     "/tags/산업분석/": {
@@ -565,7 +613,7 @@
       "views": 1
     },
     "/tags/스마트팩토리/": {
-      "views": 1
+      "views": 2
     },
     "/tags/실행지표/": {
       "views": 1
@@ -582,22 +630,40 @@
     "/tags/연암대/": {
       "views": 1
     },
+    "/tags/연암대학교/": {
+      "views": 1
+    },
     "/tags/융합교육/": {
       "views": 1
     },
-    "/tags/재정지원사업/": {
+    "/tags/응급구조과/": {
+      "views": 1
+    },
+    "/tags/전문대/": {
       "views": 1
     },
     "/tags/전문대학특성화/": {
       "views": 1
     },
+    "/tags/조직문화/": {
+      "views": 1
+    },
     "/tags/조직운영/": {
+      "views": 2
+    },
+    "/tags/지속가능경영/": {
       "views": 1
     },
     "/tags/지역성장-인재양성체계/": {
       "views": 1
     },
+    "/tags/지역의료/": {
+      "views": 1
+    },
     "/tags/지역정주/": {
+      "views": 1
+    },
+    "/tags/채용연계/": {
       "views": 1
     },
     "/tags/체류자격/": {
@@ -607,6 +673,9 @@
       "views": 1
     },
     "/tags/충남대/": {
+      "views": 1
+    },
+    "/tags/통합모집/": {
       "views": 1
     },
     "/tags/특성화인센티브/": {
@@ -634,6 +703,9 @@
       "views": 1
     },
     "/tags/해외영업/": {
+      "views": 1
+    },
+    "/tags/해외취업/": {
       "views": 1
     },
     "/tags/훈련기록/": {
