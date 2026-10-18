@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-17T04:16:23.881450+00:00",
+    "generated_at": "2026-10-18T04:21:33.564089+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 69
+      "views": 70
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -27,6 +27,9 @@
     "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 6
     },
+    "/ai/ai-consulting-deployment/": {
+      "views": 4
+    },
     "/ai/ai-goes-to-work/": {
       "views": 1
     },
@@ -45,14 +48,11 @@
     "/ai/ai-took-easy-work-first/": {
       "views": 13
     },
-    "/ai/ai-tutor/": {
-      "views": 1
-    },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 2
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 5
+      "views": 6
     },
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 6
@@ -420,10 +420,16 @@
     "/tags/monitoring/": {
       "views": 1
     },
+    "/tags/mro/": {
+      "views": 1
+    },
     "/tags/ndx/": {
       "views": 2
     },
     "/tags/oecd/": {
+      "views": 2
+    },
+    "/tags/openuic/": {
       "views": 1
     },
     "/tags/patent/": {
@@ -528,9 +534,6 @@
     "/tags/국제교육협력/": {
       "views": 1
     },
-    "/tags/기기주권/": {
-      "views": 1
-    },
     "/tags/기술이전/": {
       "views": 1
     },
@@ -559,6 +562,12 @@
       "views": 1
     },
     "/tags/대학혁신지원사업/": {
+      "views": 1
+    },
+    "/tags/대화기록/": {
+      "views": 1
+    },
+    "/tags/데이터플라이휠/": {
       "views": 1
     },
     "/tags/동의대/": {
@@ -607,13 +616,16 @@
       "views": 1
     },
     "/tags/세한대/": {
-      "views": 1
+      "views": 2
     },
     "/tags/순천제일대/": {
       "views": 1
     },
     "/tags/스마트팩토리/": {
       "views": 2
+    },
+    "/tags/실행구조/": {
+      "views": 1
     },
     "/tags/실행지표/": {
       "views": 1
@@ -628,15 +640,21 @@
       "views": 1
     },
     "/tags/연암대/": {
-      "views": 1
+      "views": 2
     },
     "/tags/연암대학교/": {
+      "views": 1
+    },
+    "/tags/원격교육/": {
       "views": 1
     },
     "/tags/융합교육/": {
       "views": 1
     },
     "/tags/응급구조과/": {
+      "views": 1
+    },
+    "/tags/일의미래/": {
       "views": 1
     },
     "/tags/전문대/": {
@@ -675,6 +693,9 @@
     "/tags/충남대/": {
       "views": 1
     },
+    "/tags/취업/": {
+      "views": 1
+    },
     "/tags/통합모집/": {
       "views": 1
     },
@@ -708,9 +729,6 @@
     "/tags/해외취업/": {
       "views": 1
     },
-    "/tags/훈련기록/": {
-      "views": 1
-    },
     "/theory/kobest/": {
       "views": 1
     },
@@ -721,9 +739,6 @@
       "views": 1
     },
     "/welcome-to-ai/": {
-      "views": 1
-    },
-    "/welcome-to-market-analysis/": {
       "views": 1
     },
     "/worldcup-2026-scenarios/": {
