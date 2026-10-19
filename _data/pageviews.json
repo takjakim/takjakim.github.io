@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-18T04:21:33.564089+00:00",
+    "generated_at": "2026-10-19T04:31:37.843218+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 70
+      "views": 73
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -28,7 +28,7 @@
       "views": 6
     },
     "/ai/ai-consulting-deployment/": {
-      "views": 4
+      "views": 10
     },
     "/ai/ai-goes-to-work/": {
       "views": 1
@@ -39,6 +39,9 @@
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
     },
+    "/ai/ai-research-university-performance/": {
+      "views": 5
+    },
     "/ai/ai-slop-human-responsibility/": {
       "views": 8
     },
@@ -46,7 +49,7 @@
       "views": 2
     },
     "/ai/ai-took-easy-work-first/": {
-      "views": 13
+      "views": 6
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 2
@@ -70,9 +73,6 @@
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
-      "views": 1
-    },
-    "/big-tech/": {
       "views": 1
     },
     "/cats/": {
@@ -129,6 +129,9 @@
     "/education/glamp-research-hub-operating-model/": {
       "views": 1
     },
+    "/education/gyeongnam-anchor-career-pipeline/": {
+      "views": 1
+    },
     "/education/inje-uhs-hospital-roadmap/": {
       "views": 1
     },
@@ -141,9 +144,6 @@
     "/education/kentech-organization-issues-2026/": {
       "views": 1
     },
-    "/education/korea-central-asia-education-cooperation-2026/": {
-      "views": 1
-    },
     "/education/kyungwoon-anchor-air-mobility/": {
       "views": 1
     },
@@ -154,6 +154,9 @@
       "views": 1
     },
     "/education/private-university-specialization-strategy-2026/": {
+      "views": 1
+    },
+    "/education/regional-university-tech-commercialization/": {
       "views": 1
     },
     "/education/rise-governance-operating-model-2026/": {
@@ -243,9 +246,6 @@
     "/macos/application10/": {
       "views": 2
     },
-    "/macos/aptx/": {
-      "views": 1
-    },
     "/macos/pip_install/": {
       "views": 1
     },
@@ -312,6 +312,9 @@
     "/tags/claude/": {
       "views": 1
     },
+    "/tags/codemirror/": {
+      "views": 1
+    },
     "/tags/codex/": {
       "views": 1
     },
@@ -324,8 +327,14 @@
     "/tags/dashboard/": {
       "views": 1
     },
+    "/tags/deployment/": {
+      "views": 1
+    },
     "/tags/dev/": {
       "views": 2
+    },
+    "/tags/djia/": {
+      "views": 1
     },
     "/tags/dow/": {
       "views": 1
@@ -399,6 +408,9 @@
     "/tags/kedi/": {
       "views": 1
     },
+    "/tags/kmedi/": {
+      "views": 1
+    },
     "/tags/knowledge-ecosystem/": {
       "views": 1
     },
@@ -414,8 +426,14 @@
     "/tags/low-altitude-economy/": {
       "views": 1
     },
+    "/tags/markdown/": {
+      "views": 1
+    },
     "/tags/market/": {
       "views": 2
+    },
+    "/tags/marp/": {
+      "views": 1
     },
     "/tags/monitoring/": {
       "views": 1
@@ -429,10 +447,16 @@
     "/tags/oecd/": {
       "views": 2
     },
+    "/tags/openai/": {
+      "views": 1
+    },
     "/tags/openuic/": {
       "views": 1
     },
     "/tags/patent/": {
+      "views": 1
+    },
+    "/tags/pbl/": {
       "views": 1
     },
     "/tags/pdf/": {
@@ -481,7 +505,7 @@
       "views": 1
     },
     "/tags/startup/": {
-      "views": 1
+      "views": 2
     },
     "/tags/tmux/": {
       "views": 1
@@ -495,8 +519,14 @@
     "/tags/trade/": {
       "views": 1
     },
+    "/tags/transjeju/": {
+      "views": 1
+    },
     "/tags/typescript/": {
       "views": 2
+    },
+    "/tags/uam/": {
+      "views": 1
     },
     "/tags/vercel/": {
       "views": 1
@@ -508,6 +538,9 @@
       "views": 1
     },
     "/tags/개발도구/": {
+      "views": 1
+    },
+    "/tags/개인정보보호위원회/": {
       "views": 1
     },
     "/tags/경북/": {
@@ -606,9 +639,6 @@
     "/tags/블로그/": {
       "views": 1
     },
-    "/tags/산업분석/": {
-      "views": 1
-    },
     "/tags/산학공동기술개발/": {
       "views": 1
     },
@@ -617,6 +647,9 @@
     },
     "/tags/세한대/": {
       "views": 2
+    },
+    "/tags/수학교육/": {
+      "views": 1
     },
     "/tags/순천제일대/": {
       "views": 1
@@ -681,6 +714,9 @@
     "/tags/지역정주/": {
       "views": 1
     },
+    "/tags/진로지도/": {
+      "views": 1
+    },
     "/tags/채용연계/": {
       "views": 1
     },
@@ -703,6 +739,9 @@
       "views": 1
     },
     "/tags/편집/": {
+      "views": 1
+    },
+    "/tags/푸드테크/": {
       "views": 1
     },
     "/tags/품질관리/": {
