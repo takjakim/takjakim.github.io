@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-19T04:31:37.843218+00:00",
+    "generated_at": "2026-10-20T04:41:01.751295+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 73
+      "views": 77
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -18,9 +18,6 @@
     "/about/": {
       "views": 1
     },
-    "/ai-investment-analysis/": {
-      "views": 1
-    },
     "/ai/ai-agents-have-taste/": {
       "views": 4
     },
@@ -28,7 +25,7 @@
       "views": 6
     },
     "/ai/ai-consulting-deployment/": {
-      "views": 10
+      "views": 22
     },
     "/ai/ai-goes-to-work/": {
       "views": 1
@@ -36,11 +33,14 @@
     "/ai/ai-hacking-shinhan-bank-artex/": {
       "views": 10
     },
+    "/ai/ai-junior-work-learning/": {
+      "views": 6
+    },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
     },
     "/ai/ai-research-university-performance/": {
-      "views": 5
+      "views": 7
     },
     "/ai/ai-slop-human-responsibility/": {
       "views": 8
@@ -55,13 +55,16 @@
       "views": 2
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 6
+      "views": 8
     },
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 6
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
       "views": 3
+    },
+    "/ai/hyundai-ax-proper-ai-use/": {
+      "views": 1
     },
     "/ai/local-finetuning/": {
       "views": 1
@@ -85,6 +88,9 @@
       "views": 1
     },
     "/dev/tech/test/": {
+      "views": 1
+    },
+    "/ededef91-bf40-447e-be33-529958aa139f/": {
       "views": 1
     },
     "/education/admissions-platform-governance-2026/": {
@@ -129,6 +135,9 @@
     "/education/glamp-research-hub-operating-model/": {
       "views": 1
     },
+    "/education/graduate-pathway-indicator-governance-2026/": {
+      "views": 2
+    },
     "/education/gyeongnam-anchor-career-pipeline/": {
       "views": 1
     },
@@ -145,6 +154,9 @@
       "views": 1
     },
     "/education/kyungwoon-anchor-air-mobility/": {
+      "views": 1
+    },
+    "/education/linc-3-0/": {
       "views": 1
     },
     "/education/national-flagship-university-operating-model/": {
@@ -261,9 +273,6 @@
     "/regional-industry-academic-network/": {
       "views": 1
     },
-    "/risk-on/": {
-      "views": 1
-    },
     "/running/2026-06-07-trail-running-training-log/": {
       "views": 1
     },
@@ -309,6 +318,9 @@
     "/tags/b2b/": {
       "views": 1
     },
+    "/tags/chatgpt/": {
+      "views": 1
+    },
     "/tags/claude/": {
       "views": 1
     },
@@ -316,6 +328,9 @@
       "views": 1
     },
     "/tags/codex/": {
+      "views": 1
+    },
+    "/tags/conference/": {
       "views": 1
     },
     "/tags/cuda/": {
@@ -343,7 +358,7 @@
       "views": 1
     },
     "/tags/education/": {
-      "views": 1
+      "views": 2
     },
     "/tags/eforestpolaris/": {
       "views": 1
@@ -360,8 +375,14 @@
     "/tags/generative-ai/": {
       "views": 1
     },
+    "/tags/gks/": {
+      "views": 1
+    },
     "/tags/global/": {
       "views": 2
+    },
+    "/tags/googledeepmind/": {
+      "views": 1
     },
     "/tags/gou컨소시엄/": {
       "views": 1
@@ -435,6 +456,15 @@
     "/tags/marp/": {
       "views": 1
     },
+    "/tags/mdx/": {
+      "views": 1
+    },
+    "/tags/mhs/": {
+      "views": 1
+    },
+    "/tags/mlx/": {
+      "views": 1
+    },
     "/tags/monitoring/": {
       "views": 1
     },
@@ -487,7 +517,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 1
+      "views": 2
     },
     "/tags/saif/": {
       "views": 1
@@ -504,8 +534,14 @@
     "/tags/spx/": {
       "views": 1
     },
+    "/tags/standards/": {
+      "views": 1
+    },
     "/tags/startup/": {
       "views": 2
+    },
+    "/tags/sustainability/": {
+      "views": 1
     },
     "/tags/tmux/": {
       "views": 1
