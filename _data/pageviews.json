@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-20T04:41:01.751295+00:00",
+    "generated_at": "2026-10-21T04:35:12.716981+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 77
+      "views": 82
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -25,7 +25,7 @@
       "views": 6
     },
     "/ai/ai-consulting-deployment/": {
-      "views": 22
+      "views": 23
     },
     "/ai/ai-goes-to-work/": {
       "views": 1
@@ -51,6 +51,9 @@
     "/ai/ai-took-easy-work-first/": {
       "views": 6
     },
+    "/ai/ai-wealth-musk-anthropic-public-benefit/": {
+      "views": 8
+    },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 2
     },
@@ -61,12 +64,15 @@
       "views": 6
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 3
+      "views": 2
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 1
     },
     "/ai/local-finetuning/": {
+      "views": 1
+    },
+    "/ai/prompt-training-work-redesign/": {
       "views": 1
     },
     "/ai/session5-technology-leadership-working-poverty/": {
@@ -76,6 +82,9 @@
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
+      "views": 1
+    },
+    "/ai/will-ai-remove-middle-managers/": {
       "views": 1
     },
     "/cats/": {
@@ -151,9 +160,6 @@
       "views": 1
     },
     "/education/kentech-organization-issues-2026/": {
-      "views": 1
-    },
-    "/education/kyungwoon-anchor-air-mobility/": {
       "views": 1
     },
     "/education/linc-3-0/": {
@@ -258,9 +264,6 @@
     "/macos/application10/": {
       "views": 2
     },
-    "/macos/pip_install/": {
-      "views": 1
-    },
     "/macos/tidal-dl/": {
       "views": 2
     },
@@ -297,11 +300,14 @@
     "/tags/ai시스템/": {
       "views": 1
     },
+    "/tags/ai전환/": {
+      "views": 1
+    },
     "/tags/alibaba/": {
       "views": 1
     },
     "/tags/alienmind/": {
-      "views": 1
+      "views": 2
     },
     "/tags/anthropic/": {
       "views": 1
@@ -336,6 +342,9 @@
     "/tags/cuda/": {
       "views": 1
     },
+    "/tags/cursor/": {
+      "views": 1
+    },
     "/tags/cxmt/": {
       "views": 1
     },
@@ -343,10 +352,13 @@
       "views": 1
     },
     "/tags/deployment/": {
-      "views": 1
+      "views": 2
     },
     "/tags/dev/": {
       "views": 2
+    },
+    "/tags/digitalgarden/": {
+      "views": 1
     },
     "/tags/djia/": {
       "views": 1
@@ -382,9 +394,6 @@
       "views": 2
     },
     "/tags/googledeepmind/": {
-      "views": 1
-    },
-    "/tags/gou컨소시엄/": {
       "views": 1
     },
     "/tags/governance/": {
@@ -429,14 +438,20 @@
     "/tags/kedi/": {
       "views": 1
     },
+    "/tags/kentech/": {
+      "views": 1
+    },
     "/tags/kmedi/": {
+      "views": 1
+    },
+    "/tags/kmove/": {
       "views": 1
     },
     "/tags/knowledge-ecosystem/": {
       "views": 1
     },
     "/tags/labor/": {
-      "views": 1
+      "views": 2
     },
     "/tags/langgraph/": {
       "views": 1
@@ -516,13 +531,25 @@
     "/tags/responsibleai/": {
       "views": 1
     },
+    "/tags/rise/": {
+      "views": 1
+    },
+    "/tags/rocm/": {
+      "views": 1
+    },
     "/tags/running/": {
       "views": 2
+    },
+    "/tags/ryzenaimax/": {
+      "views": 1
     },
     "/tags/saif/": {
       "views": 1
     },
     "/tags/sdv/": {
+      "views": 1
+    },
+    "/tags/serverless/": {
       "views": 1
     },
     "/tags/snapshot/": {
