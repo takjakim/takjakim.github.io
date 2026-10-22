@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-21T04:35:12.716981+00:00",
+    "generated_at": "2026-10-22T04:34:02.251440+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 82
+      "views": 81
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -34,7 +34,7 @@
       "views": 10
     },
     "/ai/ai-junior-work-learning/": {
-      "views": 6
+      "views": 7
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -61,7 +61,7 @@
       "views": 8
     },
     "/ai/chatbot-to-judgment-api-jev/": {
-      "views": 6
+      "views": 1
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
       "views": 2
@@ -73,12 +73,9 @@
       "views": 1
     },
     "/ai/prompt-training-work-redesign/": {
-      "views": 1
+      "views": 5
     },
     "/ai/session5-technology-leadership-working-poverty/": {
-      "views": 1
-    },
-    "/ai/vibe-coding-to-spec-coding/": {
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
@@ -102,6 +99,9 @@
     "/ededef91-bf40-447e-be33-529958aa139f/": {
       "views": 1
     },
+    "/education/2026-university-innovation-support-plan/": {
+      "views": 1
+    },
     "/education/admissions-platform-governance-2026/": {
       "views": 1
     },
@@ -115,6 +115,9 @@
       "views": 2
     },
     "/education/arwu-award-research-governance/": {
+      "views": 1
+    },
+    "/education/bootcamp-roundup-curriculum-feedback/": {
       "views": 1
     },
     "/education/changwon-university-issues-2026/": {
@@ -133,7 +136,7 @@
       "views": 3
     },
     "/education/first-career-project-budget/": {
-      "views": 2
+      "views": 3
     },
     "/education/flagship-national-university/": {
       "views": 1
@@ -150,8 +153,11 @@
     "/education/gyeongnam-anchor-career-pipeline/": {
       "views": 1
     },
-    "/education/inje-uhs-hospital-roadmap/": {
+    "/education/hallym-innovation-operating-model-2026/": {
       "views": 1
+    },
+    "/education/inje-uhs-hospital-roadmap/": {
+      "views": 2
     },
     "/education/joint-r-and-d/": {
       "views": 1
@@ -180,20 +186,14 @@
     "/education/rise-governance-operating-model-2026/": {
       "views": 1
     },
-    "/education/socratic-questioning/": {
-      "views": 1
-    },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 1
     },
     "/education/topik-ai-digital-operating-model/": {
       "views": 1
     },
-    "/education/university-ai-basic-education-operating-model/": {
-      "views": 1
-    },
     "/education/university-ai-ethics-operating-model/": {
-      "views": 3
+      "views": 2
     },
     "/education/university-merger-operating-model/": {
       "views": 1
@@ -211,7 +211,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 7
+      "views": 6
     },
     "/investing/2026-02-11-us/": {
       "views": 1
@@ -270,10 +270,10 @@
     "/mixed/": {
       "views": 1
     },
-    "/notes/학생경로-관리/": {
+    "/notes/교육과정-재구조화/": {
       "views": 1
     },
-    "/regional-industry-academic-network/": {
+    "/notes/학생경로-관리/": {
       "views": 1
     },
     "/running/2026-06-07-trail-running-training-log/": {
@@ -325,6 +325,9 @@
       "views": 1
     },
     "/tags/chatgpt/": {
+      "views": 1
+    },
+    "/tags/china/": {
       "views": 1
     },
     "/tags/claude/": {
@@ -415,7 +418,7 @@
       "views": 1
     },
     "/tags/hstech/": {
-      "views": 1
+      "views": 2
     },
     "/tags/hwp/": {
       "views": 1
@@ -457,9 +460,6 @@
       "views": 1
     },
     "/tags/llmwiki/": {
-      "views": 1
-    },
-    "/tags/low-altitude-economy/": {
       "views": 1
     },
     "/tags/markdown/": {
@@ -685,9 +685,6 @@
       "views": 1
     },
     "/tags/무역실무/": {
-      "views": 1
-    },
-    "/tags/바이브코딩/": {
       "views": 1
     },
     "/tags/보건의료인력/": {
