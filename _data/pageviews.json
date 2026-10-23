@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-22T04:34:02.251440+00:00",
+    "generated_at": "2026-10-23T04:39:23.416038+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 81
+      "views": 79
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -27,14 +27,14 @@
     "/ai/ai-consulting-deployment/": {
       "views": 23
     },
-    "/ai/ai-goes-to-work/": {
-      "views": 1
-    },
     "/ai/ai-hacking-shinhan-bank-artex/": {
       "views": 10
     },
     "/ai/ai-junior-work-learning/": {
       "views": 7
+    },
+    "/ai/ai-learning-assessment/": {
+      "views": 6
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -52,7 +52,7 @@
       "views": 6
     },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
-      "views": 8
+      "views": 9
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 2
@@ -60,11 +60,8 @@
     "/ai/big-data-ai-world-2026-agent-operations/": {
       "views": 8
     },
-    "/ai/chatbot-to-judgment-api-jev/": {
-      "views": 1
-    },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 2
+      "views": 3
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 1
@@ -73,7 +70,7 @@
       "views": 1
     },
     "/ai/prompt-training-work-redesign/": {
-      "views": 5
+      "views": 6
     },
     "/ai/session5-technology-leadership-working-poverty/": {
       "views": 1
@@ -123,13 +120,7 @@
     "/education/changwon-university-issues-2026/": {
       "views": 1
     },
-    "/education/chunhae-yoga-degree-wellness-strategy/": {
-      "views": 1
-    },
     "/education/data-standardization/": {
-      "views": 1
-    },
-    "/education/edtech-softlab-ax-operating-model-2026/": {
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
@@ -211,7 +202,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 6
+      "views": 5
     },
     "/investing/2026-02-11-us/": {
       "views": 1
@@ -246,9 +237,6 @@
     "/investing/2026-07-14-us/": {
       "views": 1
     },
-    "/investing/2026-09-18-us/": {
-      "views": 1
-    },
     "/investing/2026-09-28-us/": {
       "views": 1
     },
@@ -280,7 +268,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 6
+      "views": 5
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
@@ -729,9 +717,6 @@
     "/tags/에너지공대/": {
       "views": 1
     },
-    "/tags/에듀테크/": {
-      "views": 1
-    },
     "/tags/연암대/": {
       "views": 2
     },
@@ -835,7 +820,7 @@
       "views": 1
     },
     "/theory/type-token-ratio-ttr/": {
-      "views": 1
+      "views": 2
     },
     "/welcome-to-ai/": {
       "views": 1
