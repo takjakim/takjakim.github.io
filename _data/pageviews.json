@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-23T04:39:23.416038+00:00",
+    "generated_at": "2026-10-24T04:28:09.113061+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 79
+      "views": 80
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -19,7 +19,7 @@
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 4
+      "views": 3
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 6
@@ -34,7 +34,7 @@
       "views": 7
     },
     "/ai/ai-learning-assessment/": {
-      "views": 6
+      "views": 7
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -76,7 +76,7 @@
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
-      "views": 1
+      "views": 2
     },
     "/ai/will-ai-remove-middle-managers/": {
       "views": 1
@@ -184,7 +184,7 @@
       "views": 1
     },
     "/education/university-ai-ethics-operating-model/": {
-      "views": 2
+      "views": 1
     },
     "/education/university-merger-operating-model/": {
       "views": 1
@@ -448,6 +448,9 @@
       "views": 1
     },
     "/tags/llmwiki/": {
+      "views": 1
+    },
+    "/tags/low-altitude-economy/": {
       "views": 1
     },
     "/tags/markdown/": {
@@ -783,9 +786,6 @@
     "/tags/특성화인센티브/": {
       "views": 1
     },
-    "/tags/편집/": {
-      "views": 1
-    },
     "/tags/푸드테크/": {
       "views": 1
     },
@@ -816,11 +816,8 @@
     "/theory/kobest/": {
       "views": 1
     },
-    "/theory/krashen-i1/": {
-      "views": 1
-    },
     "/theory/type-token-ratio-ttr/": {
-      "views": 2
+      "views": 5
     },
     "/welcome-to-ai/": {
       "views": 1
