@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-25T04:32:03.376990+00:00",
+    "generated_at": "2026-10-26T04:36:58.256485+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -12,17 +12,14 @@
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
     },
-    "/8f34a46e-ed04-4bd6-82e4-98cb70227ab6/": {
-      "views": 1
-    },
     "/about/": {
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
-      "views": 6
+      "views": 1
     },
     "/ai/ai-consulting-deployment/": {
       "views": 23
@@ -34,7 +31,7 @@
       "views": 7
     },
     "/ai/ai-learning-assessment/": {
-      "views": 8
+      "views": 9
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -55,7 +52,7 @@
       "views": 9
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 2
+      "views": 1
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
       "views": 8
@@ -124,7 +121,7 @@
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 3
+      "views": 4
     },
     "/education/first-career-project-budget/": {
       "views": 3
@@ -146,6 +143,9 @@
     },
     "/education/hallym-innovation-operating-model-2026/": {
       "views": 1
+    },
+    "/education/humanities-ai-curriculum-2026/": {
+      "views": 2
     },
     "/education/inje-uhs-hospital-roadmap/": {
       "views": 2
@@ -187,6 +187,9 @@
       "views": 1
     },
     "/education/university-merger-operating-model/": {
+      "views": 1
+    },
+    "/education/university-region-committee-execution-2026/": {
       "views": 1
     },
     "/education/visa-based-student-pathway/": {
@@ -463,7 +466,7 @@
       "views": 1
     },
     "/tags/mdx/": {
-      "views": 1
+      "views": 2
     },
     "/tags/mhs/": {
       "views": 1
@@ -657,9 +660,6 @@
     "/tags/동의대/": {
       "views": 1
     },
-    "/tags/디자인/": {
-      "views": 1
-    },
     "/tags/디지털트윈/": {
       "views": 1
     },
@@ -670,9 +670,6 @@
       "views": 1
     },
     "/tags/메모리반도체/": {
-      "views": 1
-    },
-    "/tags/무역실무/": {
       "views": 1
     },
     "/tags/보건의료인력/": {
@@ -817,7 +814,7 @@
       "views": 1
     },
     "/theory/type-token-ratio-ttr/": {
-      "views": 5
+      "views": 6
     },
     "/welcome-to-ai/": {
       "views": 1
