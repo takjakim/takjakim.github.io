@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-10-26T04:36:58.256485+00:00",
+    "generated_at": "2026-10-27T04:55:00.345087+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 81
+      "views": 85
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -55,7 +55,10 @@
       "views": 1
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 8
+      "views": 10
+    },
+    "/ai/chatgpt-desktop-codex-work-os/": {
+      "views": 1
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
       "views": 2
@@ -121,7 +124,7 @@
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 4
+      "views": 2
     },
     "/education/first-career-project-budget/": {
       "views": 3
@@ -145,10 +148,10 @@
       "views": 1
     },
     "/education/humanities-ai-curriculum-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/inje-uhs-hospital-roadmap/": {
-      "views": 2
+      "views": 3
     },
     "/education/joint-r-and-d/": {
       "views": 1
@@ -195,9 +198,6 @@
     "/education/visa-based-student-pathway/": {
       "views": 1
     },
-    "/education/youth-policy-forum-feedback-loop/": {
-      "views": 1
-    },
     "/education/직무-한국어/": {
       "views": 1
     },
@@ -205,10 +205,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 5
-    },
-    "/investing/2026-02-11-us/": {
-      "views": 1
+      "views": 8
     },
     "/investing/2026-02-24-us/": {
       "views": 1
@@ -277,7 +274,7 @@
       "views": 1
     },
     "/tags/": {
-      "views": 2
+      "views": 4
     },
     "/tags/acciowork/": {
       "views": 1
@@ -349,7 +346,7 @@
       "views": 2
     },
     "/tags/dev/": {
-      "views": 2
+      "views": 3
     },
     "/tags/digitalgarden/": {
       "views": 1
@@ -532,7 +529,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 2
+      "views": 3
     },
     "/tags/ryzenaimax/": {
       "views": 1
@@ -618,9 +615,6 @@
     "/tags/국립한밭대학교/": {
       "views": 1
     },
-    "/tags/국제교육협력/": {
-      "views": 1
-    },
     "/tags/기술이전/": {
       "views": 1
     },
@@ -676,15 +670,9 @@
       "views": 1
     },
     "/tags/분석설계/": {
-      "views": 2
-    },
-    "/tags/분자대사/": {
       "views": 1
     },
     "/tags/블로그/": {
-      "views": 1
-    },
-    "/tags/산학공동기술개발/": {
       "views": 1
     },
     "/tags/성과모델링/": {
@@ -694,9 +682,6 @@
       "views": 1
     },
     "/tags/수학교육/": {
-      "views": 1
-    },
-    "/tags/순천제일대/": {
       "views": 1
     },
     "/tags/스마트팩토리/": {
@@ -793,6 +778,9 @@
       "views": 1
     },
     "/tags/학습지원/": {
+      "views": 1
+    },
+    "/tags/한국교통대/": {
       "views": 1
     },
     "/tags/한의예과/": {
