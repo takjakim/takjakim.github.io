@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-27T04:55:00.345087+00:00",
+    "generated_at": "2026-10-28T05:29:56.925569+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -13,6 +13,9 @@
       "views": 1
     },
     "/about/": {
+      "views": 1
+    },
+    "/agentic-ai/": {
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
@@ -31,7 +34,7 @@
       "views": 7
     },
     "/ai/ai-learning-assessment/": {
-      "views": 9
+      "views": 10
     },
     "/ai/ai-productivity-conference-synthesis/": {
       "views": 2
@@ -117,14 +120,11 @@
     "/education/bootcamp-roundup-curriculum-feedback/": {
       "views": 1
     },
-    "/education/changwon-university-issues-2026/": {
-      "views": 1
-    },
     "/education/data-standardization/": {
       "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/first-career-project-budget/": {
       "views": 3
@@ -165,6 +165,9 @@
     "/education/linc-3-0/": {
       "views": 1
     },
+    "/education/mokwon-print-market-curriculum-2026/": {
+      "views": 2
+    },
     "/education/national-flagship-university-operating-model/": {
       "views": 2
     },
@@ -186,6 +189,9 @@
     "/education/topik-ai-digital-operating-model/": {
       "views": 1
     },
+    "/education/tuition-committee-investment-accountability/": {
+      "views": 2
+    },
     "/education/university-ai-ethics-operating-model/": {
       "views": 1
     },
@@ -193,7 +199,7 @@
       "views": 1
     },
     "/education/university-region-committee-execution-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/visa-based-student-pathway/": {
       "views": 1
@@ -268,7 +274,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 5
+      "views": 4
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
@@ -516,9 +522,6 @@
     "/tags/puppeteer/": {
       "views": 1
     },
-    "/tags/react/": {
-      "views": 1
-    },
     "/tags/responsibleai/": {
       "views": 1
     },
@@ -544,9 +547,6 @@
       "views": 1
     },
     "/tags/speaking/": {
-      "views": 1
-    },
-    "/tags/spx/": {
       "views": 1
     },
     "/tags/standards/": {
@@ -615,10 +615,16 @@
     "/tags/국립한밭대학교/": {
       "views": 1
     },
+    "/tags/국제교육협력/": {
+      "views": 1
+    },
     "/tags/기술이전/": {
       "views": 1
     },
     "/tags/대입자율성/": {
+      "views": 1
+    },
+    "/tags/대학경영/": {
       "views": 1
     },
     "/tags/대학구조개선/": {
@@ -658,7 +664,7 @@
       "views": 1
     },
     "/tags/런케이션/": {
-      "views": 2
+      "views": 1
     },
     "/tags/메모리공급망/": {
       "views": 1
@@ -673,9 +679,6 @@
       "views": 1
     },
     "/tags/블로그/": {
-      "views": 1
-    },
-    "/tags/성과모델링/": {
       "views": 1
     },
     "/tags/세한대/": {
@@ -696,10 +699,10 @@
     "/tags/아이패드/": {
       "views": 1
     },
-    "/tags/업무재설계/": {
+    "/tags/앵커사업단/": {
       "views": 1
     },
-    "/tags/에너지공대/": {
+    "/tags/업무재설계/": {
       "views": 1
     },
     "/tags/연암대/": {
@@ -771,9 +774,6 @@
     "/tags/푸드테크/": {
       "views": 1
     },
-    "/tags/품질관리/": {
-      "views": 1
-    },
     "/tags/학생이동성/": {
       "views": 1
     },
@@ -802,7 +802,7 @@
       "views": 1
     },
     "/theory/type-token-ratio-ttr/": {
-      "views": 6
+      "views": 5
     },
     "/welcome-to-ai/": {
       "views": 1
