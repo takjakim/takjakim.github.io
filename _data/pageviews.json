@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-10-28T05:29:56.925569+00:00",
+    "generated_at": "2026-10-29T05:38:29.874483+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -43,13 +43,13 @@
       "views": 7
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 8
+      "views": 7
     },
     "/ai/ai-smarter-human-must-doubt/": {
-      "views": 2
+      "views": 1
     },
     "/ai/ai-took-easy-work-first/": {
-      "views": 6
+      "views": 4
     },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
       "views": 9
@@ -82,6 +82,9 @@
       "views": 2
     },
     "/ai/will-ai-remove-middle-managers/": {
+      "views": 1
+    },
+    "/b4079e64-7832-46a2-b98a-a9a17d67c12f/": {
       "views": 1
     },
     "/cats/": {
@@ -129,9 +132,6 @@
     "/education/first-career-project-budget/": {
       "views": 3
     },
-    "/education/flagship-national-university/": {
-      "views": 1
-    },
     "/education/gangwon-rise-anchor-performance-2026/": {
       "views": 1
     },
@@ -166,9 +166,6 @@
       "views": 1
     },
     "/education/mokwon-print-market-curriculum-2026/": {
-      "views": 2
-    },
-    "/education/national-flagship-university-operating-model/": {
       "views": 2
     },
     "/education/oecd-education-indicators-university-strategy-2026/": {
@@ -213,28 +210,310 @@
     "/graph/": {
       "views": 8
     },
+    "/investing/2026-02-05/": {
+      "views": 1
+    },
+    "/investing/2026-02-10-global/": {
+      "views": 1
+    },
+    "/investing/2026-02-10-korea/": {
+      "views": 1
+    },
+    "/investing/2026-02-11-korea/": {
+      "views": 1
+    },
+    "/investing/2026-02-12-global/": {
+      "views": 1
+    },
+    "/investing/2026-02-12-heatmaps/": {
+      "views": 1
+    },
+    "/investing/2026-02-12-korea/": {
+      "views": 1
+    },
+    "/investing/2026-02-13-us/": {
+      "views": 1
+    },
+    "/investing/2026-02-17-us/": {
+      "views": 1
+    },
+    "/investing/2026-02-19-korea/": {
+      "views": 1
+    },
+    "/investing/2026-02-20-korea/": {
+      "views": 1
+    },
     "/investing/2026-02-24-us/": {
+      "views": 1
+    },
+    "/investing/2026-02-25-us/": {
+      "views": 1
+    },
+    "/investing/2026-02-26-us/": {
+      "views": 1
+    },
+    "/investing/2026-02-27-korea/": {
+      "views": 1
+    },
+    "/investing/2026-02-27-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-02-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-04-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-05-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-06-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-06-us/": {
       "views": 1
     },
     "/investing/2026-03-09-korea/": {
       "views": 1
     },
+    "/investing/2026-03-10-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-11-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-11-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-12-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-12-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-13-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-13-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-16-korea/": {
+      "views": 1
+    },
     "/investing/2026-03-16-us/": {
+      "views": 2
+    },
+    "/investing/2026-03-17-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-18-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-18-us/": {
       "views": 1
     },
     "/investing/2026-03-19-us/": {
+      "views": 2
+    },
+    "/investing/2026-03-20-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-23-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-23-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-24-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-25-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-26-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-26-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-27-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-27-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-30-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-30-us/": {
+      "views": 1
+    },
+    "/investing/2026-03-31-korea/": {
+      "views": 1
+    },
+    "/investing/2026-03-31-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-01-us/": {
       "views": 1
     },
     "/investing/2026-04-02-korea/": {
+      "views": 2
+    },
+    "/investing/2026-04-02-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-03-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-06-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-07-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-08-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-09-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-09-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-10-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-10-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-14-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-16-korea/": {
       "views": 1
     },
     "/investing/2026-04-16-us/": {
+      "views": 2
+    },
+    "/investing/2026-04-22-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-23-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-24-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-27-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-28-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-29-us/": {
+      "views": 1
+    },
+    "/investing/2026-04-30-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-30-us/": {
+      "views": 1
+    },
+    "/investing/2026-05-01-us/": {
+      "views": 1
+    },
+    "/investing/2026-05-04-us/": {
+      "views": 1
+    },
+    "/investing/2026-05-07-korea/": {
       "views": 1
     },
     "/investing/2026-05-07-us/": {
       "views": 1
     },
+    "/investing/2026-05-08-us/": {
+      "views": 1
+    },
+    "/investing/2026-05-15-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-10-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-11-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-12-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-12-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-15-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-16-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-16-us/": {
+      "views": 1
+    },
     "/investing/2026-06-17-korea/": {
+      "views": 2
+    },
+    "/investing/2026-06-18-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-19-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-23-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-24-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-25-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-25-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-26-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-26-us/": {
+      "views": 1
+    },
+    "/investing/2026-06-29-korea/": {
+      "views": 1
+    },
+    "/investing/2026-06-30-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-01-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-02-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-06-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-06-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-07-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-07-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-08-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-08-us/": {
       "views": 1
     },
     "/investing/2026-07-13-korea/": {
@@ -243,16 +522,226 @@
     "/investing/2026-07-14-us/": {
       "views": 1
     },
-    "/investing/2026-09-28-us/": {
+    "/investing/2026-07-15-korea/": {
       "views": 1
     },
+    "/investing/2026-07-16-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-17-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-20-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-21-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-21-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-23-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-23-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-24-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-27-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-27-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-28-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-28-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-29-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-29-us/": {
+      "views": 1
+    },
+    "/investing/2026-07-30-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-31-korea/": {
+      "views": 1
+    },
+    "/investing/2026-07-31-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-03-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-03-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-04-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-04-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-06-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-10-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-12-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-12-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-13-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-13-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-14-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-14-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-17-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-18-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-19-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-20-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-21-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-21-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-24-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-26-us/": {
+      "views": 1
+    },
+    "/investing/2026-08-27-korea/": {
+      "views": 1
+    },
+    "/investing/2026-08-31-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-01-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-01-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-02-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-02-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-03-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-03-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-04-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-07-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-09-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-09-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-10-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-14-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-15-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-16-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-16-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-17-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-18-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-21-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-22-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-23-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-24-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-28-korea/": {
+      "views": 1
+    },
+    "/investing/2026-09-28-us/": {
+      "views": 2
+    },
     "/investing/2026-09-29-korea/": {
+      "views": 2
+    },
+    "/investing/2026-09-29-us/": {
       "views": 1
     },
     "/investing/2026-09-30-korea/": {
       "views": 2
     },
     "/investing/2026-09-30-us/": {
+      "views": 2
+    },
+    "/investing/2026-10-01-korea/": {
+      "views": 1
+    },
+    "/investing/2026-10-01-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-02-korea/": {
+      "views": 1
+    },
+    "/investing/2026-10-02-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-05-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-09-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-12-us/": {
       "views": 1
     },
     "/macos/application10/": {
@@ -274,7 +763,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 4
+      "views": 3
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
@@ -288,8 +777,20 @@
     "/tags/agent/": {
       "views": 1
     },
+    "/tags/agentboss/": {
+      "views": 1
+    },
+    "/tags/agenticai/": {
+      "views": 1
+    },
     "/tags/ai/": {
       "views": 2
+    },
+    "/tags/aifluency/": {
+      "views": 1
+    },
+    "/tags/aislop/": {
+      "views": 1
     },
     "/tags/ai시스템/": {
       "views": 1
@@ -306,6 +807,9 @@
     "/tags/anthropic/": {
       "views": 1
     },
+    "/tags/architecture/": {
+      "views": 1
+    },
     "/tags/atriaai/": {
       "views": 2
     },
@@ -318,6 +822,9 @@
     "/tags/b2b/": {
       "views": 1
     },
+    "/tags/cbam/": {
+      "views": 1
+    },
     "/tags/chatgpt/": {
       "views": 1
     },
@@ -325,6 +832,9 @@
       "views": 1
     },
     "/tags/claude/": {
+      "views": 1
+    },
+    "/tags/claudecode/": {
       "views": 1
     },
     "/tags/codemirror/": {
@@ -355,7 +865,7 @@
       "views": 3
     },
     "/tags/digitalgarden/": {
-      "views": 1
+      "views": 2
     },
     "/tags/djia/": {
       "views": 1
@@ -373,6 +883,9 @@
       "views": 1
     },
     "/tags/english/": {
+      "views": 1
+    },
+    "/tags/esg/": {
       "views": 1
     },
     "/tags/fdi/": {
@@ -396,8 +909,14 @@
     "/tags/governance/": {
       "views": 1
     },
+    "/tags/gpx/": {
+      "views": 1
+    },
     "/tags/gx/": {
       "views": 2
+    },
+    "/tags/hangul/": {
+      "views": 1
     },
     "/tags/heyling/": {
       "views": 1
@@ -432,6 +951,9 @@
     "/tags/ixic/": {
       "views": 1
     },
+    "/tags/jev/": {
+      "views": 1
+    },
     "/tags/kedi/": {
       "views": 1
     },
@@ -447,10 +969,25 @@
     "/tags/knowledge-ecosystem/": {
       "views": 1
     },
+    "/tags/korean/": {
+      "views": 1
+    },
+    "/tags/kosdaq/": {
+      "views": 1
+    },
+    "/tags/kospi/": {
+      "views": 1
+    },
+    "/tags/kr/": {
+      "views": 1
+    },
     "/tags/labor/": {
       "views": 2
     },
     "/tags/langgraph/": {
+      "views": 1
+    },
+    "/tags/llm/": {
       "views": 1
     },
     "/tags/llmwiki/": {
@@ -466,6 +1003,9 @@
       "views": 2
     },
     "/tags/marp/": {
+      "views": 1
+    },
+    "/tags/mcp/": {
       "views": 1
     },
     "/tags/mdx/": {
@@ -486,6 +1026,12 @@
     "/tags/ndx/": {
       "views": 2
     },
+    "/tags/nextjs/": {
+      "views": 1
+    },
+    "/tags/obsidian/": {
+      "views": 1
+    },
     "/tags/oecd/": {
       "views": 2
     },
@@ -493,6 +1039,12 @@
       "views": 1
     },
     "/tags/openuic/": {
+      "views": 1
+    },
+    "/tags/optimization/": {
+      "views": 1
+    },
+    "/tags/paraphrasing/": {
       "views": 1
     },
     "/tags/patent/": {
@@ -511,6 +1063,9 @@
       "views": 2
     },
     "/tags/planning/": {
+      "views": 2
+    },
+    "/tags/pptx/": {
       "views": 1
     },
     "/tags/presentation/": {
@@ -520,6 +1075,12 @@
       "views": 1
     },
     "/tags/puppeteer/": {
+      "views": 1
+    },
+    "/tags/pyodide/": {
+      "views": 1
+    },
+    "/tags/rag/": {
       "views": 1
     },
     "/tags/responsibleai/": {
@@ -555,7 +1116,13 @@
     "/tags/startup/": {
       "views": 2
     },
+    "/tags/stats/": {
+      "views": 1
+    },
     "/tags/sustainability/": {
+      "views": 1
+    },
+    "/tags/technology/": {
       "views": 1
     },
     "/tags/tmux/": {
@@ -568,6 +1135,9 @@
       "views": 2
     },
     "/tags/trade/": {
+      "views": 1
+    },
+    "/tags/training/": {
       "views": 1
     },
     "/tags/transjeju/": {
@@ -585,67 +1155,265 @@
     "/tags/yc/": {
       "views": 1
     },
-    "/tags/개발기/": {
+    "/tags/ymtc/": {
       "views": 1
+    },
+    "/tags/가야대/": {
+      "views": 1
+    },
+    "/tags/강원/": {
+      "views": 1
+    },
+    "/tags/강원대/": {
+      "views": 1
+    },
+    "/tags/강원대학교강릉캠퍼스/": {
+      "views": 1
+    },
+    "/tags/강원특별자치도/": {
+      "views": 1
+    },
+    "/tags/개념노트/": {
+      "views": 1
+    },
+    "/tags/개발기/": {
+      "views": 2
     },
     "/tags/개발도구/": {
       "views": 1
     },
+    "/tags/개발자생산성/": {
+      "views": 1
+    },
+    "/tags/개인정보보호/": {
+      "views": 1
+    },
     "/tags/개인정보보호위원회/": {
+      "views": 2
+    },
+    "/tags/거점국립대/": {
+      "views": 1
+    },
+    "/tags/검증/": {
+      "views": 1
+    },
+    "/tags/경기북부/": {
       "views": 1
     },
     "/tags/경북/": {
       "views": 1
     },
+    "/tags/경상국립대/": {
+      "views": 1
+    },
+    "/tags/경영위기대학/": {
+      "views": 1
+    },
+    "/tags/경영컨설팅/": {
+      "views": 1
+    },
+    "/tags/경운대/": {
+      "views": 1
+    },
+    "/tags/계명문화대/": {
+      "views": 1
+    },
+    "/tags/계약학과/": {
+      "views": 1
+    },
+    "/tags/고등교육국제화/": {
+      "views": 1
+    },
+    "/tags/고등교육재정/": {
+      "views": 1
+    },
+    "/tags/고등교육정책/": {
+      "views": 1
+    },
+    "/tags/고등교육컨설팅/": {
+      "views": 1
+    },
     "/tags/공동교육/": {
+      "views": 1
+    },
+    "/tags/공동학위/": {
+      "views": 1
+    },
+    "/tags/공정성/": {
+      "views": 1
+    },
+    "/tags/공주대/": {
       "views": 1
     },
     "/tags/광주앵커센터/": {
       "views": 1
     },
+    "/tags/교수설계/": {
+      "views": 1
+    },
     "/tags/교수학습/": {
+      "views": 2
+    },
+    "/tags/교육공학/": {
+      "views": 1
+    },
+    "/tags/교육과정/": {
+      "views": 1
+    },
+    "/tags/교육과정개편/": {
+      "views": 1
+    },
+    "/tags/교육발전특구/": {
+      "views": 1
+    },
+    "/tags/교육재정/": {
       "views": 1
     },
     "/tags/교육품질/": {
+      "views": 2
+    },
+    "/tags/교재바우처/": {
+      "views": 1
+    },
+    "/tags/구조개선/": {
       "views": 1
     },
     "/tags/국립금오공과대학교/": {
       "views": 1
     },
+    "/tags/국립순천대/": {
+      "views": 1
+    },
+    "/tags/국립순천대학교/": {
+      "views": 1
+    },
+    "/tags/국립창원대/": {
+      "views": 1
+    },
     "/tags/국립한밭대학교/": {
+      "views": 2
+    },
+    "/tags/국외이전/": {
       "views": 1
     },
     "/tags/국제교육협력/": {
+      "views": 2
+    },
+    "/tags/규제개선/": {
+      "views": 1
+    },
+    "/tags/그래프/": {
+      "views": 1
+    },
+    "/tags/글로벌교육/": {
+      "views": 1
+    },
+    "/tags/글로벌취업/": {
+      "views": 1
+    },
+    "/tags/글로컬/": {
+      "views": 1
+    },
+    "/tags/글로컬대학/": {
+      "views": 1
+    },
+    "/tags/글로컬대학30/": {
+      "views": 1
+    },
+    "/tags/금오공과대학교/": {
+      "views": 1
+    },
+    "/tags/금융보안/": {
       "views": 1
     },
     "/tags/기술이전/": {
       "views": 1
     },
+    "/tags/기초과학/": {
+      "views": 1
+    },
+    "/tags/나스닥/": {
+      "views": 1
+    },
+    "/tags/노트앱/": {
+      "views": 1
+    },
+    "/tags/대구전문대/": {
+      "views": 1
+    },
+    "/tags/대구한의대학교/": {
+      "views": 1
+    },
+    "/tags/대림대/": {
+      "views": 1
+    },
+    "/tags/대림대학교/": {
+      "views": 1
+    },
+    "/tags/대입/": {
+      "views": 1
+    },
     "/tags/대입자율성/": {
       "views": 1
     },
-    "/tags/대학경영/": {
+    "/tags/대입정책/": {
       "views": 1
+    },
+    "/tags/대학경영/": {
+      "views": 2
     },
     "/tags/대학구조개선/": {
-      "views": 1
+      "views": 2
     },
     "/tags/대학구조개혁/": {
+      "views": 2
+    },
+    "/tags/대학기초연구소/": {
+      "views": 1
+    },
+    "/tags/대학도서관/": {
       "views": 1
     },
     "/tags/대학리뷰/": {
+      "views": 2
+    },
+    "/tags/대학분석/": {
+      "views": 1
+    },
+    "/tags/대학생첫경력프로젝트/": {
       "views": 1
     },
     "/tags/대학재정/": {
+      "views": 2
+    },
+    "/tags/대학전략/": {
       "views": 1
     },
     "/tags/대학정보공시/": {
-      "views": 1
+      "views": 2
     },
     "/tags/대학정책/": {
       "views": 1
     },
     "/tags/대학진학/": {
+      "views": 1
+    },
+    "/tags/대학창업/": {
+      "views": 1
+    },
+    "/tags/대학컨설팅/": {
+      "views": 1
+    },
+    "/tags/대학통폐합/": {
+      "views": 1
+    },
+    "/tags/대학통합/": {
+      "views": 1
+    },
+    "/tags/대학평가/": {
+      "views": 1
+    },
+    "/tags/대학혁신/": {
       "views": 1
     },
     "/tags/대학혁신지원사업/": {
@@ -654,41 +1422,284 @@
     "/tags/대화기록/": {
       "views": 1
     },
+    "/tags/데이터기반행정/": {
+      "views": 1
+    },
+    "/tags/데이터전략/": {
+      "views": 1
+    },
+    "/tags/데이터표준화/": {
+      "views": 1
+    },
     "/tags/데이터플라이휠/": {
+      "views": 1
+    },
+    "/tags/도메인전문성/": {
+      "views": 1
+    },
+    "/tags/동남권/": {
+      "views": 1
+    },
+    "/tags/동의과학대/": {
+      "views": 1
+    },
+    "/tags/동의과학대학교/": {
       "views": 1
     },
     "/tags/동의대/": {
       "views": 1
     },
+    "/tags/디자인/": {
+      "views": 1
+    },
+    "/tags/디지털리터러시/": {
+      "views": 1
+    },
+    "/tags/디지털주권/": {
+      "views": 1
+    },
     "/tags/디지털트윈/": {
+      "views": 1
+    },
+    "/tags/라이즈/": {
       "views": 1
     },
     "/tags/런케이션/": {
       "views": 1
     },
-    "/tags/메모리공급망/": {
+    "/tags/로컬ai/": {
       "views": 1
+    },
+    "/tags/리스크평가/": {
+      "views": 1
+    },
+    "/tags/마이데이터/": {
+      "views": 1
+    },
+    "/tags/마이크로디그리/": {
+      "views": 1
+    },
+    "/tags/마크다운/": {
+      "views": 1
+    },
+    "/tags/마크다운ㅎ글/": {
+      "views": 1
+    },
+    "/tags/맥북/": {
+      "views": 1
+    },
+    "/tags/메가플래닝/": {
+      "views": 1
+    },
+    "/tags/메모리공급망/": {
+      "views": 2
     },
     "/tags/메모리반도체/": {
       "views": 1
     },
+    "/tags/메타인지/": {
+      "views": 1
+    },
+    "/tags/메타컨틴전시/": {
+      "views": 1
+    },
+    "/tags/명세/": {
+      "views": 1
+    },
+    "/tags/모집요강/": {
+      "views": 1
+    },
+    "/tags/목포대/": {
+      "views": 1
+    },
+    "/tags/무전공제/": {
+      "views": 1
+    },
+    "/tags/미래대응기금/": {
+      "views": 1
+    },
+    "/tags/미래자동차/": {
+      "views": 1
+    },
+    "/tags/바이브코딩/": {
+      "views": 1
+    },
+    "/tags/바이오/": {
+      "views": 1
+    },
+    "/tags/바이오헬스/": {
+      "views": 1
+    },
+    "/tags/반도체/": {
+      "views": 1
+    },
+    "/tags/방산/": {
+      "views": 1
+    },
+    "/tags/백링크/": {
+      "views": 1
+    },
+    "/tags/변혁적리더십/": {
+      "views": 1
+    },
+    "/tags/변화관리전략/": {
+      "views": 1
+    },
+    "/tags/보건계열/": {
+      "views": 1
+    },
+    "/tags/보건교육/": {
+      "views": 1
+    },
+    "/tags/보건의료/": {
+      "views": 1
+    },
     "/tags/보건의료인력/": {
+      "views": 2
+    },
+    "/tags/보안위협/": {
+      "views": 1
+    },
+    "/tags/부산/": {
+      "views": 1
+    },
+    "/tags/부산대/": {
+      "views": 1
+    },
+    "/tags/부산대학교/": {
+      "views": 1
+    },
+    "/tags/부산앵커센터/": {
+      "views": 1
+    },
+    "/tags/부산형앵커/": {
+      "views": 1
+    },
+    "/tags/부울경/": {
       "views": 1
     },
     "/tags/분석설계/": {
+      "views": 2
+    },
+    "/tags/뷰티케어/": {
       "views": 1
     },
     "/tags/블로그/": {
       "views": 1
     },
+    "/tags/비고츠키/": {
+      "views": 1
+    },
+    "/tags/비전검사/": {
+      "views": 1
+    },
+    "/tags/비즈니스로직모델/": {
+      "views": 1
+    },
+    "/tags/비판적사고/": {
+      "views": 1
+    },
+    "/tags/사립대구조개선법/": {
+      "views": 1
+    },
+    "/tags/사립대학/": {
+      "views": 1
+    },
+    "/tags/사무직/": {
+      "views": 1
+    },
+    "/tags/산림임업/": {
+      "views": 1
+    },
+    "/tags/산업계대학교육혁신포럼/": {
+      "views": 1
+    },
+    "/tags/산학공동기술개발/": {
+      "views": 1
+    },
+    "/tags/산학협력/": {
+      "views": 1
+    },
+    "/tags/생산성/": {
+      "views": 1
+    },
+    "/tags/섀도우ai/": {
+      "views": 1
+    },
+    "/tags/서울대10개만들기/": {
+      "views": 1
+    },
+    "/tags/성과개선/": {
+      "views": 1
+    },
+    "/tags/성과관리/": {
+      "views": 1
+    },
+    "/tags/성과관리통합시스템/": {
+      "views": 1
+    },
+    "/tags/성과목표정렬/": {
+      "views": 1
+    },
+    "/tags/성과지표/": {
+      "views": 1
+    },
+    "/tags/성과평가/": {
+      "views": 1
+    },
+    "/tags/성인학습자/": {
+      "views": 1
+    },
+    "/tags/성찰/": {
+      "views": 1
+    },
+    "/tags/성찰적사고/": {
+      "views": 1
+    },
     "/tags/세한대/": {
       "views": 1
     },
+    "/tags/세한대학교/": {
+      "views": 1
+    },
+    "/tags/수시/": {
+      "views": 1
+    },
     "/tags/수학교육/": {
+      "views": 2
+    },
+    "/tags/순천대/": {
+      "views": 1
+    },
+    "/tags/순천제일대/": {
+      "views": 1
+    },
+    "/tags/순천제일대학교/": {
+      "views": 1
+    },
+    "/tags/순천향대/": {
+      "views": 1
+    },
+    "/tags/순천향대학교/": {
       "views": 1
     },
     "/tags/스마트팩토리/": {
-      "views": 2
+      "views": 1
+    },
+    "/tags/스캐폴딩/": {
+      "views": 1
+    },
+    "/tags/스펙코딩/": {
+      "views": 1
+    },
+    "/tags/시스템적접근/": {
+      "views": 1
+    },
+    "/tags/신진연구자/": {
+      "views": 1
+    },
+    "/tags/신한은행/": {
+      "views": 1
     },
     "/tags/실행구조/": {
       "views": 1
@@ -699,10 +1710,49 @@
     "/tags/아이패드/": {
       "views": 1
     },
+    "/tags/애플/": {
+      "views": 1
+    },
+    "/tags/앵커루트/": {
+      "views": 1
+    },
     "/tags/앵커사업단/": {
+      "views": 2
+    },
+    "/tags/약학교육/": {
+      "views": 1
+    },
+    "/tags/업무시스템/": {
+      "views": 1
+    },
+    "/tags/업무자동화/": {
+      "views": 1
+    },
+    "/tags/업무자료/": {
       "views": 1
     },
     "/tags/업무재설계/": {
+      "views": 1
+    },
+    "/tags/에너지공대/": {
+      "views": 1
+    },
+    "/tags/에너지공학/": {
+      "views": 1
+    },
+    "/tags/에이전틱ai/": {
+      "views": 1
+    },
+    "/tags/역할세트이론/": {
+      "views": 1
+    },
+    "/tags/연계투자/": {
+      "views": 1
+    },
+    "/tags/연구윤리/": {
+      "views": 1
+    },
+    "/tags/연구중심대학/": {
       "views": 1
     },
     "/tags/연암대/": {
@@ -711,7 +1761,34 @@
     "/tags/연암대학교/": {
       "views": 1
     },
+    "/tags/영암캠퍼스/": {
+      "views": 1
+    },
+    "/tags/예체능전문대/": {
+      "views": 1
+    },
+    "/tags/옵트아웃/": {
+      "views": 1
+    },
+    "/tags/외국인주민지원센터/": {
+      "views": 1
+    },
+    "/tags/요구사항정의/": {
+      "views": 1
+    },
+    "/tags/우즈베키스탄/": {
+      "views": 1
+    },
+    "/tags/워크플로우/": {
+      "views": 1
+    },
     "/tags/원격교육/": {
+      "views": 1
+    },
+    "/tags/원대협/": {
+      "views": 1
+    },
+    "/tags/유령정체/": {
       "views": 1
     },
     "/tags/융합교육/": {
@@ -720,82 +1797,448 @@
     "/tags/응급구조과/": {
       "views": 1
     },
+    "/tags/의료교육/": {
+      "views": 1
+    },
+    "/tags/의사결정/": {
+      "views": 1
+    },
+    "/tags/이주배경학생/": {
+      "views": 1
+    },
+    "/tags/인공지능/": {
+      "views": 1
+    },
+    "/tags/인제대/": {
+      "views": 1
+    },
+    "/tags/인제대학교/": {
+      "views": 1
+    },
+    "/tags/인지부하/": {
+      "views": 1
+    },
+    "/tags/인하공전/": {
+      "views": 1
+    },
     "/tags/일의미래/": {
+      "views": 1
+    },
+    "/tags/임상병리학과/": {
+      "views": 1
+    },
+    "/tags/입시전략/": {
+      "views": 1
+    },
+    "/tags/장학금/": {
+      "views": 1
+    },
+    "/tags/재능대/": {
+      "views": 1
+    },
+    "/tags/재능대학교/": {
+      "views": 1
+    },
+    "/tags/재정지원사업/": {
+      "views": 1
+    },
+    "/tags/저작권/": {
+      "views": 1
+    },
+    "/tags/적정규모화/": {
+      "views": 1
+    },
+    "/tags/전공/": {
+      "views": 1
+    },
+    "/tags/전공서적/": {
+      "views": 1
+    },
+    "/tags/전공심화과정/": {
+      "views": 1
+    },
+    "/tags/전남rise/": {
+      "views": 1
+    },
+    "/tags/전남광주/": {
+      "views": 1
+    },
+    "/tags/전남뿌리기업협회/": {
+      "views": 1
+    },
+    "/tags/전략산업/": {
       "views": 1
     },
     "/tags/전문대/": {
       "views": 1
     },
+    "/tags/전문대입시/": {
+      "views": 1
+    },
+    "/tags/전문대학/": {
+      "views": 1
+    },
     "/tags/전문대학특성화/": {
+      "views": 2
+    },
+    "/tags/전자책/": {
+      "views": 1
+    },
+    "/tags/전환비용/": {
+      "views": 1
+    },
+    "/tags/정보위생/": {
+      "views": 1
+    },
+    "/tags/정주율/": {
+      "views": 1
+    },
+    "/tags/정주형유학/": {
+      "views": 1
+    },
+    "/tags/제주rise/": {
       "views": 1
     },
     "/tags/조직문화/": {
       "views": 1
     },
+    "/tags/조직변화/": {
+      "views": 2
+    },
     "/tags/조직운영/": {
       "views": 2
     },
+    "/tags/조직학습/": {
+      "views": 1
+    },
+    "/tags/중간관리자/": {
+      "views": 1
+    },
+    "/tags/중앙아시아/": {
+      "views": 1
+    },
+    "/tags/지방교육재정교부금/": {
+      "views": 1
+    },
     "/tags/지속가능경영/": {
+      "views": 2
+    },
+    "/tags/지수화/": {
+      "views": 1
+    },
+    "/tags/지식생산/": {
+      "views": 1
+    },
+    "/tags/지역rise센터/": {
+      "views": 1
+    },
+    "/tags/지역rise위원회/": {
+      "views": 1
+    },
+    "/tags/지역균형/": {
+      "views": 1
+    },
+    "/tags/지역균형발전/": {
+      "views": 1
+    },
+    "/tags/지역대학육성/": {
+      "views": 1
+    },
+    "/tags/지역산업/": {
+      "views": 1
+    },
+    "/tags/지역상권/": {
       "views": 1
     },
     "/tags/지역성장-인재양성체계/": {
+      "views": 2
+    },
+    "/tags/지역성장엔진/": {
+      "views": 1
+    },
+    "/tags/지역성장인재양성체계/": {
+      "views": 1
+    },
+    "/tags/지역연계/": {
       "views": 1
     },
     "/tags/지역의료/": {
       "views": 1
     },
+    "/tags/지역인재/": {
+      "views": 1
+    },
     "/tags/지역정주/": {
       "views": 1
     },
+    "/tags/지역특화산업/": {
+      "views": 1
+    },
+    "/tags/지역특화형비자/": {
+      "views": 1
+    },
+    "/tags/지역혁신중심대학지원체계/": {
+      "views": 1
+    },
+    "/tags/지정취소/": {
+      "views": 1
+    },
+    "/tags/직무역량/": {
+      "views": 1
+    },
+    "/tags/직업교육/": {
+      "views": 1
+    },
+    "/tags/직업교육법/": {
+      "views": 1
+    },
+    "/tags/진로/": {
+      "views": 1
+    },
+    "/tags/진로교육/": {
+      "views": 1
+    },
+    "/tags/진로설계/": {
+      "views": 1
+    },
     "/tags/진로지도/": {
+      "views": 2
+    },
+    "/tags/진로취업/": {
+      "views": 1
+    },
+    "/tags/질문설계/": {
+      "views": 1
+    },
+    "/tags/창업/": {
       "views": 1
     },
     "/tags/채용연계/": {
       "views": 1
     },
+    "/tags/책임/": {
+      "views": 1
+    },
+    "/tags/책임성/": {
+      "views": 1
+    },
+    "/tags/청년정주/": {
+      "views": 1
+    },
+    "/tags/청년정책/": {
+      "views": 1
+    },
     "/tags/체류자격/": {
+      "views": 2
+    },
+    "/tags/초광역/": {
+      "views": 1
+    },
+    "/tags/초광역대학연합/": {
+      "views": 1
+    },
+    "/tags/초광역성장엔진/": {
+      "views": 1
+    },
+    "/tags/초광역협력/": {
+      "views": 1
+    },
+    "/tags/초특성화/": {
+      "views": 1
+    },
+    "/tags/춘해보건대학교/": {
       "views": 1
     },
     "/tags/충남rise/": {
-      "views": 1
+      "views": 2
     },
     "/tags/충남대/": {
+      "views": 2
+    },
+    "/tags/충남대학교/": {
+      "views": 1
+    },
+    "/tags/충북/": {
+      "views": 1
+    },
+    "/tags/충북대/": {
+      "views": 1
+    },
+    "/tags/충원율/": {
       "views": 1
     },
     "/tags/취업/": {
       "views": 1
     },
+    "/tags/취업률/": {
+      "views": 1
+    },
+    "/tags/취업연계/": {
+      "views": 1
+    },
+    "/tags/취업전략/": {
+      "views": 1
+    },
+    "/tags/취업지원/": {
+      "views": 1
+    },
+    "/tags/치위생과/": {
+      "views": 1
+    },
+    "/tags/캠퍼스-혁신파크/": {
+      "views": 1
+    },
+    "/tags/캡스톤디자인/": {
+      "views": 1
+    },
+    "/tags/컨텍스트관리/": {
+      "views": 1
+    },
+    "/tags/컨텍스트엔지니어링/": {
+      "views": 1
+    },
+    "/tags/컴퓨터사용/": {
+      "views": 1
+    },
     "/tags/통합모집/": {
+      "views": 1
+    },
+    "/tags/통합적평가/": {
+      "views": 1
+    },
+    "/tags/트레일러닝/": {
       "views": 1
     },
     "/tags/특성화인센티브/": {
       "views": 1
     },
+    "/tags/파인튜닝/": {
+      "views": 1
+    },
+    "/tags/편집/": {
+      "views": 1
+    },
+    "/tags/평가/": {
+      "views": 1
+    },
+    "/tags/평생직업교육/": {
+      "views": 1
+    },
     "/tags/푸드테크/": {
+      "views": 2
+    },
+    "/tags/프로젝트기반학습/": {
+      "views": 1
+    },
+    "/tags/프롬프트엔지니어링/": {
+      "views": 1
+    },
+    "/tags/프롬프트인젝션/": {
+      "views": 1
+    },
+    "/tags/필즈상/": {
+      "views": 1
+    },
+    "/tags/하네스엔지니어링/": {
+      "views": 1
+    },
+    "/tags/하이플렉스/": {
+      "views": 1
+    },
+    "/tags/학령인구/": {
+      "views": 1
+    },
+    "/tags/학사운영/": {
+      "views": 1
+    },
+    "/tags/학생-포트폴리오/": {
+      "views": 1
+    },
+    "/tags/학생보호/": {
+      "views": 1
+    },
+    "/tags/학생성과/": {
+      "views": 1
+    },
+    "/tags/학생역량/": {
       "views": 1
     },
     "/tags/학생이동성/": {
+      "views": 2
+    },
+    "/tags/학생지원/": {
+      "views": 1
+    },
+    "/tags/학생창업/": {
+      "views": 1
+    },
+    "/tags/학생채용/": {
+      "views": 1
+    },
+    "/tags/학생포트폴리오/": {
+      "views": 1
+    },
+    "/tags/학술서/": {
       "views": 1
     },
     "/tags/학습지원/": {
-      "views": 1
+      "views": 2
     },
     "/tags/한국교통대/": {
+      "views": 1
+    },
+    "/tags/한국어교육/": {
+      "views": 1
+    },
+    "/tags/한국어능력시험/": {
+      "views": 1
+    },
+    "/tags/한국에너지공대/": {
       "views": 1
     },
     "/tags/한의예과/": {
       "views": 1
     },
+    "/tags/한의학/": {
+      "views": 1
+    },
+    "/tags/한화그룹/": {
+      "views": 1
+    },
     "/tags/항공계열/": {
       "views": 1
     },
+    "/tags/항공산업/": {
+      "views": 1
+    },
+    "/tags/항공운항학과/": {
+      "views": 1
+    },
     "/tags/항공정비학과/": {
+      "views": 2
+    },
+    "/tags/해상풍력/": {
+      "views": 1
+    },
+    "/tags/해양수도/": {
       "views": 1
     },
     "/tags/해외영업/": {
       "views": 1
     },
     "/tags/해외취업/": {
+      "views": 1
+    },
+    "/tags/행동주의심리학/": {
+      "views": 1
+    },
+    "/tags/혁신지원사업/": {
+      "views": 1
+    },
+    "/tags/현대자동차그룹/": {
+      "views": 1
+    },
+    "/tags/현장실습/": {
       "views": 1
     },
     "/theory/kobest/": {
