@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-01T05:53:39.454532+00:00",
+    "generated_at": "2026-11-02T05:53:33.426566+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -37,7 +37,7 @@
       "views": 8
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 7
+      "views": 6
     },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 1
@@ -61,6 +61,9 @@
       "views": 1
     },
     "/ai/local-finetuning/": {
+      "views": 1
+    },
+    "/ai/markdown-is-an-employee-yc/": {
       "views": 1
     },
     "/ai/prompt-training-work-redesign/": {
@@ -124,7 +127,7 @@
       "views": 4
     },
     "/education/inje-uhs-hospital-roadmap/": {
-      "views": 3
+      "views": 2
     },
     "/education/joint-r-and-d/": {
       "views": 1
@@ -378,6 +381,9 @@
     "/investing/2026-03-31-us/": {
       "views": 1
     },
+    "/investing/2026-04-01-korea/": {
+      "views": 1
+    },
     "/investing/2026-04-01-us/": {
       "views": 1
     },
@@ -417,6 +423,9 @@
     "/investing/2026-04-13-korea/": {
       "views": 1
     },
+    "/investing/2026-04-13-us/": {
+      "views": 1
+    },
     "/investing/2026-04-14-korea/": {
       "views": 1
     },
@@ -447,6 +456,9 @@
     "/investing/2026-04-21-korea/": {
       "views": 1
     },
+    "/investing/2026-04-21-us/": {
+      "views": 1
+    },
     "/investing/2026-04-22-korea/": {
       "views": 1
     },
@@ -472,6 +484,9 @@
       "views": 1
     },
     "/investing/2026-04-28-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-29-korea/": {
       "views": 1
     },
     "/investing/2026-04-29-us/": {
@@ -633,6 +648,9 @@
     "/investing/2026-07-10-korea/": {
       "views": 1
     },
+    "/investing/2026-07-10-us/": {
+      "views": 1
+    },
     "/investing/2026-07-13-korea/": {
       "views": 1
     },
@@ -747,6 +765,9 @@
     "/investing/2026-08-07-korea/": {
       "views": 1
     },
+    "/investing/2026-08-07-us/": {
+      "views": 1
+    },
     "/investing/2026-08-10-korea/": {
       "views": 1
     },
@@ -813,6 +834,9 @@
     "/investing/2026-08-25-korea/": {
       "views": 1
     },
+    "/investing/2026-08-25-us/": {
+      "views": 1
+    },
     "/investing/2026-08-26-korea/": {
       "views": 1
     },
@@ -853,6 +877,9 @@
       "views": 1
     },
     "/investing/2026-09-03-us/": {
+      "views": 1
+    },
+    "/investing/2026-09-04-korea/": {
       "views": 1
     },
     "/investing/2026-09-04-us/": {
@@ -1008,25 +1035,52 @@
     "/investing/2026-10-15-korea/": {
       "views": 1
     },
+    "/investing/2026-10-15-us/": {
+      "views": 1
+    },
     "/investing/2026-10-16-korea/": {
+      "views": 1
+    },
+    "/investing/2026-10-16-us/": {
       "views": 1
     },
     "/investing/2026-10-19-korea/": {
       "views": 1
     },
+    "/investing/2026-10-19-us/": {
+      "views": 1
+    },
     "/investing/2026-10-20-korea/": {
+      "views": 1
+    },
+    "/investing/2026-10-20-us/": {
       "views": 1
     },
     "/investing/2026-10-21-korea/": {
       "views": 1
     },
     "/investing/2026-10-21-us/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-10-22-korea/": {
       "views": 1
     },
+    "/investing/2026-10-22-us/": {
+      "views": 1
+    },
     "/investing/2026-10-23-korea/": {
+      "views": 1
+    },
+    "/investing/2026-10-23-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-26-korea/": {
+      "views": 1
+    },
+    "/investing/2026-10-29-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-30-us/": {
       "views": 1
     },
     "/macos/application10/": {
@@ -1044,14 +1098,11 @@
     "/notes/학생경로-관리/": {
       "views": 1
     },
-    "/running/2026-06-07-trail-running-training-log/": {
-      "views": 1
-    },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
       "views": 2
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
-      "views": 2
+      "views": 1
     },
     "/tags/": {
       "views": 3
@@ -1069,7 +1120,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 4
+      "views": 6
     },
     "/tags/aifluency/": {
       "views": 1
@@ -1153,7 +1204,7 @@
       "views": 2
     },
     "/tags/dev/": {
-      "views": 2
+      "views": 1
     },
     "/tags/dgxspark/": {
       "views": 1
@@ -1188,6 +1239,9 @@
     "/tags/fdi/": {
       "views": 1
     },
+    "/tags/gaia/": {
+      "views": 1
+    },
     "/tags/gemini/": {
       "views": 1
     },
@@ -1201,7 +1255,7 @@
       "views": 1
     },
     "/tags/global/": {
-      "views": 2
+      "views": 1
     },
     "/tags/googledeepmind/": {
       "views": 1
@@ -1219,7 +1273,7 @@
       "views": 1
     },
     "/tags/gx/": {
-      "views": 2
+      "views": 1
     },
     "/tags/hangul/": {
       "views": 1
@@ -1243,7 +1297,7 @@
       "views": 1
     },
     "/tags/hstech/": {
-      "views": 2
+      "views": 1
     },
     "/tags/humanintheloop/": {
       "views": 1
@@ -1318,7 +1372,7 @@
       "views": 1
     },
     "/tags/market/": {
-      "views": 1
+      "views": 2
     },
     "/tags/marp/": {
       "views": 1
@@ -1420,7 +1474,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 7
+      "views": 6
     },
     "/tags/ryzenaimax/": {
       "views": 1
@@ -1506,6 +1560,9 @@
     "/tags/간호학과/": {
       "views": 1
     },
+    "/tags/강릉rise/": {
+      "views": 1
+    },
     "/tags/강릉캠퍼스/": {
       "views": 1
     },
@@ -1584,6 +1641,9 @@
     "/tags/경운대/": {
       "views": 1
     },
+    "/tags/경운대학교/": {
+      "views": 1
+    },
     "/tags/계명문화대/": {
       "views": 1
     },
@@ -1597,9 +1657,12 @@
       "views": 1
     },
     "/tags/고등교육국제화/": {
-      "views": 1
+      "views": 2
     },
     "/tags/고등교육소프트랩/": {
+      "views": 1
+    },
+    "/tags/고등교육예산/": {
       "views": 1
     },
     "/tags/고등교육재정/": {
@@ -1716,6 +1779,9 @@
     "/tags/국립의대/": {
       "views": 1
     },
+    "/tags/국립의학전문대학원/": {
+      "views": 1
+    },
     "/tags/국립창원대/": {
       "views": 1
     },
@@ -1797,6 +1863,9 @@
     "/tags/기술이전/": {
       "views": 1
     },
+    "/tags/기업ai/": {
+      "views": 1
+    },
     "/tags/기업과제/": {
       "views": 1
     },
@@ -1870,7 +1939,7 @@
       "views": 2
     },
     "/tags/대학구조개혁/": {
-      "views": 2
+      "views": 1
     },
     "/tags/대학기초연구소/": {
       "views": 1
@@ -1882,7 +1951,7 @@
       "views": 1
     },
     "/tags/대학리뷰/": {
-      "views": 2
+      "views": 1
     },
     "/tags/대학분석/": {
       "views": 1
@@ -1894,7 +1963,7 @@
       "views": 1
     },
     "/tags/대학재정/": {
-      "views": 2
+      "views": 1
     },
     "/tags/대학전략/": {
       "views": 1
@@ -2466,6 +2535,9 @@
     "/tags/유학생/": {
       "views": 1
     },
+    "/tags/유학생정주/": {
+      "views": 1
+    },
     "/tags/융합교육/": {
       "views": 2
     },
@@ -2623,7 +2695,7 @@
       "views": 1
     },
     "/tags/조직운영/": {
-      "views": 2
+      "views": 1
     },
     "/tags/조직학습/": {
       "views": 2
@@ -2695,7 +2767,7 @@
       "views": 1
     },
     "/tags/지역성장-인재양성체계/": {
-      "views": 2
+      "views": 1
     },
     "/tags/지역성장엔진/": {
       "views": 1
@@ -2705,6 +2777,9 @@
     },
     "/tags/지역연계/": {
       "views": 2
+    },
+    "/tags/지역연구거점/": {
+      "views": 1
     },
     "/tags/지역의료/": {
       "views": 1
@@ -2716,7 +2791,7 @@
       "views": 1
     },
     "/tags/지역정주/": {
-      "views": 2
+      "views": 1
     },
     "/tags/지역특화산업/": {
       "views": 1
@@ -2916,6 +2991,9 @@
     "/tags/평가/": {
       "views": 1
     },
+    "/tags/평가공정성/": {
+      "views": 1
+    },
     "/tags/평가인증/": {
       "views": 1
     },
@@ -3009,6 +3087,9 @@
     "/tags/한국기술교육대/": {
       "views": 1
     },
+    "/tags/한국기술교육대학교/": {
+      "views": 1
+    },
     "/tags/한국승강기대/": {
       "views": 1
     },
@@ -3043,7 +3124,7 @@
       "views": 1
     },
     "/tags/항공계열/": {
-      "views": 1
+      "views": 2
     },
     "/tags/항공산업/": {
       "views": 1
@@ -3075,6 +3156,9 @@
     "/tags/혁신지원사업/": {
       "views": 1
     },
+    "/tags/현대자동차/": {
+      "views": 1
+    },
     "/tags/현대자동차그룹/": {
       "views": 1
     },
@@ -3088,6 +3172,9 @@
       "views": 1
     },
     "/theory/kobest/": {
+      "views": 1
+    },
+    "/theory/solar-107b/": {
       "views": 1
     },
     "/theory/type-token-ratio-ttr/": {
