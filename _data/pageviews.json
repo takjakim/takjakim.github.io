@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-02T05:53:33.426566+00:00",
+    "generated_at": "2026-11-03T06:38:23.059394+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 79
+      "views": 85
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
@@ -20,6 +20,9 @@
     },
     "/ai/ai-consulting-deployment/": {
       "views": 23
+    },
+    "/ai/ai-goes-to-work/": {
+      "views": 3
     },
     "/ai/ai-hacking-shinhan-bank-artex/": {
       "views": 10
@@ -87,7 +90,7 @@
     "/daily/": {
       "views": 1
     },
-    "/dev/Github-Jekyll-한글폰트설정방법/": {
+    "/dev/marp-editor/devlog-1/": {
       "views": 1
     },
     "/ededef91-bf40-447e-be33-529958aa139f/": {
@@ -124,7 +127,7 @@
       "views": 1
     },
     "/education/humanities-ai-curriculum-2026/": {
-      "views": 4
+      "views": 5
     },
     "/education/inje-uhs-hospital-roadmap/": {
       "views": 2
@@ -132,17 +135,11 @@
     "/education/joint-r-and-d/": {
       "views": 1
     },
-    "/education/kentech-organization-issues-2026/": {
-      "views": 1
-    },
     "/education/linc-3-0/": {
       "views": 1
     },
     "/education/mokwon-print-market-curriculum-2026/": {
       "views": 2
-    },
-    "/education/oecd-education-indicators-university-strategy-2026/": {
-      "views": 1
     },
     "/education/private-university-specialization-strategy-2026/": {
       "views": 1
@@ -163,7 +160,7 @@
       "views": 3
     },
     "/education/vietnam-study-fair-career-pathways-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/직무-한국어/": {
       "views": 1
@@ -172,7 +169,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 4
+      "views": 5
     },
     "/investing/2026-02-05/": {
       "views": 1
@@ -280,7 +277,7 @@
       "views": 1
     },
     "/investing/2026-03-09-korea/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-03-09-us/": {
       "views": 1
@@ -396,6 +393,9 @@
     "/investing/2026-04-03-korea/": {
       "views": 1
     },
+    "/investing/2026-04-06-korea/": {
+      "views": 1
+    },
     "/investing/2026-04-06-us/": {
       "views": 1
     },
@@ -442,7 +442,7 @@
       "views": 1
     },
     "/investing/2026-04-16-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-04-17-korea/": {
       "views": 1
@@ -451,6 +451,9 @@
       "views": 1
     },
     "/investing/2026-04-20-korea/": {
+      "views": 1
+    },
+    "/investing/2026-04-20-us/": {
       "views": 1
     },
     "/investing/2026-04-21-korea/": {
@@ -559,7 +562,7 @@
       "views": 1
     },
     "/investing/2026-06-17-korea/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-06-18-korea/": {
       "views": 1
@@ -979,10 +982,10 @@
       "views": 1
     },
     "/investing/2026-09-30-korea/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-09-30-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-10-01-korea/": {
       "views": 1
@@ -1032,6 +1035,9 @@
     "/investing/2026-10-13-us/": {
       "views": 1
     },
+    "/investing/2026-10-14-korea/": {
+      "views": 1
+    },
     "/investing/2026-10-15-korea/": {
       "views": 1
     },
@@ -1077,11 +1083,20 @@
     "/investing/2026-10-26-korea/": {
       "views": 1
     },
+    "/investing/2026-10-27-korea/": {
+      "views": 1
+    },
+    "/investing/2026-10-27-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-28-us/": {
+      "views": 1
+    },
     "/investing/2026-10-29-us/": {
       "views": 1
     },
     "/investing/2026-10-30-us/": {
-      "views": 1
+      "views": 2
     },
     "/macos/application10/": {
       "views": 2
@@ -1104,13 +1119,13 @@
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
     },
+    "/settlement-rate/": {
+      "views": 1
+    },
     "/tags/": {
       "views": 3
     },
     "/tags/acciowork/": {
-      "views": 1
-    },
-    "/tags/agent/": {
       "views": 1
     },
     "/tags/agentboss/": {
@@ -1341,6 +1356,9 @@
     "/tags/korean/": {
       "views": 1
     },
+    "/tags/koreatech/": {
+      "views": 1
+    },
     "/tags/kosdaq/": {
       "views": 1
     },
@@ -1393,7 +1411,7 @@
       "views": 1
     },
     "/tags/monitoring/": {
-      "views": 1
+      "views": 2
     },
     "/tags/mro/": {
       "views": 1
@@ -1453,9 +1471,6 @@
       "views": 1
     },
     "/tags/productivity/": {
-      "views": 1
-    },
-    "/tags/puppeteer/": {
       "views": 1
     },
     "/tags/pyodide/": {
@@ -2275,9 +2290,12 @@
       "views": 1
     },
     "/tags/사무직/": {
-      "views": 1
+      "views": 2
     },
     "/tags/사이버대/": {
+      "views": 1
+    },
+    "/tags/사이버보안/": {
       "views": 1
     },
     "/tags/사회적가치/": {
@@ -2416,7 +2434,7 @@
       "views": 2
     },
     "/tags/아이패드/": {
-      "views": 2
+      "views": 1
     },
     "/tags/안전성/": {
       "views": 1
@@ -2443,7 +2461,7 @@
       "views": 1
     },
     "/tags/업무시스템/": {
-      "views": 1
+      "views": 2
     },
     "/tags/업무자동화/": {
       "views": 1
@@ -2653,7 +2671,7 @@
       "views": 1
     },
     "/tags/전문대학특성화/": {
-      "views": 2
+      "views": 1
     },
     "/tags/전문대학혁신지원사업/": {
       "views": 1
@@ -2722,6 +2740,9 @@
       "views": 2
     },
     "/tags/지수화/": {
+      "views": 1
+    },
+    "/tags/지식관리/": {
       "views": 1
     },
     "/tags/지식그래프/": {
@@ -2896,7 +2917,7 @@
       "views": 1
     },
     "/tags/충남rise/": {
-      "views": 2
+      "views": 1
     },
     "/tags/충남대/": {
       "views": 2
@@ -2974,7 +2995,7 @@
       "views": 1
     },
     "/tags/특성화인센티브/": {
-      "views": 2
+      "views": 1
     },
     "/tags/특성화지방대학/": {
       "views": 1
@@ -3079,7 +3100,7 @@
       "views": 1
     },
     "/tags/학습지원/": {
-      "views": 2
+      "views": 1
     },
     "/tags/한국교통대/": {
       "views": 2
@@ -3171,11 +3192,11 @@
     "/tags/훈련기록/": {
       "views": 1
     },
-    "/theory/kobest/": {
+    "/theory/gsm8k/": {
       "views": 1
     },
     "/theory/solar-107b/": {
-      "views": 1
+      "views": 2
     },
     "/theory/type-token-ratio-ttr/": {
       "views": 5
