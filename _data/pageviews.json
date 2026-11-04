@@ -1,18 +1,30 @@
 {
   "meta": {
-    "generated_at": "2026-11-03T06:38:23.059394+00:00",
+    "generated_at": "2026-11-04T06:05:26.718739+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 85
+      "views": 89
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
     },
+    "/action-indicators/": {
+      "views": 1
+    },
+    "/adult-learners/": {
+      "views": 1
+    },
     "/agentic-ai/": {
+      "views": 1
+    },
+    "/ai-literacy/": {
+      "views": 1
+    },
+    "/ai-quality-management/": {
       "views": 1
     },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
@@ -40,7 +52,7 @@
       "views": 8
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 6
+      "views": 7
     },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 1
@@ -78,6 +90,9 @@
     "/ai/will-ai-remove-middle-managers/": {
       "views": 1
     },
+    "/anchor-policy/": {
+      "views": 1
+    },
     "/b4079e64-7832-46a2-b98a-a9a17d67c12f/": {
       "views": 1
     },
@@ -85,7 +100,7 @@
       "views": 2
     },
     "/college-consulting/": {
-      "views": 1
+      "views": 2
     },
     "/daily/": {
       "views": 1
@@ -108,6 +123,9 @@
     "/education/bootcamp-roundup-curriculum-feedback/": {
       "views": 1
     },
+    "/education/cybersecurity-ai-assessment-governance/": {
+      "views": 2
+    },
     "/education/data-standardization/": {
       "views": 1
     },
@@ -118,6 +136,9 @@
       "views": 3
     },
     "/education/graduate-pathway-indicator-governance-2026/": {
+      "views": 2
+    },
+    "/education/gwangju-anchor-incentive-allocation/": {
       "views": 2
     },
     "/education/gyeongnam-anchor-career-pipeline/": {
@@ -150,9 +171,6 @@
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 1
     },
-    "/education/topik-ai-digital-operating-model/": {
-      "views": 1
-    },
     "/education/tuition-committee-investment-accountability/": {
       "views": 2
     },
@@ -168,8 +186,17 @@
     "/generative-ai-privacy-protection/": {
       "views": 1
     },
+    "/glocal-university-30/": {
+      "views": 1
+    },
     "/graph/": {
       "views": 5
+    },
+    "/human-in-the-loop/": {
+      "views": 1
+    },
+    "/industry-university-matching/": {
+      "views": 1
     },
     "/investing/2026-02-05/": {
       "views": 1
@@ -976,7 +1003,7 @@
       "views": 1
     },
     "/investing/2026-09-29-korea/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-09-29-us/": {
       "views": 1
@@ -1098,6 +1125,15 @@
     "/investing/2026-10-30-us/": {
       "views": 2
     },
+    "/investing/2026-11-02-us/": {
+      "views": 1
+    },
+    "/knowledge-base/": {
+      "views": 1
+    },
+    "/lifelong-education/": {
+      "views": 1
+    },
     "/macos/application10/": {
       "views": 2
     },
@@ -1110,7 +1146,13 @@
     "/notes/교육과정-재구조화/": {
       "views": 1
     },
-    "/notes/학생경로-관리/": {
+    "/performance-feedback-loop/": {
+      "views": 1
+    },
+    "/performance-indexing/": {
+      "views": 1
+    },
+    "/rise-performance-indicators/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
@@ -1123,7 +1165,7 @@
       "views": 1
     },
     "/tags/": {
-      "views": 3
+      "views": 4
     },
     "/tags/acciowork/": {
       "views": 1
@@ -1135,7 +1177,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 6
+      "views": 7
     },
     "/tags/aifluency/": {
       "views": 1
@@ -1369,7 +1411,7 @@
       "views": 1
     },
     "/tags/labor/": {
-      "views": 2
+      "views": 1
     },
     "/tags/langgraph/": {
       "views": 1
@@ -1951,7 +1993,7 @@
       "views": 1
     },
     "/tags/대학구조개선/": {
-      "views": 2
+      "views": 1
     },
     "/tags/대학구조개혁/": {
       "views": 1
@@ -3196,10 +3238,13 @@
       "views": 1
     },
     "/theory/solar-107b/": {
-      "views": 2
+      "views": 4
     },
     "/theory/type-token-ratio-ttr/": {
       "views": 5
+    },
+    "/theory/zpd/": {
+      "views": 1
     },
     "/welcome-to-ai/": {
       "views": 1
