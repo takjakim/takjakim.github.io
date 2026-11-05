@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-04T06:05:26.718739+00:00",
+    "generated_at": "2026-11-05T06:34:38.885503+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -102,10 +102,16 @@
     "/college-consulting/": {
       "views": 2
     },
+    "/concept-note/": {
+      "views": 1
+    },
     "/daily/": {
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
+      "views": 1
+    },
+    "/digital-garden-concept/": {
       "views": 1
     },
     "/ededef91-bf40-447e-be33-529958aa139f/": {
@@ -132,8 +138,11 @@
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 1
     },
+    "/education/education-innovation-regional-pathways/": {
+      "views": 2
+    },
     "/education/first-career-project-budget/": {
-      "views": 3
+      "views": 5
     },
     "/education/graduate-pathway-indicator-governance-2026/": {
       "views": 2
@@ -183,9 +192,6 @@
     "/education/직무-한국어/": {
       "views": 1
     },
-    "/generative-ai-privacy-protection/": {
-      "views": 1
-    },
     "/glocal-university-30/": {
       "views": 1
     },
@@ -193,6 +199,9 @@
       "views": 5
     },
     "/human-in-the-loop/": {
+      "views": 1
+    },
+    "/industry-academic-cooperation/": {
       "views": 1
     },
     "/industry-university-matching/": {
@@ -1137,6 +1146,9 @@
     "/macos/application10/": {
       "views": 2
     },
+    "/macos/pip_install/": {
+      "views": 2
+    },
     "/macos/tidal-dl/": {
       "views": 2
     },
@@ -1150,6 +1162,9 @@
       "views": 1
     },
     "/performance-indexing/": {
+      "views": 1
+    },
+    "/regional-industry-academic-network/": {
       "views": 1
     },
     "/rise-performance-indicators/": {
@@ -1213,6 +1228,9 @@
       "views": 2
     },
     "/tags/ax/": {
+      "views": 1
+    },
+    "/tags/ax교육/": {
       "views": 1
     },
     "/tags/b2b/": {
@@ -1392,9 +1410,6 @@
     "/tags/kmove/": {
       "views": 2
     },
-    "/tags/knowledge-ecosystem/": {
-      "views": 1
-    },
     "/tags/korean/": {
       "views": 1
     },
@@ -1552,7 +1567,7 @@
       "views": 1
     },
     "/tags/startup/": {
-      "views": 2
+      "views": 1
     },
     "/tags/stats/": {
       "views": 1
@@ -1849,7 +1864,7 @@
       "views": 1
     },
     "/tags/국립한밭대학교/": {
-      "views": 2
+      "views": 1
     },
     "/tags/국민대/": {
       "views": 1
@@ -3238,7 +3253,7 @@
       "views": 1
     },
     "/theory/solar-107b/": {
-      "views": 4
+      "views": 5
     },
     "/theory/type-token-ratio-ttr/": {
       "views": 5
