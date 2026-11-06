@@ -1,19 +1,25 @@
 {
   "meta": {
-    "generated_at": "2026-11-05T06:34:38.885503+00:00",
+    "generated_at": "2026-11-06T06:29:34.881544+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 89
+      "views": 93
+    },
+    "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
+      "views": 2
     },
     "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
       "views": 1
     },
+    "/1fb4e4fc-2ca1-479a-98cc-6a6c18e2158b/": {
+      "views": 2
+    },
     "/action-indicators/": {
-      "views": 1
+      "views": 2
     },
     "/adult-learners/": {
       "views": 1
@@ -100,7 +106,10 @@
       "views": 2
     },
     "/college-consulting/": {
-      "views": 2
+      "views": 3
+    },
+    "/college-reviews/": {
+      "views": 1
     },
     "/concept-note/": {
       "views": 1
@@ -129,11 +138,11 @@
     "/education/bootcamp-roundup-curriculum-feedback/": {
       "views": 1
     },
+    "/education/changwon-ipms-data-governance-2026/": {
+      "views": 1
+    },
     "/education/cybersecurity-ai-assessment-governance/": {
       "views": 2
-    },
-    "/education/data-standardization/": {
-      "views": 1
     },
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 1
@@ -142,13 +151,13 @@
       "views": 2
     },
     "/education/first-career-project-budget/": {
-      "views": 5
+      "views": 6
     },
     "/education/graduate-pathway-indicator-governance-2026/": {
       "views": 2
     },
     "/education/gwangju-anchor-incentive-allocation/": {
-      "views": 2
+      "views": 3
     },
     "/education/gyeongnam-anchor-career-pipeline/": {
       "views": 1
@@ -169,12 +178,18 @@
       "views": 1
     },
     "/education/mokwon-print-market-curriculum-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/private-university-specialization-strategy-2026/": {
       "views": 1
     },
+    "/education/regional-growth-talent-system/": {
+      "views": 1
+    },
     "/education/regional-university-tech-commercialization/": {
+      "views": 1
+    },
+    "/education/rise-kpi-autonomy-university-strategy/": {
       "views": 1
     },
     "/education/suncheon-jeil-ai-digital-twin-2026/": {
@@ -196,7 +211,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 5
+      "views": 6
     },
     "/human-in-the-loop/": {
       "views": 1
@@ -421,7 +436,7 @@
       "views": 1
     },
     "/investing/2026-04-02-korea/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-04-02-us/": {
       "views": 1
@@ -1233,9 +1248,6 @@
     "/tags/ax교육/": {
       "views": 1
     },
-    "/tags/b2b/": {
-      "views": 1
-    },
     "/tags/carbon/": {
       "views": 1
     },
@@ -1270,7 +1282,7 @@
       "views": 1
     },
     "/tags/cxmt/": {
-      "views": 2
+      "views": 1
     },
     "/tags/dashboard/": {
       "views": 1
@@ -1320,16 +1332,10 @@
     "/tags/gemini/": {
       "views": 1
     },
-    "/tags/geminirobotics2/": {
-      "views": 1
-    },
     "/tags/generative-ai/": {
       "views": 1
     },
     "/tags/gks/": {
-      "views": 1
-    },
-    "/tags/global/": {
       "views": 1
     },
     "/tags/googledeepmind/": {
@@ -1506,9 +1512,6 @@
     "/tags/pbl/": {
       "views": 1
     },
-    "/tags/pdf/": {
-      "views": 1
-    },
     "/tags/physicalai/": {
       "views": 1
     },
@@ -1516,15 +1519,12 @@
       "views": 2
     },
     "/tags/planning/": {
-      "views": 2
+      "views": 1
     },
     "/tags/pptx/": {
       "views": 1
     },
     "/tags/presentation/": {
-      "views": 1
-    },
-    "/tags/product/": {
       "views": 1
     },
     "/tags/productivity/": {
@@ -2206,7 +2206,7 @@
       "views": 1
     },
     "/tags/메모리공급망/": {
-      "views": 2
+      "views": 1
     },
     "/tags/메모리반도체/": {
       "views": 1
@@ -2488,7 +2488,7 @@
       "views": 1
     },
     "/tags/실행지표/": {
-      "views": 2
+      "views": 1
     },
     "/tags/아이패드/": {
       "views": 1
@@ -2614,7 +2614,7 @@
       "views": 1
     },
     "/tags/융합교육/": {
-      "views": 2
+      "views": 1
     },
     "/tags/응급구조과/": {
       "views": 1
