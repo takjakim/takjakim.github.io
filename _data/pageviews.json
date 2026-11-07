@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-06T06:29:34.881544+00:00",
+    "generated_at": "2026-11-07T05:50:40.443105+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 93
+      "views": 94
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -25,7 +25,7 @@
       "views": 1
     },
     "/agentic-ai/": {
-      "views": 1
+      "views": 2
     },
     "/ai-literacy/": {
       "views": 1
@@ -33,11 +33,20 @@
     "/ai-quality-management/": {
       "views": 1
     },
+    "/ai/accio-work-trade-agent/": {
+      "views": 1
+    },
+    "/ai/ai-agents-have-taste/": {
+      "views": 1
+    },
     "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 1
     },
     "/ai/ai-consulting-deployment/": {
       "views": 23
+    },
+    "/ai/ai-data-center/": {
+      "views": 1
     },
     "/ai/ai-goes-to-work/": {
       "views": 3
@@ -51,7 +60,13 @@
     "/ai/ai-learning-assessment/": {
       "views": 10
     },
+    "/ai/ai-makers-ask-to-slow-down/": {
+      "views": 1
+    },
     "/ai/ai-productivity-conference-synthesis/": {
+      "views": 1
+    },
+    "/ai/ai-productivity-governance-keynote/": {
       "views": 1
     },
     "/ai/ai-research-university-performance/": {
@@ -60,26 +75,44 @@
     "/ai/ai-slop-human-responsibility/": {
       "views": 7
     },
+    "/ai/ai-slop-taste-editor/": {
+      "views": 1
+    },
     "/ai/ai-smarter-human-must-doubt/": {
       "views": 1
     },
+    "/ai/ai-took-easy-work-first/": {
+      "views": 1
+    },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
-      "views": 9
+      "views": 10
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
+      "views": 1
+    },
+    "/ai/ai-workstation/": {
+      "views": 1
+    },
+    "/ai/apple-price-increase-device-sovereignty/": {
       "views": 1
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
       "views": 10
     },
+    "/ai/chatgpt-astra-office-work/": {
+      "views": 1
+    },
     "/ai/chatgpt-desktop-codex-work-os/": {
+      "views": 1
+    },
+    "/ai/heyling-day2/": {
       "views": 1
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
       "views": 2
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 1
+      "views": 2
     },
     "/ai/local-finetuning/": {
       "views": 1
@@ -87,8 +120,14 @@
     "/ai/markdown-is-an-employee-yc/": {
       "views": 1
     },
+    "/ai/on-device-ai/": {
+      "views": 1
+    },
     "/ai/prompt-training-work-redesign/": {
       "views": 6
+    },
+    "/ai/vibe-coding-to-spec-coding/": {
+      "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
       "views": 3
@@ -114,10 +153,19 @@
     "/concept-note/": {
       "views": 1
     },
+    "/csat-minimum/": {
+      "views": 1
+    },
+    "/daegu-haany-university-kmedi-2026/": {
+      "views": 1
+    },
     "/daily/": {
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
+      "views": 1
+    },
+    "/digital-badge/": {
       "views": 1
     },
     "/digital-garden-concept/": {
@@ -204,14 +252,17 @@
     "/education/vietnam-study-fair-career-pathways-2026/": {
       "views": 3
     },
-    "/education/직무-한국어/": {
-      "views": 1
-    },
     "/glocal-university-30/": {
       "views": 1
     },
     "/graph/": {
       "views": 6
+    },
+    "/gyeongbuk-robot-specialization-university/": {
+      "views": 1
+    },
+    "/healthcare-departments/": {
+      "views": 1
     },
     "/human-in-the-loop/": {
       "views": 1
@@ -379,7 +430,7 @@
       "views": 1
     },
     "/investing/2026-03-19-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-03-20-korea/": {
       "views": 1
@@ -1162,7 +1213,7 @@
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 2
+      "views": 3
     },
     "/macos/tidal-dl/": {
       "views": 2
@@ -1173,6 +1224,9 @@
     "/notes/교육과정-재구조화/": {
       "views": 1
     },
+    "/opt-out/": {
+      "views": 1
+    },
     "/performance-feedback-loop/": {
       "views": 1
     },
@@ -1180,6 +1234,9 @@
       "views": 1
     },
     "/regional-industry-academic-network/": {
+      "views": 1
+    },
+    "/rise-performance-evaluation/": {
       "views": 1
     },
     "/rise-performance-indicators/": {
@@ -1398,9 +1455,6 @@
     "/tags/ipms/": {
       "views": 1
     },
-    "/tags/ixic/": {
-      "views": 1
-    },
     "/tags/jev/": {
       "views": 1
     },
@@ -1522,9 +1576,6 @@
       "views": 1
     },
     "/tags/pptx/": {
-      "views": 1
-    },
-    "/tags/presentation/": {
       "views": 1
     },
     "/tags/productivity/": {
@@ -3202,7 +3253,7 @@
       "views": 1
     },
     "/tags/항공계열/": {
-      "views": 2
+      "views": 1
     },
     "/tags/항공산업/": {
       "views": 1
@@ -3211,7 +3262,7 @@
       "views": 1
     },
     "/tags/항공정비학과/": {
-      "views": 2
+      "views": 1
     },
     "/tags/해상풍력/": {
       "views": 1
@@ -3220,7 +3271,7 @@
       "views": 1
     },
     "/tags/해외영업/": {
-      "views": 2
+      "views": 1
     },
     "/tags/해외인재/": {
       "views": 1
