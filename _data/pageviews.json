@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-07T05:50:40.443105+00:00",
+    "generated_at": "2026-11-08T05:53:16.443298+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 94
+      "views": 93
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -33,6 +33,9 @@
     "/ai-quality-management/": {
       "views": 1
     },
+    "/ai-risk-self-assessment/": {
+      "views": 1
+    },
     "/ai/accio-work-trade-agent/": {
       "views": 1
     },
@@ -54,8 +57,11 @@
     "/ai/ai-hacking-shinhan-bank-artex/": {
       "views": 10
     },
+    "/ai/ai-inflation/": {
+      "views": 1
+    },
     "/ai/ai-junior-work-learning/": {
-      "views": 7
+      "views": 8
     },
     "/ai/ai-learning-assessment/": {
       "views": 10
@@ -70,7 +76,7 @@
       "views": 1
     },
     "/ai/ai-research-university-performance/": {
-      "views": 8
+      "views": 9
     },
     "/ai/ai-slop-human-responsibility/": {
       "views": 7
@@ -88,7 +94,7 @@
       "views": 10
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-workstation/": {
       "views": 1
@@ -103,6 +109,15 @@
       "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
+      "views": 2
+    },
+    "/ai/chatgpt-work-codex-university-classroom/": {
+      "views": 1
+    },
+    "/ai/device-sovereignty/": {
+      "views": 1
+    },
+    "/ai/from-prompt-to-graph-engineering/": {
       "views": 1
     },
     "/ai/heyling-day2/": {
@@ -135,6 +150,9 @@
     "/ai/will-ai-remove-middle-managers/": {
       "views": 1
     },
+    "/ai/work-to-tool-ai-coding/": {
+      "views": 1
+    },
     "/anchor-policy/": {
       "views": 1
     },
@@ -142,7 +160,7 @@
       "views": 1
     },
     "/cats/": {
-      "views": 2
+      "views": 1
     },
     "/college-consulting/": {
       "views": 3
@@ -193,7 +211,7 @@
       "views": 2
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 1
+      "views": 2
     },
     "/education/education-innovation-regional-pathways/": {
       "views": 2
@@ -221,6 +239,9 @@
     },
     "/education/joint-r-and-d/": {
       "views": 1
+    },
+    "/education/lifelong-learning-neighborhood-network/": {
+      "views": 2
     },
     "/education/linc-3-0/": {
       "views": 1
@@ -252,6 +273,9 @@
     "/education/vietnam-study-fair-career-pathways-2026/": {
       "views": 3
     },
+    "/education/vocational-graduate-pathway/": {
+      "views": 1
+    },
     "/glocal-university-30/": {
       "views": 1
     },
@@ -259,6 +283,9 @@
       "views": 6
     },
     "/gyeongbuk-robot-specialization-university/": {
+      "views": 1
+    },
+    "/gyeonggi-rise/": {
       "views": 1
     },
     "/healthcare-departments/": {
@@ -1159,7 +1186,7 @@
       "views": 1
     },
     "/investing/2026-10-20-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-10-20-us/": {
       "views": 1
@@ -1201,7 +1228,7 @@
       "views": 2
     },
     "/investing/2026-11-02-us/": {
-      "views": 1
+      "views": 2
     },
     "/knowledge-base/": {
       "views": 1
@@ -1217,9 +1244,6 @@
     },
     "/macos/tidal-dl/": {
       "views": 2
-    },
-    "/mixed/": {
-      "views": 1
     },
     "/notes/교육과정-재구조화/": {
       "views": 1
@@ -1249,6 +1273,9 @@
       "views": 1
     },
     "/settlement-rate/": {
+      "views": 1
+    },
+    "/student-portfolio/": {
       "views": 1
     },
     "/tags/": {
@@ -1324,7 +1351,7 @@
       "views": 1
     },
     "/tags/codemirror/": {
-      "views": 1
+      "views": 2
     },
     "/tags/codex/": {
       "views": 1
@@ -1435,7 +1462,7 @@
       "views": 1
     },
     "/tags/hstech/": {
-      "views": 1
+      "views": 2
     },
     "/tags/humanintheloop/": {
       "views": 1
@@ -1503,11 +1530,14 @@
     "/tags/macstudio/": {
       "views": 1
     },
+    "/tags/markdown-hangul/": {
+      "views": 1
+    },
     "/tags/markdown/": {
       "views": 1
     },
     "/tags/market/": {
-      "views": 2
+      "views": 1
     },
     "/tags/marp/": {
       "views": 1
@@ -1564,6 +1594,9 @@
       "views": 1
     },
     "/tags/pbl/": {
+      "views": 1
+    },
+    "/tags/pdf-generation/": {
       "views": 1
     },
     "/tags/physicalai/": {
@@ -1639,7 +1672,7 @@
       "views": 1
     },
     "/tags/tou/": {
-      "views": 2
+      "views": 1
     },
     "/tags/trade/": {
       "views": 1
@@ -1663,9 +1696,6 @@
       "views": 1
     },
     "/tags/utmb/": {
-      "views": 1
-    },
-    "/tags/vercel/": {
       "views": 1
     },
     "/tags/vla/": {
@@ -2788,6 +2818,9 @@
       "views": 1
     },
     "/tags/전환비용/": {
+      "views": 1
+    },
+    "/tags/정보보호/": {
       "views": 1
     },
     "/tags/정보위생/": {
