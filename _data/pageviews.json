@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-08T05:53:16.443298+00:00",
+    "generated_at": "2026-11-09T06:10:20.908943+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 93
+      "views": 96
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -36,7 +36,16 @@
     "/ai-risk-self-assessment/": {
       "views": 1
     },
+    "/ai-work-data-control/": {
+      "views": 1
+    },
+    "/ai-x/": {
+      "views": 1
+    },
     "/ai/accio-work-trade-agent/": {
+      "views": 1
+    },
+    "/ai/ai-agent-responsibility-bottleneck/": {
       "views": 1
     },
     "/ai/ai-agents-have-taste/": {
@@ -112,7 +121,10 @@
       "views": 2
     },
     "/ai/chatgpt-work-codex-university-classroom/": {
-      "views": 1
+      "views": 2
+    },
+    "/ai/claude-code-domain-expertise/": {
+      "views": 2
     },
     "/ai/device-sovereignty/": {
       "views": 1
@@ -127,7 +139,7 @@
       "views": 2
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 2
+      "views": 3
     },
     "/ai/local-finetuning/": {
       "views": 1
@@ -145,10 +157,10 @@
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
-      "views": 3
+      "views": 2
     },
     "/ai/will-ai-remove-middle-managers/": {
-      "views": 1
+      "views": 2
     },
     "/ai/work-to-tool-ai-coding/": {
       "views": 1
@@ -159,13 +171,13 @@
     "/b4079e64-7832-46a2-b98a-a9a17d67c12f/": {
       "views": 1
     },
-    "/cats/": {
-      "views": 1
-    },
     "/college-consulting/": {
       "views": 3
     },
     "/college-reviews/": {
+      "views": 1
+    },
+    "/company-project-based-learning/": {
       "views": 1
     },
     "/concept-note/": {
@@ -175,10 +187,7 @@
       "views": 1
     },
     "/daegu-haany-university-kmedi-2026/": {
-      "views": 1
-    },
-    "/daily/": {
-      "views": 1
+      "views": 2
     },
     "/dev/marp-editor/devlog-1/": {
       "views": 1
@@ -240,6 +249,9 @@
     "/education/joint-r-and-d/": {
       "views": 1
     },
+    "/education/kdu-sokcho-industry-curriculum/": {
+      "views": 1
+    },
     "/education/lifelong-learning-neighborhood-network/": {
       "views": 2
     },
@@ -276,13 +288,25 @@
     "/education/vocational-graduate-pathway/": {
       "views": 1
     },
+    "/food-tech/": {
+      "views": 1
+    },
+    "/generative-ai-privacy-protection/": {
+      "views": 1
+    },
     "/glocal-university-30/": {
+      "views": 1
+    },
+    "/graduate-pathway-tracking/": {
       "views": 1
     },
     "/graph/": {
       "views": 6
     },
     "/gyeongbuk-robot-specialization-university/": {
+      "views": 1
+    },
+    "/gyeonggi-five-regions/": {
       "views": 1
     },
     "/gyeonggi-rise/": {
@@ -298,6 +322,9 @@
       "views": 1
     },
     "/industry-university-matching/": {
+      "views": 1
+    },
+    "/integrated-admission/": {
       "views": 1
     },
     "/investing/2026-02-05/": {
@@ -1230,25 +1257,49 @@
     "/investing/2026-11-02-us/": {
       "views": 2
     },
+    "/k-beauty/": {
+      "views": 1
+    },
+    "/k-move/": {
+      "views": 1
+    },
     "/knowledge-base/": {
       "views": 1
     },
     "/lifelong-education/": {
       "views": 1
     },
+    "/llm-wiki/": {
+      "views": 1
+    },
     "/macos/application10/": {
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 3
+      "views": 4
     },
     "/macos/tidal-dl/": {
       "views": 2
+    },
+    "/major-free-choice/": {
+      "views": 1
+    },
+    "/manufacturing-ai/": {
+      "views": 1
+    },
+    "/northern-gyeonggi-growth-hub/": {
+      "views": 1
     },
     "/notes/교육과정-재구조화/": {
       "views": 1
     },
     "/opt-out/": {
+      "views": 1
+    },
+    "/outcome-indicators/": {
+      "views": 1
+    },
+    "/overseas-employment/": {
       "views": 1
     },
     "/performance-feedback-loop/": {
@@ -1257,7 +1308,16 @@
     "/performance-indexing/": {
       "views": 1
     },
+    "/prompt-injection/": {
+      "views": 1
+    },
     "/regional-industry-academic-network/": {
+      "views": 1
+    },
+    "/regional-settlement/": {
+      "views": 1
+    },
+    "/regional-talent/": {
       "views": 1
     },
     "/rise-performance-evaluation/": {
@@ -1272,14 +1332,23 @@
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
     },
+    "/runtime-telemetry/": {
+      "views": 1
+    },
     "/settlement-rate/": {
+      "views": 2
+    },
+    "/shadow-ai/": {
+      "views": 1
+    },
+    "/student-mobility/": {
       "views": 1
     },
     "/student-portfolio/": {
       "views": 1
     },
     "/tags/": {
-      "views": 4
+      "views": 3
     },
     "/tags/acciowork/": {
       "views": 1
@@ -1456,9 +1525,6 @@
       "views": 1
     },
     "/tags/hpt/": {
-      "views": 1
-    },
-    "/tags/hsi/": {
       "views": 1
     },
     "/tags/hstech/": {
@@ -1870,7 +1936,7 @@
       "views": 1
     },
     "/tags/교수학습/": {
-      "views": 2
+      "views": 1
     },
     "/tags/교육공학/": {
       "views": 1
@@ -1897,7 +1963,7 @@
       "views": 1
     },
     "/tags/교육품질/": {
-      "views": 2
+      "views": 1
     },
     "/tags/교재바우처/": {
       "views": 1
@@ -2194,7 +2260,7 @@
       "views": 1
     },
     "/tags/동의대/": {
-      "views": 2
+      "views": 1
     },
     "/tags/동의대학교/": {
       "views": 1
@@ -2791,7 +2857,7 @@
       "views": 1
     },
     "/tags/전남광주/": {
-      "views": 1
+      "views": 2
     },
     "/tags/전남뿌리기업협회/": {
       "views": 1
