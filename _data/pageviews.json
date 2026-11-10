@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-09T06:10:20.908943+00:00",
+    "generated_at": "2026-11-10T07:07:48.187816+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 96
+      "views": 108
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -18,6 +18,9 @@
     "/1fb4e4fc-2ca1-479a-98cc-6a6c18e2158b/": {
       "views": 2
     },
+    "/about/": {
+      "views": 1
+    },
     "/action-indicators/": {
       "views": 2
     },
@@ -26,6 +29,9 @@
     },
     "/agentic-ai/": {
       "views": 2
+    },
+    "/ai-governance/": {
+      "views": 1
     },
     "/ai-literacy/": {
       "views": 1
@@ -70,10 +76,10 @@
       "views": 1
     },
     "/ai/ai-junior-work-learning/": {
-      "views": 8
+      "views": 9
     },
     "/ai/ai-learning-assessment/": {
-      "views": 10
+      "views": 13
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 1
@@ -103,7 +109,7 @@
       "views": 10
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
-      "views": 2
+      "views": 1
     },
     "/ai/ai-workstation/": {
       "views": 1
@@ -172,7 +178,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 3
+      "views": 4
     },
     "/college-reviews/": {
       "views": 1
@@ -216,6 +222,12 @@
     "/education/changwon-ipms-data-governance-2026/": {
       "views": 1
     },
+    "/education/chungbuk-anchor-settlement-ecosystem/": {
+      "views": 1
+    },
+    "/education/closed-school-regional-learning-hub/": {
+      "views": 1
+    },
     "/education/cybersecurity-ai-assessment-governance/": {
       "views": 2
     },
@@ -243,6 +255,9 @@
     "/education/humanities-ai-curriculum-2026/": {
       "views": 5
     },
+    "/education/inhatc-anchor-lifelong-platform/": {
+      "views": 1
+    },
     "/education/inje-uhs-hospital-roadmap/": {
       "views": 2
     },
@@ -250,10 +265,10 @@
       "views": 1
     },
     "/education/kdu-sokcho-industry-curriculum/": {
-      "views": 1
+      "views": 3
     },
     "/education/lifelong-learning-neighborhood-network/": {
-      "views": 2
+      "views": 3
     },
     "/education/linc-3-0/": {
       "views": 1
@@ -283,7 +298,7 @@
       "views": 3
     },
     "/education/vietnam-study-fair-career-pathways-2026/": {
-      "views": 3
+      "views": 6
     },
     "/education/vocational-graduate-pathway/": {
       "views": 1
@@ -301,7 +316,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 6
+      "views": 9
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -1255,7 +1270,7 @@
       "views": 2
     },
     "/investing/2026-11-02-us/": {
-      "views": 2
+      "views": 3
     },
     "/k-beauty/": {
       "views": 1
@@ -1276,7 +1291,7 @@
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 4
+      "views": 7
     },
     "/macos/tidal-dl/": {
       "views": 2
@@ -1285,6 +1300,9 @@
       "views": 1
     },
     "/manufacturing-ai/": {
+      "views": 1
+    },
+    "/modular-curriculum/": {
       "views": 1
     },
     "/northern-gyeonggi-growth-hub/": {
@@ -1360,7 +1378,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 7
+      "views": 9
     },
     "/tags/aifluency/": {
       "views": 1
@@ -1375,7 +1393,7 @@
       "views": 1
     },
     "/tags/alienmind/": {
-      "views": 2
+      "views": 1
     },
     "/tags/anchor/": {
       "views": 1
@@ -1393,7 +1411,7 @@
       "views": 1
     },
     "/tags/atriaai/": {
-      "views": 2
+      "views": 1
     },
     "/tags/ax/": {
       "views": 1
@@ -1696,7 +1714,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 6
+      "views": 7
     },
     "/tags/ryzenaimax/": {
       "views": 1
@@ -1735,9 +1753,6 @@
       "views": 1
     },
     "/tags/topik/": {
-      "views": 1
-    },
-    "/tags/tou/": {
       "views": 1
     },
     "/tags/trade/": {
@@ -1843,7 +1858,7 @@
       "views": 1
     },
     "/tags/경북/": {
-      "views": 2
+      "views": 1
     },
     "/tags/경상국립대/": {
       "views": 1
@@ -3277,7 +3292,7 @@
       "views": 1
     },
     "/tags/학생역량/": {
-      "views": 1
+      "views": 2
     },
     "/tags/학생이동성/": {
       "views": 2
@@ -3399,6 +3414,9 @@
     "/tags/훈련기록/": {
       "views": 1
     },
+    "/theory/cohens-d/": {
+      "views": 1
+    },
     "/theory/gsm8k/": {
       "views": 1
     },
@@ -3412,9 +3430,6 @@
       "views": 1
     },
     "/welcome-to-ai/": {
-      "views": 1
-    },
-    "/worldcup-2026-scenarios/": {
       "views": 1
     }
   }
