@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-10T07:07:48.187816+00:00",
+    "generated_at": "2026-11-11T06:00:43.312804+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 108
+      "views": 107
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -16,6 +16,9 @@
       "views": 1
     },
     "/1fb4e4fc-2ca1-479a-98cc-6a6c18e2158b/": {
+      "views": 2
+    },
+    "/7e565bcd-ec1f-4588-b009-c0baf8c4415f/": {
       "views": 2
     },
     "/about/": {
@@ -94,7 +97,7 @@
       "views": 9
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 7
+      "views": 6
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
@@ -106,7 +109,7 @@
       "views": 1
     },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
-      "views": 10
+      "views": 11
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
@@ -195,6 +198,9 @@
     "/daegu-haany-university-kmedi-2026/": {
       "views": 2
     },
+    "/dev/macos/sidecarpatcher/": {
+      "views": 1
+    },
     "/dev/marp-editor/devlog-1/": {
       "views": 1
     },
@@ -239,6 +245,9 @@
     },
     "/education/first-career-project-budget/": {
       "views": 6
+    },
+    "/education/global-faculty-joint-appointment/": {
+      "views": 1
     },
     "/education/graduate-pathway-indicator-governance-2026/": {
       "views": 2
@@ -1209,6 +1218,9 @@
     "/investing/2026-10-14-korea/": {
       "views": 1
     },
+    "/investing/2026-10-14-us/": {
+      "views": 1
+    },
     "/investing/2026-10-15-korea/": {
       "views": 1
     },
@@ -1254,6 +1266,9 @@
     "/investing/2026-10-26-korea/": {
       "views": 1
     },
+    "/investing/2026-10-26-us/": {
+      "views": 1
+    },
     "/investing/2026-10-27-korea/": {
       "views": 1
     },
@@ -1288,7 +1303,7 @@
       "views": 1
     },
     "/macos/application10/": {
-      "views": 2
+      "views": 1
     },
     "/macos/pip_install/": {
       "views": 7
@@ -1446,9 +1461,6 @@
     "/tags/conference/": {
       "views": 1
     },
-    "/tags/cuda/": {
-      "views": 1
-    },
     "/tags/cursor/": {
       "views": 1
     },
@@ -1485,9 +1497,6 @@
     "/tags/education/": {
       "views": 2
     },
-    "/tags/eforestpolaris/": {
-      "views": 1
-    },
     "/tags/english/": {
       "views": 1
     },
@@ -1513,9 +1522,6 @@
       "views": 1
     },
     "/tags/googlesaif/": {
-      "views": 1
-    },
-    "/tags/governance/": {
       "views": 1
     },
     "/tags/gpx/": {
@@ -1561,9 +1567,6 @@
       "views": 1
     },
     "/tags/intellectual-capital/": {
-      "views": 1
-    },
-    "/tags/ipms/": {
       "views": 1
     },
     "/tags/jev/": {
@@ -1642,7 +1645,7 @@
       "views": 1
     },
     "/tags/monitoring/": {
-      "views": 2
+      "views": 1
     },
     "/tags/mro/": {
       "views": 1
@@ -1726,6 +1729,9 @@
       "views": 1
     },
     "/tags/serverless/": {
+      "views": 1
+    },
+    "/tags/spacex/": {
       "views": 1
     },
     "/tags/speaking/": {
@@ -2419,7 +2425,7 @@
       "views": 1
     },
     "/tags/바이오인재/": {
-      "views": 1
+      "views": 2
     },
     "/tags/바이오헬스/": {
       "views": 1
@@ -2452,7 +2458,7 @@
       "views": 1
     },
     "/tags/보건의료인력/": {
-      "views": 2
+      "views": 1
     },
     "/tags/보안/": {
       "views": 1
@@ -3319,7 +3325,7 @@
       "views": 1
     },
     "/tags/학습경험기록/": {
-      "views": 1
+      "views": 2
     },
     "/tags/학습지원/": {
       "views": 1
