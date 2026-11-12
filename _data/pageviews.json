@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-11T06:00:43.312804+00:00",
+    "generated_at": "2026-11-12T07:01:14.264857+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 107
+      "views": 109
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -88,7 +88,7 @@
       "views": 1
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -97,7 +97,7 @@
       "views": 9
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 6
+      "views": 3
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
@@ -276,6 +276,9 @@
     "/education/kdu-sokcho-industry-curriculum/": {
       "views": 3
     },
+    "/education/kmooc-financial-literacy-credit-design/": {
+      "views": 1
+    },
     "/education/lifelong-learning-neighborhood-network/": {
       "views": 3
     },
@@ -295,9 +298,6 @@
       "views": 1
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
-      "views": 1
-    },
-    "/education/suncheon-jeil-ai-digital-twin-2026/": {
       "views": 1
     },
     "/education/tuition-committee-investment-accountability/": {
@@ -1183,7 +1183,7 @@
       "views": 1
     },
     "/investing/2026-10-06-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-10-06-us/": {
       "views": 1
@@ -1302,9 +1302,6 @@
     "/llm-wiki/": {
       "views": 1
     },
-    "/macos/application10/": {
-      "views": 1
-    },
     "/macos/pip_install/": {
       "views": 7
     },
@@ -1360,7 +1357,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 2
+      "views": 1
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
@@ -1381,7 +1378,7 @@
       "views": 1
     },
     "/tags/": {
-      "views": 3
+      "views": 4
     },
     "/tags/acciowork/": {
       "views": 1
@@ -1390,6 +1387,9 @@
       "views": 1
     },
     "/tags/agenticai/": {
+      "views": 1
+    },
+    "/tags/ai-dx/": {
       "views": 1
     },
     "/tags/ai/": {
@@ -1434,6 +1434,9 @@
     "/tags/ax교육/": {
       "views": 1
     },
+    "/tags/carbon-emissions/": {
+      "views": 1
+    },
     "/tags/carbon/": {
       "views": 1
     },
@@ -1444,6 +1447,9 @@
       "views": 1
     },
     "/tags/china/": {
+      "views": 1
+    },
+    "/tags/ci-cd/": {
       "views": 1
     },
     "/tags/claude/": {
@@ -1459,7 +1465,7 @@
       "views": 1
     },
     "/tags/conference/": {
-      "views": 1
+      "views": 2
     },
     "/tags/cursor/": {
       "views": 1
@@ -1477,6 +1483,12 @@
       "views": 1
     },
     "/tags/dgxspark/": {
+      "views": 1
+    },
+    "/tags/digital-public-goods/": {
+      "views": 1
+    },
+    "/tags/digital-transformation/": {
       "views": 1
     },
     "/tags/digitalgarden/": {
@@ -1497,10 +1509,16 @@
     "/tags/education/": {
       "views": 2
     },
+    "/tags/energy-transition/": {
+      "views": 1
+    },
     "/tags/english/": {
       "views": 1
     },
     "/tags/esg/": {
+      "views": 1
+    },
+    "/tags/export-resilience/": {
       "views": 1
     },
     "/tags/fdi/": {
@@ -1530,9 +1548,6 @@
     "/tags/graphrag/": {
       "views": 1
     },
-    "/tags/gx/": {
-      "views": 1
-    },
     "/tags/hangul/": {
       "views": 1
     },
@@ -1557,7 +1572,7 @@
     "/tags/humanintheloop/": {
       "views": 1
     },
-    "/tags/hwp/": {
+    "/tags/inclusive-leadership/": {
       "views": 1
     },
     "/tags/index/": {
@@ -1567,7 +1582,7 @@
       "views": 1
     },
     "/tags/intellectual-capital/": {
-      "views": 1
+      "views": 2
     },
     "/tags/jev/": {
       "views": 1
@@ -1583,6 +1598,9 @@
     },
     "/tags/kmove/": {
       "views": 2
+    },
+    "/tags/knowledge-ecosystem/": {
+      "views": 1
     },
     "/tags/korean/": {
       "views": 1
@@ -1618,7 +1636,7 @@
       "views": 1
     },
     "/tags/markdown-hangul/": {
-      "views": 1
+      "views": 2
     },
     "/tags/markdown/": {
       "views": 1
@@ -1684,10 +1702,7 @@
       "views": 1
     },
     "/tags/pdf-generation/": {
-      "views": 1
-    },
-    "/tags/physicalai/": {
-      "views": 1
+      "views": 3
     },
     "/tags/pisa/": {
       "views": 2
@@ -1734,9 +1749,6 @@
     "/tags/spacex/": {
       "views": 1
     },
-    "/tags/speaking/": {
-      "views": 1
-    },
     "/tags/standards/": {
       "views": 1
     },
@@ -1758,10 +1770,7 @@
     "/tags/tmux/": {
       "views": 1
     },
-    "/tags/topik/": {
-      "views": 1
-    },
-    "/tags/trade/": {
+    "/tags/trail-running/": {
       "views": 1
     },
     "/tags/training/": {
@@ -1786,6 +1795,9 @@
       "views": 1
     },
     "/tags/vla/": {
+      "views": 1
+    },
+    "/tags/web-app/": {
       "views": 1
     },
     "/tags/yc/": {
@@ -2197,6 +2209,9 @@
       "views": 1
     },
     "/tags/대학생첫경력프로젝트/": {
+      "views": 1
+    },
+    "/tags/대학원교육/": {
       "views": 1
     },
     "/tags/대학자율성/": {
@@ -2824,6 +2839,9 @@
       "views": 1
     },
     "/tags/인하공전/": {
+      "views": 1
+    },
+    "/tags/일론머스크/": {
       "views": 1
     },
     "/tags/일의미래/": {
