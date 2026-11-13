@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-12T07:01:14.264857+00:00",
+    "generated_at": "2026-11-13T06:30:13.049021+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 109
+      "views": 105
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -73,7 +73,7 @@
       "views": 3
     },
     "/ai/ai-hacking-shinhan-bank-artex/": {
-      "views": 10
+      "views": 2
     },
     "/ai/ai-inflation/": {
       "views": 1
@@ -88,7 +88,7 @@
       "views": 1
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 2
+      "views": 3
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -97,7 +97,7 @@
       "views": 9
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 3
+      "views": 1
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
@@ -162,6 +162,9 @@
     "/ai/prompt-training-work-redesign/": {
       "views": 6
     },
+    "/ai/session6-energy-transition-esg-climate-finance/": {
+      "views": 1
+    },
     "/ai/vibe-coding-to-spec-coding/": {
       "views": 1
     },
@@ -181,13 +184,13 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 4
+      "views": 5
     },
     "/college-reviews/": {
-      "views": 1
+      "views": 3
     },
     "/company-project-based-learning/": {
-      "views": 1
+      "views": 3
     },
     "/concept-note/": {
       "views": 1
@@ -216,11 +219,11 @@
     "/education/2026-university-innovation-support-plan/": {
       "views": 1
     },
-    "/education/admissions-platform-governance-2026/": {
-      "views": 1
-    },
     "/education/ajou-defense-physical-ai-hub/": {
       "views": 2
+    },
+    "/education/anchor-shared-university-operating-model/": {
+      "views": 1
     },
     "/education/bootcamp-roundup-curriculum-feedback/": {
       "views": 1
@@ -247,7 +250,7 @@
       "views": 6
     },
     "/education/global-faculty-joint-appointment/": {
-      "views": 1
+      "views": 4
     },
     "/education/graduate-pathway-indicator-governance-2026/": {
       "views": 2
@@ -256,6 +259,9 @@
       "views": 3
     },
     "/education/gyeongnam-anchor-career-pipeline/": {
+      "views": 1
+    },
+    "/education/gyeongnam-lifelong-education-hub/": {
       "views": 1
     },
     "/education/hallym-innovation-operating-model-2026/": {
@@ -273,6 +279,9 @@
     "/education/joint-r-and-d/": {
       "views": 1
     },
+    "/education/kangwon-campus-innovation-park/": {
+      "views": 1
+    },
     "/education/kdu-sokcho-industry-curriculum/": {
       "views": 3
     },
@@ -285,11 +294,11 @@
     "/education/linc-3-0/": {
       "views": 1
     },
+    "/education/migrant-student-visa-pathway/": {
+      "views": 1
+    },
     "/education/mokwon-print-market-curriculum-2026/": {
       "views": 3
-    },
-    "/education/private-university-specialization-strategy-2026/": {
-      "views": 1
     },
     "/education/regional-growth-talent-system/": {
       "views": 1
@@ -1303,7 +1312,7 @@
       "views": 1
     },
     "/macos/pip_install/": {
-      "views": 7
+      "views": 8
     },
     "/macos/tidal-dl/": {
       "views": 2
@@ -1375,7 +1384,7 @@
       "views": 1
     },
     "/student-portfolio/": {
-      "views": 1
+      "views": 3
     },
     "/tags/": {
       "views": 4
@@ -1402,9 +1411,6 @@
       "views": 1
     },
     "/tags/ai전환/": {
-      "views": 1
-    },
-    "/tags/alibaba/": {
       "views": 1
     },
     "/tags/alienmind/": {
@@ -1443,6 +1449,9 @@
     "/tags/cbam/": {
       "views": 1
     },
+    "/tags/chatgpt-work/": {
+      "views": 1
+    },
     "/tags/chatgpt/": {
       "views": 1
     },
@@ -1450,6 +1459,9 @@
       "views": 1
     },
     "/tags/ci-cd/": {
+      "views": 1
+    },
+    "/tags/claude-code/": {
       "views": 1
     },
     "/tags/claude/": {
@@ -1488,6 +1500,9 @@
     "/tags/digital-public-goods/": {
       "views": 1
     },
+    "/tags/digital-trade/": {
+      "views": 1
+    },
     "/tags/digital-transformation/": {
       "views": 1
     },
@@ -1512,9 +1527,6 @@
     "/tags/energy-transition/": {
       "views": 1
     },
-    "/tags/english/": {
-      "views": 1
-    },
     "/tags/esg/": {
       "views": 1
     },
@@ -1524,7 +1536,13 @@
     "/tags/fdi/": {
       "views": 1
     },
+    "/tags/g-lamp/": {
+      "views": 1
+    },
     "/tags/gaia/": {
+      "views": 1
+    },
+    "/tags/garry-tan/": {
       "views": 1
     },
     "/tags/gemini/": {
@@ -1548,6 +1566,9 @@
     "/tags/graphrag/": {
       "views": 1
     },
+    "/tags/green-innovation/": {
+      "views": 1
+    },
     "/tags/hangul/": {
       "views": 1
     },
@@ -1563,7 +1584,7 @@
     "/tags/hongkong/": {
       "views": 1
     },
-    "/tags/hpt/": {
+    "/tags/hrd/": {
       "views": 1
     },
     "/tags/hstech/": {
@@ -1576,9 +1597,6 @@
       "views": 1
     },
     "/tags/index/": {
-      "views": 1
-    },
-    "/tags/innovation/": {
       "views": 1
     },
     "/tags/intellectual-capital/": {
@@ -1636,7 +1654,7 @@
       "views": 1
     },
     "/tags/markdown-hangul/": {
-      "views": 2
+      "views": 3
     },
     "/tags/markdown/": {
       "views": 1
@@ -1669,7 +1687,7 @@
       "views": 1
     },
     "/tags/ndx/": {
-      "views": 2
+      "views": 1
     },
     "/tags/nextauth/": {
       "views": 1
@@ -1682,6 +1700,9 @@
     },
     "/tags/oecd/": {
       "views": 2
+    },
+    "/tags/official-doc/": {
+      "views": 1
     },
     "/tags/openai/": {
       "views": 1
@@ -1705,7 +1726,7 @@
       "views": 3
     },
     "/tags/pisa/": {
-      "views": 2
+      "views": 1
     },
     "/tags/planning/": {
       "views": 1
@@ -1720,6 +1741,9 @@
       "views": 1
     },
     "/tags/rag/": {
+      "views": 1
+    },
+    "/tags/renewable-energy/": {
       "views": 1
     },
     "/tags/responsibleai/": {
@@ -1798,9 +1822,6 @@
       "views": 1
     },
     "/tags/web-app/": {
-      "views": 1
-    },
-    "/tags/yc/": {
       "views": 1
     },
     "/tags/ymtc/": {
@@ -1948,6 +1969,9 @@
       "views": 1
     },
     "/tags/공유대학/": {
+      "views": 1
+    },
+    "/tags/공익기금/": {
       "views": 1
     },
     "/tags/공정성/": {
@@ -2134,6 +2158,9 @@
       "views": 1
     },
     "/tags/나스닥/": {
+      "views": 1
+    },
+    "/tags/노동전환/": {
       "views": 1
     },
     "/tags/노벨상/": {
@@ -2347,6 +2374,9 @@
       "views": 1
     },
     "/tags/로컬ai/": {
+      "views": 1
+    },
+    "/tags/루프엔지니어링/": {
       "views": 1
     },
     "/tags/리스크평가/": {
@@ -2656,6 +2686,9 @@
       "views": 1
     },
     "/tags/식품영양/": {
+      "views": 1
+    },
+    "/tags/신입육성/": {
       "views": 1
     },
     "/tags/신진연구자/": {
@@ -3205,7 +3238,7 @@
       "views": 1
     },
     "/tags/캡스톤디자인/": {
-      "views": 1
+      "views": 2
     },
     "/tags/컨텍스트관리/": {
       "views": 1
@@ -3277,7 +3310,7 @@
       "views": 1
     },
     "/tags/프로젝트기반학습/": {
-      "views": 1
+      "views": 2
     },
     "/tags/프롬프트엔지니어링/": {
       "views": 1
@@ -3451,9 +3484,6 @@
       "views": 5
     },
     "/theory/zpd/": {
-      "views": 1
-    },
-    "/welcome-to-ai/": {
       "views": 1
     }
   }
