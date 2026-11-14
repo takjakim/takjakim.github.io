@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-13T06:30:13.049021+00:00",
+    "generated_at": "2026-11-14T06:09:08.903290+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 105
+      "views": 106
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -150,9 +150,6 @@
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 3
     },
-    "/ai/local-finetuning/": {
-      "views": 1
-    },
     "/ai/markdown-is-an-employee-yc/": {
       "views": 1
     },
@@ -184,7 +181,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 5
+      "views": 6
     },
     "/college-reviews/": {
       "views": 3
@@ -275,9 +272,6 @@
     },
     "/education/inje-uhs-hospital-roadmap/": {
       "views": 2
-    },
-    "/education/joint-r-and-d/": {
-      "views": 1
     },
     "/education/kangwon-campus-innovation-park/": {
       "views": 1
@@ -499,7 +493,7 @@
       "views": 1
     },
     "/investing/2026-03-16-us/": {
-      "views": 2
+      "views": 1
     },
     "/investing/2026-03-17-korea/": {
       "views": 1
@@ -1389,9 +1383,6 @@
     "/tags/": {
       "views": 4
     },
-    "/tags/acciowork/": {
-      "views": 1
-    },
     "/tags/agentboss/": {
       "views": 1
     },
@@ -1417,9 +1408,6 @@
       "views": 1
     },
     "/tags/anchor/": {
-      "views": 1
-    },
-    "/tags/anthropic/": {
       "views": 1
     },
     "/tags/architecture/": {
@@ -1462,10 +1450,7 @@
       "views": 1
     },
     "/tags/claude-code/": {
-      "views": 1
-    },
-    "/tags/claude/": {
-      "views": 1
+      "views": 2
     },
     "/tags/claudecode/": {
       "views": 1
@@ -1495,6 +1480,9 @@
       "views": 1
     },
     "/tags/dgxspark/": {
+      "views": 1
+    },
+    "/tags/digital-infrastructure/": {
       "views": 1
     },
     "/tags/digital-public-goods/": {
@@ -1543,7 +1531,7 @@
       "views": 1
     },
     "/tags/garry-tan/": {
-      "views": 1
+      "views": 2
     },
     "/tags/gemini/": {
       "views": 1
@@ -1578,9 +1566,6 @@
     "/tags/heyling/": {
       "views": 1
     },
-    "/tags/hipergator/": {
-      "views": 1
-    },
     "/tags/hongkong/": {
       "views": 1
     },
@@ -1596,16 +1581,10 @@
     "/tags/inclusive-leadership/": {
       "views": 1
     },
-    "/tags/index/": {
-      "views": 1
-    },
     "/tags/intellectual-capital/": {
-      "views": 2
+      "views": 1
     },
     "/tags/jev/": {
-      "views": 1
-    },
-    "/tags/kedi/": {
       "views": 1
     },
     "/tags/kentech/": {
@@ -1636,9 +1615,6 @@
       "views": 1
     },
     "/tags/labor/": {
-      "views": 1
-    },
-    "/tags/langgraph/": {
       "views": 1
     },
     "/tags/llm/": {
@@ -1686,9 +1662,6 @@
     "/tags/mro/": {
       "views": 1
     },
-    "/tags/ndx/": {
-      "views": 1
-    },
     "/tags/nextauth/": {
       "views": 1
     },
@@ -1699,7 +1672,7 @@
       "views": 1
     },
     "/tags/oecd/": {
-      "views": 2
+      "views": 1
     },
     "/tags/official-doc/": {
       "views": 1
@@ -1714,9 +1687,6 @@
       "views": 1
     },
     "/tags/paraphrasing/": {
-      "views": 1
-    },
-    "/tags/patent/": {
       "views": 1
     },
     "/tags/pbl/": {
@@ -1761,12 +1731,6 @@
     "/tags/ryzenaimax/": {
       "views": 1
     },
-    "/tags/saif/": {
-      "views": 1
-    },
-    "/tags/sdv/": {
-      "views": 1
-    },
     "/tags/serverless/": {
       "views": 1
     },
@@ -1807,7 +1771,7 @@
       "views": 1
     },
     "/tags/typescript/": {
-      "views": 2
+      "views": 1
     },
     "/tags/uam/": {
       "views": 1
@@ -2155,7 +2119,7 @@
       "views": 1
     },
     "/tags/나노디그리/": {
-      "views": 1
+      "views": 2
     },
     "/tags/나스닥/": {
       "views": 1
@@ -2425,7 +2389,7 @@
       "views": 1
     },
     "/tags/메타인지/": {
-      "views": 1
+      "views": 2
     },
     "/tags/메타컨틴전시/": {
       "views": 2
@@ -2764,6 +2728,9 @@
       "views": 1
     },
     "/tags/연구거버넌스/": {
+      "views": 1
+    },
+    "/tags/연구성과/": {
       "views": 1
     },
     "/tags/연구윤리/": {
@@ -3352,7 +3319,7 @@
       "views": 2
     },
     "/tags/학생이동성/": {
-      "views": 2
+      "views": 1
     },
     "/tags/학생지원/": {
       "views": 1
@@ -3412,7 +3379,7 @@
       "views": 1
     },
     "/tags/한의예과/": {
-      "views": 2
+      "views": 1
     },
     "/tags/한의학/": {
       "views": 1
