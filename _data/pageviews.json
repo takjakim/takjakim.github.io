@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-14T06:09:08.903290+00:00",
+    "generated_at": "2026-11-15T06:17:09.906919+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 106
+      "views": 98
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -54,13 +54,16 @@
     "/ai/accio-work-trade-agent/": {
       "views": 1
     },
-    "/ai/ai-agent-responsibility-bottleneck/": {
+    "/ai/agentic-ai-governance-runtime-control/": {
       "views": 1
+    },
+    "/ai/ai-agent-intern-or-dangerous-contractor/": {
+      "views": 1
+    },
+    "/ai/ai-agent-responsibility-bottleneck/": {
+      "views": 2
     },
     "/ai/ai-agents-have-taste/": {
-      "views": 1
-    },
-    "/ai/ai-as-damper-phantom-traffic-jam/": {
       "views": 1
     },
     "/ai/ai-consulting-deployment/": {
@@ -69,11 +72,14 @@
     "/ai/ai-data-center/": {
       "views": 1
     },
+    "/ai/ai-fermat-math-understanding/": {
+      "views": 1
+    },
     "/ai/ai-goes-to-work/": {
-      "views": 3
+      "views": 4
     },
     "/ai/ai-hacking-shinhan-bank-artex/": {
-      "views": 2
+      "views": 1
     },
     "/ai/ai-inflation/": {
       "views": 1
@@ -82,13 +88,13 @@
       "views": 9
     },
     "/ai/ai-learning-assessment/": {
-      "views": 13
+      "views": 14
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 1
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 3
+      "views": 4
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -97,15 +103,15 @@
       "views": 9
     },
     "/ai/ai-slop-human-responsibility/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-slop-taste-editor/": {
       "views": 1
     },
-    "/ai/ai-smarter-human-must-doubt/": {
+    "/ai/ai-took-easy-work-first/": {
       "views": 1
     },
-    "/ai/ai-took-easy-work-first/": {
+    "/ai/ai-tutor/": {
       "views": 1
     },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
@@ -117,11 +123,14 @@
     "/ai/ai-workstation/": {
       "views": 1
     },
+    "/ai/apple-memory-exit-strategy-nasdaq-memory-selloff/": {
+      "views": 1
+    },
     "/ai/apple-price-increase-device-sovereignty/": {
       "views": 1
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 10
+      "views": 6
     },
     "/ai/chatgpt-astra-office-work/": {
       "views": 1
@@ -141,17 +150,32 @@
     "/ai/from-prompt-to-graph-engineering/": {
       "views": 1
     },
-    "/ai/heyling-day2/": {
+    "/ai/gemini-robotics-2-physical-ai/": {
       "views": 1
     },
-    "/ai/hyundai-autonomous-data-flywheel/": {
+    "/ai/google-saif-ai-security-framework-2026/": {
+      "views": 1
+    },
+    "/ai/heyling-day1/": {
+      "views": 1
+    },
+    "/ai/heyling-day2/": {
       "views": 2
+    },
+    "/ai/hyundai-autonomous-data-flywheel/": {
+      "views": 3
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 3
     },
-    "/ai/markdown-is-an-employee-yc/": {
+    "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
+    },
+    "/ai/manufacturing-ai-agent-frame-process/": {
+      "views": 1
+    },
+    "/ai/markdown-is-an-employee-yc/": {
+      "views": 2
     },
     "/ai/on-device-ai/": {
       "views": 1
@@ -159,7 +183,25 @@
     "/ai/prompt-training-work-redesign/": {
       "views": 6
     },
+    "/ai/rocm/": {
+      "views": 1
+    },
+    "/ai/session3-ai-standards-cbam/": {
+      "views": 1
+    },
+    "/ai/session4-ai-digital-transformation-productivity/": {
+      "views": 1
+    },
+    "/ai/session5-technology-leadership-working-poverty/": {
+      "views": 1
+    },
     "/ai/session6-energy-transition-esg-climate-finance/": {
+      "views": 2
+    },
+    "/ai/session7-sustainability-technology-capability/": {
+      "views": 1
+    },
+    "/ai/switching-cost/": {
       "views": 1
     },
     "/ai/vibe-coding-to-spec-coding/": {
@@ -169,7 +211,7 @@
       "views": 2
     },
     "/ai/will-ai-remove-middle-managers/": {
-      "views": 2
+      "views": 3
     },
     "/ai/work-to-tool-ai-coding/": {
       "views": 1
@@ -178,6 +220,9 @@
       "views": 1
     },
     "/b4079e64-7832-46a2-b98a-a9a17d67c12f/": {
+      "views": 1
+    },
+    "/backlink/": {
       "views": 1
     },
     "/college-consulting/": {
@@ -198,10 +243,16 @@
     "/daegu-haany-university-kmedi-2026/": {
       "views": 2
     },
+    "/dev/claude-code-team-dashboard/": {
+      "views": 1
+    },
     "/dev/macos/sidecarpatcher/": {
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
+      "views": 1
+    },
+    "/dev/stats-method/": {
       "views": 1
     },
     "/digital-badge/": {
@@ -215,9 +266,6 @@
     },
     "/education/2026-university-innovation-support-plan/": {
       "views": 1
-    },
-    "/education/ajou-defense-physical-ai-hub/": {
-      "views": 2
     },
     "/education/anchor-shared-university-operating-model/": {
       "views": 1
@@ -244,7 +292,7 @@
       "views": 2
     },
     "/education/first-career-project-budget/": {
-      "views": 6
+      "views": 4
     },
     "/education/global-faculty-joint-appointment/": {
       "views": 4
@@ -294,6 +342,9 @@
     "/education/mokwon-print-market-curriculum-2026/": {
       "views": 3
     },
+    "/education/private-university-specialization-strategy-2026/": {
+      "views": 1
+    },
     "/education/regional-growth-talent-system/": {
       "views": 1
     },
@@ -316,6 +367,9 @@
       "views": 1
     },
     "/food-tech/": {
+      "views": 1
+    },
+    "/gaia/": {
       "views": 1
     },
     "/generative-ai-privacy-protection/": {
@@ -1290,10 +1344,25 @@
     "/investing/2026-11-02-us/": {
       "views": 3
     },
+    "/investing/2026-11-11-us/": {
+      "views": 1
+    },
+    "/investing/csi300/": {
+      "views": 1
+    },
+    "/investing/hsi/": {
+      "views": 1
+    },
+    "/investing/hstech/": {
+      "views": 1
+    },
     "/k-beauty/": {
       "views": 1
     },
     "/k-move/": {
+      "views": 1
+    },
+    "/kmedi/": {
       "views": 1
     },
     "/knowledge-base/": {
@@ -1309,12 +1378,15 @@
       "views": 8
     },
     "/macos/tidal-dl/": {
-      "views": 2
+      "views": 1
     },
     "/major-free-choice/": {
       "views": 1
     },
     "/manufacturing-ai/": {
+      "views": 1
+    },
+    "/microdegree/": {
       "views": 1
     },
     "/modular-curriculum/": {
@@ -1344,6 +1416,9 @@
     "/prompt-injection/": {
       "views": 1
     },
+    "/rag/": {
+      "views": 1
+    },
     "/regional-industry-academic-network/": {
       "views": 1
     },
@@ -1357,6 +1432,9 @@
       "views": 1
     },
     "/rise-performance-indicators/": {
+      "views": 1
+    },
+    "/rise/": {
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
@@ -1393,7 +1471,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 9
+      "views": 8
     },
     "/tags/aifluency/": {
       "views": 1
@@ -1420,9 +1498,6 @@
       "views": 1
     },
     "/tags/atriaai/": {
-      "views": 1
-    },
-    "/tags/ax/": {
       "views": 1
     },
     "/tags/ax교육/": {
@@ -1455,6 +1530,9 @@
     "/tags/claudecode/": {
       "views": 1
     },
+    "/tags/climate-finance/": {
+      "views": 1
+    },
     "/tags/codemirror/": {
       "views": 2
     },
@@ -1468,9 +1546,6 @@
       "views": 1
     },
     "/tags/cxmt/": {
-      "views": 1
-    },
-    "/tags/dashboard/": {
       "views": 1
     },
     "/tags/deployment/": {
@@ -1506,11 +1581,8 @@
     "/tags/dx/": {
       "views": 1
     },
-    "/tags/editor/": {
-      "views": 1
-    },
     "/tags/education/": {
-      "views": 2
+      "views": 1
     },
     "/tags/energy-transition/": {
       "views": 1
@@ -1534,9 +1606,6 @@
       "views": 2
     },
     "/tags/gemini/": {
-      "views": 1
-    },
-    "/tags/generative-ai/": {
       "views": 1
     },
     "/tags/gks/": {
@@ -1624,7 +1693,7 @@
       "views": 1
     },
     "/tags/low-altitude-economy/": {
-      "views": 1
+      "views": 2
     },
     "/tags/macstudio/": {
       "views": 1
@@ -1707,6 +1776,12 @@
     "/tags/productivity/": {
       "views": 1
     },
+    "/tags/project-management/": {
+      "views": 1
+    },
+    "/tags/public-leadership/": {
+      "views": 1
+    },
     "/tags/pyodide/": {
       "views": 1
     },
@@ -1714,9 +1789,6 @@
       "views": 1
     },
     "/tags/renewable-energy/": {
-      "views": 1
-    },
-    "/tags/responsibleai/": {
       "views": 1
     },
     "/tags/rise/": {
@@ -1755,10 +1827,10 @@
     "/tags/technology/": {
       "views": 1
     },
-    "/tags/tmux/": {
+    "/tags/trail-running/": {
       "views": 1
     },
-    "/tags/trail-running/": {
+    "/tags/training-log/": {
       "views": 1
     },
     "/tags/training/": {
@@ -1770,10 +1842,10 @@
     "/tags/typesafeai/": {
       "views": 1
     },
-    "/tags/typescript/": {
+    "/tags/uam/": {
       "views": 1
     },
-    "/tags/uam/": {
+    "/tags/ultimatum-game/": {
       "views": 1
     },
     "/tags/us/": {
@@ -1786,6 +1858,9 @@
       "views": 1
     },
     "/tags/web-app/": {
+      "views": 2
+    },
+    "/tags/working-poverty/": {
       "views": 1
     },
     "/tags/ymtc/": {
@@ -1900,7 +1975,7 @@
       "views": 1
     },
     "/tags/고등교육예산/": {
-      "views": 1
+      "views": 2
     },
     "/tags/고등교육재정/": {
       "views": 1
@@ -2394,6 +2469,9 @@
     "/tags/메타컨틴전시/": {
       "views": 2
     },
+    "/tags/멘토링/": {
+      "views": 1
+    },
     "/tags/명세/": {
       "views": 1
     },
@@ -2566,7 +2644,7 @@
       "views": 1
     },
     "/tags/서울대10개만들기/": {
-      "views": 1
+      "views": 2
     },
     "/tags/성과개선/": {
       "views": 2
@@ -3166,7 +3244,7 @@
       "views": 1
     },
     "/tags/충남대/": {
-      "views": 2
+      "views": 1
     },
     "/tags/충남대학교/": {
       "views": 1
@@ -3441,14 +3519,50 @@
     "/theory/cohens-d/": {
       "views": 1
     },
+    "/theory/flesch-kincaid-grade-level/": {
+      "views": 1
+    },
     "/theory/gsm8k/": {
+      "views": 2
+    },
+    "/theory/hpt/": {
+      "views": 1
+    },
+    "/theory/hptbookreview0102/": {
+      "views": 1
+    },
+    "/theory/hptbookreview0304/": {
+      "views": 1
+    },
+    "/theory/hptbookreview0506/": {
+      "views": 2
+    },
+    "/theory/hptbookreview0708/": {
+      "views": 1
+    },
+    "/theory/hptbookreview0910/": {
+      "views": 1
+    },
+    "/theory/hptbookreview1112/": {
+      "views": 1
+    },
+    "/theory/hptbookreview1314/": {
+      "views": 1
+    },
+    "/theory/krashen-i1/": {
+      "views": 1
+    },
+    "/theory/mmlu/": {
       "views": 1
     },
     "/theory/solar-107b/": {
       "views": 5
     },
+    "/theory/theory/": {
+      "views": 1
+    },
     "/theory/type-token-ratio-ttr/": {
-      "views": 5
+      "views": 6
     },
     "/theory/zpd/": {
       "views": 1
