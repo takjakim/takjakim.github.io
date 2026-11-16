@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated_at": "2026-11-15T06:17:09.906919+00:00",
+    "generated_at": "2026-11-16T06:15:41.962368+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
@@ -11,9 +11,6 @@
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
-    },
-    "/126af98d-13dd-4e9f-bed7-f28958d9b0c4/": {
-      "views": 1
     },
     "/1fb4e4fc-2ca1-479a-98cc-6a6c18e2158b/": {
       "views": 2
@@ -62,6 +59,9 @@
     },
     "/ai/ai-agent-responsibility-bottleneck/": {
       "views": 2
+    },
+    "/ai/ai-agent-stop-conditions/": {
+      "views": 1
     },
     "/ai/ai-agents-have-taste/": {
       "views": 1
@@ -157,7 +157,7 @@
       "views": 1
     },
     "/ai/heyling-day1/": {
-      "views": 1
+      "views": 2
     },
     "/ai/heyling-day2/": {
       "views": 2
@@ -182,6 +182,9 @@
     },
     "/ai/prompt-training-work-redesign/": {
       "views": 6
+    },
+    "/ai/reflect-with-claude-ai-fluency/": {
+      "views": 1
     },
     "/ai/rocm/": {
       "views": 1
@@ -756,9 +759,6 @@
     "/investing/2026-05-07-korea/": {
       "views": 1
     },
-    "/investing/2026-05-07-us/": {
-      "views": 1
-    },
     "/investing/2026-05-08-korea/": {
       "views": 1
     },
@@ -891,16 +891,10 @@
     "/investing/2026-07-10-us/": {
       "views": 1
     },
-    "/investing/2026-07-13-korea/": {
-      "views": 1
-    },
     "/investing/2026-07-13-us/": {
       "views": 1
     },
     "/investing/2026-07-14-korea/": {
-      "views": 1
-    },
-    "/investing/2026-07-14-us/": {
       "views": 1
     },
     "/investing/2026-07-15-korea/": {
@@ -1225,7 +1219,7 @@
       "views": 1
     },
     "/investing/2026-10-01-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-10-01-us/": {
       "views": 1
@@ -1356,6 +1350,9 @@
     "/investing/hstech/": {
       "views": 1
     },
+    "/investing/spx/": {
+      "views": 1
+    },
     "/k-beauty/": {
       "views": 1
     },
@@ -1374,11 +1371,11 @@
     "/llm-wiki/": {
       "views": 1
     },
+    "/macos/application10/": {
+      "views": 1
+    },
     "/macos/pip_install/": {
       "views": 8
-    },
-    "/macos/tidal-dl/": {
-      "views": 1
     },
     "/major-free-choice/": {
       "views": 1
@@ -1471,7 +1468,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 8
+      "views": 9
     },
     "/tags/aifluency/": {
       "views": 1
@@ -1495,9 +1492,6 @@
       "views": 1
     },
     "/tags/arwu/": {
-      "views": 1
-    },
-    "/tags/atriaai/": {
       "views": 1
     },
     "/tags/ax교육/": {
@@ -1535,9 +1529,6 @@
     },
     "/tags/codemirror/": {
       "views": 2
-    },
-    "/tags/codex/": {
-      "views": 1
     },
     "/tags/conference/": {
       "views": 2
@@ -1593,9 +1584,6 @@
     "/tags/export-resilience/": {
       "views": 1
     },
-    "/tags/fdi/": {
-      "views": 1
-    },
     "/tags/g-lamp/": {
       "views": 1
     },
@@ -1630,9 +1618,6 @@
       "views": 1
     },
     "/tags/heatmap/": {
-      "views": 1
-    },
-    "/tags/heyling/": {
       "views": 1
     },
     "/tags/hongkong/": {
@@ -1687,9 +1672,6 @@
       "views": 1
     },
     "/tags/llm/": {
-      "views": 1
-    },
-    "/tags/llmwiki/": {
       "views": 1
     },
     "/tags/low-altitude-economy/": {
@@ -1763,9 +1745,6 @@
     },
     "/tags/pdf-generation/": {
       "views": 3
-    },
-    "/tags/pisa/": {
-      "views": 1
     },
     "/tags/planning/": {
       "views": 1
@@ -1900,9 +1879,6 @@
       "views": 1
     },
     "/tags/개발기/": {
-      "views": 2
-    },
-    "/tags/개발도구/": {
       "views": 1
     },
     "/tags/개발자생산성/": {
@@ -1999,13 +1975,13 @@
       "views": 1
     },
     "/tags/공동교육/": {
-      "views": 2
+      "views": 1
     },
     "/tags/공동교육과정/": {
       "views": 1
     },
     "/tags/공동학위/": {
-      "views": 1
+      "views": 2
     },
     "/tags/공유대학/": {
       "views": 1
@@ -2175,9 +2151,6 @@
     "/tags/기술사업화/": {
       "views": 1
     },
-    "/tags/기술이전/": {
-      "views": 1
-    },
     "/tags/기업ai/": {
       "views": 1
     },
@@ -2235,9 +2208,6 @@
     "/tags/대입원서접수/": {
       "views": 1
     },
-    "/tags/대입자율성/": {
-      "views": 1
-    },
     "/tags/대입정책/": {
       "views": 1
     },
@@ -2292,9 +2262,6 @@
     "/tags/대학정보공시/": {
       "views": 1
     },
-    "/tags/대학정책/": {
-      "views": 1
-    },
     "/tags/대학조직/": {
       "views": 1
     },
@@ -2320,9 +2287,6 @@
       "views": 1
     },
     "/tags/대학혁신/": {
-      "views": 1
-    },
-    "/tags/대학혁신지원사업/": {
       "views": 1
     },
     "/tags/대화기록/": {
@@ -2572,15 +2536,12 @@
       "views": 1
     },
     "/tags/분석설계/": {
-      "views": 2
+      "views": 1
     },
     "/tags/분자대사/": {
       "views": 1
     },
     "/tags/뷰티케어/": {
-      "views": 1
-    },
-    "/tags/블로그/": {
       "views": 1
     },
     "/tags/비고츠키/": {
@@ -2713,9 +2674,6 @@
       "views": 1
     },
     "/tags/순천향대학교/": {
-      "views": 1
-    },
-    "/tags/스마트팩토리/": {
       "views": 1
     },
     "/tags/스캐폴딩/": {
@@ -2877,9 +2835,6 @@
     "/tags/융합교육/": {
       "views": 1
     },
-    "/tags/응급구조과/": {
-      "views": 1
-    },
     "/tags/의료교육/": {
       "views": 1
     },
@@ -2982,9 +2937,6 @@
     "/tags/전략산업/": {
       "views": 1
     },
-    "/tags/전문대/": {
-      "views": 1
-    },
     "/tags/전문대입시/": {
       "views": 1
     },
@@ -3027,16 +2979,10 @@
     "/tags/제주rise/": {
       "views": 1
     },
-    "/tags/조직문화/": {
-      "views": 1
-    },
     "/tags/조직변화/": {
       "views": 2
     },
     "/tags/조직설계/": {
-      "views": 1
-    },
-    "/tags/조직운영/": {
       "views": 1
     },
     "/tags/조직학습/": {
@@ -3124,9 +3070,6 @@
       "views": 2
     },
     "/tags/지역연구거점/": {
-      "views": 1
-    },
-    "/tags/지역의료/": {
       "views": 1
     },
     "/tags/지역인재/": {
@@ -3238,7 +3181,7 @@
       "views": 1
     },
     "/tags/충남/": {
-      "views": 1
+      "views": 2
     },
     "/tags/충남rise/": {
       "views": 1
@@ -3517,6 +3460,9 @@
       "views": 1
     },
     "/theory/cohens-d/": {
+      "views": 1
+    },
+    "/theory/fine-tuning/": {
       "views": 1
     },
     "/theory/flesch-kincaid-grade-level/": {
