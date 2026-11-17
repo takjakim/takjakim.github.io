@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-16T06:15:41.962368+00:00",
+    "generated_at": "2026-11-17T07:46:56.513136+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 98
+      "views": 102
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -48,6 +48,9 @@
     "/ai-x/": {
       "views": 1
     },
+    "/ai/": {
+      "views": 1
+    },
     "/ai/accio-work-trade-agent/": {
       "views": 1
     },
@@ -60,6 +63,9 @@
     "/ai/ai-agent-responsibility-bottleneck/": {
       "views": 2
     },
+    "/ai/ai-agent-robot-arm-responsibility/": {
+      "views": 1
+    },
     "/ai/ai-agent-stop-conditions/": {
       "views": 1
     },
@@ -67,7 +73,7 @@
       "views": 1
     },
     "/ai/ai-consulting-deployment/": {
-      "views": 23
+      "views": 21
     },
     "/ai/ai-data-center/": {
       "views": 1
@@ -94,7 +100,7 @@
       "views": 1
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 4
+      "views": 5
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -109,7 +115,7 @@
       "views": 1
     },
     "/ai/ai-took-easy-work-first/": {
-      "views": 1
+      "views": 2
     },
     "/ai/ai-tutor/": {
       "views": 1
@@ -130,19 +136,22 @@
       "views": 1
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 6
+      "views": 5
+    },
+    "/ai/chatbot-to-judgment-api-jev/": {
+      "views": 1
     },
     "/ai/chatgpt-astra-office-work/": {
       "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
-      "views": 2
+      "views": 3
     },
     "/ai/chatgpt-work-codex-university-classroom/": {
       "views": 2
     },
     "/ai/claude-code-domain-expertise/": {
-      "views": 2
+      "views": 3
     },
     "/ai/device-sovereignty/": {
       "views": 1
@@ -151,6 +160,9 @@
       "views": 1
     },
     "/ai/gemini-robotics-2-physical-ai/": {
+      "views": 1
+    },
+    "/ai/generative-ai-privacy-guide-2026/": {
       "views": 1
     },
     "/ai/google-saif-ai-security-framework-2026/": {
@@ -163,7 +175,7 @@
       "views": 2
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 3
+      "views": 4
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 3
@@ -177,16 +189,25 @@
     "/ai/markdown-is-an-employee-yc/": {
       "views": 2
     },
+    "/ai/memory-supply-chain/": {
+      "views": 1
+    },
     "/ai/on-device-ai/": {
       "views": 1
     },
     "/ai/prompt-training-work-redesign/": {
-      "views": 6
+      "views": 8
     },
     "/ai/reflect-with-claude-ai-fluency/": {
       "views": 1
     },
     "/ai/rocm/": {
+      "views": 1
+    },
+    "/ai/session1-esg-patent-startup-innovation/": {
+      "views": 1
+    },
+    "/ai/session2-ai-green-trade-low-altitude-economy/": {
       "views": 1
     },
     "/ai/session3-ai-standards-cbam/": {
@@ -211,7 +232,7 @@
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
-      "views": 2
+      "views": 3
     },
     "/ai/will-ai-remove-middle-managers/": {
       "views": 3
@@ -229,7 +250,7 @@
       "views": 1
     },
     "/college-consulting/": {
-      "views": 6
+      "views": 8
     },
     "/college-reviews/": {
       "views": 3
@@ -286,7 +307,7 @@
       "views": 1
     },
     "/education/cybersecurity-ai-assessment-governance/": {
-      "views": 2
+      "views": 3
     },
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 2
@@ -334,7 +355,7 @@
       "views": 1
     },
     "/education/lifelong-learning-neighborhood-network/": {
-      "views": 3
+      "views": 4
     },
     "/education/linc-3-0/": {
       "views": 1
@@ -356,6 +377,9 @@
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
       "views": 1
+    },
+    "/education/robot-mobility-curriculum-consulting/": {
+      "views": 2
     },
     "/education/tuition-committee-investment-accountability/": {
       "views": 2
@@ -466,9 +490,6 @@
       "views": 1
     },
     "/investing/2026-02-24-korea/": {
-      "views": 1
-    },
-    "/investing/2026-02-24-us/": {
       "views": 1
     },
     "/investing/2026-02-25-korea/": {
@@ -1326,22 +1347,73 @@
     "/investing/2026-10-27-us/": {
       "views": 1
     },
+    "/investing/2026-10-28-korea/": {
+      "views": 1
+    },
     "/investing/2026-10-28-us/": {
+      "views": 1
+    },
+    "/investing/2026-10-29-korea/": {
       "views": 1
     },
     "/investing/2026-10-29-us/": {
       "views": 1
     },
-    "/investing/2026-10-30-us/": {
-      "views": 2
-    },
-    "/investing/2026-11-02-us/": {
-      "views": 3
-    },
-    "/investing/2026-11-11-us/": {
+    "/investing/2026-10-30-korea/": {
       "views": 1
     },
+    "/investing/2026-10-30-us/": {
+      "views": 3
+    },
+    "/investing/2026-11-02-korea/": {
+      "views": 1
+    },
+    "/investing/2026-11-02-us/": {
+      "views": 4
+    },
+    "/investing/2026-11-03-korea/": {
+      "views": 1
+    },
+    "/investing/2026-11-03-us/": {
+      "views": 1
+    },
+    "/investing/2026-11-04-korea/": {
+      "views": 1
+    },
+    "/investing/2026-11-04-us/": {
+      "views": 1
+    },
+    "/investing/2026-11-05-korea/": {
+      "views": 1
+    },
+    "/investing/2026-11-05-us/": {
+      "views": 1
+    },
+    "/investing/2026-11-06-korea/": {
+      "views": 1
+    },
+    "/investing/2026-11-06-us/": {
+      "views": 1
+    },
+    "/investing/2026-11-09-korea/": {
+      "views": 1
+    },
+    "/investing/2026-11-09-us/": {
+      "views": 1
+    },
+    "/investing/2026-11-10-korea/": {
+      "views": 1
+    },
+    "/investing/2026-11-10-us/": {
+      "views": 1
+    },
+    "/investing/2026-11-11-us/": {
+      "views": 2
+    },
     "/investing/csi300/": {
+      "views": 1
+    },
+    "/investing/djia/": {
       "views": 1
     },
     "/investing/hsi/": {
@@ -1395,6 +1467,9 @@
     "/notes/교육과정-재구조화/": {
       "views": 1
     },
+    "/obsidian/": {
+      "views": 1
+    },
     "/opt-out/": {
       "views": 1
     },
@@ -1402,7 +1477,7 @@
       "views": 1
     },
     "/overseas-employment/": {
-      "views": 1
+      "views": 2
     },
     "/performance-feedback-loop/": {
       "views": 1
@@ -1443,6 +1518,9 @@
     "/runtime-telemetry/": {
       "views": 1
     },
+    "/scholarships/": {
+      "views": 1
+    },
     "/settlement-rate/": {
       "views": 2
     },
@@ -1468,7 +1546,7 @@
       "views": 1
     },
     "/tags/ai/": {
-      "views": 9
+      "views": 10
     },
     "/tags/aifluency/": {
       "views": 1
@@ -1516,7 +1594,7 @@
       "views": 1
     },
     "/tags/ci-cd/": {
-      "views": 1
+      "views": 2
     },
     "/tags/claude-code/": {
       "views": 2
@@ -1641,6 +1719,9 @@
     "/tags/jev/": {
       "views": 1
     },
+    "/tags/just-transition/": {
+      "views": 1
+    },
     "/tags/kentech/": {
       "views": 1
     },
@@ -1710,9 +1791,6 @@
     "/tags/monitoring/": {
       "views": 1
     },
-    "/tags/mro/": {
-      "views": 1
-    },
     "/tags/nextauth/": {
       "views": 1
     },
@@ -1722,11 +1800,8 @@
     "/tags/obsidian/": {
       "views": 1
     },
-    "/tags/oecd/": {
-      "views": 1
-    },
     "/tags/official-doc/": {
-      "views": 1
+      "views": 2
     },
     "/tags/openai/": {
       "views": 1
@@ -1998,9 +2073,6 @@
     "/tags/관찰가능성/": {
       "views": 1
     },
-    "/tags/광주앵커센터/": {
-      "views": 1
-    },
     "/tags/광주형앵커/": {
       "views": 1
     },
@@ -2268,9 +2340,6 @@
     "/tags/대학조직개편/": {
       "views": 1
     },
-    "/tags/대학진학/": {
-      "views": 1
-    },
     "/tags/대학창업/": {
       "views": 1
     },
@@ -2289,9 +2358,6 @@
     "/tags/대학혁신/": {
       "views": 1
     },
-    "/tags/대화기록/": {
-      "views": 1
-    },
     "/tags/데이터거버넌스/": {
       "views": 1
     },
@@ -2305,9 +2371,6 @@
       "views": 1
     },
     "/tags/데이터표준화/": {
-      "views": 1
-    },
-    "/tags/데이터플라이휠/": {
       "views": 1
     },
     "/tags/도메인전문성/": {
@@ -2407,7 +2470,7 @@
       "views": 1
     },
     "/tags/맥미니/": {
-      "views": 1
+      "views": 2
     },
     "/tags/맥북/": {
       "views": 1
@@ -2422,9 +2485,6 @@
       "views": 1
     },
     "/tags/메모리공급망/": {
-      "views": 1
-    },
-    "/tags/메모리반도체/": {
       "views": 1
     },
     "/tags/메타인지/": {
@@ -2646,9 +2706,6 @@
     "/tags/세계대학순위/": {
       "views": 1
     },
-    "/tags/세한대/": {
-      "views": 1
-    },
     "/tags/세한대학교/": {
       "views": 1
     },
@@ -2698,9 +2755,6 @@
       "views": 1
     },
     "/tags/실습교육/": {
-      "views": 1
-    },
-    "/tags/실행구조/": {
       "views": 1
     },
     "/tags/실행지표/": {
@@ -2778,9 +2832,6 @@
     "/tags/연암대/": {
       "views": 2
     },
-    "/tags/연암대학교/": {
-      "views": 1
-    },
     "/tags/영암캠퍼스/": {
       "views": 1
     },
@@ -2809,9 +2860,6 @@
       "views": 1
     },
     "/tags/워크플로우/": {
-      "views": 1
-    },
-    "/tags/원격교육/": {
       "views": 1
     },
     "/tags/원격대학/": {
@@ -2875,9 +2923,6 @@
       "views": 1
     },
     "/tags/일론머스크/": {
-      "views": 1
-    },
-    "/tags/일의미래/": {
       "views": 1
     },
     "/tags/임상병리학과/": {
@@ -3007,7 +3052,7 @@
       "views": 1
     },
     "/tags/지속가능경영/": {
-      "views": 2
+      "views": 1
     },
     "/tags/지수화/": {
       "views": 1
@@ -3135,9 +3180,6 @@
     "/tags/창원대/": {
       "views": 1
     },
-    "/tags/채용연계/": {
-      "views": 1
-    },
     "/tags/책임/": {
       "views": 1
     },
@@ -3201,9 +3243,6 @@
     "/tags/충원율/": {
       "views": 1
     },
-    "/tags/취업/": {
-      "views": 1
-    },
     "/tags/취업률/": {
       "views": 1
     },
@@ -3234,6 +3273,9 @@
     "/tags/컨텍스트엔지니어링/": {
       "views": 1
     },
+    "/tags/컨퍼런스/": {
+      "views": 1
+    },
     "/tags/컴퓨터사용/": {
       "views": 1
     },
@@ -3244,9 +3286,6 @@
       "views": 1
     },
     "/tags/타지키스탄/": {
-      "views": 1
-    },
-    "/tags/통합모집/": {
       "views": 1
     },
     "/tags/통합적평가/": {
@@ -3435,9 +3474,6 @@
     "/tags/해외인재/": {
       "views": 1
     },
-    "/tags/해외취업/": {
-      "views": 1
-    },
     "/tags/행동주의심리학/": {
       "views": 2
     },
@@ -3459,26 +3495,50 @@
     "/tags/훈련기록/": {
       "views": 1
     },
+    "/theory/ablation-study/": {
+      "views": 1
+    },
+    "/theory/anova/": {
+      "views": 1
+    },
+    "/theory/chain-of-thought-cot/": {
+      "views": 1
+    },
     "/theory/cohens-d/": {
+      "views": 2
+    },
+    "/theory/confidence/": {
+      "views": 1
+    },
+    "/theory/cross-entropy-loss/": {
+      "views": 1
+    },
+    "/theory/curriculum-learning/": {
+      "views": 1
+    },
+    "/theory/ema-exponential-moving-average/": {
+      "views": 1
+    },
+    "/theory/entropy/": {
       "views": 1
     },
     "/theory/fine-tuning/": {
-      "views": 1
-    },
-    "/theory/flesch-kincaid-grade-level/": {
-      "views": 1
-    },
-    "/theory/gsm8k/": {
       "views": 2
     },
+    "/theory/flesch-kincaid-grade-level/": {
+      "views": 2
+    },
+    "/theory/gsm8k/": {
+      "views": 3
+    },
     "/theory/hpt/": {
-      "views": 1
+      "views": 2
     },
     "/theory/hptbookreview0102/": {
       "views": 1
     },
     "/theory/hptbookreview0304/": {
-      "views": 1
+      "views": 2
     },
     "/theory/hptbookreview0506/": {
       "views": 2
@@ -3493,24 +3553,48 @@
       "views": 1
     },
     "/theory/hptbookreview1314/": {
+      "views": 2
+    },
+    "/theory/humaneval/": {
+      "views": 1
+    },
+    "/theory/kobest/": {
       "views": 1
     },
     "/theory/krashen-i1/": {
+      "views": 2
+    },
+    "/theory/lora/": {
       "views": 1
     },
     "/theory/mmlu/": {
+      "views": 2
+    },
+    "/theory/perplexity-ppl/": {
+      "views": 1
+    },
+    "/theory/qwen25/": {
+      "views": 1
+    },
+    "/theory/r4-obsidian/": {
       "views": 1
     },
     "/theory/solar-107b/": {
-      "views": 5
-    },
-    "/theory/theory/": {
-      "views": 1
-    },
-    "/theory/type-token-ratio-ttr/": {
       "views": 6
     },
+    "/theory/theory/": {
+      "views": 2
+    },
+    "/theory/type-token-ratio-ttr/": {
+      "views": 7
+    },
     "/theory/zpd/": {
+      "views": 2
+    },
+    "/welcome-to-ai/": {
+      "views": 2
+    },
+    "/welcome-to-dev/": {
       "views": 1
     }
   }
