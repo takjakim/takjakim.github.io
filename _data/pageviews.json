@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-17T07:46:56.513136+00:00",
+    "generated_at": "2026-11-18T07:15:15.901169+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 102
+      "views": 98
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -73,7 +73,7 @@
       "views": 1
     },
     "/ai/ai-consulting-deployment/": {
-      "views": 21
+      "views": 15
     },
     "/ai/ai-data-center/": {
       "views": 1
@@ -106,7 +106,7 @@
       "views": 1
     },
     "/ai/ai-research-university-performance/": {
-      "views": 9
+      "views": 4
     },
     "/ai/ai-slop-human-responsibility/": {
       "views": 2
@@ -163,7 +163,7 @@
       "views": 1
     },
     "/ai/generative-ai-privacy-guide-2026/": {
-      "views": 1
+      "views": 2
     },
     "/ai/google-saif-ai-security-framework-2026/": {
       "views": 1
@@ -178,7 +178,7 @@
       "views": 4
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 3
+      "views": 4
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
@@ -274,7 +274,7 @@
       "views": 1
     },
     "/dev/marp-editor/devlog-1/": {
-      "views": 1
+      "views": 3
     },
     "/dev/stats-method/": {
       "views": 1
@@ -327,9 +327,6 @@
     "/education/gwangju-anchor-incentive-allocation/": {
       "views": 3
     },
-    "/education/gyeongnam-anchor-career-pipeline/": {
-      "views": 1
-    },
     "/education/gyeongnam-lifelong-education-hub/": {
       "views": 1
     },
@@ -366,13 +363,13 @@
     "/education/mokwon-print-market-curriculum-2026/": {
       "views": 3
     },
+    "/education/pharmacy-accreditation-operating-model/": {
+      "views": 1
+    },
     "/education/private-university-specialization-strategy-2026/": {
       "views": 1
     },
     "/education/regional-growth-talent-system/": {
-      "views": 1
-    },
-    "/education/regional-university-tech-commercialization/": {
       "views": 1
     },
     "/education/rise-kpi-autonomy-university-strategy/": {
@@ -394,6 +391,9 @@
       "views": 1
     },
     "/food-tech/": {
+      "views": 1
+    },
+    "/g7-gx-industry-axis/": {
       "views": 1
     },
     "/gaia/": {
@@ -418,7 +418,7 @@
       "views": 1
     },
     "/gyeonggi-rise/": {
-      "views": 1
+      "views": 2
     },
     "/healthcare-departments/": {
       "views": 1
@@ -1447,7 +1447,7 @@
       "views": 1
     },
     "/macos/pip_install/": {
-      "views": 8
+      "views": 9
     },
     "/major-free-choice/": {
       "views": 1
@@ -1510,7 +1510,7 @@
       "views": 1
     },
     "/running/2026-06-17-transjeju-60k-gpx-analysis/": {
-      "views": 1
+      "views": 2
     },
     "/running/2026-06-17-transjeju-60k-training-plan/": {
       "views": 1
@@ -1606,7 +1606,7 @@
       "views": 1
     },
     "/tags/codemirror/": {
-      "views": 2
+      "views": 1
     },
     "/tags/conference/": {
       "views": 2
@@ -1624,7 +1624,7 @@
       "views": 1
     },
     "/tags/dgxspark/": {
-      "views": 1
+      "views": 2
     },
     "/tags/digital-infrastructure/": {
       "views": 1
@@ -1640,9 +1640,6 @@
     },
     "/tags/digitalgarden/": {
       "views": 2
-    },
-    "/tags/djia/": {
-      "views": 1
     },
     "/tags/dstri/": {
       "views": 1
@@ -1725,9 +1722,6 @@
     "/tags/kentech/": {
       "views": 1
     },
-    "/tags/kmedi/": {
-      "views": 1
-    },
     "/tags/kmove/": {
       "views": 2
     },
@@ -1764,13 +1758,7 @@
     "/tags/markdown-hangul/": {
       "views": 3
     },
-    "/tags/markdown/": {
-      "views": 1
-    },
     "/tags/market/": {
-      "views": 1
-    },
-    "/tags/marp/": {
       "views": 1
     },
     "/tags/mcp/": {
@@ -1803,19 +1791,10 @@
     "/tags/official-doc/": {
       "views": 2
     },
-    "/tags/openai/": {
-      "views": 1
-    },
-    "/tags/openuic/": {
-      "views": 1
-    },
     "/tags/optimization/": {
       "views": 1
     },
     "/tags/paraphrasing/": {
-      "views": 1
-    },
-    "/tags/pbl/": {
       "views": 1
     },
     "/tags/pdf-generation/": {
@@ -1890,13 +1869,7 @@
     "/tags/training/": {
       "views": 1
     },
-    "/tags/transjeju/": {
-      "views": 1
-    },
     "/tags/typesafeai/": {
-      "views": 1
-    },
-    "/tags/uam/": {
       "views": 1
     },
     "/tags/ultimatum-game/": {
@@ -1963,7 +1936,7 @@
       "views": 1
     },
     "/tags/개인정보보호위원회/": {
-      "views": 2
+      "views": 1
     },
     "/tags/거점국립대/": {
       "views": 1
@@ -2106,6 +2079,9 @@
     "/tags/교육정책/": {
       "views": 1
     },
+    "/tags/교육평가/": {
+      "views": 1
+    },
     "/tags/교육품질/": {
       "views": 1
     },
@@ -2167,6 +2143,9 @@
       "views": 1
     },
     "/tags/국제개발협력/": {
+      "views": 1
+    },
+    "/tags/국제공동연구/": {
       "views": 1
     },
     "/tags/국제교육협력/": {
@@ -2716,7 +2695,7 @@
       "views": 1
     },
     "/tags/수학교육/": {
-      "views": 2
+      "views": 1
     },
     "/tags/순천대/": {
       "views": 1
@@ -2760,6 +2739,9 @@
     "/tags/실행지표/": {
       "views": 1
     },
+    "/tags/싱가포르/": {
+      "views": 1
+    },
     "/tags/아이패드/": {
       "views": 1
     },
@@ -2799,6 +2781,9 @@
     "/tags/업무재설계/": {
       "views": 1
     },
+    "/tags/업무혁신/": {
+      "views": 1
+    },
     "/tags/에너지공대/": {
       "views": 1
     },
@@ -2830,7 +2815,7 @@
       "views": 1
     },
     "/tags/연암대/": {
-      "views": 2
+      "views": 1
     },
     "/tags/영암캠퍼스/": {
       "views": 1
@@ -3331,7 +3316,7 @@
       "views": 1
     },
     "/tags/푸드테크/": {
-      "views": 2
+      "views": 1
     },
     "/tags/품질관리/": {
       "views": 1
