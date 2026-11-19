@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-18T07:15:15.901169+00:00",
+    "generated_at": "2026-11-19T07:13:55.997895+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 98
+      "views": 95
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -73,7 +73,7 @@
       "views": 1
     },
     "/ai/ai-consulting-deployment/": {
-      "views": 15
+      "views": 3
     },
     "/ai/ai-data-center/": {
       "views": 1
@@ -91,7 +91,7 @@
       "views": 1
     },
     "/ai/ai-junior-work-learning/": {
-      "views": 9
+      "views": 3
     },
     "/ai/ai-learning-assessment/": {
       "views": 14
@@ -106,7 +106,7 @@
       "views": 1
     },
     "/ai/ai-research-university-performance/": {
-      "views": 4
+      "views": 2
     },
     "/ai/ai-slop-human-responsibility/": {
       "views": 2
@@ -136,7 +136,7 @@
       "views": 1
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 5
+      "views": 3
     },
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 1
@@ -178,7 +178,7 @@
       "views": 4
     },
     "/ai/hyundai-ax-proper-ai-use/": {
-      "views": 4
+      "views": 3
     },
     "/ai/karpathy-llm-wiki-digital-garden/": {
       "views": 1
@@ -253,7 +253,7 @@
       "views": 8
     },
     "/college-reviews/": {
-      "views": 3
+      "views": 4
     },
     "/company-project-based-learning/": {
       "views": 3
@@ -285,13 +285,13 @@
     "/digital-garden-concept/": {
       "views": 1
     },
-    "/ededef91-bf40-447e-be33-529958aa139f/": {
-      "views": 1
-    },
     "/education/2026-university-innovation-support-plan/": {
       "views": 1
     },
     "/education/anchor-shared-university-operating-model/": {
+      "views": 1
+    },
+    "/education/basic-education-statistics-university-structure/": {
       "views": 1
     },
     "/education/bootcamp-roundup-curriculum-feedback/": {
@@ -320,9 +320,6 @@
     },
     "/education/global-faculty-joint-appointment/": {
       "views": 4
-    },
-    "/education/graduate-pathway-indicator-governance-2026/": {
-      "views": 2
     },
     "/education/gwangju-anchor-incentive-allocation/": {
       "views": 3
@@ -354,9 +351,6 @@
     "/education/lifelong-learning-neighborhood-network/": {
       "views": 4
     },
-    "/education/linc-3-0/": {
-      "views": 1
-    },
     "/education/migrant-student-visa-pathway/": {
       "views": 1
     },
@@ -364,6 +358,9 @@
       "views": 3
     },
     "/education/pharmacy-accreditation-operating-model/": {
+      "views": 1
+    },
+    "/education/physical-ai-shared-training-infrastructure/": {
       "views": 1
     },
     "/education/private-university-specialization-strategy-2026/": {
@@ -1410,6 +1407,9 @@
     "/investing/2026-11-11-us/": {
       "views": 2
     },
+    "/investing/2026-11-13-us/": {
+      "views": 1
+    },
     "/investing/csi300/": {
       "views": 1
     },
@@ -1558,7 +1558,7 @@
       "views": 1
     },
     "/tags/alienmind/": {
-      "views": 1
+      "views": 2
     },
     "/tags/anchor/": {
       "views": 1
@@ -1609,7 +1609,7 @@
       "views": 1
     },
     "/tags/conference/": {
-      "views": 2
+      "views": 1
     },
     "/tags/cursor/": {
       "views": 1
@@ -1618,7 +1618,7 @@
       "views": 1
     },
     "/tags/deployment/": {
-      "views": 2
+      "views": 1
     },
     "/tags/dev/": {
       "views": 1
@@ -1647,9 +1647,6 @@
     "/tags/dx/": {
       "views": 1
     },
-    "/tags/education/": {
-      "views": 1
-    },
     "/tags/energy-transition/": {
       "views": 1
     },
@@ -1672,9 +1669,6 @@
       "views": 1
     },
     "/tags/gks/": {
-      "views": 1
-    },
-    "/tags/googledeepmind/": {
       "views": 1
     },
     "/tags/googlesaif/": {
@@ -1765,15 +1759,9 @@
       "views": 1
     },
     "/tags/mdx/": {
-      "views": 2
+      "views": 1
     },
     "/tags/media/": {
-      "views": 1
-    },
-    "/tags/mhs/": {
-      "views": 1
-    },
-    "/tags/mlx/": {
       "views": 1
     },
     "/tags/monitoring/": {
@@ -1831,7 +1819,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 7
+      "views": 6
     },
     "/tags/ryzenaimax/": {
       "views": 1
@@ -1842,19 +1830,10 @@
     "/tags/spacex/": {
       "views": 1
     },
-    "/tags/standards/": {
-      "views": 1
-    },
-    "/tags/startup/": {
-      "views": 1
-    },
     "/tags/stats/": {
       "views": 1
     },
     "/tags/studykorea300k/": {
-      "views": 1
-    },
-    "/tags/sustainability/": {
       "views": 1
     },
     "/tags/technology/": {
@@ -2290,7 +2269,7 @@
       "views": 1
     },
     "/tags/대학리뷰/": {
-      "views": 1
+      "views": 2
     },
     "/tags/대학분석/": {
       "views": 1
@@ -2779,7 +2758,7 @@
       "views": 1
     },
     "/tags/업무재설계/": {
-      "views": 1
+      "views": 2
     },
     "/tags/업무혁신/": {
       "views": 1
@@ -3127,7 +3106,7 @@
       "views": 1
     },
     "/tags/직무역량/": {
-      "views": 1
+      "views": 2
     },
     "/tags/직업계고/": {
       "views": 1
@@ -3148,7 +3127,7 @@
       "views": 1
     },
     "/tags/진로지도/": {
-      "views": 2
+      "views": 1
     },
     "/tags/진로취업/": {
       "views": 1
