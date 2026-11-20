@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-19T07:13:55.997895+00:00",
+    "generated_at": "2026-11-20T07:02:51.557227+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 95
+      "views": 91
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -73,7 +73,7 @@
       "views": 1
     },
     "/ai/ai-consulting-deployment/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-data-center/": {
       "views": 1
@@ -121,7 +121,7 @@
       "views": 1
     },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
-      "views": 11
+      "views": 4
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
@@ -235,7 +235,7 @@
       "views": 3
     },
     "/ai/will-ai-remove-middle-managers/": {
-      "views": 3
+      "views": 2
     },
     "/ai/work-to-tool-ai-coding/": {
       "views": 1
@@ -377,6 +377,9 @@
     },
     "/education/tuition-committee-investment-accountability/": {
       "views": 2
+    },
+    "/education/university-flexibility-learning-evidence/": {
+      "views": 1
     },
     "/education/university-region-committee-execution-2026/": {
       "views": 3
@@ -1407,6 +1410,9 @@
     "/investing/2026-11-11-us/": {
       "views": 2
     },
+    "/investing/2026-11-12-us/": {
+      "views": 1
+    },
     "/investing/2026-11-13-us/": {
       "views": 1
     },
@@ -1554,11 +1560,8 @@
     "/tags/aislop/": {
       "views": 1
     },
-    "/tags/ai전환/": {
-      "views": 1
-    },
     "/tags/alienmind/": {
-      "views": 2
+      "views": 1
     },
     "/tags/anchor/": {
       "views": 1
@@ -1587,9 +1590,6 @@
     "/tags/chatgpt-work/": {
       "views": 1
     },
-    "/tags/chatgpt/": {
-      "views": 1
-    },
     "/tags/china/": {
       "views": 1
     },
@@ -1611,13 +1611,7 @@
     "/tags/conference/": {
       "views": 1
     },
-    "/tags/cursor/": {
-      "views": 1
-    },
     "/tags/cxmt/": {
-      "views": 1
-    },
-    "/tags/deployment/": {
       "views": 1
     },
     "/tags/dev/": {
@@ -1639,7 +1633,7 @@
       "views": 1
     },
     "/tags/digitalgarden/": {
-      "views": 2
+      "views": 1
     },
     "/tags/dstri/": {
       "views": 1
@@ -1666,9 +1660,6 @@
       "views": 2
     },
     "/tags/gemini/": {
-      "views": 1
-    },
-    "/tags/gks/": {
       "views": 1
     },
     "/tags/googlesaif/": {
@@ -1713,11 +1704,8 @@
     "/tags/just-transition/": {
       "views": 1
     },
-    "/tags/kentech/": {
-      "views": 1
-    },
     "/tags/kmove/": {
-      "views": 2
+      "views": 1
     },
     "/tags/knowledge-ecosystem/": {
       "views": 1
@@ -1735,9 +1723,6 @@
       "views": 1
     },
     "/tags/kr/": {
-      "views": 1
-    },
-    "/tags/labor/": {
       "views": 1
     },
     "/tags/llm/": {
@@ -1812,20 +1797,11 @@
     "/tags/renewable-energy/": {
       "views": 1
     },
-    "/tags/rise/": {
-      "views": 1
-    },
     "/tags/rocm/": {
       "views": 1
     },
     "/tags/running/": {
       "views": 6
-    },
-    "/tags/ryzenaimax/": {
-      "views": 1
-    },
-    "/tags/serverless/": {
-      "views": 1
     },
     "/tags/spacex/": {
       "views": 1
@@ -3303,6 +3279,9 @@
     "/tags/프로젝트기반학습/": {
       "views": 2
     },
+    "/tags/프롬프트/": {
+      "views": 1
+    },
     "/tags/프롬프트엔지니어링/": {
       "views": 1
     },
@@ -3469,7 +3448,7 @@
       "views": 1
     },
     "/theory/cohens-d/": {
-      "views": 2
+      "views": 3
     },
     "/theory/confidence/": {
       "views": 1
