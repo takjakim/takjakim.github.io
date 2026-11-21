@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-20T07:02:51.557227+00:00",
+    "generated_at": "2026-11-21T06:56:56.475600+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 91
+      "views": 89
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -91,7 +91,7 @@
       "views": 1
     },
     "/ai/ai-junior-work-learning/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-learning-assessment/": {
       "views": 14
@@ -121,7 +121,7 @@
       "views": 1
     },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
-      "views": 4
+      "views": 3
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
@@ -196,7 +196,7 @@
       "views": 1
     },
     "/ai/prompt-training-work-redesign/": {
-      "views": 8
+      "views": 3
     },
     "/ai/reflect-with-claude-ai-fluency/": {
       "views": 1
@@ -285,16 +285,10 @@
     "/digital-garden-concept/": {
       "views": 1
     },
-    "/education/2026-university-innovation-support-plan/": {
-      "views": 1
-    },
     "/education/anchor-shared-university-operating-model/": {
       "views": 1
     },
     "/education/basic-education-statistics-university-structure/": {
-      "views": 1
-    },
-    "/education/bootcamp-roundup-curriculum-feedback/": {
       "views": 1
     },
     "/education/changwon-ipms-data-governance-2026/": {
@@ -325,9 +319,6 @@
       "views": 3
     },
     "/education/gyeongnam-lifelong-education-hub/": {
-      "views": 1
-    },
-    "/education/hallym-innovation-operating-model-2026/": {
       "views": 1
     },
     "/education/humanities-ai-curriculum-2026/": {
@@ -835,7 +826,7 @@
       "views": 1
     },
     "/investing/2026-06-23-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-06-23-us/": {
       "views": 1
@@ -1470,9 +1461,6 @@
     "/northern-gyeonggi-growth-hub/": {
       "views": 1
     },
-    "/notes/교육과정-재구조화/": {
-      "views": 1
-    },
     "/obsidian/": {
       "views": 1
     },
@@ -1590,9 +1578,6 @@
     "/tags/chatgpt-work/": {
       "views": 1
     },
-    "/tags/china/": {
-      "views": 1
-    },
     "/tags/ci-cd/": {
       "views": 2
     },
@@ -1687,7 +1672,7 @@
       "views": 1
     },
     "/tags/hstech/": {
-      "views": 2
+      "views": 1
     },
     "/tags/humanintheloop/": {
       "views": 1
@@ -1795,9 +1780,6 @@
       "views": 1
     },
     "/tags/renewable-energy/": {
-      "views": 1
-    },
-    "/tags/rocm/": {
       "views": 1
     },
     "/tags/running/": {
@@ -2668,7 +2650,7 @@
       "views": 1
     },
     "/tags/스캐폴딩/": {
-      "views": 1
+      "views": 2
     },
     "/tags/스펙코딩/": {
       "views": 1
