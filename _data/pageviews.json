@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-21T06:56:56.475600+00:00",
+    "generated_at": "2026-11-22T06:35:30.510600+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 89
+      "views": 87
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -94,7 +94,7 @@
       "views": 2
     },
     "/ai/ai-learning-assessment/": {
-      "views": 14
+      "views": 8
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 1
@@ -175,7 +175,7 @@
       "views": 2
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 4
+      "views": 3
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 3
@@ -285,6 +285,9 @@
     "/digital-garden-concept/": {
       "views": 1
     },
+    "/education/ai-teacher-training-transfer-design/": {
+      "views": 1
+    },
     "/education/anchor-shared-university-operating-model/": {
       "views": 1
     },
@@ -310,7 +313,7 @@
       "views": 2
     },
     "/education/first-career-project-budget/": {
-      "views": 4
+      "views": 3
     },
     "/education/global-faculty-joint-appointment/": {
       "views": 4
@@ -328,7 +331,7 @@
       "views": 1
     },
     "/education/inje-uhs-hospital-roadmap/": {
-      "views": 2
+      "views": 1
     },
     "/education/kangwon-campus-innovation-park/": {
       "views": 1
@@ -796,7 +799,7 @@
       "views": 1
     },
     "/investing/2026-06-12-us/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-06-15-korea/": {
       "views": 1
@@ -1267,7 +1270,7 @@
       "views": 1
     },
     "/investing/2026-10-12-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-10-12-us/": {
       "views": 1
