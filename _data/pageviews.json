@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-22T06:35:30.510600+00:00",
+    "generated_at": "2026-11-23T07:25:02.904357+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 87
+      "views": 85
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -94,7 +94,7 @@
       "views": 2
     },
     "/ai/ai-learning-assessment/": {
-      "views": 8
+      "views": 7
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 1
@@ -121,7 +121,7 @@
       "views": 1
     },
     "/ai/ai-wealth-musk-anthropic-public-benefit/": {
-      "views": 3
+      "views": 2
     },
     "/ai/ai-workstation-finetuning-mac-studio-dgx-spark-ryzen-ai-max/": {
       "views": 1
@@ -196,7 +196,7 @@
       "views": 1
     },
     "/ai/prompt-training-work-redesign/": {
-      "views": 3
+      "views": 2
     },
     "/ai/reflect-with-claude-ai-fluency/": {
       "views": 1
@@ -309,6 +309,9 @@
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 2
     },
+    "/education/education-finance-future-fund/": {
+      "views": 1
+    },
     "/education/education-innovation-regional-pathways/": {
       "views": 2
     },
@@ -368,6 +371,9 @@
     },
     "/education/robot-mobility-curriculum-consulting/": {
       "views": 2
+    },
+    "/education/student-housing-learning-access/": {
+      "views": 1
     },
     "/education/tuition-committee-investment-accountability/": {
       "views": 2
@@ -1717,7 +1723,7 @@
       "views": 1
     },
     "/tags/low-altitude-economy/": {
-      "views": 2
+      "views": 1
     },
     "/tags/macstudio/": {
       "views": 1
@@ -1834,7 +1840,7 @@
       "views": 1
     },
     "/tags/가야대/": {
-      "views": 1
+      "views": 2
     },
     "/tags/간호학과/": {
       "views": 1
@@ -3514,7 +3520,7 @@
       "views": 2
     },
     "/theory/type-token-ratio-ttr/": {
-      "views": 7
+      "views": 3
     },
     "/theory/zpd/": {
       "views": 2
