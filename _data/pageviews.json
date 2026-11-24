@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-23T07:25:02.904357+00:00",
+    "generated_at": "2026-11-24T09:44:33.454993+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 85
+      "views": 89
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -94,7 +94,7 @@
       "views": 2
     },
     "/ai/ai-learning-assessment/": {
-      "views": 7
+      "views": 6
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 1
@@ -232,7 +232,7 @@
       "views": 1
     },
     "/ai/why-ai-managed-wiki-rots/": {
-      "views": 3
+      "views": 2
     },
     "/ai/will-ai-remove-middle-managers/": {
       "views": 2
@@ -297,6 +297,9 @@
     "/education/changwon-ipms-data-governance-2026/": {
       "views": 1
     },
+    "/education/changwon-university-issues-2026/": {
+      "views": 1
+    },
     "/education/chungbuk-anchor-settlement-ecosystem/": {
       "views": 1
     },
@@ -314,6 +317,9 @@
     },
     "/education/education-innovation-regional-pathways/": {
       "views": 2
+    },
+    "/education/education-oda-local-ownership/": {
+      "views": 1
     },
     "/education/first-career-project-budget/": {
       "views": 3
@@ -373,7 +379,7 @@
       "views": 2
     },
     "/education/student-housing-learning-access/": {
-      "views": 1
+      "views": 2
     },
     "/education/tuition-committee-investment-accountability/": {
       "views": 2
@@ -388,6 +394,9 @@
       "views": 6
     },
     "/education/vocational-graduate-pathway/": {
+      "views": 1
+    },
+    "/ffbcd63b-6568-4d04-833e-d5b06dfd6930/": {
       "views": 1
     },
     "/food-tech/": {
@@ -865,7 +874,7 @@
       "views": 1
     },
     "/investing/2026-06-30-us/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-07-01-korea/": {
       "views": 1
@@ -1405,7 +1414,7 @@
       "views": 1
     },
     "/investing/2026-11-10-us/": {
-      "views": 1
+      "views": 3
     },
     "/investing/2026-11-11-us/": {
       "views": 2
@@ -1450,10 +1459,13 @@
       "views": 1
     },
     "/macos/application10/": {
-      "views": 1
+      "views": 2
     },
     "/macos/pip_install/": {
       "views": 9
+    },
+    "/macos/tidal-dl/": {
+      "views": 1
     },
     "/major-free-choice/": {
       "views": 1
@@ -1999,6 +2011,9 @@
       "views": 1
     },
     "/tags/교수학습/": {
+      "views": 1
+    },
+    "/tags/교육oda/": {
       "views": 1
     },
     "/tags/교육공학/": {
