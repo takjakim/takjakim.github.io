@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-24T09:44:33.454993+00:00",
+    "generated_at": "2026-11-25T08:19:46.774128+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 89
+      "views": 93
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -19,7 +19,7 @@
       "views": 2
     },
     "/about/": {
-      "views": 1
+      "views": 2
     },
     "/action-indicators/": {
       "views": 2
@@ -285,11 +285,14 @@
     "/digital-garden-concept/": {
       "views": 1
     },
+    "/education/academic-outcomes-ownership-governance/": {
+      "views": 2
+    },
     "/education/ai-teacher-training-transfer-design/": {
       "views": 1
     },
     "/education/anchor-shared-university-operating-model/": {
-      "views": 1
+      "views": 2
     },
     "/education/basic-education-statistics-university-structure/": {
       "views": 1
@@ -310,7 +313,7 @@
       "views": 3
     },
     "/education/education-basic-statistics-operating-model-2026/": {
-      "views": 2
+      "views": 1
     },
     "/education/education-finance-future-fund/": {
       "views": 1
@@ -388,7 +391,7 @@
       "views": 1
     },
     "/education/university-region-committee-execution-2026/": {
-      "views": 3
+      "views": 2
     },
     "/education/vietnam-study-fair-career-pathways-2026/": {
       "views": 6
@@ -1405,7 +1408,7 @@
       "views": 1
     },
     "/investing/2026-11-09-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-11-09-us/": {
       "views": 1
@@ -1462,7 +1465,7 @@
       "views": 2
     },
     "/macos/pip_install/": {
-      "views": 9
+      "views": 10
     },
     "/macos/tidal-dl/": {
       "views": 1
@@ -1693,7 +1696,7 @@
       "views": 1
     },
     "/tags/hstech/": {
-      "views": 1
+      "views": 2
     },
     "/tags/humanintheloop/": {
       "views": 1
@@ -2740,7 +2743,7 @@
       "views": 1
     },
     "/tags/업무재설계/": {
-      "views": 2
+      "views": 1
     },
     "/tags/업무혁신/": {
       "views": 1
@@ -3535,7 +3538,7 @@
       "views": 2
     },
     "/theory/type-token-ratio-ttr/": {
-      "views": 3
+      "views": 2
     },
     "/theory/zpd/": {
       "views": 2
