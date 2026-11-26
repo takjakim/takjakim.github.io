@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-25T08:19:46.774128+00:00",
+    "generated_at": "2026-11-26T08:05:04.414246+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 93
+      "views": 95
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -94,13 +94,13 @@
       "views": 2
     },
     "/ai/ai-learning-assessment/": {
-      "views": 6
+      "views": 5
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 1
     },
     "/ai/ai-productivity-conference-synthesis/": {
-      "views": 5
+      "views": 6
     },
     "/ai/ai-productivity-governance-keynote/": {
       "views": 1
@@ -136,7 +136,7 @@
       "views": 1
     },
     "/ai/big-data-ai-world-2026-agent-operations/": {
-      "views": 3
+      "views": 1
     },
     "/ai/chatbot-to-judgment-api-jev/": {
       "views": 1
@@ -145,7 +145,7 @@
       "views": 1
     },
     "/ai/chatgpt-desktop-codex-work-os/": {
-      "views": 3
+      "views": 2
     },
     "/ai/chatgpt-work-codex-university-classroom/": {
       "views": 2
@@ -285,8 +285,14 @@
     "/digital-garden-concept/": {
       "views": 1
     },
+    "/education/2026-university-innovation-support-plan/": {
+      "views": 1
+    },
     "/education/academic-outcomes-ownership-governance/": {
       "views": 2
+    },
+    "/education/ai-bootcamp-team-individual-evidence/": {
+      "views": 1
     },
     "/education/ai-teacher-training-transfer-design/": {
       "views": 1
@@ -325,7 +331,7 @@
       "views": 1
     },
     "/education/first-career-project-budget/": {
-      "views": 3
+      "views": 4
     },
     "/education/global-faculty-joint-appointment/": {
       "views": 4
@@ -337,12 +343,9 @@
       "views": 1
     },
     "/education/humanities-ai-curriculum-2026/": {
-      "views": 5
+      "views": 2
     },
     "/education/inhatc-anchor-lifelong-platform/": {
-      "views": 1
-    },
-    "/education/inje-uhs-hospital-roadmap/": {
       "views": 1
     },
     "/education/kangwon-campus-innovation-park/": {
@@ -391,7 +394,7 @@
       "views": 1
     },
     "/education/university-region-committee-execution-2026/": {
-      "views": 2
+      "views": 3
     },
     "/education/vietnam-study-fair-career-pathways-2026/": {
       "views": 6
@@ -421,7 +424,7 @@
       "views": 1
     },
     "/graph/": {
-      "views": 9
+      "views": 6
     },
     "/gyeongbuk-robot-specialization-university/": {
       "views": 1
@@ -547,7 +550,7 @@
       "views": 1
     },
     "/investing/2026-03-06-us/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-03-09-korea/": {
       "views": 1
@@ -1552,7 +1555,7 @@
       "views": 3
     },
     "/tags/": {
-      "views": 4
+      "views": 2
     },
     "/tags/agentboss/": {
       "views": 1
@@ -1752,9 +1755,6 @@
     "/tags/mcp/": {
       "views": 1
     },
-    "/tags/mdx/": {
-      "views": 1
-    },
     "/tags/media/": {
       "views": 1
     },
@@ -1807,7 +1807,7 @@
       "views": 1
     },
     "/tags/running/": {
-      "views": 6
+      "views": 5
     },
     "/tags/spacex/": {
       "views": 1
@@ -2656,7 +2656,7 @@
       "views": 1
     },
     "/tags/수시/": {
-      "views": 1
+      "views": 2
     },
     "/tags/수학교육/": {
       "views": 1
@@ -3361,7 +3361,7 @@
       "views": 1
     },
     "/tags/한국교통대/": {
-      "views": 2
+      "views": 1
     },
     "/tags/한국기술교육대/": {
       "views": 1
