@@ -1,13 +1,13 @@
 {
   "meta": {
-    "generated_at": "2026-11-26T08:05:04.414246+00:00",
+    "generated_at": "2026-11-27T08:14:08.310998+00:00",
     "note": "GA4 Data API can lag hours; empty result right after install may be normal.",
     "property_id": "391730814",
     "range": "last_30_days_including_today"
   },
   "paths": {
     "/": {
-      "views": 95
+      "views": 104
     },
     "/04bc5941-892d-41a6-becd-e2ac726ab786/": {
       "views": 2
@@ -28,7 +28,7 @@
       "views": 1
     },
     "/agentic-ai/": {
-      "views": 2
+      "views": 1
     },
     "/ai-governance/": {
       "views": 1
@@ -94,7 +94,7 @@
       "views": 2
     },
     "/ai/ai-learning-assessment/": {
-      "views": 5
+      "views": 4
     },
     "/ai/ai-makers-ask-to-slow-down/": {
       "views": 1
@@ -175,7 +175,7 @@
       "views": 2
     },
     "/ai/hyundai-autonomous-data-flywheel/": {
-      "views": 3
+      "views": 2
     },
     "/ai/hyundai-ax-proper-ai-use/": {
       "views": 3
@@ -292,7 +292,7 @@
       "views": 2
     },
     "/education/ai-bootcamp-team-individual-evidence/": {
-      "views": 1
+      "views": 2
     },
     "/education/ai-teacher-training-transfer-design/": {
       "views": 1
@@ -318,6 +318,9 @@
     "/education/cybersecurity-ai-assessment-governance/": {
       "views": 3
     },
+    "/education/daegu-health-glocal-care/": {
+      "views": 1
+    },
     "/education/education-basic-statistics-operating-model-2026/": {
       "views": 1
     },
@@ -331,7 +334,7 @@
       "views": 1
     },
     "/education/first-career-project-budget/": {
-      "views": 4
+      "views": 5
     },
     "/education/global-faculty-joint-appointment/": {
       "views": 4
@@ -364,7 +367,7 @@
       "views": 1
     },
     "/education/mokwon-print-market-curriculum-2026/": {
-      "views": 3
+      "views": 1
     },
     "/education/pharmacy-accreditation-operating-model/": {
       "views": 1
@@ -384,6 +387,9 @@
     "/education/robot-mobility-curriculum-consulting/": {
       "views": 2
     },
+    "/education/scholarship-to-learning-continuity/": {
+      "views": 1
+    },
     "/education/student-housing-learning-access/": {
       "views": 2
     },
@@ -394,7 +400,7 @@
       "views": 1
     },
     "/education/university-region-committee-execution-2026/": {
-      "views": 3
+      "views": 2
     },
     "/education/vietnam-study-fair-career-pathways-2026/": {
       "views": 6
@@ -1249,7 +1255,7 @@
       "views": 1
     },
     "/investing/2026-09-30-korea/": {
-      "views": 1
+      "views": 2
     },
     "/investing/2026-09-30-us/": {
       "views": 1
@@ -1429,6 +1435,9 @@
       "views": 1
     },
     "/investing/2026-11-13-us/": {
+      "views": 1
+    },
+    "/investing/2026-11-25-us/": {
       "views": 1
     },
     "/investing/csi300/": {
@@ -2113,7 +2122,7 @@
       "views": 1
     },
     "/tags/국제교육협력/": {
-      "views": 2
+      "views": 1
     },
     "/tags/국제협력선도대학/": {
       "views": 1
@@ -2233,7 +2242,7 @@
       "views": 1
     },
     "/tags/대학경영/": {
-      "views": 2
+      "views": 1
     },
     "/tags/대학교육/": {
       "views": 1
@@ -2725,7 +2734,7 @@
       "views": 1
     },
     "/tags/앵커사업단/": {
-      "views": 2
+      "views": 1
     },
     "/tags/약학교육/": {
       "views": 1
@@ -3541,7 +3550,7 @@
       "views": 2
     },
     "/theory/zpd/": {
-      "views": 2
+      "views": 3
     },
     "/welcome-to-ai/": {
       "views": 2
